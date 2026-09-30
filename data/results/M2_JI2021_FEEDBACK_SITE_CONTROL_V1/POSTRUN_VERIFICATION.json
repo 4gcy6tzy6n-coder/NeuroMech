@@ -1,0 +1,24 @@
+{
+  "status": "VERIFIED",
+  "development_rows": 360,
+  "heldout_rows": 300,
+  "contrasts_recomputed": {
+    "direction": {
+      "mean": 0.11662383746016775,
+      "ci95": [
+        0.10908371941913247,
+        0.12413186007064765
+      ]
+    },
+    "duration": {
+      "mean": 0.5392810521714293,
+      "ci95": [
+        0.4711013424813815,
+        0.6079503142238288
+      ]
+    }
+  },
+  "all_values_finite": true,
+  "manifest_hashes_match": true,
+  "scope": "simulation arithmetic and provenance only"
+}

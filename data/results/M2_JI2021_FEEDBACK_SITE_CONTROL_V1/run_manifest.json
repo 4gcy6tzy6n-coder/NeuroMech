@@ -1,0 +1,45 @@
+{
+  "experiment": "M2_JI2021_FEEDBACK_SITE_CONTROL_V1",
+  "development_seeds": [
+    203000,
+    203029
+  ],
+  "test_seeds": [
+    203100,
+    203199
+  ],
+  "agents_per_block": 50,
+  "steps_per_trajectory": 1500,
+  "motor_only_calibration_grid": [
+    0.0,
+    0.1,
+    0.2,
+    0.3,
+    0.4,
+    0.5,
+    0.6,
+    0.7,
+    0.8,
+    0.9,
+    1.0
+  ],
+  "selected_motor_only_feedback": 0.7,
+  "bootstrap_seed": 20261002,
+  "bootstrap_resamples": 20000,
+  "runtime": {
+    "python": "3.9.6",
+    "numpy": "2.0.2",
+    "matplotlib": "3.9.4"
+  },
+  "contract_sha256": "f86b5ecdcfdad6a91db7cac8c1f4c802933c3630d350bed0b5cbc09f90354ab6",
+  "source_archive_sha256": "efa17d718018df4e8ad5058c82f5996488f085451433f6664374e394c29482ed",
+  "runner_sha256": "cf6cf953e93bea63241e390dc8414b050b558bfec7cce942609dbad523f5d9de",
+  "output_sha256": {
+    "heldout_simulation_metrics.csv": "f23e1d07d18ba44c67160be10fd0fcf9ecdb77a3c367001e0e63ab8c1688dd52",
+    "development_calibration.csv": "26fe2cc049b16176b2f81783b853148df1bd5c4d256b968146af8c91698c1d65",
+    "summary.json": "f034bab8e9b3971565946b16cc4414dd107b0b4fd34384d3ec629bafe33f4557",
+    "feedback_site_control.png": "729e59c855d776f4ed233665764de7e29171b76795ccc9950b362af6cadd5a36"
+  },
+  "heldout_rows": 300,
+  "development_rows": 360
+}

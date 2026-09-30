@@ -1,0 +1,55 @@
+{
+  "status": "COMPLETED_POST_RESULT_MECHANISTIC_COUNTERFACTUAL",
+  "calibration": {
+    "development_seed_blocks": 30,
+    "sensory_site_mean_forward_run_s": 4.429088251415034,
+    "motor_only_grid_mean_forward_run_s": {
+      "0.0": 0.9175339294666133,
+      "0.1": 1.017015252126916,
+      "0.2": 1.1373944791946728,
+      "0.3": 1.309975271241402,
+      "0.4": 1.5486362253076575,
+      "0.5": 1.908591491765542,
+      "0.6": 2.530764591990616,
+      "0.7": 3.9483955461220033,
+      "0.8": 9.3560131531766,
+      "0.9": 58.170492779320874,
+      "1.0": 200.0
+    },
+    "selected_motor_only_feedback": 0.7,
+    "selected_motor_only_mean_forward_run_s": 3.9483955461220033
+  },
+  "heldout": {
+    "seed_blocks": 100,
+    "arms": {
+      "SENSORY_SITE_FB": {
+        "mean_warm_direction_index": 0.5705656885174605,
+        "mean_forward_run_s": 4.57242975639004,
+        "mean_final_warm_displacement": 34.542835483259154
+      },
+      "MOTOR_ONLY_MATCHED": {
+        "mean_warm_direction_index": 0.4539418510572928,
+        "mean_forward_run_s": 4.033148704218611,
+        "mean_final_warm_displacement": 26.557617327202834
+      },
+      "NO_FEEDBACK": {
+        "mean_warm_direction_index": 0.15398701280504454,
+        "mean_forward_run_s": 0.9178404012405678,
+        "mean_final_warm_displacement": 6.180508056179706
+      }
+    },
+    "sensory_site_minus_motor_only_direction_index_mean": 0.11662383746016775,
+    "sensory_site_minus_motor_only_direction_index_95_ci": [
+      0.10908371941913247,
+      0.12413186007064765
+    ],
+    "sensory_site_minus_motor_only_duration_s_mean": 0.5392810521714293,
+    "sensory_site_minus_motor_only_duration_s_95_ci": [
+      0.4711013424813815,
+      0.6079503142238288
+    ],
+    "direction_index_positive_seed_count": 100
+  },
+  "analysis_unit": "simulation seed block; 50 agents clustered within each seed block",
+  "biological_inference": "none; this is a source-model counterfactual, not a biological experiment"
+}
