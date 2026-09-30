@@ -1,0 +1,25 @@
+{
+  "status": "PASS",
+  "checks": [
+    "row_count",
+    "unique_complete_seed_scale_arm_keys",
+    "development_only_calibration_recomputed",
+    "MATLAB_to_Python_delay_index_mapping",
+    "source_and_contract_hashes",
+    "output_hashes",
+    "primary_estimand_and_bootstrap_recomputed"
+  ],
+  "heldout_rows": 1800,
+  "selected_motor_feedback": {
+    "0.75": 0.76,
+    "1.0": 0.665,
+    "1.25": 0.61
+  },
+  "primary_mean_recomputed": 0.13935844750173307,
+  "primary_ci95_recomputed": [
+    0.13571753563361716,
+    0.1429485421878156
+  ],
+  "positive_seed_blocks_recomputed": 200,
+  "metrics_sha256": "cfe6de06e1e751428836f12e3bdd80d2617ab082c631545d52d638cdfc395072"
+}

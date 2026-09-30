@@ -11,7 +11,7 @@ The project is converging on **two mechanism-grounded studies plus one shared ar
 | Line | Biological question | Current artificial evidence |
 |---|---|---|
 | **M1 — higher-order visual-motion correction** | What does a source-defined third-order correction contribute to fly motion estimation? | The existing RR19 natural-scene run is partial and exploratory. H1/H3 were in the predicted direction, while the phase-mismatched specificity contrast H2 was in the opposite direction. H4 and an overall four-hypothesis verdict are not established. See [partial results](experiments/m1_higher_order/RR19_STEP4_PARTIAL_RESULTS.md). |
-| **M2 — feedback-site specificity** | Does placing motor-state feedback at the sensory-processing site explain thermotaxis dynamics better than a motor-site control in the RIM–AIY circuit? | Source-model V4 found a sensory-site advantage, but the motor-only control did not match persistence across the run-duration distribution. This exploratory result does not isolate feedback placement. See [V4 results and failure log](summery/M2_FEEDBACK_SITE_SPECIFICITY_V4/). |
+| **M2 — feedback-site specificity** | Does placing motor-state feedback at the sensory-processing site explain thermotaxis dynamics better than a motor-site control in the RIM–AIY circuit? | Corrected-index source-model V5 retained a positive direction contrast, but the motor-only control still failed to match run persistence. The placement effect is not isolated. See [V5 results and source-index audit](summery/M2_FEEDBACK_SITE_SPECIFICITY_V5/). |
 | **Cross-mechanism benchmark** | Do mechanism-specific computations outperform capacity-matched generic controls under the task conditions that make those computations relevant? | A shared benchmark is in development. M1 and M2 use distinct tasks and native outcome measures; raw scores will not be pooled. See the [project convergence record](summery/PROJECT_CONVERGENCE_20261001/CONVERGENCE.md). |
 
 The M2 state-gated sensory-update and active-sensing studies are supporting algorithmic probes, not substitutes for the feedback-site-specificity study or direct biological validation. Their benefits are conditional on the task's state/observation mapping, and stronger generic or task-aware references remain competitive. See [M2 transfer evidence](summery/M2_FORWARD_STATE_SENSORY_GATE_V3/RESULTS.md) and [closed-loop active-sensing results](summery/M2_CLOSED_LOOP_ACTIVE_SENSING_V1/RESULTS.md).
@@ -22,7 +22,17 @@ The next mainline study is a prospective *C. elegans* thermotaxis experiment ask
 
 The current M2 AI-side experiment remains an exploratory synthetic boundary test. Its sensor-reliability mapping is not established by the worm study and will not serve as the central biological transfer claim. An artificial state-gated update benchmark can continue in parallel with experimental preparation, but its result remains conditional until the biological computation is directly tested.
 
-## Latest experiment: M5 eligibility trace on learnable delayed XOR V2
+## Latest experiment: M2 feedback-site specificity V5
+
+V5 corrected a one-sample offset in the Figure 7 sensory-delay index: the author MATLAB lookup `max(1, ti−delay)` maps to Python `max(0, t−delay)`. The equal-weighted sensory-site minus motor-only warm-direction contrast remained positive at `+0.13936` (95% seed-block bootstrap interval `[+0.13572, +0.14295]`; 200/200 blocks positive).
+
+The motor-only control still failed to match persistence: it had shorter mean and P90 run durations, longer median durations, and fewer long runs at each tested noise scale. This outcome-informed source-model comparison therefore does not isolate feedback-site specificity. The index was checked against MATLAB source code, but MATLAB/Octave execution parity, random-number behavior and smoothing boundaries remain unverified. It is not biological validation or AI-transfer evidence.
+
+- [Contract, results, and failure log](summery/M2_FEEDBACK_SITE_SPECIFICITY_V5/)
+- [Corrected runner, source model, and independent verifier](model/M2_FEEDBACK_SITE_SPECIFICITY_V5/)
+- [Development and held-out outputs](data/results/M2_FEEDBACK_SITE_SPECIFICITY_V5/)
+
+## Previous synthetic experiment: M5 eligibility trace on learnable delayed XOR V2
 
 The earlier M10 XOR run was inconclusive because even BPTT stayed near chance. After an outcome-informed optimizer calibration, V2 used a fixed Adam optimizer and fresh task seeds on the learnable four-step delay. Held-out accuracy was `0.7347` for the local eligibility trace, `0.5529` for the no-trace local update, and `0.9997` for BPTT. The paired trace-minus-no-trace difference was `+0.1819` (95% task-seed bootstrap interval `[+0.1141, +0.2485]`; 24/30 seeds positive). BPTT passed the task-viability check but remained much stronger than the trace.
 

@@ -1,0 +1,42 @@
+{
+  "experiment": "M2_FEEDBACK_SITE_SPECIFICITY_V5",
+  "development_seed_range": [
+    330000,
+    330039
+  ],
+  "heldout_test_seed_range": [
+    340000,
+    340199
+  ],
+  "noise_scales": [
+    0.75,
+    1.0,
+    1.25
+  ],
+  "agents_per_block": 50,
+  "steps_per_trajectory": 1500,
+  "bootstrap_resamples": 20000,
+  "bootstrap_seed": 20261004,
+  "inputs": {
+    "contract_sha256": "7f5d63b7cf620e2ef5264ac5077daf35264ea7139e92ffe088179b3e2a454a51",
+    "corrected_source_model_sha256": "acca9f2f5b61ceb254c4772a5be598d11b53d2a325ded87cf8d002845ff491d5",
+    "development_csv_sha256": "41b5f5cf7c5ebe0ce0c2b3f9b396de3e6055b166b143fe1ab78b4d89878726bc",
+    "author_source_sha256": "e2a9d5be4be436e30dfce7d59c4c95110cda189fbd54dc423128d0fc991b21c7",
+    "runner_sha256": "7329563a7ff0f0deeaa1fb878d24539bbfe9975b903710037e76b3b6b2e023c0"
+  },
+  "selected_motor_feedback": {
+    "0.75": 0.76,
+    "1.0": 0.665,
+    "1.25": 0.61
+  },
+  "runtime": {
+    "python": "3.9.6",
+    "numpy": "2.0.2"
+  },
+  "rows": 1800,
+  "output_sha256": {
+    "heldout_simulation_metrics.csv": "cfe6de06e1e751428836f12e3bdd80d2617ab082c631545d52d638cdfc395072",
+    "summary.json": "bc1021ccd8c40ba0c8193b6169930ae13db73dc35e861d516f38912e2c165c62",
+    "development_calibration.csv": "41b5f5cf7c5ebe0ce0c2b3f9b396de3e6055b166b143fe1ab78b4d89878726bc"
+  }
+}
