@@ -1,0 +1,40 @@
+{
+  "experiment_id": "M2_SOURCE_MODEL_GRADIENT_REVERSAL_V1",
+  "classification": "exploratory_source_derived_computational_stress_test",
+  "python": "3.9.6",
+  "numpy": "2.0.2",
+  "platform": "macOS-26.2-arm64-arm-64bit",
+  "n_steps": 1500,
+  "t_max_s": 200.0,
+  "dt_s": 0.13333333333333333,
+  "n_agents_per_seed_block": 50,
+  "seed_blocks": [
+    20261014,
+    20261113
+  ],
+  "reversal_intervals_s": [
+    0.0,
+    40.0,
+    20.0,
+    10.0,
+    5.0
+  ],
+  "arms": [
+    "SENSORY_SITE_FB",
+    "OUTPUT_SITE_FB",
+    "NO_FEEDBACK"
+  ],
+  "rows": 1500,
+  "input_sha256": {
+    "summery/M2_SOURCE_MODEL_GRADIENT_REVERSAL_V1/CONTRACT.md": "056439aad956e10b60bdfc2289809e19a0fabe0ff99baff34093c511b66e714c",
+    "model/M2_FEEDBACK_SITE_SPECIFICITY_V5/source_model.py": "acca9f2f5b61ceb254c4772a5be598d11b53d2a325ded87cf8d002845ff491d5",
+    "data/raw/celegans/ji_etal_2021_elife_68848_v3/Fig7_TtxCircuitModel.m": "e2a9d5be4be436e30dfce7d59c4c95110cda189fbd54dc423128d0fc991b21c7",
+    "model/M2_SOURCE_MODEL_GRADIENT_REVERSAL_V1/run_experiment.py": "21e83cc86c96929dba28253cc62bc036e1f5cb95c95c90cc66774e6fa9220aba",
+    "model/M2_SOURCE_MODEL_GRADIENT_REVERSAL_V1/analyze_results.py": "401114163dafac82e8d4d1114a6a2ce0f96d0275f5f7084bf42622c6aecbabe7",
+    "model/M2_SOURCE_MODEL_GRADIENT_REVERSAL_V1/verify_results.py": "c61ab501e0b6e47ed2c245b12db45be45d501d6b1b093bcf5efe1ef74f2a6987"
+  },
+  "output_sha256": {
+    "seed_block_metrics.csv": "9b8f7bf6320a5cb36113768317e320a3adab17d7762fc83427be341055af834e",
+    "summary.json": "1db2840e394f1d087fd78e979802e184e9d212f3dfeaf2ff34f3d0d56cee474d"
+  }
+}

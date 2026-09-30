@@ -1,0 +1,41 @@
+{
+  "figure_id": "M2_SOURCE_MODEL_GRADIENT_REVERSAL_V1_FIGURE",
+  "backend": "Python/matplotlib",
+  "physical_size_mm": [
+    180,
+    90
+  ],
+  "raster_dpi": {
+    "png": 300,
+    "tiff": 600
+  },
+  "python": "3.9.6",
+  "numpy": "2.0.2",
+  "matplotlib": "3.9.4",
+  "inputs_sha256": {
+    "plot_source": "d647fbdfd77ff467631c992d07eb5e800f8415ab31c5625c277519168e850391",
+    "figure_contract": "51b713bd98350bad30536e6f7bc46571ba7d15149975476e8d54664516e9c44a",
+    "figure_legend": "6f8dd4f8e2732899caef76adf96fbac613ca895a6d59d5ed0867350366988fa6",
+    "paired_seed_block_metrics": "9b8f7bf6320a5cb36113768317e320a3adab17d7762fc83427be341055af834e",
+    "experiment_summary": "1db2840e394f1d087fd78e979802e184e9d212f3dfeaf2ff34f3d0d56cee474d",
+    "simulation_manifest": "0ed3436e5a8d97017c7a35653a0db566a136a77db77355bd9fc5e342dde7cf00"
+  },
+  "outputs_sha256": {
+    "Figure_M2_SOURCE_MODEL_GRADIENT_REVERSAL_V1.pdf": "3b1e16d3ab3c04d2b0d9400f9316201aedc35de8fa9d7fa31d5727ce084023ef",
+    "Figure_M2_SOURCE_MODEL_GRADIENT_REVERSAL_V1.svg": "8994e7143043b00b7df6945cdd0befda45a0f73b84fbdab741db973ef06e275a",
+    "Figure_M2_SOURCE_MODEL_GRADIENT_REVERSAL_V1.tiff": "dce2a622941396c2d50fc594d2fc4a2c67bfd8d225c920bd0b84f5b26e02fe77",
+    "Figure_M2_SOURCE_MODEL_GRADIENT_REVERSAL_V1.png": "ef9c8bfe7a2ec482901a935d78f01268291a52b360817976046b689395afc956",
+    "figure_source_data.csv": "b3b43b083f3c31688606daa648686e0e0cee31359f42272740c4bf65971ace7f",
+    "Figure_M2_SOURCE_MODEL_GRADIENT_REVERSAL_V1.alignment.json": "5a3b2086495dba971d7e01af4299ba59033ecb3f4928298a5ef90685fc93209b",
+    "Figure_M2_SOURCE_MODEL_GRADIENT_REVERSAL_V1.alignment-audit.json": "5a3b2086495dba971d7e01af4299ba59033ecb3f4928298a5ef90685fc93209b",
+    "Figure_M2_SOURCE_MODEL_GRADIENT_REVERSAL_V1.collision-audit.json": "348564b08bf203041cad899a96d08dc901c3d5bc702cb56fe4bae754e61dacf8",
+    "Figure_M2_SOURCE_MODEL_GRADIENT_REVERSAL_V1.text-audit.json": "aa54c4203053d8dfcef8c5faf6cffb7355f6407cef79f165b719ab396bc3ab47",
+    "Figure_M2_SOURCE_MODEL_GRADIENT_REVERSAL_V1.source-audit.json": "f9705344b2c3db3f34c164032fbe6d8c2ff2d8725b457e65660593058c5707c6"
+  },
+  "qa": {
+    "panel_alignment": "PASS",
+    "pdf_text_minimum_pt": 6.5,
+    "collision_audit": "PASS",
+    "source_preflight": "PASS"
+  }
+}

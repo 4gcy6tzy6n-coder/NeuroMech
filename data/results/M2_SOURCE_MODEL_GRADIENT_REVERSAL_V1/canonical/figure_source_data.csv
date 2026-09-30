@@ -1,0 +1,26 @@
+reversal_interval_s,panel,series,mean,ci95_low,ci95_high,n_seed_blocks,positive_seed_blocks,uncertainty
+0.0,a_paired_progress_contrast,Sensory − no feedback,0.07901900114110315,0.07187244304152496,0.08621039227878083,100,98,paired percentile bootstrap over seed blocks; 20000 resamples
+0.0,a_paired_progress_contrast,Sensory − output site†,0.10271411386829929,0.08344408522577924,0.12226625726056609,100,82,paired percentile bootstrap over seed blocks; 20000 resamples
+0.0,b_forward_occupancy,Sensory-site feedback,0.17118066666666668,0.16892546333333336,0.17344347000000004,100,,percentile bootstrap over seed blocks; 20000 resamples
+0.0,b_forward_occupancy,Output-site feedback,1.0,1.0,1.0,100,,percentile bootstrap over seed blocks; 20000 resamples
+0.0,b_forward_occupancy,No feedback,0.043481066666666665,0.043008933333333325,0.043960813333333335,100,,percentile bootstrap over seed blocks; 20000 resamples
+40.0,a_paired_progress_contrast,Sensory − no feedback,0.09084859782170925,0.08606353113246637,0.0956407137918287,100,100,paired percentile bootstrap over seed blocks; 20000 resamples
+40.0,a_paired_progress_contrast,Sensory − output site†,0.10932618056438338,0.10325412090247366,0.11534407304734184,100,100,paired percentile bootstrap over seed blocks; 20000 resamples
+40.0,b_forward_occupancy,Sensory-site feedback,0.16150039999999996,0.15958633666666663,0.16343613333333334,100,,percentile bootstrap over seed blocks; 20000 resamples
+40.0,b_forward_occupancy,Output-site feedback,1.0,1.0,1.0,100,,percentile bootstrap over seed blocks; 20000 resamples
+40.0,b_forward_occupancy,No feedback,0.04333453333333332,0.04288093000000001,0.04380253666666667,100,,percentile bootstrap over seed blocks; 20000 resamples
+20.0,a_paired_progress_contrast,Sensory − no feedback,0.0737926483891799,0.07066425445032583,0.07692502715842774,100,100,paired percentile bootstrap over seed blocks; 20000 resamples
+20.0,a_paired_progress_contrast,Sensory − output site†,0.0851476555071558,0.08208135828308334,0.08822414177734723,100,100,paired percentile bootstrap over seed blocks; 20000 resamples
+20.0,b_forward_occupancy,Sensory-site feedback,0.15130506666666668,0.14939785333333336,0.15314947666666667,100,,percentile bootstrap over seed blocks; 20000 resamples
+20.0,b_forward_occupancy,Output-site feedback,1.0,1.0,1.0,100,,percentile bootstrap over seed blocks; 20000 resamples
+20.0,b_forward_occupancy,No feedback,0.04317746666666667,0.04271413000000002,0.04364947333333333,100,,percentile bootstrap over seed blocks; 20000 resamples
+10.0,a_paired_progress_contrast,Sensory − no feedback,0.04329482812266249,0.041242926679459786,0.045303930171799456,100,100,paired percentile bootstrap over seed blocks; 20000 resamples
+10.0,a_paired_progress_contrast,Sensory − output site†,0.05084153904661006,0.048829244650988764,0.052870704642311576,100,100,paired percentile bootstrap over seed blocks; 20000 resamples
+10.0,b_forward_occupancy,Sensory-site feedback,0.13699733333333333,0.13550210000000001,0.1385053433333333,100,,percentile bootstrap over seed blocks; 20000 resamples
+10.0,b_forward_occupancy,Output-site feedback,1.0,1.0,1.0,100,,percentile bootstrap over seed blocks; 20000 resamples
+10.0,b_forward_occupancy,No feedback,0.043102,0.04262706333333333,0.04359347,100,,percentile bootstrap over seed blocks; 20000 resamples
+5.0,a_paired_progress_contrast,Sensory − no feedback,0.01034661307056236,0.009336597858276204,0.01136909413154697,100,96,paired percentile bootstrap over seed blocks; 20000 resamples
+5.0,a_paired_progress_contrast,Sensory − output site†,0.017080176970025465,0.01603857967416667,0.018096316752136313,100,99,paired percentile bootstrap over seed blocks; 20000 resamples
+5.0,b_forward_occupancy,Sensory-site feedback,0.12420866666666665,0.12288850999999999,0.12557800666666666,100,,percentile bootstrap over seed blocks; 20000 resamples
+5.0,b_forward_occupancy,Output-site feedback,1.0,1.0,1.0,100,,percentile bootstrap over seed blocks; 20000 resamples
+5.0,b_forward_occupancy,No feedback,0.04284133333333333,0.04239226333333332,0.04330306999999999,100,,percentile bootstrap over seed blocks; 20000 resamples
