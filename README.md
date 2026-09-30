@@ -11,7 +11,7 @@ The project is converging on **two mechanism-grounded studies plus one shared ar
 | Line | Biological question | Current artificial evidence |
 |---|---|---|
 | **M1 — higher-order visual-motion correction** | What does a source-defined third-order correction contribute to fly motion estimation? | The existing RR19 natural-scene run is partial and exploratory. H1/H3 were in the predicted direction, while the phase-mismatched specificity contrast H2 was in the opposite direction. H4 and an overall four-hypothesis verdict are not established. See [partial results](experiments/m1_higher_order/RR19_STEP4_PARTIAL_RESULTS.md). |
-| **M2 — motor-state feedback and sensory context** | Does the relation between motor-state timing and sensory/environmental context contribute to thermotaxis in the RIM–AIY model? | Full mode-trajectory replay yielded a positive sensory-minus-replay direction contrast, while a low-noise reverse-tail mismatch remains. In a synthetic probe, a four-parameter state-conditioned update beat an additive RNN only in the aligned mapping; against a four-parameter bilinear tanh RNN, it scored lower MSE in all mappings, including reversed. Thus the current artificial advantage is comparator-sensitive and not isolated to aligned context. These exploratory results neither identify a unique feedback site nor establish biological/AI transfer. See [replay results](summery/M2_STATE_TRAJECTORY_REPLAY_V1/), [V1](summery/M2_LOW_DATA_GATING_V1/), and [V2](summery/M2_LOW_DATA_GATING_V2/). |
+| **M2 — motor-state feedback and sensory context** | Does the relation between motor-state timing and sensory/environmental context contribute to thermotaxis in the RIM–AIY model? | Full mode-trajectory replay yielded a positive sensory-minus-replay contrast, with a low-noise reverse-tail mismatch. In the newest synthetic benchmark, state-conditioned gain beat the context-free filter only in the aligned mapping and fell behind it under independent/reversed mappings; a Kalman oracle remained better in every mapping. V1/V2/V3 show comparator-sensitive results and do not establish biological/AI transfer. See [replay](summery/M2_STATE_TRAJECTORY_REPLAY_V1/), [V1](summery/M2_LOW_DATA_GATING_V1/), [V2](summery/M2_LOW_DATA_GATING_V2/), and [V3](summery/M2_LOW_DATA_GATING_V3/). |
 | **Cross-mechanism benchmark** | Do mechanism-specific computations outperform capacity-matched generic controls under the task conditions that make those computations relevant? | A shared benchmark is in development. M1 and M2 use distinct tasks and native outcome measures; raw scores will not be pooled. See the [project convergence record](summery/PROJECT_CONVERGENCE_20261001/CONVERGENCE.md). |
 
 ### Converged experimental package
@@ -39,6 +39,16 @@ V2 replaced the additive comparator with a four-parameter bilinear tanh recurren
 - [Contract, results and failure analysis](summery/M2_LOW_DATA_GATING_V2/)
 - [Runner and independent verifier](model/M2_LOW_DATA_GATING_V2/)
 - [Episode-level outcomes and manifest](data/results/M2_LOW_DATA_GATING_V2/)
+
+## Follow-up: M2 conditional-update benchmark V3
+
+V3 added a no-context constant-gain filter, a five-parameter free linear bilinear update, and a Kalman oracle using each test sequence's known dynamics. Across four data sizes, the state-conditioned filter beat the constant-gain ablation by `0.00899` MSE in ALIGNED evaluation (95% seed-bootstrap interval `[0.00847, 0.00946]`, 20/20 positive) and beat the bilinear update by `0.00656` (`[0.00614, 0.00695]`). Under mapping shifts, the context-free filter was better: mean MSE `0.0532` vs `0.0675` in INDEPENDENT and `0.0662` vs `0.0981` in REVERSED. The Kalman oracle remained best in all three conditions.
+
+This supports a task-bounded synthetic result: context-dependent gain helps when context marks the informative channel and harms when that relation changes. The mapping was imposed in the artificial task and is not established as the worm's measured computation. It therefore does not close the biological-to-AI transfer claim.
+
+- [Contract, results and failure analysis](summery/M2_LOW_DATA_GATING_V3/)
+- [Runner and independent verifier](model/M2_LOW_DATA_GATING_V3/)
+- [Episode outcomes and manifest](data/results/M2_LOW_DATA_GATING_V3/)
 
 ## Active integrated study: O3 AIY state-pattern rescue
 

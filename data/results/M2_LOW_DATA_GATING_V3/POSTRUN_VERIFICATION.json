@@ -1,0 +1,18 @@
+{
+  "status": "PASS",
+  "episode_rows": 245760,
+  "training_fit_rows": 240,
+  "paired_seed_units": 20,
+  "primary_mean": 0.006557610047138951,
+  "primary_ci95": [
+    0.006140394079498037,
+    0.006948323759196455
+  ],
+  "primary_positive_seeds": 20,
+  "context_ablation_mean": 0.008988488612635593,
+  "context_ablation_ci95": [
+    0.008474562800133754,
+    0.009464645824413651
+  ],
+  "artifact_hashes": "PASS"
+}

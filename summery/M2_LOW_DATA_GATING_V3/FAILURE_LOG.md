@@ -1,0 +1,9 @@
+# M2 conditional-update benchmark V3 — limitations and failure notes
+
+The gate's benefit is conditional on the imposed ALIGNED mapping. When `q` no longer marks the informative channel, the context-free filter beats it: average MSE is 0.0532 vs 0.0675 in INDEPENDENT and 0.0662 vs 0.0981 in REVERSED. Treating this as a robust model would hide a large distribution-shift penalty.
+
+The task-aware Kalman reference remains better in every mapping (mean MSE 0.0418–0.0543). The structured filter therefore does not reach the known-parameter inference solution. The free linear bilinear recurrence, which has one more parameter, is worse than the structured filter in this training regime; this could reflect the efficiency of the constrained update, but it could also reflect parameterization or optimization. This is not evidence that biological structure is intrinsically superior.
+
+Across V1–V3, comparator choice changes the relative ranking: V1's additive recurrent model outperformed the gate under mapping shift; V2's bilinear tanh model was worse in all mappings; V3's context-free filter wins under shifts while its richer bilinear model is weaker. Preserve these outcomes together. The current best-supported synthetic statement is conditional: hard-wiring context-dependent sensory gains helps in an aligned observation model and becomes harmful under mismatch. The same alignment property has not been established as the biological circuit's defining computation.
+
+The experiment uses a one-dimensional Gaussian AR(1) task, fixed mapping families, one training procedure, and known task parameters for its oracle. It does not test behavior, a naturalistic task, or an artificial neural network architecture family. Training/evaluation wall times are CPU-specific. A next useful transfer test must use a task family defined independently of this observation equation and retain the context-free, free-interaction, and task-aware references.

@@ -1,0 +1,61 @@
+{
+  "experiment_id": "M2_LOW_DATA_GATING_V3",
+  "classification": "POST_RESULT_EXPLORATORY_ARTIFICIAL_BENCHMARK",
+  "python": "3.9.6",
+  "numpy": "2.0.2",
+  "torch": "2.8.0",
+  "contract_sha256": "e409d1cf3c476779b8d53d541591640b72d9840f7e3e93cf515aac5e199a7989",
+  "runner_sha256": "0e9e7b9b29f39f0b1996237e43778afe88a188f1193808b4ad5f082ba1f8ba25",
+  "config": {
+    "seeds": [
+      72000,
+      72019
+    ],
+    "train_sizes": [
+      16,
+      64,
+      256,
+      1024
+    ],
+    "conditions": [
+      "ALIGNED",
+      "INDEPENDENT",
+      "REVERSED"
+    ],
+    "arms": [
+      "MODE_GAIN_FILTER",
+      "CONSTANT_GAIN_FILTER",
+      "LINEAR_BILINEAR_RNN",
+      "KALMAN_ORACLE"
+    ],
+    "test_sequences_per_seed_condition": 256,
+    "sequence_length": 160,
+    "updates": 250,
+    "batch_size": 16,
+    "bootstrap_resamples": 20000,
+    "bootstrap_seed": 20261003
+  },
+  "preflight_checks": [
+    {
+      "arm": "MODE_GAIN_FILTER",
+      "parameter_count": 4,
+      "finite": true
+    },
+    {
+      "arm": "CONSTANT_GAIN_FILTER",
+      "parameter_count": 3,
+      "finite": true
+    },
+    {
+      "arm": "LINEAR_BILINEAR_RNN",
+      "parameter_count": 5,
+      "finite": true
+    },
+    {
+      "arm": "KALMAN_ORACLE",
+      "parameter_count": 0,
+      "finite": true
+    }
+  ],
+  "outcomes_computed": false
+}

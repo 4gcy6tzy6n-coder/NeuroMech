@@ -1,0 +1,7 @@
+<hr/>
+<h2>实验代号：M2_LOW_DATA_GATING_V3 — 线性控制、上下文消融与 Kalman 参考</h2>
+<p>实验目标：用新种子区分状态条件门控收益与更新方程/优化形式差异。对照包括 4 参数状态条件增益、3 参数常数增益（无上下文）滤波器、5 参数自由线性双线性递归更新，以及使用每条测试序列真实生成参数的 Kalman 参考。</p>
+<p>实验结果：20 个种子、4 档数据量下，ALIGNED 条件中状态条件滤波器相对常数增益的 MSE 降低 0.00899（95% CI [0.00847, 0.00946]，20/20 种子同向），相对线性双线性更新降低 0.00656（[0.00614, 0.00695]）。跨数据量平均 MSE：ALIGNED 为 mode 0.0569、constant 0.0659、bilinear 0.0635、Kalman 0.0538；INDEPENDENT 为 0.0675、0.0532、0.0798、0.0418；REVERSED 为 0.0981、0.0662、0.1120、0.0543。</p>
+<p>实验分析：支持的人工任务结论是条件性的：当上下文标记了信息性观测通道时，状态条件增益优于无上下文消融；映射独立或反转时，无上下文滤波器反而更好，Kalman 参考在三种映射下均最好。该状态—观测映射由合成任务设定，不是线虫回路已测得的计算机制。本轮支持一个明确的人工边界，尚未建立生物机制迁移或广义 AI 优势。</p>
+<p>资源与复核：学习模型每次拟合 250 次更新、16 序列批次、640,000 个序列步 token；参数量分别为 4、3、5。独立复核通过 245,760 条 held-out 记录、240 次模型拟合、Kalman 参考重算、两个预设种子级对比和 SHA-256 校验。</p>
+<p>代码、数据与失败经验：<a href="https://github.com/4gcy6tzy6n-coder/NeuroMech/tree/experiment-publication/model/M2_LOW_DATA_GATING_V3">model</a>；<a href="https://github.com/4gcy6tzy6n-coder/NeuroMech/tree/experiment-publication/data/results/M2_LOW_DATA_GATING_V3">data/results</a>；<a href="https://github.com/4gcy6tzy6n-coder/NeuroMech/tree/experiment-publication/summery/M2_LOW_DATA_GATING_V3">summery</a>。</p>
