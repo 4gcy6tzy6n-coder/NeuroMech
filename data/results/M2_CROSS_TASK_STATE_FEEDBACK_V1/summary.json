@@ -1,0 +1,130 @@
+{
+  "experiment": "M2_CROSS_TASK_STATE_FEEDBACK_V1",
+  "classification": "EXPLORATORY_ARTIFICIAL_TRANSFER_TEST_POST_RESULT_RELATIVE_TO_PROJECT",
+  "question": "Does an explicit context-conditioned sensory update improve latent-state estimation over a four-parameter generic scalar RNN when the context predicts sensor reliability?",
+  "primary_condition": "ALIGNED",
+  "primary_estimand": "GENERIC_RNN_1D episode MSE minus MODE_GAIN_FILTER episode MSE; positive favors mode-conditioned gain",
+  "primary": {
+    "mean": 0.1040133026559488,
+    "ci95_crossed_bootstrap": [
+      0.09321049860493076,
+      0.11569227886075166
+    ],
+    "positive_seed_means": 20,
+    "n_train_seeds": 20,
+    "n_test_episodes": 512
+  },
+  "by_condition": {
+    "ALIGNED": {
+      "policies": {
+        "MODE_GAIN_FILTER": {
+          "mean_episode_mse": 0.1544762897785404,
+          "mean_episode_mae": 0.2969693701947108
+        },
+        "GENERIC_RNN_1D": {
+          "mean_episode_mse": 0.25848959243448916,
+          "mean_episode_mae": 0.39161983254016375
+        },
+        "CONSTANT_GAIN_FILTER": {
+          "mean_episode_mse": 0.18076129187102197,
+          "mean_episode_mae": 0.33296216448943594
+        },
+        "CURRENT_OBSERVATION": {
+          "mean_episode_mse": 1.0286630255868658,
+          "mean_episode_mae": 0.6645067643839866
+        },
+        "KALMAN_LINEAR_REFERENCE": {
+          "mean_episode_mse": 0.15613142741494812,
+          "mean_episode_mae": 0.2994462506030686
+        }
+      },
+      "primary_family_contrast": {
+        "generic_minus_mode_gain_mse": 0.1040133026559488,
+        "crossed_95_percent_bootstrap_interval": [
+          0.09321049860493076,
+          0.11569227886075166
+        ],
+        "positive_training_seed_means": 20,
+        "n_training_seeds": 20,
+        "n_test_episodes": 512
+      }
+    },
+    "INDEPENDENT": {
+      "policies": {
+        "MODE_GAIN_FILTER": {
+          "mean_episode_mse": 0.2204612980603997,
+          "mean_episode_mae": 0.36334537850925697
+        },
+        "GENERIC_RNN_1D": {
+          "mean_episode_mse": 0.2621657872405194,
+          "mean_episode_mae": 0.39678487023629716
+        },
+        "CONSTANT_GAIN_FILTER": {
+          "mean_episode_mse": 0.17322806804077118,
+          "mean_episode_mae": 0.32971028688334625
+        },
+        "CURRENT_OBSERVATION": {
+          "mean_episode_mse": 0.9978012747596949,
+          "mean_episode_mae": 0.6549610499059781
+        },
+        "KALMAN_LINEAR_REFERENCE": {
+          "mean_episode_mse": 0.17613704450195655,
+          "mean_episode_mae": 0.33267743975738995
+        }
+      },
+      "primary_family_contrast": {
+        "generic_minus_mode_gain_mse": 0.04170448918011971,
+        "crossed_95_percent_bootstrap_interval": [
+          0.029655846680834656,
+          0.05474323306723817
+        ],
+        "positive_training_seed_means": 20,
+        "n_training_seeds": 20,
+        "n_test_episodes": 512
+      }
+    },
+    "REVERSED": {
+      "policies": {
+        "MODE_GAIN_FILTER": {
+          "mean_episode_mse": 0.2985540718145785,
+          "mean_episode_mae": 0.42296826720703395
+        },
+        "GENERIC_RNN_1D": {
+          "mean_episode_mse": 0.2633909939242585,
+          "mean_episode_mae": 0.3942254199806484
+        },
+        "CONSTANT_GAIN_FILTER": {
+          "mean_episode_mse": 0.1773908618495625,
+          "mean_episode_mae": 0.3301070689645712
+        },
+        "CURRENT_OBSERVATION": {
+          "mean_episode_mse": 1.0010971875744872,
+          "mean_episode_mae": 0.6539887230028398
+        },
+        "KALMAN_LINEAR_REFERENCE": {
+          "mean_episode_mse": 0.1526864139814279,
+          "mean_episode_mae": 0.29591308388626203
+        }
+      },
+      "primary_family_contrast": {
+        "generic_minus_mode_gain_mse": -0.035163077890319985,
+        "crossed_95_percent_bootstrap_interval": [
+          -0.04811296527255763,
+          -0.021314594741052146
+        ],
+        "positive_training_seed_means": 0,
+        "n_training_seeds": 20,
+        "n_test_episodes": 512
+      }
+    }
+  },
+  "analysis_unit": "crossed training seed and common held-out episode; time steps averaged within episode",
+  "biological_claim": "none; this is a synthetic task and one algorithmic abstraction inspired by published cell-class evidence",
+  "limitations": [
+    "the observation-reliability association with context is an artificial assumption, not established by the worm source study",
+    "the M2 biology and prior M2 artificial outcomes were known before this new task family; exploratory, not confirmatory",
+    "the primary generic RNN has one scalar recurrent state and four parameters; it does not represent a broad neural-network baseline family",
+    "the linear Kalman reference uses known task dynamics and conditional expected variance and is not capacity matched",
+    "this single synthetic estimation family cannot establish broad AI benefit or biological implementation"
+  ]
+}

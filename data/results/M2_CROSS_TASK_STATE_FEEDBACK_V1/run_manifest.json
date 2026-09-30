@@ -1,0 +1,63 @@
+{
+  "experiment": "M2_CROSS_TASK_STATE_FEEDBACK_V1",
+  "train_seed_range": [
+    42000,
+    42019
+  ],
+  "n_train_episodes_per_seed": 256,
+  "test_episode_count_per_condition": 512,
+  "horizon": 160,
+  "train_updates": 120,
+  "condition_order": [
+    "ALIGNED",
+    "INDEPENDENT",
+    "REVERSED"
+  ],
+  "policy_order": [
+    "MODE_GAIN_FILTER",
+    "GENERIC_RNN_1D",
+    "CONSTANT_GAIN_FILTER",
+    "CURRENT_OBSERVATION",
+    "KALMAN_LINEAR_REFERENCE"
+  ],
+  "primary_trainable_parameter_counts": {
+    "MODE_GAIN_FILTER": 4,
+    "GENERIC_RNN_1D": 4
+  },
+  "bootstrap_seed": 20261005,
+  "bootstrap_resamples": 20000,
+  "contract_sha256": "d56866f6c7f5e34b198f697744adae6903ade4f52c1f0c63d4b0f49e1f1a8dfa",
+  "runner_sha256": "6cece04266e613d055b38df4f3acff4b382b58e08ec290b99b745cf01ad53522",
+  "runtime": {
+    "python": "3.9.6",
+    "numpy": "2.0.2",
+    "torch": "2.8.0"
+  },
+  "row_counts": {
+    "episode_metrics": 153600,
+    "learned_parameters": 60,
+    "training_curves": 120
+  },
+  "output_sha256": {
+    "episode_metrics.csv": "2a84aa976b14617a07007778bc1ea54b40850df7797c033cdd4f790e6df25c12",
+    "learned_parameters.csv": "f500ea6a4535a76c780ae6be8e9d000af79bf353b9506ab7560e6fee614f0d79",
+    "training_curves.csv": "12bb1215a78deacb3ef62334c9ad878918d7b416bf1ca4c9604fc037165487f6",
+    "summary.json": "977585ed6946b9a7f5246dc5bec9afa6d02cf732c74eb4b9af3318620ddac38d"
+  },
+  "figure_artifacts": {
+    "source": "model/M2_CROSS_TASK_STATE_FEEDBACK_V1/plot_results.py",
+    "derived_after_run": true,
+    "qa": {
+      "static_preflight": "PASS",
+      "pdf_text_minimum_pt": 8,
+      "collision_audit": "PASS",
+      "visual_inspection": "PASS"
+    },
+    "files": {
+      "m2_cross_task_primary_contrast.pdf": "e7e09272eeaa6de3fbe75b9dc793c439c1b71ecb5593cf626658bafe9fc005cf",
+      "m2_cross_task_primary_contrast.png": "98f76cc914df2f0ef3258bbbe9103c0ca4d06cdc8856eb5832647d2eacf588a7",
+      "m2_cross_task_primary_contrast.svg": "cc8f249fd86dd869e5630eb31d87d5ea667309af1d51e1ab0cd90e17fa05f4d5",
+      "m2_cross_task_primary_contrast.tiff": "b64c8470cdc783d5c76487b30043f8a3298cd847175f3e9c723c53c8b873b8b8"
+    }
+  }
+}

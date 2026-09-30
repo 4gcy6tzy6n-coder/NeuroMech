@@ -1,0 +1,19 @@
+{
+  "status": "PASS",
+  "checks": [
+    "row_schema_and_completeness",
+    "primary_parameter_count",
+    "output_hashes",
+    "primary_estimate_and_crossed_bootstrap_recomputed"
+  ],
+  "metric_rows": 153600,
+  "training_parameter_rows": 60,
+  "training_curve_rows": 120,
+  "primary_mean_recomputed": 0.1040133026559488,
+  "primary_ci95_recomputed": [
+    0.09321049860493076,
+    0.11569227886075166
+  ],
+  "positive_train_seed_means_recomputed": 20,
+  "episode_metrics_sha256": "2a84aa976b14617a07007778bc1ea54b40850df7797c033cdd4f790e6df25c12"
+}
