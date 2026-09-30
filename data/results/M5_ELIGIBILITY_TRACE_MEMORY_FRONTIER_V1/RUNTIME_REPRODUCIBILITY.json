@@ -1,0 +1,24 @@
+{
+  "experiment": "M5_ELIGIBILITY_TRACE_MEMORY_FRONTIER_V1",
+  "comparison": "Python 3.9.6 / NumPy 2.0.2 (Apple Accelerate) versus Python 3.12.13 / NumPy 2.4.4",
+  "python39_diagnostic": {
+    "warnings": [
+      "divide-by-zero at matrix multiplication sites",
+      "overflow at matrix multiplication sites",
+      "invalid-operation at matrix multiplication sites"
+    ],
+    "all_saved_accuracy_values_finite": true,
+    "n_rows": 2430
+  },
+  "python312_canonical": {
+    "warnings_observed": false,
+    "all_saved_accuracy_values_finite": true,
+    "n_rows": 2430
+  },
+  "comparison": {
+    "row_level_accuracy_csv_byte_identical": true,
+    "max_absolute_accuracy_difference": 0.0,
+    "sha256_both": "9f3b8a66cfaf37f8f9ae8f0cc8269129d7a84035c7363da2e2760cf7bd1ca0f9",
+    "disposition": "Python 3.12 output is canonical; Python 3.9 output is retained as a runtime diagnostic."
+  }
+}

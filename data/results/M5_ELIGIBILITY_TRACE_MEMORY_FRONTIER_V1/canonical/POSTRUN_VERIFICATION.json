@@ -1,0 +1,17 @@
+{
+  "status": "PASS",
+  "rows": 2430,
+  "unique_condition_keys": 2430,
+  "fresh_task_seed_range": [
+    30,
+    59
+  ],
+  "all_scores_finite_and_bounded": true,
+  "memory_accounting_matches_contract": true,
+  "primary_mean_trace_minus_horizon1": 0.21914444444444442,
+  "primary_task_seed_bootstrap_95ci": [
+    0.20940740740740746,
+    0.2286741666666667
+  ],
+  "positive_seed_count": 30
+}

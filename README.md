@@ -110,7 +110,7 @@ This is a post-result synthetic optimization study. It supports a narrow short-d
 - [Runner and independent verifier](model/M5_ELIGIBILITY_TEMPORAL_XOR_V2/)
 - [Episode outcomes and manifest](data/results/M5_ELIGIBILITY_TEMPORAL_XOR_V2/)
 
-## M5/M8 boundary analysis: local trace versus equal-budget history
+## M8 secondary analysis: equal-budget replay versus truncated history
 
 A post-result analysis of the M8 delayed-credit benchmark compared exact replay with a truncated horizon storing the same nominal number of recent feature values (`D × 64`). Exact replay exceeded the matched horizon by `0.3082` absolute held-out accuracy (30.82 percentage points; paired task-seed bootstrap 95% interval `[0.3019, 0.3142]`; 30/30 task seeds favored replay). The advantage increased with delay, from `0.2079` at D=4 to `0.4271` at D=64.
 
@@ -119,6 +119,12 @@ This is a boundary result for one synthetic random-feature task: the truncated-h
 - [Analysis contract, result and limitations](summery/M8_MEMORY_MATCHED_REPLAY_ANALYSIS/)
 - [Analysis script](model/M8_MEMORY_MATCHED_REPLAY_ANALYSIS/)
 - [Archived source metrics and regenerated outputs](data/results/M8_MEMORY_MATCHED_REPLAY_ANALYSIS/)
+
+## M5 fresh-seed test: eligibility trace on an accuracy–memory frontier
+
+The M5-style eligibility trace was added to the same synthetic delayed-credit task family on task seeds 30–59, disjoint from M8's seeds. It exceeded the immediate-feature update by `+0.2191` held-out accuracy on average (paired task-seed bootstrap 95% interval `[+0.2094, +0.2287]`; 30/30 seeds positive). Mean accuracy was `0.5473` with 64 active feature-history values, compared with `0.5215` for the 4,096-value `HORIZON_64` arm and `0.7480` for exact replay. The effect varied with delay and autocorrelation; shorter-delay finite horizons won in several cells.
+
+This is an exploratory result on one artificial task generator selected after earlier outcomes. The memory count is algorithmic state accounting, not measured RAM or energy. The trace does not beat exact replay, and the experiment does not validate a biological synaptic eligibility trace. See the [contract, results, and runtime failure record](summery/M5_ELIGIBILITY_TRACE_MEMORY_FRONTIER_V1/), [model and verifier](model/M5_ELIGIBILITY_TRACE_MEMORY_FRONTIER_V1/), and [fresh-seed outputs](data/results/M5_ELIGIBILITY_TRACE_MEMORY_FRONTIER_V1/).
 
 ## Previous experiment: M2 closed-loop active-sensing transfer V1
 

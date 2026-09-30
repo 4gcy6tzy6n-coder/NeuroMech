@@ -1,0 +1,45 @@
+{
+  "experiment": "M5_ELIGIBILITY_TRACE_MEMORY_FRONTIER_V1",
+  "classification": "POST_RESULT_EXPLORATORY_FRESH_TASK_SEEDS",
+  "master_seed": 20260930,
+  "task_seed_range": [
+    30,
+    59
+  ],
+  "rho_values": [
+    0.0,
+    0.5,
+    0.9
+  ],
+  "delays": [
+    4,
+    16,
+    64
+  ],
+  "horizons": [
+    1,
+    2,
+    4,
+    8,
+    16,
+    32,
+    64
+  ],
+  "n_train": 3000,
+  "n_test": 1000,
+  "n_rows": 2430,
+  "gamma": 0.98,
+  "learning_rate": 0.01,
+  "python": "3.12.13",
+  "numpy": "2.4.4",
+  "input_sha256": {
+    "contract": "3cc16ca221c33b3a678e8d6ce9502e680cfa589c61fea1a836ce853cec841a54",
+    "runner": "5af705047d5ab4d3dacdc4ce95b02bf46fe45463acd51e55613cbb96888f8af9",
+    "task_generator": "436389f391a7f5052f6e862054724bfdac3c00b5b7184eb06c11561adfd2cfa9"
+  },
+  "output_sha256": {
+    "task_metrics.csv": "9f3b8a66cfaf37f8f9ae8f0cc8269129d7a84035c7363da2e2760cf7bd1ca0f9",
+    "summary.json": "ff1d98225c734cd67d22cfafd5c7fcb8f51bfe9c5003ba98a31b2c1597f7f98b",
+    "primary_seed_contrasts.csv": "4b02640bddf9741f75db21385300ec31e8ba70e01be16970e58fb9793b7d0d3f"
+  }
+}
