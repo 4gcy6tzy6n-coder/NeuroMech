@@ -14,6 +14,12 @@ The project is converging on a small set of mechanism-grounded studies rather th
 | **M2 — motor-state feedback** | How does RIM-dependent motor-state feedback shape AIY sensory representation and persistence in *C. elegans* thermotaxis? | A synthetic transfer test finds context-conditioned sensory updating helps when context predicts observation reliability, but its advantage reverses when that mapping is reversed. This is conditional algorithmic evidence, not biological validation or broad AI evidence. See [M2 transfer results](summery/M2_CROSS_TASK_STATE_FEEDBACK_V1/RESULTS.md). |
 | **Cross-mechanism benchmark** | Do mechanism-specific computations outperform capacity-matched generic controls under the task conditions that make those computations relevant? | A shared benchmark is in development. M1 and M2 use distinct tasks and native outcome measures; raw scores will not be pooled. See the [project convergence record](summery/PROJECT_CONVERGENCE_20261001/CONVERGENCE.md). |
 
+## Active integrated study: O3 AIY state-pattern rescue
+
+The next mainline study is a prospective *C. elegans* thermotaxis experiment asking whether restoring the forward-state timing of AIY activity under RIM perturbation rescues thermosensory gating and forward-run persistence. Its decisive control is the same AIY stimulation waveform delivered at yoked times, matched for total light exposure. Broad motor-state sensory gating and AIY optogenetic control are already established; the candidate contribution is the specific timing-dependent rescue in the RIM–AIY thermotaxis circuit, not the general phenomenon. The focused literature audit and executable design outline are in [O3 route plan](experiments/biological_validation/O3_AIY_STATE_RESCUE_NOVELTY_AND_EXECUTION_PLAN.md).
+
+The current M2 AI-side experiment remains an exploratory synthetic boundary test. Its sensor-reliability mapping is not established by the worm study and will not serve as the central biological transfer claim. An artificial state-gated update benchmark can continue in parallel with experimental preparation, but its result remains conditional until the biological computation is directly tested.
+
 ## Latest experiment: M2 context-conditioned update transfer V1
 
 The mode-conditioned gain filter was compared with a four-parameter scalar RNN on a synthetic latent-state estimation task. The primary aligned-condition contrast `MSE(RNN) − MSE(mode-gain filter)` was `+0.10401` (crossed 95% bootstrap interval `[+0.09321, +0.11569]`; 20/20 training-seed means positive). The effect was conditional: with context independent of sensor reliability, the context-free filter had lower mean MSE than the mode-conditioned filter; when the learned context/reliability mapping was reversed, the RNN outperformed the mode-conditioned filter (`−0.03516`, interval `[−0.04811, −0.02131]`).
@@ -41,11 +47,10 @@ Reproduce to a fresh result directory from the repository root with:
 ```bash
 python3 model/M2_FEEDBACK_SITE_SPECIFICITY_V4/run_experiment.py \
   --output-dir data/results/M2_FEEDBACK_SITE_SPECIFICITY_V4_RERUN
-python3 model/M2_FEEDBACK_SITE_SPECIFICITY_V4/verify_results.py \
-  --results-dir data/results/M2_FEEDBACK_SITE_SPECIFICITY_V4_RERUN
+python3 model/M2_FEEDBACK_SITE_SPECIFICITY_V4/verify_results.py
 ```
 
-The runner refuses to overwrite an existing output directory. The exact executed script is preserved as `run_experiment_executed.py` beside the current runner. Omitting `--results-dir` verifies the archived result.
+The runner refuses to overwrite an existing output directory. The original executed code is preserved as `run_experiment_executed.py`; the current runner adds output-directory selection for reproducibility. To verify the archived result, run the verifier without arguments.
 
 ## Repository layout
 
