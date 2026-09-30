@@ -24,6 +24,6 @@
 
 ### 复现与归档
 
-合同、runner、原始模拟指标、校准数据、summary、manifest 和独立校验文件均单独归档于 NeuroMech 的 `experiment-publication` 分支。本实验独立形成一个提交；下方 GitHub 链接在推送完成后补入。
+合同、runner、原始模拟指标、校准数据、summary、manifest 和独立校验文件均单独归档于 NeuroMech 的 `experiment-publication` 分支。GitHub 实验提交：[f7e95d9](https://github.com/4gcy6tzy6n-coder/NeuroMech/commit/f7e95d9131ae35a9f9e51a1347d14b24897bca44)；[实验结果与代码目录](https://github.com/4gcy6tzy6n-coder/NeuroMech/tree/experiment-publication/summery/M2_FEEDBACK_SITE_SPECIFICITY_V3)。
 
 ---
