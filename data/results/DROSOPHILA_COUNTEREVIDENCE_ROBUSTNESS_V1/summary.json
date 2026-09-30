@@ -1,0 +1,281 @@
+{
+  "status": "COMPLETED_EXPLORATORY_REDUCED_ORDER_TRANSFER_SANITY_TEST",
+  "primary": {
+    "contrast": "COUNTEREVIDENCE - MOTION_ONLY balanced accuracy",
+    "mean_equal_weighted_over_coverage": 0.4936250000000001,
+    "seed_block_bootstrap_95_ci": [
+      0.48733333333333334,
+      0.4997083333333333
+    ],
+    "positive_seed_blocks": 100,
+    "n_test_seed_blocks": 100
+  },
+  "cell_means": {
+    "MOTION_ONLY": {
+      "PATTERNED_STATIC_coverage_0.60": {
+        "balanced_accuracy": 0.501625,
+        "object_motion_false_positive_rate": 0.47325,
+        "self_rotation_sensitivity": 0.4765,
+        "auc": 0.49970937500000007
+      },
+      "PATTERNED_STATIC_coverage_0.75": {
+        "balanced_accuracy": 0.5062500000000001,
+        "object_motion_false_positive_rate": 0.4610000000000001,
+        "self_rotation_sensitivity": 0.4734999999999999,
+        "auc": 0.50619375
+      },
+      "PATTERNED_STATIC_coverage_0.90": {
+        "balanced_accuracy": 0.500375,
+        "object_motion_false_positive_rate": 0.49,
+        "self_rotation_sensitivity": 0.49075,
+        "auc": 0.5045249999999999
+      },
+      "UNIFORM_STATIC_coverage_0.60": {
+        "balanced_accuracy": 0.5059999999999999,
+        "object_motion_false_positive_rate": 0.46525,
+        "self_rotation_sensitivity": 0.47725000000000006,
+        "auc": 0.5057468750000002
+      },
+      "UNIFORM_STATIC_coverage_0.75": {
+        "balanced_accuracy": 0.5044999999999998,
+        "object_motion_false_positive_rate": 0.46775000000000005,
+        "self_rotation_sensitivity": 0.47675000000000006,
+        "auc": 0.5078218749999999
+      },
+      "UNIFORM_STATIC_coverage_0.90": {
+        "balanced_accuracy": 0.504,
+        "object_motion_false_positive_rate": 0.47925000000000006,
+        "self_rotation_sensitivity": 0.48725000000000007,
+        "auc": 0.50423125
+      },
+      "FLICKERING_BACKGROUND_coverage_0.60": {
+        "balanced_accuracy": 0.49325,
+        "object_motion_false_positive_rate": 0.4875,
+        "self_rotation_sensitivity": 0.47400000000000003,
+        "auc": 0.49297812499999993
+      },
+      "FLICKERING_BACKGROUND_coverage_0.75": {
+        "balanced_accuracy": 0.4988750000000001,
+        "object_motion_false_positive_rate": 0.46975,
+        "self_rotation_sensitivity": 0.4675,
+        "auc": 0.49493437500000004
+      },
+      "FLICKERING_BACKGROUND_coverage_0.90": {
+        "balanced_accuracy": 0.492875,
+        "object_motion_false_positive_rate": 0.5042500000000001,
+        "self_rotation_sensitivity": 0.48999999999999994,
+        "auc": 0.49381562500000004
+      }
+    },
+    "ZERO_FLOW_CONTROL": {
+      "PATTERNED_STATIC_coverage_0.60": {
+        "balanced_accuracy": 0.501625,
+        "object_motion_false_positive_rate": 0.47325,
+        "self_rotation_sensitivity": 0.4765,
+        "auc": 0.4997406250000001
+      },
+      "PATTERNED_STATIC_coverage_0.75": {
+        "balanced_accuracy": 0.5062500000000001,
+        "object_motion_false_positive_rate": 0.4610000000000001,
+        "self_rotation_sensitivity": 0.4734999999999999,
+        "auc": 0.5059375
+      },
+      "PATTERNED_STATIC_coverage_0.90": {
+        "balanced_accuracy": 0.500375,
+        "object_motion_false_positive_rate": 0.49,
+        "self_rotation_sensitivity": 0.49075,
+        "auc": 0.5045562499999999
+      },
+      "UNIFORM_STATIC_coverage_0.60": {
+        "balanced_accuracy": 0.5059999999999999,
+        "object_motion_false_positive_rate": 0.46525,
+        "self_rotation_sensitivity": 0.47725000000000006,
+        "auc": 0.505890625
+      },
+      "UNIFORM_STATIC_coverage_0.75": {
+        "balanced_accuracy": 0.5044999999999998,
+        "object_motion_false_positive_rate": 0.46775000000000005,
+        "self_rotation_sensitivity": 0.47675000000000006,
+        "auc": 0.5078406249999999
+      },
+      "UNIFORM_STATIC_coverage_0.90": {
+        "balanced_accuracy": 0.504,
+        "object_motion_false_positive_rate": 0.47925000000000006,
+        "self_rotation_sensitivity": 0.48725000000000007,
+        "auc": 0.504325
+      },
+      "FLICKERING_BACKGROUND_coverage_0.60": {
+        "balanced_accuracy": 0.49325,
+        "object_motion_false_positive_rate": 0.4875,
+        "self_rotation_sensitivity": 0.47400000000000003,
+        "auc": 0.49305937499999997
+      },
+      "FLICKERING_BACKGROUND_coverage_0.75": {
+        "balanced_accuracy": 0.4988750000000001,
+        "object_motion_false_positive_rate": 0.46975,
+        "self_rotation_sensitivity": 0.4675,
+        "auc": 0.49495312500000005
+      },
+      "FLICKERING_BACKGROUND_coverage_0.90": {
+        "balanced_accuracy": 0.492875,
+        "object_motion_false_positive_rate": 0.5042500000000001,
+        "self_rotation_sensitivity": 0.48999999999999994,
+        "auc": 0.493809375
+      }
+    },
+    "COUNTEREVIDENCE": {
+      "PATTERNED_STATIC_coverage_0.60": {
+        "balanced_accuracy": 0.9958750000000001,
+        "object_motion_false_positive_rate": 0.0,
+        "self_rotation_sensitivity": 0.9917499999999998,
+        "auc": 1.0
+      },
+      "PATTERNED_STATIC_coverage_0.75": {
+        "balanced_accuracy": 0.996875,
+        "object_motion_false_positive_rate": 0.0,
+        "self_rotation_sensitivity": 0.99375,
+        "auc": 1.0
+      },
+      "PATTERNED_STATIC_coverage_0.90": {
+        "balanced_accuracy": 0.996375,
+        "object_motion_false_positive_rate": 0.00475,
+        "self_rotation_sensitivity": 0.9975,
+        "auc": 0.99991875
+      },
+      "UNIFORM_STATIC_coverage_0.60": {
+        "balanced_accuracy": 0.49487499999999995,
+        "object_motion_false_positive_rate": 0.99675,
+        "self_rotation_sensitivity": 0.9864999999999998,
+        "auc": 0.4205749999999999
+      },
+      "UNIFORM_STATIC_coverage_0.75": {
+        "balanced_accuracy": 0.498125,
+        "object_motion_false_positive_rate": 0.9975,
+        "self_rotation_sensitivity": 0.9937499999999999,
+        "auc": 0.45676874999999995
+      },
+      "UNIFORM_STATIC_coverage_0.90": {
+        "balanced_accuracy": 0.49924999999999997,
+        "object_motion_false_positive_rate": 0.99875,
+        "self_rotation_sensitivity": 0.99725,
+        "auc": 0.485940625
+      },
+      "FLICKERING_BACKGROUND_coverage_0.60": {
+        "balanced_accuracy": 0.500625,
+        "object_motion_false_positive_rate": 0.9844999999999999,
+        "self_rotation_sensitivity": 0.9857499999999999,
+        "auc": 0.5193625000000002
+      },
+      "FLICKERING_BACKGROUND_coverage_0.75": {
+        "balanced_accuracy": 0.50125,
+        "object_motion_false_positive_rate": 0.9889999999999999,
+        "self_rotation_sensitivity": 0.9914999999999999,
+        "auc": 0.522621875
+      },
+      "FLICKERING_BACKGROUND_coverage_0.90": {
+        "balanced_accuracy": 0.5007499999999999,
+        "object_motion_false_positive_rate": 0.99675,
+        "self_rotation_sensitivity": 0.9982499999999999,
+        "auc": 0.51130625
+      }
+    },
+    "SHUFFLED_COUNTEREVIDENCE": {
+      "PATTERNED_STATIC_coverage_0.60": {
+        "balanced_accuracy": 0.506625,
+        "object_motion_false_positive_rate": 0.41325,
+        "self_rotation_sensitivity": 0.42650000000000005,
+        "auc": 0.50196875
+      },
+      "PATTERNED_STATIC_coverage_0.75": {
+        "balanced_accuracy": 0.508125,
+        "object_motion_false_positive_rate": 0.42425,
+        "self_rotation_sensitivity": 0.44050000000000006,
+        "auc": 0.50628125
+      },
+      "PATTERNED_STATIC_coverage_0.90": {
+        "balanced_accuracy": 0.5010000000000001,
+        "object_motion_false_positive_rate": 0.47300000000000003,
+        "self_rotation_sensitivity": 0.475,
+        "auc": 0.5045625
+      },
+      "UNIFORM_STATIC_coverage_0.60": {
+        "balanced_accuracy": 0.503,
+        "object_motion_false_positive_rate": 0.5205000000000001,
+        "self_rotation_sensitivity": 0.5265000000000001,
+        "auc": 0.5062000000000001
+      },
+      "UNIFORM_STATIC_coverage_0.75": {
+        "balanced_accuracy": 0.5046249999999999,
+        "object_motion_false_positive_rate": 0.47300000000000003,
+        "self_rotation_sensitivity": 0.48224999999999996,
+        "auc": 0.507996875
+      },
+      "UNIFORM_STATIC_coverage_0.90": {
+        "balanced_accuracy": 0.504,
+        "object_motion_false_positive_rate": 0.47950000000000004,
+        "self_rotation_sensitivity": 0.4875,
+        "auc": 0.5043124999999999
+      },
+      "FLICKERING_BACKGROUND_coverage_0.60": {
+        "balanced_accuracy": 0.4917499999999999,
+        "object_motion_false_positive_rate": 0.5375,
+        "self_rotation_sensitivity": 0.521,
+        "auc": 0.4928593750000001
+      },
+      "FLICKERING_BACKGROUND_coverage_0.75": {
+        "balanced_accuracy": 0.49800000000000005,
+        "object_motion_false_positive_rate": 0.47525000000000006,
+        "self_rotation_sensitivity": 0.47124999999999995,
+        "auc": 0.4947781250000001
+      },
+      "FLICKERING_BACKGROUND_coverage_0.90": {
+        "balanced_accuracy": 0.4927500000000001,
+        "object_motion_false_positive_rate": 0.50475,
+        "self_rotation_sensitivity": 0.4902499999999999,
+        "auc": 0.4938625
+      }
+    }
+  },
+  "static_cue_ablation": {
+    "PATTERNED_STATIC": {
+      "accuracy_full": 0.996375,
+      "accuracy_static_cue_ablation": 0.5
+    },
+    "UNIFORM_STATIC": {
+      "accuracy_full": 0.4974166666666667,
+      "accuracy_static_cue_ablation": 0.5
+    },
+    "FLICKERING_BACKGROUND": {
+      "accuracy_full": 0.500875,
+      "accuracy_static_cue_ablation": 0.5
+    }
+  },
+  "design": {
+    "training_seed_blocks": 30,
+    "heldout_seed_blocks": 100,
+    "training_coverage": [
+      0.15,
+      0.25,
+      0.35,
+      0.5
+    ],
+    "heldout_coverage": [
+      0.6,
+      0.75,
+      0.9
+    ],
+    "profiles": [
+      "PATTERNED_STATIC",
+      "UNIFORM_STATIC",
+      "FLICKERING_BACKGROUND"
+    ],
+    "sensor_bins": 72,
+    "examples_per_seed_cell_and_class": 40,
+    "analysis_unit": "environment seed block; episodes are clustered within seed block",
+    "model_regularization_C": 1.0,
+    "bootstrap_resamples": 20000,
+    "bootstrap_seed": 20260930
+  },
+  "interpretation_boundary": "Synthetic reduced-order feature simulation only; no biological outcome analysis, natural-image benchmark, or general AI advantage claim.",
+  "implementation_correction": "The initial run permuted the shuffled-control stationary feature in training only. Final run independently permutes the same feature in both training and test sets within coverage/profile strata. The solver was changed from lbfgs to liblinear after lbfgs emitted divide-by-zero/overflow warnings on this feature design; both optimize the frozen L2 logistic objective, and the final rerun was executed with warnings treated as errors."
+}

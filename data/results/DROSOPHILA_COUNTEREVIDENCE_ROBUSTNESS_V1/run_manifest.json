@@ -1,0 +1,24 @@
+{
+  "experiment": "DROSOPHILA_COUNTEREVIDENCE_ROBUSTNESS_V1",
+  "author_ann_repository": "https://github.com/ClarkLabCode/SelfMotionDetectionML",
+  "author_ann_commit": "75a7051a0e310311b9295afe0a2b5c68f25eba9d",
+  "contract_sha256": "b5bbf66527dd11a86b679e13a4e7688d29720a760f285f745a4c32b3ec52969c",
+  "source_provenance_sha256": "4a1debacaca3212ba34f106ddf39a2692ff9a7c36c3ce7be2405399871c12526",
+  "runner_sha256": "1d67a1c31c606a91252c255bf7dfef5ec4a0f644f9178b1da34190dc076586fc",
+  "python": "3.9.6",
+  "numpy": "2.0.2",
+  "scikit_learn": "1.6.1",
+  "solver": "liblinear",
+  "warning_free_under_-W_error": true,
+  "finite_model_coefficients": {
+    "MOTION_ONLY": true,
+    "ZERO_FLOW_CONTROL": true,
+    "COUNTEREVIDENCE": true,
+    "SHUFFLED_COUNTEREVIDENCE": true
+  },
+  "outputs": {
+    "episode_predictions.csv": "b86ff615354fcfa4674dddf7a25b71084174f933c53addd495afa9689411cd11",
+    "seed_block_metrics.csv": "4068df88dad556ff259ad82dc561fa814fe128585d7f26cebc1baeb8beb0482d",
+    "summary.json": "62406ebaaed08246ce2ef0fa674b461ca585104d1789c7d6388c2e804ceb4655"
+  }
+}
