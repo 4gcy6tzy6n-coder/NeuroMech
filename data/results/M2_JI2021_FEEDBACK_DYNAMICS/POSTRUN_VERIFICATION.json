@@ -1,0 +1,35 @@
+{
+  "status": "VERIFIED",
+  "metrics_rows": 900,
+  "unique_seed_condition_keys": 900,
+  "complete_factorial": true,
+  "all_reported_metrics_finite": true,
+  "contrasts_recomputed_from_csv": {
+    "0.5": {
+      "mean": 0.8027250331201649,
+      "ci95": [
+        0.783699143609508,
+        0.8218798408769958
+      ],
+      "positive_seed_count": 100
+    },
+    "1.0": {
+      "mean": 0.41542434015757407,
+      "ci95": [
+        0.4083388603740205,
+        0.4225626964871035
+      ],
+      "positive_seed_count": 100
+    },
+    "2.0": {
+      "mean": 0.12186875738253151,
+      "ci95": [
+        0.11806575000594771,
+        0.125716186806706
+      ],
+      "positive_seed_count": 100
+    }
+  },
+  "output_hashes_match_run_manifest": true,
+  "scope": "internal simulation reproducibility and arithmetic only; does not validate the source biological claim"
+}

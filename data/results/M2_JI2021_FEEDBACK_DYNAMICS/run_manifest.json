@@ -1,0 +1,35 @@
+{
+  "experiment": "M2_JI2021_FEEDBACK_DYNAMICS",
+  "master_seed": 20261001,
+  "seed_blocks": 100,
+  "agents_per_block": 50,
+  "steps": 1500,
+  "feedback_coefficients": [
+    -1.0,
+    0.0,
+    1.0
+  ],
+  "noise_scales": [
+    0.5,
+    1.0,
+    2.0
+  ],
+  "bootstrap_seed": 20260930,
+  "bootstrap_resamples": 20000,
+  "runtime": {
+    "python": "3.9.6",
+    "numpy": "2.0.2",
+    "matplotlib": "3.9.4"
+  },
+  "input_sha256": "efa17d718018df4e8ad5058c82f5996488f085451433f6664374e394c29482ed",
+  "extracted_author_script_sha256": "e2a9d5be4be436e30dfce7d59c4c95110cda189fbd54dc423128d0fc991b21c7",
+  "contract_sha256": "643c1c40849a93cbdfc035abb76f86dd12f4b97e8d9f34ddace9745f8cba765f",
+  "runner_sha256": "4609182e898f7539655ffe95e069dfd378ecc6478cbc7b55123b828de76e5c28",
+  "outputs_sha256": {
+    "simulation_metrics.csv": "7dfe22c0f3754a45e79b27f061be3879919b2f789df131e604ed73bccc7ae4e1",
+    "summary.json": "5770a1c33e46073980d3882d55b025b90c4354820326ba383f2cc672cefd252a",
+    "feedback_noise_sweep.png": "6873daed147ac630b5c365c8f29225241ef726c853d7a3a282dbdbf0d1b7a12b"
+  },
+  "row_count": 900,
+  "scope": "post-result exploratory computational replication/stress test; not biological validation or AI transfer"
+}

@@ -1,0 +1,173 @@
+{
+  "status": "COMPLETED_EXPLORATORY_SOURCE_MODEL_REPLICATION",
+  "primary": {
+    "noise_scale": 1.0,
+    "arms": {
+      "-1": {
+        "mean_warm_direction_index": 0.04332837930622937,
+        "mean_forward_run_s": 0.5634798001954876,
+        "mean_final_warm_displacement": 1.8244781254291527
+      },
+      "0": {
+        "mean_warm_direction_index": 0.14981700842857668,
+        "mean_forward_run_s": 0.9119539251553569,
+        "mean_final_warm_displacement": 7.036017344692474
+      },
+      "1": {
+        "mean_warm_direction_index": 0.5652413485861508,
+        "mean_forward_run_s": 4.529946418708299,
+        "mean_final_warm_displacement": 34.781616204388364
+      }
+    },
+    "positive_minus_no_feedback_mean": 0.41542434015757407,
+    "positive_minus_no_feedback_95_ci": [
+      0.4083388603740205,
+      0.4225626964871035
+    ],
+    "positive_seed_count": 100,
+    "seed_blocks": 100
+  },
+  "noise_stress": [
+    {
+      "noise_scale": 0.5,
+      "arms": {
+        "-1": {
+          "mean_warm_direction_index": 0.00999697325695036,
+          "mean_forward_run_s": 0.5316615647697556,
+          "mean_final_warm_displacement": -1.1074758115056011
+        },
+        "0": {
+          "mean_warm_direction_index": 0.05774358277558509,
+          "mean_forward_run_s": 0.6122695247225473,
+          "mean_final_warm_displacement": 0.6280300158025587
+        },
+        "1": {
+          "mean_warm_direction_index": 0.86046861589575,
+          "mean_forward_run_s": 37.88231599592145,
+          "mean_final_warm_displacement": 72.72087929293511
+        }
+      },
+      "positive_minus_no_feedback_mean": 0.8027250331201649,
+      "positive_minus_no_feedback_95_ci": [
+        0.783699143609508,
+        0.8218798408769958
+      ],
+      "positive_seed_count": 100,
+      "seed_blocks": 100
+    },
+    {
+      "noise_scale": 2.0,
+      "arms": {
+        "-1": {
+          "mean_warm_direction_index": 0.0640513786959726,
+          "mean_forward_run_s": 0.8973270289478664,
+          "mean_final_warm_displacement": 5.084151320316632
+        },
+        "0": {
+          "mean_warm_direction_index": 0.13052008691801598,
+          "mean_forward_run_s": 1.3538067592581657,
+          "mean_final_warm_displacement": 9.985282239901595
+        },
+        "1": {
+          "mean_warm_direction_index": 0.2523888443005475,
+          "mean_forward_run_s": 2.711187730571532,
+          "mean_final_warm_displacement": 24.667896670851825
+        }
+      },
+      "positive_minus_no_feedback_mean": 0.12186875738253151,
+      "positive_minus_no_feedback_95_ci": [
+        0.11806575000594771,
+        0.125716186806706
+      ],
+      "positive_seed_count": 100,
+      "seed_blocks": 100
+    }
+  ],
+  "all_conditions": [
+    {
+      "noise_scale": 0.5,
+      "arms": {
+        "-1": {
+          "mean_warm_direction_index": 0.00999697325695036,
+          "mean_forward_run_s": 0.5316615647697556,
+          "mean_final_warm_displacement": -1.1074758115056011
+        },
+        "0": {
+          "mean_warm_direction_index": 0.05774358277558509,
+          "mean_forward_run_s": 0.6122695247225473,
+          "mean_final_warm_displacement": 0.6280300158025587
+        },
+        "1": {
+          "mean_warm_direction_index": 0.86046861589575,
+          "mean_forward_run_s": 37.88231599592145,
+          "mean_final_warm_displacement": 72.72087929293511
+        }
+      },
+      "positive_minus_no_feedback_mean": 0.8027250331201649,
+      "positive_minus_no_feedback_95_ci": [
+        0.783699143609508,
+        0.8218798408769958
+      ],
+      "positive_seed_count": 100,
+      "seed_blocks": 100
+    },
+    {
+      "noise_scale": 1.0,
+      "arms": {
+        "-1": {
+          "mean_warm_direction_index": 0.04332837930622937,
+          "mean_forward_run_s": 0.5634798001954876,
+          "mean_final_warm_displacement": 1.8244781254291527
+        },
+        "0": {
+          "mean_warm_direction_index": 0.14981700842857668,
+          "mean_forward_run_s": 0.9119539251553569,
+          "mean_final_warm_displacement": 7.036017344692474
+        },
+        "1": {
+          "mean_warm_direction_index": 0.5652413485861508,
+          "mean_forward_run_s": 4.529946418708299,
+          "mean_final_warm_displacement": 34.781616204388364
+        }
+      },
+      "positive_minus_no_feedback_mean": 0.41542434015757407,
+      "positive_minus_no_feedback_95_ci": [
+        0.4083388603740205,
+        0.4225626964871035
+      ],
+      "positive_seed_count": 100,
+      "seed_blocks": 100
+    },
+    {
+      "noise_scale": 2.0,
+      "arms": {
+        "-1": {
+          "mean_warm_direction_index": 0.0640513786959726,
+          "mean_forward_run_s": 0.8973270289478664,
+          "mean_final_warm_displacement": 5.084151320316632
+        },
+        "0": {
+          "mean_warm_direction_index": 0.13052008691801598,
+          "mean_forward_run_s": 1.3538067592581657,
+          "mean_final_warm_displacement": 9.985282239901595
+        },
+        "1": {
+          "mean_warm_direction_index": 0.2523888443005475,
+          "mean_forward_run_s": 2.711187730571532,
+          "mean_final_warm_displacement": 24.667896670851825
+        }
+      },
+      "positive_minus_no_feedback_mean": 0.12186875738253151,
+      "positive_minus_no_feedback_95_ci": [
+        0.11806575000594771,
+        0.125716186806706
+      ],
+      "positive_seed_count": 100,
+      "seed_blocks": 100
+    }
+  ],
+  "analysis_unit": "simulation_seed_block; 50 simulated agents clustered within each block",
+  "interval": "paired percentile bootstrap across seed blocks; 20000 resamples",
+  "warm_direction_convention": "-cos(heading), following the author code's Tidx_tp definition and kt=-1.5",
+  "biological_inference": "simulation output only; not biological population uncertainty"
+}
