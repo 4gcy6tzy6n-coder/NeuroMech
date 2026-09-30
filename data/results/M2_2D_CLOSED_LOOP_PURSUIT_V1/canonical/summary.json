@@ -1,0 +1,224 @@
+{
+  "experiment_id": "M2_2D_CLOSED_LOOP_PURSUIT_V1",
+  "classification": "exploratory artificial sensorimotor study",
+  "primary": "ALIGNED final_distance(BILINEAR_RNN_MATCHED)-final_distance(MODE_GAIN); positive favors mode gain",
+  "bootstrap": "crossed resampling over training seeds and paired target episodes",
+  "bootstrap_replicates": 10000,
+  "rows": 76800,
+  "mean_metrics": {
+    "ALIGNED": {
+      "MODE_GAIN": {
+        "final_distance": 0.11290212213658984,
+        "success": 0.8416666666666667,
+        "mean_distance": 0.2635542723771929,
+        "steps_to_success": 17.245963541666665
+      },
+      "NO_CONTEXT": {
+        "final_distance": 0.11074433900610832,
+        "success": 0.8479166666666667,
+        "mean_distance": 0.2374426660571468,
+        "steps_to_success": 16.880598958333334
+      },
+      "ADDITIVE_RNN_MATCHED": {
+        "final_distance": 0.09699128152146841,
+        "success": 0.8837239583333333,
+        "mean_distance": 0.2428593169329967,
+        "steps_to_success": 17.77890625
+      },
+      "BILINEAR_RNN_MATCHED": {
+        "final_distance": 0.09201863057454224,
+        "success": 0.90546875,
+        "mean_distance": 0.23499774345906796,
+        "steps_to_success": 17.004166666666666
+      },
+      "KALMAN_ORACLE": {
+        "final_distance": 0.08570993702185964,
+        "success": 0.9209635416666667,
+        "mean_distance": 0.1944526479052911,
+        "steps_to_success": 12.71640625
+      }
+    },
+    "REVERSED": {
+      "MODE_GAIN": {
+        "final_distance": 0.4050683490570918,
+        "success": 0.301953125,
+        "mean_distance": 0.4903335173895357,
+        "steps_to_success": 26.610026041666668
+      },
+      "NO_CONTEXT": {
+        "final_distance": 0.11102320219314,
+        "success": 0.8602864583333333,
+        "mean_distance": 0.24293813816448165,
+        "steps_to_success": 16.636848958333335
+      },
+      "ADDITIVE_RNN_MATCHED": {
+        "final_distance": 0.1016226923465183,
+        "success": 0.8697916666666666,
+        "mean_distance": 0.253295089909534,
+        "steps_to_success": 17.949609375
+      },
+      "BILINEAR_RNN_MATCHED": {
+        "final_distance": 0.11966388788393184,
+        "success": 0.7915364583333333,
+        "mean_distance": 0.28133028483762246,
+        "steps_to_success": 20.060546875
+      },
+      "KALMAN_ORACLE": {
+        "final_distance": 0.08274387251948004,
+        "success": 0.9544270833333334,
+        "mean_distance": 0.18194131364401375,
+        "steps_to_success": 11.397395833333333
+      }
+    }
+  },
+  "contrasts": {
+    "ALIGNED": {
+      "bilinear_minus_mode": {
+        "final_distance": {
+          "mean_left_minus_right": -0.020883491562047614,
+          "crossed_95ci": [
+            -0.032444610177944165,
+            -0.010549370301984417
+          ],
+          "positive_seed_count": 7
+        },
+        "success": {
+          "mean_left_minus_right": 0.06380208333333333,
+          "crossed_95ci": [
+            0.029427083333333333,
+            0.10065104166666666
+          ],
+          "positive_seed_count": 21
+        }
+      },
+      "additive_minus_mode": {
+        "final_distance": {
+          "mean_left_minus_right": -0.01591084061512144,
+          "crossed_95ci": [
+            -0.02664525539802071,
+            -0.005769707210166266
+          ],
+          "positive_seed_count": 10
+        },
+        "success": {
+          "mean_left_minus_right": 0.04205729166666667,
+          "crossed_95ci": [
+            0.0069010416666666664,
+            0.07734375
+          ],
+          "positive_seed_count": 19
+        }
+      },
+      "no_context_minus_mode": {
+        "final_distance": {
+          "mean_left_minus_right": -0.002157783130481524,
+          "crossed_95ci": [
+            -0.015151692678088012,
+            0.0107034443776528
+          ],
+          "positive_seed_count": 15
+        },
+        "success": {
+          "mean_left_minus_right": 0.00625,
+          "crossed_95ci": [
+            -0.03723958333333333,
+            0.051041666666666666
+          ],
+          "positive_seed_count": 16
+        }
+      },
+      "oracle_minus_mode": {
+        "final_distance": {
+          "mean_left_minus_right": -0.027192185114730212,
+          "crossed_95ci": [
+            -0.03821936670800028,
+            -0.017312205970649763
+          ],
+          "positive_seed_count": 1
+        },
+        "success": {
+          "mean_left_minus_right": 0.079296875,
+          "crossed_95ci": [
+            0.045572916666666664,
+            0.11640625
+          ],
+          "positive_seed_count": 26
+        }
+      }
+    },
+    "REVERSED": {
+      "bilinear_minus_mode": {
+        "final_distance": {
+          "mean_left_minus_right": -0.28540446117316,
+          "crossed_95ci": [
+            -0.30634494108301014,
+            -0.2661978147179146
+          ],
+          "positive_seed_count": 0
+        },
+        "success": {
+          "mean_left_minus_right": 0.4895833333333333,
+          "crossed_95ci": [
+            0.4610677083333333,
+            0.518232421875
+          ],
+          "positive_seed_count": 30
+        }
+      },
+      "additive_minus_mode": {
+        "final_distance": {
+          "mean_left_minus_right": -0.30344565671057355,
+          "crossed_95ci": [
+            -0.3226994389917892,
+            -0.285345252449791
+          ],
+          "positive_seed_count": 0
+        },
+        "success": {
+          "mean_left_minus_right": 0.5678385416666667,
+          "crossed_95ci": [
+            0.5424479166666667,
+            0.5923177083333333
+          ],
+          "positive_seed_count": 30
+        }
+      },
+      "no_context_minus_mode": {
+        "final_distance": {
+          "mean_left_minus_right": -0.29404514686395183,
+          "crossed_95ci": [
+            -0.31608489932566314,
+            -0.27121498360792506
+          ],
+          "positive_seed_count": 0
+        },
+        "success": {
+          "mean_left_minus_right": 0.5583333333333333,
+          "crossed_95ci": [
+            0.508330078125,
+            0.6001302083333333
+          ],
+          "positive_seed_count": 30
+        }
+      },
+      "oracle_minus_mode": {
+        "final_distance": {
+          "mean_left_minus_right": -0.3223244765376118,
+          "crossed_95ci": [
+            -0.3417699186995189,
+            -0.30469520307710357
+          ],
+          "positive_seed_count": 0
+        },
+        "success": {
+          "mean_left_minus_right": 0.6524739583333333,
+          "crossed_95ci": [
+            0.6322916666666667,
+            0.672265625
+          ],
+          "positive_seed_count": 30
+        }
+      }
+    }
+  }
+}

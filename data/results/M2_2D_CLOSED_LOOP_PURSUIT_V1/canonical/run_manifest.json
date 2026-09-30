@@ -1,0 +1,46 @@
+{
+  "experiment_id": "M2_2D_CLOSED_LOOP_PURSUIT_V1",
+  "classification": "exploratory artificial sensorimotor study",
+  "python": "3.12.13",
+  "numpy": "2.4.4",
+  "torch": "2.11.0",
+  "training_seeds": [
+    75000,
+    75029
+  ],
+  "train_stream_rule": "700000+seed",
+  "test_stream_rule": "900000+seed",
+  "n_train": 512,
+  "n_test": 256,
+  "steps": 32,
+  "updates": 200,
+  "batch_size": 16,
+  "movement_step": 0.12,
+  "noise_sd": 0.25,
+  "arms": [
+    "MODE_GAIN",
+    "NO_CONTEXT",
+    "ADDITIVE_RNN_MATCHED",
+    "BILINEAR_RNN_MATCHED",
+    "KALMAN_ORACLE"
+  ],
+  "conditions": [
+    "ALIGNED",
+    "REVERSED"
+  ],
+  "rows": 76800,
+  "runner_sha256": "c72fc7dbc3a788990b11371c7afe1250b168c56bb125d83281bd8fc268b68b18",
+  "contract_sha256": "6e999d5ee0e501a57f2a69f31541d2bdbfa7d2200b9c1071cfa3407212bd5af8",
+  "files": {
+    "episode_metrics.csv": "752697010983ec2bc2481035cbd7116f48b973c032338e93c68538cf096edb13",
+    "training_metrics.csv": "e5b7a65983c460431f0e90944dac9c7d1c20105547278bbe677028c56adabf1a",
+    "summary.json": "24d6c07f147764f258d76822b3eeaa01e2f045482f80f5c53073328282996df8",
+    "seed_contrasts.csv": "b24883e5320093683fc8030e5876a2595e2d7ae598f30926bf4724e47b7bf57b"
+  },
+  "analysis_sources": {
+    "runner": "c72fc7dbc3a788990b11371c7afe1250b168c56bb125d83281bd8fc268b68b18",
+    "analyzer": "fbd24c5df4683e87caa3303cb111204ad1b4624a2a8af0604ee0f6aa466578de",
+    "verifier": "ec08671e46a3744cb4e6458ab3862ffded89ca08d441dd8c327b54c7dd85ed76",
+    "contract": "6e999d5ee0e501a57f2a69f31541d2bdbfa7d2200b9c1071cfa3407212bd5af8"
+  }
+}
