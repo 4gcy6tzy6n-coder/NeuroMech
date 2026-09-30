@@ -1,0 +1,44 @@
+{
+  "experiment": "M2_STATE_TRAJECTORY_REPLAY_V1",
+  "development_seed_range": [
+    370000,
+    370039
+  ],
+  "heldout_seed_range": [
+    380000,
+    380199
+  ],
+  "noise_scales": [
+    0.75,
+    1.0,
+    1.25
+  ],
+  "agents_per_block": 50,
+  "steps_per_trajectory": 1500,
+  "bootstrap_resamples": 20000,
+  "bootstrap_seed": 20261007,
+  "replay_seed_offset": 900000000,
+  "motor_coefficients_from_v5": {
+    "0.75": 0.76,
+    "1.0": 0.665,
+    "1.25": 0.61
+  },
+  "inputs": {
+    "contract_sha256": "b261fa2d22eee39137efac80845c555720ff4ccf1eb2b86e73dd50119fb76668",
+    "source_model_sha256": "3a217f96a3bd11aad902305833eed0c65ebbd57210393aecaa1bfbfa6b96133d",
+    "runner_sha256": "977725c6e9c9f623226ff0e160fa5b30611022aecec041c1e310575f503ad5ca",
+    "author_matlab_sha256": "e2a9d5be4be436e30dfce7d59c4c95110cda189fbd54dc423128d0fc991b21c7",
+    "v5_summary_sha256": "bc1021ccd8c40ba0c8193b6169930ae13db73dc35e861d516f38912e2c165c62"
+  },
+  "runtime": {
+    "python": "3.9.6",
+    "numpy": "2.0.2"
+  },
+  "heldout_rows": 2400,
+  "output_sha256": {
+    "development_modes_summary.csv": "e0965ee0e40ee6248fe0f3f5d12e4d6908f407cca287567312770e92b47a1800",
+    "development_mode_trace_library.json": "01e7920e393f0d29e33596aca86e3bebb550a6aa7a51d9f98b49be2d519f16b5",
+    "heldout_metrics.csv": "fb61cac927383ca3c4844e5c4ec4190f54da88e3b75e07c1539e66ae2619b03f",
+    "summary.json": "16998378b06a056b8ce81b8364bdbc556ccf15a4675a355a5017bcdcb82be752"
+  }
+}

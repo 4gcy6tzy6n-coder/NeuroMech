@@ -11,7 +11,7 @@ The project is converging on **two mechanism-grounded studies plus one shared ar
 | Line | Biological question | Current artificial evidence |
 |---|---|---|
 | **M1 — higher-order visual-motion correction** | What does a source-defined third-order correction contribute to fly motion estimation? | The existing RR19 natural-scene run is partial and exploratory. H1/H3 were in the predicted direction, while the phase-mismatched specificity contrast H2 was in the opposite direction. H4 and an overall four-hypothesis verdict are not established. See [partial results](experiments/m1_higher_order/RR19_STEP4_PARTIAL_RESULTS.md). |
-| **M2 — feedback-site specificity** | Does placing motor-state feedback at the sensory-processing site explain thermotaxis dynamics better than a motor-site control in the RIM–AIY circuit? | Corrected-index V5 retained a positive contrast, but its scalar control failed to match persistence. A marginal-duration yoke in V1 produced near-zero warm direction; its pooled comparison is not clean because persistence mismatched at the lowest noise scale. Neither isolates a unique feedback-site effect. See [V5 results](summery/M2_FEEDBACK_SITE_SPECIFICITY_V5/) and [persistence-yoke results](summery/M2_PERSISTENCE_YOKED_DIRECTION_V1/). |
+| **M2 — motor-state feedback and sensory context** | Does the relation between motor-state timing and sensory/environmental context contribute to thermotaxis in the RIM–AIY model? | Full mode-trajectory replay yielded a positive sensory-minus-replay direction contrast, while forward-state summaries were close; a low-noise reverse-tail difference remains and the analysis is exploratory. This does not identify a unique feedback site or establish biological/AI transfer. See [replay results and limitations](summery/M2_STATE_TRAJECTORY_REPLAY_V1/). |
 | **Cross-mechanism benchmark** | Do mechanism-specific computations outperform capacity-matched generic controls under the task conditions that make those computations relevant? | A shared benchmark is in development. M1 and M2 use distinct tasks and native outcome measures; raw scores will not be pooled. See the [project convergence record](summery/PROJECT_CONVERGENCE_20261001/CONVERGENCE.md). |
 
 The M2 state-gated sensory-update and active-sensing studies are supporting algorithmic probes, not substitutes for the feedback-site-specificity study or direct biological validation. Their benefits are conditional on the task's state/observation mapping, and stronger generic or task-aware references remain competitive. See [M2 transfer evidence](summery/M2_FORWARD_STATE_SENSORY_GATE_V3/RESULTS.md) and [closed-loop active-sensing results](summery/M2_CLOSED_LOOP_ACTIVE_SENSING_V1/RESULTS.md).
@@ -22,7 +22,17 @@ The next mainline study is a prospective *C. elegans* thermotaxis experiment ask
 
 The current M2 AI-side experiment remains an exploratory synthetic boundary test. Its sensor-reliability mapping is not established by the worm study and will not serve as the central biological transfer claim. An artificial state-gated update benchmark can continue in parallel with experimental preparation, but its result remains conditional until the biological computation is directly tested.
 
-## Latest experiment: M2 marginal-persistence yoke V1
+## Latest experiment: M2 full motor-state trajectory replay V1
+
+Complete forward/reverse mode sequences from independent corrected-model development runs were replayed on held-out heading streams, preserving each 200-second mode trace while breaking its relationship to the held-out position and heading. The equal-weighted sensory-site minus replay warm-direction contrast was `+0.44742` (95% seed-block bootstrap interval `[+0.43988, +0.45497]`; 200/200 blocks positive).
+
+Held-out forward-state summaries were close across noise scales; reverse-duration summaries were close at `1.00` and `1.25`, with a residual reverse-tail difference at `0.75`. No equivalence bounds were frozen. The exploratory source-model result suggests independent motor-state timing alone does not recover warm-direction behavior in this task, but it does not isolate a unique biological feedback site, animal-level effect, or AI benefit. MATLAB/Octave execution parity remains unverified.
+
+- [Contract, results, and limitation log](summery/M2_STATE_TRAJECTORY_REPLAY_V1/)
+- [Replay runner, corrected source model, and verifier](model/M2_STATE_TRAJECTORY_REPLAY_V1/)
+- [Packed development traces, held-out data, and verification](data/results/M2_STATE_TRAJECTORY_REPLAY_V1/)
+
+## Previous experiment: M2 marginal-persistence yoke V1
 
 The corrected Figure 7 sensory-feedback model was compared with a motor-state yoke that resampled forward and reverse bout durations from independent development simulations without access to current position, heading, or temperature. The pooled sensory-site minus yoke warm-direction contrast was `+0.45489` (95% seed-block bootstrap interval `[+0.44770, +0.46211]`; 200/200 blocks positive); the yoke's direction index was near zero.
 

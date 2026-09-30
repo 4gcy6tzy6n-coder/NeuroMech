@@ -1,0 +1,28 @@
+{
+  "status": "PASS",
+  "checks": [
+    "complete_seed_scale_arm_rows",
+    "outcome_blind_development_schema",
+    "development_trace_library_cardinality_and_encoding",
+    "V5_coefficient_provenance",
+    "corrected_delay_index_source_mapping",
+    "contract_source_runner_author_and_output_hashes",
+    "all_600_replay_rows_regenerated",
+    "heldout_persistence_differences_recomputed",
+    "primary_and_scalar_bootstrap_recomputed"
+  ],
+  "development_rows": 120,
+  "heldout_rows": 2400,
+  "development_traces_per_noise_scale": {
+    "0.75": 2000,
+    "1.0": 2000,
+    "1.25": 2000
+  },
+  "primary_mean_recomputed": 0.4474165520058827,
+  "primary_ci95_recomputed": [
+    0.43987760512076196,
+    0.45497091913085
+  ],
+  "positive_blocks_recomputed": 200,
+  "heldout_metrics_sha256": "fb61cac927383ca3c4844e5c4ec4190f54da88e3b75e07c1539e66ae2619b03f"
+}
