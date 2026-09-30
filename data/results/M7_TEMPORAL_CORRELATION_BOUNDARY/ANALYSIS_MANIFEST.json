@@ -1,0 +1,22 @@
+{
+  "experiment": "M7_TEMPORAL_CORRELATION_BOUNDARY",
+  "status": "EXPLORATORY_RESULTS_REANALYZED_OBJECTIVE_STRATIFIED",
+  "python": "3.12.13",
+  "numpy": "2.4.4",
+  "raw_rows": 4320,
+  "unique_task_keys": 4320,
+  "pooled_mixed_units_interaction": "INVALID; excluded",
+  "corrected_analysis": "analysis_v1_objective_stratified.json",
+  "artifacts_sha256": {
+    "experiments/m7_temporal_correlation_boundary/EXPERIMENT_CONTRACT.md": "d193f1c35df92e9979d44811d4799bd93db1038305fea070d9b596911bef0f92",
+    "experiments/m7_temporal_correlation_boundary/run_experiment.py": "16c0b63842bc88056ad742fa5ad983db82c3a0e5be865fee6e8b3a62f5d891e8",
+    "experiments/m7_temporal_correlation_boundary/analyze_results.py": "9ddfdc03143a8ec487b5f35f12edf08a4d9861921c67fe10dcaec9aedee882ff",
+    "experiments/m7_temporal_correlation_boundary/RESULTS.md": "c872f9f4421315f079217a12da1fbce95467f00e75e817194560eeabb7af2500",
+    "experiments/m7_temporal_correlation_boundary/results/task_metrics.csv": "23e934187b67795e897f6b42734e624461fcec5d4ea45d096502f163fb8e8aa9",
+    "experiments/m7_temporal_correlation_boundary/results/analysis_v1_objective_stratified.json": "7f588c8264b0dc565759b925f54ca2c904137097858e79081aa11f31169c8e22"
+  },
+  "published_model_artifacts_sha256": {
+    "model/M7_TEMPORAL_CORRELATION_BOUNDARY/run_experiment.py": "288a3e402c0be50f1b08bcfd209cfd6ba5252fde1217462995cebf77422ccf5a",
+    "model/M7_TEMPORAL_CORRELATION_BOUNDARY/analyze_results.py": "f29091f88c6e4afaab2127ed21d9c22bb313422f4f3f1df1bb111a246613e153"
+  }
+}

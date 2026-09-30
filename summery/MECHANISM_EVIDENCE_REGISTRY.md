@@ -9,7 +9,7 @@ Machine-readable source of record: [MECHANISM_EVIDENCE_REGISTRY.json](MECHANISM_
 | **M2_STATE_DEPENDENT_FEEDBACK** | C. elegans AFD–AIY–RIM; eLife v3 source workbooks and Cook corrected July 2020 SI 5 | `PARTIAL`; biological E3 identifiable at cell-class level, strong E4 amendment externally underdetermined | Cell class; exact L/R pairing unresolved | Tested synthetic feedback/gating abstractions; no biological reconstruction claim | `M6_STATE_GATE_BELOW_RESIDUAL_ADAPTIVE; NO_GENERAL_TRANSFER_BENEFIT_ESTABLISHED` |
 | **M3_STRUCTURE_FUNCTION_CONSTRAINED_INTEGRATION** | 7 dpf larval zebrafish Fish1.5; Zenodo 16893093 and 19231045 v1 | `PARTIAL`; acquisition gate partial; frozen switch-event observable unavailable in the inspected release | Same-specimen neuron ID for explicit crosswalk rows; class provenance unresolved | Candidate structure-conditioned routing/evidence integration | `REGISTERED_BOUNDARY_ONLY_NO_E3_NO_MODEL` |
 | **M4_CA3_PARTIAL_CUE_RECALL** | Rodent hippocampal CA3; Nakazawa et al. 2002, Neunuebel & Knierim 2014, Mei et al. 2011 | `PARTIAL`; some paradigms support CA3 involvement, while NMDA-receptor necessity is disputed across protocols | CA3 subregion/population | Classic Hebbian Hopfield vs exact exemplar/MAP; synthetic and post-result | `EXPLORATORY_V2_COMPLETED; NO_TRANSFER_ADVANTAGE` |
-| **M5_CEREBELLAR_INSTRUCTIVE_EVENT** | Mouse delay eyeblink conditioning; Kimpo et al. 2014 and Silva et al. 2024 | `PARTIAL`; timed CF/complex-spike teaching role causally supported in this task; exact synaptic rule is inferred | Climbing-fiber/Purkinje cell-type circuit signal | Local decaying eligibility trace vs no-trace, exact replay, batch logistic; synthetic post-result | `POST_RESULT_V3_AND_CROSS_INPUT_VALIDATION; TRACE_BEATS_NO_TRACE_BUT_LOSES_TO_EXACT_REPLAY_AND_BATCH` |
+| **M5_CEREBELLAR_INSTRUCTIVE_EVENT** | Mouse delay eyeblink conditioning; Kimpo et al. 2014 and Silva et al. 2024 | `PARTIAL`; timed CF/complex-spike teaching role causally supported in this task; exact synaptic rule is inferred | Climbing-fiber/Purkinje cell-type circuit signal | Local decaying eligibility trace vs no-trace, exact replay, batch logistic; synthetic post-result | `M5_CROSSINPUT_PLUS_M7_CORRELATION_DELAY; TRACE_EFFECT_CONDITIONAL; EXACT_REPLAY_SUPERIOR` |
 
 ## M0 — topology-transfer negative baseline
 
@@ -53,6 +53,10 @@ A fixed-hyperparameter follow-up evaluated 30 new task seeds for each of IID Gau
 ## Provenance and non-combination rules
 
 Full publications, artifacts, evidence-layer statuses, allowed/forbidden claims, and counterfactual definitions are in the JSON. No cross-dataset neuron identity matching, cross-species equivalence, or merged biological graph is permitted. Artificial interface consistency is not biological identity equivalence.
+
+### M5 temporal-correlation boundary follow-up — 2026-09-30
+
+M7 swept six AR(1) input correlations, four delays, and separate classification/regression objectives with fixed M5-v3 hyperparameters. The trace-versus-current-input effect was delay-dependent: intrinsic correlation reduced trace benefit at short delays, while that relation reversed at delay 64 for classification and at delays 16/64 for regression. The objective-specific equal-delay rho-0 minus rho-0.9 interactions were positive (classification `+0.2225` accuracy, 95% CI `[+0.2075,+0.2373]`; regression `+0.00238` MSE, `[+0.00216,+0.00260]`), but those scales are not pooled. Exact replay beat the trace in all 48 cells. The first pooled statistic mixed unlike accuracy/MSE units and is explicitly invalidated. See [`summery/M7_TEMPORAL_CORRELATION_BOUNDARY/RESULTS.md`](summery/M7_TEMPORAL_CORRELATION_BOUNDARY/RESULTS.md).
 
 ## M4 — CA3 partial-cue recall candidate
 

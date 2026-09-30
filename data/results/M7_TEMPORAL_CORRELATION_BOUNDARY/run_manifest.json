@@ -1,0 +1,42 @@
+{
+  "experiment": "M7_TEMPORAL_CORRELATION_BOUNDARY",
+  "seed": 20260930,
+  "n_seeds": 30,
+  "rho_values": [
+    0.0,
+    0.2,
+    0.4,
+    0.6,
+    0.8,
+    0.9
+  ],
+  "delays": [
+    1,
+    4,
+    16,
+    64
+  ],
+  "objectives": [
+    "CLASSIFICATION",
+    "REGRESSION"
+  ],
+  "arms": [
+    "EXACT_REPLAY",
+    "ELIGIBILITY_TRACE",
+    "NO_TRACE"
+  ],
+  "training_examples": 3000,
+  "test_examples": 1000,
+  "learning_rate": 0.01,
+  "eligibility_decay": 0.98,
+  "python": "3.12.13",
+  "numpy": "2.4.4",
+  "rows": 4320,
+  "artifacts": {
+    "EXPERIMENT_CONTRACT.md": "d193f1c35df92e9979d44811d4799bd93db1038305fea070d9b596911bef0f92",
+    "run_experiment.py": "16c0b63842bc88056ad742fa5ad983db82c3a0e5be865fee6e8b3a62f5d891e8",
+    "results/task_metrics.csv": "23e934187b67795e897f6b42734e624461fcec5d4ea45d096502f163fb8e8aa9",
+    "results/summary.json": "c6682de738be7848de4b079287e4fde261808c2539d6462b2e6a1aab0c40d6d6",
+    "results/primary_seed_contrasts.csv": "4ee08d09542fca95d7a19fbeabb4a13c2b912b128f23dacd73fa902ea66f9472"
+  }
+}

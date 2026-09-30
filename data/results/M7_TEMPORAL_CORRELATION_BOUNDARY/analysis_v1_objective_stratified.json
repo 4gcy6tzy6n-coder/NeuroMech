@@ -1,0 +1,614 @@
+{
+  "status": "OBJECTIVE_STRATIFIED_REANALYSIS; ORIGINAL_POOLED_INTERACTION_INVALID_MIXED_UNITS",
+  "why_pooled_invalid": "The initial run summary averaged accuracy-point differences with MSE-point differences; their scales are not commensurate. No pooled cross-objective estimate is reported.",
+  "n_rows": 4320,
+  "cells": [
+    {
+      "objective": "CLASSIFICATION",
+      "rho": 0.0,
+      "delay": 1,
+      "trace_benefit_mean": 0.3560666666666667,
+      "trace_benefit_seed_bootstrap_95ci": [
+        0.3340666666666667,
+        0.3784666666666666
+      ],
+      "trace_minus_replay_oracle_mean": -0.1522666666666667
+    },
+    {
+      "objective": "CLASSIFICATION",
+      "rho": 0.0,
+      "delay": 4,
+      "trace_benefit_mean": 0.3442666666666667,
+      "trace_benefit_seed_bootstrap_95ci": [
+        0.3231,
+        0.3656666666666666
+      ],
+      "trace_minus_replay_oracle_mean": -0.16666666666666666
+    },
+    {
+      "objective": "CLASSIFICATION",
+      "rho": 0.0,
+      "delay": 16,
+      "trace_benefit_mean": 0.29890000000000005,
+      "trace_benefit_seed_bootstrap_95ci": [
+        0.2784666666666667,
+        0.31903333333333334
+      ],
+      "trace_minus_replay_oracle_mean": -0.20623333333333338
+    },
+    {
+      "objective": "CLASSIFICATION",
+      "rho": 0.0,
+      "delay": 64,
+      "trace_benefit_mean": 0.12456666666666665,
+      "trace_benefit_seed_bootstrap_95ci": [
+        0.10236666666666668,
+        0.14593333333333333
+      ],
+      "trace_minus_replay_oracle_mean": -0.38416666666666666
+    },
+    {
+      "objective": "CLASSIFICATION",
+      "rho": 0.2,
+      "delay": 1,
+      "trace_benefit_mean": -0.0006333333333333265,
+      "trace_benefit_seed_bootstrap_95ci": [
+        -0.01583333333333332,
+        0.014967499999999944
+      ],
+      "trace_minus_replay_oracle_mean": -0.13483333333333333
+    },
+    {
+      "objective": "CLASSIFICATION",
+      "rho": 0.2,
+      "delay": 4,
+      "trace_benefit_mean": 0.3526666666666667,
+      "trace_benefit_seed_bootstrap_95ci": [
+        0.32866666666666666,
+        0.37589999999999996
+      ],
+      "trace_minus_replay_oracle_mean": -0.14103333333333332
+    },
+    {
+      "objective": "CLASSIFICATION",
+      "rho": 0.2,
+      "delay": 16,
+      "trace_benefit_mean": 0.33349999999999996,
+      "trace_benefit_seed_bootstrap_95ci": [
+        0.31336666666666674,
+        0.3534333333333333
+      ],
+      "trace_minus_replay_oracle_mean": -0.18256666666666668
+    },
+    {
+      "objective": "CLASSIFICATION",
+      "rho": 0.2,
+      "delay": 64,
+      "trace_benefit_mean": 0.1382,
+      "trace_benefit_seed_bootstrap_95ci": [
+        0.11766666666666667,
+        0.15859999999999996
+      ],
+      "trace_minus_replay_oracle_mean": -0.3666333333333334
+    },
+    {
+      "objective": "CLASSIFICATION",
+      "rho": 0.4,
+      "delay": 1,
+      "trace_benefit_mean": -0.07589999999999998,
+      "trace_benefit_seed_bootstrap_95ci": [
+        -0.08789999999999996,
+        -0.06423333333333332
+      ],
+      "trace_minus_replay_oracle_mean": -0.1275666666666667
+    },
+    {
+      "objective": "CLASSIFICATION",
+      "rho": 0.4,
+      "delay": 4,
+      "trace_benefit_mean": 0.32673333333333343,
+      "trace_benefit_seed_bootstrap_95ci": [
+        0.3031,
+        0.34963333333333335
+      ],
+      "trace_minus_replay_oracle_mean": -0.11836666666666668
+    },
+    {
+      "objective": "CLASSIFICATION",
+      "rho": 0.4,
+      "delay": 16,
+      "trace_benefit_mean": 0.3633666666666667,
+      "trace_benefit_seed_bootstrap_95ci": [
+        0.3458,
+        0.38043333333333335
+      ],
+      "trace_minus_replay_oracle_mean": -0.1583666666666667
+    },
+    {
+      "objective": "CLASSIFICATION",
+      "rho": 0.4,
+      "delay": 64,
+      "trace_benefit_mean": 0.17750000000000002,
+      "trace_benefit_seed_bootstrap_95ci": [
+        0.15133333333333335,
+        0.20326749999999993
+      ],
+      "trace_minus_replay_oracle_mean": -0.3337333333333334
+    },
+    {
+      "objective": "CLASSIFICATION",
+      "rho": 0.6,
+      "delay": 1,
+      "trace_benefit_mean": -0.09860000000000001,
+      "trace_benefit_seed_bootstrap_95ci": [
+        -0.10969999999999998,
+        -0.08803333333333331
+      ],
+      "trace_minus_replay_oracle_mean": -0.12533333333333332
+    },
+    {
+      "objective": "CLASSIFICATION",
+      "rho": 0.6,
+      "delay": 4,
+      "trace_benefit_mean": 0.14676666666666668,
+      "trace_benefit_seed_bootstrap_95ci": [
+        0.13033333333333333,
+        0.16393333333333335
+      ],
+      "trace_minus_replay_oracle_mean": -0.10289999999999999
+    },
+    {
+      "objective": "CLASSIFICATION",
+      "rho": 0.6,
+      "delay": 16,
+      "trace_benefit_mean": 0.3797333333333333,
+      "trace_benefit_seed_bootstrap_95ci": [
+        0.36353249999999987,
+        0.3976
+      ],
+      "trace_minus_replay_oracle_mean": -0.14116666666666663
+    },
+    {
+      "objective": "CLASSIFICATION",
+      "rho": 0.6,
+      "delay": 64,
+      "trace_benefit_mean": 0.17833333333333334,
+      "trace_benefit_seed_bootstrap_95ci": [
+        0.15669999999999998,
+        0.2000333333333333
+      ],
+      "trace_minus_replay_oracle_mean": -0.3388333333333333
+    },
+    {
+      "objective": "CLASSIFICATION",
+      "rho": 0.8,
+      "delay": 1,
+      "trace_benefit_mean": -0.12530000000000002,
+      "trace_benefit_seed_bootstrap_95ci": [
+        -0.13676666666666665,
+        -0.11339999999999999
+      ],
+      "trace_minus_replay_oracle_mean": -0.14093333333333335
+    },
+    {
+      "objective": "CLASSIFICATION",
+      "rho": 0.8,
+      "delay": 4,
+      "trace_benefit_mean": -0.022833333333333313,
+      "trace_benefit_seed_bootstrap_95ci": [
+        -0.03273333333333332,
+        -0.012633333333333314
+      ],
+      "trace_minus_replay_oracle_mean": -0.1055
+    },
+    {
+      "objective": "CLASSIFICATION",
+      "rho": 0.8,
+      "delay": 16,
+      "trace_benefit_mean": 0.3554,
+      "trace_benefit_seed_bootstrap_95ci": [
+        0.3368658333333333,
+        0.3737333333333333
+      ],
+      "trace_minus_replay_oracle_mean": -0.11016666666666668
+    },
+    {
+      "objective": "CLASSIFICATION",
+      "rho": 0.8,
+      "delay": 64,
+      "trace_benefit_mean": 0.19886666666666664,
+      "trace_benefit_seed_bootstrap_95ci": [
+        0.17063333333333333,
+        0.22686749999999992
+      ],
+      "trace_minus_replay_oracle_mean": -0.3130666666666667
+    },
+    {
+      "objective": "CLASSIFICATION",
+      "rho": 0.9,
+      "delay": 1,
+      "trace_benefit_mean": -0.13796666666666665,
+      "trace_benefit_seed_bootstrap_95ci": [
+        -0.15383333333333335,
+        -0.12206666666666667
+      ],
+      "trace_minus_replay_oracle_mean": -0.14953333333333332
+    },
+    {
+      "objective": "CLASSIFICATION",
+      "rho": 0.9,
+      "delay": 4,
+      "trace_benefit_mean": -0.06433333333333333,
+      "trace_benefit_seed_bootstrap_95ci": [
+        -0.07890000000000003,
+        -0.04993333333333332
+      ],
+      "trace_minus_replay_oracle_mean": -0.11403333333333335
+    },
+    {
+      "objective": "CLASSIFICATION",
+      "rho": 0.9,
+      "delay": 16,
+      "trace_benefit_mean": 0.21173333333333336,
+      "trace_benefit_seed_bootstrap_95ci": [
+        0.19483333333333333,
+        0.2293
+      ],
+      "trace_minus_replay_oracle_mean": -0.09703333333333333
+    },
+    {
+      "objective": "CLASSIFICATION",
+      "rho": 0.9,
+      "delay": 64,
+      "trace_benefit_mean": 0.22436666666666671,
+      "trace_benefit_seed_bootstrap_95ci": [
+        0.2029,
+        0.24633333333333332
+      ],
+      "trace_minus_replay_oracle_mean": -0.2798333333333333
+    },
+    {
+      "objective": "REGRESSION",
+      "rho": 0.0,
+      "delay": 1,
+      "trace_benefit_mean": 0.005957960805657289,
+      "trace_benefit_seed_bootstrap_95ci": [
+        0.005577880334205743,
+        0.006349821376957664
+      ],
+      "trace_minus_replay_oracle_mean": -0.007298504177334849
+    },
+    {
+      "objective": "REGRESSION",
+      "rho": 0.0,
+      "delay": 4,
+      "trace_benefit_mean": 0.005498782417661921,
+      "trace_benefit_seed_bootstrap_95ci": [
+        0.0051844858713027235,
+        0.005829809650713769
+      ],
+      "trace_minus_replay_oracle_mean": -0.007551492866375634
+    },
+    {
+      "objective": "REGRESSION",
+      "rho": 0.0,
+      "delay": 16,
+      "trace_benefit_mean": 0.0045132774651708875,
+      "trace_benefit_seed_bootstrap_95ci": [
+        0.004160898975075345,
+        0.004873502818808633
+      ],
+      "trace_minus_replay_oracle_mean": -0.008542755812566817
+    },
+    {
+      "objective": "REGRESSION",
+      "rho": 0.0,
+      "delay": 64,
+      "trace_benefit_mean": 0.0021217307238976615,
+      "trace_benefit_seed_bootstrap_95ci": [
+        0.0019315885645452356,
+        0.0023168910353989604
+      ],
+      "trace_minus_replay_oracle_mean": -0.01105908776685202
+    },
+    {
+      "objective": "REGRESSION",
+      "rho": 0.2,
+      "delay": 1,
+      "trace_benefit_mean": 0.0007659656500879114,
+      "trace_benefit_seed_bootstrap_95ci": [
+        0.000664904238458495,
+        0.0008666879492165752
+      ],
+      "trace_minus_replay_oracle_mean": -0.0065658302474133345
+    },
+    {
+      "objective": "REGRESSION",
+      "rho": 0.2,
+      "delay": 4,
+      "trace_benefit_mean": 0.006323019106072428,
+      "trace_benefit_seed_bootstrap_95ci": [
+        0.005935540343086301,
+        0.006745394290339327
+      ],
+      "trace_minus_replay_oracle_mean": -0.0067061771392169225
+    },
+    {
+      "objective": "REGRESSION",
+      "rho": 0.2,
+      "delay": 16,
+      "trace_benefit_mean": 0.005256811955282099,
+      "trace_benefit_seed_bootstrap_95ci": [
+        0.0049744388036050665,
+        0.005555604517853137
+      ],
+      "trace_minus_replay_oracle_mean": -0.007812476014339873
+    },
+    {
+      "objective": "REGRESSION",
+      "rho": 0.2,
+      "delay": 64,
+      "trace_benefit_mean": 0.002391417825732442,
+      "trace_benefit_seed_bootstrap_95ci": [
+        0.002153455168500675,
+        0.002650740536147674
+      ],
+      "trace_minus_replay_oracle_mean": -0.010907063893819973
+    },
+    {
+      "objective": "REGRESSION",
+      "rho": 0.4,
+      "delay": 1,
+      "trace_benefit_mean": -0.0018671962145870825,
+      "trace_benefit_seed_bootstrap_95ci": [
+        -0.0020172730904426113,
+        -0.0017185087195466875
+      ],
+      "trace_minus_replay_oracle_mean": -0.005917393996087039
+    },
+    {
+      "objective": "REGRESSION",
+      "rho": 0.4,
+      "delay": 4,
+      "trace_benefit_mean": 0.006558329880250454,
+      "trace_benefit_seed_bootstrap_95ci": [
+        0.00617187837292074,
+        0.006944513960591689
+      ],
+      "trace_minus_replay_oracle_mean": -0.005657730950931608
+    },
+    {
+      "objective": "REGRESSION",
+      "rho": 0.4,
+      "delay": 16,
+      "trace_benefit_mean": 0.0063260153456689856,
+      "trace_benefit_seed_bootstrap_95ci": [
+        0.005999351675857723,
+        0.006680395567986107
+      ],
+      "trace_minus_replay_oracle_mean": -0.006792337100336137
+    },
+    {
+      "objective": "REGRESSION",
+      "rho": 0.4,
+      "delay": 64,
+      "trace_benefit_mean": 0.0030479056731547295,
+      "trace_benefit_seed_bootstrap_95ci": [
+        0.002734920214976155,
+        0.003366836798062948
+      ],
+      "trace_minus_replay_oracle_mean": -0.010336690951485593
+    },
+    {
+      "objective": "REGRESSION",
+      "rho": 0.6,
+      "delay": 1,
+      "trace_benefit_mean": -0.0031475960039163446,
+      "trace_benefit_seed_bootstrap_95ci": [
+        -0.0033532501586005367,
+        -0.0029474421218960464
+      ],
+      "trace_minus_replay_oracle_mean": -0.005264934616023037
+    },
+    {
+      "objective": "REGRESSION",
+      "rho": 0.6,
+      "delay": 4,
+      "trace_benefit_mean": 0.004560188696723155,
+      "trace_benefit_seed_bootstrap_95ci": [
+        0.0042687419867084506,
+        0.00486242624769264
+      ],
+      "trace_minus_replay_oracle_mean": -0.00450648810976519
+    },
+    {
+      "objective": "REGRESSION",
+      "rho": 0.6,
+      "delay": 16,
+      "trace_benefit_mean": 0.0075628853904803105,
+      "trace_benefit_seed_bootstrap_95ci": [
+        0.007133127936595831,
+        0.008007135964021285
+      ],
+      "trace_minus_replay_oracle_mean": -0.005472755679510014
+    },
+    {
+      "objective": "REGRESSION",
+      "rho": 0.6,
+      "delay": 64,
+      "trace_benefit_mean": 0.003817718545269946,
+      "trace_benefit_seed_bootstrap_95ci": [
+        0.003514278824476687,
+        0.004129516170566907
+      ],
+      "trace_minus_replay_oracle_mean": -0.009435246937294816
+    },
+    {
+      "objective": "REGRESSION",
+      "rho": 0.8,
+      "delay": 1,
+      "trace_benefit_mean": -0.0038563285215865734,
+      "trace_benefit_seed_bootstrap_95ci": [
+        -0.004099072054688158,
+        -0.0036182655073446444
+      ],
+      "trace_minus_replay_oracle_mean": -0.004750773851878156
+    },
+    {
+      "objective": "REGRESSION",
+      "rho": 0.8,
+      "delay": 4,
+      "trace_benefit_mean": 0.0004369268909267882,
+      "trace_benefit_seed_bootstrap_95ci": [
+        0.0003512269586879988,
+        0.0005204625492130058
+      ],
+      "trace_minus_replay_oracle_mean": -0.003645106168595988
+    },
+    {
+      "objective": "REGRESSION",
+      "rho": 0.8,
+      "delay": 16,
+      "trace_benefit_mean": 0.008840824100343737,
+      "trace_benefit_seed_bootstrap_95ci": [
+        0.008342026211201599,
+        0.00936714135961131
+      ],
+      "trace_minus_replay_oracle_mean": -0.0037451260996489277
+    },
+    {
+      "objective": "REGRESSION",
+      "rho": 0.8,
+      "delay": 64,
+      "trace_benefit_mean": 0.005081232228395243,
+      "trace_benefit_seed_bootstrap_95ci": [
+        0.004659856856702695,
+        0.005516169618299963
+      ],
+      "trace_minus_replay_oracle_mean": -0.008811270494215056
+    },
+    {
+      "objective": "REGRESSION",
+      "rho": 0.9,
+      "delay": 1,
+      "trace_benefit_mean": -0.0035112533467106964,
+      "trace_benefit_seed_bootstrap_95ci": [
+        -0.0037628292001217656,
+        -0.0032668943661845937
+      ],
+      "trace_minus_replay_oracle_mean": -0.003946491702844627
+    },
+    {
+      "objective": "REGRESSION",
+      "rho": 0.9,
+      "delay": 4,
+      "trace_benefit_mean": -0.0011585834188220542,
+      "trace_benefit_seed_bootstrap_95ci": [
+        -0.0012877390898086648,
+        -0.0010278804910951625
+      ],
+      "trace_minus_replay_oracle_mean": -0.0030413960568055763
+    },
+    {
+      "objective": "REGRESSION",
+      "rho": 0.9,
+      "delay": 16,
+      "trace_benefit_mean": 0.0059222107143811304,
+      "trace_benefit_seed_bootstrap_95ci": [
+        0.005549543681104351,
+        0.006313577082298941
+      ],
+      "trace_minus_replay_oracle_mean": -0.0024328288820047233
+    },
+    {
+      "objective": "REGRESSION",
+      "rho": 0.9,
+      "delay": 64,
+      "trace_benefit_mean": 0.007337394814328328,
+      "trace_benefit_seed_bootstrap_95ci": [
+        0.006648536552158088,
+        0.008058955680164926
+      ],
+      "trace_minus_replay_oracle_mean": -0.007411225525596518
+    }
+  ],
+  "interactions_by_objective_and_delay": {
+    "CLASSIFICATION": {
+      "1": {
+        "rho0_minus_rho09": 0.49403333333333327,
+        "seed_bootstrap_95ci": [
+          0.4674,
+          0.5214
+        ]
+      },
+      "4": {
+        "rho0_minus_rho09": 0.40859999999999996,
+        "seed_bootstrap_95ci": [
+          0.3869666666666667,
+          0.43039999999999995
+        ]
+      },
+      "16": {
+        "rho0_minus_rho09": 0.08716666666666666,
+        "seed_bootstrap_95ci": [
+          0.062033333333333315,
+          0.11256666666666666
+        ]
+      },
+      "64": {
+        "rho0_minus_rho09": -0.09979999999999999,
+        "seed_bootstrap_95ci": [
+          -0.12626750000000003,
+          -0.0758666666666667
+        ]
+      },
+      "equal_delay_mean": {
+        "rho0_minus_rho09": 0.22249999999999995,
+        "seed_bootstrap_95ci": [
+          0.20745812499999997,
+          0.23729999999999996
+        ],
+        "positive_seed_count": 30
+      }
+    },
+    "REGRESSION": {
+      "1": {
+        "rho0_minus_rho09": 0.009469214152367988,
+        "seed_bootstrap_95ci": [
+          0.008902648694013566,
+          0.010026846530654875
+        ]
+      },
+      "4": {
+        "rho0_minus_rho09": 0.006657365836483973,
+        "seed_bootstrap_95ci": [
+          0.00626595350196019,
+          0.0070584771562594165
+        ]
+      },
+      "16": {
+        "rho0_minus_rho09": -0.0014089332492102419,
+        "seed_bootstrap_95ci": [
+          -0.0016893095136406627,
+          -0.0011301467709802621
+        ]
+      },
+      "64": {
+        "rho0_minus_rho09": -0.005215664090430667,
+        "seed_bootstrap_95ci": [
+          -0.0058957298441633605,
+          -0.004555754475043504
+        ]
+      },
+      "equal_delay_mean": {
+        "rho0_minus_rho09": 0.0023754956623027635,
+        "seed_bootstrap_95ci": [
+          0.002164494767199548,
+          0.0025962782268085112
+        ],
+        "positive_seed_count": 30
+      }
+    }
+  },
+  "interpretation_note": "Positive benefit means trace helps (accuracy gain or MSE reduction). Positive rho0-minus-rho09 means the trace benefit is greater for IID than highly autocorrelated input. Objective-specific estimates are not combined."
+}

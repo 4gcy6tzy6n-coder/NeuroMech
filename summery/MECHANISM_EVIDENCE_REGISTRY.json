@@ -509,7 +509,7 @@
       },
       "identity_granularity": "CELL_TYPE / CIRCUIT SIGNAL (climbing fiber and Purkinje complex-spike events); no single-synapse learning-rule claim",
       "evidence_status": "PARTIAL",
-      "result_scope": "A timed CF/complex-spike event causally instructs acquisition of an appropriately timed associative response in the tested delay eyeblink conditioning task. Eligibility trace and three-factor synaptic rule are computational abstractions, not directly measured algorithms. A fixed-hyperparameter follow-up retained a positive trace-versus-no-trace contrast across IID Gaussian, AR(1) Gaussian, and sparse-sign input streams (+0.2284 equal-generator accuracy; hierarchical task-seed 95% interval [+0.2213,+0.2357]; 30/30 positive task-seed averages in each generator). This keeps the same classification objective; exact replay remained superior in all 12 generator-delay cells.",
+      "result_scope": "A timed CF/complex-spike event causally instructs acquisition of an appropriately timed associative response in the tested delay eyeblink conditioning task. Eligibility trace and three-factor synaptic rule are computational abstractions, not directly measured algorithms. A fixed-hyperparameter follow-up retained a positive trace-versus-no-trace contrast across IID Gaussian, AR(1) Gaussian, and sparse-sign input streams (+0.2284 equal-generator accuracy; hierarchical task-seed 95% interval [+0.2213,+0.2357]; 30/30 positive task-seed averages in each generator). This keeps the same classification objective; exact replay remained superior in all 12 generator-delay cells. A post-result M7 sweep crossed six AR(1) correlations, four delays, and classification/regression objectives. Within each objective, the trace benefit generally decreased with rho at short delays but reversed at long delays; exact replay still beat the trace in all 48 cells. An initial pooled accuracy-minus-MSE interaction was invalid and is excluded.",
       "known_missing_evidence": [
         "Direct measurement and isolation of a particular synaptic eligibility-trace state/rule",
         "Generalization to other cerebellum-dependent tasks and species",
@@ -521,12 +521,14 @@
       "allowed_claim": [
         "The cited interventions support a causal CF/complex-spike instructive role in acquisition of mouse delay eyeblink conditioning.",
         "A norm-matched local eligibility trace improved delayed-label accuracy over a no-trace misassignment control in the stated synthetic task.",
-        "With fixed hyperparameters, the synthetic trace effect remained positive versus no-trace across three tested input-stream distributions under the same task objective; exact replay remained superior."
+        "With fixed hyperparameters, the synthetic trace effect remained positive versus no-trace across three tested input-stream distributions under the same task objective; exact replay remained superior.",
+        "On the fixed synthetic task family, trace benefit relative to current-input updates depends jointly on input autocorrelation, delay, and objective; objective-specific M7 interactions were positive when averaged over delay but reversed at long delays."
       ],
       "forbidden_claim": [
         "The cited studies directly prove a specific eligibility-trace equation or universal cerebellar learning rule.",
         "The synthetic benchmark validates the biological mechanism or establishes general AI benefit.",
-        "The synthetic eligibility model outperforms exact replay or batch logistic regression."
+        "The synthetic eligibility model outperforms exact replay or batch logistic regression.",
+        "The M7 phase diagram is a general task-family law, biological validation, or evidence of a new eligibility algorithm."
       ],
       "artificial_abstraction": "A local decaying feature eligibility state receives delayed label error via a three-factor update; implementation is an abstract online classifier, not a cerebellum model.",
       "counterfactual_arms": [
@@ -551,7 +553,7 @@
           "definition": "Fit the same fixed features from the full labeled training set."
         }
       ],
-      "implementation_status": "POST_RESULT_V3_AND_CROSS_INPUT_VALIDATION; TRACE_BEATS_NO_TRACE_BUT_LOSES_TO_EXACT_REPLAY_AND_BATCH",
+      "implementation_status": "POST_RESULT_M5_CROSS_INPUT_AND_M7_CORRELATION_DELAY_SWEEP; TRACE_EFFECT_DELAY_AND_STATISTICS_DEPENDENT; EXACT_REPLAY_SUPERIOR",
       "functional_observable": "Held-out four-class accuracy and cross-entropy after delayed-label online learning on a synthetic fixed-feature task.",
       "structural_observable": "Not modeled; no cell-level structural graph imported.",
       "neuron_id_mapping": "Not applicable to abstract algorithm; biological identity remains at the climbing-fiber/Purkinje-cell-type signal level.",
