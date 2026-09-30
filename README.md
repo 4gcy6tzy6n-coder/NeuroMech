@@ -68,6 +68,10 @@ This is evidence that the artificial operation generalizes across two task objec
 - [Runner and independent verifier](model/M2_SEQUENTIAL_DECISION_V1/)
 - [Episode outcomes and manifest](data/results/M2_SEQUENTIAL_DECISION_V1/)
 
+### M2 context-dose transfer to terminal decisions
+
+A 30-seed extension measured the same 11 context-information doses on a terminal left/right decision objective. The mode-gain filter's advantage over constant gain crossed zero near `κ=0.134` (crossed-bootstrap 95% interval `[0.072, 0.200]`): it was below the constant filter at `κ=0`, unresolved at `+0.10`, and better from `+0.20` upward. The crossover differs descriptively from the continuous-estimation result (`κ≈0.285`), showing that the operating boundary changes with the task objective. At full alignment, mode-gain accuracy was `0.7111`, versus `0.6460` for constant gain, while the Bayes reference remained ahead by `13.3` percentage points. This is objective transfer within a closely related synthetic evidence model, not broad task-family or biological transfer. See the [contract, results, and failure log](summery/M2_DECISION_CONTEXT_DOSE_V1/), [runner and verifier](model/M2_DECISION_CONTEXT_DOSE_V1/), and [trial-level data](data/results/M2_DECISION_CONTEXT_DOSE_V1/).
+
 ## Active integrated study: O3 AIY state-pattern rescue
 
 The next mainline study is a prospective *C. elegans* thermotaxis experiment asking whether restoring the forward-state timing of AIY activity under RIM perturbation rescues thermosensory gating and forward-run persistence. Its decisive control is the same AIY stimulation waveform delivered at yoked times, matched for total light exposure. Broad motor-state sensory gating and AIY optogenetic control are already established; the candidate contribution is the specific timing-dependent rescue in the RIM–AIY thermotaxis circuit, not the general phenomenon. The focused literature audit and executable design outline are in [O3 route plan](experiments/biological_validation/O3_AIY_STATE_RESCUE_NOVELTY_AND_EXECUTION_PLAN.md).

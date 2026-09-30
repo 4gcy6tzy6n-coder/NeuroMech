@@ -1,0 +1,56 @@
+{
+  "experiment_id": "M2_DECISION_CONTEXT_DOSE_V1",
+  "classification": "exploratory artificial objective-transfer study",
+  "python": "3.12.13",
+  "numpy": "2.4.4",
+  "torch": "2.11.0",
+  "training_seeds": [
+    74000,
+    74029
+  ],
+  "training_stream_rule": "seed*41+39",
+  "test_stream_rule": "960000+seed",
+  "train_sizes": [
+    64,
+    256,
+    1024
+  ],
+  "n_test": 256,
+  "steps": 32,
+  "updates": 250,
+  "batch_size": 16,
+  "kappas": [
+    -0.5,
+    -0.4,
+    -0.3,
+    -0.2,
+    -0.1,
+    -0.0,
+    0.1,
+    0.2,
+    0.3,
+    0.4,
+    0.5
+  ],
+  "arms": [
+    "MODE_GAIN_FILTER",
+    "CONSTANT_GAIN_FILTER",
+    "LINEAR_BILINEAR_RNN",
+    "BAYES_ORACLE"
+  ],
+  "rows": 1013760,
+  "runner_sha256": "c511e704fdd11f4d354c55d8f2c194ae4682c38c9b253f1a7a7c28b3eb00d7b0",
+  "contract_sha256": "f551c9d26bdb5a5f1879ab29447ca9a4069af006c240f1b2d0da4015a39699e2",
+  "files": {
+    "episode_metrics.csv": "3df4085798a77983d2e4062543e9c67c31acf522e8f186774a9cd0c7a6c9429e",
+    "training_metrics.csv": "b47d5c0a10d988c45e045a9ce272368a6d684bd077ac59f65fbc1c8aff1fcc62",
+    "summary.json": "108b001ee4dd3584a0bd610dd1ad6ac3f21b81e12a6ba611548484f6ece80f6e",
+    "per_seed_contrasts.csv": "d6fad948f7618be9733acf3932e82356b16a8e20b39f1490211163f1ceb20e2e"
+  },
+  "analysis_sources": {
+    "analyzer": "c43c2a4cc45fe207ef1b727b3fd0e8d483f516ed0261d5c78623256254ce781a",
+    "runner": "c511e704fdd11f4d354c55d8f2c194ae4682c38c9b253f1a7a7c28b3eb00d7b0",
+    "contract": "f551c9d26bdb5a5f1879ab29447ca9a4069af006c240f1b2d0da4015a39699e2",
+    "verifier": "d3506fba67c5d6fd7e56ac112724b5826acc70ddcb5343b20493467f1d02b8f3"
+  }
+}

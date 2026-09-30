@@ -1,0 +1,581 @@
+{
+  "experiment_id": "M2_DECISION_CONTEXT_DOSE_V1",
+  "classification": "exploratory artificial objective-transfer study",
+  "primary": "terminal accuracy(mode gain)-accuracy(constant gain), equally averaged across training sizes",
+  "bootstrap": "crossed resampling over training seeds and paired trial IDs",
+  "bootstrap_replicates": 10000,
+  "rows": 1013760,
+  "dose_curve": [
+    {
+      "kappa": -0.5,
+      "mode_accuracy": 0.5183159722222223,
+      "constant_accuracy": 0.6471788194444444,
+      "mode_minus_constant_accuracy": -0.12886284722222222,
+      "crossed_95ci": [
+        -0.144140625,
+        -0.1141482204861111
+      ],
+      "positive_seed_count": 0,
+      "mode_minus_linear_bilinear_rnn_accuracy": 0.030381944444444444,
+      "mode_minus_linear_bilinear_rnn_seed_ci95": [
+        0.014539930555555556,
+        0.046311848958333325
+      ],
+      "mode_minus_bayes_oracle_accuracy": -0.3232204861111111,
+      "mode_minus_bayes_oracle_seed_ci95": [
+        -0.3370225694444444,
+        -0.30924479166666674
+      ]
+    },
+    {
+      "kappa": -0.4,
+      "mode_accuracy": 0.5390625,
+      "constant_accuracy": 0.6481336805555555,
+      "mode_minus_constant_accuracy": -0.10907118055555555,
+      "crossed_95ci": [
+        -0.12378472222222221,
+        -0.09448784722222221
+      ],
+      "positive_seed_count": 0,
+      "mode_minus_linear_bilinear_rnn_accuracy": 0.04192708333333333,
+      "mode_minus_linear_bilinear_rnn_seed_ci95": [
+        0.02712673611111111,
+        0.05694444444444444
+      ],
+      "mode_minus_bayes_oracle_accuracy": -0.28125,
+      "mode_minus_bayes_oracle_seed_ci95": [
+        -0.29479275173611114,
+        -0.26766493055555557
+      ]
+    },
+    {
+      "kappa": -0.3,
+      "mode_accuracy": 0.5594618055555556,
+      "constant_accuracy": 0.6477430555555556,
+      "mode_minus_constant_accuracy": -0.08828125,
+      "crossed_95ci": [
+        -0.10308159722222222,
+        -0.07413194444444443
+      ],
+      "positive_seed_count": 0,
+      "mode_minus_linear_bilinear_rnn_accuracy": 0.052994791666666666,
+      "mode_minus_linear_bilinear_rnn_seed_ci95": [
+        0.03901909722222222,
+        0.066796875
+      ],
+      "mode_minus_bayes_oracle_accuracy": -0.24118923611111112,
+      "mode_minus_bayes_oracle_seed_ci95": [
+        -0.2539496527777778,
+        -0.22803819444444445
+      ]
+    },
+    {
+      "kappa": -0.2,
+      "mode_accuracy": 0.5791232638888889,
+      "constant_accuracy": 0.6483940972222222,
+      "mode_minus_constant_accuracy": -0.06927083333333334,
+      "crossed_95ci": [
+        -0.08381076388888889,
+        -0.055078125
+      ],
+      "positive_seed_count": 0,
+      "mode_minus_linear_bilinear_rnn_accuracy": 0.06319444444444444,
+      "mode_minus_linear_bilinear_rnn_seed_ci95": [
+        0.049435763888888894,
+        0.07703993055555555
+      ],
+      "mode_minus_bayes_oracle_accuracy": -0.20434027777777777,
+      "mode_minus_bayes_oracle_seed_ci95": [
+        -0.21631944444444443,
+        -0.19205729166666666
+      ]
+    },
+    {
+      "kappa": -0.1,
+      "mode_accuracy": 0.6000434027777778,
+      "constant_accuracy": 0.6491319444444444,
+      "mode_minus_constant_accuracy": -0.049088541666666666,
+      "crossed_95ci": [
+        -0.06332465277777777,
+        -0.03537326388888889
+      ],
+      "positive_seed_count": 0,
+      "mode_minus_linear_bilinear_rnn_accuracy": 0.07495659722222223,
+      "mode_minus_linear_bilinear_rnn_seed_ci95": [
+        0.06176215277777777,
+        0.08828125
+      ],
+      "mode_minus_bayes_oracle_accuracy": -0.17222222222222222,
+      "mode_minus_bayes_oracle_seed_ci95": [
+        -0.18424479166666666,
+        -0.16097981770833333
+      ]
+    },
+    {
+      "kappa": -0.0,
+      "mode_accuracy": 0.6208767361111112,
+      "constant_accuracy": 0.6488715277777778,
+      "mode_minus_constant_accuracy": -0.027994791666666668,
+      "crossed_95ci": [
+        -0.04140733506944444,
+        -0.014713541666666666
+      ],
+      "positive_seed_count": 2,
+      "mode_minus_linear_bilinear_rnn_accuracy": 0.08697916666666666,
+      "mode_minus_linear_bilinear_rnn_seed_ci95": [
+        0.07473958333333333,
+        0.09943576388888888
+      ],
+      "mode_minus_bayes_oracle_accuracy": -0.14956597222222223,
+      "mode_minus_bayes_oracle_seed_ci95": [
+        -0.161328125,
+        -0.13828125
+      ]
+    },
+    {
+      "kappa": 0.1,
+      "mode_accuracy": 0.6406684027777778,
+      "constant_accuracy": 0.6477430555555556,
+      "mode_minus_constant_accuracy": -0.007074652777777777,
+      "crossed_95ci": [
+        -0.020225694444444442,
+        0.005859375
+      ],
+      "positive_seed_count": 8,
+      "mode_minus_linear_bilinear_rnn_accuracy": 0.09704861111111111,
+      "mode_minus_linear_bilinear_rnn_seed_ci95": [
+        0.08528645833333336,
+        0.10894097222222222
+      ],
+      "mode_minus_bayes_oracle_accuracy": -0.13758680555555555,
+      "mode_minus_bayes_oracle_seed_ci95": [
+        -0.14986979166666667,
+        -0.1252170138888889
+      ]
+    },
+    {
+      "kappa": 0.2,
+      "mode_accuracy": 0.6594618055555556,
+      "constant_accuracy": 0.6459635416666667,
+      "mode_minus_constant_accuracy": 0.013498263888888888,
+      "crossed_95ci": [
+        0.0005208333333333331,
+        0.026649305555555555
+      ],
+      "positive_seed_count": 22,
+      "mode_minus_linear_bilinear_rnn_accuracy": 0.10698784722222222,
+      "mode_minus_linear_bilinear_rnn_seed_ci95": [
+        0.09613715277777778,
+        0.11779513888888889
+      ],
+      "mode_minus_bayes_oracle_accuracy": -0.12439236111111111,
+      "mode_minus_bayes_oracle_seed_ci95": [
+        -0.13541666666666666,
+        -0.11310655381944444
+      ]
+    },
+    {
+      "kappa": 0.3,
+      "mode_accuracy": 0.6787326388888889,
+      "constant_accuracy": 0.6459635416666667,
+      "mode_minus_constant_accuracy": 0.032769097222222224,
+      "crossed_95ci": [
+        0.019184027777777776,
+        0.046051432291666645
+      ],
+      "positive_seed_count": 27,
+      "mode_minus_linear_bilinear_rnn_accuracy": 0.11727430555555556,
+      "mode_minus_linear_bilinear_rnn_seed_ci95": [
+        0.1066840277777778,
+        0.12769097222222223
+      ],
+      "mode_minus_bayes_oracle_accuracy": -0.12243923611111111,
+      "mode_minus_bayes_oracle_seed_ci95": [
+        -0.13424479166666667,
+        -0.11059027777777779
+      ]
+    },
+    {
+      "kappa": 0.4,
+      "mode_accuracy": 0.694921875,
+      "constant_accuracy": 0.6461805555555555,
+      "mode_minus_constant_accuracy": 0.048741319444444445,
+      "crossed_95ci": [
+        0.03519965277777778,
+        0.06206814236111107
+      ],
+      "positive_seed_count": 30,
+      "mode_minus_linear_bilinear_rnn_accuracy": 0.123828125,
+      "mode_minus_linear_bilinear_rnn_seed_ci95": [
+        0.11371527777777778,
+        0.13372504340277777
+      ],
+      "mode_minus_bayes_oracle_accuracy": -0.12799479166666666,
+      "mode_minus_bayes_oracle_seed_ci95": [
+        -0.1388454861111111,
+        -0.11727430555555557
+      ]
+    },
+    {
+      "kappa": 0.5,
+      "mode_accuracy": 0.7110677083333333,
+      "constant_accuracy": 0.6459635416666667,
+      "mode_minus_constant_accuracy": 0.06510416666666667,
+      "crossed_95ci": [
+        0.05230034722222222,
+        0.077734375
+      ],
+      "positive_seed_count": 30,
+      "mode_minus_linear_bilinear_rnn_accuracy": 0.1306423611111111,
+      "mode_minus_linear_bilinear_rnn_seed_ci95": [
+        0.12005208333333335,
+        0.14097222222222222
+      ],
+      "mode_minus_bayes_oracle_accuracy": -0.13268229166666667,
+      "mode_minus_bayes_oracle_seed_ci95": [
+        -0.14327256944444444,
+        -0.12291666666666669
+      ]
+    }
+  ],
+  "per_size": [
+    {
+      "kappa": -0.5,
+      "train_size": 64,
+      "mode_minus_constant_accuracy": -0.10247395833333334,
+      "crossed_95ci": [
+        -0.12473958333333333,
+        -0.080859375
+      ],
+      "positive_seed_count": 0
+    },
+    {
+      "kappa": -0.5,
+      "train_size": 256,
+      "mode_minus_constant_accuracy": -0.14830729166666667,
+      "crossed_95ci": [
+        -0.16705729166666666,
+        -0.12916666666666668
+      ],
+      "positive_seed_count": 0
+    },
+    {
+      "kappa": -0.5,
+      "train_size": 1024,
+      "mode_minus_constant_accuracy": -0.13580729166666666,
+      "crossed_95ci": [
+        -0.15559895833333334,
+        -0.11614583333333334
+      ],
+      "positive_seed_count": 0
+    },
+    {
+      "kappa": -0.4,
+      "train_size": 64,
+      "mode_minus_constant_accuracy": -0.084375,
+      "crossed_95ci": [
+        -0.10586263020833334,
+        -0.06393229166666667
+      ],
+      "positive_seed_count": 1
+    },
+    {
+      "kappa": -0.4,
+      "train_size": 256,
+      "mode_minus_constant_accuracy": -0.12708333333333333,
+      "crossed_95ci": [
+        -0.14544270833333334,
+        -0.10846354166666666
+      ],
+      "positive_seed_count": 0
+    },
+    {
+      "kappa": -0.4,
+      "train_size": 1024,
+      "mode_minus_constant_accuracy": -0.11575520833333333,
+      "crossed_95ci": [
+        -0.134765625,
+        -0.09661458333333334
+      ],
+      "positive_seed_count": 0
+    },
+    {
+      "kappa": -0.3,
+      "train_size": 64,
+      "mode_minus_constant_accuracy": -0.06458333333333334,
+      "crossed_95ci": [
+        -0.08411458333333334,
+        -0.04583333333333333
+      ],
+      "positive_seed_count": 1
+    },
+    {
+      "kappa": -0.3,
+      "train_size": 256,
+      "mode_minus_constant_accuracy": -0.10286458333333333,
+      "crossed_95ci": [
+        -0.120703125,
+        -0.084765625
+      ],
+      "positive_seed_count": 0
+    },
+    {
+      "kappa": -0.3,
+      "train_size": 1024,
+      "mode_minus_constant_accuracy": -0.09739583333333333,
+      "crossed_95ci": [
+        -0.115498046875,
+        -0.07903645833333334
+      ],
+      "positive_seed_count": 0
+    },
+    {
+      "kappa": -0.2,
+      "train_size": 64,
+      "mode_minus_constant_accuracy": -0.046875,
+      "crossed_95ci": [
+        -0.06627604166666666,
+        -0.028255208333333334
+      ],
+      "positive_seed_count": 2
+    },
+    {
+      "kappa": -0.2,
+      "train_size": 256,
+      "mode_minus_constant_accuracy": -0.08424479166666667,
+      "crossed_95ci": [
+        -0.10247395833333334,
+        -0.06588541666666667
+      ],
+      "positive_seed_count": 0
+    },
+    {
+      "kappa": -0.2,
+      "train_size": 1024,
+      "mode_minus_constant_accuracy": -0.07669270833333333,
+      "crossed_95ci": [
+        -0.09544596354166666,
+        -0.057942708333333336
+      ],
+      "positive_seed_count": 0
+    },
+    {
+      "kappa": -0.1,
+      "train_size": 64,
+      "mode_minus_constant_accuracy": -0.028776041666666665,
+      "crossed_95ci": [
+        -0.04739583333333333,
+        -0.011455078125000047
+      ],
+      "positive_seed_count": 5
+    },
+    {
+      "kappa": -0.1,
+      "train_size": 256,
+      "mode_minus_constant_accuracy": -0.06067708333333333,
+      "crossed_95ci": [
+        -0.07890625,
+        -0.04283854166666667
+      ],
+      "positive_seed_count": 0
+    },
+    {
+      "kappa": -0.1,
+      "train_size": 1024,
+      "mode_minus_constant_accuracy": -0.0578125,
+      "crossed_95ci": [
+        -0.0765625,
+        -0.0390625
+      ],
+      "positive_seed_count": 1
+    },
+    {
+      "kappa": -0.0,
+      "train_size": 64,
+      "mode_minus_constant_accuracy": -0.009114583333333334,
+      "crossed_95ci": [
+        -0.026432291666666666,
+        0.007421875
+      ],
+      "positive_seed_count": 11
+    },
+    {
+      "kappa": -0.0,
+      "train_size": 256,
+      "mode_minus_constant_accuracy": -0.037890625,
+      "crossed_95ci": [
+        -0.05559895833333333,
+        -0.0203125
+      ],
+      "positive_seed_count": 2
+    },
+    {
+      "kappa": -0.0,
+      "train_size": 1024,
+      "mode_minus_constant_accuracy": -0.03697916666666667,
+      "crossed_95ci": [
+        -0.05520833333333333,
+        -0.018619791666666666
+      ],
+      "positive_seed_count": 4
+    },
+    {
+      "kappa": 0.1,
+      "train_size": 64,
+      "mode_minus_constant_accuracy": 0.009505208333333333,
+      "crossed_95ci": [
+        -0.007161458333333333,
+        0.025651041666666666
+      ],
+      "positive_seed_count": 21
+    },
+    {
+      "kappa": 0.1,
+      "train_size": 256,
+      "mode_minus_constant_accuracy": -0.014713541666666666,
+      "crossed_95ci": [
+        -0.03216145833333333,
+        0.00234375
+      ],
+      "positive_seed_count": 8
+    },
+    {
+      "kappa": 0.1,
+      "train_size": 1024,
+      "mode_minus_constant_accuracy": -0.016015625,
+      "crossed_95ci": [
+        -0.033203125,
+        0.0014322916666666666
+      ],
+      "positive_seed_count": 8
+    },
+    {
+      "kappa": 0.2,
+      "train_size": 64,
+      "mode_minus_constant_accuracy": 0.026822916666666665,
+      "crossed_95ci": [
+        0.010546875,
+        0.042708333333333334
+      ],
+      "positive_seed_count": 25
+    },
+    {
+      "kappa": 0.2,
+      "train_size": 256,
+      "mode_minus_constant_accuracy": 0.007682291666666666,
+      "crossed_95ci": [
+        -0.010416666666666666,
+        0.025130208333333334
+      ],
+      "positive_seed_count": 17
+    },
+    {
+      "kappa": 0.2,
+      "train_size": 1024,
+      "mode_minus_constant_accuracy": 0.005989583333333334,
+      "crossed_95ci": [
+        -0.011328125,
+        0.0234375
+      ],
+      "positive_seed_count": 16
+    },
+    {
+      "kappa": 0.3,
+      "train_size": 64,
+      "mode_minus_constant_accuracy": 0.04401041666666667,
+      "crossed_95ci": [
+        0.02812174479166667,
+        0.05963541666666667
+      ],
+      "positive_seed_count": 29
+    },
+    {
+      "kappa": 0.3,
+      "train_size": 256,
+      "mode_minus_constant_accuracy": 0.031119791666666667,
+      "crossed_95ci": [
+        0.013671875,
+        0.048828125
+      ],
+      "positive_seed_count": 24
+    },
+    {
+      "kappa": 0.3,
+      "train_size": 1024,
+      "mode_minus_constant_accuracy": 0.023177083333333334,
+      "crossed_95ci": [
+        0.005338541666666667,
+        0.040755208333333334
+      ],
+      "positive_seed_count": 22
+    },
+    {
+      "kappa": 0.4,
+      "train_size": 64,
+      "mode_minus_constant_accuracy": 0.056901041666666666,
+      "crossed_95ci": [
+        0.040625,
+        0.07356770833333333
+      ],
+      "positive_seed_count": 30
+    },
+    {
+      "kappa": 0.4,
+      "train_size": 256,
+      "mode_minus_constant_accuracy": 0.046875,
+      "crossed_95ci": [
+        0.0296875,
+        0.06380208333333333
+      ],
+      "positive_seed_count": 30
+    },
+    {
+      "kappa": 0.4,
+      "train_size": 1024,
+      "mode_minus_constant_accuracy": 0.04244791666666667,
+      "crossed_95ci": [
+        0.02421875,
+        0.06145833333333333
+      ],
+      "positive_seed_count": 27
+    },
+    {
+      "kappa": 0.5,
+      "train_size": 64,
+      "mode_minus_constant_accuracy": 0.07174479166666667,
+      "crossed_95ci": [
+        0.05625,
+        0.08776041666666666
+      ],
+      "positive_seed_count": 30
+    },
+    {
+      "kappa": 0.5,
+      "train_size": 256,
+      "mode_minus_constant_accuracy": 0.064453125,
+      "crossed_95ci": [
+        0.047526041666666664,
+        0.08098958333333334
+      ],
+      "positive_seed_count": 30
+    },
+    {
+      "kappa": 0.5,
+      "train_size": 1024,
+      "mode_minus_constant_accuracy": 0.05911458333333333,
+      "crossed_95ci": [
+        0.041276041666666666,
+        0.07721679687499995
+      ],
+      "positive_seed_count": 29
+    }
+  ],
+  "zero_crossings_linear_interpolation": [
+    0.13438818565400845
+  ],
+  "zero_crossing_crossed_bootstrap_95ci": [
+    0.07197885334062533,
+    0.2002633580458412
+  ],
+  "zero_crossing_bootstrap_fraction": 1.0
+}
