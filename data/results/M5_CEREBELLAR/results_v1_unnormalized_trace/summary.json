@@ -1,0 +1,92 @@
+{
+  "contract": "DELAYED_TEACHING_SIGNAL_CONTRACT.md",
+  "n_input": 32,
+  "n_features": 64,
+  "n_classes": 4,
+  "n_train": 3000,
+  "n_test": 1000,
+  "delays": [
+    1,
+    4,
+    16,
+    64
+  ],
+  "seeds": 30,
+  "learning_rate": 0.01,
+  "eligibility_decay": 0.98,
+  "primary_mean_trace_minus_no_trace": 0.286475,
+  "primary_seed_bootstrap_95ci": [
+    0.27095,
+    0.3008004166666667
+  ],
+  "conditions": [
+    {
+      "delay": 1,
+      "eligibility_trace_accuracy": 0.6093666666666666,
+      "no_trace_accuracy": 0.2536333333333334,
+      "exact_replay_accuracy": 0.7475,
+      "trace_minus_no_trace": 0.35573333333333323,
+      "trace_minus_no_trace_seed_bootstrap_95ci": [
+        0.3358,
+        0.37649999999999995
+      ],
+      "trace_minus_replay": -0.13813333333333333,
+      "trace_minus_replay_seed_bootstrap_95ci": [
+        -0.15286666666666668,
+        -0.12406583333333339
+      ],
+      "seeds": 30
+    },
+    {
+      "delay": 4,
+      "eligibility_trace_accuracy": 0.5982333333333333,
+      "no_trace_accuracy": 0.2585,
+      "exact_replay_accuracy": 0.7474666666666665,
+      "trace_minus_no_trace": 0.3397333333333332,
+      "trace_minus_no_trace_seed_bootstrap_95ci": [
+        0.31933333333333336,
+        0.3586999999999999
+      ],
+      "trace_minus_replay": -0.1492333333333333,
+      "trace_minus_replay_seed_bootstrap_95ci": [
+        -0.16636666666666663,
+        -0.1335
+      ],
+      "seeds": 30
+    },
+    {
+      "delay": 16,
+      "eligibility_trace_accuracy": 0.5502,
+      "no_trace_accuracy": 0.23613333333333333,
+      "exact_replay_accuracy": 0.7474333333333333,
+      "trace_minus_no_trace": 0.3140666666666666,
+      "trace_minus_no_trace_seed_bootstrap_95ci": [
+        0.2958666666666667,
+        0.3329008333333333
+      ],
+      "trace_minus_replay": -0.1972333333333333,
+      "trace_minus_replay_seed_bootstrap_95ci": [
+        -0.2162,
+        -0.17983333333333335
+      ],
+      "seeds": 30
+    },
+    {
+      "delay": 64,
+      "eligibility_trace_accuracy": 0.39149999999999996,
+      "no_trace_accuracy": 0.2551333333333334,
+      "exact_replay_accuracy": 0.7472666666666665,
+      "trace_minus_no_trace": 0.13636666666666666,
+      "trace_minus_no_trace_seed_bootstrap_95ci": [
+        0.10793333333333335,
+        0.1649
+      ],
+      "trace_minus_replay": -0.3557666666666667,
+      "trace_minus_replay_seed_bootstrap_95ci": [
+        -0.3811999999999999,
+        -0.3313666666666667
+      ],
+      "seeds": 30
+    }
+  ]
+}
