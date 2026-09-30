@@ -1,0 +1,44 @@
+{
+  "experiment": "M2_PERSISTENCE_YOKED_DIRECTION_V1",
+  "development_seed_range": [
+    350000,
+    350039
+  ],
+  "heldout_seed_range": [
+    360000,
+    360199
+  ],
+  "noise_scales": [
+    0.75,
+    1.0,
+    1.25
+  ],
+  "agents_per_block": 50,
+  "steps_per_trajectory": 1500,
+  "bootstrap_resamples": 20000,
+  "bootstrap_seed": 20261006,
+  "yoke_seed_offset": 800000000,
+  "motor_only_coefficients_from_v5": {
+    "0.75": 0.76,
+    "1.0": 0.665,
+    "1.25": 0.61
+  },
+  "inputs": {
+    "contract_sha256": "6dabc2553dadc1627a3e207dced61baecb8fc070c4ae3b2e39876502351a329f",
+    "source_model_sha256": "b70f62ca0a2fc45c86a8088f6a87d811c63e0afd28606d15d9d7cb7a337ffcc1",
+    "runner_sha256": "0f2c64c5389b47c3b7cdab0229479ef1b47b7150f2d395466a3da9a1ebb4e31f",
+    "author_matlab_sha256": "e2a9d5be4be436e30dfce7d59c4c95110cda189fbd54dc423128d0fc991b21c7",
+    "v5_summary_sha256": "bc1021ccd8c40ba0c8193b6169930ae13db73dc35e861d516f38912e2c165c62"
+  },
+  "runtime": {
+    "python": "3.9.6",
+    "numpy": "2.0.2"
+  },
+  "heldout_rows": 2400,
+  "output_sha256": {
+    "development_summary.csv": "539442c6c5fc70049467f297add35a293ba1737b2ab59c55fb66cfe21fdd1bdf",
+    "development_bout_library.json": "04268107bb323f9dc44435834f2435a7824efa7760ed2d584523505219922615",
+    "heldout_metrics.csv": "1aea0b86a03f15bbfcb1ab4a30ce4a9ce4cd1b3aff530c42a473732ba837dd44",
+    "summary.json": "8812953190ee452f1b3af99a9fcc4f2abc8591e1c7e17cfd1462e144c93927a6"
+  }
+}

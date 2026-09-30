@@ -1,0 +1,36 @@
+{
+  "status": "PASS",
+  "checks": [
+    "complete_seed_scale_arm_rows",
+    "development_outcome_blind_columns",
+    "positive_development_bout_libraries",
+    "V5_coefficient_provenance",
+    "corrected_author_delay_index",
+    "contract_source_runner_author_source_and_output_hashes",
+    "heldout_persistence_contrasts_recomputed",
+    "primary_and_scalar_bootstrap_recomputed"
+  ],
+  "development_rows": 120,
+  "heldout_rows": 2400,
+  "development_bout_counts": {
+    "0.75": {
+      "forward": 5352,
+      "reverse": 5472
+    },
+    "1.0": {
+      "forward": 18306,
+      "reverse": 18651
+    },
+    "1.25": {
+      "forward": 31723,
+      "reverse": 32223
+    }
+  },
+  "primary_mean_recomputed": 0.45489454880803093,
+  "primary_ci95_recomputed": [
+    0.44770023594981145,
+    0.4621109028924721
+  ],
+  "primary_positive_blocks_recomputed": 200,
+  "heldout_metrics_sha256": "1aea0b86a03f15bbfcb1ab4a30ce4a9ce4cd1b3aff530c42a473732ba837dd44"
+}

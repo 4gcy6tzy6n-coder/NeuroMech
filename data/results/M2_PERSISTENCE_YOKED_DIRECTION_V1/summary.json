@@ -1,0 +1,247 @@
+{
+  "experiment": "M2_PERSISTENCE_YOKED_DIRECTION_V1",
+  "classification": "RETROSPECTIVE_EXPLORATORY_SOURCE_MODEL_ANALYSIS",
+  "primary": {
+    "estimand": "equal-weighted within-seed SENSORY_SITE_FB minus MARGINAL_PERSISTENCE_YOKE warm-direction index across noise scales",
+    "mean": 0.45489454880803093,
+    "ci95_seed_block_bootstrap": [
+      0.44770023594981145,
+      0.4621109028924721
+    ],
+    "positive_seed_blocks": 200,
+    "n_seed_blocks": 200
+  },
+  "secondary_scalar_control": {
+    "mean": 0.13997242332194537,
+    "ci95_seed_block_bootstrap": [
+      0.13636744210738183,
+      0.1435196333259664
+    ],
+    "positive_seed_blocks": 200
+  },
+  "heldout_by_noise_scale": {
+    "0.75": {
+      "arms": {
+        "SENSORY_SITE_FB": {
+          "warm_direction_index": 0.5935020163675687,
+          "mean_forward_run_s": 4.584366767959631,
+          "median_forward_run_s": 1.2736666666666665,
+          "p90_forward_run_s": 12.34713333333334,
+          "fraction_forward_runs_ge_30s": 0.029761864477342505,
+          "forward_occupancy": 0.08652433333333334,
+          "mean_final_warm_displacement": 19.666762317562203,
+          "n_forward_runs": 188.885
+        },
+        "MOTOR_MULTI_STAT_MATCHED": {
+          "warm_direction_index": 0.4047245437077484,
+          "mean_forward_run_s": 3.7849065788681524,
+          "median_forward_run_s": 2.242666666666666,
+          "p90_forward_run_s": 8.244800000000003,
+          "fraction_forward_runs_ge_30s": 0.0049665463903400845,
+          "forward_occupancy": 0.08270933333333332,
+          "mean_final_warm_displacement": 11.909513987912119,
+          "n_forward_runs": 218.585
+        },
+        "MARGINAL_PERSISTENCE_YOKE": {
+          "warm_direction_index": -0.008211068621619634,
+          "mean_forward_run_s": 3.975191946501767,
+          "median_forward_run_s": 1.3083333333333333,
+          "p90_forward_run_s": 9.724266666666667,
+          "fraction_forward_runs_ge_30s": 0.02098680337941575,
+          "forward_occupancy": 0.1014786,
+          "mean_final_warm_displacement": -0.5175698630727115,
+          "n_forward_runs": 255.535,
+          "mean_reverse_run_s": 35.912259988095165,
+          "median_reverse_run_s": 25.572,
+          "p90_reverse_run_s": 85.55246666666667,
+          "n_reverse_runs": 250.885
+        },
+        "NO_FEEDBACK": {
+          "warm_direction_index": 0.10975099876762126,
+          "mean_forward_run_s": 0.7157847610458541,
+          "median_forward_run_s": 0.584,
+          "p90_forward_run_s": 1.2409333333333334,
+          "fraction_forward_runs_ge_30s": 0.0,
+          "forward_occupancy": 0.011608733333333334,
+          "mean_final_warm_displacement": 2.444423445356131,
+          "n_forward_runs": 162.11
+        }
+      },
+      "sensory_minus_yoke_direction": {
+        "mean": 0.6017130849891883,
+        "ci95": [
+          0.5849798383711494,
+          0.6183790641156389
+        ],
+        "positive_blocks": 200
+      },
+      "sensory_minus_scalar_direction": {
+        "mean": 0.18877747265982037,
+        "ci95": [
+          0.1807385003563808,
+          0.1967491100273325
+        ],
+        "positive_blocks": 200
+      },
+      "sensory_minus_yoke_persistence_summary_means": {
+        "mean_forward_run_s": 0.6091748214578636,
+        "median_forward_run_s": -0.034666666666666665,
+        "p90_forward_run_s": 2.622866666666669,
+        "fraction_forward_runs_ge_30s": 0.008775061097926752,
+        "forward_occupancy": -0.014954266666666665
+      }
+    },
+    "1.0": {
+      "arms": {
+        "SENSORY_SITE_FB": {
+          "warm_direction_index": 0.4304616329320399,
+          "mean_forward_run_s": 3.293507856875625,
+          "median_forward_run_s": 1.475,
+          "p90_forward_run_s": 8.246933333333335,
+          "fraction_forward_runs_ge_30s": 0.005892253530193272,
+          "forward_occupancy": 0.17222433333333334,
+          "mean_final_warm_displacement": 22.768296596352467,
+          "n_forward_runs": 523.37
+        },
+        "MOTOR_MULTI_STAT_MATCHED": {
+          "warm_direction_index": 0.2850906754613844,
+          "mean_forward_run_s": 2.6921864763488235,
+          "median_forward_run_s": 1.8760000000000003,
+          "p90_forward_run_s": 5.576133333333335,
+          "fraction_forward_runs_ge_30s": 0.00022803879990452563,
+          "forward_occupancy": 0.1543362666666667,
+          "mean_final_warm_displacement": 15.117151892457768,
+          "n_forward_runs": 573.38
+        },
+        "MARGINAL_PERSISTENCE_YOKE": {
+          "warm_direction_index": -0.0005420831441266166,
+          "mean_forward_run_s": 3.2360525276707066,
+          "median_forward_run_s": 1.4846666666666664,
+          "p90_forward_run_s": 8.079733333333335,
+          "fraction_forward_runs_ge_30s": 0.004902745491953646,
+          "forward_occupancy": 0.18138886666666665,
+          "mean_final_warm_displacement": -0.6462349326886948,
+          "n_forward_runs": 561.065,
+          "mean_reverse_run_s": 14.848037338820259,
+          "median_reverse_run_s": 9.808333333333334,
+          "p90_reverse_run_s": 35.656800000000004,
+          "n_reverse_runs": 552.2
+        },
+        "NO_FEEDBACK": {
+          "warm_direction_index": 0.11890624523292422,
+          "mean_forward_run_s": 0.8791019870071999,
+          "median_forward_run_s": 0.6703333333333333,
+          "p90_forward_run_s": 1.663,
+          "fraction_forward_runs_ge_30s": 0.0,
+          "forward_occupancy": 0.04386693333333334,
+          "mean_final_warm_displacement": 6.0364576508955174,
+          "n_forward_runs": 499.05
+        }
+      },
+      "sensory_minus_yoke_direction": {
+        "mean": 0.43100371607616644,
+        "ci95": [
+          0.4223645533135978,
+          0.43960872703127274
+        ],
+        "positive_blocks": 200
+      },
+      "sensory_minus_scalar_direction": {
+        "mean": 0.14537095747065545,
+        "ci95": [
+          0.14048737957742494,
+          0.15032355092610708
+        ],
+        "positive_blocks": 200
+      },
+      "sensory_minus_yoke_persistence_summary_means": {
+        "mean_forward_run_s": 0.05745532920491797,
+        "median_forward_run_s": -0.009666666666666662,
+        "p90_forward_run_s": 0.16719999999999974,
+        "fraction_forward_runs_ge_30s": 0.0009895080382396268,
+        "forward_occupancy": -0.009164533333333334
+      }
+    },
+    "1.25": {
+      "arms": {
+        "SENSORY_SITE_FB": {
+          "warm_direction_index": 0.3318567532666839,
+          "mean_forward_run_s": 2.8892988047022685,
+          "median_forward_run_s": 1.5723333333333331,
+          "p90_forward_run_s": 6.9211333333333345,
+          "fraction_forward_runs_ge_30s": 0.0016268971891606188,
+          "forward_occupancy": 0.2487742666666667,
+          "mean_final_warm_displacement": 22.34437431592643,
+          "n_forward_runs": 861.465
+        },
+        "MOTOR_MULTI_STAT_MATCHED": {
+          "warm_direction_index": 0.24608791343132352,
+          "mean_forward_run_s": 2.5898524595032857,
+          "median_forward_run_s": 1.8560000000000003,
+          "p90_forward_run_s": 5.375800000000001,
+          "fraction_forward_runs_ge_30s": 8.832392558193528e-05,
+          "forward_occupancy": 0.2351196,
+          "mean_final_warm_displacement": 16.395770820574047,
+          "n_forward_runs": 908.09
+        },
+        "MARGINAL_PERSISTENCE_YOKE": {
+          "warm_direction_index": -0.0001100920920541737,
+          "mean_forward_run_s": 2.829281038427508,
+          "median_forward_run_s": 1.534,
+          "p90_forward_run_s": 6.791666666666668,
+          "fraction_forward_runs_ge_30s": 0.0013721993854024657,
+          "forward_occupancy": 0.2529925333333333,
+          "mean_final_warm_displacement": -0.1628905673919828,
+          "n_forward_runs": 894.615,
+          "mean_reverse_run_s": 8.475538724066432,
+          "median_reverse_run_s": 5.601,
+          "p90_reverse_run_s": 20.1472,
+          "n_reverse_runs": 882.2
+        },
+        "NO_FEEDBACK": {
+          "warm_direction_index": 0.117619784507859,
+          "mean_forward_run_s": 1.01993699316703,
+          "median_forward_run_s": 0.7983333333333335,
+          "p90_forward_run_s": 1.9948666666666668,
+          "fraction_forward_runs_ge_30s": 0.0,
+          "forward_occupancy": 0.0910588,
+          "mean_final_warm_displacement": 6.360107533119992,
+          "n_forward_runs": 892.9
+        }
+      },
+      "sensory_minus_yoke_direction": {
+        "mean": 0.331966845358738,
+        "ci95": [
+          0.32578636681506196,
+          0.33808753248658646
+        ],
+        "positive_blocks": 200
+      },
+      "sensory_minus_scalar_direction": {
+        "mean": 0.08576883983536034,
+        "ci95": [
+          0.08190149503345623,
+          0.08961666016911875
+        ],
+        "positive_blocks": 200
+      },
+      "sensory_minus_yoke_persistence_summary_means": {
+        "mean_forward_run_s": 0.0600177662747606,
+        "median_forward_run_s": 0.03833333333333337,
+        "p90_forward_run_s": 0.1294666666666667,
+        "fraction_forward_runs_ge_30s": 0.00025469780375815304,
+        "forward_occupancy": -0.004218266666666668
+      }
+    }
+  },
+  "analysis_unit": "simulation seed block; agents and timesteps are clustered",
+  "yoke_definition": "marginal empirical forward/reverse duration resampling from development sensory-site simulations, independent of position and heading",
+  "limitations": [
+    "prior M2/V3/V4/V5 outcomes were known; exploratory and retrospective",
+    "the yoke matches marginal bout-duration distributions by construction but not state-, heading-, temperature-, or position-conditional bout statistics",
+    "a positive sensory-minus-yoke difference would show marginal persistence alone is insufficient, not identify a unique feedback site or synapse",
+    "source-model uncertainty is over simulation seed blocks and imposed noise scales, not animals",
+    "no new biological validation or AI-transfer evidence is produced",
+    "source index is corrected in code, but end-to-end MATLAB/Octave numerical parity remains unverified"
+  ]
+}
