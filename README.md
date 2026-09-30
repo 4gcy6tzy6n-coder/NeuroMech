@@ -106,6 +106,16 @@ This is a post-result synthetic optimization study. It supports a narrow short-d
 - [Runner and independent verifier](model/M5_ELIGIBILITY_TEMPORAL_XOR_V2/)
 - [Episode outcomes and manifest](data/results/M5_ELIGIBILITY_TEMPORAL_XOR_V2/)
 
+## M5/M8 boundary analysis: local trace versus equal-budget history
+
+A post-result analysis of the M8 delayed-credit benchmark compared exact replay with a truncated horizon storing the same nominal number of recent feature values (`D × 64`). Exact replay exceeded the matched horizon by `0.3082` absolute held-out accuracy (30.82 percentage points; paired task-seed bootstrap 95% interval `[0.3019, 0.3142]`; 30/30 task seeds favored replay). The advantage increased with delay, from `0.2079` at D=4 to `0.4271` at D=64.
+
+This is a boundary result for one synthetic random-feature task: the truncated-horizon arm did not use its nominal feature-history budget more effectively than exact replay. It does not directly test the eligibility-trace update rule used in M5, and it does not establish replay as universally better. The budget counts active learner feature-history values, not measured process memory; shared task arrays and delayed-prediction history are excluded. This analysis was selected after the M8 outcomes were known, reuses the same 30 task seeds, and is descriptive rather than an independent or confirmatory experiment. Biological evidence supports a timed climbing-fiber teaching event in delay eyeblink learning, while the eligibility-trace equation remains a computational hypothesis; see the [M5 biological evidence and claim boundary](summery/M5_CEREBELLAR/RESULTS.md). These artificial results provide no biological validation.
+
+- [Analysis contract, result and limitations](summery/M8_MEMORY_MATCHED_REPLAY_ANALYSIS/)
+- [Analysis script](model/M8_MEMORY_MATCHED_REPLAY_ANALYSIS/)
+- [Archived source metrics and regenerated outputs](data/results/M8_MEMORY_MATCHED_REPLAY_ANALYSIS/)
+
 ## Previous experiment: M2 closed-loop active-sensing transfer V1
 
 This synthetic benchmark closes the loop between estimation and action: the agent's motor mode changes whether the next observation contains target information. In the aligned setting, the mode-gain filter beat the constant-gain ablation on mean distance (`0.28436` vs `0.32053`; constant-minus-mode `+0.03617`, crossed 95% interval `[+0.02959, +0.04258]`). However, the generic additive RNN (`0.20710`), bilinear RNN (`0.25015`), GRU (`0.26547`), and Bayesian posterior-mean observer (`0.14296`) all had lower mean distance. The Bayesian observer shares the same greedy controller and is not an optimal active-sensing policy.

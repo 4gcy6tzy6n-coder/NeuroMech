@@ -1,0 +1,452 @@
+{
+  "experiment": "M8_TRACE_HORIZON_FRONTIER",
+  "status": "POST_RESULT_EXPLORATORY",
+  "primary": {
+    "estimand": "accuracy(HORIZON_64)-accuracy(HORIZON_1), equally averaged across rho and delay within seed",
+    "mean": 0.1875,
+    "seed_bootstrap_95ci": [
+      0.17925175925925932,
+      0.19543361111111113
+    ],
+    "positive_seed_count": 30,
+    "n_task_seeds": 30
+  },
+  "cells": [
+    {
+      "rho": 0.0,
+      "delay": 4,
+      "horizon": 1,
+      "accuracy_gain_vs_h1": 0.0,
+      "seed_bootstrap_95ci": [
+        0.0,
+        0.0
+      ],
+      "accuracy_difference_vs_exact_replay": -0.5063666666666667,
+      "stored_float_values": 64
+    },
+    {
+      "rho": 0.0,
+      "delay": 4,
+      "horizon": 4,
+      "accuracy_gain_vs_h1": -0.0050666666666666655,
+      "seed_bootstrap_95ci": [
+        -0.018133333333333328,
+        0.007766666666666667
+      ],
+      "accuracy_difference_vs_exact_replay": -0.5114333333333333,
+      "stored_float_values": 256
+    },
+    {
+      "rho": 0.0,
+      "delay": 4,
+      "horizon": 16,
+      "accuracy_gain_vs_h1": 0.42096666666666677,
+      "seed_bootstrap_95ci": [
+        0.3997991666666666,
+        0.4421666666666667
+      ],
+      "accuracy_difference_vs_exact_replay": -0.08540000000000002,
+      "stored_float_values": 1024
+    },
+    {
+      "rho": 0.0,
+      "delay": 4,
+      "horizon": 64,
+      "accuracy_gain_vs_h1": 0.36413333333333336,
+      "seed_bootstrap_95ci": [
+        0.3427,
+        0.38606749999999995
+      ],
+      "accuracy_difference_vs_exact_replay": -0.14223333333333335,
+      "stored_float_values": 4096
+    },
+    {
+      "rho": 0.0,
+      "delay": 16,
+      "horizon": 1,
+      "accuracy_gain_vs_h1": 0.0,
+      "seed_bootstrap_95ci": [
+        0.0,
+        0.0
+      ],
+      "accuracy_difference_vs_exact_replay": -0.5068,
+      "stored_float_values": 64
+    },
+    {
+      "rho": 0.0,
+      "delay": 16,
+      "horizon": 4,
+      "accuracy_gain_vs_h1": 0.0017666666666666655,
+      "seed_bootstrap_95ci": [
+        -0.02013416666666667,
+        0.02340083333333326
+      ],
+      "accuracy_difference_vs_exact_replay": -0.5050333333333333,
+      "stored_float_values": 256
+    },
+    {
+      "rho": 0.0,
+      "delay": 16,
+      "horizon": 16,
+      "accuracy_gain_vs_h1": -0.005133333333333328,
+      "seed_bootstrap_95ci": [
+        -0.029399999999999996,
+        0.01953333333333333
+      ],
+      "accuracy_difference_vs_exact_replay": -0.5119333333333334,
+      "stored_float_values": 1024
+    },
+    {
+      "rho": 0.0,
+      "delay": 16,
+      "horizon": 64,
+      "accuracy_gain_vs_h1": 0.31596666666666656,
+      "seed_bootstrap_95ci": [
+        0.2919325,
+        0.34176666666666666
+      ],
+      "accuracy_difference_vs_exact_replay": -0.19083333333333335,
+      "stored_float_values": 4096
+    },
+    {
+      "rho": 0.0,
+      "delay": 64,
+      "horizon": 1,
+      "accuracy_gain_vs_h1": 0.0,
+      "seed_bootstrap_95ci": [
+        0.0,
+        0.0
+      ],
+      "accuracy_difference_vs_exact_replay": -0.5146999999999999,
+      "stored_float_values": 64
+    },
+    {
+      "rho": 0.0,
+      "delay": 64,
+      "horizon": 4,
+      "accuracy_gain_vs_h1": 0.009466666666666663,
+      "seed_bootstrap_95ci": [
+        -0.010300000000000002,
+        0.02916666666666666
+      ],
+      "accuracy_difference_vs_exact_replay": -0.5052333333333333,
+      "stored_float_values": 256
+    },
+    {
+      "rho": 0.0,
+      "delay": 64,
+      "horizon": 16,
+      "accuracy_gain_vs_h1": 0.02723333333333334,
+      "seed_bootstrap_95ci": [
+        0.0010658333333333396,
+        0.052433333333333325
+      ],
+      "accuracy_difference_vs_exact_replay": -0.48746666666666666,
+      "stored_float_values": 1024
+    },
+    {
+      "rho": 0.0,
+      "delay": 64,
+      "horizon": 64,
+      "accuracy_gain_vs_h1": 0.021233333333333333,
+      "seed_bootstrap_95ci": [
+        -0.001766666666666659,
+        0.044734166666666596
+      ],
+      "accuracy_difference_vs_exact_replay": -0.49346666666666666,
+      "stored_float_values": 4096
+    },
+    {
+      "rho": 0.5,
+      "delay": 4,
+      "horizon": 1,
+      "accuracy_gain_vs_h1": 0.0,
+      "seed_bootstrap_95ci": [
+        0.0,
+        0.0
+      ],
+      "accuracy_difference_vs_exact_replay": -0.3629,
+      "stored_float_values": 64
+    },
+    {
+      "rho": 0.5,
+      "delay": 4,
+      "horizon": 4,
+      "accuracy_gain_vs_h1": 0.2749,
+      "seed_bootstrap_95ci": [
+        0.25936583333333335,
+        0.2904333333333333
+      ],
+      "accuracy_difference_vs_exact_replay": -0.088,
+      "stored_float_values": 256
+    },
+    {
+      "rho": 0.5,
+      "delay": 4,
+      "horizon": 16,
+      "accuracy_gain_vs_h1": 0.3137666666666667,
+      "seed_bootstrap_95ci": [
+        0.29523333333333335,
+        0.33293333333333325
+      ],
+      "accuracy_difference_vs_exact_replay": -0.049133333333333355,
+      "stored_float_values": 1024
+    },
+    {
+      "rho": 0.5,
+      "delay": 4,
+      "horizon": 64,
+      "accuracy_gain_vs_h1": 0.27040000000000003,
+      "seed_bootstrap_95ci": [
+        0.24880000000000005,
+        0.2924
+      ],
+      "accuracy_difference_vs_exact_replay": -0.09249999999999999,
+      "stored_float_values": 4096
+    },
+    {
+      "rho": 0.5,
+      "delay": 16,
+      "horizon": 1,
+      "accuracy_gain_vs_h1": 0.0,
+      "seed_bootstrap_95ci": [
+        0.0,
+        0.0
+      ],
+      "accuracy_difference_vs_exact_replay": -0.5003333333333333,
+      "stored_float_values": 64
+    },
+    {
+      "rho": 0.5,
+      "delay": 16,
+      "horizon": 4,
+      "accuracy_gain_vs_h1": 0.0007333333333333303,
+      "seed_bootstrap_95ci": [
+        -0.01213333333333334,
+        0.013166666666666665
+      ],
+      "accuracy_difference_vs_exact_replay": -0.49959999999999993,
+      "stored_float_values": 256
+    },
+    {
+      "rho": 0.5,
+      "delay": 16,
+      "horizon": 16,
+      "accuracy_gain_vs_h1": 0.23593333333333336,
+      "seed_bootstrap_95ci": [
+        0.21883333333333332,
+        0.25276666666666664
+      ],
+      "accuracy_difference_vs_exact_replay": -0.2644,
+      "stored_float_values": 1024
+    },
+    {
+      "rho": 0.5,
+      "delay": 16,
+      "horizon": 64,
+      "accuracy_gain_vs_h1": 0.3669333333333334,
+      "seed_bootstrap_95ci": [
+        0.3511666666666667,
+        0.3828333333333334
+      ],
+      "accuracy_difference_vs_exact_replay": -0.1334,
+      "stored_float_values": 4096
+    },
+    {
+      "rho": 0.5,
+      "delay": 64,
+      "horizon": 1,
+      "accuracy_gain_vs_h1": 0.0,
+      "seed_bootstrap_95ci": [
+        0.0,
+        0.0
+      ],
+      "accuracy_difference_vs_exact_replay": -0.5169000000000001,
+      "stored_float_values": 64
+    },
+    {
+      "rho": 0.5,
+      "delay": 64,
+      "horizon": 4,
+      "accuracy_gain_vs_h1": -0.0034333333333333355,
+      "seed_bootstrap_95ci": [
+        -0.018133333333333335,
+        0.012433333333333331
+      ],
+      "accuracy_difference_vs_exact_replay": -0.5203333333333333,
+      "stored_float_values": 256
+    },
+    {
+      "rho": 0.5,
+      "delay": 64,
+      "horizon": 16,
+      "accuracy_gain_vs_h1": 0.000266666666666666,
+      "seed_bootstrap_95ci": [
+        -0.014034166666666672,
+        0.015133333333333335
+      ],
+      "accuracy_difference_vs_exact_replay": -0.5166333333333333,
+      "stored_float_values": 1024
+    },
+    {
+      "rho": 0.5,
+      "delay": 64,
+      "horizon": 64,
+      "accuracy_gain_vs_h1": 0.06310000000000002,
+      "seed_bootstrap_95ci": [
+        0.043133333333333336,
+        0.08449999999999999
+      ],
+      "accuracy_difference_vs_exact_replay": -0.45380000000000004,
+      "stored_float_values": 4096
+    },
+    {
+      "rho": 0.9,
+      "delay": 4,
+      "horizon": 1,
+      "accuracy_gain_vs_h1": 0.0,
+      "seed_bootstrap_95ci": [
+        0.0,
+        0.0
+      ],
+      "accuracy_difference_vs_exact_replay": -0.04976666666666666,
+      "stored_float_values": 64
+    },
+    {
+      "rho": 0.9,
+      "delay": 4,
+      "horizon": 4,
+      "accuracy_gain_vs_h1": 0.02543333333333334,
+      "seed_bootstrap_95ci": [
+        0.02250000000000001,
+        0.02833333333333334
+      ],
+      "accuracy_difference_vs_exact_replay": -0.024333333333333325,
+      "stored_float_values": 256
+    },
+    {
+      "rho": 0.9,
+      "delay": 4,
+      "horizon": 16,
+      "accuracy_gain_vs_h1": 0.0222,
+      "seed_bootstrap_95ci": [
+        0.015466666666666658,
+        0.029233333333333344
+      ],
+      "accuracy_difference_vs_exact_replay": -0.027566666666666663,
+      "stored_float_values": 1024
+    },
+    {
+      "rho": 0.9,
+      "delay": 4,
+      "horizon": 64,
+      "accuracy_gain_vs_h1": -0.05673333333333332,
+      "seed_bootstrap_95ci": [
+        -0.07160083333333336,
+        -0.04240000000000001
+      ],
+      "accuracy_difference_vs_exact_replay": -0.10650000000000001,
+      "stored_float_values": 4096
+    },
+    {
+      "rho": 0.9,
+      "delay": 16,
+      "horizon": 1,
+      "accuracy_gain_vs_h1": 0.0,
+      "seed_bootstrap_95ci": [
+        0.0,
+        0.0
+      ],
+      "accuracy_difference_vs_exact_replay": -0.28353333333333336,
+      "stored_float_values": 64
+    },
+    {
+      "rho": 0.9,
+      "delay": 16,
+      "horizon": 4,
+      "accuracy_gain_vs_h1": 0.033466666666666665,
+      "seed_bootstrap_95ci": [
+        0.028033333333333344,
+        0.03883333333333334
+      ],
+      "accuracy_difference_vs_exact_replay": -0.25006666666666666,
+      "stored_float_values": 256
+    },
+    {
+      "rho": 0.9,
+      "delay": 16,
+      "horizon": 16,
+      "accuracy_gain_vs_h1": 0.1914666666666667,
+      "seed_bootstrap_95ci": [
+        0.1789658333333333,
+        0.20446666666666666
+      ],
+      "accuracy_difference_vs_exact_replay": -0.09206666666666669,
+      "stored_float_values": 1024
+    },
+    {
+      "rho": 0.9,
+      "delay": 16,
+      "horizon": 64,
+      "accuracy_gain_vs_h1": 0.2018,
+      "seed_bootstrap_95ci": [
+        0.18613333333333335,
+        0.2181
+      ],
+      "accuracy_difference_vs_exact_replay": -0.08173333333333331,
+      "stored_float_values": 4096
+    },
+    {
+      "rho": 0.9,
+      "delay": 64,
+      "horizon": 1,
+      "accuracy_gain_vs_h1": 0.0,
+      "seed_bootstrap_95ci": [
+        0.0,
+        0.0
+      ],
+      "accuracy_difference_vs_exact_replay": -0.47459999999999997,
+      "stored_float_values": 64
+    },
+    {
+      "rho": 0.9,
+      "delay": 64,
+      "horizon": 4,
+      "accuracy_gain_vs_h1": 0.0003999999999999994,
+      "seed_bootstrap_95ci": [
+        -0.007333333333333333,
+        0.0077333333333333395
+      ],
+      "accuracy_difference_vs_exact_replay": -0.47419999999999995,
+      "stored_float_values": 256
+    },
+    {
+      "rho": 0.9,
+      "delay": 64,
+      "horizon": 16,
+      "accuracy_gain_vs_h1": -0.004366666666666666,
+      "seed_bootstrap_95ci": [
+        -0.019399999999999997,
+        0.01006666666666667
+      ],
+      "accuracy_difference_vs_exact_replay": -0.4789666666666667,
+      "stored_float_values": 1024
+    },
+    {
+      "rho": 0.9,
+      "delay": 64,
+      "horizon": 64,
+      "accuracy_gain_vs_h1": 0.14066666666666666,
+      "seed_bootstrap_95ci": [
+        0.1196983333333333,
+        0.16296749999999996
+      ],
+      "accuracy_difference_vs_exact_replay": -0.33393333333333336,
+      "stored_float_values": 4096
+    }
+  ],
+  "n_rows": 1350,
+  "gamma": 0.98,
+  "learning_rate": 0.01,
+  "scope": "synthetic random-feature classification only; not biological validation or general AI transfer"
+}

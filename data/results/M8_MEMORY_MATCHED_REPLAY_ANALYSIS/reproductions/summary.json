@@ -1,0 +1,129 @@
+{
+  "analysis": "M8_MEMORY_MATCHED_REPLAY_ANALYSIS",
+  "classification": "post-result exploratory; reuses M8 task outcomes",
+  "contrast": "EXACT_REPLAY accuracy minus HORIZON_D accuracy, D \u00d7 64 float active feature-history accounting",
+  "across_condition": {
+    "mean": 0.30815185185185184,
+    "task_seed_bootstrap_95ci": [
+      0.30189629629629633,
+      0.314162962962963
+    ],
+    "positive_seed_count": 30,
+    "n_task_seeds": 30
+  },
+  "by_delay": [
+    {
+      "delay": 4,
+      "mean": 0.20792222222222226,
+      "task_seed_bootstrap_95ci": [
+        0.20081083333333336,
+        0.21487777777777778
+      ],
+      "positive_seed_count": 30,
+      "active_history_float_values_per_arm": 256
+    },
+    {
+      "delay": 16,
+      "mean": 0.28946666666666665,
+      "task_seed_bootstrap_95ci": [
+        0.2803888888888889,
+        0.29863333333333325
+      ],
+      "positive_seed_count": 30,
+      "active_history_float_values_per_arm": 1024
+    },
+    {
+      "delay": 64,
+      "mean": 0.42706666666666665,
+      "task_seed_bootstrap_95ci": [
+        0.4195777777777778,
+        0.43444444444444447
+      ],
+      "positive_seed_count": 30,
+      "active_history_float_values_per_arm": 4096
+    }
+  ],
+  "cells": [
+    {
+      "rho": 0.0,
+      "delay": 4,
+      "mean_exact_replay_minus_matched_horizon": 0.5114333333333333,
+      "task_seed_bootstrap_95ci": [
+        0.4892000000000001,
+        0.5338008333333332
+      ]
+    },
+    {
+      "rho": 0.0,
+      "delay": 16,
+      "mean_exact_replay_minus_matched_horizon": 0.5119333333333334,
+      "task_seed_bootstrap_95ci": [
+        0.4890658333333333,
+        0.5358999999999999
+      ]
+    },
+    {
+      "rho": 0.0,
+      "delay": 64,
+      "mean_exact_replay_minus_matched_horizon": 0.49346666666666666,
+      "task_seed_bootstrap_95ci": [
+        0.4757333333333334,
+        0.5114
+      ]
+    },
+    {
+      "rho": 0.5,
+      "delay": 4,
+      "mean_exact_replay_minus_matched_horizon": 0.088,
+      "task_seed_bootstrap_95ci": [
+        0.08039916666666665,
+        0.09559999999999998
+      ]
+    },
+    {
+      "rho": 0.5,
+      "delay": 16,
+      "mean_exact_replay_minus_matched_horizon": 0.2644,
+      "task_seed_bootstrap_95ci": [
+        0.24663333333333337,
+        0.2827675
+      ]
+    },
+    {
+      "rho": 0.5,
+      "delay": 64,
+      "mean_exact_replay_minus_matched_horizon": 0.45380000000000004,
+      "task_seed_bootstrap_95ci": [
+        0.4369666666666667,
+        0.47080000000000005
+      ]
+    },
+    {
+      "rho": 0.9,
+      "delay": 4,
+      "mean_exact_replay_minus_matched_horizon": 0.024333333333333325,
+      "task_seed_bootstrap_95ci": [
+        0.020033333333333327,
+        0.028133333333333333
+      ]
+    },
+    {
+      "rho": 0.9,
+      "delay": 16,
+      "mean_exact_replay_minus_matched_horizon": 0.09206666666666669,
+      "task_seed_bootstrap_95ci": [
+        0.08356666666666664,
+        0.10026666666666666
+      ]
+    },
+    {
+      "rho": 0.9,
+      "delay": 64,
+      "mean_exact_replay_minus_matched_horizon": 0.33393333333333336,
+      "task_seed_bootstrap_95ci": [
+        0.3192658333333333,
+        0.34836666666666666
+      ]
+    }
+  ]
+}

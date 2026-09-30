@@ -1,0 +1,35 @@
+{
+  "experiment": "M8_TRACE_HORIZON_FRONTIER",
+  "seed": 20260930,
+  "n_seeds": 30,
+  "rho": [
+    0.0,
+    0.5,
+    0.9
+  ],
+  "delays": [
+    4,
+    16,
+    64
+  ],
+  "horizons": [
+    1,
+    4,
+    16,
+    64
+  ],
+  "n_train": 3000,
+  "n_test": 1000,
+  "gamma": 0.98,
+  "learning_rate": 0.01,
+  "python": "3.9.6",
+  "numpy": "2.0.2",
+  "rows": 1350,
+  "sha256": {
+    "EXPERIMENT_CONTRACT.md": "4fb41e86fde440831f10bd657803070fa6a7210010f0a8000e48de14c5b3b840",
+    "run_experiment.py": "241d00cf8355a0f39a7c3b2dbda919efc2abcced5d92574a64a4e6ddde609921",
+    "results/task_metrics.csv": "2e77d085d56724027c122c9cbc9e66d5922ae7a88a66e938fac266e9dcfe7efd",
+    "results/summary.json": "073808a997a70dec9665a7c0aa3ece53da5794b9a7de96ad720c9d6c120d0ca4",
+    "results/primary_seed_contrasts.csv": "d6181d2314fd5f7dcabde48513ae6dbb417b5843fff018adb92215157bfaf8b0"
+  }
+}
