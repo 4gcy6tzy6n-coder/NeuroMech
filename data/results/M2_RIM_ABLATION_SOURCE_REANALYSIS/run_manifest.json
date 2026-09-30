@@ -1,0 +1,15 @@
+{
+  "experiment": "M2_RIM_ABLATION_SOURCE_REANALYSIS",
+  "python": "3.12.13",
+  "packages": {
+    "numpy": "2.4.4",
+    "openpyxl": "3.1.5",
+    "matplotlib": "3.10.9"
+  },
+  "artifacts_sha256": {
+    "model/M2_RIM_ABLATION_SOURCE_REANALYSIS/analyze_fig6c.py": "236bab890e1d504e1713f8ccf466788b2a4d53d4a25a1c1b6054a54c24cd2251",
+    "data/results/M2_RIM_ABLATION_SOURCE_REANALYSIS/summary.json": "8f99dbed882bfd9114675e0f68fd2806b374757b79bf82d027887b0b3de086c5",
+    "data/results/M2_RIM_ABLATION_SOURCE_REANALYSIS/direction_bin_descriptives.csv": "75dc85124be287380e3589bb169fda980cb855318f4246cb3f970616e14b03be",
+    "data/results/M2_RIM_ABLATION_SOURCE_REANALYSIS/figure6c_event_level_descriptive.png": "b34f918f2dff1596130d713429d57d40873bfa8d6aa9e073c0bd1e3e02295e0f"
+  }
+}

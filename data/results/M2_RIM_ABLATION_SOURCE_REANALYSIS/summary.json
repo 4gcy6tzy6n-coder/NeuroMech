@@ -1,0 +1,122 @@
+{
+  "status": "EXPLORATORY_EVENT_LEVEL_SOURCE_DATA_REANALYSIS",
+  "source": {
+    "paper": "Ji et al., eLife 2021, 10:e68848",
+    "doi": "10.7554/eLife.68848",
+    "source_data_file": "data/raw/celegans/ji_etal_2021_elife_68848_v3/elife-68848-fig6-data1-v3.xlsx",
+    "source_data_sha256": "537a81349d17cce9ab70a0183dcc5a6fa0d96be7a9f57a85ac18e9470dc3acff",
+    "sheet": "Fig 6C",
+    "columns": {
+      "WT": [
+        "Run direction (radian)",
+        "Run duration (s)"
+      ],
+      "RIM_ABLATED": [
+        "Run direction (radian)",
+        "Run duration (s)"
+      ]
+    }
+  },
+  "independent_unit": "Not available in this source sheet; event-level summaries are descriptive and are not used for animal-level inference.",
+  "row_quality": {
+    "data_rows_examined": 3910,
+    "expected_schema_verified": true,
+    "wt_partial_direction_duration_rows": 0,
+    "rim_ablated_partial_direction_duration_rows": 0,
+    "all_durations_positive": true,
+    "all_values_finite": true
+  },
+  "wt_event_weighted": {
+    "events": 1008,
+    "direction_min_rad": -3.13937799601708,
+    "direction_max_rad": 3.14083757508966,
+    "duration_min_s": 4.0,
+    "duration_max_s": 155.5,
+    "duration_mean_s": 24.490079365079364,
+    "duration_median_s": 17.0,
+    "duration_q25_s": 9.5,
+    "duration_q75_s": 32.0,
+    "fraction_duration_ge_30s": 0.2748015873015873,
+    "fraction_duration_ge_60s": 0.0763888888888889
+  },
+  "rim_ablated_event_weighted": {
+    "events": 3910,
+    "direction_min_rad": -3.14087433156418,
+    "direction_max_rad": 3.14088933129634,
+    "duration_min_s": 2.5,
+    "duration_max_s": 218.0,
+    "duration_mean_s": 16.632864450127876,
+    "duration_median_s": 11.5,
+    "duration_q25_s": 7.0,
+    "duration_q75_s": 19.5,
+    "fraction_duration_ge_30s": 0.11943734015345268,
+    "fraction_duration_ge_60s": 0.027365728900255754
+  },
+  "event_weighted_contrast": {
+    "rim_ablated_minus_wt_mean_s": -7.857214914951488,
+    "rim_ablated_minus_wt_median_s": -5.5,
+    "rim_ablated_minus_wt_fraction_ge_30s": -0.15536424714813463,
+    "fraction_ge_30s_relative_reduction": 0.565368812726786
+  },
+  "six_equal_angle_bins_descriptive": [
+    {
+      "direction_left_rad": -3.141592653589793,
+      "direction_right_rad": -2.0943951023931957,
+      "wt_events": 266,
+      "rim_ablated_events": 928,
+      "wt_duration_median_s": 21.5,
+      "rim_ablated_duration_median_s": 12.5,
+      "rim_ablated_minus_wt_median_s": -9.0
+    },
+    {
+      "direction_left_rad": -2.0943951023931957,
+      "direction_right_rad": -1.0471975511965979,
+      "wt_events": 143,
+      "rim_ablated_events": 622,
+      "wt_duration_median_s": 13.5,
+      "rim_ablated_duration_median_s": 11.5,
+      "rim_ablated_minus_wt_median_s": -2.0
+    },
+    {
+      "direction_left_rad": -1.0471975511965979,
+      "direction_right_rad": 0.0,
+      "wt_events": 95,
+      "rim_ablated_events": 486,
+      "wt_duration_median_s": 12.0,
+      "rim_ablated_duration_median_s": 10.5,
+      "rim_ablated_minus_wt_median_s": -1.5
+    },
+    {
+      "direction_left_rad": 0.0,
+      "direction_right_rad": 1.0471975511965974,
+      "wt_events": 93,
+      "rim_ablated_events": 464,
+      "wt_duration_median_s": 12.0,
+      "rim_ablated_duration_median_s": 9.5,
+      "rim_ablated_minus_wt_median_s": -2.5
+    },
+    {
+      "direction_left_rad": 1.0471975511965974,
+      "direction_right_rad": 2.094395102393195,
+      "wt_events": 112,
+      "rim_ablated_events": 530,
+      "wt_duration_median_s": 15.25,
+      "rim_ablated_duration_median_s": 11.0,
+      "rim_ablated_minus_wt_median_s": -4.25
+    },
+    {
+      "direction_left_rad": 2.094395102393195,
+      "direction_right_rad": 3.141592653589793,
+      "wt_events": 299,
+      "rim_ablated_events": 880,
+      "wt_duration_median_s": 21.5,
+      "rim_ablated_duration_median_s": 12.5,
+      "rim_ablated_minus_wt_median_s": -9.0
+    }
+  ],
+  "inference_boundary": "No p-values, confidence intervals, or worm-level effects are computed because event-to-worm keys are absent. Events are repeated observations; pooling weights animals by how many runs they contribute.",
+  "analysis_parameters": {
+    "direction_bins_for_plot": 12,
+    "long_run_threshold_s": 30.0
+  }
+}

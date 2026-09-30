@@ -38,6 +38,10 @@ Machine-readable source of record: [MECHANISM_EVIDENCE_REGISTRY.json](MECHANISM_
 
 A new synthetic telegraph-target estimation experiment trained a state-gated sensory filter on one mode/noise mapping and evaluated independent trajectories at three hazard values. On the stipulated high-reversal-noise profile, the two-parameter state gate beat a single global gain, but it lost to a two-parameter generic filter that adapted gain from prediction residuals at every hazard. Equal-weighted `STATE_GATED_GAIN − INNOVATION_ADAPTIVE` MAE was `+0.07587`, crossed 95% interval `[+0.07314,+0.07864]` (positive means gating was worse). Equal-noise and reversed-noise stress conditions further showed dependence on the assumed mapping. The source paper does not establish that locomotor state encodes observation reliability. The study is exploratory and same-family; it does not establish AI transfer. See [`summery/M6_STATE_GATED_INFERENCE/RESULTS.md`](summery/M6_STATE_GATED_INFERENCE/RESULTS.md).
 
+### M2 Figure 6C source-data reanalysis — 2026-09-30
+
+The published Figure 6C workbook contains 1,008 WT and 3,910 RIM-ablated forward-run events. Event-weighted median durations were 17.0 s and 11.5 s; the RIM-ablated median was lower in all six coarse direction bins. The source sheet does not identify worms for these events, so this is a descriptive reproduction only, with no animal-level p-value or interval. It is consistent with the paper's bounded persistence result but does not establish a new causal carrier or algorithm. See [`summery/M2_RIM_ABLATION_SOURCE_REANALYSIS/RESULTS.md`](summery/M2_RIM_ABLATION_SOURCE_REANALYSIS/RESULTS.md).
+
 ## M3 — structure-function constrained integration
 
 - **Definition:** the already frozen Fish1.5 iMI/cMI/MON→SMI visual-motion mechanism; do not narrow the cell set to improve data availability.
