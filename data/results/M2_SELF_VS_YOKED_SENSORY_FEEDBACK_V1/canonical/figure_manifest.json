@@ -1,0 +1,44 @@
+{
+  "figure_id": "Figure_M2_SELF_VS_YOKED_SENSORY_FEEDBACK_V1",
+  "core_claim": "Recipient-specific sensory-site feedback improves aligned displacement over a population-marginal-matched yoke at stationary through 10-s reversal schedules, while the small contrast reverses at 5 s in this source-model simulation.",
+  "archetype": "single-panel paired quantitative contrast",
+  "backend": "Python / Matplotlib",
+  "physical_size_mm": [
+    180.0,
+    90.0
+  ],
+  "primary_condition_s": 20.0,
+  "uncertainty": "two-sided 95% percentile bootstrap over 100 paired simulation seed blocks; 20,000 draws; seed 20261015 for primary condition",
+  "figure_source_data": "figure_source_data.csv",
+  "plot_script_sha256": "890a30f5d7bfb970339f76903e5f961ffc25d7a09562921620d4a969c3cacea6",
+  "summary_input_sha256": "386d31cfefc533cf7a7021b31d9a1b5c5653817c6563b31f3ffe8e0321b067f0",
+  "figure_source_data_sha256": "64a3584e7038512a66c271ae78499e8efe951261f1bceece0b9108e07e066ab0",
+  "export_sha256": {
+    "Figure_M2_SELF_VS_YOKED_SENSORY_FEEDBACK_V1.pdf": "95bb7b7b69cac91e0b4ee3c1a6428fbe8e084913018caacdeb29f1edd6d93829",
+    "Figure_M2_SELF_VS_YOKED_SENSORY_FEEDBACK_V1.svg": "a1d5bd5a0d782f48b7fedd40d013cafdac4275746e2aa558cab1a7bd33bf9620",
+    "Figure_M2_SELF_VS_YOKED_SENSORY_FEEDBACK_V1.tiff": "87a36f5ecbd1fdbad2153fee1ae1a53a20ca03da90506be2356ec47088217f5e",
+    "Figure_M2_SELF_VS_YOKED_SENSORY_FEEDBACK_V1.png": "f7e7966d57fe395fd09b5e4a59c760a5889913f829ab75869bb56e04997b645a"
+  },
+  "formats": [
+    "PDF",
+    "SVG",
+    "TIFF 600 dpi",
+    "PNG 300 dpi"
+  ],
+  "qa": {
+    "source_preflight": {
+      "pass": 21,
+      "warn": 0,
+      "fail": 0
+    },
+    "rendered_pdf_text_minimum_pt": 7.0,
+    "required_text_minimum_pt": 5.0,
+    "collision_audit": {
+      "fail": 0,
+      "warn": 0,
+      "verdict": "PASS"
+    },
+    "manual_visual_inspection": "PASS"
+  },
+  "figure_legend": "Self-contingent minus cross-agent-yoked environment-aligned displacement rate (model-distance units/s) across warm-gradient reversal schedules. Points show paired means across 100 simulation seed blocks; bars show two-sided 95% percentile-bootstrap intervals (20,000 draws). The dashed line marks zero; the 20-s schedule was the primary condition. This retrospective source-model simulation does not establish biological causation or artificial-system benefit. Source data are provided in figure_source_data.csv."
+}

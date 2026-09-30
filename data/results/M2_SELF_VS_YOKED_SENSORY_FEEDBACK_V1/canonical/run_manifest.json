@@ -1,0 +1,51 @@
+{
+  "experiment_id": "M2_SELF_VS_YOKED_SENSORY_FEEDBACK_V1",
+  "classification": "retrospective_exploratory_source_model_mechanism_probe",
+  "python": "3.9.6",
+  "numpy": "2.0.2",
+  "platform": "macOS-26.2-arm64-arm-64bit",
+  "n_steps": 1500,
+  "t_max_s": 200.0,
+  "dt_s": 0.13333333333333333,
+  "n_agents_per_seed_block": 50,
+  "seed_blocks": [
+    20261016,
+    20261115
+  ],
+  "reversal_intervals_s": [
+    0.0,
+    40.0,
+    20.0,
+    10.0,
+    5.0
+  ],
+  "arms": [
+    "SELF_CONTINGENT",
+    "CROSS_AGENT_YOKED",
+    "NO_FEEDBACK"
+  ],
+  "rows": 1500,
+  "input_sha256": {
+    "summery/M2_SELF_VS_YOKED_SENSORY_FEEDBACK_V1/CONTRACT.md": "2b74e2567556c66e867c4cdf5b7d961574f3904b407d51a7d35334869d07188a",
+    "model/M2_FEEDBACK_SITE_SPECIFICITY_V5/source_model.py": "acca9f2f5b61ceb254c4772a5be598d11b53d2a325ded87cf8d002845ff491d5",
+    "data/raw/celegans/ji_etal_2021_elife_68848_v3/Fig7_TtxCircuitModel.m": "e2a9d5be4be436e30dfce7d59c4c95110cda189fbd54dc423128d0fc991b21c7",
+    "model/M2_SELF_VS_YOKED_SENSORY_FEEDBACK_V1/run_experiment.py": "059c9b7f0606dcde27b5bcc26b0e662f3ae4dfe3f10d4c8138bf929e4b11fd13",
+    "model/M2_SELF_VS_YOKED_SENSORY_FEEDBACK_V1/analyze_results.py": "39ba940a7692731e5fc8895a51755decfd17b660bf66e1daa1510152c044de51",
+    "model/M2_SELF_VS_YOKED_SENSORY_FEEDBACK_V1/verify_results.py": "c5c7ec2a28a1d2b5320afe9e7e1faad117c09cf2cba97b5598bba3b9aa466be6"
+  },
+  "output_sha256": {
+    "seed_block_metrics.csv": "7f8f002f953739298c727d6b1ebf643a34aff7b101e4c94fd71526d30609facd",
+    "feedback_distribution_check.json": "0fb7d57bfbc5e65ed4b72c7b55e421fba93af77dcf8305cace896d573620d5c3",
+    "summary.json": "386d31cfefc533cf7a7021b31d9a1b5c5653817c6563b31f3ffe8e0321b067f0",
+    "Figure_M2_SELF_VS_YOKED_SENSORY_FEEDBACK_V1.alignment.json": "9eb5e821a30547b2264b12e4f1b3d4d385e173fe063f7827f504e20e2a48bfc1",
+    "Figure_M2_SELF_VS_YOKED_SENSORY_FEEDBACK_V1.alignment.svg": "69f7036171540cbd090a277afc1a1094b27de2910a2b7e743dab2b6b7851c5ba",
+    "Figure_M2_SELF_VS_YOKED_SENSORY_FEEDBACK_V1.collision-audit.json": "2057d5ea644a3835b17ab7a828185cbf43447ae6717c92b7f255ec4fe51362d3",
+    "Figure_M2_SELF_VS_YOKED_SENSORY_FEEDBACK_V1.pdf": "95bb7b7b69cac91e0b4ee3c1a6428fbe8e084913018caacdeb29f1edd6d93829",
+    "Figure_M2_SELF_VS_YOKED_SENSORY_FEEDBACK_V1.png": "f7e7966d57fe395fd09b5e4a59c760a5889913f829ab75869bb56e04997b645a",
+    "Figure_M2_SELF_VS_YOKED_SENSORY_FEEDBACK_V1.svg": "a1d5bd5a0d782f48b7fedd40d013cafdac4275746e2aa558cab1a7bd33bf9620",
+    "Figure_M2_SELF_VS_YOKED_SENSORY_FEEDBACK_V1.tiff": "87a36f5ecbd1fdbad2153fee1ae1a53a20ca03da90506be2356ec47088217f5e",
+    "README.md": "87bd32106eab9d0f4c425bb6384b9b43094942b5cb5b448509211a802c1044a3",
+    "figure_manifest.json": "1396e88485628251077592f40011d64d2b06b48363cb65d63ea3b77f8cb5cd5f",
+    "figure_source_data.csv": "64a3584e7038512a66c271ae78499e8efe951261f1bceece0b9108e07e066ab0"
+  }
+}

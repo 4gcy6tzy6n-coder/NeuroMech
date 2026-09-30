@@ -1,0 +1,246 @@
+{
+  "experiment_id": "M2_SELF_VS_YOKED_SENSORY_FEEDBACK_V1",
+  "classification": "retrospective_exploratory_source_model_mechanism_probe",
+  "primary_endpoint": "environment-aligned displacement rate (model-distance units/s)",
+  "primary_interval_s": 20.0,
+  "primary_contrast": {
+    "mean": 0.046176505254942234,
+    "ci95_seed_block_bootstrap": [
+      0.04251793218831166,
+      0.0499440960264786
+    ],
+    "positive_seed_blocks": 100,
+    "negative_seed_blocks": 0,
+    "n_seed_blocks": 100
+  },
+  "seed_block_count": 100,
+  "rows": 1500,
+  "means_and_contrasts_by_interval": {
+    "0.0": {
+      "arm_means": {
+        "SELF_CONTINGENT": {
+          "aligned_progress_rate": 0.10628784197580461,
+          "forward_occupancy": 0.17144080000000003,
+          "mean_forward_run_s": 3.2871013009618504,
+          "p90_forward_run_s": 8.232000000000001
+        },
+        "CROSS_AGENT_YOKED": {
+          "aligned_progress_rate": 0.037971943876094066,
+          "forward_occupancy": 0.13826400000000003,
+          "mean_forward_run_s": 1.6588521569212198,
+          "p90_forward_run_s": 3.583333333333334
+        },
+        "NO_FEEDBACK": {
+          "aligned_progress_rate": 0.026610534563276354,
+          "forward_occupancy": 0.043486,
+          "mean_forward_run_s": 0.8747320489421204,
+          "p90_forward_run_s": 1.6670666666666665
+        }
+      },
+      "contrasts": {
+        "self_minus_cross_agent_yoked_progress": {
+          "mean": 0.06831589809971056,
+          "ci95_seed_block_bootstrap": [
+            0.06145329776563278,
+            0.07518886917699572
+          ],
+          "positive_seed_blocks": 98,
+          "negative_seed_blocks": 2,
+          "n_seed_blocks": 100
+        },
+        "self_minus_no_feedback_progress": {
+          "mean": 0.07967730741252826,
+          "ci95_seed_block_bootstrap": [
+            0.0725633334502422,
+            0.08689277484082
+          ],
+          "positive_seed_blocks": 98,
+          "negative_seed_blocks": 2,
+          "n_seed_blocks": 100
+        }
+      }
+    },
+    "40.0": {
+      "arm_means": {
+        "SELF_CONTINGENT": {
+          "aligned_progress_rate": 0.11050524921983923,
+          "forward_occupancy": 0.1617457333333333,
+          "mean_forward_run_s": 3.0738968430503797,
+          "p90_forward_run_s": 7.736133333333336
+        },
+        "CROSS_AGENT_YOKED": {
+          "aligned_progress_rate": 0.046099332550362894,
+          "forward_occupancy": 0.1310316,
+          "mean_forward_run_s": 1.5984571984110938,
+          "p90_forward_run_s": 3.457733333333335
+        },
+        "NO_FEEDBACK": {
+          "aligned_progress_rate": 0.019598158640447897,
+          "forward_occupancy": 0.04335186666666666,
+          "mean_forward_run_s": 0.8723781603984301,
+          "p90_forward_run_s": 1.6629333333333332
+        }
+      },
+      "contrasts": {
+        "self_minus_cross_agent_yoked_progress": {
+          "mean": 0.06440591666947636,
+          "ci95_seed_block_bootstrap": [
+            0.058668167706612914,
+            0.07007629526327237
+          ],
+          "positive_seed_blocks": 99,
+          "negative_seed_blocks": 1,
+          "n_seed_blocks": 100
+        },
+        "self_minus_no_feedback_progress": {
+          "mean": 0.09090709057939135,
+          "ci95_seed_block_bootstrap": [
+            0.08614243149894124,
+            0.09559257237281749
+          ],
+          "positive_seed_blocks": 100,
+          "negative_seed_blocks": 0,
+          "n_seed_blocks": 100
+        }
+      }
+    },
+    "20.0": {
+      "arm_means": {
+        "SELF_CONTINGENT": {
+          "aligned_progress_rate": 0.08572904529832877,
+          "forward_occupancy": 0.1514293333333333,
+          "mean_forward_run_s": 2.846012220160855,
+          "p90_forward_run_s": 7.25306666666667
+        },
+        "CROSS_AGENT_YOKED": {
+          "aligned_progress_rate": 0.03955254004338654,
+          "forward_occupancy": 0.12335866666666667,
+          "mean_forward_run_s": 1.515877898626742,
+          "p90_forward_run_s": 3.3085333333333335
+        },
+        "NO_FEEDBACK": {
+          "aligned_progress_rate": 0.011136208840207702,
+          "forward_occupancy": 0.04320986666666667,
+          "mean_forward_run_s": 0.8680883830764824,
+          "p90_forward_run_s": 1.6494666666666669
+        }
+      },
+      "contrasts": {
+        "self_minus_cross_agent_yoked_progress": {
+          "mean": 0.046176505254942234,
+          "ci95_seed_block_bootstrap": [
+            0.04251793218831166,
+            0.0499440960264786
+          ],
+          "positive_seed_blocks": 100,
+          "negative_seed_blocks": 0,
+          "n_seed_blocks": 100
+        },
+        "self_minus_no_feedback_progress": {
+          "mean": 0.07459283645812108,
+          "ci95_seed_block_bootstrap": [
+            0.07148819362021222,
+            0.07774053704244682
+          ],
+          "positive_seed_blocks": 100,
+          "negative_seed_blocks": 0,
+          "n_seed_blocks": 100
+        }
+      }
+    },
+    "10.0": {
+      "arm_means": {
+        "SELF_CONTINGENT": {
+          "aligned_progress_rate": 0.05080836742615007,
+          "forward_occupancy": 0.13707786666666666,
+          "mean_forward_run_s": 2.5468962403804327,
+          "p90_forward_run_s": 6.470666666666666
+        },
+        "CROSS_AGENT_YOKED": {
+          "aligned_progress_rate": 0.03284367830426873,
+          "forward_occupancy": 0.11324013333333333,
+          "mean_forward_run_s": 1.4185882107578334,
+          "p90_forward_run_s": 3.0904000000000003
+        },
+        "NO_FEEDBACK": {
+          "aligned_progress_rate": 0.007603994534659473,
+          "forward_occupancy": 0.0431104,
+          "mean_forward_run_s": 0.8680798643510537,
+          "p90_forward_run_s": 1.6450666666666667
+        }
+      },
+      "contrasts": {
+        "self_minus_cross_agent_yoked_progress": {
+          "mean": 0.01796468912188135,
+          "ci95_seed_block_bootstrap": [
+            0.015850852893356887,
+            0.020086697233330255
+          ],
+          "positive_seed_blocks": 98,
+          "negative_seed_blocks": 2,
+          "n_seed_blocks": 100
+        },
+        "self_minus_no_feedback_progress": {
+          "mean": 0.0432043728914906,
+          "ci95_seed_block_bootstrap": [
+            0.04121919279054613,
+            0.04523377264961588
+          ],
+          "positive_seed_blocks": 100,
+          "negative_seed_blocks": 0,
+          "n_seed_blocks": 100
+        }
+      }
+    },
+    "5.0": {
+      "arm_means": {
+        "SELF_CONTINGENT": {
+          "aligned_progress_rate": 0.01712591054853587,
+          "forward_occupancy": 0.12425933333333335,
+          "mean_forward_run_s": 2.279498509678476,
+          "p90_forward_run_s": 5.498266666666669
+        },
+        "CROSS_AGENT_YOKED": {
+          "aligned_progress_rate": 0.01851801868982298,
+          "forward_occupancy": 0.10344506666666664,
+          "mean_forward_run_s": 1.3290245286952083,
+          "p90_forward_run_s": 2.8746666666666676
+        },
+        "NO_FEEDBACK": {
+          "aligned_progress_rate": 0.00665502090128729,
+          "forward_occupancy": 0.042856266666666656,
+          "mean_forward_run_s": 0.8614871877887404,
+          "p90_forward_run_s": 1.6444
+        }
+      },
+      "contrasts": {
+        "self_minus_cross_agent_yoked_progress": {
+          "mean": -0.0013921081412871063,
+          "ci95_seed_block_bootstrap": [
+            -0.002614277789091956,
+            -0.00018685209438418934
+          ],
+          "positive_seed_blocks": 41,
+          "negative_seed_blocks": 59,
+          "n_seed_blocks": 100
+        },
+        "self_minus_no_feedback_progress": {
+          "mean": 0.01047088964724858,
+          "ci95_seed_block_bootstrap": [
+            0.009453582540935585,
+            0.011476671446247715
+          ],
+          "positive_seed_blocks": 96,
+          "negative_seed_blocks": 4,
+          "n_seed_blocks": 100
+        }
+      }
+    }
+  },
+  "bootstrap": {
+    "unit": "paired simulation seed block",
+    "resamples": 20000,
+    "seed": 20261015
+  },
+  "interpretation": "Simulation-only comparison. The yoke reassigns paired self-arm feedback traces across agents, preserving the instantaneous population distribution but breaking recipient-specific contingency. No biological validation or AI-transfer claim is made."
+}
