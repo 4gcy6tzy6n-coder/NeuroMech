@@ -30,6 +30,10 @@ The result depended on the state-to-observation relation: within-range independe
 - [V3 runner, finalizer and independent verifier](model/M2_FORWARD_STATE_SENSORY_GATE_V3/)
 - [V3 machine-readable outputs](data/results/M2_FORWARD_STATE_SENSORY_GATE_V3/)
 
+### Post hoc downstream-decision probe
+
+Frozen V3 estimates were also evaluated on sign choice, a thresholded engage/abstain choice, and persistent sign actions with switching cost. On in-range aligned episodes, the mode-gain model improved sign accuracy (`0.701` vs `0.672` for constant gain) and persistent action utility (`0.690` vs `0.656`); the Kalman oracle remained better (`0.707` and `0.699`). Under reversed mapping, mode-gain sign accuracy fell to `0.595`, below constant gain (`0.673`). This reuses the same state-estimation episodes and adds post hoc readouts; it is not a new task family, policy-learning result, or biological validation. See [decision-probe results](summery/M2_FORWARD_STATE_DECISION_TRANSFER_V1/RESULTS.md) and [analysis artifacts](data/results/M2_FORWARD_STATE_DECISION_TRANSFER_V1/).
+
 ## Earlier corrected experiment: M2 forward-state sensory gate transfer V2
 
 V2 corrects an implementation bug in V1: V1 trained on clean latent targets as model inputs but evaluated with gated/noisy observations. V1 metrics are invalid and retained only for provenance; see the [implementation incident](summery/M2_FORWARD_STATE_SENSORY_GATE_V1/IMPLEMENTATION_INCIDENT.md).
