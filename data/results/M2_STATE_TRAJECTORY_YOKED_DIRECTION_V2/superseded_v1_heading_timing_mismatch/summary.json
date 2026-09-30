@@ -1,0 +1,83 @@
+{
+  "experiment": "M2_STATE_TRAJECTORY_YOKED_DIRECTION_V2",
+  "classification": "RETROSPECTIVE_EXPLORATORY_SOURCE_MODEL_ANALYSIS",
+  "primary": {
+    "estimand": "equal-weighted within-seed SENSORY_SITE_FB minus FULL_TRAJECTORY_YOKE warm-direction index across noise scales",
+    "mean": 0.45253589958120133,
+    "ci95_seed_block_bootstrap": [
+      0.44502312908503044,
+      0.4598958271961583
+    ],
+    "positive_seed_blocks": 200,
+    "n_seed_blocks": 200
+  },
+  "by_noise_scale": {
+    "0.75": {
+      "sensory_minus_trajectory_yoke_direction": {
+        "mean": 0.5869015024008152,
+        "ci95_seed_block_bootstrap": [
+          0.569072412826604,
+          0.6045272652609208
+        ],
+        "positive_blocks": 200,
+        "n_seed_blocks": 200
+      },
+      "sensory_minus_yoke_persistence_summary_means": {
+        "mean_forward_run_s": 0.01792397533856846,
+        "median_forward_run_s": 0.016000000000000004,
+        "p90_forward_run_s": -0.33666666666666734,
+        "fraction_forward_runs_ge_30s": -0.0009681917521205527,
+        "forward_occupancy": 0.00012753333333333347,
+        "n_forward_runs": -0.05
+      }
+    },
+    "1.0": {
+      "sensory_minus_trajectory_yoke_direction": {
+        "mean": 0.43432579665281934,
+        "ci95_seed_block_bootstrap": [
+          0.42422677750125865,
+          0.44407950688994124
+        ],
+        "positive_blocks": 200,
+        "n_seed_blocks": 200
+      },
+      "sensory_minus_yoke_persistence_summary_means": {
+        "mean_forward_run_s": 0.014806510201749683,
+        "median_forward_run_s": -0.012666666666666677,
+        "p90_forward_run_s": 0.016733333333333225,
+        "fraction_forward_runs_ge_30s": -0.00010006238010250055,
+        "forward_occupancy": -4.739999999999911e-05,
+        "n_forward_runs": -2.08
+      }
+    },
+    "1.25": {
+      "sensory_minus_trajectory_yoke_direction": {
+        "mean": 0.33638039968996913,
+        "ci95_seed_block_bootstrap": [
+          0.3294522195193809,
+          0.3433097620326708
+        ],
+        "positive_blocks": 200,
+        "n_seed_blocks": 200
+      },
+      "sensory_minus_yoke_persistence_summary_means": {
+        "mean_forward_run_s": -0.013968329789704994,
+        "median_forward_run_s": -0.010333333333333337,
+        "p90_forward_run_s": 0.0012666666666667449,
+        "fraction_forward_runs_ge_30s": 0.0001317225153435473,
+        "forward_occupancy": -0.003296933333333333,
+        "n_forward_runs": -7.125
+      }
+    }
+  },
+  "analysis_unit": "simulation seed block; 50 agents and 1500 timesteps are clustered",
+  "yoke": "each held-out agent replays one complete ordered forward/reverse motor-state sequence from an independent development sensory-site trajectory; donor choice is independent of test position, heading, and direction outcome",
+  "limitations": [
+    "prior M2 source-model outcomes were known; this is retrospective and not confirmatory",
+    "sequence replay preserves each donor trajectory's ordered bout pattern, not all conditional motor statistics across test environments",
+    "reported persistence summaries are descriptive and no equivalence margin was frozen",
+    "a sensory-minus-yoke contrast would show that replayed motor state alone is insufficient in this source model, not identify a unique synapse or biological mechanism",
+    "simulation seed blocks are not animals; no new biological validation or AI-transfer evidence is produced",
+    "the source-model translation has not been validated by end-to-end MATLAB/Octave numerical parity"
+  ]
+}

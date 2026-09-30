@@ -1,0 +1,38 @@
+{
+  "experiment": "M2_STATE_TRAJECTORY_YOKED_DIRECTION_V2",
+  "classification": "RETROSPECTIVE_EXPLORATORY_SOURCE_MODEL_ANALYSIS",
+  "development_seeds": [
+    370000,
+    370029
+  ],
+  "heldout_seeds": [
+    380000,
+    380199
+  ],
+  "noise_scales": [
+    0.75,
+    1.0,
+    1.25
+  ],
+  "n_donor_trajectories_per_scale": 1500,
+  "n_bootstrap_draws": 20000,
+  "bootstrap_seed": 20261007,
+  "yoke_seed_offset": 900000000,
+  "runtime": {
+    "python": "3.9.6",
+    "numpy": "2.0.2"
+  },
+  "inputs_sha256": {
+    "contract": "9d37c9356a94373b4596d7524e14da49f55a2596a1c6301b064f28d9b995d2ba",
+    "source_model": "857d799cac5e78173d0fd9388c748413eb0034819740d2544f7e6a82ff4ee340",
+    "author_source": "e2a9d5be4be436e30dfce7d59c4c95110cda189fbd54dc423128d0fc991b21c7",
+    "v5_summary": "bc1021ccd8c40ba0c8193b6169930ae13db73dc35e861d516f38912e2c165c62"
+  },
+  "outputs_sha256": {
+    "summary.json": "f7b31cd1a16adeaaf861b37ab9bc77240a44fbe1b8736344ccc4d8d4db115a99",
+    "development_summary.csv": "98d5f3b87049770348fa82382e5f8ec7224d491744e9d62d1e2108f193b8ab19",
+    "development_trajectory_library.json": "73fcbe95bc7b5ae08c5cbcfed7e3dd8cc5acce3c88753cbdef55f7a6f21c0ed7",
+    "heldout_metrics.csv": "8f3d8b1d3235070a2eff9d8896136679f90613b93f35e40d5120b669103508f0"
+  },
+  "heldout_rows": 2400
+}

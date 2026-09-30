@@ -1,0 +1,7 @@
+# M2 state-trajectory yoke V2 — failure and correction record
+
+1. **Sequence capture omitted reverse-state segments.** The first development sequence representation recorded only runs where the movement mask was true, so a complete 1,500-step sequence could not be reconstructed. The run stopped before held-out metrics were generated. The capture was changed to encode every contiguous state segment, including both forward and reverse states.
+2. **Superseded pilot used the wrong heading-transition clock.** A completed pilot used transitions in the smoothed movement sequence to trigger heading changes. Inspection of the corrected Figure 7 translation showed heading transitions are driven by latent motor-state signs with a two-step history. The pilot's summary and row-level outputs are preserved under `data/results/M2_STATE_TRAJECTORY_YOKED_DIRECTION_V2/superseded_v1_heading_timing_mismatch/` and excluded from the final result.
+3. **Final correction.** Each donor now supplies paired movement-state and latent motor-state sign sequences. The yoke replays movement from the smoothed state and heading transitions from latent motor signs with the source model's original two-step timing. The final run has separate development and held-out seed ranges; this code correction is explicitly retained in the retrospective, outcome-informed provenance.
+
+The remaining limitation is inferential: no outcome-blind equivalence margin was specified for persistence summaries. Close observed summaries are not proof of equivalence.

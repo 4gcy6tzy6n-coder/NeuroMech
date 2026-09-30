@@ -1,0 +1,39 @@
+{
+  "experiment": "M2_STATE_TRAJECTORY_YOKED_DIRECTION_V2",
+  "classification": "RETROSPECTIVE_EXPLORATORY_SOURCE_MODEL_ANALYSIS",
+  "development_seeds": [
+    370000,
+    370029
+  ],
+  "heldout_seeds": [
+    380000,
+    380199
+  ],
+  "noise_scales": [
+    0.75,
+    1.0,
+    1.25
+  ],
+  "n_donor_trajectories_per_scale": 1500,
+  "n_bootstrap_draws": 20000,
+  "bootstrap_seed": 20261007,
+  "yoke_seed_offset": 900000000,
+  "runtime": {
+    "python": "3.9.6",
+    "numpy": "2.0.2"
+  },
+  "inputs_sha256": {
+    "contract": "f93235304ad5194ad1ee2301fa2387bc483ea4517d406e3c5e27596d31b027ff",
+    "source_model": "5b5bdaa607a25b39cdf052b804555abc63c78d90a8cd26b20b58d4a61e51813f",
+    "author_source": "e2a9d5be4be436e30dfce7d59c4c95110cda189fbd54dc423128d0fc991b21c7",
+    "v5_summary": "bc1021ccd8c40ba0c8193b6169930ae13db73dc35e861d516f38912e2c165c62",
+    "runner": "abe0bf3ecbf8fa5e2d15ba0b702896b64089d1e998513b9bacd7e758dcdf79ca"
+  },
+  "outputs_sha256": {
+    "summary.json": "1125345fd23dc43c4ebdd99aa13d894ef4d9a51ba413ae26b5bf8251cbc38c6a",
+    "development_summary.csv": "98d5f3b87049770348fa82382e5f8ec7224d491744e9d62d1e2108f193b8ab19",
+    "development_trajectory_library.json": "0bbe149a563d2e3d20d910264923cc5508cdf01f3b1ebe6576c7f59ee62dd731",
+    "heldout_metrics.csv": "0e9ad319cf42e409cd07608bf68466585b26e7f91e5ba44b005ad4449198d714"
+  },
+  "heldout_rows": 2400
+}

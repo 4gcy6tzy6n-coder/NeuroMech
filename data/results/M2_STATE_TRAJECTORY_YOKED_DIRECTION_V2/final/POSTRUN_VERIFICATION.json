@@ -1,0 +1,22 @@
+{
+  "status": "PASS",
+  "heldout_rows": 2400,
+  "unique_seed_scale_arm_keys": 2400,
+  "development_donors_per_scale": {
+    "0.75": 1500,
+    "1.0": 1500,
+    "1.25": 1500
+  },
+  "all_replayed_sequences_1500_steps": true,
+  "primary_mean": 0.4515928613015987,
+  "primary_bootstrap_95ci": [
+    0.44433680741331016,
+    0.4588673550849244
+  ],
+  "positive_seed_blocks": 200,
+  "independent_yoke_replay_check": {
+    "seed": 380000,
+    "noise_scale": 0.75,
+    "absolute_difference": 0.0
+  }
+}
