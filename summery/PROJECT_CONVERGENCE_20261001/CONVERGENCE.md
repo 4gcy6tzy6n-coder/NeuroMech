@@ -80,3 +80,9 @@ CURRENT_NEXT_WORK_PACKAGE = CLAIM_AND_CONTRIBUTION_REPLAN_FROM_COMPLETED_EVIDENC
 ```
 
 See [`PHASE2_CONCEPT_ADMISSION_REVIEW.md`](PHASE2_CONCEPT_ADMISSION_REVIEW.md) and [`PHASE2_MAINLINE_RESOLUTION.md`](PHASE2_MAINLINE_RESOLUTION.md). This update does not change any registered experiment, result, or model contract.
+
+## 2026-10-01 Owner direction update — experimental work resumed
+
+The owner subsequently directed the project to stop treating prior gate and phase recommendations as blockers and to continue toward a publishable biological-computation-to-AI result. The `NEW_SCATTERED_EXPERIMENTS = PAUSED` line above records the earlier decision only; it is superseded as an active work restriction. Biological evidence and artificial outcomes remain separately labeled, and unfavorable results remain part of the evidence base.
+
+The first resumed experiment is [`M2_LOW_DATA_GATING_V1`](../M2_LOW_DATA_GATING_V1/RESULTS.md): an equal-parameter, equal-sample-token comparison across four training-set sizes. The state-conditioned update improved MSE over an additive scalar RNN in the aligned synthetic mapping, while the result reversed under independent and reversed mappings. It did not demonstrate a low-data dose-response or biological validation. This advances the AI-side comparison but does not complete the cross-mechanism benchmark or the project-level claim.

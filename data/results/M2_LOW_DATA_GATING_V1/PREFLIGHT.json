@@ -1,0 +1,54 @@
+{
+  "experiment_id": "M2_LOW_DATA_GATING_V1",
+  "classification": "POST_RESULT_EXPLORATORY_ARTIFICIAL_BENCHMARK",
+  "python": "3.9.6",
+  "numpy": "2.0.2",
+  "torch": "2.8.0",
+  "contract_sha256": "a4d379920b51edc9a52fc56d023b40adb6a0118dd78716eb40703f32605c4459",
+  "runner_sha256": "48c0ea6d9903fae69fd920cf144f1386ecf8e0d4e2b3658d8e916c598262e549",
+  "config": {
+    "training_seeds": [
+      70000,
+      70019
+    ],
+    "train_sizes": [
+      16,
+      64,
+      256,
+      1024
+    ],
+    "conditions": [
+      "ALIGNED",
+      "INDEPENDENT",
+      "REVERSED"
+    ],
+    "test_sequences_per_seed_condition": 256,
+    "sequence_length": 160,
+    "batch_size": 16,
+    "optimizer_updates": 250,
+    "optimizer": "Adam(lr=0.02)",
+    "bootstrap_resamples": 20000,
+    "bootstrap_seed": 20261001
+  },
+  "preflight_checks": [
+    {
+      "arm": "MODE_GAIN_FILTER",
+      "parameter_count": 4,
+      "output_shape": [
+        2,
+        4
+      ],
+      "finite": true
+    },
+    {
+      "arm": "GENERIC_RNN_1D",
+      "parameter_count": 4,
+      "output_shape": [
+        2,
+        4
+      ],
+      "finite": true
+    }
+  ],
+  "outcomes_computed": false
+}

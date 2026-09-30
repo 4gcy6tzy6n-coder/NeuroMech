@@ -11,7 +11,7 @@ The project is converging on **two mechanism-grounded studies plus one shared ar
 | Line | Biological question | Current artificial evidence |
 |---|---|---|
 | **M1 — higher-order visual-motion correction** | What does a source-defined third-order correction contribute to fly motion estimation? | The existing RR19 natural-scene run is partial and exploratory. H1/H3 were in the predicted direction, while the phase-mismatched specificity contrast H2 was in the opposite direction. H4 and an overall four-hypothesis verdict are not established. See [partial results](experiments/m1_higher_order/RR19_STEP4_PARTIAL_RESULTS.md). |
-| **M2 — motor-state feedback and sensory context** | Does the relation between motor-state timing and sensory/environmental context contribute to thermotaxis in the RIM–AIY model? | Full mode-trajectory replay yielded a positive sensory-minus-replay direction contrast, while forward-state summaries were close; a low-noise reverse-tail difference remains and the analysis is exploratory. This does not identify a unique feedback site or establish biological/AI transfer. See [replay results and limitations](summery/M2_STATE_TRAJECTORY_REPLAY_V1/). |
+| **M2 — motor-state feedback and sensory context** | Does the relation between motor-state timing and sensory/environmental context contribute to thermotaxis in the RIM–AIY model? | Full mode-trajectory replay yielded a positive sensory-minus-replay direction contrast, while forward-state summaries were close; a low-noise reverse-tail difference remains. A new four-parameter synthetic probe found lower MSE for a state-conditioned update than an additive scalar RNN in the aligned mapping, with the advantage reversing under mapping shift. These exploratory results neither identify a unique feedback site nor establish biological/AI transfer. See [replay results](summery/M2_STATE_TRAJECTORY_REPLAY_V1/) and [low-data benchmark](summery/M2_LOW_DATA_GATING_V1/). |
 | **Cross-mechanism benchmark** | Do mechanism-specific computations outperform capacity-matched generic controls under the task conditions that make those computations relevant? | A shared benchmark is in development. M1 and M2 use distinct tasks and native outcome measures; raw scores will not be pooled. See the [project convergence record](summery/PROJECT_CONVERGENCE_20261001/CONVERGENCE.md). |
 
 ### Converged experimental package
@@ -21,6 +21,16 @@ The intended core package is **M1 + M2 + one shared artificial benchmark**. M1 t
 **Fish1.5 is supporting structure–function evidence**, based on same-specimen functional imaging and EM registration. It can strengthen biological grounding and help constrain mechanism definitions, but it is not currently designated as a fourth full artificial-mechanism study. The shared benchmark and the two core studies remain prospective work; existing exploratory results do not establish the paper-level claim.
 
 The M2 state-gated sensory-update and active-sensing studies are supporting algorithmic probes, not substitutes for the feedback-site-specificity study or direct biological validation. Their benefits are conditional on the task's state/observation mapping, and stronger generic or task-aware references remain competitive. See [M2 transfer evidence](summery/M2_FORWARD_STATE_SENSORY_GATE_V3/RESULTS.md) and [closed-loop active-sensing results](summery/M2_CLOSED_LOOP_ACTIVE_SENSING_V1/RESULTS.md).
+
+## Latest artificial benchmark: M2 low-data conditional update V1
+
+Twenty paired task seeds compared a four-parameter state-conditioned gain filter with a four-parameter additive scalar RNN at four training-set sizes (16, 64, 256, 1024), using the same 250 optimizer updates and 640,000 sequence-step tokens per fit. In the ALIGNED synthetic mapping, `MSE(GENERIC_RNN_1D) − MSE(MODE_GAIN_FILTER)` averaged `+0.01149` (seed-bootstrap 95% interval `[+0.01083, +0.01219]`; 20/20 seeds positive). The effect was nearly constant across data sizes. In INDEPENDENT and REVERSED mappings, the additive RNN was better at every size; the reversed mapping produced the largest penalty for the structured update.
+
+This tests a narrow artificial inductive-bias claim. The context-to-observation mapping is not a demonstrated biological detail, the generic control cannot express a multiplicative input-by-context interaction, and prior stronger adaptive references remain relevant. It does not establish biological validation or broad AI benefit. The independent verifier checked all 122,880 held-out episode rows and the paired-seed result.
+
+- [Contract, results and failure record](summery/M2_LOW_DATA_GATING_V1/)
+- [Runner and independent verifier](model/M2_LOW_DATA_GATING_V1/)
+- [Episode-level outcomes and manifest](data/results/M2_LOW_DATA_GATING_V1/)
 
 ## Active integrated study: O3 AIY state-pattern rescue
 

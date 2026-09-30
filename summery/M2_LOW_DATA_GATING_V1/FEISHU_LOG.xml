@@ -1,0 +1,7 @@
+<hr/>
+<h2>实验代号：M2_LOW_DATA_GATING_V1 — 状态条件更新的低数据量人工基准</h2>
+<p>实验问题：在状态—观测映射对齐的合成环境里，状态条件感觉更新是否比等参数的加性递归更新取得更低的潜在状态估计误差？映射独立或反转时，比较这种结构化更新的边界。</p>
+<p>实验结果：20 个配对训练种子、4 档训练集（16、64、256、1024 条序列）下，主对比 MSE（加性 RNN）−MSE（状态条件滤波器）为 +0.01149，种子 bootstrap 95% CI [+0.01083, +0.01219]，20/20 个种子为正。四档数据量的差值均约 +0.0115。映射独立时加性 RNN 在四档数据量均更优约 0.013 MSE；映射反转时更优约 0.029–0.030 MSE。</p>
+<p>实验分析：结果支持一个范围有限的人工归纳偏置观察——内置状态条件更新能利用已对齐的上下文关系，但对关系改变较脆弱。不同数据量间的效果近乎不变，因此本轮没有证明低数据量专属的样本效率增益。任务中的状态—观测映射是合成假设，并非对线虫回路具体运算的实测；通用对照是等参数加性标量 RNN，不能直接表达输入与上下文的乘性交互。结论不能外推为生物验证、广义 AI 优势或论文级总体结论。</p>
+<p>资源与复核：两组模型均为 4 个参数，每次拟合 250 次更新、16 条序列/批次、共 640,000 个序列步 token。独立复核通过：检查了 122,880 条逐序列结果、160 次模型拟合、种子级主估计、置信区间及产物哈希。</p>
+<p>代码、数据与完整失败边界：<a href="https://github.com/4gcy6tzy6n-coder/NeuroMech/tree/experiment-publication/model/M2_LOW_DATA_GATING_V1">model</a>；<a href="https://github.com/4gcy6tzy6n-coder/NeuroMech/tree/experiment-publication/data/results/M2_LOW_DATA_GATING_V1">data/results</a>；<a href="https://github.com/4gcy6tzy6n-coder/NeuroMech/tree/experiment-publication/summery/M2_LOW_DATA_GATING_V1">summery</a>。</p>
