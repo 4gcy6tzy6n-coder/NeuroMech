@@ -1,0 +1,13 @@
+{
+  "python": "3.9.6 (default, Jan  9 2026, 11:03:41) \n[Clang 17.0.0 (clang-1700.6.4.2)]",
+  "numpy": "2.0.2",
+  "scipy": "1.13.1",
+  "seeds": 32,
+  "runner_sha256": "9e7a27a5c77f0ddd44827f15adc3a15ad5f0544741ed571b3bb3a6a369fb9519",
+  "contract_sha256": "53c4da64ea6202c09c8106887dbd3e5c88ba80dc0877ce6081229e7a63b0a5cb",
+  "files": {
+    "m2_seed_results.csv": "c21f2519045d9c1fa61e9dce645e1e512d4599a1f51304392a09434837e9b8dd",
+    "m5_seed_results.csv": "76723d50e12c8238122478f3fa1fb1951614f1e6979f81bc4c762e105e57ece9",
+    "summary.json": "3de559da2279867460a3dec1f69ae83bcc9a992c6ceebff1f7d12b3b04a1d97b"
+  }
+}

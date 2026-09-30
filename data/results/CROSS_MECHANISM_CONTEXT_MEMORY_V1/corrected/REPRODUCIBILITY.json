@@ -1,0 +1,28 @@
+{
+  "experiment_id": "CROSS_MECHANISM_CONTEXT_MEMORY_V1",
+  "canonical_run": "data/results/CROSS_MECHANISM_CONTEXT_MEMORY_V1/corrected",
+  "independent_reproduction_output": "/tmp/CROSS_MECHANISM_CONTEXT_MEMORY_V1_REPRO",
+  "byte_identical_files": {
+    "m2_seed_results.csv": {
+      "canonical_sha256": "c21f2519045d9c1fa61e9dce645e1e512d4599a1f51304392a09434837e9b8dd",
+      "independent_sha256": "c21f2519045d9c1fa61e9dce645e1e512d4599a1f51304392a09434837e9b8dd",
+      "identical": true
+    },
+    "m5_seed_results.csv": {
+      "canonical_sha256": "6d33ee715c0c399fad1b64745c174581cd734257f1e0965d32ae3f76b6fb7589",
+      "independent_sha256": "6d33ee715c0c399fad1b64745c174581cd734257f1e0965d32ae3f76b6fb7589",
+      "identical": true
+    },
+    "summary.json": {
+      "canonical_sha256": "f3dd7436463b2576363fb6749c77981a7c7eee50076c00783672a3c4866d121d",
+      "independent_sha256": "f3dd7436463b2576363fb6749c77981a7c7eee50076c00783672a3c4866d121d",
+      "identical": true
+    }
+  },
+  "noncanonical_initial_run": {
+    "m2_seed_results.csv": "c21f2519045d9c1fa61e9dce645e1e512d4599a1f51304392a09434837e9b8dd",
+    "m5_seed_results.csv": "76723d50e12c8238122478f3fa1fb1951614f1e6979f81bc4c762e105e57ece9",
+    "run_manifest.json": "020a47b147f9e2a898b9ab8f1b15f6e0636f148639c15d1c5d0915537c30048d",
+    "summary.json": "3de559da2279867460a3dec1f69ae83bcc9a992c6ceebff1f7d12b3b04a1d97b"
+  }
+}

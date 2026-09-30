@@ -1,0 +1,22 @@
+{
+  "experiment_id": "CROSS_MECHANISM_CONTEXT_MEMORY_V1",
+  "canonical_run": "data/results/CROSS_MECHANISM_CONTEXT_MEMORY_V1/canonical",
+  "independent_reproduction_output": "/tmp/CROSS_MECHANISM_CONTEXT_MEMORY_V1_REPRO2",
+  "byte_identical_files": {
+    "m2_seed_results.csv": {
+      "canonical_sha256": "5b122f9418e936794dae2afd404c812b39cf763c8a448b9a243711bcd27b4784",
+      "independent_sha256": "5b122f9418e936794dae2afd404c812b39cf763c8a448b9a243711bcd27b4784",
+      "identical": true
+    },
+    "m5_seed_results.csv": {
+      "canonical_sha256": "ffab1ce90cc0b5c3561b6c4114e807863c7bb5dea7521decb11d67623e00e41e",
+      "independent_sha256": "ffab1ce90cc0b5c3561b6c4114e807863c7bb5dea7521decb11d67623e00e41e",
+      "identical": true
+    },
+    "summary.json": {
+      "canonical_sha256": "f3dd7436463b2576363fb6749c77981a7c7eee50076c00783672a3c4866d121d",
+      "independent_sha256": "f3dd7436463b2576363fb6749c77981a7c7eee50076c00783672a3c4866d121d",
+      "identical": true
+    }
+  }
+}

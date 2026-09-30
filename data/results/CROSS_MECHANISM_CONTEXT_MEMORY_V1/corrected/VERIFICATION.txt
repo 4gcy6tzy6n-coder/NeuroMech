@@ -1,0 +1,1 @@
+PASS: 96 M2 rows, 128 M5 rows, seed-block contrasts, bootstrap summaries, matched M5 trace/replay state, and artifact hashes verified.

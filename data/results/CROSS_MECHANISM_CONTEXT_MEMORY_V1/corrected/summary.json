@@ -1,0 +1,125 @@
+{
+  "experiment_id": "CROSS_MECHANISM_CONTEXT_MEMORY_V1",
+  "classification": "EXPLORATORY_POST_RESULT",
+  "seed_blocks": 32,
+  "bootstrap_resamples": 10000,
+  "bootstrap_seed": 20261001,
+  "m2_primary_native_outcome": "control_minus_context_gain_MSE; positive favors context gain",
+  "m2_by_context_mapping": {
+    "1.0": {
+      "mean": 0.05871464803499318,
+      "ci95": [
+        0.05769580206353922,
+        0.05973175205973701
+      ],
+      "positive_seed_blocks": 32,
+      "n_seed_blocks": 32
+    },
+    "0.0": {
+      "mean": -0.13000005234549966,
+      "ci95": [
+        -0.1330071301093669,
+        -0.1269437866344076
+      ],
+      "positive_seed_blocks": 0,
+      "n_seed_blocks": 32
+    },
+    "-1.0": {
+      "mean": -0.31991818277437173,
+      "ci95": [
+        -0.3257030139915217,
+        -0.31409753256526873
+      ],
+      "positive_seed_blocks": 0,
+      "n_seed_blocks": 32
+    }
+  },
+  "m5_primary_native_outcome": "eligibility_minus_misassignment_accuracy; positive favors eligibility",
+  "m5_by_delay": {
+    "1": {
+      "mean": 0.40704345703125,
+      "ci95": [
+        0.37615814208984377,
+        0.43701171875
+      ],
+      "positive_seed_blocks": 32,
+      "n_seed_blocks": 32
+    },
+    "4": {
+      "mean": 0.39984130859375,
+      "ci95": [
+        0.37298583984375,
+        0.42657470703125
+      ],
+      "positive_seed_blocks": 32,
+      "n_seed_blocks": 32
+    },
+    "16": {
+      "mean": 0.39141845703125,
+      "ci95": [
+        0.36663665771484377,
+        0.41766510009765623
+      ],
+      "positive_seed_blocks": 32,
+      "n_seed_blocks": 32
+    },
+    "64": {
+      "mean": 0.40521240234375,
+      "ci95": [
+        0.36761322021484377,
+        0.44110260009765623
+      ],
+      "positive_seed_blocks": 32,
+      "n_seed_blocks": 32
+    }
+  },
+  "m5_eligibility_minus_capacity_matched_persistent_cue_by_delay": {
+    "1": {
+      "mean": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "positive_seed_blocks": 0,
+      "n_seed_blocks": 32
+    },
+    "4": {
+      "mean": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "positive_seed_blocks": 0,
+      "n_seed_blocks": 32
+    },
+    "16": {
+      "mean": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "positive_seed_blocks": 0,
+      "n_seed_blocks": 32
+    },
+    "64": {
+      "mean": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "positive_seed_blocks": 0,
+      "n_seed_blocks": 32
+    }
+  },
+  "resource_accounting": {
+    "m2_parameter_count_each_arm": 3,
+    "m5_learned_parameters_each_arm": 16,
+    "m5_trace_state_dimensions": 16,
+    "m5_misassignment_state_dimensions": 0,
+    "m5_replay_state_dimensions": 16,
+    "m5_trace_total_state_dimensions_including_weights": 32,
+    "m5_misassignment_total_state_dimensions_including_weights": 16,
+    "m5_replay_total_state_dimensions_including_weights": 32
+  },
+  "claim_boundary": "No pooled cross-mechanism effect, biological validation, or general AI claim."
+}
