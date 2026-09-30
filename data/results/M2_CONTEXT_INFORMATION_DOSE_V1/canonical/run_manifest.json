@@ -1,0 +1,51 @@
+{
+  "experiment_id": "M2_CONTEXT_INFORMATION_DOSE_V1",
+  "classification": "exploratory artificial mechanism study",
+  "python": "3.12.13",
+  "numpy": "2.4.4",
+  "torch": "2.11.0",
+  "training_seeds": [
+    43000,
+    43029
+  ],
+  "test_stream_seed": 830001,
+  "training_stream_seed_base": 730001,
+  "n_train_episodes": 256,
+  "n_test_episodes": 256,
+  "steps": 100,
+  "updates": 200,
+  "kappas": [
+    -0.5,
+    -0.4,
+    -0.3,
+    -0.2,
+    -0.1,
+    -0.0,
+    0.1,
+    0.2,
+    0.3,
+    0.4,
+    0.5
+  ],
+  "policies": [
+    "MODE_GAIN_FILTER",
+    "CONSTANT_GAIN_FILTER",
+    "GENERIC_RNN_1D",
+    "BILINEAR_RNN_1D",
+    "KALMAN_ORACLE"
+  ],
+  "rows": 422400,
+  "files": {
+    "episode_metrics.csv": "a0868dea8c05b9fc5b63ad40e0e786a14c9537e1e2778bd2a858e0e42bc865ef",
+    "learned_fits.csv": "860a7e69b9aec86ca66530309e87215a5649c9ba2004c10a407cb29454ae38a7",
+    "summary.json": "c19240ba6269d8ccff2b476e7bd11ec1690bde689360fba5d261107b11f51bcc",
+    "seed_contrasts.csv": "a376b49822d5ba3984e4747a0acd5682c1b33b7cb63c51f835e95f263a1dc53b"
+  },
+  "runner_sha256": "d6d2f13e9b087d80c1d9161595fe2b7df9abf8bdc5f4841f402682a76d5c477f",
+  "analysis_source_sha256": {
+    "runner": "d6d2f13e9b087d80c1d9161595fe2b7df9abf8bdc5f4841f402682a76d5c477f",
+    "analyzer": "4c04383079e6bb1a2d61aae016a4045a1de4b5b4a439ea5144ba7f6ee5cf1fd1",
+    "verifier": "2b7958863d6a07d6f99c2a02a59dec8a8fa30336ad2848c0998691bb3a8b6455",
+    "contract": "a05e8d6975de4b0da984a5b7f062bb18947a1881ac0fc354dfee064efd2ce95f"
+  }
+}

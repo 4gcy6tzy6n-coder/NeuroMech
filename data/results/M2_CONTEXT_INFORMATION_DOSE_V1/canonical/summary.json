@@ -1,0 +1,383 @@
+{
+  "experiment_id": "M2_CONTEXT_INFORMATION_DOSE_V1",
+  "analysis": "paired held-out episodes; crossed bootstrap resamples train seeds and test episodes",
+  "bootstrap_replicates": 10000,
+  "primary": "MSE(CONSTANT_GAIN_FILTER)-MSE(MODE_GAIN_FILTER); positive favors mode-gain",
+  "rows": 422400,
+  "focal_estimates": {
+    "-0.2": {
+      "kappa": -0.2,
+      "mode_gain_mse": 0.07556496510233594,
+      "constant_gain_mse": 0.05435246437617578,
+      "constant_minus_mode": -0.02121250072616016,
+      "crossed_95ci": [
+        -0.02485867392149505,
+        -0.018228335084742968
+      ],
+      "positive_training_seeds": 0,
+      "generic_rnn_1d_minus_mode_mse": -0.02087651388200781,
+      "generic_rnn_1d_seed_bootstrap_95ci": [
+        -0.021199166090009082,
+        -0.020555365922183266
+      ],
+      "bilinear_rnn_1d_minus_mode_mse": 0.010885976735786458,
+      "bilinear_rnn_1d_seed_bootstrap_95ci": [
+        0.010240985819871127,
+        0.01154087428832539
+      ],
+      "kalman_oracle_minus_mode_mse": -0.03212132619510937,
+      "kalman_oracle_seed_bootstrap_95ci": [
+        -0.0324368734672677,
+        -0.03179641675840446
+      ]
+    },
+    "0": {
+      "kappa": -0.0,
+      "mode_gain_mse": 0.0662265889827552,
+      "constant_gain_mse": 0.05310621444383855,
+      "constant_minus_mode": -0.013120374538916667,
+      "crossed_95ci": [
+        -0.01581680511003024,
+        -0.010814315545244497
+      ],
+      "positive_training_seeds": 0,
+      "generic_rnn_1d_minus_mode_mse": -0.01304617501179427,
+      "generic_rnn_1d_seed_bootstrap_95ci": [
+        -0.01329323637853831,
+        -0.012794156908735806
+      ],
+      "bilinear_rnn_1d_minus_mode_mse": 0.009529352347643228,
+      "bilinear_rnn_1d_seed_bootstrap_95ci": [
+        0.009093416171545507,
+        0.009979042386998507
+      ],
+      "kalman_oracle_minus_mode_mse": -0.02473861247408333,
+      "kalman_oracle_seed_bootstrap_95ci": [
+        -0.02498261516379304,
+        -0.024477291169807024
+      ]
+    },
+    "0.2": {
+      "kappa": 0.2,
+      "mode_gain_mse": 0.05989440655864974,
+      "constant_gain_mse": 0.05577269052460808,
+      "constant_minus_mode": -0.004121716034041667,
+      "crossed_95ci": [
+        -0.006104015078787435,
+        -0.0024849524621504884
+      ],
+      "positive_training_seeds": 0,
+      "generic_rnn_1d_minus_mode_mse": -0.003782992610669271,
+      "generic_rnn_1d_seed_bootstrap_95ci": [
+        -0.003958135015344499,
+        -0.003610686266565983
+      ],
+      "bilinear_rnn_1d_minus_mode_mse": 0.008552535492132944,
+      "bilinear_rnn_1d_seed_bootstrap_95ci": [
+        0.008280492950673598,
+        0.00882645854099006
+      ],
+      "kalman_oracle_minus_mode_mse": -0.015381673444126302,
+      "kalman_oracle_seed_bootstrap_95ci": [
+        -0.01557384817609502,
+        -0.015187692251837498
+      ]
+    }
+  },
+  "zero_crossings_linear_interpolation": [
+    0.2851720913268502
+  ],
+  "zero_crossing_crossed_bootstrap_95ci": [
+    0.25135623812359725,
+    0.31793264462879545
+  ],
+  "zero_crossing_bootstrap_fraction_with_crossing": 1.0,
+  "dose_curve": [
+    {
+      "kappa": -0.5,
+      "mode_gain_mse": 0.09520914540825781,
+      "constant_gain_mse": 0.06355820263463932,
+      "constant_minus_mode": -0.03165094277361849,
+      "crossed_95ci": [
+        -0.036259144027600686,
+        -0.02761418579501299
+      ],
+      "positive_training_seeds": 0,
+      "generic_rnn_1d_minus_mode_mse": -0.03015050039579818,
+      "generic_rnn_1d_seed_bootstrap_95ci": [
+        -0.03062640239945394,
+        -0.029667977729361715
+      ],
+      "bilinear_rnn_1d_minus_mode_mse": 0.014947190775996095,
+      "bilinear_rnn_1d_seed_bootstrap_95ci": [
+        0.01387741305439401,
+        0.0160186085838292
+      ],
+      "kalman_oracle_minus_mode_mse": -0.04431457584278906,
+      "kalman_oracle_seed_bootstrap_95ci": [
+        -0.04478462601440792,
+        -0.043836129799671206
+      ]
+    },
+    {
+      "kappa": -0.4,
+      "mode_gain_mse": 0.08790953758056119,
+      "constant_gain_mse": 0.05951144245861719,
+      "constant_minus_mode": -0.028398095121944012,
+      "crossed_95ci": [
+        -0.03272258617198017,
+        -0.024670996903245545
+      ],
+      "positive_training_seeds": 0,
+      "generic_rnn_1d_minus_mode_mse": -0.02733520756543099,
+      "generic_rnn_1d_seed_bootstrap_95ci": [
+        -0.02775375034694974,
+        -0.0269192935003624
+      ],
+      "bilinear_rnn_1d_minus_mode_mse": 0.013305469164861979,
+      "bilinear_rnn_1d_seed_bootstrap_95ci": [
+        0.012397230960112277,
+        0.014220687931729656
+      ],
+      "kalman_oracle_minus_mode_mse": -0.03811843751267057,
+      "kalman_oracle_seed_bootstrap_95ci": [
+        -0.038534839390915177,
+        -0.03770723184842563
+      ]
+    },
+    {
+      "kappa": -0.3,
+      "mode_gain_mse": 0.08136147774222136,
+      "constant_gain_mse": 0.05644286267998437,
+      "constant_minus_mode": -0.024918615062236978,
+      "crossed_95ci": [
+        -0.02878287812866045,
+        -0.021503903601876564
+      ],
+      "positive_training_seeds": 0,
+      "generic_rnn_1d_minus_mode_mse": -0.024265527139604164,
+      "generic_rnn_1d_seed_bootstrap_95ci": [
+        -0.02461986716513688,
+        -0.023900722858230927
+      ],
+      "bilinear_rnn_1d_minus_mode_mse": 0.011937782627477864,
+      "bilinear_rnn_1d_seed_bootstrap_95ci": [
+        0.011167163322074578,
+        0.01272839517725332
+      ],
+      "kalman_oracle_minus_mode_mse": -0.03509439854604948,
+      "kalman_oracle_seed_bootstrap_95ci": [
+        -0.03545604629361761,
+        -0.03472216043846897
+      ]
+    },
+    {
+      "kappa": -0.2,
+      "mode_gain_mse": 0.07556496510233594,
+      "constant_gain_mse": 0.05435246437617578,
+      "constant_minus_mode": -0.02121250072616016,
+      "crossed_95ci": [
+        -0.02485867392149505,
+        -0.018228335084742968
+      ],
+      "positive_training_seeds": 0,
+      "generic_rnn_1d_minus_mode_mse": -0.02087651388200781,
+      "generic_rnn_1d_seed_bootstrap_95ci": [
+        -0.021199166090009082,
+        -0.020555365922183266
+      ],
+      "bilinear_rnn_1d_minus_mode_mse": 0.010885976735786458,
+      "bilinear_rnn_1d_seed_bootstrap_95ci": [
+        0.010240985819871127,
+        0.01154087428832539
+      ],
+      "kalman_oracle_minus_mode_mse": -0.03212132619510937,
+      "kalman_oracle_seed_bootstrap_95ci": [
+        -0.0324368734672677,
+        -0.03179641675840446
+      ]
+    },
+    {
+      "kappa": -0.1,
+      "mode_gain_mse": 0.07052000258914974,
+      "constant_gain_mse": 0.053240247417358076,
+      "constant_minus_mode": -0.017279755171791665,
+      "crossed_95ci": [
+        -0.02047160991712962,
+        -0.014658079939511362
+      ],
+      "positive_training_seeds": 0,
+      "generic_rnn_1d_minus_mode_mse": -0.01713982148267057,
+      "generic_rnn_1d_seed_bootstrap_95ci": [
+        -0.017423609729813577,
+        -0.01685490559212005
+      ],
+      "bilinear_rnn_1d_minus_mode_mse": 0.010110750362055991,
+      "bilinear_rnn_1d_seed_bootstrap_95ci": [
+        0.009550248163589127,
+        0.010679800025080826
+      ],
+      "kalman_oracle_minus_mode_mse": -0.02867793368368099,
+      "kalman_oracle_seed_bootstrap_95ci": [
+        -0.02894914958781829,
+        -0.028388042243532297
+      ]
+    },
+    {
+      "kappa": -0.0,
+      "mode_gain_mse": 0.0662265889827552,
+      "constant_gain_mse": 0.05310621444383855,
+      "constant_minus_mode": -0.013120374538916667,
+      "crossed_95ci": [
+        -0.01581680511003024,
+        -0.010814315545244497
+      ],
+      "positive_training_seeds": 0,
+      "generic_rnn_1d_minus_mode_mse": -0.01304617501179427,
+      "generic_rnn_1d_seed_bootstrap_95ci": [
+        -0.01329323637853831,
+        -0.012794156908735806
+      ],
+      "bilinear_rnn_1d_minus_mode_mse": 0.009529352347643228,
+      "bilinear_rnn_1d_seed_bootstrap_95ci": [
+        0.009093416171545507,
+        0.009979042386998507
+      ],
+      "kalman_oracle_minus_mode_mse": -0.02473861247408333,
+      "kalman_oracle_seed_bootstrap_95ci": [
+        -0.02498261516379304,
+        -0.024477291169807024
+      ]
+    },
+    {
+      "kappa": 0.1,
+      "mode_gain_mse": 0.0626847222604388,
+      "constant_gain_mse": 0.05395036050739843,
+      "constant_minus_mode": -0.008734361753040366,
+      "crossed_95ci": [
+        -0.011135484256471321,
+        -0.0067421377870086905
+      ],
+      "positive_training_seeds": 0,
+      "generic_rnn_1d_minus_mode_mse": -0.008593472367289062,
+      "generic_rnn_1d_seed_bootstrap_95ci": [
+        -0.008804938943538768,
+        -0.008388266848014029
+      ],
+      "bilinear_rnn_1d_minus_mode_mse": 0.009043125519473958,
+      "bilinear_rnn_1d_seed_bootstrap_95ci": [
+        0.008692141570578743,
+        0.009393664622243359
+      ],
+      "kalman_oracle_minus_mode_mse": -0.020314927275985672,
+      "kalman_oracle_seed_bootstrap_95ci": [
+        -0.020538622640298796,
+        -0.02008725419384235
+      ]
+    },
+    {
+      "kappa": 0.2,
+      "mode_gain_mse": 0.05989440655864974,
+      "constant_gain_mse": 0.05577269052460808,
+      "constant_minus_mode": -0.004121716034041667,
+      "crossed_95ci": [
+        -0.006104015078787435,
+        -0.0024849524621504884
+      ],
+      "positive_training_seeds": 0,
+      "generic_rnn_1d_minus_mode_mse": -0.003782992610669271,
+      "generic_rnn_1d_seed_bootstrap_95ci": [
+        -0.003958135015344499,
+        -0.003610686266565983
+      ],
+      "bilinear_rnn_1d_minus_mode_mse": 0.008552535492132944,
+      "bilinear_rnn_1d_seed_bootstrap_95ci": [
+        0.008280492950673598,
+        0.00882645854099006
+      ],
+      "kalman_oracle_minus_mode_mse": -0.015381673444126302,
+      "kalman_oracle_seed_bootstrap_95ci": [
+        -0.01557384817609502,
+        -0.015187692251837498
+      ]
+    },
+    {
+      "kappa": 0.3,
+      "mode_gain_mse": 0.057855637808445576,
+      "constant_gain_mse": 0.058573201836489584,
+      "constant_minus_mode": 0.0007175640280440104,
+      "crossed_95ci": [
+        -0.0009782682205872787,
+        0.0023225187254608225
+      ],
+      "positive_training_seeds": 30,
+      "generic_rnn_1d_minus_mode_mse": 0.001377013380685026,
+      "generic_rnn_1d_seed_bootstrap_95ci": [
+        0.0012461377878078548,
+        0.001510711072384658
+      ],
+      "bilinear_rnn_1d_minus_mode_mse": 0.00796424569217461,
+      "bilinear_rnn_1d_seed_bootstrap_95ci": [
+        0.007770799087835263,
+        0.008155642901136295
+      ],
+      "kalman_oracle_minus_mode_mse": -0.009981760689726822,
+      "kalman_oracle_seed_bootstrap_95ci": [
+        -0.010140254920953795,
+        -0.00981968655177425
+      ]
+    },
+    {
+      "kappa": 0.4,
+      "mode_gain_mse": 0.05656841859383424,
+      "constant_gain_mse": 0.06235189484516198,
+      "constant_minus_mode": 0.005783476251327735,
+      "crossed_95ci": [
+        0.004087043084261471,
+        0.007589858078665947
+      ],
+      "positive_training_seeds": 30,
+      "generic_rnn_1d_minus_mode_mse": 0.006860637086344921,
+      "generic_rnn_1d_seed_bootstrap_95ci": [
+        0.006763679962801191,
+        0.0069565102526239165
+      ],
+      "bilinear_rnn_1d_minus_mode_mse": 0.0071939133623748685,
+      "bilinear_rnn_1d_seed_bootstrap_95ci": [
+        0.007065633432053812,
+        0.007315786055193024
+      ],
+      "kalman_oracle_minus_mode_mse": -0.004726389649537369,
+      "kalman_oracle_seed_bootstrap_95ci": [
+        -0.004853934243853525,
+        -0.004604001810260375
+      ]
+    },
+    {
+      "kappa": 0.5,
+      "mode_gain_mse": 0.056032746639899614,
+      "constant_gain_mse": 0.0671087680868255,
+      "constant_minus_mode": 0.011076021446925913,
+      "crossed_95ci": [
+        0.009041354168601183,
+        0.013282205803336906
+      ],
+      "positive_training_seeds": 30,
+      "generic_rnn_1d_minus_mode_mse": 0.01260787544022448,
+      "generic_rnn_1d_seed_bootstrap_95ci": [
+        0.01252028041223918,
+        0.012696775561500848
+      ],
+      "bilinear_rnn_1d_minus_mode_mse": 0.006166850374297526,
+      "bilinear_rnn_1d_seed_bootstrap_95ci": [
+        0.006091120832917204,
+        0.006241282685714778
+      ],
+      "kalman_oracle_minus_mode_mse": -0.0023053278369503907,
+      "kalman_oracle_seed_bootstrap_95ci": [
+        -0.002403595660852972,
+        -0.002215808120787347
+      ]
+    }
+  ]
+}
