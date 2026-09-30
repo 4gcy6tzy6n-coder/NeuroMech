@@ -1,0 +1,46 @@
+{
+  "experiment_id": "M2_COROLLARY_DISCHARGE_PLACEMENT_TRANSFER_V1",
+  "classification": "post-result exploratory artificial mechanism-transfer study",
+  "python": "3.9.6",
+  "numpy": "2.0.2",
+  "torch": "2.8.0",
+  "training_seeds": [
+    88000,
+    88029
+  ],
+  "train_hazard": 0.05,
+  "test_hazards": [
+    0.01,
+    0.05,
+    0.2
+  ],
+  "n_train": 256,
+  "train_steps": 256,
+  "n_test": 512,
+  "test_steps": 512,
+  "updates": 200,
+  "batch_size": 16,
+  "learning_rate": 0.01,
+  "observation_noise_sd": 1.25,
+  "arms": [
+    "SENSORY_SITE_CD",
+    "OUTPUT_SITE_PERSISTENCE",
+    "NO_FEEDBACK",
+    "GENERIC_RNN_2H",
+    "BAYES_FILTER"
+  ],
+  "rows": 230400,
+  "runner_sha256": "1938907808be85ba09f64b74ed4ac6e7a4a6fc31ea45335b2efa1652f57a65ba",
+  "contract_sha256": "a29092ee3822e45c3c331e51706e9563156a22ce90c1867f4e61da4d75b6493d",
+  "files": {
+    "episode_metrics.csv": "cab141be8ae4724ae797bbdfe2d72717b4e6b06bb6ab1cab2fc659010e4d9d99",
+    "training_metrics.csv": "c21d98680ec8c2417584d32f40ed787abaa9277970c07c744616f33af7b6cea5",
+    "summary.json": "d7882c8a171045584be551db682f3c284fe24d2a6431671b8605a75c7f21862f"
+  },
+  "analysis_sources": {
+    "runner": "1938907808be85ba09f64b74ed4ac6e7a4a6fc31ea45335b2efa1652f57a65ba",
+    "analyzer": "6f3fc6f263b0f6e6c3b0f420a97bf246b2a5ea5ea8cfccaa413f6ccdebd5f87c",
+    "verifier": "6b9e7570d2e6e1e1da4689be39b27334ec721e2a23c45b9cd18e19672b2e9fec",
+    "contract": "a29092ee3822e45c3c331e51706e9563156a22ce90c1867f4e61da4d75b6493d"
+  }
+}

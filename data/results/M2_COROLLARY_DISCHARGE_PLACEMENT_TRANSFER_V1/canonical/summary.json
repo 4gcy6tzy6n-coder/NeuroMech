@@ -1,0 +1,191 @@
+{
+  "experiment_id": "M2_COROLLARY_DISCHARGE_PLACEMENT_TRANSFER_V1",
+  "classification": "post-result exploratory artificial mechanism-transfer study",
+  "primary": "accuracy(SENSORY_SITE_CD)-accuracy(OUTPUT_SITE_PERSISTENCE) at hazard 0.05",
+  "bootstrap": "paired crossed resampling of training seeds and shared test episode IDs",
+  "bootstrap_replicates": 10000,
+  "rows": 230400,
+  "means": {
+    "0.01": {
+      "SENSORY_SITE_CD": {
+        "accuracy": 0.9324560801188151,
+        "false_action_switch_rate": 0.05548784987632716,
+        "switch_recovery_lag_mean_over_switches": 1.4327776200127176
+      },
+      "OUTPUT_SITE_PERSISTENCE": {
+        "accuracy": 0.9462538401285807,
+        "false_action_switch_rate": 0.010616453878254458,
+        "switch_recovery_lag_mean_over_switches": 4.716436944622995
+      },
+      "NO_FEEDBACK": {
+        "accuracy": 0.9173615773518881,
+        "false_action_switch_rate": 0.10045760914567839,
+        "switch_recovery_lag_mean_over_switches": 0.8809463161597885
+      },
+      "GENERIC_RNN_2H": {
+        "accuracy": 0.9489512125651042,
+        "false_action_switch_rate": 0.05457572354962834,
+        "switch_recovery_lag_mean_over_switches": 1.3583721033844578
+      },
+      "BAYES_FILTER": {
+        "accuracy": 0.965197499593099,
+        "false_action_switch_rate": 0.02053407496170272,
+        "switch_recovery_lag_mean_over_switches": 2.512345494379609
+      }
+    },
+    "0.05": {
+      "SENSORY_SITE_CD": {
+        "accuracy": 0.889355214436849,
+        "false_action_switch_rate": 0.07304096974750014,
+        "switch_recovery_lag_mean_over_switches": 1.2999148076537057
+      },
+      "OUTPUT_SITE_PERSISTENCE": {
+        "accuracy": 0.8213680267333985,
+        "false_action_switch_rate": 0.033575600724004166,
+        "switch_recovery_lag_mean_over_switches": 3.5605247959189636
+      },
+      "NO_FEEDBACK": {
+        "accuracy": 0.8905165354410808,
+        "false_action_switch_rate": 0.11631835502219277,
+        "switch_recovery_lag_mean_over_switches": 0.823861525914194
+      },
+      "GENERIC_RNN_2H": {
+        "accuracy": 0.9021479288736979,
+        "false_action_switch_rate": 0.08014482508610653,
+        "switch_recovery_lag_mean_over_switches": 1.2212478846656425
+      },
+      "BAYES_FILTER": {
+        "accuracy": 0.903036626180013,
+        "false_action_switch_rate": 0.07756933276038978,
+        "switch_recovery_lag_mean_over_switches": 1.2590224144516475
+      }
+    },
+    "0.2": {
+      "SENSORY_SITE_CD": {
+        "accuracy": 0.7838787078857422,
+        "false_action_switch_rate": 0.11586965516495379,
+        "switch_recovery_lag_mean_over_switches": 0.96165525853817
+      },
+      "OUTPUT_SITE_PERSISTENCE": {
+        "accuracy": 0.6388907114664714,
+        "false_action_switch_rate": 0.06389928982765554,
+        "switch_recovery_lag_mean_over_switches": 1.8584548066931428
+      },
+      "NO_FEEDBACK": {
+        "accuracy": 0.8155097961425781,
+        "false_action_switch_rate": 0.1601503541170535,
+        "switch_recovery_lag_mean_over_switches": 0.6881703635998965
+      },
+      "GENERIC_RNN_2H": {
+        "accuracy": 0.7922985076904296,
+        "false_action_switch_rate": 0.14007805122576703,
+        "switch_recovery_lag_mean_over_switches": 0.9044073916160147
+      },
+      "BAYES_FILTER": {
+        "accuracy": 0.8218969980875651,
+        "false_action_switch_rate": 0.19609823780114463,
+        "switch_recovery_lag_mean_over_switches": 0.52806530687725
+      }
+    }
+  },
+  "primary_contrast": {
+    "mean_sensory_minus_output_accuracy": 0.06798718770345052,
+    "crossed_95ci": [
+      0.06475496292114258,
+      0.07119797070821125
+    ],
+    "positive_training_seed_count": 30
+  },
+  "secondary_accuracy_contrasts": {
+    "0.01": {
+      "SENSORY_SITE_CD_minus_OUTPUT_SITE_PERSISTENCE": {
+        "mean": -0.013797760009765625,
+        "crossed_95ci_descriptive": [
+          -0.015159635543823243,
+          -0.012489299774169921
+        ]
+      },
+      "SENSORY_SITE_CD_minus_NO_FEEDBACK": {
+        "mean": 0.015094502766927084,
+        "crossed_95ci_descriptive": [
+          0.014571625391642253,
+          0.015625263849894204
+        ]
+      },
+      "SENSORY_SITE_CD_minus_GENERIC_RNN_2H": {
+        "mean": -0.016495132446289064,
+        "crossed_95ci_descriptive": [
+          -0.017620627085367838,
+          -0.015281521479288738
+        ]
+      },
+      "SENSORY_SITE_CD_minus_BAYES_FILTER": {
+        "mean": -0.032741419474283856,
+        "crossed_95ci_descriptive": [
+          -0.03341103235880534,
+          -0.03206582069396973
+        ]
+      }
+    },
+    "0.05": {
+      "SENSORY_SITE_CD_minus_OUTPUT_SITE_PERSISTENCE": {
+        "mean": 0.06798718770345052,
+        "crossed_95ci_descriptive": [
+          0.06476132074991861,
+          0.07121729850769042
+        ]
+      },
+      "SENSORY_SITE_CD_minus_NO_FEEDBACK": {
+        "mean": -0.0011613210042317708,
+        "crossed_95ci_descriptive": [
+          -0.001645669937133789,
+          -0.000653076171875
+        ]
+      },
+      "SENSORY_SITE_CD_minus_GENERIC_RNN_2H": {
+        "mean": -0.012792714436848958,
+        "crossed_95ci_descriptive": [
+          -0.013200257619222005,
+          -0.012388229370117188
+        ]
+      },
+      "SENSORY_SITE_CD_minus_BAYES_FILTER": {
+        "mean": -0.013681411743164062,
+        "crossed_95ci_descriptive": [
+          -0.014079167048136394,
+          -0.013292179107666016
+        ]
+      }
+    },
+    "0.2": {
+      "SENSORY_SITE_CD_minus_OUTPUT_SITE_PERSISTENCE": {
+        "mean": 0.14498799641927082,
+        "crossed_95ci_descriptive": [
+          0.14189871152242026,
+          0.14789476712544758
+        ]
+      },
+      "SENSORY_SITE_CD_minus_NO_FEEDBACK": {
+        "mean": -0.031631088256835936,
+        "crossed_95ci_descriptive": [
+          -0.032442995707194014,
+          -0.0307781187693278
+        ]
+      },
+      "SENSORY_SITE_CD_minus_GENERIC_RNN_2H": {
+        "mean": -0.0084197998046875,
+        "crossed_95ci_descriptive": [
+          -0.009920390446980794,
+          -0.006970415115356446
+        ]
+      },
+      "SENSORY_SITE_CD_minus_BAYES_FILTER": {
+        "mean": -0.038018290201822916,
+        "crossed_95ci_descriptive": [
+          -0.03898445129394531,
+          -0.03703369776407878
+        ]
+      }
+    }
+  }
+}

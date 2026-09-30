@@ -79,7 +79,7 @@ NEW_SCATTERED_EXPERIMENTS = PAUSED
 CURRENT_NEXT_WORK_PACKAGE = CLAIM_AND_CONTRIBUTION_REPLAN_FROM_COMPLETED_EVIDENCE
 ```
 
-See [`PHASE2_CONCEPT_ADMISSION_REVIEW.md`](PHASE2_CONCEPT_ADMISSION_REVIEW.md) and [`PHASE2_MAINLINE_RESOLUTION.md`](PHASE2_MAINLINE_RESOLUTION.md). This update does not change any registered experiment, result, or model contract.
+This historical phase decision does not change any registered experiment, result, or model contract. The current evidence and novelty assessment is in [`NMI_CLAIM_AND_NOVELTY_AUDIT_20261001.md`](../NMI_CLAIM_AND_NOVELTY_AUDIT_20261001.md).
 
 ## 2026-10-01 Owner direction update — experimental work resumed
 
@@ -102,3 +102,7 @@ This closed-loop result advances the cross-task audit but does not complete the 
 ## 2026-10-01 M2 V2 training-distribution diagnostic
 
 The post-result [`M2_2D_CLOSED_LOOP_PURSUIT_V2_TRAIN_DIST_DIAGNOSTIC`](../M2_2D_CLOSED_LOOP_PURSUIT_V2_TRAIN_DIST_DIAGNOSTIC/RESULTS.md) compared random-action training with shared Bayes-teacher trajectories mixed with 25% random exploration. With fresh training seeds and paired targets/noise, the aligned bilinear-minus-mode final-distance contrast shifted from `−0.01885` (95% crossed interval `[−0.02791,−0.01059]`) to `+0.00394` (`[+0.00051,+0.00750]`); the predeclared training-regime interaction was `+0.02279` (`[+0.01341,+0.03318]`). This shows that the training trajectory policy materially changes this pairwise ranking and is consistent with distribution mismatch contributing to V1. It does not isolate the only cause: teacher-generated occupancy may favor some estimators and disadvantage others. Under teacher-mixed training, the additive matched control still had lower final distance, and MODE_GAIN remained mapping-sensitive. V2 is post-result and exploratory, not independent confirmation or biological-to-AI validation. The full 153,600 rows, verifier output, and independent rerun are documented in the experiment record.
+
+## 2026-10-01 M2 corollary-discharge placement transfer
+
+The post-result [`M2_COROLLARY_DISCHARGE_PLACEMENT_TRANSFER_V1`](../M2_COROLLARY_DISCHARGE_PLACEMENT_TRANSFER_V1/RESULTS.md) directly compared motor-state feedback at a sensory-state update with equal-parameter output-action persistence. At the training hazard 0.05, sensory-site feedback exceeded output persistence by `+0.06799` accuracy (crossed 95% interval `[+0.06475,+0.07120]`). It did not beat no feedback (88.94% vs 89.05%), the two-unit generic RNN (90.21%), or the Bayes reference (90.30%). Its switch-recovery lag was shorter than the output-persistence control (1.30 vs 3.56 steps). At the low hazard, output persistence was more accurate; at the high hazard, sensory-site feedback remained below no-feedback, generic and Bayes accuracy. This supports a bounded effect of feedback placement on stability/switching behavior relative to an output-inertia yoke, not a general AI advantage. The synthetic task does not reproduce *C. elegans* thermotaxis and is not biological validation.
