@@ -1,0 +1,36 @@
+{
+  "experiment": "M5_DELAYED_REWARD_CONTEXTUAL_BANDIT",
+  "contract": "M5_DELAYED_REWARD_BANDIT_CONTRACT.md",
+  "master_seed": 20260930,
+  "task_seeds": 30,
+  "delays": [
+    1,
+    4,
+    16,
+    64
+  ],
+  "arms": [
+    "EXACT_REPLAY",
+    "ELIGIBILITY_TRACE_NORM_MATCHED",
+    "NO_TRACE"
+  ],
+  "fixed_parameters": {
+    "learning_rate": 0.01,
+    "eligibility_decay": 0.98,
+    "advantage_baseline": 0.5
+  },
+  "task": {
+    "context_dimension": 16,
+    "actions": 2,
+    "training_decisions": 6000,
+    "heldout_contexts": 2000
+  },
+  "common_random_numbers": "Same task, contexts, action-choice uniforms and action-specific reward uniforms across arms and delays within task seed.",
+  "independent_unit": "task seed; delays/arms paired within seed; decision steps nested",
+  "post_result_status": "Outcome-informed distinct-objective follow-up; no hyperparameter search.",
+  "outputs": [
+    "task_metrics.csv",
+    "training_reward_trajectory.csv",
+    "primary_result.json"
+  ]
+}

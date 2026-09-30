@@ -1,0 +1,52 @@
+{
+  "status": "POST_RESULT_CONTEXTUAL_BANDIT_TRANSFER_TEST_COMPLETE",
+  "primary_estimand": "mean task-seed contrast after equal averaging over four delays: eligibility trace minus no-trace held-out expected reward",
+  "primary_mean_difference": 0.009140297127476996,
+  "task_seed_bootstrap_95ci": [
+    0.007720290756711215,
+    0.010879957871106077
+  ],
+  "decision": "TRACE_ADVANTAGE_OVER_NO_TRACE_IN_THIS_BANDIT",
+  "positive_seed_count": 30,
+  "task_seeds": 30,
+  "delay_summary": [
+    {
+      "delay": 1,
+      "trace_mean_expected_reward": 0.5131170247148239,
+      "no_trace_mean_expected_reward": 0.5000365273505779,
+      "exact_replay_mean_expected_reward": 0.5524851812545014,
+      "trace_minus_no_trace": 0.013080497364245958,
+      "trace_minus_exact_replay": -0.03936815653967754
+    },
+    {
+      "delay": 4,
+      "trace_mean_expected_reward": 0.5123132954702435,
+      "no_trace_mean_expected_reward": 0.5005158529507107,
+      "exact_replay_mean_expected_reward": 0.5524939466479915,
+      "trace_minus_no_trace": 0.01179744251953287,
+      "trace_minus_exact_replay": -0.04018065117774793
+    },
+    {
+      "delay": 16,
+      "trace_mean_expected_reward": 0.50934544824915,
+      "no_trace_mean_expected_reward": 0.5007586897794457,
+      "exact_replay_mean_expected_reward": 0.5525024541918857,
+      "trace_minus_no_trace": 0.008586758469704248,
+      "trace_minus_exact_replay": -0.04315700594273585
+    },
+    {
+      "delay": 64,
+      "trace_mean_expected_reward": 0.5037402392156817,
+      "no_trace_mean_expected_reward": 0.5006437490592568,
+      "exact_replay_mean_expected_reward": 0.5525289618400745,
+      "trace_minus_no_trace": 0.003096490156424908,
+      "trace_minus_exact_replay": -0.04878872262439266
+    }
+  ],
+  "arm_mean_heldout_expected_reward": {
+    "EXACT_REPLAY": 0.5525026359836133,
+    "ELIGIBILITY_TRACE_NORM_MATCHED": 0.5096290019124747,
+    "NO_TRACE": 0.5004887047849977
+  },
+  "interpretation_scope": "A different synthetic objective (contextual bandit with delayed scalar reward); not biological validation or general AI-task superiority."
+}

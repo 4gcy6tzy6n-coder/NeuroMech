@@ -1,0 +1,64 @@
+{
+  "status": "VERIFIED",
+  "task_metric_rows": 360,
+  "training_trajectory_rows": 4320,
+  "per_seed_delay_rows": 120,
+  "complete_seed_delay_arm_cells": 360,
+  "frozen_hashes_match": true,
+  "primary_mean_recomputed": 0.009140297127476996,
+  "primary_ci_recomputed": [
+    0.007720290756711215,
+    0.010879957871106077
+  ],
+  "positive_seed_count": 30,
+  "mean_heldout_expected_reward": {
+    "EXACT_REPLAY": 0.5525026359836133,
+    "ELIGIBILITY_TRACE_NORM_MATCHED": 0.5096290019124747,
+    "NO_TRACE": 0.5004887047849977
+  },
+  "delay_summary": [
+    {
+      "delay": 1,
+      "mean_expected_reward": {
+        "EXACT_REPLAY": 0.5524851812545014,
+        "ELIGIBILITY_TRACE_NORM_MATCHED": 0.5131170247148239,
+        "NO_TRACE": 0.5000365273505779
+      },
+      "trace_minus_no_trace": 0.013080497364245991,
+      "trace_minus_exact_replay": -0.03936815653967751
+    },
+    {
+      "delay": 4,
+      "mean_expected_reward": {
+        "EXACT_REPLAY": 0.5524939466479915,
+        "ELIGIBILITY_TRACE_NORM_MATCHED": 0.5123132954702435,
+        "NO_TRACE": 0.5005158529507107
+      },
+      "trace_minus_no_trace": 0.011797442519532853,
+      "trace_minus_exact_replay": -0.04018065117774794
+    },
+    {
+      "delay": 16,
+      "mean_expected_reward": {
+        "EXACT_REPLAY": 0.5525024541918857,
+        "ELIGIBILITY_TRACE_NORM_MATCHED": 0.50934544824915,
+        "NO_TRACE": 0.5007586897794457
+      },
+      "trace_minus_no_trace": 0.008586758469704248,
+      "trace_minus_exact_replay": -0.04315700594273575
+    },
+    {
+      "delay": 64,
+      "mean_expected_reward": {
+        "EXACT_REPLAY": 0.5525289618400745,
+        "ELIGIBILITY_TRACE_NORM_MATCHED": 0.5037402392156817,
+        "NO_TRACE": 0.5006437490592568
+      },
+      "trace_minus_no_trace": 0.0030964901564248803,
+      "trace_minus_exact_replay": -0.04878872262439282
+    }
+  ],
+  "task_metrics_sha256": "b6577538817bf23ad365ab75240002da94f7d8a2a9dd7a51e5d9193c5b8fa1d5",
+  "training_trajectory_sha256": "a9c3917f581e1ee66d303a521b4af6f3635ff8a259c5ee2322a0e2f731288fda",
+  "scope": "One synthetic contextual-bandit objective with fixed reward generators; task-seed inference only."
+}

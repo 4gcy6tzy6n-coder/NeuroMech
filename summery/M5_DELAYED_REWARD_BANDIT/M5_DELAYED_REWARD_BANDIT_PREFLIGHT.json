@@ -1,0 +1,15 @@
+{
+  "status": "FROZEN_BEFORE_RUN",
+  "experiment": "M5_DELAYED_REWARD_CONTEXTUAL_BANDIT",
+  "frozen_files_sha256": {
+    "M5_DELAYED_REWARD_BANDIT_CONTRACT.md": "1abcafc10ace74c6e92296593a38c07b1b63c6634d03aae341dab32a3e71dd35",
+    "run_delayed_reward_bandit.py": "2b99a073d7b906eb009304f2f2f8815448c4906f05e382c869d3e1b1bdc89009"
+  },
+  "python": "3.12.13",
+  "numpy": "2.4.4",
+  "run_command": "python experiments/m5_cerebellar_eligibility/run_delayed_reward_bandit.py",
+  "expected_metric_rows": 360,
+  "expected_delay_contrast_rows": 120,
+  "task_seeds": 30,
+  "outcome_access": "Prior M5 classification results and cross-input-generator results were known; this follow-up uses a different objective and has no inspected new outcomes before freeze."
+}
