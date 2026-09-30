@@ -1,0 +1,642 @@
+{
+  "experiment_id": "M2_FORWARD_STATE_SENSORY_GATE_V3",
+  "summary": {
+    "IN_RANGE": {
+      "ALIGNED": {
+        "policies": {
+          "MODE_GAIN_FILTER": {
+            "mean_mse": 0.053578500096790396,
+            "mean_mae": 0.17178665046324615
+          },
+          "CONSTANT_GAIN_FILTER": {
+            "mean_mse": 0.06287335770399724,
+            "mean_mae": 0.1858399586095847
+          },
+          "GENERIC_RNN_1D": {
+            "mean_mse": 0.06441376929642484,
+            "mean_mae": 0.1884607327748215
+          },
+          "BILINEAR_RNN_1D": {
+            "mean_mse": 0.05846155512241177,
+            "mean_mae": 0.1790624423820913
+          },
+          "GRU_1D": {
+            "mean_mse": 0.06209109858791824,
+            "mean_mae": 0.18578113386925896
+          },
+          "KALMAN_ORACLE": {
+            "mean_mse": 0.05124829557501172,
+            "mean_mae": 0.16679799460725608
+          }
+        },
+        "contrasts": {
+          "constant_minus_mode": {
+            "mean_difference": 0.00929485760720684,
+            "positive_seed_means": 20,
+            "crossed_95_percent_bootstrap_interval": [
+              0.008018355332423815,
+              0.010683641700066313
+            ],
+            "n_seeds": 20,
+            "n_episodes": 512,
+            "primary_estimand": true
+          },
+          "generic_minus_mode": {
+            "mean_difference": 0.010835269199634448,
+            "positive_seed_means": 20,
+            "crossed_95_percent_bootstrap_interval": [
+              0.00928875189810527,
+              0.012520631013362777
+            ],
+            "n_seeds": 20,
+            "n_episodes": 512
+          },
+          "bilinear_minus_mode": {
+            "mean_difference": 0.004883055025621375,
+            "positive_seed_means": 20,
+            "crossed_95_percent_bootstrap_interval": [
+              0.003652390255697179,
+              0.006195329615392512
+            ],
+            "n_seeds": 20,
+            "n_episodes": 512
+          },
+          "gru_minus_mode": {
+            "mean_difference": 0.008512598491127836,
+            "positive_seed_means": 20,
+            "crossed_95_percent_bootstrap_interval": [
+              0.004084339889761106,
+              0.014213005556690082
+            ],
+            "n_seeds": 20,
+            "n_episodes": 512
+          }
+        }
+      },
+      "INDEPENDENT": {
+        "policies": {
+          "MODE_GAIN_FILTER": {
+            "mean_mse": 0.06545527751485256,
+            "mean_mae": 0.19659976880842428
+          },
+          "CONSTANT_GAIN_FILTER": {
+            "mean_mse": 0.05110425049432203,
+            "mean_mae": 0.1754892237544002
+          },
+          "GENERIC_RNN_1D": {
+            "mean_mse": 0.05108779650691943,
+            "mean_mae": 0.17512575356213725
+          },
+          "BILINEAR_RNN_1D": {
+            "mean_mse": 0.07121650356945335,
+            "mean_mae": 0.2029484608438648
+          },
+          "GRU_1D": {
+            "mean_mse": 0.0654900127384127,
+            "mean_mae": 0.1973874799022813
+          },
+          "KALMAN_ORACLE": {
+            "mean_mse": 0.04121452463925392,
+            "mean_mae": 0.15879893913701565
+          }
+        },
+        "contrasts": {
+          "constant_minus_mode": {
+            "mean_difference": -0.014351027020530538,
+            "positive_seed_means": 0,
+            "crossed_95_percent_bootstrap_interval": [
+              -0.01573200953494798,
+              -0.013016167405066927
+            ],
+            "n_seeds": 20,
+            "n_episodes": 512
+          },
+          "generic_minus_mode": {
+            "mean_difference": -0.014367481007933152,
+            "positive_seed_means": 0,
+            "crossed_95_percent_bootstrap_interval": [
+              -0.01575204969669087,
+              -0.013062162529978194
+            ],
+            "n_seeds": 20,
+            "n_episodes": 512
+          },
+          "bilinear_minus_mode": {
+            "mean_difference": 0.0057612260546007895,
+            "positive_seed_means": 20,
+            "crossed_95_percent_bootstrap_interval": [
+              0.004711027401634529,
+              0.006890060375616326
+            ],
+            "n_seeds": 20,
+            "n_episodes": 512
+          },
+          "gru_minus_mode": {
+            "mean_difference": 3.473522356013583e-05,
+            "positive_seed_means": 4,
+            "crossed_95_percent_bootstrap_interval": [
+              -0.00359088047399919,
+              0.004671751519892041
+            ],
+            "n_seeds": 20,
+            "n_episodes": 512
+          }
+        }
+      },
+      "REVERSED": {
+        "policies": {
+          "MODE_GAIN_FILTER": {
+            "mean_mse": 0.09629165769237888,
+            "mean_mae": 0.2367636924490603
+          },
+          "CONSTANT_GAIN_FILTER": {
+            "mean_mse": 0.06428598608317264,
+            "mean_mae": 0.18674468265360927
+          },
+          "GENERIC_RNN_1D": {
+            "mean_mse": 0.06561233831274707,
+            "mean_mae": 0.1889750097157119
+          },
+          "BILINEAR_RNN_1D": {
+            "mean_mse": 0.10572717066839102,
+            "mean_mae": 0.2484630867772834
+          },
+          "GRU_1D": {
+            "mean_mse": 0.08846550949166546,
+            "mean_mae": 0.2261128228856196
+          },
+          "KALMAN_ORACLE": {
+            "mean_mse": 0.052739628620268965,
+            "mean_mae": 0.1684283151537617
+          }
+        },
+        "contrasts": {
+          "constant_minus_mode": {
+            "mean_difference": -0.03200567160920624,
+            "positive_seed_means": 0,
+            "crossed_95_percent_bootstrap_interval": [
+              -0.03479956644907251,
+              -0.029382348236645376
+            ],
+            "n_seeds": 20,
+            "n_episodes": 512
+          },
+          "generic_minus_mode": {
+            "mean_difference": -0.03067931937963182,
+            "positive_seed_means": 0,
+            "crossed_95_percent_bootstrap_interval": [
+              -0.03321991825432737,
+              -0.02827258018612246
+            ],
+            "n_seeds": 20,
+            "n_episodes": 512
+          },
+          "bilinear_minus_mode": {
+            "mean_difference": 0.00943551297601212,
+            "positive_seed_means": 20,
+            "crossed_95_percent_bootstrap_interval": [
+              0.008144288113927778,
+              0.010840262936812109
+            ],
+            "n_seeds": 20,
+            "n_episodes": 512
+          },
+          "gru_minus_mode": {
+            "mean_difference": -0.007826148200713432,
+            "positive_seed_means": 2,
+            "crossed_95_percent_bootstrap_interval": [
+              -0.01025081802348563,
+              -0.00536130956039213
+            ],
+            "n_seeds": 20,
+            "n_episodes": 512
+          }
+        }
+      }
+    },
+    "HIGH_PERSISTENCE": {
+      "ALIGNED": {
+        "policies": {
+          "MODE_GAIN_FILTER": {
+            "mean_mse": 0.29322521552296543,
+            "mean_mae": 0.3637558843984213
+          },
+          "CONSTANT_GAIN_FILTER": {
+            "mean_mse": 0.402460544299543,
+            "mean_mae": 0.4382065778073548
+          },
+          "GENERIC_RNN_1D": {
+            "mean_mse": 0.5084757198438934,
+            "mean_mae": 0.5182305863143063
+          },
+          "BILINEAR_RNN_1D": {
+            "mean_mse": 0.4886030371119056,
+            "mean_mae": 0.49718014752241524
+          },
+          "GRU_1D": {
+            "mean_mse": 0.48194783687910653,
+            "mean_mae": 0.497976257531837
+          },
+          "KALMAN_ORACLE": {
+            "mean_mse": 0.20781769754096785,
+            "mean_mae": 0.30389137985140635
+          }
+        },
+        "contrasts": {
+          "constant_minus_mode": {
+            "mean_difference": 0.10923532877657756,
+            "positive_seed_means": 20,
+            "crossed_95_percent_bootstrap_interval": [
+              0.09841434545694831,
+              0.12060925120313375
+            ],
+            "n_seeds": 20,
+            "n_episodes": 512
+          },
+          "generic_minus_mode": {
+            "mean_difference": 0.21525050432092793,
+            "positive_seed_means": 20,
+            "crossed_95_percent_bootstrap_interval": [
+              0.19276949452534844,
+              0.23983774124237672
+            ],
+            "n_seeds": 20,
+            "n_episodes": 512
+          },
+          "bilinear_minus_mode": {
+            "mean_difference": 0.19537782158894026,
+            "positive_seed_means": 20,
+            "crossed_95_percent_bootstrap_interval": [
+              0.1736834115771436,
+              0.21908135571795462
+            ],
+            "n_seeds": 20,
+            "n_episodes": 512
+          },
+          "gru_minus_mode": {
+            "mean_difference": 0.18872262135614115,
+            "positive_seed_means": 20,
+            "crossed_95_percent_bootstrap_interval": [
+              0.1373897703271112,
+              0.2506825544637467
+            ],
+            "n_seeds": 20,
+            "n_episodes": 512
+          }
+        }
+      },
+      "INDEPENDENT": {
+        "policies": {
+          "MODE_GAIN_FILTER": {
+            "mean_mse": 0.4214375628635006,
+            "mean_mae": 0.503191570242391
+          },
+          "CONSTANT_GAIN_FILTER": {
+            "mean_mse": 0.288252976763408,
+            "mean_mae": 0.4231274812410632
+          },
+          "GENERIC_RNN_1D": {
+            "mean_mse": 0.37904792374860197,
+            "mean_mae": 0.46602132072310265
+          },
+          "BILINEAR_RNN_1D": {
+            "mean_mse": 0.5667438175474949,
+            "mean_mae": 0.5678603004228685
+          },
+          "GRU_1D": {
+            "mean_mse": 0.44932019931927086,
+            "mean_mae": 0.5134910094215999
+          },
+          "KALMAN_ORACLE": {
+            "mean_mse": 0.07081219501018984,
+            "mean_mae": 0.21130807454103123
+          }
+        },
+        "contrasts": {
+          "constant_minus_mode": {
+            "mean_difference": -0.13318458610009257,
+            "positive_seed_means": 0,
+            "crossed_95_percent_bootstrap_interval": [
+              -0.14778783645478052,
+              -0.11978205589178945
+            ],
+            "n_seeds": 20,
+            "n_episodes": 512
+          },
+          "generic_minus_mode": {
+            "mean_difference": -0.042389639114898604,
+            "positive_seed_means": 0,
+            "crossed_95_percent_bootstrap_interval": [
+              -0.052001146011022154,
+              -0.03239108262887702
+            ],
+            "n_seeds": 20,
+            "n_episodes": 512
+          },
+          "bilinear_minus_mode": {
+            "mean_difference": 0.14530625468399436,
+            "positive_seed_means": 20,
+            "crossed_95_percent_bootstrap_interval": [
+              0.12895592354268406,
+              0.1628542874529362
+            ],
+            "n_seeds": 20,
+            "n_episodes": 512
+          },
+          "gru_minus_mode": {
+            "mean_difference": 0.027882636455770292,
+            "positive_seed_means": 7,
+            "crossed_95_percent_bootstrap_interval": [
+              -0.015527378693738379,
+              0.08295521467131757
+            ],
+            "n_seeds": 20,
+            "n_episodes": 512
+          }
+        }
+      },
+      "REVERSED": {
+        "policies": {
+          "MODE_GAIN_FILTER": {
+            "mean_mse": 0.7303520378569682,
+            "mean_mae": 0.6658297868077538
+          },
+          "CONSTANT_GAIN_FILTER": {
+            "mean_mse": 0.42366427648247534,
+            "mean_mae": 0.4494208749234388
+          },
+          "GENERIC_RNN_1D": {
+            "mean_mse": 0.5234501067310521,
+            "mean_mae": 0.5240953604658707
+          },
+          "BILINEAR_RNN_1D": {
+            "mean_mse": 0.8512913833279745,
+            "mean_mae": 0.7211539263589074
+          },
+          "GRU_1D": {
+            "mean_mse": 0.6795480066732604,
+            "mean_mae": 0.627590876161463
+          },
+          "KALMAN_ORACLE": {
+            "mean_mse": 0.21732474925788065,
+            "mean_mae": 0.31208034181087285
+          }
+        },
+        "contrasts": {
+          "constant_minus_mode": {
+            "mean_difference": -0.30668776137449283,
+            "positive_seed_means": 0,
+            "crossed_95_percent_bootstrap_interval": [
+              -0.3346894954748111,
+              -0.2806874352411279
+            ],
+            "n_seeds": 20,
+            "n_episodes": 512
+          },
+          "generic_minus_mode": {
+            "mean_difference": -0.20690193112591615,
+            "positive_seed_means": 0,
+            "crossed_95_percent_bootstrap_interval": [
+              -0.21976202431231398,
+              -0.19445137824023445
+            ],
+            "n_seeds": 20,
+            "n_episodes": 512
+          },
+          "bilinear_minus_mode": {
+            "mean_difference": 0.12093934547100635,
+            "positive_seed_means": 20,
+            "crossed_95_percent_bootstrap_interval": [
+              0.10639640129008215,
+              0.13688530344387784
+            ],
+            "n_seeds": 20,
+            "n_episodes": 512
+          },
+          "gru_minus_mode": {
+            "mean_difference": -0.05080403118370778,
+            "positive_seed_means": 3,
+            "crossed_95_percent_bootstrap_interval": [
+              -0.07339041017466974,
+              -0.025576417610690908
+            ],
+            "n_seeds": 20,
+            "n_episodes": 512
+          }
+        }
+      }
+    },
+    "LOW_PERSISTENCE": {
+      "ALIGNED": {
+        "policies": {
+          "MODE_GAIN_FILTER": {
+            "mean_mse": 0.0521700017773436,
+            "mean_mae": 0.1768941375176427
+          },
+          "CONSTANT_GAIN_FILTER": {
+            "mean_mse": 0.05728605398527562,
+            "mean_mae": 0.18676932993542333
+          },
+          "GENERIC_RNN_1D": {
+            "mean_mse": 0.05793378814283717,
+            "mean_mae": 0.1878391517733668
+          },
+          "BILINEAR_RNN_1D": {
+            "mean_mse": 0.052416016774545285,
+            "mean_mae": 0.17898259417258716
+          },
+          "GRU_1D": {
+            "mean_mse": 0.05630839978921389,
+            "mean_mae": 0.1844748801430942
+          },
+          "KALMAN_ORACLE": {
+            "mean_mse": 0.04928898301747714,
+            "mean_mae": 0.1717225334433028
+          }
+        },
+        "contrasts": {
+          "constant_minus_mode": {
+            "mean_difference": 0.00511605220793202,
+            "positive_seed_means": 20,
+            "crossed_95_percent_bootstrap_interval": [
+              0.004530900275419944,
+              0.005696166225503286
+            ],
+            "n_seeds": 20,
+            "n_episodes": 512
+          },
+          "generic_minus_mode": {
+            "mean_difference": 0.0057637863654935746,
+            "positive_seed_means": 20,
+            "crossed_95_percent_bootstrap_interval": [
+              0.005185848403337714,
+              0.006334741773377194
+            ],
+            "n_seeds": 20,
+            "n_episodes": 512
+          },
+          "bilinear_minus_mode": {
+            "mean_difference": 0.00024601499720167813,
+            "positive_seed_means": 15,
+            "crossed_95_percent_bootstrap_interval": [
+              -0.00020668350705359175,
+              0.0006907068960158921
+            ],
+            "n_seeds": 20,
+            "n_episodes": 512
+          },
+          "gru_minus_mode": {
+            "mean_difference": 0.004138398011870291,
+            "positive_seed_means": 20,
+            "crossed_95_percent_bootstrap_interval": [
+              0.0018905065296474486,
+              0.007072430130282447
+            ],
+            "n_seeds": 20,
+            "n_episodes": 512
+          }
+        }
+      },
+      "INDEPENDENT": {
+        "policies": {
+          "MODE_GAIN_FILTER": {
+            "mean_mse": 0.058868103548574656,
+            "mean_mae": 0.192469333012316
+          },
+          "CONSTANT_GAIN_FILTER": {
+            "mean_mse": 0.049976873726324186,
+            "mean_mae": 0.1780932752768965
+          },
+          "GENERIC_RNN_1D": {
+            "mean_mse": 0.050072327620789024,
+            "mean_mae": 0.17822850796240566
+          },
+          "BILINEAR_RNN_1D": {
+            "mean_mse": 0.06071836567893202,
+            "mean_mae": 0.19536423689047763
+          },
+          "GRU_1D": {
+            "mean_mse": 0.05944112008457085,
+            "mean_mae": 0.19393426554694737
+          },
+          "KALMAN_ORACLE": {
+            "mean_mse": 0.04727777544312246,
+            "mean_mae": 0.1728642573228314
+          }
+        },
+        "contrasts": {
+          "constant_minus_mode": {
+            "mean_difference": -0.00889122982225047,
+            "positive_seed_means": 0,
+            "crossed_95_percent_bootstrap_interval": [
+              -0.009565117415451765,
+              -0.008235291076905498
+            ],
+            "n_seeds": 20,
+            "n_episodes": 512
+          },
+          "generic_minus_mode": {
+            "mean_difference": -0.008795775927785632,
+            "positive_seed_means": 0,
+            "crossed_95_percent_bootstrap_interval": [
+              -0.009488301937526485,
+              -0.008103963721511447
+            ],
+            "n_seeds": 20,
+            "n_episodes": 512
+          },
+          "bilinear_minus_mode": {
+            "mean_difference": 0.0018502621303573556,
+            "positive_seed_means": 20,
+            "crossed_95_percent_bootstrap_interval": [
+              0.0014499287554576624,
+              0.0022563363207093196
+            ],
+            "n_seeds": 20,
+            "n_episodes": 512
+          },
+          "gru_minus_mode": {
+            "mean_difference": 0.0005730165359961955,
+            "positive_seed_means": 6,
+            "crossed_95_percent_bootstrap_interval": [
+              -0.001203536510209902,
+              0.002793595924186861
+            ],
+            "n_seeds": 20,
+            "n_episodes": 512
+          }
+        }
+      },
+      "REVERSED": {
+        "policies": {
+          "MODE_GAIN_FILTER": {
+            "mean_mse": 0.07678896130108982,
+            "mean_mae": 0.2204904225627065
+          },
+          "CONSTANT_GAIN_FILTER": {
+            "mean_mse": 0.05643040280698468,
+            "mean_mae": 0.18571944098946133
+          },
+          "GENERIC_RNN_1D": {
+            "mean_mse": 0.05701211900244021,
+            "mean_mae": 0.1867248581451697
+          },
+          "BILINEAR_RNN_1D": {
+            "mean_mse": 0.08066803228376336,
+            "mean_mae": 0.2263913329377114
+          },
+          "GRU_1D": {
+            "mean_mse": 0.07328227695221583,
+            "mean_mae": 0.2151600507970505
+          },
+          "KALMAN_ORACLE": {
+            "mean_mse": 0.04864815272106521,
+            "mean_mae": 0.17062175232641574
+          }
+        },
+        "contrasts": {
+          "constant_minus_mode": {
+            "mean_difference": -0.02035855849410514,
+            "positive_seed_means": 0,
+            "crossed_95_percent_bootstrap_interval": [
+              -0.021216021618049957,
+              -0.019518578484891528
+            ],
+            "n_seeds": 20,
+            "n_episodes": 512
+          },
+          "generic_minus_mode": {
+            "mean_difference": -0.019776842298649618,
+            "positive_seed_means": 0,
+            "crossed_95_percent_bootstrap_interval": [
+              -0.020650024953836388,
+              -0.018921739170119262
+            ],
+            "n_seeds": 20,
+            "n_episodes": 512
+          },
+          "bilinear_minus_mode": {
+            "mean_difference": 0.0038790709826735277,
+            "positive_seed_means": 20,
+            "crossed_95_percent_bootstrap_interval": [
+              0.0032712330807578424,
+              0.0044942197248517435
+            ],
+            "n_seeds": 20,
+            "n_episodes": 512
+          },
+          "gru_minus_mode": {
+            "mean_difference": -0.0035066843488739874,
+            "positive_seed_means": 1,
+            "crossed_95_percent_bootstrap_interval": [
+              -0.005340185785175845,
+              -0.0019078479959073655
+            ],
+            "n_seeds": 20,
+            "n_episodes": 512
+          }
+        }
+      }
+    }
+  }
+}

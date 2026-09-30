@@ -11,7 +11,7 @@ The project is converging on a small set of mechanism-grounded studies rather th
 | Line | Biological question | Current artificial evidence |
 |---|---|---|
 | **M1 — higher-order visual-motion correction** | What does a source-defined third-order correction contribute to fly motion estimation? | The existing RR19 natural-scene run is partial and exploratory. H1/H3 were in the predicted direction, while the phase-mismatched specificity contrast H2 was in the opposite direction. H4 and an overall four-hypothesis verdict are not established. See [partial results](experiments/m1_higher_order/RR19_STEP4_PARTIAL_RESULTS.md). |
-| **M2 — motor-state feedback** | How does RIM-dependent motor-state feedback shape AIY sensory representation and persistence in *C. elegans* thermotaxis? | Corrected synthetic results show state-gated updating helps when the state-to-observation mapping is preserved, but harms under independent or reversed mappings. This is exploratory algorithmic evidence, not biological validation or a general AI claim. See [corrected V2 results](summery/M2_FORWARD_STATE_SENSORY_GATE_V2/RESULTS.md). |
+| **M2 — motor-state feedback** | How does RIM-dependent motor-state feedback shape AIY sensory representation and persistence in *C. elegans* thermotaxis? | Cross-dynamics synthetic tests find a small aligned-condition gain over direct context-free and generic controls, larger benefit under high persistence, and negative transfer when state/observation alignment changes. A Kalman oracle remains best. Exploratory algorithmic evidence only. See [V3 results](summery/M2_FORWARD_STATE_SENSORY_GATE_V3/RESULTS.md). |
 | **Cross-mechanism benchmark** | Do mechanism-specific computations outperform capacity-matched generic controls under the task conditions that make those computations relevant? | A shared benchmark is in development. M1 and M2 use distinct tasks and native outcome measures; raw scores will not be pooled. See the [project convergence record](summery/PROJECT_CONVERGENCE_20261001/CONVERGENCE.md). |
 
 ## Active integrated study: O3 AIY state-pattern rescue
@@ -20,7 +20,17 @@ The next mainline study is a prospective *C. elegans* thermotaxis experiment ask
 
 The current M2 AI-side experiment remains an exploratory synthetic boundary test. Its sensor-reliability mapping is not established by the worm study and will not serve as the central biological transfer claim. An artificial state-gated update benchmark can continue in parallel with experimental preparation, but its result remains conditional until the biological computation is directly tested.
 
-## Latest experiment: M2 forward-state sensory gate transfer V2
+## Latest experiment: M2 forward-state sensory gate transfer V3
+
+V3 varied latent persistence, process noise and observation noise during training, then tested in-range conditions and high/low-persistence extrapolations. It adds an unconstrained bilinear recurrent model and a wider GRU to the direct context-free ablation. In `IN_RANGE × ALIGNED`, `MSE(CONSTANT_GAIN_FILTER) − MSE(MODE_GAIN_FILTER)=+0.00929` (crossed 95% interval `[+0.00802,+0.01068]`; 20/20 training-seed means positive). The mode filter's MSE was 0.05358, versus 0.05846 for the bilinear RNN and 0.06209 for the 17-parameter GRU; the task-aware Kalman oracle remained better at 0.05125.
+
+The result depended on the state-to-observation relation: within-range independent and reversed mappings favored the constant-gain ablation by 0.01435 and 0.03201 MSE. High-persistence aligned extrapolation increased the gate's advantage over constant gain to 0.10924, but the reversed mapping caused a 0.30669 MSE penalty. This is conditional performance on one synthetic estimation family, not broad AI benefit or biological validation. V3 is exploratory because earlier versions' outcomes were known; secondary intervals are descriptive and not multiplicity-adjusted.
+
+- [V3 contract, results and failure log](summery/M2_FORWARD_STATE_SENSORY_GATE_V3/)
+- [V3 runner, finalizer and independent verifier](model/M2_FORWARD_STATE_SENSORY_GATE_V3/)
+- [V3 machine-readable outputs](data/results/M2_FORWARD_STATE_SENSORY_GATE_V3/)
+
+## Earlier corrected experiment: M2 forward-state sensory gate transfer V2
 
 V2 corrects an implementation bug in V1: V1 trained on clean latent targets as model inputs but evaluated with gated/noisy observations. V1 metrics are invalid and retained only for provenance; see the [implementation incident](summery/M2_FORWARD_STATE_SENSORY_GATE_V1/IMPLEMENTATION_INCIDENT.md).
 
