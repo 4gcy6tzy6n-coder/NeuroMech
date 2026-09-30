@@ -1,0 +1,41 @@
+{
+  "experiment_id": "M5_ELIGIBILITY_TEMPORAL_XOR_V2",
+  "classification": "POST_RESULT_EXPLORATORY_OPTIMIZATION",
+  "primary_unit": "task_seed",
+  "n_task_seeds": 30,
+  "delay": 4,
+  "arm_mean_accuracy": {
+    "ELIGIBILITY_TRACE": 0.7347333333333333,
+    "NO_TRACE": 0.5528666666666666,
+    "BPTT": 0.9997333333333334
+  },
+  "primary_trace_minus_no_trace": {
+    "mean": 0.18186666666666668,
+    "ci95": [
+      0.11406666666666666,
+      0.2484666666666667
+    ],
+    "positive_seed_count": 24
+  },
+  "trace_minus_bptt": {
+    "mean": -0.265,
+    "ci95": [
+      -0.32620166666666667,
+      -0.20466666666666666
+    ]
+  },
+  "bptt_viability": {
+    "mean": 0.9997333333333334,
+    "ci95": [
+      0.9994,
+      1.0
+    ],
+    "chance": 0.5,
+    "viable": true
+  },
+  "optimizer": "Adam(lr=0.03,beta1=0.9,beta2=0.999,eps=1e-8)",
+  "train_episodes_per_arm_seed": 3000,
+  "test_episodes_per_seed_arm": 500,
+  "bootstrap_resamples": 20000,
+  "bootstrap_seed": 2026101010
+}

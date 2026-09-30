@@ -1,0 +1,16 @@
+{
+  "experiment_id": "M5_ELIGIBILITY_TEMPORAL_XOR_V2",
+  "python": "3.9.6",
+  "numpy": "2.0.2",
+  "preflight_sha256": "ab6c7f4bf4d8bb327ea6b5a08336bd215877a29b37e1d0db473657a3448a3424",
+  "contract_sha256": "6f63381ad7fee127a85c1b758186d5f53875c374bfc5377681e47cae41afef0a",
+  "runner_sha256": "cfff6dae25fd6380d3e8945a8c2ad87df268c9cda7b17e6144a325991ee138ec",
+  "sha256": {
+    "task_seed_results.csv": "56cda422ef003a28d7510fbcd548b1469ee46fdff442cdd179d7ff248d0631c3",
+    "paired_seed_contrasts.csv": "387ca3fc9f7a5540719f8a1d4b575f851539ef8c9231cd3b24e6f9e0fad518dc",
+    "summary.json": "8dd3a45f7a21378b766d3045607050fa9263d30adf6f6f0a5bd644916d8c1d48"
+  },
+  "verification_sha256": "678f4cbc94e37b7687be523fe80e95d923e5e90287fb5c897d057d36259fac31",
+  "verifier_sha256": "a6244510c297e6550554ec78ed08212cb44c11b1594e40b54569e4bdee65063b",
+  "verification_status": "PASS"
+}

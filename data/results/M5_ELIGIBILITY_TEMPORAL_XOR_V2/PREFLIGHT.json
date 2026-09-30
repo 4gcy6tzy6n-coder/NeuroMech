@@ -1,0 +1,32 @@
+{
+  "experiment_id": "M5_ELIGIBILITY_TEMPORAL_XOR_V2",
+  "classification": "POST_RESULT_EXPLORATORY_OPTIMIZATION",
+  "python": "3.9.6",
+  "numpy": "2.0.2",
+  "contract_sha256": "6f63381ad7fee127a85c1b758186d5f53875c374bfc5377681e47cae41afef0a",
+  "runner_sha256": "d24673934ebb82b0f2200346edf705526267f61a1bcae9a4f5f26b3a50b8c19b",
+  "config": {
+    "seeds": [
+      1000,
+      1029
+    ],
+    "delay": 4,
+    "arms": [
+      "ELIGIBILITY_TRACE",
+      "NO_TRACE",
+      "BPTT"
+    ],
+    "train_episodes": 3000,
+    "test_episodes": 500,
+    "hidden_units": 24,
+    "optimizer": "Adam",
+    "learning_rate": 0.03,
+    "trace_decay": 0.98,
+    "bootstrap_resamples": 20000,
+    "bootstrap_seed": 2026101010
+  },
+  "gradient_check_max_abs_error": 1.3056179306637251e-10,
+  "xor_truth_table": "PASS",
+  "timing_check": "PASS",
+  "outcomes_computed": false
+}

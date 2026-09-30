@@ -20,7 +20,17 @@ The next mainline study is a prospective *C. elegans* thermotaxis experiment ask
 
 The current M2 AI-side experiment remains an exploratory synthetic boundary test. Its sensor-reliability mapping is not established by the worm study and will not serve as the central biological transfer claim. An artificial state-gated update benchmark can continue in parallel with experimental preparation, but its result remains conditional until the biological computation is directly tested.
 
-## Latest experiment: M2 closed-loop active-sensing transfer V1
+## Latest experiment: M5 eligibility trace on learnable delayed XOR V2
+
+The earlier M10 XOR run was inconclusive because even BPTT stayed near chance. After an outcome-informed optimizer calibration, V2 used a fixed Adam optimizer and fresh task seeds on the learnable four-step delay. Held-out accuracy was `0.7347` for the local eligibility trace, `0.5529` for the no-trace local update, and `0.9997` for BPTT. The paired trace-minus-no-trace difference was `+0.1819` (95% task-seed bootstrap interval `[+0.1141, +0.2485]`; 24/30 seeds positive). BPTT passed the task-viability check but remained much stronger than the trace.
+
+This is a post-result synthetic optimization study. It supports a narrow short-delay improvement over the immediate local-update ablation; it does not show parity with BPTT, long-delay transfer, biological validation, or general AI benefit. Compute cost was not matched.
+
+- [Contract, results and failure log](summery/M5_ELIGIBILITY_TEMPORAL_XOR_V2/)
+- [Runner and independent verifier](model/M5_ELIGIBILITY_TEMPORAL_XOR_V2/)
+- [Episode outcomes and manifest](data/results/M5_ELIGIBILITY_TEMPORAL_XOR_V2/)
+
+## Previous experiment: M2 closed-loop active-sensing transfer V1
 
 This synthetic benchmark closes the loop between estimation and action: the agent's motor mode changes whether the next observation contains target information. In the aligned setting, the mode-gain filter beat the constant-gain ablation on mean distance (`0.28436` vs `0.32053`; constant-minus-mode `+0.03617`, crossed 95% interval `[+0.02959, +0.04258]`). However, the generic additive RNN (`0.20710`), bilinear RNN (`0.25015`), GRU (`0.26547`), and Bayesian posterior-mean observer (`0.14296`) all had lower mean distance. The Bayesian observer shares the same greedy controller and is not an optimal active-sensing policy.
 

@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "rows": 90,
+  "unique_seed_arm_cells": 90,
+  "seed_contrasts_recomputed": true,
+  "bootstrap_intervals_recomputed": true,
+  "checksums": "PASS",
+  "primary_mean": 0.18186666666666668,
+  "primary_ci95": [
+    0.11406666666666666,
+    0.2484666666666667
+  ],
+  "bptt_viability": true
+}
