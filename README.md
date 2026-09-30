@@ -6,13 +6,15 @@ Biological findings, computational abstractions, and artificial-system results a
 
 ## Current research focus
 
-The project is converging on a small set of mechanism-grounded studies rather than expanding its candidate list.
+The project is converging on **two mechanism-grounded studies plus one shared artificial benchmark**, rather than expanding its candidate list. The intended paper-level question is whether distinct, experimentally supported neural computations yield specific and reproducible benefits in artificial systems when compared with controls matched for capacity and task conditions. This is a research direction, not an established result.
 
 | Line | Biological question | Current artificial evidence |
 |---|---|---|
 | **M1 — higher-order visual-motion correction** | What does a source-defined third-order correction contribute to fly motion estimation? | The existing RR19 natural-scene run is partial and exploratory. H1/H3 were in the predicted direction, while the phase-mismatched specificity contrast H2 was in the opposite direction. H4 and an overall four-hypothesis verdict are not established. See [partial results](experiments/m1_higher_order/RR19_STEP4_PARTIAL_RESULTS.md). |
-| **M2 — motor-state feedback** | How does RIM-dependent motor-state feedback shape AIY sensory representation and persistence in *C. elegans* thermotaxis? | Cross-dynamics synthetic tests find a small aligned-condition gain over direct context-free and generic controls, larger benefit under high persistence, and negative transfer when state/observation alignment changes. A Kalman oracle remains best. Exploratory algorithmic evidence only. See [V3 results](summery/M2_FORWARD_STATE_SENSORY_GATE_V3/RESULTS.md). |
+| **M2 — feedback-site specificity** | Does placing motor-state feedback at the sensory-processing site explain thermotaxis dynamics better than a motor-site control in the RIM–AIY circuit? | Source-model V4 found a sensory-site advantage, but the motor-only control did not match persistence across the run-duration distribution. This exploratory result does not isolate feedback placement. See [V4 results and failure log](summery/M2_FEEDBACK_SITE_SPECIFICITY_V4/). |
 | **Cross-mechanism benchmark** | Do mechanism-specific computations outperform capacity-matched generic controls under the task conditions that make those computations relevant? | A shared benchmark is in development. M1 and M2 use distinct tasks and native outcome measures; raw scores will not be pooled. See the [project convergence record](summery/PROJECT_CONVERGENCE_20261001/CONVERGENCE.md). |
+
+The M2 state-gated sensory-update and active-sensing studies are supporting algorithmic probes, not substitutes for the feedback-site-specificity study or direct biological validation. Their benefits are conditional on the task's state/observation mapping, and stronger generic or task-aware references remain competitive. See [M2 transfer evidence](summery/M2_FORWARD_STATE_SENSORY_GATE_V3/RESULTS.md) and [closed-loop active-sensing results](summery/M2_CLOSED_LOOP_ACTIVE_SENSING_V1/RESULTS.md).
 
 ## Active integrated study: O3 AIY state-pattern rescue
 
