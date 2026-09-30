@@ -1,0 +1,123 @@
+{
+  "experiment_id": "M2_FORWARD_STATE_SENSORY_GATE_V2",
+  "summary": {
+    "ALIGNED": {
+      "MODE_GAIN_FILTER": {
+        "mean_mse": 0.2630982071175822,
+        "mean_mae": 0.3444318020061473
+      },
+      "GENERIC_RNN_1D": {
+        "mean_mse": 0.41789031582084135,
+        "mean_mae": 0.47814226415212036
+      },
+      "CONSTANT_GAIN_FILTER": {
+        "mean_mse": 0.3812205458907556,
+        "mean_mae": 0.4298973217737512
+      },
+      "CURRENT_OBSERVATION": {
+        "mean_mse": 0.44466876117076026,
+        "mean_mae": 0.458630839275429
+      },
+      "KALMAN_LINEAR_REFERENCE": {
+        "mean_mse": 0.2610316262944252,
+        "mean_mae": 0.341766320343595
+      },
+      "primary_contrast": {
+        "generic_minus_mode_mse": 0.15479210870325916,
+        "positive_seed_means": 20,
+        "n_seeds": 20,
+        "n_episodes": 512,
+        "crossed_95_percent_bootstrap_interval": [
+          0.1391468124421772,
+          0.17098124515823648
+        ]
+      },
+      "mechanism_ablation_contrast": {
+        "constant_minus_mode_mse": 0.1181223387731734,
+        "positive_seed_means": 20,
+        "n_seeds": 20,
+        "n_episodes": 512,
+        "crossed_95_percent_bootstrap_interval": [
+          0.10310292882042632,
+          0.13381015878809194
+        ]
+      }
+    },
+    "INDEPENDENT": {
+      "MODE_GAIN_FILTER": {
+        "mean_mse": 0.32685841161655843,
+        "mean_mae": 0.4443311484297737
+      },
+      "GENERIC_RNN_1D": {
+        "mean_mse": 0.24940655088066704,
+        "mean_mae": 0.3803686982893851
+      },
+      "CONSTANT_GAIN_FILTER": {
+        "mean_mse": 0.24517489265344922,
+        "mean_mae": 0.3912571175693301
+      },
+      "CURRENT_OBSERVATION": {
+        "mean_mse": 0.2493858704547165,
+        "mean_mae": 0.3954997441614978
+      },
+      "KALMAN_LINEAR_REFERENCE": {
+        "mean_mse": 0.0863548832712695,
+        "mean_mae": 0.2342748772352934
+      },
+      "primary_contrast": {
+        "generic_minus_mode_mse": -0.07745186073589139,
+        "positive_seed_means": 0,
+        "n_seeds": 20,
+        "n_episodes": 512
+      },
+      "mechanism_ablation_contrast": {
+        "constant_minus_mode_mse": -0.08168351896310924,
+        "positive_seed_means": 0,
+        "n_seeds": 20,
+        "n_episodes": 512,
+        "crossed_95_percent_bootstrap_interval": [
+          -0.09043759523585322,
+          -0.07343712455767672
+        ]
+      }
+    },
+    "REVERSED": {
+      "MODE_GAIN_FILTER": {
+        "mean_mse": 0.642878187338647,
+        "mean_mae": 0.629056043579476
+      },
+      "GENERIC_RNN_1D": {
+        "mean_mse": 0.405901627822459,
+        "mean_mae": 0.47411163414653856
+      },
+      "CONSTANT_GAIN_FILTER": {
+        "mean_mse": 0.3682563437203498,
+        "mean_mae": 0.42379781521449333
+      },
+      "CURRENT_OBSERVATION": {
+        "mean_mse": 0.43096129690820817,
+        "mean_mae": 0.4501480078615714
+      },
+      "KALMAN_LINEAR_REFERENCE": {
+        "mean_mse": 0.24146538514469285,
+        "mean_mae": 0.3304046567354817
+      },
+      "primary_contrast": {
+        "generic_minus_mode_mse": -0.23697655951618798,
+        "positive_seed_means": 0,
+        "n_seeds": 20,
+        "n_episodes": 512
+      },
+      "mechanism_ablation_contrast": {
+        "constant_minus_mode_mse": -0.2746218436182971,
+        "positive_seed_means": 0,
+        "n_seeds": 20,
+        "n_episodes": 512,
+        "crossed_95_percent_bootstrap_interval": [
+          -0.29150161361916616,
+          -0.2583808274322837
+        ]
+      }
+    }
+  }
+}
