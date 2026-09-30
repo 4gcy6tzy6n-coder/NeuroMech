@@ -1,0 +1,7 @@
+<hr/>
+<h2>实验代号：M2_LOW_DATA_GATING_V2 — 等参数双线性交互对照</h2>
+<p>实验目的：针对 V1 的加性 RNN 无法直接表示输入×状态交互这一缺口，使用与状态条件滤波器同为 4 参数的通用双线性 tanh 递归模型，在独立种子上比较同样四档训练数据量、训练步数和样本 token 预算。</p>
+<p>实验结果：20 个配对训练种子中，ALIGNED 主对比 MSE（双线性 RNN）−MSE（状态条件滤波器）为 +0.00509，种子 bootstrap 95% CI [+0.00465, +0.00552]，20/20 个种子为正。状态条件滤波器在 INDEPENDENT 与 REVERSED 下相对误差也更低；但其自身 MSE 从对齐时约 0.056 上升到反转时约 0.097。</p>
+<p>实验分析：由于结构化模型在映射反转时仍相对胜出，本轮不能把优势归因于“正确对齐的生物上下文关系”。可能解释包括状态滤波器的递归形式更适合该 AR(1) 任务、双线性 tanh 基线优化困难，或不同非线性更新形式带来的归纳偏置。与 V1 合看，比较结果对基线结构敏感；M2 人工结果尚未证明 alignment-specific transfer，也不能外推为生物验证或广义 AI 优势。</p>
+<p>资源与复核：两组模型均为 4 个参数、每次拟合 250 次更新和 640,000 个序列步 token。独立复核通过：122,880 条逐序列结果、160 次拟合、种子级主估计、区间与产物哈希均通过。</p>
+<p>代码、数据与完整失败边界：<a href="https://github.com/4gcy6tzy6n-coder/NeuroMech/tree/experiment-publication/model/M2_LOW_DATA_GATING_V2">model</a>；<a href="https://github.com/4gcy6tzy6n-coder/NeuroMech/tree/experiment-publication/data/results/M2_LOW_DATA_GATING_V2">data/results</a>；<a href="https://github.com/4gcy6tzy6n-coder/NeuroMech/tree/experiment-publication/summery/M2_LOW_DATA_GATING_V2">summery</a>。</p>

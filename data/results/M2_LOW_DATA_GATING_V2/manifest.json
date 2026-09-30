@@ -1,0 +1,11 @@
+{
+  "experiment_id": "M2_LOW_DATA_GATING_V2",
+  "contract_sha256": "06395a5ac7d6d6f901735b4f354b83f6b85547fab534fe1c9f14da693d597339",
+  "runner_sha256": "3c05a3a331a5731d0d9c0a72274246ff057009658c89f3980556bc8967bf23b2",
+  "sha256": {
+    "PREFLIGHT.json": "8e1ab36d0b4ce143e15c7d3297339d5489cabca295c83179779c8fb1628498e1",
+    "episode_metrics.csv": "8a775349fa2396b29b09b0beeb848393897c4bcb8cabb9bfbdcffa1f8562ee3c",
+    "training_metrics.csv": "db50b271b13dd0d06fd527b06f71a9c4e46c0da26fdf819e9fb1d9fc2a698766",
+    "summary.json": "b9a319cce28550c7c1b09f238be0c10013d318e0d549b80096eb99826b755362"
+  }
+}

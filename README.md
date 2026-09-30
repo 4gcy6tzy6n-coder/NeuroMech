@@ -11,7 +11,7 @@ The project is converging on **two mechanism-grounded studies plus one shared ar
 | Line | Biological question | Current artificial evidence |
 |---|---|---|
 | **M1 — higher-order visual-motion correction** | What does a source-defined third-order correction contribute to fly motion estimation? | The existing RR19 natural-scene run is partial and exploratory. H1/H3 were in the predicted direction, while the phase-mismatched specificity contrast H2 was in the opposite direction. H4 and an overall four-hypothesis verdict are not established. See [partial results](experiments/m1_higher_order/RR19_STEP4_PARTIAL_RESULTS.md). |
-| **M2 — motor-state feedback and sensory context** | Does the relation between motor-state timing and sensory/environmental context contribute to thermotaxis in the RIM–AIY model? | Full mode-trajectory replay yielded a positive sensory-minus-replay direction contrast, while forward-state summaries were close; a low-noise reverse-tail difference remains. A new four-parameter synthetic probe found lower MSE for a state-conditioned update than an additive scalar RNN in the aligned mapping, with the advantage reversing under mapping shift. These exploratory results neither identify a unique feedback site nor establish biological/AI transfer. See [replay results](summery/M2_STATE_TRAJECTORY_REPLAY_V1/) and [low-data benchmark](summery/M2_LOW_DATA_GATING_V1/). |
+| **M2 — motor-state feedback and sensory context** | Does the relation between motor-state timing and sensory/environmental context contribute to thermotaxis in the RIM–AIY model? | Full mode-trajectory replay yielded a positive sensory-minus-replay direction contrast, while a low-noise reverse-tail mismatch remains. In a synthetic probe, a four-parameter state-conditioned update beat an additive RNN only in the aligned mapping; against a four-parameter bilinear tanh RNN, it scored lower MSE in all mappings, including reversed. Thus the current artificial advantage is comparator-sensitive and not isolated to aligned context. These exploratory results neither identify a unique feedback site nor establish biological/AI transfer. See [replay results](summery/M2_STATE_TRAJECTORY_REPLAY_V1/), [V1](summery/M2_LOW_DATA_GATING_V1/), and [V2](summery/M2_LOW_DATA_GATING_V2/). |
 | **Cross-mechanism benchmark** | Do mechanism-specific computations outperform capacity-matched generic controls under the task conditions that make those computations relevant? | A shared benchmark is in development. M1 and M2 use distinct tasks and native outcome measures; raw scores will not be pooled. See the [project convergence record](summery/PROJECT_CONVERGENCE_20261001/CONVERGENCE.md). |
 
 ### Converged experimental package
@@ -31,6 +31,14 @@ This tests a narrow artificial inductive-bias claim. The context-to-observation 
 - [Contract, results and failure record](summery/M2_LOW_DATA_GATING_V1/)
 - [Runner and independent verifier](model/M2_LOW_DATA_GATING_V1/)
 - [Episode-level outcomes and manifest](data/results/M2_LOW_DATA_GATING_V1/)
+
+## Follow-up: M2 low-data benchmark V2 with bilinear control
+
+V2 replaced the additive comparator with a four-parameter bilinear tanh recurrent model that includes an explicit input×context term. On disjoint seeds, the mode-gain filter still had lower MSE in the ALIGNED primary (`bilinear − mode = +0.00509`, 95% seed-bootstrap interval `[+0.00465, +0.00552]`, 20/20 positive). It also scored lower than the bilinear model in INDEPENDENT and REVERSED mappings, while its own absolute MSE rose from about `0.056` aligned to `0.097` reversed. Because the relative advantage persists when the context mapping is wrong, this result does not isolate an alignment-specific biological computation. Comparator equation and nonlinear dynamics remain confounded; stronger filtering and task-aware references remain necessary.
+
+- [Contract, results and failure analysis](summery/M2_LOW_DATA_GATING_V2/)
+- [Runner and independent verifier](model/M2_LOW_DATA_GATING_V2/)
+- [Episode-level outcomes and manifest](data/results/M2_LOW_DATA_GATING_V2/)
 
 ## Active integrated study: O3 AIY state-pattern rescue
 
