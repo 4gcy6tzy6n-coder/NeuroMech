@@ -1,0 +1,93 @@
+{
+  "experiment_id": "M2_FORWARD_STATE_SENSORY_GATE_V1",
+  "summary": {
+    "ALIGNED": {
+      "MODE_GAIN_FILTER": {
+        "mean_mse": 0.4233272571596899,
+        "mean_mae": 0.43952633318986045
+      },
+      "GENERIC_RNN_1D": {
+        "mean_mse": 0.5176365061459365,
+        "mean_mae": 0.5152662983440678
+      },
+      "CONSTANT_GAIN_FILTER": {
+        "mean_mse": 0.4233364397121477,
+        "mean_mae": 0.4395240905636456
+      },
+      "CURRENT_OBSERVATION": {
+        "mean_mse": 0.44466876117076026,
+        "mean_mae": 0.458630839275429
+      },
+      "KALMAN_LINEAR_REFERENCE": {
+        "mean_mse": 0.2610316262944252,
+        "mean_mae": 0.341766320343595
+      },
+      "primary_contrast": {
+        "generic_minus_mode_mse": 0.09430924898624653,
+        "positive_seed_means": 20,
+        "n_seeds": 20,
+        "n_episodes": 512,
+        "crossed_95_percent_bootstrap_interval": [
+          0.08790294819528753,
+          0.10126066754915883
+        ]
+      }
+    },
+    "INDEPENDENT": {
+      "MODE_GAIN_FILTER": {
+        "mean_mse": 0.23731314692122396,
+        "mean_mae": 0.3854340097779641
+      },
+      "GENERIC_RNN_1D": {
+        "mean_mse": 0.281288538575609,
+        "mean_mae": 0.41528537986741865
+      },
+      "CONSTANT_GAIN_FILTER": {
+        "mean_mse": 0.23731330625596456,
+        "mean_mae": 0.38543427448457807
+      },
+      "CURRENT_OBSERVATION": {
+        "mean_mse": 0.2493858704547165,
+        "mean_mae": 0.3954997441614978
+      },
+      "KALMAN_LINEAR_REFERENCE": {
+        "mean_mse": 0.0863548832712695,
+        "mean_mae": 0.2342748772352934
+      },
+      "primary_contrast": {
+        "generic_minus_mode_mse": 0.04397539165438502,
+        "positive_seed_means": 20,
+        "n_seeds": 20,
+        "n_episodes": 512
+      }
+    },
+    "REVERSED": {
+      "MODE_GAIN_FILTER": {
+        "mean_mse": 0.4096376639648952,
+        "mean_mae": 0.4310565579071408
+      },
+      "GENERIC_RNN_1D": {
+        "mean_mse": 0.5046882504961104,
+        "mean_mae": 0.5079305530205602
+      },
+      "CONSTANT_GAIN_FILTER": {
+        "mean_mse": 0.4096302515958087,
+        "mean_mae": 0.43106030939816264
+      },
+      "CURRENT_OBSERVATION": {
+        "mean_mse": 0.43096129690820817,
+        "mean_mae": 0.4501480078615714
+      },
+      "KALMAN_LINEAR_REFERENCE": {
+        "mean_mse": 0.24146538514469285,
+        "mean_mae": 0.3304046567354817
+      },
+      "primary_contrast": {
+        "generic_minus_mode_mse": 0.09505058653121523,
+        "positive_seed_means": 20,
+        "n_seeds": 20,
+        "n_episodes": 512
+      }
+    }
+  }
+}

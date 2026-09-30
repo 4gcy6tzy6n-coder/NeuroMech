@@ -11,7 +11,7 @@ The project is converging on a small set of mechanism-grounded studies rather th
 | Line | Biological question | Current artificial evidence |
 |---|---|---|
 | **M1 — higher-order visual-motion correction** | What does a source-defined third-order correction contribute to fly motion estimation? | The existing RR19 natural-scene run is partial and exploratory. H1/H3 were in the predicted direction, while the phase-mismatched specificity contrast H2 was in the opposite direction. H4 and an overall four-hypothesis verdict are not established. See [partial results](experiments/m1_higher_order/RR19_STEP4_PARTIAL_RESULTS.md). |
-| **M2 — motor-state feedback** | How does RIM-dependent motor-state feedback shape AIY sensory representation and persistence in *C. elegans* thermotaxis? | A synthetic transfer test finds context-conditioned sensory updating helps when context predicts observation reliability, but its advantage reverses when that mapping is reversed. This is conditional algorithmic evidence, not biological validation or broad AI evidence. See [M2 transfer results](summery/M2_CROSS_TASK_STATE_FEEDBACK_V1/RESULTS.md). |
+| **M2 — motor-state feedback** | How does RIM-dependent motor-state feedback shape AIY sensory representation and persistence in *C. elegans* thermotaxis? | The latest synthetic state-gated sensory benchmark found no measurable gain over a context-free filter; both learned policies were weaker than the task-aware Kalman reference. A prior reliability-context experiment remains conditional and artificial. Neither establishes biological transfer. See [latest M2 results](summery/M2_FORWARD_STATE_SENSORY_GATE_V1/RESULTS.md) and [prior M2 transfer results](summery/M2_CROSS_TASK_STATE_FEEDBACK_V1/RESULTS.md). |
 | **Cross-mechanism benchmark** | Do mechanism-specific computations outperform capacity-matched generic controls under the task conditions that make those computations relevant? | A shared benchmark is in development. M1 and M2 use distinct tasks and native outcome measures; raw scores will not be pooled. See the [project convergence record](summery/PROJECT_CONVERGENCE_20261001/CONVERGENCE.md). |
 
 ## Active integrated study: O3 AIY state-pattern rescue
@@ -20,7 +20,19 @@ The next mainline study is a prospective *C. elegans* thermotaxis experiment ask
 
 The current M2 AI-side experiment remains an exploratory synthetic boundary test. Its sensor-reliability mapping is not established by the worm study and will not serve as the central biological transfer claim. An artificial state-gated update benchmark can continue in parallel with experimental preparation, but its result remains conditional until the biological computation is directly tested.
 
-## Latest experiment: M2 context-conditioned update transfer V1
+## Latest experiment: M2 forward-state sensory gate transfer V1
+
+This synthetic benchmark abstracts the explicit forward-state gating of thermosensory input in the published Ji et al. thermotaxis circuit model. It compares a learned mode-gain filter with a four-parameter, one-state generic RNN after training on aligned state/sensory streams. The aligned primary contrast `MSE(RNN) − MSE(mode-gain filter)` was `+0.09431` (crossed 95% bootstrap interval `[+0.08790, +0.10126]`; 20/20 training-seed means positive).
+
+That RNN contrast does not show a state-gating benefit: the mode-gain model's MSE was essentially identical to a simpler context-free constant-gain filter in all three conditions (aligned `0.423327` vs `0.423336`; independent `0.237313` vs `0.237313`; reversed `0.409638` vs `0.409630`). The task-aware Kalman reference was better in every condition (aligned MSE `0.26103`, independent `0.08635`, reversed `0.24147`). The result therefore points to a weak generic-RNN comparator / task-parameterization effect, while the key biological-inspired context interaction collapsed to a constant gain. This experiment does not demonstrate a useful state-gating inductive bias, biological transfer, or general AI benefit.
+
+- [Experiment contract and results](summery/M2_FORWARD_STATE_SENSORY_GATE_V1/)
+- [Runner, finalizer, and independent verifier](model/M2_FORWARD_STATE_SENSORY_GATE_V1/)
+- [Machine-readable outputs and checksums](data/results/M2_FORWARD_STATE_SENSORY_GATE_V1/)
+
+The prior reliability-context experiment below remains a separate, earlier synthetic result. Its reliability mapping is not established by the worm study and should not be merged with this source-motif abstraction.
+
+## Prior experiment: M2 context-conditioned update transfer V1
 
 The mode-conditioned gain filter was compared with a four-parameter scalar RNN on a synthetic latent-state estimation task. The primary aligned-condition contrast `MSE(RNN) − MSE(mode-gain filter)` was `+0.10401` (crossed 95% bootstrap interval `[+0.09321, +0.11569]`; 20/20 training-seed means positive). The effect was conditional: with context independent of sensor reliability, the context-free filter had lower mean MSE than the mode-conditioned filter; when the learned context/reliability mapping was reversed, the RNN outperformed the mode-conditioned filter (`−0.03516`, interval `[−0.04811, −0.02131]`).
 
