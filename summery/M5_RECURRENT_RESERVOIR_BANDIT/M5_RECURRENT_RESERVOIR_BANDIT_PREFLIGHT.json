@@ -1,0 +1,32 @@
+{
+  "status": "PREFLIGHT_COMPLETE_OUTCOMES_NOT_YET_OBSERVED",
+  "experiment": "M5_RECURRENT_RESERVOIR_BANDIT",
+  "files_sha256": {
+    "M5_RECURRENT_RESERVOIR_BANDIT_CONTRACT.md": "0fea5fa5e784f3d97d2b75c25a56425aa049bb782daf6f66b9450f640170a86f",
+    "run_recurrent_reservoir_bandit.py": "762c0bf3dc467f740b52945d34a68133269b9aa4071a786f32ef37a0ed4d7369"
+  },
+  "expected_rows": {
+    "task_metrics.csv": 360,
+    "training_reward_trajectory.csv": 4320,
+    "per_seed_delay_contrasts.csv": 120
+  },
+  "parameters": {
+    "task_seeds": 30,
+    "delays": [
+      1,
+      4,
+      16,
+      64
+    ],
+    "arms": [
+      "EXACT_REPLAY",
+      "ELIGIBILITY_TRACE_NORM_MATCHED",
+      "NO_TRACE"
+    ],
+    "train_per_seed": 6000,
+    "heldout_per_seed": 2000,
+    "numpy": "2.0.2",
+    "python": "3.9.6"
+  },
+  "known_prior_results": "Prior M5 synthetic classification and feed-forward contextual-bandit outcomes are known; new recurrent-reservoir outcomes have not been observed."
+}

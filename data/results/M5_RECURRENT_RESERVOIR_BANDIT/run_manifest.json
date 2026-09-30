@@ -1,0 +1,41 @@
+{
+  "experiment": "M5_RECURRENT_RESERVOIR_BANDIT",
+  "contract": "M5_RECURRENT_RESERVOIR_BANDIT_CONTRACT.md",
+  "master_seed": 20260930,
+  "task_seeds": 30,
+  "delays": [
+    1,
+    4,
+    16,
+    64
+  ],
+  "arms": [
+    "EXACT_REPLAY",
+    "ELIGIBILITY_TRACE_NORM_MATCHED",
+    "NO_TRACE"
+  ],
+  "fixed_parameters": {
+    "learning_rate": 0.01,
+    "eligibility_decay": 0.98,
+    "baseline": 0.5,
+    "reservoir_leak_alpha": 0.7788007830714049,
+    "reservoir_spectral_radius": 0.8
+  },
+  "task": {
+    "context_dimension": 16,
+    "reservoir_units": 16,
+    "actions": 2,
+    "training_decisions": 6000,
+    "heldout_contexts": 2000
+  },
+  "reservoir_core": "Fixed seed-specific Gaussian W_in and orthogonal W_rec with radius 0.8; only readout weights trained.",
+  "common_random_numbers": "Task, contexts, choice uniforms, and action-specific reward uniforms shared across arms and delays within seed.",
+  "independent_unit": "Task seed; delays/arms are paired repeated measures; decision steps are nested.",
+  "post_result_status": "Outcome-informed exploratory architecture follow-up; no parameter tuning.",
+  "outputs": [
+    "task_metrics.csv",
+    "training_reward_trajectory.csv",
+    "per_seed_delay_contrasts.csv",
+    "primary_result.json"
+  ]
+}

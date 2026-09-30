@@ -1,0 +1,23 @@
+{
+  "status": "INDEPENDENT_POSTRUN_CHECKS_PASSED_WITH_RUNTIME_WARNING_RECORDED",
+  "checks": {
+    "metrics_rows": 360,
+    "trajectory_rows": 4320,
+    "seed_delay_contrast_rows": 120,
+    "unique_metric_keys": 360,
+    "all_metric_and_trajectory_values_finite": true,
+    "independent_primary_mean_recomputed": 0.0028866632392095114,
+    "independent_bootstrap_ci_recomputed": [
+      0.002089447741964921,
+      0.003814684156564174
+    ],
+    "positive_seed_count_recomputed": 27,
+    "preflight_contract_and_script_hashes_unchanged": true
+  },
+  "runtime_observation": "Execution emitted NumPy RuntimeWarnings during matrix operations in task probability/evaluation calculations. All written metric and trajectory values are finite and primary estimates independently reproduce; warning origin was not isolated and remains a reproducibility concern.",
+  "limitations": [
+    "Fixed recurrent reservoir; recurrent weights were not trained.",
+    "One synthetic contextual-bandit objective, 30 task seeds.",
+    "Post-result exploratory architecture follow-up; not confirmatory or biological/connectome evidence."
+  ]
+}

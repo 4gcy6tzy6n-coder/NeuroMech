@@ -1,0 +1,52 @@
+{
+  "status": "POST_RESULT_RECURRENT_RESERVOIR_BANDIT_COMPLETE",
+  "primary_estimand": "mean task-seed contrast after equal averaging over four delays: eligibility trace minus no-trace held-out expected reward",
+  "primary_mean_difference": 0.0028866632392095114,
+  "task_seed_bootstrap_95ci": [
+    0.002089447741964921,
+    0.003814684156564174
+  ],
+  "decision": "TRACE_ADVANTAGE_OVER_NO_TRACE_IN_THIS_RESERVOIR_BANDIT",
+  "positive_seed_count": 27,
+  "task_seeds": 30,
+  "delay_summary": [
+    {
+      "delay": 1,
+      "trace_mean_expected_reward": 0.504138122024637,
+      "no_trace_mean_expected_reward": 0.5001559740682505,
+      "exact_replay_mean_expected_reward": 0.5181331577560548,
+      "trace_minus_no_trace": 0.003982147956386517,
+      "trace_minus_exact_replay": -0.013995035731417804
+    },
+    {
+      "delay": 4,
+      "trace_mean_expected_reward": 0.5039518664996283,
+      "no_trace_mean_expected_reward": 0.5004221456424224,
+      "exact_replay_mean_expected_reward": 0.5181224590293088,
+      "trace_minus_no_trace": 0.0035297208572059313,
+      "trace_minus_exact_replay": -0.014170592529680448
+    },
+    {
+      "delay": 16,
+      "trace_mean_expected_reward": 0.5030601439397743,
+      "no_trace_mean_expected_reward": 0.5004479011210164,
+      "exact_replay_mean_expected_reward": 0.5181217958416211,
+      "trace_minus_no_trace": 0.002612242818757826,
+      "trace_minus_exact_replay": -0.015061651901846829
+    },
+    {
+      "delay": 64,
+      "trace_mean_expected_reward": 0.5019160735616246,
+      "no_trace_mean_expected_reward": 0.5004935322371369,
+      "exact_replay_mean_expected_reward": 0.5181070347029817,
+      "trace_minus_no_trace": 0.0014225413244877139,
+      "trace_minus_exact_replay": -0.016190961141357096
+    }
+  ],
+  "arm_mean_heldout_expected_reward": {
+    "EXACT_REPLAY": 0.5181211118324917,
+    "ELIGIBILITY_TRACE_NORM_MATCHED": 0.5032665515064161,
+    "NO_TRACE": 0.5003798882672065
+  },
+  "interpretation_scope": "Fixed random recurrent reservoir with learned linear readout on one synthetic contextual-bandit objective; no recurrent-core training, LNN/LTC, biological validation, or connectome transfer."
+}
