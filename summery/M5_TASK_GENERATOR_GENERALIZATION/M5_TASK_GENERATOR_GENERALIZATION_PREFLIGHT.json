@@ -1,0 +1,16 @@
+{
+  "status": "FROZEN_BEFORE_RUN",
+  "experiment": "M5_TASK_GENERATOR_GENERALIZATION",
+  "frozen_files_sha256": {
+    "M5_TASK_GENERATOR_GENERALIZATION_CONTRACT.md": "0bed7ec738fed5b1ac810f383d477f618cb0b084aa4bf73b644c96a7e67b7aea",
+    "run_task_generator_generalization.py": "615cec0c6170a44bf08d3c747baf3c82ab7d3b40db8da4d6be57f02c8b4abc13"
+  },
+  "python": "3.12.13",
+  "numpy": "2.4.4",
+  "scipy": "1.17.1",
+  "run_command": "python experiments/m5_cerebellar_eligibility/run_task_generator_generalization.py",
+  "expected_metric_rows": 1080,
+  "expected_task_seed_delay_arm_keys": 360,
+  "expected_per_seed_delay_contrasts": 360,
+  "outcome_access": "Earlier M5-v3 synthetic outcomes were known; this follow-up is explicitly outcome-informed. No outcomes from the new generators were computed before this freeze."
+}

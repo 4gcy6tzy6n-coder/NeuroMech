@@ -1,0 +1,38 @@
+{
+  "experiment": "M5_TASK_GENERATOR_GENERALIZATION",
+  "contract": "M5_TASK_GENERATOR_GENERALIZATION_CONTRACT.md",
+  "seed": 20260930,
+  "generators": [
+    "IID_GAUSSIAN",
+    "AR1_GAUSSIAN",
+    "SPARSE_SIGN"
+  ],
+  "task_seeds_per_generator": 30,
+  "delays": [
+    1,
+    4,
+    16,
+    64
+  ],
+  "arms": [
+    "EXACT_REPLAY",
+    "ELIGIBILITY_TRACE_NORM_MATCHED",
+    "NO_TRACE"
+  ],
+  "fixed_hyperparameters": {
+    "learning_rate": 0.01,
+    "eligibility_decay": 0.98
+  },
+  "task_shape": {
+    "n_input": 32,
+    "n_features": 64,
+    "n_classes": 4,
+    "n_train": 3000,
+    "n_test": 1000
+  },
+  "outputs": [
+    "task_metrics.csv",
+    "primary_result.json"
+  ],
+  "post_result_status": "Outcome-informed follow-up to the previously observed M5-v3 result; no hyperparameter tuning."
+}

@@ -1,0 +1,164 @@
+{
+  "status": "VERIFIED",
+  "metric_rows": 1080,
+  "complete_generator_seed_delay_arm_cells": 1080,
+  "all_frozen_hashes_match": true,
+  "primary_mean_recomputed": 0.22844444444444448,
+  "primary_ci_recomputed": [
+    0.2213304861111111,
+    0.23567506944444444
+  ],
+  "all_generator_mean_seed_contrasts_positive": true,
+  "positive_seed_counts": {
+    "IID_GAUSSIAN": 30,
+    "AR1_GAUSSIAN": 30,
+    "SPARSE_SIGN": 30
+  },
+  "generator_seed_means": {
+    "IID_GAUSSIAN": 0.29596666666666666,
+    "AR1_GAUSSIAN": 0.10539166666666669,
+    "SPARSE_SIGN": 0.283975
+  },
+  "generator_delay_summary": [
+    {
+      "generator": "IID_GAUSSIAN",
+      "delay": 1,
+      "mean_accuracy": {
+        "EXACT_REPLAY": 0.7644333333333334,
+        "ELIGIBILITY_TRACE_NORM_MATCHED": 0.6206333333333334,
+        "NO_TRACE": 0.2395
+      },
+      "trace_minus_no_trace": 0.3811333333333334,
+      "trace_minus_exact_replay": -0.14380000000000004
+    },
+    {
+      "generator": "IID_GAUSSIAN",
+      "delay": 4,
+      "mean_accuracy": {
+        "EXACT_REPLAY": 0.7644000000000002,
+        "ELIGIBILITY_TRACE_NORM_MATCHED": 0.6101333333333334,
+        "NO_TRACE": 0.2604333333333333
+      },
+      "trace_minus_no_trace": 0.3497000000000001,
+      "trace_minus_exact_replay": -0.15426666666666677
+    },
+    {
+      "generator": "IID_GAUSSIAN",
+      "delay": 16,
+      "mean_accuracy": {
+        "EXACT_REPLAY": 0.7643333333333334,
+        "ELIGIBILITY_TRACE_NORM_MATCHED": 0.5702333333333333,
+        "NO_TRACE": 0.2655333333333333
+      },
+      "trace_minus_no_trace": 0.30469999999999997,
+      "trace_minus_exact_replay": -0.19410000000000016
+    },
+    {
+      "generator": "IID_GAUSSIAN",
+      "delay": 64,
+      "mean_accuracy": {
+        "EXACT_REPLAY": 0.7637,
+        "ELIGIBILITY_TRACE_NORM_MATCHED": 0.38863333333333333,
+        "NO_TRACE": 0.2403
+      },
+      "trace_minus_no_trace": 0.14833333333333332,
+      "trace_minus_exact_replay": -0.3750666666666667
+    },
+    {
+      "generator": "AR1_GAUSSIAN",
+      "delay": 1,
+      "mean_accuracy": {
+        "EXACT_REPLAY": 0.7554000000000001,
+        "ELIGIBILITY_TRACE_NORM_MATCHED": 0.6184999999999999,
+        "NO_TRACE": 0.7394666666666667
+      },
+      "trace_minus_no_trace": -0.12096666666666678,
+      "trace_minus_exact_replay": -0.13690000000000013
+    },
+    {
+      "generator": "AR1_GAUSSIAN",
+      "delay": 4,
+      "mean_accuracy": {
+        "EXACT_REPLAY": 0.7554666666666667,
+        "ELIGIBILITY_TRACE_NORM_MATCHED": 0.6574333333333334,
+        "NO_TRACE": 0.6697000000000002
+      },
+      "trace_minus_no_trace": -0.012266666666666759,
+      "trace_minus_exact_replay": -0.0980333333333333
+    },
+    {
+      "generator": "AR1_GAUSSIAN",
+      "delay": 16,
+      "mean_accuracy": {
+        "EXACT_REPLAY": 0.7554000000000001,
+        "ELIGIBILITY_TRACE_NORM_MATCHED": 0.6491666666666667,
+        "NO_TRACE": 0.28816666666666674
+      },
+      "trace_minus_no_trace": 0.36099999999999993,
+      "trace_minus_exact_replay": -0.1062333333333334
+    },
+    {
+      "generator": "AR1_GAUSSIAN",
+      "delay": 64,
+      "mean_accuracy": {
+        "EXACT_REPLAY": 0.7548333333333334,
+        "ELIGIBILITY_TRACE_NORM_MATCHED": 0.46129999999999993,
+        "NO_TRACE": 0.26749999999999996
+      },
+      "trace_minus_no_trace": 0.19379999999999997,
+      "trace_minus_exact_replay": -0.2935333333333334
+    },
+    {
+      "generator": "SPARSE_SIGN",
+      "delay": 1,
+      "mean_accuracy": {
+        "EXACT_REPLAY": 0.7635666666666668,
+        "ELIGIBILITY_TRACE_NORM_MATCHED": 0.6076333333333334,
+        "NO_TRACE": 0.24463333333333337
+      },
+      "trace_minus_no_trace": 0.363,
+      "trace_minus_exact_replay": -0.15593333333333348
+    },
+    {
+      "generator": "SPARSE_SIGN",
+      "delay": 4,
+      "mean_accuracy": {
+        "EXACT_REPLAY": 0.7635333333333334,
+        "ELIGIBILITY_TRACE_NORM_MATCHED": 0.5949333333333332,
+        "NO_TRACE": 0.2477
+      },
+      "trace_minus_no_trace": 0.34723333333333317,
+      "trace_minus_exact_replay": -0.1686000000000002
+    },
+    {
+      "generator": "SPARSE_SIGN",
+      "delay": 16,
+      "mean_accuracy": {
+        "EXACT_REPLAY": 0.7633666666666666,
+        "ELIGIBILITY_TRACE_NORM_MATCHED": 0.5500333333333334,
+        "NO_TRACE": 0.2546
+      },
+      "trace_minus_no_trace": 0.2954333333333334,
+      "trace_minus_exact_replay": -0.21333333333333326
+    },
+    {
+      "generator": "SPARSE_SIGN",
+      "delay": 64,
+      "mean_accuracy": {
+        "EXACT_REPLAY": 0.7628666666666667,
+        "ELIGIBILITY_TRACE_NORM_MATCHED": 0.3788666666666666,
+        "NO_TRACE": 0.24863333333333332
+      },
+      "trace_minus_no_trace": 0.13023333333333326,
+      "trace_minus_exact_replay": -0.3840000000000001
+    }
+  ],
+  "overall_mean_accuracy": {
+    "EXACT_REPLAY": 0.7609416666666665,
+    "ELIGIBILITY_TRACE_NORM_MATCHED": 0.5589583333333334,
+    "NO_TRACE": 0.3305138888888889
+  },
+  "task_metrics_sha256": "660fc38e00c0e025d6bf17fbbc658010dfcabb1097d463dd66e41743685b119a",
+  "per_seed_contrasts_sha256": "0ea5b94c5241b9717c0b5e1c241cadf2f77c3c38b676bd9c5b93ae07aed22fd5",
+  "scope": "Conditional on the three fixed input generators; this changes input statistics while retaining the same teacher/readout objective. Not arbitrary task-family generalization."
+}

@@ -1,0 +1,106 @@
+{
+  "status": "POST_RESULT_CROSS_GENERATOR_VALIDATION_COMPLETE",
+  "primary_estimand": "equal-generator mean of per-task-seed four-delay mean test-accuracy difference (norm-matched eligibility trace minus no-trace)",
+  "primary_mean_difference": 0.22844444444444448,
+  "hierarchical_seed_bootstrap_95ci": [
+    0.2213304861111111,
+    0.23567506944444444
+  ],
+  "decision": "ADVANTAGE_RETAINED_ACROSS_THE_THREE_TESTED_GENERATORS",
+  "generator_summaries": [
+    {
+      "generator": "IID_GAUSSIAN",
+      "mean_trace_minus_no_trace_accuracy": 0.29596666666666666,
+      "task_seed_bootstrap_95ci": [
+        0.28189979166666673,
+        0.31018354166666673
+      ],
+      "positive_seed_count": 30,
+      "task_seeds": 30
+    },
+    {
+      "generator": "AR1_GAUSSIAN",
+      "mean_trace_minus_no_trace_accuracy": 0.10539166666666669,
+      "task_seed_bootstrap_95ci": [
+        0.0966,
+        0.11415000000000003
+      ],
+      "positive_seed_count": 30,
+      "task_seeds": 30
+    },
+    {
+      "generator": "SPARSE_SIGN",
+      "mean_trace_minus_no_trace_accuracy": 0.283975,
+      "task_seed_bootstrap_95ci": [
+        0.270075,
+        0.29810854166666667
+      ],
+      "positive_seed_count": 30,
+      "task_seeds": 30
+    }
+  ],
+  "per_generator_per_delay_effects": [
+    {
+      "generator": "IID_GAUSSIAN",
+      "delay": 1,
+      "mean_trace_minus_no_trace": 0.3811333333333333
+    },
+    {
+      "generator": "IID_GAUSSIAN",
+      "delay": 4,
+      "mean_trace_minus_no_trace": 0.3497
+    },
+    {
+      "generator": "IID_GAUSSIAN",
+      "delay": 16,
+      "mean_trace_minus_no_trace": 0.3047000000000001
+    },
+    {
+      "generator": "IID_GAUSSIAN",
+      "delay": 64,
+      "mean_trace_minus_no_trace": 0.14833333333333334
+    },
+    {
+      "generator": "AR1_GAUSSIAN",
+      "delay": 1,
+      "mean_trace_minus_no_trace": -0.12096666666666665
+    },
+    {
+      "generator": "AR1_GAUSSIAN",
+      "delay": 4,
+      "mean_trace_minus_no_trace": -0.012266666666666651
+    },
+    {
+      "generator": "AR1_GAUSSIAN",
+      "delay": 16,
+      "mean_trace_minus_no_trace": 0.3610000000000001
+    },
+    {
+      "generator": "AR1_GAUSSIAN",
+      "delay": 64,
+      "mean_trace_minus_no_trace": 0.19380000000000003
+    },
+    {
+      "generator": "SPARSE_SIGN",
+      "delay": 1,
+      "mean_trace_minus_no_trace": 0.36300000000000004
+    },
+    {
+      "generator": "SPARSE_SIGN",
+      "delay": 4,
+      "mean_trace_minus_no_trace": 0.34723333333333334
+    },
+    {
+      "generator": "SPARSE_SIGN",
+      "delay": 16,
+      "mean_trace_minus_no_trace": 0.2954333333333334
+    },
+    {
+      "generator": "SPARSE_SIGN",
+      "delay": 64,
+      "mean_trace_minus_no_trace": 0.13023333333333328
+    }
+  ],
+  "secondary": "task_metrics.csv contains paired accuracy and cross-entropy for exact replay, eligibility trace, and no-trace arms",
+  "scope": "conditional on these three prespecified input generators; not arbitrary task-family generalization or biological validation"
+}
