@@ -1,0 +1,14 @@
+{
+  "python": "3.9.6 (default, Jan  9 2026, 11:03:41) \n[Clang 17.0.0 (clang-1700.6.4.2)]",
+  "numpy": "2.0.2",
+  "scipy": "1.13.1",
+  "torch": "2.8.0",
+  "seeds": 32,
+  "runner_sha256": "dd8352283a7b4b991970d83af7218fc9d382fad58936b016e3946fe6c5ccc441",
+  "contract_sha256": "114ff6a33f3d8a9ddac34a89dd3860e452a7bab85eda071bebdfa6e9dab397f6",
+  "files": {
+    "m2_seed_results.csv": "6e62b7672375aef05c7d3eff5a9142bd378875380a6253f7380defcad8b1b0d5",
+    "m5_seed_results.csv": "55f63a30bc80c448e82c1cab2a4ee8198a47973452b184115d197b2b5e283938",
+    "summary.json": "6523b63fbe901222b64d63cd8d372c2c139eb02032537ecebca13c6f3833e19d"
+  }
+}

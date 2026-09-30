@@ -1,0 +1,170 @@
+{
+  "experiment_id": "CROSS_MECHANISM_CONTEXT_MEMORY_V2",
+  "classification": "POST_RESULT_EXPLORATORY",
+  "seed_blocks": 32,
+  "bootstrap_resamples": 10000,
+  "bootstrap_seed": 20261002,
+  "m2_primary": "context-aware GRU MSE minus context-gain MSE; positive means context-gain wins",
+  "m2_by_mapping": {
+    "1.0": {
+      "gru_context_minus_gain": {
+        "mean": -0.024727647506626274,
+        "ci95": [
+          -0.026400139518381105,
+          -0.02292615456907859
+        ],
+        "positive_seed_blocks": 0,
+        "n_seed_blocks": 32
+      },
+      "gru_no_context_minus_gain": {
+        "mean": -7.780207041087252e-05,
+        "ci95": [
+          -0.002787275251383684,
+          0.002650226034770838
+        ],
+        "positive_seed_blocks": 15,
+        "n_seed_blocks": 32
+      }
+    },
+    "0.0": {
+      "gru_context_minus_gain": {
+        "mean": -0.17655077354800774,
+        "ci95": [
+          -0.18313792485496047,
+          -0.17007226304195805
+        ],
+        "positive_seed_blocks": 0,
+        "n_seed_blocks": 32
+      },
+      "gru_no_context_minus_gain": {
+        "mean": -0.19219556648102476,
+        "ci95": [
+          -0.19665954211548778,
+          -0.18752869445570378
+        ],
+        "positive_seed_blocks": 0,
+        "n_seed_blocks": 32
+      }
+    },
+    "-1.0": {
+      "gru_context_minus_gain": {
+        "mean": -0.3258624945098702,
+        "ci95": [
+          -0.33727656625203933,
+          -0.31433506438109327
+        ],
+        "positive_seed_blocks": 0,
+        "n_seed_blocks": 32
+      },
+      "gru_no_context_minus_gain": {
+        "mean": -0.3824775402696971,
+        "ci95": [
+          -0.3886584339008553,
+          -0.3762353833216475
+        ],
+        "positive_seed_blocks": 0,
+        "n_seed_blocks": 32
+      }
+    }
+  },
+  "m5_primary": "eligibility accuracy minus latest-input accuracy",
+  "m5_by_delay": {
+    "1": {
+      "eligibility_minus_latest_input": {
+        "mean": 0.427978515625,
+        "ci95": [
+          0.404266357421875,
+          0.45135650634765623
+        ],
+        "positive_seed_blocks": 32,
+        "n_seed_blocks": 32
+      },
+      "eligibility_minus_exact_fifo": {
+        "mean": -0.058258056640625,
+        "ci95": [
+          -0.065093994140625,
+          -0.05157470703125
+        ],
+        "positive_seed_blocks": 0,
+        "n_seed_blocks": 32
+      }
+    },
+    "4": {
+      "eligibility_minus_latest_input": {
+        "mean": 0.394256591796875,
+        "ci95": [
+          0.36529388427734377,
+          0.423675537109375
+        ],
+        "positive_seed_blocks": 32,
+        "n_seed_blocks": 32
+      },
+      "eligibility_minus_exact_fifo": {
+        "mean": -0.073394775390625,
+        "ci95": [
+          -0.0806884765625,
+          -0.06640625
+        ],
+        "positive_seed_blocks": 0,
+        "n_seed_blocks": 32
+      }
+    },
+    "16": {
+      "eligibility_minus_latest_input": {
+        "mean": 0.297882080078125,
+        "ci95": [
+          0.2742919921875,
+          0.3223579406738281
+        ],
+        "positive_seed_blocks": 32,
+        "n_seed_blocks": 32
+      },
+      "eligibility_minus_exact_fifo": {
+        "mean": -0.14007568359375,
+        "ci95": [
+          -0.151519775390625,
+          -0.128173828125
+        ],
+        "positive_seed_blocks": 0,
+        "n_seed_blocks": 32
+      }
+    },
+    "64": {
+      "eligibility_minus_latest_input": {
+        "mean": 0.028167724609375,
+        "ci95": [
+          -0.0020462036132812486,
+          0.059356689453125
+        ],
+        "positive_seed_blocks": 22,
+        "n_seed_blocks": 32
+      },
+      "eligibility_minus_exact_fifo": {
+        "mean": -0.439208984375,
+        "ci95": [
+          -0.467559814453125,
+          -0.412384033203125
+        ],
+        "positive_seed_blocks": 0,
+        "n_seed_blocks": 32
+      }
+    }
+  },
+  "resource_accounting": {
+    "m2_parameters": {
+      "context_gain": 3,
+      "gru_context": 297,
+      "gru_no_context": 273
+    },
+    "m5_learned_weights_per_arm": 16,
+    "m5_trace_state": 16,
+    "m5_latest_input_state": 16,
+    "m5_fifo_state_by_delay": {
+      "1": 16,
+      "4": 64,
+      "16": 256,
+      "64": 1024
+    }
+  },
+  "claim_boundary": "Task-specific artificial results only; no biological validation and no pooled cross-mechanism effect."
+}
