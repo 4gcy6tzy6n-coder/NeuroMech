@@ -1,0 +1,564 @@
+{
+  "schema_version": "1.0",
+  "project_mode": "MECHANISM_TRANSFER",
+  "candidate_search": "CLOSED_FOR_CURRENT_PHASE",
+  "cross_dataset_neuron_merging": "FORBIDDEN",
+  "evidence_status_taxonomy": [
+    "VERIFIED",
+    "PARTIAL",
+    "EXTERNALLY_UNDERDETERMINED",
+    "NOT_AVAILABLE",
+    "NOT_APPLICABLE"
+  ],
+  "mechanisms": [
+    {
+      "mechanism_id": "M0_TOPOLOGY_TRANSFER_NEGATIVE_BASELINE",
+      "module": "M0",
+      "biological_system": "Historical multi-system connectome-transfer experiments",
+      "source_publications": [],
+      "source_artifacts": [
+        "PROJECT_DECISION.md",
+        "PROJECT_DECISION_2.md",
+        "PHASE1_FALSIFICATION_REPORT.md",
+        "results/FAILURES.md"
+      ],
+      "structural_evidence": {
+        "status": "VERIFIED",
+        "summary": "Historical FRSP/CATD/F1a structural manipulations and their stated controls are recorded under their original experiment scopes."
+      },
+      "functional_evidence": {
+        "status": "VERIFIED",
+        "summary": "Historical task and model outcomes are documented; these are artificial transfer experiments, not new biological outcome evidence."
+      },
+      "intervention_evidence": {
+        "status": "NOT_APPLICABLE",
+        "summary": "M0 is a registered historical topology-transfer baseline, not a biological intervention claim."
+      },
+      "counterfactual_evidence": {
+        "status": "VERIFIED",
+        "summary": "Historical matched topology/sign/null comparisons are preserved as run; F1b remains not tested."
+      },
+      "identity_granularity": "Experiment-specific graph nodes; no cross-dataset identity composition",
+      "evidence_status": "VERIFIED",
+      "result_scope": "No topology-transfer advantage was established under the frozen historical FRSP/CATD/F1a settings; F1b was NOT TESTED.",
+      "known_missing_evidence": [
+        "No universal test of all connectome topology or all tasks",
+        "F1b circuit-level sign organization was not instantiated",
+        "Historical artificial results do not establish biological mechanism failure"
+      ],
+      "mechanism_definition": "Copy or constrain an artificial system with biological topology and test whether topology itself transfers a computational advantage.",
+      "allowed_claim": [
+        "The tested historical topology-transfer hypotheses did not produce a supported attributable advantage under their stated conditions.",
+        "These results motivate testing computations as the transfer unit."
+      ],
+      "forbidden_claim": [
+        "Connectome topology never matters.",
+        "Biological neural mechanisms do not matter.",
+        "F1b failed; it was not tested."
+      ],
+      "artificial_abstraction": "Historical topology-constrained or connectome-derived model variants, retained only as baselines.",
+      "counterfactual_arms": [
+        {
+          "arm_id": "HISTORICAL_MATCHED_NULLS",
+          "status": "FROZEN_HISTORICAL",
+          "definition": "Use only the null/control families present in the corresponding sealed experiment."
+        }
+      ],
+      "implementation_status": "HISTORICAL_ONLY",
+      "functional_observable": "Historical task-level artificial benchmark outcomes, kept separate by experiment and original evaluation unit.",
+      "structural_observable": "Frozen experiment-specific graph/topology descriptors and their matched nulls.",
+      "neuron_id_mapping": "Experiment-specific graph-node IDs only; no cross-dataset or cross-species identity mapping.",
+      "provenance_class": "GRAPH_DERIVED",
+      "independent_of_connectivity": "NO; topology is the treatment under test.",
+      "aggregation_granularity": "Within each historical experiment at its frozen task/graph grain; never pooled across tasks.",
+      "single_neuron_claim_allowed": false,
+      "source_datasets": [
+        {
+          "name": "Historical FRSP/CATD/F1a branch-specific graph/task bundles",
+          "identifier": "Branch-specific manifests in the sealed historical result records",
+          "local_path": "data/processed/",
+          "provenance_status": "Historical branch-specific inputs; do not merge or pool."
+        },
+        {
+          "name": "Drosophila larval connectome representation",
+          "identifier": "Winding et al. 2023 larval brain reconstruction (exact variant named by each historical experiment manifest)",
+          "local_path": "data/raw/drosophila_larva/",
+          "provenance_status": "Historical topology-transfer context; not the new project default."
+        }
+      ]
+    },
+    {
+      "mechanism_id": "M1_HIGHER_ORDER_CORRECTION",
+      "module": "M1",
+      "biological_system": "Drosophila visual motion computation",
+      "source_publications": [
+        {
+          "citation": "Chen et al., eLife (2019)",
+          "doi": "10.7554/eLife.47579",
+          "role": "Biological/source anchor"
+        }
+      ],
+      "source_artifacts": [
+        "results/candidate_screen/RR19_PROJECT_GOAL.md",
+        "RR18/results/RR19_ARTIFICIAL_PREREGISTRATION.md",
+        "RR18/results/RR19_CORRESPONDENCE_CONTRACT.md",
+        "RR18/results/RR19_IMPLEMENTATION_LOCK.json",
+        "RR18/results/RR19_STEP3_CLOSEOUT.md"
+      ],
+      "structural_evidence": {
+        "status": "PARTIAL",
+        "summary": "Higher-order spatiotemporal computation is source-defined; this registry does not claim a synapse-resolved cell circuit for the estimator."
+      },
+      "functional_evidence": {
+        "status": "PARTIAL",
+        "summary": "The source and its estimator/kernel are pinned and the source-correspondence implementation is locked; confirmatory Step-4 artificial outcomes have not been computed."
+      },
+      "intervention_evidence": {
+        "status": "PARTIAL",
+        "summary": "The artificial counterfactual arms manipulate the estimator term; they are not cell-specific biological interventions."
+      },
+      "counterfactual_evidence": {
+        "status": "VERIFIED",
+        "summary": "The RR19 artificial preregistration freezes the four-arm design and Step 3 implementation correspondence. This verifies the design artifacts, not an outcome."
+      },
+      "identity_granularity": "Computation/estimator level; no neuron identity bridge is asserted",
+      "evidence_status": "PARTIAL",
+      "result_scope": "RR19 Step 3 is complete; Step 4 has not started and no confirmatory result is registered.",
+      "known_missing_evidence": [
+        "The frozen RR19 four-arm protocol has no separately specified parameter/capacity-matched arm",
+        "No confirmatory transfer result exists yet",
+        "The frozen single-mechanism test alone cannot answer the broader project-level capacity- and topology-matched comparison",
+        "Do not modify or execute the separately owned RR19 lane from this registry task"
+      ],
+      "mechanism_definition": "Source-defined second-order motion estimate with its source-defined third-order correction; the frozen artificial contract defines FULL as v2 + v3 and fixes reversal and phase-scrambled mismatch controls.",
+      "allowed_claim": [
+        "The source defines a higher-order correction computation and a source-correspondent artificial test has been frozen.",
+        "Any future result is bounded by the RR19 preregistration and implementation lock."
+      ],
+      "forbidden_claim": [
+        "The artificial mechanism is already beneficial or transferable.",
+        "The third-order term improves velocity accuracy; the frozen source claim concerns scene-dependent spatial variability.",
+        "The result establishes a general AI principle or topology independence."
+      ],
+      "artificial_abstraction": "A fixed, source-correspondent second-plus-third-order motion estimator; no learnable gain or post-hoc normalization.",
+      "counterfactual_arms": [
+        {
+          "arm_id": "FULL",
+          "status": "FROZEN",
+          "definition": "Source-defined corrected estimate v2 + v3."
+        },
+        {
+          "arm_id": "NO_THIRD_ORDER",
+          "status": "FROZEN",
+          "definition": "Second-order estimate v2."
+        },
+        {
+          "arm_id": "REVERSED_CORRECTION",
+          "status": "FROZEN",
+          "definition": "v2 - v3."
+        },
+        {
+          "arm_id": "MISMATCHED_THIRD_ORDER",
+          "status": "FROZEN",
+          "definition": "Source-defined phase-scrambled mismatch; no fallback to unmodified stimuli."
+        },
+        {
+          "arm_id": "CAPACITY_MATCHED",
+          "status": "NOT_IN_FROZEN_PROTOCOL",
+          "definition": "Must not be retrofitted into RR19; any project-level capacity comparison requires a separate pre-outcome freeze."
+        }
+      ],
+      "implementation_status": "STEP3_COMPLETE_STEP4_NOT_STARTED; READ_ONLY_INTEGRATION",
+      "functional_observable": "Source-defined motion estimator outputs v2, v3, v23 and the frozen scene-level spatial-variability metric; no neuron recording is required for this computational test.",
+      "structural_observable": "Source-pinned second- and third-order spatiotemporal correlation kernels; no synapse-resolved cell graph is asserted.",
+      "neuron_id_mapping": "NOT_APPLICABLE; mechanism is specified at the estimator/computation level.",
+      "provenance_class": "LITERATURE_AND_SOURCE_CODE_DERIVED",
+      "independent_of_connectivity": "NOT_APPLICABLE; the mechanism is not identified from connectome topology.",
+      "aggregation_granularity": "Population/spatial estimate aggregated over frozen scenes; scene is the statistical unit.",
+      "single_neuron_claim_allowed": false,
+      "source_datasets": [
+        {
+          "name": "Panoramic HDR natural-scene dataset",
+          "identifier": "Meyer et al. 2014, Bielefeld, DOI 10.4119/unibi/2689637",
+          "local_path": "data/raw/rr19/corpus/",
+          "provenance_status": "Pinned by RR19 run manifest and per-image digest artifacts."
+        },
+        {
+          "name": "Third-order motion kernel archive",
+          "identifier": "Dryad DOI 10.5061/dryad.7jm87bt, version 3",
+          "local_path": "data/raw/rr19/",
+          "provenance_status": "RR19 lock records source archive/member provenance; consume read-only."
+        }
+      ]
+    },
+    {
+      "mechanism_id": "M2_STATE_DEPENDENT_FEEDBACK",
+      "module": "M2",
+      "biological_system": "Adult C. elegans AFD–AIY–RIM thermotaxis circuit",
+      "source_publications": [
+        {
+          "citation": "Ji et al., eLife (2021)",
+          "doi": "10.7554/eLife.68848",
+          "role": "Functional and intervention source"
+        },
+        {
+          "citation": "Cook et al., Nature (2019)",
+          "doi": "10.1038/s41586-019-1352-7",
+          "role": "Connectome source"
+        }
+      ],
+      "source_artifacts": [
+        "results/candidate_screen/CE_AFD_AIY_RIM_CANDIDATE_FREEZE.md",
+        "results/candidate_screen/CE_AFD_AIY_RIM_E3_RESULT.md",
+        "results/e4/mechanism_amendment/CELEGANS_E4_GATE_NORMALIZATION_AND_PROVENANCE_AUDIT.md",
+        "results/candidate_screen/CE_AFD_AIY_RIM_E4_SUBSTRATE_COMPLETION_SEARCH.md"
+      ],
+      "structural_evidence": {
+        "status": "VERIFIED",
+        "summary": "Adult connectome evidence supports named AFD/AIY/RIM cell classes and documented edges; a unique causal feedback carrier is not established."
+      },
+      "functional_evidence": {
+        "status": "VERIFIED",
+        "summary": "Published class-level neural/behavior measures support the bounded source claim. Separate synthetic artificial abstractions have been tested; these are not biological endpoint reanalyses and do not establish transfer benefit."
+      },
+      "intervention_evidence": {
+        "status": "PARTIAL",
+        "summary": "Published RIM perturbation evidence exists, but public linkage does not support the stronger amended mechanism-level independent-unit test."
+      },
+      "counterfactual_evidence": {
+        "status": "EXTERNALLY_UNDERDETERMINED",
+        "summary": "The historical E4 reproduction protocol remains frozen; the stronger mechanism amendment is blocked by independent-unit linkage and outcome-blind noise/SESOI."
+      },
+      "identity_granularity": "CELL_CLASS; exact left/right trace-to-neuron pairing is not established",
+      "evidence_status": "PARTIAL",
+      "result_scope": "Biological E3 identifiability passed at cell-class granularity; E4 mechanism amendment remains externally underdetermined. Separate exploratory artificial abstractions were run: simple previous-action feedback helped only conditionally; synthetic state-gated gain was assumption-sensitive; the fixed gate lost to occupancy-matched/no-gate and memoryless controls in all 9 closed-loop test cells. An on-policy GRU beat the gate on the reused post-result suite. No AI-transfer benefit is established. A new post-result telegraph-target filtering study (M6) found the learned state gate beat a single global gain on the assumed high-reversal-noise profile, but lost to a two-parameter residual-adaptive filter at all three held-out hazards; equal-weighted gate-minus-adaptive MAE was +0.07587 (crossed 95% interval [+0.07314,+0.07864]). This synthetic reliability relation is not sourced from the worm experiments.",
+      "known_missing_evidence": [
+        "Operational animal/session linkage for the required intervention, neural, and behavior records",
+        "Independent outcome-blind noise/reliability calibration or externally justified SESOI",
+        "Exact left/right functional-trace identity",
+        "Unique causal RIM-to-AIY synaptic carrier",
+        "No independent held-out task-family validation for the artificial transfer hypothesis",
+        "The synthetic mode-dependent sensory-reliability relation was not established in the biological source",
+        "The artificial closed-loop gate is an abstract controller, not a reconstruction of the worm circuit"
+      ],
+      "mechanism_definition": "RIM-dependent state feedback modulates AIY activity and thermotactic motor-state representation at cell-class granularity, as bounded by the frozen biological evidence.",
+      "allowed_claim": [
+        "AFD/AIY/RIM mechanism variables are identifiable at cell-class level under the completed E3 audit.",
+        "The public evidence is insufficient for the stronger E4 mechanism amendment.",
+        "The tested fixed artificial gate did not outperform the stated controls in the closed-loop benchmark; this does not refute the bounded biological findings.",
+        "In a synthetic telegraph-target estimation task with stipulated mode-dependent observation noise, a learned state gate beat a single global gain but lost to an equal-parameter residual-adaptive filter; this is an algorithmic result, not biological validation."
+      ],
+      "forbidden_claim": [
+        "A specific left/right RIM neuron or unique gap-junction path is established as the causal carrier.",
+        "The underdetermined amendment is a biological FAIL.",
+        "A new animal-level statistical unit or SESOI can be inferred from frames or events.",
+        "The synthetic pilot establishes that the biological circuit improves AI or that its computation is a general AI principle.",
+        "The M6 synthetic mode-dependent observation-noise relationship is demonstrated in the biological source or establishes a general AI advantage."
+      ],
+      "artificial_abstraction": "Three post-source abstractions were tested separately: previous-action persistence; motor-state-gated sensory gain; and a fixed state-gated controller in closed-loop target tracking. None is claimed to reproduce the biological circuit. M6 tests mode-specific sensory gain against residual-adaptive filtering on an independent telegraph-target estimation task; exploratory only.",
+      "counterfactual_arms": [
+        {
+          "arm_id": "REMOVE_FEEDBACK",
+          "status": "PLANNED_NOT_FROZEN",
+          "definition": "A future model design may remove the feedback term only after a separate AI-side contract."
+        },
+        {
+          "arm_id": "REVERSE_FEEDBACK",
+          "status": "PLANNED_NOT_FROZEN",
+          "definition": "A future model design may reverse feedback only after a separate AI-side contract."
+        },
+        {
+          "arm_id": "CAPACITY_MATCHED_FEEDBACK_CONTROL",
+          "status": "PLANNED_NOT_FROZEN",
+          "definition": "A future comparison must freeze an appropriate capacity-matched generic recurrence."
+        }
+      ],
+      "implementation_status": "EXPLORATORY_ABSTRACTIONS_TESTED; M6_STATE_GATE_BELOW_RESIDUAL_ADAPTIVE; NO_GENERAL_TRANSFER_BENEFIT_ESTABLISHED",
+      "functional_observable": "Article-v3 dR/R0 neural traces, temperature and motor/behavior measurements at the source-defined recording grain; no new values are computed in this project transition.",
+      "structural_observable": "Named AFD/AIY/RIM chemical/electrical synapse edges in the adult connectome; unique causal carrier remains unresolved.",
+      "neuron_id_mapping": "Functional AFD/AIY/RIM labels map to the documented bilateral canonical neuron sets; exact left/right trace-to-neuron pairing is unavailable.",
+      "provenance_class": "MIXED_FUNCTIONAL_INTERVENTION_AND_CONNECTOME",
+      "independent_of_connectivity": "PARTIAL; functional/intervention evidence is source-based, while edge-specific causal attribution is unresolved.",
+      "aggregation_granularity": "Cell-class only under the frozen claim; do not make exact side-specific claims.",
+      "single_neuron_claim_allowed": false,
+      "source_datasets": [
+        {
+          "name": "AFD/AIY/RIM functional source tables",
+          "identifier": "Ji et al. 2021 eLife article 68848, version 3 source-data workbooks",
+          "local_path": "data/raw/celegans/ji_etal_2021_elife_68848_v3/",
+          "provenance_status": "Acquired and schema audited under the candidate-specific historical protocol."
+        },
+        {
+          "name": "Adult C. elegans connectome",
+          "identifier": "Cook et al. 2019; corrected July 2020 SI 5",
+          "local_path": "data/raw/celegans/SI 5 Connectome adjacency matrices, corrected July 2020.xlsx",
+          "provenance_status": "Frozen structure-side source; exact left/right trace mapping remains unavailable."
+        }
+      ]
+    },
+    {
+      "mechanism_id": "M3_STRUCTURE_FUNCTION_CONSTRAINED_INTEGRATION",
+      "module": "M3",
+      "biological_system": "7 dpf larval zebrafish Fish1.5 visual-motion circuit",
+      "source_publications": [
+        {
+          "citation": "Boulanger-Weill et al., bioRxiv (2025)",
+          "doi": "10.64898/2025.03.14.643363",
+          "role": "Fish1.5 source description"
+        }
+      ],
+      "source_artifacts": [
+        "results/fish15/FISH15_ACQUISITION_SCHEMA_AUDIT.md",
+        "results/fish15/FISH15_ACQUISITION_MANIFEST.json",
+        "results/fish15/FISH15_ACQUISITION_GATE.md",
+        "results/fish15/FISH15_CAVE_ACQUISITION_CLOSURE.md",
+        "results/candidate_screen/NEXT_MAINLINE_MECHANISM_FREEZE.md"
+      ],
+      "structural_evidence": {
+        "status": "PARTIAL",
+        "summary": "Zenodo v1 static archive is hash-pinned and schema inspected, but the archived CAVE materialization is not identified; class-specific edge values were not inspected."
+      },
+      "functional_evidence": {
+        "status": "NOT_AVAILABLE",
+        "summary": "For the frozen direction-switch/evidence-update mechanism, the released HDF5 does not expose switch-event timing, graded evidence sequence, stimulus onset, or choice/behavior linkage. Other stored condition responses exist but are not substitutes."
+      },
+      "intervention_evidence": {
+        "status": "NOT_AVAILABLE",
+        "summary": "No cell-targeted in-vivo intervention is verified in the frozen dataset definition."
+      },
+      "counterfactual_evidence": {
+        "status": "NOT_AVAILABLE",
+        "summary": "No outcome-independent, source-aligned mechanism-destruction contract is frozen for the current released substrate."
+      },
+      "identity_granularity": "SAME_SPECIMEN_NEURON_ID for explicit functional↔EM crosswalk rows; class-label provenance unresolved",
+      "evidence_status": "PARTIAL",
+      "result_scope": "Acquisition/schema audit complete; acquisition gate PARTIAL; the frozen switch-event observable is DATA_LIMITATION; E3 remains CLOSED.",
+      "known_missing_evidence": [
+        "Public stimulus/event timebase and within-trial switch alignment",
+        "Graded evidence/coherence and stimulus sequence fields needed by the evidence-update claim",
+        "Choice/behavior linkage",
+        "Version-pinned or source-lineage-verified synapse materialization",
+        "Adjudicated functional-class label provenance independent of graph-derived evidence",
+        "Cell-targeted in-vivo intervention evidence"
+      ],
+      "mechanism_definition": "Fish1.5 iMI/cMI/MON-to-SMI visual-motion evidence/state integration as recorded in the mechanism freeze; do not select a subset or re-label cell classes for data convenience.",
+      "allowed_claim": [
+        "The official release documents same-specimen imaging/EM registration and a direct functional-ID to EM-ID bridge for explicit mapped rows.",
+        "The public functional substrate inspected to date cannot identify the frozen direction-switch computation."
+      ],
+      "forbidden_claim": [
+        "Fish1.5 acquisition gate passed.",
+        "Cell-class labels independently validate the same graph pattern before label provenance is adjudicated.",
+        "Separate left/right condition arrays are within-trial direction switches.",
+        "The partial acquisition result falsifies the biological mechanism."
+      ],
+      "artificial_abstraction": "Structure-conditioned routing/evidence integration is a candidate abstraction only; no model or causal claim is authorized by current evidence.",
+      "counterfactual_arms": [
+        {
+          "arm_id": "SHUFFLE_STRUCTURE_FUNCTION_MAPPING",
+          "status": "PLANNED_NOT_FROZEN",
+          "definition": "A potential future null, contingent on a resolved identity/provenance contract and pre-outcome freeze."
+        },
+        {
+          "arm_id": "CAPACITY_MATCHED_ROUTING_CONTROL",
+          "status": "PLANNED_NOT_FROZEN",
+          "definition": "A potential future control, not available for current execution."
+        }
+      ],
+      "implementation_status": "REGISTERED_BOUNDARY_ONLY_NO_E3_NO_MODEL",
+      "functional_observable": "HDF5 trial/mean ΔF/F arrays for left/right dot and sine conditions plus registered centroids; no stimulus sequence, switch event/time alignment, graded evidence axis, or choice/behavior linkage in the inspected release.",
+      "structural_observable": "Zenodo v1 archived pre/post synapse table headers and identity metadata; class-specific edge rows were not inspected and CAVE materialization is not pinned.",
+      "neuron_id_mapping": "Explicit functional_id → nucleus_id/soma_id/axon_id/dendrite_id crosswalk for listed rows; functional class-label provenance is unresolved.",
+      "provenance_class": "MIXED_WITH_LABEL_PROVENANCE_UNRESOLVED",
+      "independent_of_connectivity": "EXTERNALLY_UNDERDETERMINED; some class labels may be response/classifier-derived and label provenance was not adjudicated.",
+      "aggregation_granularity": "Neuron-ID join only for explicit crosswalk rows; class aggregation is blocked pending label-provenance adjudication.",
+      "single_neuron_claim_allowed": false,
+      "source_datasets": [
+        {
+          "name": "Fish1.5 functional recording",
+          "identifier": "Zenodo DOI 10.5281/zenodo.16893093 and associated HDF5",
+          "local_path": "data/raw/fish15/clem_zfish1_functional_data.h5",
+          "provenance_status": "Checksum verified; switch-event/timebase observable absent from inspected released schema."
+        },
+        {
+          "name": "Fish1.5 traced axons and archived synapse tables",
+          "identifier": "Zenodo record 19231045, version 1",
+          "local_path": "data/fish15/traced_axons_neurons.zip",
+          "provenance_status": "Checksum verified; archive schema inspected; underlying CAVE materialization not pinned."
+        },
+        {
+          "name": "Fish1.5 functional-to-EM crosswalk",
+          "identifier": "Official Zebrafish_CLEM reconstruction metadata table",
+          "local_path": "data/raw/fish15/source/Zebrafish_CLEM/1. Downloading_neuronal_morphologies_and_metadata/all_reconstructed_neurons.csv",
+          "provenance_status": "Explicit functional_id crosswalk verified; classifier-label provenance remains unresolved."
+        }
+      ]
+    },
+    {
+      "mechanism_id": "M4_CA3_PARTIAL_CUE_RECALL",
+      "module": "M4",
+      "biological_system": "Rodent hippocampal CA3 in spatial associative recall",
+      "source_publications": [
+        {
+          "citation": "Nakazawa et al., Science (2002)",
+          "doi": "10.1126/science.1071795",
+          "role": "CA3-specific adult NMDA-receptor deletion; partial-cue recall impairment"
+        },
+        {
+          "citation": "Neunuebel & Knierim, Neuron (2014)",
+          "doi": "10.1016/j.neuron.2013.11.017",
+          "role": "Population recording under degraded/mismatched cues"
+        },
+        {
+          "citation": "Mei et al., PLOS ONE (2011)",
+          "doi": "10.1371/journal.pone.0019326",
+          "role": "Counterevidence: NMDA disruption reported not to abolish partial-cue recall"
+        }
+      ],
+      "source_artifacts": [
+        "BIOLOGICAL_COMPUTATION_EXTRACTION.md"
+      ],
+      "structural_evidence": {
+        "status": "PARTIAL",
+        "summary": "CA3 has extensive recurrent connectivity, but the cited behavioral perturbation does not isolate recurrent collateral edges."
+      },
+      "functional_evidence": {
+        "status": "PARTIAL",
+        "summary": "Ensemble recordings support CA3 representation recovery under degraded or mismatched cues; task and analysis regimes are bounded."
+      },
+      "intervention_evidence": {
+        "status": "PARTIAL",
+        "summary": "CA3-specific adult NMDA-receptor deletion impaired partial-cue recall in one spatial-reference task; another study reported preserved recall after NMDA disruption under its protocol."
+      },
+      "counterfactual_evidence": {
+        "status": "NOT_AVAILABLE",
+        "summary": "No artificial transfer contract or outcomes are registered for this candidate."
+      },
+      "identity_granularity": "CA3 subregion / population; no single-neuron mechanism claim",
+      "evidence_status": "PARTIAL",
+      "result_scope": "The biological record supports partial-cue recall and CA3 involvement in some paradigms, but CA3 NMDA-receptor necessity is disputed and recurrent collateral causality is not isolated. A post-result exploratory synthetic v2 benchmark found classic Hebbian recurrence below exact exemplar/MAP retrieval; this does not validate or refute the biological mechanism.",
+      "known_missing_evidence": [
+        "Selective causal perturbation of CA3 recurrent collateral computation separated from other CA3 NMDA-dependent inputs",
+        "Primary-study reconciliation of task, genetic/pharmacological manipulation, and memory-regime differences",
+        "Artificial transfer result and strong matched baselines",
+        "Capacity-matched or resource-matched artificial baselines",
+        "Modern associative-memory and trained denoising baselines",
+        "Artificial evaluation on structured/realistic memory patterns and false-recall costs"
+      ],
+      "mechanism_definition": "Use a subset of cues to recover a previously stored spatial representation; a CA3 autoassociative recurrent attractor is an explanatory hypothesis rather than a uniquely established biological algorithm.",
+      "allowed_claim": [
+        "Some rodent spatial-memory paradigms show CA3-dependent partial-cue recall.",
+        "CA3 population activity can recover or preserve stored representations under some degraded/mismatched cue conditions.",
+        "In the stated synthetic benchmark, the tested dense Hebbian Hopfield implementation underperformed exact exemplar/MAP retrieval; no AI-transfer advantage was established."
+      ],
+      "forbidden_claim": [
+        "CA3 recurrent collaterals are proven to be the sole causal substrate for pattern completion.",
+        "All CA3 NMDA-dependent plasticity is necessary for partial-cue recall across tasks.",
+        "A Hopfield network is biologically validated by these findings.",
+        "The artificial result falsifies biological CA3 pattern completion.",
+        "The current artificial comparison is capacity-matched or publication-confirmatory."
+      ],
+      "artificial_abstraction": "Classic dense Hebbian Hopfield recurrence was tested as one post-result abstraction against exact exemplar/MAP retrieval on random bipolar memories; it is not a CA3 reconstruction.",
+      "counterfactual_arms": [],
+      "implementation_status": "EXPLORATORY_V2_COMPLETED; HEBBIAN_RECURRENCE_BELOW_EXACT_MAP; NO_TRANSFER_ADVANTAGE",
+      "functional_observable": "Spatial reference-memory retrieval and CA1/CA3 population activity under full versus partial or degraded environmental cues.",
+      "structural_observable": "CA3 recurrent collateral anatomy is background; edge-level necessity is not established by the cited perturbation.",
+      "neuron_id_mapping": "CA3 subregion / population only; no cross-study single-cell identity join.",
+      "provenance_class": "LITERATURE_AND_POPULATION_RECORDING_DERIVED",
+      "independent_of_connectivity": "PARTIAL; causal perturbations support regional/molecular involvement but do not isolate the graph motif.",
+      "aggregation_granularity": "Behavioral task and population-recording level.",
+      "single_neuron_claim_allowed": false,
+      "source_datasets": []
+    },
+    {
+      "mechanism_id": "M5_CEREBELLAR_INSTRUCTIVE_EVENT",
+      "module": "M5",
+      "biological_system": "Mouse cerebellar circuit in delay eyeblink conditioning",
+      "source_publications": [
+        {
+          "citation": "Kimpo et al., eLife (2014)",
+          "doi": "10.7554/eLife.02076",
+          "role": "Optogenetic CF pairing sufficiency and CS-US timing dependence"
+        },
+        {
+          "citation": "Silva et al., Nature Neuroscience (2024)",
+          "doi": "10.1038/s41593-024-01594-7",
+          "role": "CF/complex-spike sufficiency and timed inhibition necessity in delay eyeblink conditioning"
+        }
+      ],
+      "source_artifacts": [
+        "BIOLOGICAL_COMPUTATION_EXTRACTION.md",
+        "experiments/m5_cerebellar_eligibility/DELAYED_TEACHING_SIGNAL_CONTRACT.md",
+        "experiments/m5_cerebellar_eligibility/RESULTS.md"
+      ],
+      "structural_evidence": {
+        "status": "PARTIAL",
+        "summary": "The broad olivocerebellar CF-to-Purkinje pathway is established; the artificial model does not reconstruct biological wiring."
+      },
+      "functional_evidence": {
+        "status": "VERIFIED",
+        "summary": "Primary experiments report CF/complex-spike responses and learned, appropriately timed eyelid responses under specified delay-conditioning protocols."
+      },
+      "intervention_evidence": {
+        "status": "VERIFIED",
+        "summary": "Optogenetic CF stimulation substituted for sensory US; timed CF inhibition during airpuff US blocked learned conditioning while unconditioned reflex remained. Scope is delay eyeblink conditioning."
+      },
+      "counterfactual_evidence": {
+        "status": "PARTIAL",
+        "summary": "Biological stimulation/inhibition contrasts exist. Artificial v3 is post-result exploratory and is not confirmatory."
+      },
+      "identity_granularity": "CELL_TYPE / CIRCUIT SIGNAL (climbing fiber and Purkinje complex-spike events); no single-synapse learning-rule claim",
+      "evidence_status": "PARTIAL",
+      "result_scope": "A timed CF/complex-spike event causally instructs acquisition of an appropriately timed associative response in the tested delay eyeblink conditioning task. Eligibility trace and three-factor synaptic rule are computational abstractions, not directly measured algorithms.",
+      "known_missing_evidence": [
+        "Direct measurement and isolation of a particular synaptic eligibility-trace state/rule",
+        "Generalization to other cerebellum-dependent tasks and species",
+        "Artificial comparison against BPTT and broad modern online-learning algorithms",
+        "Independent post-result replication under a pre-outcome protocol",
+        "Timed CF-inhibition behavioral contrast used a modest cohort (four mice per condition) and CF opsin expression itself altered signaling in the source study."
+      ],
+      "mechanism_definition": "Pairing of conditioned-stimulus-related activity with a temporally specific CF/complex-spike instructive event produces acquisition of a timed conditioned response in the tested task.",
+      "allowed_claim": [
+        "The cited interventions support a causal CF/complex-spike instructive role in acquisition of mouse delay eyeblink conditioning.",
+        "A norm-matched local eligibility trace improved delayed-label accuracy over a no-trace misassignment control in the stated synthetic task."
+      ],
+      "forbidden_claim": [
+        "The cited studies directly prove a specific eligibility-trace equation or universal cerebellar learning rule.",
+        "The synthetic benchmark validates the biological mechanism or establishes general AI benefit.",
+        "The synthetic eligibility model outperforms exact replay or batch logistic regression."
+      ],
+      "artificial_abstraction": "A local decaying feature eligibility state receives delayed label error via a three-factor update; implementation is an abstract online classifier, not a cerebellum model.",
+      "counterfactual_arms": [
+        {
+          "arm_id": "ELIGIBILITY_TRACE_NORM_MATCHED",
+          "status": "EXPLORATORY_POST_RESULT",
+          "definition": "Apply delayed label error to the current locally maintained decaying feature trace, scaled using only its own state norm."
+        },
+        {
+          "arm_id": "NO_TRACE",
+          "status": "EXPLORATORY_POST_RESULT",
+          "definition": "Apply the delayed label error to the unrelated current feature vector."
+        },
+        {
+          "arm_id": "EXACT_REPLAY",
+          "status": "EXPLORATORY_REFERENCE",
+          "definition": "Store the target cue feature and apply its exact per-sample gradient when its label arrives."
+        },
+        {
+          "arm_id": "BATCH_LOGISTIC",
+          "status": "EXPLORATORY_UPPER_REFERENCE",
+          "definition": "Fit the same fixed features from the full labeled training set."
+        }
+      ],
+      "implementation_status": "POST_RESULT_V3_EXPLORATORY; TRACE_BEATS_NO_TRACE_BUT_LOSES_TO_REPLAY_AND_BATCH",
+      "functional_observable": "Held-out four-class accuracy and cross-entropy after delayed-label online learning on a synthetic fixed-feature task.",
+      "structural_observable": "Not modeled; no cell-level structural graph imported.",
+      "neuron_id_mapping": "Not applicable to abstract algorithm; biological identity remains at the climbing-fiber/Purkinje-cell-type signal level.",
+      "provenance_class": "PRIMARY_INTERVENTION_EVIDENCE_PLUS_SYNTHETIC_EXPLORATORY_MODEL",
+      "independent_of_connectivity": "YES for the biological intervention result; the artificial test contains no connectome.",
+      "aggregation_granularity": "Biological evidence: animal/task in delay eyeblink conditioning; artificial evidence: 30 independent task seeds.",
+      "single_neuron_claim_allowed": false,
+      "source_datasets": []
+    }
+  ]
+}

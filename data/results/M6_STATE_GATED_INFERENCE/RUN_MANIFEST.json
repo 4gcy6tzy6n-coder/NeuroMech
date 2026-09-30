@@ -1,0 +1,18 @@
+{
+  "experiment": "M6_STATE_GATED_INFERENCE",
+  "status": "EXPLORATORY_RESULT_VERIFIED",
+  "python": "3.12.13",
+  "numpy": "2.4.4",
+  "scipy": "1.17.1",
+  "rows": 230400,
+  "distinct_episode_keys": 230400,
+  "correct_metric": "mean_t(abs(estimate_t - latent_target_t))",
+  "primary_interval_excludes_zero": true,
+  "artifact_sha256": {
+    "experiments/m6_state_gated_inference/EXPERIMENT_CONTRACT.md": "c28c85fc9f351788b8480899880cc0be16a7f76e8568b267c4ea938bd8b9c8df",
+    "experiments/m6_state_gated_inference/run_experiment.py": "469106ac5b34e39d119853c30b3d7a67d62ffa28a84705fb30ad69531b0874d9",
+    "experiments/m6_state_gated_inference/RESULTS.md": "80f75cf4bcef02c739a59aba4caef1906d7443e1b2c9e53cdc4d9a34946dfa2a",
+    "experiments/m6_state_gated_inference/results_v2_corrected_metric/episode_errors.csv": "f247ce2a6eae1738b10f6b4d4dc206478a5070d1117418d4a2ed3f4ec8899bc8",
+    "experiments/m6_state_gated_inference/results_v2_corrected_metric/summary.json": "d73097ac72f1afe29c4b44c83a621d1023e065dd85279331e8e91eecdf4ce1d2"
+  }
+}
