@@ -1,0 +1,48 @@
+{
+  "experiment_id": "M2_2D_CLOSED_LOOP_PURSUIT_V2_TRAIN_DIST_DIAGNOSTIC",
+  "classification": "post-result exploratory training-distribution diagnostic",
+  "python": "3.9.6",
+  "numpy": "2.0.2",
+  "torch": "2.8.0",
+  "training_seeds": [
+    76000,
+    76029
+  ],
+  "n_train": 512,
+  "n_test": 256,
+  "steps": 32,
+  "updates": 200,
+  "batch_size": 16,
+  "movement_step": 0.12,
+  "noise_sd": 0.25,
+  "teacher_random_action_probability": 0.25,
+  "regimes": [
+    "RANDOM_ACTION",
+    "TEACHER_MIXED_CLOSED_LOOP"
+  ],
+  "arms": [
+    "MODE_GAIN",
+    "NO_CONTEXT",
+    "ADDITIVE_RNN_MATCHED",
+    "BILINEAR_RNN_MATCHED",
+    "KALMAN_ORACLE"
+  ],
+  "conditions": [
+    "ALIGNED",
+    "REVERSED"
+  ],
+  "rows": 153600,
+  "runner_sha256": "3633e371ebe46b774e5bbc68fc8d9b857c00137483ce38301c3255bb58b0b5f0",
+  "contract_sha256": "0231ace176c923508a041b7d99381764e6dc32ce34adffb36272501b5842713d",
+  "files": {
+    "episode_metrics.csv": "f1f29d6a30c271b0bd79aed418e988a85d21c055b209a213fcb5107c4214bf9d",
+    "training_metrics.csv": "4fb62686fca59ff9a6e421ae6db9e6bd80eefda9bbf3473e47d1edb8905295fb",
+    "summary.json": "558cc7db92bba6a2f1180037c80d1df5f419ed241062e2ecf4b266af786542c3"
+  },
+  "analysis_sources": {
+    "runner": "3633e371ebe46b774e5bbc68fc8d9b857c00137483ce38301c3255bb58b0b5f0",
+    "analyzer": "2b3ca5d31fa9a8bc010b9354781eb6e09d895b2f11afa22cb41bf22cd2f369b0",
+    "verifier": "2a6beaebe32c81d323f5ce95168feafbd24a81c56119bc8c20013c0e3d7557bf",
+    "contract": "0231ace176c923508a041b7d99381764e6dc32ce34adffb36272501b5842713d"
+  }
+}

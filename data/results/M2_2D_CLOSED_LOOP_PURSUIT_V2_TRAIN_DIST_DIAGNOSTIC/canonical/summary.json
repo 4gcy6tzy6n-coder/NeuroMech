@@ -1,0 +1,371 @@
+{
+  "experiment_id": "M2_2D_CLOSED_LOOP_PURSUIT_V2_TRAIN_DIST_DIAGNOSTIC",
+  "classification": "post-result exploratory training-distribution diagnostic",
+  "primary": "ALIGNED interaction: (bilinear-mode final distance)_TEACHER_MIXED_CLOSED_LOOP - (bilinear-mode final distance)_RANDOM_ACTION; positive favors MODE_GAIN under deployment-like training",
+  "bootstrap": "paired crossed resampling of training seeds and held-out target IDs",
+  "bootstrap_replicates": 10000,
+  "rows": 153600,
+  "mean_metrics": {
+    "RANDOM_ACTION": {
+      "ALIGNED": {
+        "MODE_GAIN": {
+          "final_distance": 0.1093549590791099,
+          "success": 0.8520833333333333,
+          "mean_distance": 0.26018288208191126,
+          "steps_to_success": 17.029296875
+        },
+        "NO_CONTEXT": {
+          "final_distance": 0.10399572872109578,
+          "success": 0.8684895833333334,
+          "mean_distance": 0.23487915259332415,
+          "steps_to_success": 16.662369791666666
+        },
+        "ADDITIVE_RNN_MATCHED": {
+          "final_distance": 0.0955810804755553,
+          "success": 0.8869791666666667,
+          "mean_distance": 0.24461796883321466,
+          "steps_to_success": 17.793489583333333
+        },
+        "BILINEAR_RNN_MATCHED": {
+          "final_distance": 0.0905023524948471,
+          "success": 0.9118489583333333,
+          "mean_distance": 0.23557768862786663,
+          "steps_to_success": 17.041276041666666
+        },
+        "KALMAN_ORACLE": {
+          "final_distance": 0.08669340858007975,
+          "success": 0.9153645833333334,
+          "mean_distance": 0.1968154517970106,
+          "steps_to_success": 12.937760416666666
+        }
+      },
+      "REVERSED": {
+        "MODE_GAIN": {
+          "final_distance": 0.41447639938620945,
+          "success": 0.28515625,
+          "mean_distance": 0.49905442149308027,
+          "steps_to_success": 27.044661458333334
+        },
+        "NO_CONTEXT": {
+          "final_distance": 0.10387780485849968,
+          "success": 0.8791666666666667,
+          "mean_distance": 0.24104534732966082,
+          "steps_to_success": 16.516666666666666
+        },
+        "ADDITIVE_RNN_MATCHED": {
+          "final_distance": 0.10046682301823845,
+          "success": 0.87890625,
+          "mean_distance": 0.25549546638321774,
+          "steps_to_success": 18.052604166666665
+        },
+        "BILINEAR_RNN_MATCHED": {
+          "final_distance": 0.11647731140080092,
+          "success": 0.7993489583333333,
+          "mean_distance": 0.2807259105021027,
+          "steps_to_success": 19.934114583333333
+        },
+        "KALMAN_ORACLE": {
+          "final_distance": 0.08365497390638363,
+          "success": 0.9484375,
+          "mean_distance": 0.18386286779823421,
+          "steps_to_success": 11.484375
+        }
+      }
+    },
+    "TEACHER_MIXED_CLOSED_LOOP": {
+      "ALIGNED": {
+        "MODE_GAIN": {
+          "final_distance": 0.08988565805040404,
+          "success": 0.9225260416666666,
+          "mean_distance": 0.22217144607469283,
+          "steps_to_success": 14.837630208333334
+        },
+        "NO_CONTEXT": {
+          "final_distance": 0.08844789142091637,
+          "success": 0.9430989583333333,
+          "mean_distance": 0.21695285321996682,
+          "steps_to_success": 14.487369791666667
+        },
+        "ADDITIVE_RNN_MATCHED": {
+          "final_distance": 0.0866357315319874,
+          "success": 0.9466145833333334,
+          "mean_distance": 0.21897169371028818,
+          "steps_to_success": 14.893098958333333
+        },
+        "BILINEAR_RNN_MATCHED": {
+          "final_distance": 0.09382663240304888,
+          "success": 0.8919270833333334,
+          "mean_distance": 0.2289794894952744,
+          "steps_to_success": 15.950651041666667
+        },
+        "KALMAN_ORACLE": {
+          "final_distance": 0.08669340858007975,
+          "success": 0.9153645833333334,
+          "mean_distance": 0.1968154517970106,
+          "steps_to_success": 12.937760416666666
+        }
+      },
+      "REVERSED": {
+        "MODE_GAIN": {
+          "final_distance": 0.17804697495528973,
+          "success": 0.6546875,
+          "mean_distance": 0.3319199414699445,
+          "steps_to_success": 21.650651041666666
+        },
+        "NO_CONTEXT": {
+          "final_distance": 0.08752470995712731,
+          "success": 0.95390625,
+          "mean_distance": 0.2183797867906833,
+          "steps_to_success": 14.160026041666667
+        },
+        "ADDITIVE_RNN_MATCHED": {
+          "final_distance": 0.08712239919943082,
+          "success": 0.95,
+          "mean_distance": 0.22451592463051687,
+          "steps_to_success": 14.995052083333333
+        },
+        "BILINEAR_RNN_MATCHED": {
+          "final_distance": 0.24344079729980878,
+          "success": 0.4661458333333333,
+          "mean_distance": 0.38574965761205626,
+          "steps_to_success": 24.660286458333335
+        },
+        "KALMAN_ORACLE": {
+          "final_distance": 0.08365497390638363,
+          "success": 0.9484375,
+          "mean_distance": 0.18386286779823421,
+          "steps_to_success": 11.484375
+        }
+      }
+    }
+  },
+  "regime_contrasts": {
+    "RANDOM_ACTION": {
+      "ALIGNED": {
+        "bilinear_minus_mode": {
+          "final_distance": {
+            "mean_left_minus_right": -0.018852606584262806,
+            "crossed_95ci": [
+              -0.027906325536408757,
+              -0.010585272314006038
+            ]
+          },
+          "success": {
+            "mean_left_minus_right": 0.059765625,
+            "crossed_95ci": [
+              0.03203125,
+              0.08893229166666666
+            ]
+          }
+        },
+        "additive_minus_mode": {
+          "final_distance": {
+            "mean_left_minus_right": -0.013773878603554597,
+            "crossed_95ci": [
+              -0.02312204465084998,
+              -0.005480447320272412
+            ]
+          },
+          "success": {
+            "mean_left_minus_right": 0.034895833333333334,
+            "crossed_95ci": [
+              0.007161458333333333,
+              0.06341145833333334
+            ]
+          }
+        },
+        "no_context_minus_mode": {
+          "final_distance": {
+            "mean_left_minus_right": -0.005359230358014126,
+            "crossed_95ci": [
+              -0.014692456179927831,
+              0.0033556995545795097
+            ]
+          },
+          "success": {
+            "mean_left_minus_right": 0.01640625,
+            "crossed_95ci": [
+              -0.01484700520833333,
+              0.04700846354166662
+            ]
+          }
+        }
+      },
+      "REVERSED": {
+        "bilinear_minus_mode": {
+          "final_distance": {
+            "mean_left_minus_right": -0.29799908798540853,
+            "crossed_95ci": [
+              -0.31954038858290307,
+              -0.2779223818476294
+            ]
+          },
+          "success": {
+            "mean_left_minus_right": 0.5141927083333333,
+            "crossed_95ci": [
+              0.48828125,
+              0.5397135416666666
+            ]
+          }
+        },
+        "additive_minus_mode": {
+          "final_distance": {
+            "mean_left_minus_right": -0.314009576367971,
+            "crossed_95ci": [
+              -0.333900535527708,
+              -0.2953939906439958
+            ]
+          },
+          "success": {
+            "mean_left_minus_right": 0.59375,
+            "crossed_95ci": [
+              0.5739583333333333,
+              0.6135416666666667
+            ]
+          }
+        },
+        "no_context_minus_mode": {
+          "final_distance": {
+            "mean_left_minus_right": -0.31059859452770977,
+            "crossed_95ci": [
+              -0.3329363195305033,
+              -0.28949077930609896
+            ]
+          },
+          "success": {
+            "mean_left_minus_right": 0.5940104166666667,
+            "crossed_95ci": [
+              0.5640625,
+              0.6229166666666667
+            ]
+          }
+        }
+      }
+    },
+    "TEACHER_MIXED_CLOSED_LOOP": {
+      "ALIGNED": {
+        "bilinear_minus_mode": {
+          "final_distance": {
+            "mean_left_minus_right": 0.003940974352644844,
+            "crossed_95ci": [
+              0.0004874687592708445,
+              0.007486572999339386
+            ]
+          },
+          "success": {
+            "mean_left_minus_right": -0.030598958333333332,
+            "crossed_95ci": [
+              -0.047526041666666664,
+              -0.0140625
+            ]
+          }
+        },
+        "additive_minus_mode": {
+          "final_distance": {
+            "mean_left_minus_right": -0.0032499265184166384,
+            "crossed_95ci": [
+              -0.005856420445993536,
+              -0.0006703918313007768
+            ]
+          },
+          "success": {
+            "mean_left_minus_right": 0.024088541666666668,
+            "crossed_95ci": [
+              0.012239583333333333,
+              0.03606770833333333
+            ]
+          }
+        },
+        "no_context_minus_mode": {
+          "final_distance": {
+            "mean_left_minus_right": -0.001437766629487669,
+            "crossed_95ci": [
+              -0.004424888859704955,
+              0.0016399643482149409
+            ]
+          },
+          "success": {
+            "mean_left_minus_right": 0.020572916666666666,
+            "crossed_95ci": [
+              0.008203125,
+              0.033203125
+            ]
+          }
+        }
+      },
+      "REVERSED": {
+        "bilinear_minus_mode": {
+          "final_distance": {
+            "mean_left_minus_right": 0.06539382234451901,
+            "crossed_95ci": [
+              0.05308693404248136,
+              0.07794644998374793
+            ]
+          },
+          "success": {
+            "mean_left_minus_right": -0.18854166666666666,
+            "crossed_95ci": [
+              -0.21419270833333334,
+              -0.16276041666666666
+            ]
+          }
+        },
+        "additive_minus_mode": {
+          "final_distance": {
+            "mean_left_minus_right": -0.09092457575585892,
+            "crossed_95ci": [
+              -0.09850421276052732,
+              -0.0836067492770231
+            ]
+          },
+          "success": {
+            "mean_left_minus_right": 0.2953125,
+            "crossed_95ci": [
+              0.276953125,
+              0.3145833333333333
+            ]
+          }
+        },
+        "no_context_minus_mode": {
+          "final_distance": {
+            "mean_left_minus_right": -0.09052226499816243,
+            "crossed_95ci": [
+              -0.09806221737065622,
+              -0.08351031096799488
+            ]
+          },
+          "success": {
+            "mean_left_minus_right": 0.29921875,
+            "crossed_95ci": [
+              0.2811197916666667,
+              0.318359375
+            ]
+          }
+        }
+      }
+    }
+  },
+  "primary_interaction": {
+    "contrast_name": "G_teacher_mixed - G_random; G = bilinear final distance - mode-gain final distance",
+    "G_random_action": {
+      "mean": -0.018852606584262806,
+      "crossed_95ci": [
+        -0.027906325536408757,
+        -0.010585272314006038
+      ]
+    },
+    "G_teacher_mixed_closed_loop": {
+      "mean": 0.003940974352644844,
+      "crossed_95ci": [
+        0.0005097696482395502,
+        0.007496714694155647
+      ]
+    },
+    "interaction_mean": 0.02279358093690765,
+    "interaction_crossed_95ci": [
+      0.013409149439723175,
+      0.03317764104570642
+    ],
+    "positive_training_seed_count": 26
+  }
+}
