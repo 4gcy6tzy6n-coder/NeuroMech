@@ -1,0 +1,25 @@
+{
+  "experiment_id": "M2_CLOSED_LOOP_ACTIVE_SENSING_V1",
+  "python": "3.9.6",
+  "numpy": "2.0.2",
+  "torch": "2.8.0",
+  "parameters": {
+    "train_seeds": [
+      42000,
+      42019
+    ],
+    "training_episodes_per_seed": 512,
+    "training_steps": 250,
+    "test_episodes_per_condition": 512,
+    "test_horizon": 24,
+    "primary_bootstrap_replicates": 20000,
+    "primary_bootstrap_seed": 20261008,
+    "contrast_seed_rule": "20261008 + condition_index*10 + comparator_index"
+  },
+  "sha256": {
+    "episode_control.csv": "c30b0a7bf1fcddc56fe5264a81027598bb1de7feb28996c879d487a71e82379c",
+    "learned_parameters.csv": "60c050b3a18bcccd03b4d50c47e896722335717fd01b85b2ffba0c67fd3ce408",
+    "training_curves.csv": "a81d22086894229349982bd67d01896c3fcd27ae2226cfe04da51c992f5aeddb",
+    "summary.json": "238a860006f221204aa004e3b05f27a1d164f30de125503b8767a8540cbdfcf7"
+  }
+}

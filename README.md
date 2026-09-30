@@ -20,7 +20,19 @@ The next mainline study is a prospective *C. elegans* thermotaxis experiment ask
 
 The current M2 AI-side experiment remains an exploratory synthetic boundary test. Its sensor-reliability mapping is not established by the worm study and will not serve as the central biological transfer claim. An artificial state-gated update benchmark can continue in parallel with experimental preparation, but its result remains conditional until the biological computation is directly tested.
 
-## Latest experiment: M2 forward-state sensory gate transfer V3
+## Latest experiment: M2 closed-loop active-sensing transfer V1
+
+This synthetic benchmark closes the loop between estimation and action: the agent's motor mode changes whether the next observation contains target information. In the aligned setting, the mode-gain filter beat the constant-gain ablation on mean distance (`0.28436` vs `0.32053`; constant-minus-mode `+0.03617`, crossed 95% interval `[+0.02959, +0.04258]`). However, the generic additive RNN (`0.20710`), bilinear RNN (`0.25015`), GRU (`0.26547`), and Bayesian posterior-mean observer (`0.14296`) all had lower mean distance. The Bayesian observer shares the same greedy controller and is not an optimal active-sensing policy.
+
+The mode-gain advantage also reversed when the context-to-observation mapping changed: mean distance was worse than constant gain in INDEPENDENT (`0.38406` vs `0.33106`) and REVERSED (`0.47153` vs `0.34678`). In REVERSED, the Bayesian observer's unchanged prior left the greedy controller holding in an uninformative mode; this is an action-policy information deadlock. The result therefore narrows the claim: a small aligned advantage over the direct ablation did not establish superiority over stronger recurrent controls or robustness to mapping shift.
+
+This is an exploratory one-dimensional synthetic control task, not biological validation or broad AI evidence. Earlier M2 outcomes were known before this study.
+
+- [Contract, results and failure log](summery/M2_CLOSED_LOOP_ACTIVE_SENSING_V1/)
+- [Runner, finalizer and verifier](model/M2_CLOSED_LOOP_ACTIVE_SENSING_V1/)
+- [Episode outcomes, summary and manifest](data/results/M2_CLOSED_LOOP_ACTIVE_SENSING_V1/)
+
+## Earlier experiment: M2 forward-state sensory gate transfer V3
 
 V3 varied latent persistence, process noise and observation noise during training, then tested in-range conditions and high/low-persistence extrapolations. It adds an unconstrained bilinear recurrent model and a wider GRU to the direct context-free ablation. In `IN_RANGE × ALIGNED`, `MSE(CONSTANT_GAIN_FILTER) − MSE(MODE_GAIN_FILTER)=+0.00929` (crossed 95% interval `[+0.00802,+0.01068]`; 20/20 training-seed means positive). The mode filter's MSE was 0.05358, versus 0.05846 for the bilinear RNN and 0.06209 for the 17-parameter GRU; the task-aware Kalman oracle remained better at 0.05125.
 

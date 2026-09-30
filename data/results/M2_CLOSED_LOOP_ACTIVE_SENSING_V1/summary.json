@@ -1,0 +1,264 @@
+{
+  "experiment_id": "M2_CLOSED_LOOP_ACTIVE_SENSING_V1",
+  "summary": {
+    "ALIGNED": {
+      "policies": {
+        "MODE_GAIN_FILTER": {
+          "mean_distance": 0.2843581101828022,
+          "terminal_distance": 0.245097651676042,
+          "success": 0.19423828125
+        },
+        "CONSTANT_GAIN_FILTER": {
+          "mean_distance": 0.3205253053274646,
+          "terminal_distance": 0.29486327701015397,
+          "success": 0.08388671875
+        },
+        "GENERIC_RNN_1D": {
+          "mean_distance": 0.20709758774464718,
+          "terminal_distance": 0.0781396729464177,
+          "success": 0.6990234375
+        },
+        "BILINEAR_RNN_1D": {
+          "mean_distance": 0.2501517851495009,
+          "terminal_distance": 0.1599609263939783,
+          "success": 0.46748046875
+        },
+        "GRU_1D": {
+          "mean_distance": 0.2654726225984632,
+          "terminal_distance": 0.1946093897044193,
+          "success": 0.43798828125
+        },
+        "BAYESIAN_OBSERVER": {
+          "mean_distance": 0.14296062869834714,
+          "terminal_distance": 0.062402382609434426,
+          "success": 0.8671875
+        }
+      },
+      "contrasts": {
+        "CONSTANT_GAIN_FILTER_minus_mode_mean_distance": {
+          "mean_difference": 0.0361671951446624,
+          "positive_seed_means": 20,
+          "crossed_95_percent_bootstrap_interval": [
+            0.029585102258461123,
+            0.04257689613084947
+          ],
+          "n_seeds": 20,
+          "n_episodes": 512,
+          "primary": true
+        },
+        "GENERIC_RNN_1D_minus_mode_mean_distance": {
+          "mean_difference": -0.07726052243815502,
+          "positive_seed_means": 0,
+          "crossed_95_percent_bootstrap_interval": [
+            -0.08498799231087105,
+            -0.06965345609845829
+          ],
+          "n_seeds": 20,
+          "n_episodes": 512
+        },
+        "BILINEAR_RNN_1D_minus_mode_mean_distance": {
+          "mean_difference": -0.03420632503330125,
+          "positive_seed_means": 0,
+          "crossed_95_percent_bootstrap_interval": [
+            -0.04146536224618103,
+            -0.027172554031531043
+          ],
+          "n_seeds": 20,
+          "n_episodes": 512
+        },
+        "GRU_1D_minus_mode_mean_distance": {
+          "mean_difference": -0.01888548758433899,
+          "positive_seed_means": 3,
+          "crossed_95_percent_bootstrap_interval": [
+            -0.05317774978550006,
+            0.021677748586716873
+          ],
+          "n_seeds": 20,
+          "n_episodes": 512
+        },
+        "BAYESIAN_OBSERVER_minus_mode_mean_distance": {
+          "mean_difference": -0.14139748148445505,
+          "positive_seed_means": 0,
+          "crossed_95_percent_bootstrap_interval": [
+            -0.1529630297242511,
+            -0.1295042842923067
+          ],
+          "n_seeds": 20,
+          "n_episodes": 512
+        }
+      }
+    },
+    "INDEPENDENT": {
+      "policies": {
+        "MODE_GAIN_FILTER": {
+          "mean_distance": 0.3840574091547751,
+          "terminal_distance": 0.35052245741244403,
+          "success": 0.02314453125
+        },
+        "CONSTANT_GAIN_FILTER": {
+          "mean_distance": 0.33106363466358746,
+          "terminal_distance": 0.2638085865124594,
+          "success": 0.05654296875
+        },
+        "GENERIC_RNN_1D": {
+          "mean_distance": 0.18839357031247345,
+          "terminal_distance": 0.0566748649085639,
+          "success": 0.70576171875
+        },
+        "BILINEAR_RNN_1D": {
+          "mean_distance": 0.32782979361509207,
+          "terminal_distance": 0.24921874104475136,
+          "success": 0.33955078125
+        },
+        "GRU_1D": {
+          "mean_distance": 0.3380598974523309,
+          "terminal_distance": 0.2679834061098518,
+          "success": 0.2615234375
+        },
+        "BAYESIAN_OBSERVER": {
+          "mean_distance": 0.13277590528014116,
+          "terminal_distance": 0.0027344307745806873,
+          "success": 0.9921875
+        }
+      },
+      "contrasts": {
+        "CONSTANT_GAIN_FILTER_minus_mode_mean_distance": {
+          "mean_difference": -0.052993774491187653,
+          "positive_seed_means": 0,
+          "crossed_95_percent_bootstrap_interval": [
+            -0.058532770308211184,
+            -0.04754654874735934
+          ],
+          "n_seeds": 20,
+          "n_episodes": 512
+        },
+        "GENERIC_RNN_1D_minus_mode_mean_distance": {
+          "mean_difference": -0.19566383884230162,
+          "positive_seed_means": 0,
+          "crossed_95_percent_bootstrap_interval": [
+            -0.2015910081072434,
+            -0.18941642688971116
+          ],
+          "n_seeds": 20,
+          "n_episodes": 512
+        },
+        "BILINEAR_RNN_1D_minus_mode_mean_distance": {
+          "mean_difference": -0.05622761553968303,
+          "positive_seed_means": 0,
+          "crossed_95_percent_bootstrap_interval": [
+            -0.06665774023882477,
+            -0.045423325402316556
+          ],
+          "n_seeds": 20,
+          "n_episodes": 512
+        },
+        "GRU_1D_minus_mode_mean_distance": {
+          "mean_difference": -0.04599751170244417,
+          "positive_seed_means": 3,
+          "crossed_95_percent_bootstrap_interval": [
+            -0.08241356429007282,
+            -0.008467626268811762
+          ],
+          "n_seeds": 20,
+          "n_episodes": 512
+        },
+        "BAYESIAN_OBSERVER_minus_mode_mean_distance": {
+          "mean_difference": -0.25128150387463394,
+          "positive_seed_means": 0,
+          "crossed_95_percent_bootstrap_interval": [
+            -0.25802591361149096,
+            -0.24425219641412696
+          ],
+          "n_seeds": 20,
+          "n_episodes": 512
+        }
+      }
+    },
+    "REVERSED": {
+      "policies": {
+        "MODE_GAIN_FILTER": {
+          "mean_distance": 0.4715313724576845,
+          "terminal_distance": 0.44254394591553137,
+          "success": 0.0
+        },
+        "CONSTANT_GAIN_FILTER": {
+          "mean_distance": 0.34678466425684745,
+          "terminal_distance": 0.28749023206764834,
+          "success": 0.12197265625
+        },
+        "GENERIC_RNN_1D": {
+          "mean_distance": 0.2794881285110023,
+          "terminal_distance": 0.11216310861636884,
+          "success": 0.55869140625
+        },
+        "BILINEAR_RNN_1D": {
+          "mean_distance": 0.49798543598590184,
+          "terminal_distance": 0.48996581949759277,
+          "success": 0.0443359375
+        },
+        "GRU_1D": {
+          "mean_distance": 0.4440130651331856,
+          "terminal_distance": 0.38740723463124593,
+          "success": 0.1162109375
+        },
+        "BAYESIAN_OBSERVER": {
+          "mean_distance": 0.5,
+          "terminal_distance": 0.5,
+          "success": 0.0
+        }
+      },
+      "contrasts": {
+        "CONSTANT_GAIN_FILTER_minus_mode_mean_distance": {
+          "mean_difference": -0.12474670820083703,
+          "positive_seed_means": 0,
+          "crossed_95_percent_bootstrap_interval": [
+            -0.1302551619500264,
+            -0.11934365161891038
+          ],
+          "n_seeds": 20,
+          "n_episodes": 512
+        },
+        "GENERIC_RNN_1D_minus_mode_mean_distance": {
+          "mean_difference": -0.1920432439466822,
+          "positive_seed_means": 0,
+          "crossed_95_percent_bootstrap_interval": [
+            -0.19887335926548985,
+            -0.18488536627841315
+          ],
+          "n_seeds": 20,
+          "n_episodes": 512
+        },
+        "BILINEAR_RNN_1D_minus_mode_mean_distance": {
+          "mean_difference": 0.026454063528217376,
+          "positive_seed_means": 16,
+          "crossed_95_percent_bootstrap_interval": [
+            0.011081509624564206,
+            0.04196866301241243
+          ],
+          "n_seeds": 20,
+          "n_episodes": 512
+        },
+        "GRU_1D_minus_mode_mean_distance": {
+          "mean_difference": -0.027518307324498892,
+          "positive_seed_means": 3,
+          "crossed_95_percent_bootstrap_interval": [
+            -0.05229476470649388,
+            -0.0032350085813050147
+          ],
+          "n_seeds": 20,
+          "n_episodes": 512
+        },
+        "BAYESIAN_OBSERVER_minus_mode_mean_distance": {
+          "mean_difference": 0.028468627542315515,
+          "positive_seed_means": 20,
+          "crossed_95_percent_bootstrap_interval": [
+            0.021245931321027454,
+            0.0355918470906181
+          ],
+          "n_seeds": 20,
+          "n_episodes": 512
+        }
+      }
+    }
+  }
+}
