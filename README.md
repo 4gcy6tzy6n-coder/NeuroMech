@@ -14,6 +14,12 @@ The project is converging on **two mechanism-grounded studies plus one shared ar
 | **M2 — motor-state feedback and sensory context** | Does the relation between motor-state timing and sensory/environmental context contribute to thermotaxis in the RIM–AIY model? | Full mode-trajectory replay yielded a positive sensory-minus-replay direction contrast, while forward-state summaries were close; a low-noise reverse-tail difference remains and the analysis is exploratory. This does not identify a unique feedback site or establish biological/AI transfer. See [replay results and limitations](summery/M2_STATE_TRAJECTORY_REPLAY_V1/). |
 | **Cross-mechanism benchmark** | Do mechanism-specific computations outperform capacity-matched generic controls under the task conditions that make those computations relevant? | A shared benchmark is in development. M1 and M2 use distinct tasks and native outcome measures; raw scores will not be pooled. See the [project convergence record](summery/PROJECT_CONVERGENCE_20261001/CONVERGENCE.md). |
 
+### Converged experimental package
+
+The intended core package is **M1 + M2 + one shared artificial benchmark**. M1 tests higher-order correction in visual-motion computation; M2 tests feedback-site and state-timing specificity in the RIM–AIY thermotaxis circuit; the shared benchmark asks whether the extracted computations provide benefits over capacity-matched generic controls on their respective tasks. These are linked by a common claim about transferring evidence-grounded computations, not by pooling unlike biological or task outcomes.
+
+**Fish1.5 is supporting structure–function evidence**, based on same-specimen functional imaging and EM registration. It can strengthen biological grounding and help constrain mechanism definitions, but it is not currently designated as a fourth full artificial-mechanism study. The shared benchmark and the two core studies remain prospective work; existing exploratory results do not establish the paper-level claim.
+
 The M2 state-gated sensory-update and active-sensing studies are supporting algorithmic probes, not substitutes for the feedback-site-specificity study or direct biological validation. Their benefits are conditional on the task's state/observation mapping, and stronger generic or task-aware references remain competitive. See [M2 transfer evidence](summery/M2_FORWARD_STATE_SENSORY_GATE_V3/RESULTS.md) and [closed-loop active-sensing results](summery/M2_CLOSED_LOOP_ACTIVE_SENSING_V1/RESULTS.md).
 
 ## Active integrated study: O3 AIY state-pattern rescue
