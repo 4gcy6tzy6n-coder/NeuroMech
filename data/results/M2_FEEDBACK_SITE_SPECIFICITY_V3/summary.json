@@ -1,0 +1,195 @@
+{
+  "experiment": "M2_FEEDBACK_SITE_SPECIFICITY_V3",
+  "status": "COMPLETED_OUTCOME_INFORMED_SOURCE_MODEL_EXPERIMENT",
+  "question": "Does sensory-site feedback retain a warm-direction advantage over a mean-run-duration-calibrated motor-only control across imposed sensory-noise scales?",
+  "primary": {
+    "estimand": "equal-weighted mean of within-seed sensory-site minus motor-only warm-direction-index differences over noise scales",
+    "mean": 0.08056795831336627,
+    "ci95": [
+      0.07751788259595249,
+      0.08356706656519484
+    ],
+    "positive_seed_blocks": 200,
+    "n_seed_blocks": 200
+  },
+  "calibration": {
+    "0.75": {
+      "sensory_site_mean_forward_run_s": 9.112561204921471,
+      "selected_motor_feedback": 0.79,
+      "selected_motor_only_mean_forward_run_s": 8.978344027645047,
+      "absolute_development_match_error_s": 0.13421717727642424
+    },
+    "1.0": {
+      "sensory_site_mean_forward_run_s": 4.62161128217757,
+      "selected_motor_feedback": 0.72,
+      "selected_motor_only_mean_forward_run_s": 4.550953176038284,
+      "absolute_development_match_error_s": 0.07065810613928569
+    },
+    "1.25": {
+      "sensory_site_mean_forward_run_s": 3.501171613133807,
+      "selected_motor_feedback": 0.655,
+      "selected_motor_only_mean_forward_run_s": 3.5077956269404256,
+      "absolute_development_match_error_s": 0.006624013806618478
+    }
+  },
+  "heldout_by_noise_scale": {
+    "0.75": {
+      "selected_motor_feedback": 0.79,
+      "arms": {
+        "SENSORY_SITE_FB": {
+          "warm_direction_index": 0.751563389459275,
+          "mean_forward_run_s": 9.167542875400363,
+          "median_forward_run_s": 1.2716666666666665,
+          "p90_forward_run_s": 25.687733333333345,
+          "fraction_forward_runs_ge_30s": 0.0885714285654002,
+          "forward_occupancy": 0.1619773333333333,
+          "n_forward_runs": 177.545,
+          "mean_final_warm_displacement": 39.969767251591875
+        },
+        "MOTOR_ONLY_MATCHED": {
+          "warm_direction_index": 0.6712652698797764,
+          "mean_forward_run_s": 9.20290696121431,
+          "median_forward_run_s": 2.6163333333333334,
+          "p90_forward_run_s": 24.442066666666673,
+          "fraction_forward_runs_ge_30s": 0.08301110360815286,
+          "forward_occupancy": 0.18513280000000001,
+          "n_forward_runs": 201.58,
+          "mean_final_warm_displacement": 35.229335259425646
+        },
+        "NO_FEEDBACK": {
+          "warm_direction_index": 0.1432921132518831,
+          "mean_forward_run_s": 0.7527235972976549,
+          "median_forward_run_s": 0.5873333333333334,
+          "p90_forward_run_s": 1.3020666666666667,
+          "fraction_forward_runs_ge_30s": 0.0,
+          "forward_occupancy": 0.012174,
+          "n_forward_runs": 161.69,
+          "mean_final_warm_displacement": 3.5931844986866714
+        }
+      },
+      "sensory_site_minus_motor_only_direction_index": {
+        "mean": 0.08029811957949856,
+        "ci95": [
+          0.07409684404518044,
+          0.08653521646813146
+        ],
+        "positive_seed_blocks": 192
+      },
+      "sensory_site_minus_motor_only_mean_run_duration_s": {
+        "mean": -0.035364085813948905,
+        "ci95": [
+          -0.271129663999438,
+          0.20102924752080137
+        ]
+      }
+    },
+    "1.0": {
+      "selected_motor_feedback": 0.72,
+      "arms": {
+        "SENSORY_SITE_FB": {
+          "warm_direction_index": 0.5686393645231013,
+          "mean_forward_run_s": 4.563784255160569,
+          "median_forward_run_s": 1.4569999999999999,
+          "p90_forward_run_s": 12.115400000000001,
+          "fraction_forward_runs_ge_30s": 0.02655308771963627,
+          "forward_occupancy": 0.22384,
+          "n_forward_runs": 491.265,
+          "mean_final_warm_displacement": 34.94706294344087
+        },
+        "MOTOR_ONLY_MATCHED": {
+          "warm_direction_index": 0.47807474816920115,
+          "mean_forward_run_s": 4.546161652081136,
+          "median_forward_run_s": 2.2576666666666663,
+          "p90_forward_run_s": 10.765,
+          "fraction_forward_runs_ge_30s": 0.016351105103633225,
+          "forward_occupancy": 0.23935473333333332,
+          "n_forward_runs": 526.945,
+          "mean_final_warm_displacement": 30.186311034952922
+        },
+        "NO_FEEDBACK": {
+          "warm_direction_index": 0.15544631496752856,
+          "mean_forward_run_s": 0.9194885150799701,
+          "median_forward_run_s": 0.6679999999999999,
+          "p90_forward_run_s": 1.7584666666666668,
+          "fraction_forward_runs_ge_30s": 0.0,
+          "forward_occupancy": 0.04559953333333334,
+          "n_forward_runs": 495.935,
+          "mean_final_warm_displacement": 5.857529869645984
+        }
+      },
+      "sensory_site_minus_motor_only_direction_index": {
+        "mean": 0.09056461635390019,
+        "ci95": [
+          0.08584992393039886,
+          0.0954422522373899
+        ],
+        "positive_seed_blocks": 199
+      },
+      "sensory_site_minus_motor_only_mean_run_duration_s": {
+        "mean": 0.01762260307943296,
+        "ci95": [
+          -0.03175020163407665,
+          0.06710204035074888
+        ]
+      }
+    },
+    "1.25": {
+      "selected_motor_feedback": 0.655,
+      "arms": {
+        "SENSORY_SITE_FB": {
+          "warm_direction_index": 0.4398294083720131,
+          "mean_forward_run_s": 3.470843767085679,
+          "median_forward_run_s": 1.5490000000000002,
+          "p90_forward_run_s": 8.687933333333335,
+          "fraction_forward_runs_ge_30s": 0.0074729747423030405,
+          "forward_occupancy": 0.28555566666666665,
+          "n_forward_runs": 823.38,
+          "mean_final_warm_displacement": 32.51838604905285
+        },
+        "MOTOR_ONLY_MATCHED": {
+          "warm_direction_index": 0.3689882693653131,
+          "mean_forward_run_s": 3.507505265210656,
+          "median_forward_run_s": 2.0916666666666663,
+          "p90_forward_run_s": 7.866266666666668,
+          "fraction_forward_runs_ge_30s": 0.003494573819177473,
+          "forward_occupancy": 0.2974483333333333,
+          "n_forward_runs": 848.425,
+          "mean_final_warm_displacement": 28.884553443108725
+        },
+        "NO_FEEDBACK": {
+          "warm_direction_index": 0.15282970339431384,
+          "mean_forward_run_s": 1.0580870378916536,
+          "median_forward_run_s": 0.7979999999999999,
+          "p90_forward_run_s": 2.0792,
+          "fraction_forward_runs_ge_30s": 0.0,
+          "forward_occupancy": 0.09404633333333333,
+          "n_forward_runs": 888.885,
+          "mean_final_warm_displacement": 7.7367278605950425
+        }
+      },
+      "sensory_site_minus_motor_only_direction_index": {
+        "mean": 0.07084113900670007,
+        "ci95": [
+          0.06714243214487838,
+          0.07456320847283772
+        ],
+        "positive_seed_blocks": 198
+      },
+      "sensory_site_minus_motor_only_mean_run_duration_s": {
+        "mean": -0.036661498124977446,
+        "ci95": [
+          -0.058697501308486486,
+          -0.0147737447607854
+        ]
+      }
+    }
+  },
+  "analysis_unit": "simulation seed block; 50 agents clustered within each block",
+  "biological_inference": "none; source-model counterfactual only",
+  "limitations": [
+    "outcome-informed follow-up because earlier M2 model results were inspected",
+    "motor-only control is calibrated only on mean forward-run duration",
+    "noise scales are imposed by this simulation and are not measured biological boundary conditions",
+    "Python implementation parity with the author's MATLAB/Octave implementation was not separately tested"
+  ]
+}

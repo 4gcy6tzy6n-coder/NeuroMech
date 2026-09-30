@@ -1,0 +1,28 @@
+{
+  "status": "PASS",
+  "rows": 1800,
+  "unique_seed_scale_arm_keys": 1800,
+  "primary_mean": 0.08056795831336627,
+  "primary_ci95": [
+    0.07751788259595249,
+    0.08356706656519484
+  ],
+  "per_scale": {
+    "0.75": {
+      "mean": 0.08029811957949856,
+      "positive_seed_blocks": 192
+    },
+    "1.0": {
+      "mean": 0.09056461635390019,
+      "positive_seed_blocks": 199
+    },
+    "1.25": {
+      "mean": 0.07084113900670007,
+      "positive_seed_blocks": 198
+    }
+  },
+  "contract_hash_matches": true,
+  "runner_hash_matches": true,
+  "verified_runner_file": "run_experiment_executed.py",
+  "manifest_output_hashes_match": true
+}
