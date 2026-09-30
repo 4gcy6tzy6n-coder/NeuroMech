@@ -33,11 +33,16 @@ Fish1.5 is retained as supporting structure–function evidence, not a fourth ar
 
 V2 extended the earlier exploratory benchmark with trained recurrent estimators for M2 and an overlapping-input delayed-teaching task for M5. In M2, an 8-unit context-aware GRU (297 parameters) had lower latent-state MSE than the 3-parameter context-gain filter in aligned, independent, and reversed mappings; the aligned mean contrast `GRU − filter` was `−0.02473` (95% seed-bootstrap interval `[−0.02640, −0.02293]`). The observation-only GRU (273 parameters) was approximately tied with the filter when aligned (`−0.00008`, interval `[−0.00279, +0.00265]`) and better in the other mappings. This does not support a unique context-gain advantage against the stronger learned estimators, and parameter counts are not matched.
 
-In M5, the 16-dimensional eligibility trace exceeded an equal-state latest-input memory at delays 1, 4, and 16 (`+0.42798`, `+0.39426`, and `+0.29788` accuracy; each 95% interval excluded zero), but the contrast was unresolved at delay 64 (`+0.02817`, interval `[−0.00205, +0.05936]`). An exact FIFO reference outperformed eligibility at every delay; FIFO memory grows with delay and is not state matched. Thus the trace offers bounded artificial credit-assignment benefit over a weak latest-input control at short/medium delays, not a general advantage over explicit memory. M2 MSE and M5 accuracy remain separate; the study is post-result exploratory and establishes neither biological validation nor general AI benefit. The first run's parameter/state-accounting issue was retained as noncanonical; corrected outputs are the canonical record.
+In M5, the 16-dimensional eligibility trace exceeded an equal-state latest-input memory at delays 1, 4, and 16 (`+0.42798`, `+0.39426`, and `+0.29788` accuracy; each 95% interval excluded zero), but the contrast was unresolved at delay 64 (`+0.02817`, interval `[−0.00205, +0.05936]`). An exact FIFO reference outperformed eligibility at every delay; FIFO memory grows with delay and is not state matched. Thus the trace offers bounded artificial credit-assignment benefit over a weak latest-input control at short/medium delays, not a general advantage over explicit memory. M2 MSE and M5 accuracy remain separate; the study is post-result exploratory and establishes neither biological validation nor general AI benefit. The first run's parameter/state-accounting issue was retained as noncanonical. Corrected outputs passed an independent verifier and byte-identical full rerun; figure source, data, and rendered QA are linked below.
 
 - [Contract, results, and implementation-correction record](summery/CROSS_MECHANISM_CONTEXT_MEMORY_V2/)
+- [Detailed results and failure analysis](summery/CROSS_MECHANISM_CONTEXT_MEMORY_V2/RESULTS.md)
+- [Figure contract](summery/CROSS_MECHANISM_CONTEXT_MEMORY_V2/FIGURE_CONTRACT.md)
 - [Runner and verifier](model/CROSS_MECHANISM_CONTEXT_MEMORY_V2/)
-- [Corrected canonical outcomes](data/results/CROSS_MECHANISM_CONTEXT_MEMORY_V2/canonical_corrected/)
+- [Corrected outcomes and independent rerun hashes](data/results/CROSS_MECHANISM_CONTEXT_MEMORY_V2/)
+- [Figure source and audit bundle](data/results/CROSS_MECHANISM_CONTEXT_MEMORY_V2/figures/)
+
+![CROSS_MECHANISM_CONTEXT_MEMORY_V2 task-native contrasts](data/results/CROSS_MECHANISM_CONTEXT_MEMORY_V2/figures/CROSS_MECHANISM_CONTEXT_MEMORY_V2.png)
 
 ### Previous cross-mechanism experiment: context and delayed credit V1
 

@@ -1,0 +1,32 @@
+{
+  "experiment_id": "CROSS_MECHANISM_CONTEXT_MEMORY_V2",
+  "figure": "Two task-native panels; M2 MSE and M5 accuracy are kept separate.",
+  "physical_size_mm": [
+    179.8,
+    84.8
+  ],
+  "raster_dpi": 600,
+  "panel_alignment": "PASS; audited with 1.5 pt alignment/gutter tolerances",
+  "pdf_text_audit": "PASS; minimum rendered glyph 5.2 pt, 38 text runs",
+  "collision_audit": "PASS; zero warnings or failures",
+  "source_files": {
+    "model/CROSS_MECHANISM_CONTEXT_MEMORY_V2/plot_results.py": "c2941750e58381492aa47a8b37811dcaf77699063d2254d6c58e6a13ed3a6a03",
+    "model/CROSS_MECHANISM_CONTEXT_MEMORY_V2/figure_alignment.py": "137957365455222785b207a7f7b17c913bfd2b98c7af68202870b7785b73843e"
+  },
+  "source_data_sha256": {
+    "data/results/CROSS_MECHANISM_CONTEXT_MEMORY_V2/canonical_corrected/m2_seed_results.csv": "6e62b7672375aef05c7d3eff5a9142bd378875380a6253f7380defcad8b1b0d5",
+    "data/results/CROSS_MECHANISM_CONTEXT_MEMORY_V2/canonical_corrected/m5_seed_results.csv": "55f63a30bc80c448e82c1cab2a4ee8198a47973452b184115d197b2b5e283938",
+    "data/results/CROSS_MECHANISM_CONTEXT_MEMORY_V2/canonical_corrected/summary.json": "472d5f27ee2f0d9eb3207ca9e0329be179eb678b4183f229218e5b2e7e1ad89f"
+  },
+  "figure_sha256": {
+    "CROSS_MECHANISM_CONTEXT_MEMORY_V2.pdf": "037de8387e35e63548664171c04ae1485277dea7248acba66bef6585bf893c31",
+    "CROSS_MECHANISM_CONTEXT_MEMORY_V2.svg": "78cc69de68450903fb443ab3ed964d440fe48fc723059e34ad03a271b85bb22f",
+    "CROSS_MECHANISM_CONTEXT_MEMORY_V2.png": "4557eade2dbd51e4a193ed5b156d61fea85c2352f991055dd3a94af8c7f6eb5c",
+    "CROSS_MECHANISM_CONTEXT_MEMORY_V2.tiff": "5eabe778612c6ed5f3caf8ba0716682f48edd85355ac2d4fee83ed50e92378b0"
+  },
+  "qa_report_sha256": {
+    "CROSS_MECHANISM_CONTEXT_MEMORY_V2.alignment.json": "a9c6620be3a51732f3c950c5f395dec2989498913ec96bd7bee54a446f5e017a",
+    "CROSS_MECHANISM_CONTEXT_MEMORY_V2.layout.json": "e76a537bba7e64f646bb4a8042344277aec14847ce3aa97f5320971f8602a204",
+    "CROSS_MECHANISM_CONTEXT_MEMORY_V2.collision-audit.json": "1bcdf008743c85d4f057cbd7f4397a9535e0a25c054a77205a4cb44530b3607d"
+  }
+}

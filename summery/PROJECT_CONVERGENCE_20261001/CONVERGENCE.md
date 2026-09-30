@@ -81,6 +81,8 @@ CURRENT_NEXT_WORK_PACKAGE = CLAIM_AND_CONTRIBUTION_REPLAN_FROM_COMPLETED_EVIDENC
 
 This historical phase decision does not change any registered experiment, result, or model contract. The current evidence and novelty assessment is in [`NMI_CLAIM_AND_NOVELTY_AUDIT_20261001.md`](../NMI_CLAIM_AND_NOVELTY_AUDIT_20261001.md).
 
+---
+
 ## 2026-10-01 Owner direction update — experimental work resumed
 
 The owner subsequently directed the project to stop treating prior gate and phase recommendations as blockers and to continue toward a publishable biological-computation-to-AI result. The `NEW_SCATTERED_EXPERIMENTS = PAUSED` line above records the earlier decision only; it is superseded as an active work restriction. Biological evidence and artificial outcomes remain separately labeled, and unfavorable results remain part of the evidence base.
@@ -120,3 +122,15 @@ The post-result [`M2_COROLLARY_DISCHARGE_PLACEMENT_TRANSFER_V1`](../M2_COROLLARY
 ## 2026-10-01 shared M2/M5 context-memory benchmark
 
 [`CROSS_MECHANISM_CONTEXT_MEMORY_V1`](../CROSS_MECHANISM_CONTEXT_MEMORY_V1/RESULTS.md) applied a common seed-block, bootstrap, split, and resource-reporting workflow to separate M2 sensory-state estimation and M5 delayed-credit tasks. M2's equal-parameter context-gain filter beat its additive control in the aligned mapping (`+0.05871` MSE; 95% interval `[+0.05770,+0.05973]`) and lost when context was independent or reversed. M5 eligibility beat a deliberately misassigned-current-feature control, but tied an equal-state persistent-cue memory arm exactly at all four delays. The M5 result therefore does not show that trace decay is better than ordinary cue retention. The outcomes retain different units and were not pooled; the benchmark does not establish a shared positive principle or general AI benefit. It is exploratory and post-result. The first numeric run emitted warnings and is archived as noncanonical; the corrected run passed the independent verifier and reproduced the seed CSVs and summary byte-for-byte in a fresh directory.
+
+---
+
+## 2026-10-01 CROSS_MECHANISM_CONTEXT_MEMORY_V2 — trained estimators and overlapping delayed credit
+
+V2 extended the exploratory M2/M5 benchmark with two trained 8-unit GRUs and a continuous overlapping-input teaching stream. In M2, the context-aware GRU (297 parameters) had lower MSE than the 3-parameter context-gain filter across aligned, independent, and reversed mappings; the observation-only GRU (273 parameters) approximately tied the filter only in the aligned condition and outperformed it under mapping shifts. This comparison is not capacity matched and weakens the claim that the small context-gain operation has a unique advantage over a stronger trained estimator.
+
+In M5, the 16-dimensional eligibility trace improved classification accuracy over an equal-state latest-input cache at delays 1–16, but its delay-64 contrast was unresolved. Exact FIFO memory outperformed the trace at all delays while retaining `16 × delay` state dimensions. The result supports only a bounded synthetic credit-assignment advantage over a weak cache, with an explicit memory/accuracy trade-off. M2 MSE and M5 accuracy remain separate and are not pooled.
+
+The first execution exposed a parameter-accounting error (the observation-only GRU readout was omitted) and implicit latest-input state accounting. These were corrected and the first outputs retained as noncanonical. An independent corrected run reproduced the canonical seed-level CSVs and summary byte-for-byte; the structural/arithmetic verifier passed. Since the correction and V2 design followed inspection of earlier outcomes, this remains post-result exploratory. No biological validation, general AI benefit, or shared positive computational principle is established.
+
+The detailed record, plot contract, model, data, and audit artifacts are linked from the [repository README](../../README.md) under the latest cross-mechanism experiment section.
