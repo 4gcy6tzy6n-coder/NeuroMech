@@ -1,0 +1,55 @@
+{
+  "experiment_id": "M2_SEQUENTIAL_DECISION_V1",
+  "classification": "POST_RESULT_EXPLORATORY_ARTIFICIAL_TASK_TRANSFER",
+  "python": "3.9.6",
+  "numpy": "2.0.2",
+  "torch": "2.8.0",
+  "contract_sha256": "08b7d756bcd13a5977d5b56d69ee88596123f5045c7097e8652926d6abbf6cd0",
+  "runner_sha256": "16d3ad95c5b88a794189f0ad045d5a6d5c53c943acddb8b2f7aa44bd69cf6b84",
+  "seeds": [
+    73000,
+    73019
+  ],
+  "train_sizes": [
+    16,
+    64,
+    256,
+    1024
+  ],
+  "conditions": [
+    "ALIGNED",
+    "INDEPENDENT",
+    "REVERSED"
+  ],
+  "arms": [
+    "MODE_GAIN_FILTER",
+    "CONSTANT_GAIN_FILTER",
+    "LINEAR_BILINEAR_RNN",
+    "BAYES_ORACLE"
+  ],
+  "sequence_length": 32,
+  "test_episodes_per_seed_condition": 512,
+  "updates": 250,
+  "batch_size": 16,
+  "sample_tokens_per_fit": 128000,
+  "bootstrap_resamples": 20000,
+  "bootstrap_seed": 20261004,
+  "preflight_checks": [
+    {
+      "arm": "MODE_GAIN_FILTER",
+      "parameter_count": 4,
+      "finite": true
+    },
+    {
+      "arm": "CONSTANT_GAIN_FILTER",
+      "parameter_count": 3,
+      "finite": true
+    },
+    {
+      "arm": "LINEAR_BILINEAR_RNN",
+      "parameter_count": 5,
+      "finite": true
+    }
+  ],
+  "outcomes_computed": false
+}

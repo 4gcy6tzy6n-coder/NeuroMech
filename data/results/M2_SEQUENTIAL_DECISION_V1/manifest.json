@@ -1,0 +1,11 @@
+{
+  "experiment_id": "M2_SEQUENTIAL_DECISION_V1",
+  "contract_sha256": "08b7d756bcd13a5977d5b56d69ee88596123f5045c7097e8652926d6abbf6cd0",
+  "runner_sha256": "16d3ad95c5b88a794189f0ad045d5a6d5c53c943acddb8b2f7aa44bd69cf6b84",
+  "sha256": {
+    "PREFLIGHT.json": "818492f9284415dfd69be09c86b23c386d4ff7c14f6658d7d5c6c90a40836bf8",
+    "episode_metrics.csv": "da4623e5bffd6e6f907a566b8cccbe761b0699f97d280d2fd8e2cbb87e879687",
+    "training_metrics.csv": "1a51a6a27d3e7f9d0cf6c194e0d2cc566476227d8ee48f80250f608d51849ea9",
+    "summary.json": "3d66e346a588cf7eab3118bede52a593ef499e77d85be90439c1a68d283011ea"
+  }
+}

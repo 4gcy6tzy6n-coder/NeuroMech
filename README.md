@@ -11,7 +11,7 @@ The project is converging on **two mechanism-grounded studies plus one shared ar
 | Line | Biological question | Current artificial evidence |
 |---|---|---|
 | **M1 — higher-order visual-motion correction** | What does a source-defined third-order correction contribute to fly motion estimation? | The existing RR19 natural-scene run is partial and exploratory. H1/H3 were in the predicted direction, while the phase-mismatched specificity contrast H2 was in the opposite direction. H4 and an overall four-hypothesis verdict are not established. See [partial results](experiments/m1_higher_order/RR19_STEP4_PARTIAL_RESULTS.md). |
-| **M2 — motor-state feedback and sensory context** | Does the relation between motor-state timing and sensory/environmental context contribute to thermotaxis in the RIM–AIY model? | Full mode-trajectory replay yielded a positive sensory-minus-replay contrast, with a low-noise reverse-tail mismatch. In the newest synthetic benchmark, state-conditioned gain beat the context-free filter only in the aligned mapping and fell behind it under independent/reversed mappings; a Kalman oracle remained better in every mapping. V1/V2/V3 show comparator-sensitive results and do not establish biological/AI transfer. See [replay](summery/M2_STATE_TRAJECTORY_REPLAY_V1/), [V1](summery/M2_LOW_DATA_GATING_V1/), [V2](summery/M2_LOW_DATA_GATING_V2/), and [V3](summery/M2_LOW_DATA_GATING_V3/). |
+| **M2 — motor-state feedback and sensory context** | Does the relation between motor-state timing and sensory/environmental context contribute to thermotaxis in the RIM–AIY model? | Continuous-estimation V3 found an aligned benefit over the context-free filter and a reversal under mapping shift. A new sequential binary-decision task reproduced the same pattern: +6.45 percentage points over constant gain when aligned, but −11.77 points under reversed mapping. The task-aware Bayes reference remained stronger. These are exploratory synthetic results, not biological/AI transfer. See [source-model replay](summery/M2_STATE_TRAJECTORY_REPLAY_V1/), [continuous V3](summery/M2_LOW_DATA_GATING_V3/), and [sequential decision](summery/M2_SEQUENTIAL_DECISION_V1/). |
 | **Cross-mechanism benchmark** | Do mechanism-specific computations outperform capacity-matched generic controls under the task conditions that make those computations relevant? | A shared benchmark is in development. M1 and M2 use distinct tasks and native outcome measures; raw scores will not be pooled. See the [project convergence record](summery/PROJECT_CONVERGENCE_20261001/CONVERGENCE.md). |
 
 ### Converged experimental package
@@ -22,7 +22,7 @@ The intended core package is **M1 + M2 + one shared artificial benchmark**. M1 t
 
 The M2 state-gated sensory-update and active-sensing studies are supporting algorithmic probes, not substitutes for the feedback-site-specificity study or direct biological validation. Their benefits are conditional on the task's state/observation mapping, and stronger generic or task-aware references remain competitive. See [M2 transfer evidence](summery/M2_FORWARD_STATE_SENSORY_GATE_V3/RESULTS.md) and [closed-loop active-sensing results](summery/M2_CLOSED_LOOP_ACTIVE_SENSING_V1/RESULTS.md).
 
-## Latest artificial benchmark: M2 low-data conditional update V1
+## Earlier artificial benchmark: M2 low-data conditional update V1
 
 Twenty paired task seeds compared a four-parameter state-conditioned gain filter with a four-parameter additive scalar RNN at four training-set sizes (16, 64, 256, 1024), using the same 250 optimizer updates and 640,000 sequence-step tokens per fit. In the ALIGNED synthetic mapping, `MSE(GENERIC_RNN_1D) − MSE(MODE_GAIN_FILTER)` averaged `+0.01149` (seed-bootstrap 95% interval `[+0.01083, +0.01219]`; 20/20 seeds positive). The effect was nearly constant across data sizes. In INDEPENDENT and REVERSED mappings, the additive RNN was better at every size; the reversed mapping produced the largest penalty for the structured update.
 
@@ -50,13 +50,23 @@ This supports a task-bounded synthetic result: context-dependent gain helps when
 - [Runner and independent verifier](model/M2_LOW_DATA_GATING_V3/)
 - [Episode outcomes and manifest](data/results/M2_LOW_DATA_GATING_V3/)
 
+## New task-family test: M2 sequential binary decision V1
+
+The state-conditioned update was transferred from continuous latent-state estimation to terminal left/right decisions after 32 steps of noisy evidence accumulation. In the ALIGNED synthetic condition, accuracy averaged `0.7029` across four training-set sizes, versus `0.6385` for constant gain; the paired difference was `+0.06448` (95% seed-bootstrap interval `[+0.05703, +0.07232]`, 20/20 positive). The context-free model was better in INDEPENDENT (`0.6413` vs `0.6145`) and REVERSED (`0.6368` vs `0.5192`). The Bayesian oracle achieved `0.760–0.838` across conditions.
+
+This is evidence that the artificial operation generalizes across two task objectives under the imposed aligned context relation, with substantial mismatch cost and a gap to the oracle. The context/evidence relation is synthetic and has not been established as a biological property of the worm circuit. The result does not establish biological-to-AI transfer or broad AI benefit.
+
+- [Contract, results and failure analysis](summery/M2_SEQUENTIAL_DECISION_V1/)
+- [Runner and independent verifier](model/M2_SEQUENTIAL_DECISION_V1/)
+- [Episode outcomes and manifest](data/results/M2_SEQUENTIAL_DECISION_V1/)
+
 ## Active integrated study: O3 AIY state-pattern rescue
 
 The next mainline study is a prospective *C. elegans* thermotaxis experiment asking whether restoring the forward-state timing of AIY activity under RIM perturbation rescues thermosensory gating and forward-run persistence. Its decisive control is the same AIY stimulation waveform delivered at yoked times, matched for total light exposure. Broad motor-state sensory gating and AIY optogenetic control are already established; the candidate contribution is the specific timing-dependent rescue in the RIM–AIY thermotaxis circuit, not the general phenomenon. The focused literature audit and executable design outline are in [O3 route plan](experiments/biological_validation/O3_AIY_STATE_RESCUE_NOVELTY_AND_EXECUTION_PLAN.md).
 
 The current M2 AI-side experiment remains an exploratory synthetic boundary test. Its sensor-reliability mapping is not established by the worm study and will not serve as the central biological transfer claim. An artificial state-gated update benchmark can continue in parallel with experimental preparation, but its result remains conditional until the biological computation is directly tested.
 
-## Latest experiment: M2 full motor-state trajectory replay V1
+## Previous source-model experiment: M2 full motor-state trajectory replay V1
 
 Complete forward/reverse mode sequences from independent corrected-model development runs were replayed on held-out heading streams, preserving each 200-second mode trace while breaking its relationship to the held-out position and heading. The equal-weighted sensory-site minus replay warm-direction contrast was `+0.44742` (95% seed-block bootstrap interval `[+0.43988, +0.45497]`; 200/200 blocks positive).
 

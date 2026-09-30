@@ -1,0 +1,7 @@
+<hr/>
+<h2>实验代号：M2_SEQUENTIAL_DECISION_V1 — 序贯二元决策跨任务测试</h2>
+<p>实验目标：将状态条件感觉整合从连续 AR(1) 状态估计迁移到不同目标过程的序贯决策：静态隐藏左右目标，连续接收 32 步噪声证据，最后作二元选择。比较状态增益、常数增益、线性双线性递归和已知似然的 Bayes oracle。</p>
+<p>实验结果：20 个配对种子下，ALIGNED 映射四档训练量等权平均终端准确率：状态增益 0.7029、常数增益 0.6385，差值 +0.06448（95% CI [+0.05703, +0.07232]，20/20 种子同向）。INDEPENDENT 映射分别为 0.6145 与 0.6413；REVERSED 映射为 0.5192 与 0.6368。Bayes oracle 在三个条件下为 0.760–0.838。</p>
+<p>实验分析：这将同一人工状态条件更新从连续估计扩展到终端二元决策，支持跨任务目标的人工迁移；但收益依赖合成生成器规定的上下文—证据对齐。上下文反转会使模型表现接近机会水平，常数增益滤波器更稳健，Bayes oracle 明显更强。此映射不是线虫回路实测机制，因此不能称为生物机制迁移已验证或广义 AI 优势。</p>
+<p>资源与复核：学习模型每次拟合 250 次更新、batch 16、序列长度 32，共 128,000 个序列步 token；参数量为 4/3/5。独立复核通过 491,520 条逐 episode 结果、240 次训练拟合、Bayes 后验重新计算、主对比与 SHA-256 检查。</p>
+<p>代码、数据与失败边界：<a href="https://github.com/4gcy6tzy6n-coder/NeuroMech/tree/experiment-publication/model/M2_SEQUENTIAL_DECISION_V1">model</a>；<a href="https://github.com/4gcy6tzy6n-coder/NeuroMech/tree/experiment-publication/data/results/M2_SEQUENTIAL_DECISION_V1">data/results</a>；<a href="https://github.com/4gcy6tzy6n-coder/NeuroMech/tree/experiment-publication/summery/M2_SEQUENTIAL_DECISION_V1">summery</a>。</p>

@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "episode_rows": 491520,
+  "fit_rows": 240,
+  "paired_seed_units": 20,
+  "primary_accuracy_difference": 0.0644775390625,
+  "primary_ci95": [
+    0.05703125,
+    0.07231506347656244
+  ],
+  "positive_seeds": 20,
+  "oracle_regeneration": "PASS",
+  "artifact_hashes": "PASS"
+}
