@@ -1,0 +1,399 @@
+{
+  "experiment": "M2_FEEDBACK_SITE_SPECIFICITY_V4",
+  "classification": "RETROSPECTIVE_OUTCOME_INFORMED_SOURCE_MODEL_STRESS_TEST",
+  "question": "Does the V3 sensory-site warm-direction advantage persist after development-only motor calibration to four forward-run persistence summaries?",
+  "primary": {
+    "estimand": "equal-weighted within-seed sensory-site minus motor-only warm-direction index across three noise scales",
+    "mean": 0.14127664111748064,
+    "ci95_seed_block_bootstrap": [
+      0.13797990925898207,
+      0.1446024527692571
+    ],
+    "positive_seed_blocks": 200,
+    "n_seed_blocks": 200
+  },
+  "calibration": {
+    "0.75": {
+      "target_development_means": {
+        "mean_forward_run_s": 9.112561204921471,
+        "median_forward_run_s": 1.31,
+        "p90_forward_run_s": 24.742333333333338,
+        "fraction_forward_runs_ge_30s": 0.08658445801997981
+      },
+      "selected_motor_feedback": 0.76,
+      "selected_development_means": {
+        "mean_forward_run_s": 6.1921421099157445,
+        "median_forward_run_s": 2.2766666666666664,
+        "p90_forward_run_s": 15.946666666666669,
+        "fraction_forward_runs_ge_30s": 0.042869606036048814
+      },
+      "standardization_sd_across_motor_grid": {
+        "mean_forward_run_s": 5.614465386769247,
+        "median_forward_run_s": 0.6751840723444943,
+        "p90_forward_run_s": 18.7597481088984,
+        "fraction_forward_runs_ge_30s": 0.055028673159098776
+      },
+      "selected_standardized_squared_error": 3.1712567228423936,
+      "grid": [
+        0.6,
+        0.605,
+        0.61,
+        0.615,
+        0.62,
+        0.625,
+        0.63,
+        0.635,
+        0.64,
+        0.645,
+        0.65,
+        0.655,
+        0.66,
+        0.665,
+        0.67,
+        0.675,
+        0.68,
+        0.685,
+        0.69,
+        0.695,
+        0.7,
+        0.705,
+        0.71,
+        0.715,
+        0.72,
+        0.725,
+        0.73,
+        0.735,
+        0.74,
+        0.745,
+        0.75,
+        0.755,
+        0.76,
+        0.765,
+        0.77,
+        0.775,
+        0.78,
+        0.785,
+        0.79,
+        0.795,
+        0.8,
+        0.805,
+        0.81,
+        0.815,
+        0.82,
+        0.825,
+        0.83,
+        0.835,
+        0.84,
+        0.845,
+        0.85
+      ]
+    },
+    "1.0": {
+      "target_development_means": {
+        "mean_forward_run_s": 4.62161128217757,
+        "median_forward_run_s": 1.465,
+        "p90_forward_run_s": 12.26766666666667,
+        "fraction_forward_runs_ge_30s": 0.02752399576982471
+      },
+      "selected_motor_feedback": 0.64,
+      "selected_development_means": {
+        "mean_forward_run_s": 3.013453506911082,
+        "median_forward_run_s": 1.7616666666666667,
+        "p90_forward_run_s": 6.619333333333335,
+        "fraction_forward_runs_ge_30s": 0.0027336407291378706
+      },
+      "standardization_sd_across_motor_grid": {
+        "mean_forward_run_s": 4.718010300812806,
+        "median_forward_run_s": 0.8465232183640069,
+        "p90_forward_run_s": 14.721152951499873,
+        "fraction_forward_runs_ge_30s": 0.05304184311245877
+      },
+      "selected_standardized_squared_error": 0.6046542578093308,
+      "grid": [
+        0.6,
+        0.605,
+        0.61,
+        0.615,
+        0.62,
+        0.625,
+        0.63,
+        0.635,
+        0.64,
+        0.645,
+        0.65,
+        0.655,
+        0.66,
+        0.665,
+        0.67,
+        0.675,
+        0.68,
+        0.685,
+        0.69,
+        0.695,
+        0.7,
+        0.705,
+        0.71,
+        0.715,
+        0.72,
+        0.725,
+        0.73,
+        0.735,
+        0.74,
+        0.745,
+        0.75,
+        0.755,
+        0.76,
+        0.765,
+        0.77,
+        0.775,
+        0.78,
+        0.785,
+        0.79,
+        0.795,
+        0.8,
+        0.805,
+        0.81,
+        0.815,
+        0.82,
+        0.825,
+        0.83,
+        0.835,
+        0.84,
+        0.845,
+        0.85
+      ]
+    },
+    "1.25": {
+      "target_development_means": {
+        "mean_forward_run_s": 3.501171613133807,
+        "median_forward_run_s": 1.5766666666666667,
+        "p90_forward_run_s": 8.764333333333335,
+        "fraction_forward_runs_ge_30s": 0.0075140610833011046
+      },
+      "selected_motor_feedback": 0.6,
+      "selected_development_means": {
+        "mean_forward_run_s": 2.8730692882194453,
+        "median_forward_run_s": 1.8166666666666669,
+        "p90_forward_run_s": 6.198666666666668,
+        "fraction_forward_runs_ge_30s": 0.001069297022379776
+      },
+      "standardization_sd_across_motor_grid": {
+        "mean_forward_run_s": 4.321244954717239,
+        "median_forward_run_s": 1.0617520815106347,
+        "p90_forward_run_s": 12.846607695559516,
+        "fraction_forward_runs_ge_30s": 0.05142729060778821
+      },
+      "selected_standardized_squared_error": 0.12781287461188684,
+      "grid": [
+        0.6,
+        0.605,
+        0.61,
+        0.615,
+        0.62,
+        0.625,
+        0.63,
+        0.635,
+        0.64,
+        0.645,
+        0.65,
+        0.655,
+        0.66,
+        0.665,
+        0.67,
+        0.675,
+        0.68,
+        0.685,
+        0.69,
+        0.695,
+        0.7,
+        0.705,
+        0.71,
+        0.715,
+        0.72,
+        0.725,
+        0.73,
+        0.735,
+        0.74,
+        0.745,
+        0.75,
+        0.755,
+        0.76,
+        0.765,
+        0.77,
+        0.775,
+        0.78,
+        0.785,
+        0.79,
+        0.795,
+        0.8,
+        0.805,
+        0.81,
+        0.815,
+        0.82,
+        0.825,
+        0.83,
+        0.835,
+        0.84,
+        0.845,
+        0.85
+      ]
+    }
+  },
+  "heldout_by_noise_scale": {
+    "0.75": {
+      "selected_motor_feedback": 0.76,
+      "arms": {
+        "SENSORY_SITE_FB": {
+          "warm_direction_index": 0.7435156883336107,
+          "mean_forward_run_s": 8.867596784203547,
+          "median_forward_run_s": 1.277,
+          "p90_forward_run_s": 24.746666666666673,
+          "fraction_forward_runs_ge_30s": 0.08707110735741921,
+          "forward_occupancy": 0.15719413333333335,
+          "n_forward_runs": 177.905,
+          "mean_final_warm_displacement": 38.05567837307331
+        },
+        "MOTOR_MULTI_STAT_MATCHED": {
+          "warm_direction_index": 0.6102313738942996,
+          "mean_forward_run_s": 6.361616851731436,
+          "median_forward_run_s": 2.2616666666666663,
+          "p90_forward_run_s": 15.936333333333337,
+          "fraction_forward_runs_ge_30s": 0.04594032820730792,
+          "forward_occupancy": 0.13267606666666668,
+          "n_forward_runs": 208.785,
+          "mean_final_warm_displacement": 24.308612761228886
+        },
+        "NO_FEEDBACK": {
+          "warm_direction_index": 0.146180829558058,
+          "mean_forward_run_s": 0.755403853283803,
+          "median_forward_run_s": 0.5913333333333334,
+          "p90_forward_run_s": 1.3015333333333334,
+          "fraction_forward_runs_ge_30s": 0.0,
+          "forward_occupancy": 0.012159066666666668,
+          "n_forward_runs": 160.99,
+          "mean_final_warm_displacement": 3.817330622059647
+        }
+      },
+      "sensory_minus_motor_warm_direction": {
+        "mean": 0.13328431443931119,
+        "ci95_seed_block_bootstrap": [
+          0.12633786855737542,
+          0.14022564747583993
+        ],
+        "positive_blocks": 200
+      },
+      "sensory_minus_motor_persistence_summary_means": {
+        "mean_forward_run_s": 2.50597993247211,
+        "median_forward_run_s": -0.9846666666666666,
+        "p90_forward_run_s": 8.810333333333336,
+        "fraction_forward_runs_ge_30s": 0.04113077915011129
+      }
+    },
+    "1.0": {
+      "selected_motor_feedback": 0.64,
+      "arms": {
+        "SENSORY_SITE_FB": {
+          "warm_direction_index": 0.563578673684671,
+          "mean_forward_run_s": 4.53390545971009,
+          "median_forward_run_s": 1.4686666666666668,
+          "p90_forward_run_s": 12.050600000000001,
+          "fraction_forward_runs_ge_30s": 0.02576089498456862,
+          "forward_occupancy": 0.22254939999999998,
+          "n_forward_runs": 491.585,
+          "mean_final_warm_displacement": 34.414164505036524
+        },
+        "MOTOR_MULTI_STAT_MATCHED": {
+          "warm_direction_index": 0.3873236684326016,
+          "mean_forward_run_s": 2.9990253538324794,
+          "median_forward_run_s": 1.7566666666666675,
+          "p90_forward_run_s": 6.5899333333333345,
+          "fraction_forward_runs_ge_30s": 0.002685689036087408,
+          "forward_occupancy": 0.16704153333333335,
+          "n_forward_runs": 557.25,
+          "mean_final_warm_displacement": 20.1191564776698
+        },
+        "NO_FEEDBACK": {
+          "warm_direction_index": 0.15124119754547505,
+          "mean_forward_run_s": 0.9177090395259936,
+          "median_forward_run_s": 0.6693333333333333,
+          "p90_forward_run_s": 1.7477333333333336,
+          "fraction_forward_runs_ge_30s": 0.0,
+          "forward_occupancy": 0.0452482,
+          "n_forward_runs": 493.05,
+          "mean_final_warm_displacement": 6.717640025649098
+        }
+      },
+      "sensory_minus_motor_warm_direction": {
+        "mean": 0.17625500525206936,
+        "ci95_seed_block_bootstrap": [
+          0.17146193068870516,
+          0.18113514602436198
+        ],
+        "positive_blocks": 200
+      },
+      "sensory_minus_motor_persistence_summary_means": {
+        "mean_forward_run_s": 1.534880105877611,
+        "median_forward_run_s": -0.2880000000000001,
+        "p90_forward_run_s": 5.460666666666668,
+        "fraction_forward_runs_ge_30s": 0.02307520594848121
+      }
+    },
+    "1.25": {
+      "selected_motor_feedback": 0.6,
+      "arms": {
+        "SENSORY_SITE_FB": {
+          "warm_direction_index": 0.44143349627773765,
+          "mean_forward_run_s": 3.4855325574730585,
+          "median_forward_run_s": 1.5519999999999998,
+          "p90_forward_run_s": 8.738533333333335,
+          "fraction_forward_runs_ge_30s": 0.007668568018607282,
+          "forward_occupancy": 0.28472993333333335,
+          "n_forward_runs": 817.6,
+          "mean_final_warm_displacement": 31.931531498806525
+        },
+        "MOTOR_MULTI_STAT_MATCHED": {
+          "warm_direction_index": 0.32714289261667623,
+          "mean_forward_run_s": 2.849857358262172,
+          "median_forward_run_s": 1.811333333333334,
+          "p90_forward_run_s": 6.1998000000000015,
+          "fraction_forward_runs_ge_30s": 0.001041121537831822,
+          "forward_occupancy": 0.25176153333333334,
+          "n_forward_runs": 883.73,
+          "mean_final_warm_displacement": 22.533098672228935
+        },
+        "NO_FEEDBACK": {
+          "warm_direction_index": 0.15322343331550164,
+          "mean_forward_run_s": 1.058800208618243,
+          "median_forward_run_s": 0.7986666666666667,
+          "p90_forward_run_s": 2.095133333333333,
+          "fraction_forward_runs_ge_30s": 0.0,
+          "forward_occupancy": 0.09394206666666666,
+          "n_forward_runs": 887.335,
+          "mean_final_warm_displacement": 7.75543645422238
+        }
+      },
+      "sensory_minus_motor_warm_direction": {
+        "mean": 0.11429060366106139,
+        "ci95_seed_block_bootstrap": [
+          0.11011604480454384,
+          0.11841451329079315
+        ],
+        "positive_blocks": 200
+      },
+      "sensory_minus_motor_persistence_summary_means": {
+        "mean_forward_run_s": 0.6356751992108868,
+        "median_forward_run_s": -0.25933333333333336,
+        "p90_forward_run_s": 2.538733333333334,
+        "fraction_forward_runs_ge_30s": 0.006627446480775461
+      }
+    }
+  },
+  "analysis_unit": "simulation seed block; 50 agents are clustered within block",
+  "limitations": [
+    "all prior M2 and V3 outcomes were known before this follow-up; exploratory and retrospective",
+    "calibration matches four run-duration summaries, not the full distribution, occupancy, switching latency, or internal state",
+    "Python source-model implementation parity with the author's MATLAB/Octave implementation remains unverified",
+    "imposed noise scales are simulation conditions, not measured biological boundary conditions",
+    "this source-model result is not new biological evidence or AI transfer"
+  ]
+}

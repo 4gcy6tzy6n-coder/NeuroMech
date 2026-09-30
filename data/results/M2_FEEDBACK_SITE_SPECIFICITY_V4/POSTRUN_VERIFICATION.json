@@ -1,0 +1,24 @@
+{
+  "status": "PASS",
+  "checks": [
+    "row_count",
+    "unique_complete_seed_scale_arm_keys",
+    "development_only_calibration_recomputed",
+    "contract_hash_and_recorded_preformat_hash",
+    "output_hashes",
+    "primary_estimand_and_bootstrap_recomputed"
+  ],
+  "heldout_rows": 1800,
+  "selected_motor_feedback": {
+    "0.75": 0.76,
+    "1.0": 0.64,
+    "1.25": 0.6
+  },
+  "primary_mean_recomputed": 0.14127664111748064,
+  "primary_ci95_recomputed": [
+    0.13797990925898207,
+    0.1446024527692571
+  ],
+  "positive_seed_blocks_recomputed": 200,
+  "metrics_sha256": "48509237a9e8305b6131baaa03810f39136c0fd108c0bd47d80b9241f6f13afe"
+}

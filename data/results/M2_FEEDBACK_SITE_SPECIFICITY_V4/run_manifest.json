@@ -1,0 +1,46 @@
+{
+  "experiment": "M2_FEEDBACK_SITE_SPECIFICITY_V4",
+  "development_seed_range": [
+    310000,
+    310039
+  ],
+  "heldout_test_seed_range": [
+    320000,
+    320199
+  ],
+  "noise_scales": [
+    0.75,
+    1.0,
+    1.25
+  ],
+  "agents_per_block": 50,
+  "steps_per_trajectory": 1500,
+  "bootstrap_resamples": 20000,
+  "bootstrap_seed": 20261004,
+  "inputs": {
+    "contract_sha256": "94cad23374c7bd5574acb9313e1737aec6518731cf83f03eee7aee08737d341c",
+    "v3_runner_sha256": "0d4f67220785cfd1316ca6f4da1a883f82d1103c7cd7cf69434a6c9dcad4c464",
+    "v3_development_csv_sha256": "e0c39ccf8d591ba1436315b9ca4dcf2b3ce9cc1832a4dd53a12fdbf5381a9ef7",
+    "v3_run_manifest_sha256": "ab42d83c2a9492ecef9bc04becc04082f2016afbdecd7548c58f7d2e586ebec0",
+    "source_archive_sha256": "efa17d718018df4e8ad5058c82f5996488f085451433f6664374e394c29482ed",
+    "executed_contract_sha256": "f6487633d780812b9f0fcec81d44ee377e872f32de48d0ef78b0979d9333abdf"
+  },
+  "selected_motor_feedback": {
+    "0.75": 0.76,
+    "1.0": 0.64,
+    "1.25": 0.6
+  },
+  "runtime": {
+    "python": "3.9.6",
+    "numpy": "2.0.2"
+  },
+  "rows": 1800,
+  "output_sha256": {
+    "heldout_simulation_metrics.csv": "48509237a9e8305b6131baaa03810f39136c0fd108c0bd47d80b9241f6f13afe",
+    "summary.json": "ca2bba7e6ce66b32de39f413a2569bde34cdb63717d26290ffa9c8c8f5cde11c"
+  },
+  "runner_sha256": "4eac65b258aa5cc0cf054127f6bcc7f9b3afbdf23296546691d0349db0e0ded2",
+  "verifier_sha256": "8e8adfe7f10e8353bc034c5bbea36b4f5c6e1148bbf96a873e0499cdc30638ec",
+  "executed_runner_snapshot_sha256": "4eac65b258aa5cc0cf054127f6bcc7f9b3afbdf23296546691d0349db0e0ded2",
+  "contract_formatting_change_after_run": "Removed Markdown hard-break trailing spaces only; protocol wording unchanged; executed pre-format SHA-256 retained as inputs.executed_contract_sha256."
+}

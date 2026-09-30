@@ -29,6 +29,7 @@ The “no experiments have started” premise is contradicted by the current rep
 - M1 H1–H3 partial computation and M1 H4 post-result follow-up are recorded in [`RR19_STEP4_PARTIAL_RESULTS.md`](../../experiments/m1_higher_order/RR19_STEP4_PARTIAL_RESULTS.md) and [`RR19_H4_EXTERNAL_POSTRESULT_INTERPRETATION.md`](../../experiments/m1_higher_order/RR19_H4_EXTERNAL_POSTRESULT_INTERPRETATION.md).
 - M2 feedback-site V2 reports a positive warm-direction-index contrast after matching mean run duration, while documenting remaining dynamical mismatches in [`M2_JI2021_FEEDBACK_SITE_CONTROL_V2_RESULTS.md`](../M2_JI2021_FEEDBACK_SITE_CONTROL_V2/M2_JI2021_FEEDBACK_SITE_CONTROL_V2_RESULTS.md).
 - M2 feedback-site V3 extended that source-model comparison to three imposed noise scales and 200 new held-out seed blocks. The equal-weighted warm-direction-index difference was `+0.08057` (95% CI `[+0.07752,+0.08357]`, 200/200 positive blocks); run-duration distributions remained unmatched. Full result: [`M2_FEEDBACK_SITE_SPECIFICITY_V3/RESULTS.md`](../M2_FEEDBACK_SITE_SPECIFICITY_V3/RESULTS.md).
+- M2 V4 used V3 development data to select a motor-only coefficient by a standardized loss over four run-duration summaries, then evaluated 200 new blocks. The warm-direction contrast was `+0.14128` (95% CI `[+0.13798,+0.14460]`, 200/200 positive), but the control still failed to match persistence (for noise 0.75, mean duration differed by `2.506 s` and p90 by `8.810 s`). This is a failed control-matching attempt, not stronger feedback-site evidence. See [`M2_FEEDBACK_SITE_SPECIFICITY_V4/RESULTS.md`](../M2_FEEDBACK_SITE_SPECIFICITY_V4/RESULTS.md).
 - M2 closed-loop, learned-gain, and state-gated inference runs are retained with negative or inconclusive comparisons against generic/adaptive controllers.
 - Other mechanism experiments M4–M10 are also present. Their outcomes do not automatically become evidence for the M1/M2 proposition.
 
@@ -51,7 +52,7 @@ Implement the same preregistered accounting and analysis interface for Studies 1
 ## Immediate execution work
 
 1. Create the benchmark specification and runner under `experiments/cross_mechanism/` and `model/CROSS_MECHANISM_BENCHMARK_V1/`.
-2. M2 feedback-site robustness V3 is complete and archived; the remaining M2 transfer question is whether the effect survives comparison with a generic/adaptive capacity-matched controller under a new held-out task family.
+2. M2 V3–V4 show a source-model difference, but V4's broader summary calibration still did not match persistence. The next M2 comparison needs an independently calibrated full-process persistence yoke or an explicit adequacy check before outcomes; a new AI-transfer claim also requires a separate abstract-task benchmark against a capacity-matched generic controller.
 3. Resolve the M1 input limitation before claiming a new fixed-skewness test: the frozen raw image substrate needed for H4 is incomplete. Existing author-precomputed outputs do not replace raw inputs. A separate synthetic stress test can proceed only if it is clearly labeled as a new artificial experiment and does not claim to complete the original H4 analysis.
 4. Implement the unified benchmark with per-mechanism task adapters and common resource accounting. Preserve task-native outcomes; require each mechanism's own matched-control result before making a joint claim. If M1 cannot obtain valid new inputs, report that limitation and do not let M2 alone carry a cross-mechanism claim.
 5. Save code in `model/`, outcomes in `data/results/`, and the experiment contract, interpretation and failure experience in `summery/`. Push each completed experiment as its own commit to `experiment-publication`.
@@ -65,4 +66,17 @@ Implement the same preregistered accounting and analysis interface for Studies 1
 
 ## Decision
 
-The active work is **convergence and comparative experimentation**, not candidate expansion. M2 V3 supplies a positive, model-specific feedback-site contrast, while the broader M1+M2 transfer proposition remains unestablished. The next project deliverable is the shared benchmark implementation with mechanism-specific capacity controls; M1's missing raw H4 input and M2's lack of an adaptive capacity-matched comparison remain explicit limitations.
+The active work is **convergence and comparative experimentation**, not candidate expansion. M2 V3–V4 supply positive source-model feedback-placement contrasts, but V4 does not remove persistence mismatch and neither run establishes AI transfer. The next project deliverable is the shared benchmark implementation with mechanism-specific capacity controls; M1's incomplete frozen H4 inputs and M2's unresolved control adequacy remain explicit limitations.
+
+## 2026-10-01 Phase 2 concept-admission update — current active pointer
+
+The earlier “Immediate execution work” and “Converged experimental package” sections are historical plans and are superseded as current next actions by the owner's request to stop adding scattered experiments until the target NeuroMotif class is defined. The seven-term concept review found no concept presently admissible for cross-system computation. Feedback accessibility remains only a definition-check candidate: a current role audit found a named RIM-to-AIY class-level pair in the worm, but no outcome-independent source/target role map in Fish1.5 and no synapse-resolved return path in R20-01. Therefore no graph reachability computation, new biological analysis, or model run is opened from this review.
+
+```text
+PHASE2_CONCEPT_GLOSSARY = SEVEN_PROVISIONAL_TERMS
+CROSS_SPECIES_CONCEPT_ADMITTED = NONE
+NEW_SCATTERED_EXPERIMENTS = PAUSED
+CURRENT_NEXT_WORK_PACKAGE = CLAIM_AND_CONTRIBUTION_REPLAN_FROM_COMPLETED_EVIDENCE
+```
+
+See [`PHASE2_CONCEPT_ADMISSION_REVIEW.md`](PHASE2_CONCEPT_ADMISSION_REVIEW.md) and [`PHASE2_MAINLINE_RESOLUTION.md`](PHASE2_MAINLINE_RESOLUTION.md). This update does not change any registered experiment, result, or model contract.
