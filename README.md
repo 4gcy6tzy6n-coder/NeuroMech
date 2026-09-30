@@ -30,10 +30,11 @@ Reproduce to a fresh result directory from the repository root with:
 ```bash
 python3 model/M2_FEEDBACK_SITE_SPECIFICITY_V4/run_experiment.py \
   --output-dir data/results/M2_FEEDBACK_SITE_SPECIFICITY_V4_RERUN
-python3 model/M2_FEEDBACK_SITE_SPECIFICITY_V4/verify_results.py
+python3 model/M2_FEEDBACK_SITE_SPECIFICITY_V4/verify_results.py \
+  --results-dir data/results/M2_FEEDBACK_SITE_SPECIFICITY_V4_RERUN
 ```
 
-The runner refuses to overwrite an existing output directory. The original executed code is preserved as `run_experiment_executed.py`; the current runner adds output-directory selection for reproducibility. To verify the archived result, run the verifier without arguments.
+The runner refuses to overwrite an existing output directory. The exact executed script is preserved as `run_experiment_executed.py` beside the current runner. Omitting `--results-dir` verifies the archived result.
 
 ## Repository layout
 
