@@ -1,6 +1,6 @@
 # M2 2D closed-loop pursuit V2 — training-distribution diagnostic
 
-**Experiment ID:** `M2_2D_CLOSED_LOOP_PURSUIT_V2_TRAIN_DIST_DIAGNOSTIC`  
+**Experiment ID:** `M2_2D_CLOSED_LOOP_PURSUIT_V2_TRAIN_DIST_DIAGNOSTIC`
 **Classification:** post-result exploratory diagnostic. It was designed after inspecting V1 and is not an independent confirmatory experiment or biological validation.
 
 ## Primary result
