@@ -1,0 +1,294 @@
+{
+  "experiment": "DROSOPHILA_COUNTEREVIDENCE_NATURAL_SCENE_V1",
+  "status": "COMPLETED_EXPLORATORY_POST_RESULT_TRANSFER_BENCHMARK",
+  "primary": {
+    "CE_minus_AUTHOR_STYLE_CNN_high_coverage_object_motion_FPR": {
+      "mean": -2.7755575615628915e-18,
+      "scene_group_bootstrap_95_ci": [
+        -0.010000000000000002,
+        0.009999999999999992
+      ],
+      "n_test_scene_groups": 30
+    },
+    "CE_minus_SHAM_CHANNEL_CNN_high_coverage_object_motion_FPR": {
+      "mean": -0.0066666666666666706,
+      "scene_group_bootstrap_95_ci": [
+        -0.02166666666666667,
+        0.006666666666666662
+      ],
+      "n_test_scene_groups": 30
+    }
+  },
+  "secondary_flow_baseline": {
+    "CE_minus_FLOW_FIELD_COHERENCE_high_coverage_object_motion_FPR": {
+      "mean": -0.26999999999999996,
+      "scene_group_bootstrap_95_ci": [
+        -0.325,
+        -0.21499999999999997
+      ],
+      "n_test_scene_groups": 30
+    }
+  },
+  "cell_means": {
+    "AUTHOR_STYLE_CNN": {
+      "0.25": {
+        "balanced_accuracy": 0.97,
+        "object_motion_fpr": 0.02,
+        "global_rotation_sensitivity": 0.9599999999999999,
+        "roc_auc_clip_ensemble_descriptive": 0.9987555555555556
+      },
+      "0.5": {
+        "balanced_accuracy": 0.9016666666666667,
+        "object_motion_fpr": 0.15666666666666665,
+        "global_rotation_sensitivity": 0.9599999999999999,
+        "roc_auc_clip_ensemble_descriptive": 0.9826111111111111
+      },
+      "0.75": {
+        "balanced_accuracy": 0.7183333333333334,
+        "object_motion_fpr": 0.5266666666666666,
+        "global_rotation_sensitivity": 0.9633333333333334,
+        "roc_auc_clip_ensemble_descriptive": 0.8678666666666667
+      },
+      "0.9": {
+        "balanced_accuracy": 0.575,
+        "object_motion_fpr": 0.8133333333333334,
+        "global_rotation_sensitivity": 0.9633333333333333,
+        "roc_auc_clip_ensemble_descriptive": 0.6980777777777778
+      }
+    },
+    "COUNTEREVIDENCE_MODEL": {
+      "0.25": {
+        "balanced_accuracy": 0.9666666666666666,
+        "object_motion_fpr": 0.02,
+        "global_rotation_sensitivity": 0.9533333333333333,
+        "roc_auc_clip_ensemble_descriptive": 0.9987555555555556
+      },
+      "0.5": {
+        "balanced_accuracy": 0.905,
+        "object_motion_fpr": 0.15,
+        "global_rotation_sensitivity": 0.9599999999999999,
+        "roc_auc_clip_ensemble_descriptive": 0.982588888888889
+      },
+      "0.75": {
+        "balanced_accuracy": 0.7216666666666666,
+        "object_motion_fpr": 0.5233333333333332,
+        "global_rotation_sensitivity": 0.9666666666666668,
+        "roc_auc_clip_ensemble_descriptive": 0.8700777777777777
+      },
+      "0.9": {
+        "balanced_accuracy": 0.5716666666666667,
+        "object_motion_fpr": 0.8166666666666667,
+        "global_rotation_sensitivity": 0.9600000000000001,
+        "roc_auc_clip_ensemble_descriptive": 0.7011333333333333
+      }
+    },
+    "SHAM_CHANNEL_CNN": {
+      "0.25": {
+        "balanced_accuracy": 0.9633333333333332,
+        "object_motion_fpr": 0.02,
+        "global_rotation_sensitivity": 0.9466666666666665,
+        "roc_auc_clip_ensemble_descriptive": 0.9987666666666666
+      },
+      "0.5": {
+        "balanced_accuracy": 0.9033333333333332,
+        "object_motion_fpr": 0.15666666666666665,
+        "global_rotation_sensitivity": 0.9633333333333332,
+        "roc_auc_clip_ensemble_descriptive": 0.9823222222222223
+      },
+      "0.75": {
+        "balanced_accuracy": 0.7166666666666667,
+        "object_motion_fpr": 0.5266666666666666,
+        "global_rotation_sensitivity": 0.9600000000000001,
+        "roc_auc_clip_ensemble_descriptive": 0.8677555555555555
+      },
+      "0.9": {
+        "balanced_accuracy": 0.5666666666666667,
+        "object_motion_fpr": 0.8266666666666668,
+        "global_rotation_sensitivity": 0.9599999999999999,
+        "roc_auc_clip_ensemble_descriptive": 0.6968222222222221
+      }
+    },
+    "FLOW_FIELD_COHERENCE": {
+      "0.25": {
+        "balanced_accuracy": 0.47499999999999987,
+        "object_motion_fpr": 1.0,
+        "global_rotation_sensitivity": 0.9499999999999997,
+        "roc_auc_clip_ensemble_descriptive": 0.46513888888888894
+      },
+      "0.5": {
+        "balanced_accuracy": 0.47,
+        "object_motion_fpr": 1.0,
+        "global_rotation_sensitivity": 0.94,
+        "roc_auc_clip_ensemble_descriptive": 0.6741388888888888
+      },
+      "0.75": {
+        "balanced_accuracy": 0.4933333333333333,
+        "object_motion_fpr": 0.9433333333333332,
+        "global_rotation_sensitivity": 0.9299999999999998,
+        "roc_auc_clip_ensemble_descriptive": 0.7861055555555556
+      },
+      "0.9": {
+        "balanced_accuracy": 0.49166666666666664,
+        "object_motion_fpr": 0.9366666666666666,
+        "global_rotation_sensitivity": 0.9199999999999999,
+        "roc_auc_clip_ensemble_descriptive": 0.7712666666666668
+      }
+    }
+  },
+  "counterevidence_channel_ablation": {
+    "0.25": {
+      "balanced_accuracy": 0.97,
+      "object_motion_fpr": 0.023333333333333334,
+      "global_rotation_sensitivity": 0.9633333333333334
+    },
+    "0.5": {
+      "balanced_accuracy": 0.8916666666666666,
+      "object_motion_fpr": 0.18,
+      "global_rotation_sensitivity": 0.9633333333333334
+    },
+    "0.75": {
+      "balanced_accuracy": 0.7066666666666667,
+      "object_motion_fpr": 0.56,
+      "global_rotation_sensitivity": 0.9733333333333334
+    },
+    "0.9": {
+      "balanced_accuracy": 0.5633333333333334,
+      "object_motion_fpr": 0.8366666666666667,
+      "global_rotation_sensitivity": 0.9633333333333334
+    }
+  },
+  "split_group_counts": {
+    "train": 141,
+    "validation": 30,
+    "test": 30
+  },
+  "split_image_counts": {
+    "train": 141,
+    "validation": 30,
+    "test": 30
+  },
+  "flow_validation_sensitivity": 0.9,
+  "model_info": [
+    {
+      "arm": "AUTHOR_STYLE_CNN",
+      "seed": 61001,
+      "epochs_run": 15,
+      "best_validation_cross_entropy": 0.29872652888298035,
+      "validation_sensitivity": 0.9,
+      "parameters": 374,
+      "counterevidence_gain": null
+    },
+    {
+      "arm": "AUTHOR_STYLE_CNN",
+      "seed": 61002,
+      "epochs_run": 15,
+      "best_validation_cross_entropy": 0.23723551630973816,
+      "validation_sensitivity": 0.9,
+      "parameters": 374,
+      "counterevidence_gain": null
+    },
+    {
+      "arm": "AUTHOR_STYLE_CNN",
+      "seed": 61003,
+      "epochs_run": 15,
+      "best_validation_cross_entropy": 0.16657696664333344,
+      "validation_sensitivity": 0.9,
+      "parameters": 374,
+      "counterevidence_gain": null
+    },
+    {
+      "arm": "COUNTEREVIDENCE_MODEL",
+      "seed": 61001,
+      "epochs_run": 15,
+      "best_validation_cross_entropy": 0.30009275674819946,
+      "validation_sensitivity": 0.9,
+      "parameters": 375,
+      "counterevidence_gain": -0.3178631365299225
+    },
+    {
+      "arm": "COUNTEREVIDENCE_MODEL",
+      "seed": 61002,
+      "epochs_run": 15,
+      "best_validation_cross_entropy": 0.2367796003818512,
+      "validation_sensitivity": 0.9,
+      "parameters": 375,
+      "counterevidence_gain": -0.3352947533130646
+    },
+    {
+      "arm": "COUNTEREVIDENCE_MODEL",
+      "seed": 61003,
+      "epochs_run": 15,
+      "best_validation_cross_entropy": 0.16570590436458588,
+      "validation_sensitivity": 0.9,
+      "parameters": 375,
+      "counterevidence_gain": -0.3185022473335266
+    },
+    {
+      "arm": "SHAM_CHANNEL_CNN",
+      "seed": 61001,
+      "epochs_run": 15,
+      "best_validation_cross_entropy": 0.2999343276023865,
+      "validation_sensitivity": 0.9,
+      "parameters": 375,
+      "counterevidence_gain": -0.3353416323661804
+    },
+    {
+      "arm": "SHAM_CHANNEL_CNN",
+      "seed": 61002,
+      "epochs_run": 15,
+      "best_validation_cross_entropy": 0.23749008774757385,
+      "validation_sensitivity": 0.9,
+      "parameters": 375,
+      "counterevidence_gain": -0.2956240475177765
+    },
+    {
+      "arm": "SHAM_CHANNEL_CNN",
+      "seed": 61003,
+      "epochs_run": 15,
+      "best_validation_cross_entropy": 0.16719761490821838,
+      "validation_sensitivity": 0.9,
+      "parameters": 375,
+      "counterevidence_gain": -0.32025912404060364
+    }
+  ],
+  "device": "mps",
+  "task": {
+    "train_coverages": [
+      0.25,
+      0.5
+    ],
+    "validation_coverages": [
+      0.5
+    ],
+    "test_coverages": [
+      0.25,
+      0.5,
+      0.75,
+      0.9
+    ],
+    "episodes_train": 4512,
+    "episodes_validation": 480,
+    "episodes_test": 2400,
+    "frame_shape": [
+      30,
+      72
+    ],
+    "scene_cluster_is_unit": true
+  },
+  "interpretation_boundary": "Rendered one-dimensional panoramic image sequences; not real videos, not biological outcome data, and not independent biological validation.",
+  "decision": "NO_TRANSFER_ADVANTAGE_OBSERVED; HIGH_COVERAGE_OOD_FAILURE",
+  "decision_note": "The frozen transfer-signal rule was not met. This is not an equivalence claim and does not refute the biological mechanism.",
+  "seed_config": {
+    "train_namespace_start": 100031001,
+    "validation_namespace_start": 200041001,
+    "test_namespace_start": 300051001,
+    "model_seeds": [
+      61001,
+      61002,
+      61003
+    ],
+    "threshold_target_sensitivity": 0.9,
+    "bootstrap_seed": 73001,
+    "bootstrap_resamples": 20000
+  }
+}
