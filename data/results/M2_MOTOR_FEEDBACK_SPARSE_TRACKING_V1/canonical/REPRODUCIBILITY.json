@@ -1,0 +1,14 @@
+{
+  "experiment_id": "M2_MOTOR_FEEDBACK_SPARSE_TRACKING_V1",
+  "independent_replay_count": 1,
+  "replay_method": "Fresh output directory; reran frozen runner from preflight through evaluation and analysis.",
+  "episode_results_sha256_primary": "c794ddc0ab508d7da8e89d312e6f21a49d97d52acd118d0b3610cf3de23a526b",
+  "episode_results_sha256_independent_replay": "c794ddc0ab508d7da8e89d312e6f21a49d97d52acd118d0b3610cf3de23a526b",
+  "episode_csv_byte_identical": true,
+  "training_results_sha256_excluding_runtime_primary": "a18ed5b307481e132913f0d1cee8a6798a4ec609ec3d3d5ae4117ec5b8d02e42",
+  "training_results_sha256_excluding_runtime_replay": "a18ed5b307481e132913f0d1cee8a6798a4ec609ec3d3d5ae4117ec5b8d02e42",
+  "training_records_identical_except_environment_dependent_training_seconds": true,
+  "episodes_per_run": 368640,
+  "learned_fits_per_run": 128,
+  "verified_at_local_date": "2026-10-01"
+}

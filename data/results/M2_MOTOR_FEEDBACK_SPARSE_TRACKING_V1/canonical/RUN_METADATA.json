@@ -1,0 +1,11 @@
+{
+  "experiment_id": "M2_MOTOR_FEEDBACK_SPARSE_TRACKING_V1",
+  "contract_sha256": "48f58eff300f4219739aebf889e0df0a64113a236d3899d1743ca05aca21bbf0",
+  "runner_sha256": "d700641e68ed9ab1d5e827506a16c452ff7c7d96bc2cabc9da7f7c36650993d4",
+  "total_wall_seconds": 257.24424429100003,
+  "episode_rows": 368640,
+  "training_rows": 128,
+  "python": "3.9.6",
+  "numpy": "2.0.2",
+  "torch": "2.8.0"
+}

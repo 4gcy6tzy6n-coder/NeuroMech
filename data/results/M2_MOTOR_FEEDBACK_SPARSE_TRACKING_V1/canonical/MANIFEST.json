@@ -1,0 +1,78 @@
+{
+  "experiment_id": "M2_MOTOR_FEEDBACK_SPARSE_TRACKING_V1",
+  "files": {
+    "PREFLIGHT.json": {
+      "bytes": 1457,
+      "sha256": "be547a6b96bb0b169bc469c1ed0ac80408095d3d1f77cb52ddd2418035a2bb5c"
+    },
+    "RUN_METADATA.json": {
+      "bytes": 393,
+      "sha256": "859ce5d422258087f2147ea162571bf685dda5084ceb9a656fbba2c58550b99a"
+    },
+    "episode_results.csv": {
+      "bytes": 42629907,
+      "sha256": "c794ddc0ab508d7da8e89d312e6f21a49d97d52acd118d0b3610cf3de23a526b"
+    },
+    "training_results.csv": {
+      "bytes": 20944,
+      "sha256": "374d7d638f3763d093577c0f4b3eb321bb00e14bb7495c88cf7df6edb974f4c9"
+    },
+    "summary.json": {
+      "bytes": 16352,
+      "sha256": "5a80ccc382a11975fdce187083ede3abceac282232abbbeffb2b747bdf17a5b0"
+    },
+    "REPRODUCIBILITY.json": {
+      "bytes": 898,
+      "sha256": "8e715c970780e333cdc2b7faba2a319bfb146397bdee5f12ea86fa0b43d7e4b4"
+    }
+  },
+  "artifacts": {
+    "figures/M2_MOTOR_FEEDBACK_SPARSE_TRACKING_V1.svg": {
+      "bytes": 25750,
+      "sha256": "3a9d4189f62c170eb75903deafebfe3221bab061ffeba6cc6430b0ac90d6288c"
+    },
+    "figures/M2_MOTOR_FEEDBACK_SPARSE_TRACKING_V1.pdf": {
+      "bytes": 47113,
+      "sha256": "d59c4334caa4210f7a0938315c9d7c16527377fa3eb1b24d8fff4a0b352edeaa"
+    },
+    "figures/M2_MOTOR_FEEDBACK_SPARSE_TRACKING_V1.png": {
+      "bytes": 404137,
+      "sha256": "2a5d1add01641d2aac1198d526cf793fa47630ea093b1b799211ac3997aec2a9"
+    },
+    "figures/M2_MOTOR_FEEDBACK_SPARSE_TRACKING_V1.tiff": {
+      "bytes": 1673840,
+      "sha256": "ec0a7ce358bd0036b8c867985ee66a121f33e1d62d7382761d65fb93c627a1cd"
+    },
+    "figures/figure.alignment.json": {
+      "bytes": 883,
+      "sha256": "8711dbba3881f4c5163ab8aae2bca514525e2aba485fe2681b1aeb42941feff7"
+    },
+    "figures/collision-audit.json": {
+      "bytes": 565,
+      "sha256": "60352ec24e350f918d62ec46de9e29dbb1cc6cbb4875495e6a971fe41e282f32"
+    },
+    "figures/collision-audit.pdf": {
+      "bytes": 49822,
+      "sha256": "fe1492589df4cf2568cb84a03c89ee5f0453aee717c3d3855556abc594b39fb4"
+    },
+    "figures/source-validation.json": {
+      "bytes": 3907,
+      "sha256": "2488c21388cbb8ead8b8f81ecf46248c0b906d04cd7140e3c1ba76c77814976b"
+    },
+    "figures/pdf-text-audit.json": {
+      "bytes": 285,
+      "sha256": "bbc6062ce33000ec2befef1b6ba74a1449361b8680697be018dc091687ab9310"
+    },
+    "figures/QA.md": {
+      "bytes": 1614,
+      "sha256": "733548c00dd3d4ae21d48ea22c4e25fc912a17118ef9add638e48f2bd9cd07a4"
+    }
+  },
+  "source_files": {
+    "summery/M2_MOTOR_FEEDBACK_SPARSE_TRACKING_V1/CONTRACT.md": "48f58eff300f4219739aebf889e0df0a64113a236d3899d1743ca05aca21bbf0",
+    "model/M2_MOTOR_FEEDBACK_SPARSE_TRACKING_V1/run_experiment.py": "d700641e68ed9ab1d5e827506a16c452ff7c7d96bc2cabc9da7f7c36650993d4",
+    "model/M2_MOTOR_FEEDBACK_SPARSE_TRACKING_V1/analyze_results.py": "21124c09d98daf032df03e8f048215406161bbd47855eaa1d96f8aac10050a24",
+    "model/M2_MOTOR_FEEDBACK_SPARSE_TRACKING_V1/verify_results.py": "847311b7a9a31526f6bad81711ea48e76a473680f4ace972dfed3f791b35f40c",
+    "model/M2_MOTOR_FEEDBACK_SPARSE_TRACKING_V1/plot_results.py": "1db85996b40d7405cadd4d367afa221cb477b107a190c4fde701387c1f359a89"
+  }
+}

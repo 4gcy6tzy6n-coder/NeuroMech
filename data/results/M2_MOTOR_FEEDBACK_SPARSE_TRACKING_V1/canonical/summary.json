@@ -1,0 +1,479 @@
+{
+  "experiment_id": "M2_MOTOR_FEEDBACK_SPARSE_TRACKING_V1",
+  "classification": "POST_RESULT_EXPLORATORY_ARTIFICIAL_MECHANISM_TRANSFER",
+  "primary_condition": {
+    "hazard": 0.008333333333333333,
+    "missing_rate": 0.5
+  },
+  "primary_contrast": "MSE(GENERIC_RNN_1H) - MSE(SENSORY_SITE_FEEDBACK); positive favors sensory-site feedback",
+  "primary_generic_control": {
+    "mean_competitor_minus_sensory_mse": 0.04386240339499636,
+    "crossed_bootstrap_ci95": [
+      0.04246909993809709,
+      0.04525830052669448
+    ],
+    "positive_training_seed_count": 32,
+    "training_seed_count": 32,
+    "per_training_seed_means": [
+      0.04226187895255862,
+      0.04462631836941,
+      0.04583208381518489,
+      0.04525572787679266,
+      0.04657953677815385,
+      0.04391694533114787,
+      0.0434410714005935,
+      0.046083354551228695,
+      0.04167371691437438,
+      0.040268645439937245,
+      0.044143912455183454,
+      0.043725499090214726,
+      0.04299247114249738,
+      0.04931280328310095,
+      0.042107513021619525,
+      0.04292864268791163,
+      0.04243468811182538,
+      0.04438494842906948,
+      0.04198103031376377,
+      0.04574585169029888,
+      0.03955734606279293,
+      0.04455693382624304,
+      0.04422104503464652,
+      0.04475735108280787,
+      0.042481821816181764,
+      0.04249825489387149,
+      0.04406849990482442,
+      0.04195936297765002,
+      0.041628851351561025,
+      0.04644044661108637,
+      0.04378533076669555,
+      0.04794502465665573
+    ]
+  },
+  "direct_matched_controls": {
+    "OUTPUT_SITE_PERSISTENCE": {
+      "mean_competitor_minus_sensory_mse": 0.004029963756011057,
+      "crossed_bootstrap_ci95": [
+        0.0033290303610897356,
+        0.004753015751754219
+      ],
+      "positive_training_seed_count": 32,
+      "training_seed_count": 32,
+      "per_training_seed_means": [
+        0.004898420185782015,
+        0.0054113864825922064,
+        0.003913144486432429,
+        0.0039649047976126894,
+        0.0056911495557869785,
+        0.003382143739145249,
+        0.003662638642708771,
+        0.003849510379950516,
+        0.003772850672248751,
+        0.005187027571082581,
+        0.0027461423742352054,
+        0.006200542935403064,
+        0.002006092319788877,
+        0.0038206501267268322,
+        0.00583493980957428,
+        0.002019814754021354,
+        0.0047089568979572505,
+        0.003439334403083194,
+        0.0032936792267719284,
+        0.0035171320341760293,
+        0.00535291191044962,
+        0.003164764326356817,
+        0.003868456231430173,
+        0.00505716913176002,
+        0.0039013879068079405,
+        0.0037482351399376057,
+        0.003629080922110006,
+        0.0027154226627317257,
+        0.005572420370299369,
+        0.0028683173441095278,
+        0.003683562041260302,
+        0.00407665081002051
+      ]
+    },
+    "NO_FEEDBACK": {
+      "mean_competitor_minus_sensory_mse": 0.0041616758755935734,
+      "crossed_bootstrap_ci95": [
+        0.0033311572088791765,
+        0.005022899481110698
+      ],
+      "positive_training_seed_count": 32,
+      "training_seed_count": 32,
+      "per_training_seed_means": [
+        0.0037209110450930893,
+        0.005031465952924918,
+        0.005357782465580385,
+        0.0039275819071917795,
+        0.008441856974968687,
+        0.00354409222927643,
+        0.0022451723270933144,
+        0.004593078374455217,
+        0.0028434460546122864,
+        0.00487023751338711,
+        0.0029861287330277264,
+        0.006513609849207569,
+        0.0012412923097144812,
+        0.004231672501191497,
+        0.007901678647613153,
+        0.003022766708454583,
+        0.005016553317545913,
+        0.004182217322522774,
+        0.00366619489795994,
+        0.0037994615922798403,
+        0.005919293347687926,
+        0.0034153680608142167,
+        0.003763699838600587,
+        0.005016671129851602,
+        0.002681439924344886,
+        0.003715391649166122,
+        0.0035526777282939292,
+        0.00365672456973698,
+        0.006182648321555462,
+        0.002298335704836063,
+        0.0020773212090716697,
+        0.003756855810934212
+      ]
+    }
+  },
+  "means_by_condition": {
+    "hazard=0.0041666667;missing=0.25": {
+      "SENSORY_SITE_FEEDBACK": {
+        "tracking_mse": 0.1365193862657179,
+        "tracking_mae": 0.1489368279185328,
+        "action_energy": 0.21100626692623337,
+        "switch_recovery_steps": 26.54854484579229
+      },
+      "OUTPUT_SITE_PERSISTENCE": {
+        "tracking_mse": 0.1390578884529532,
+        "tracking_mae": 0.1445483772095031,
+        "action_energy": 0.3297654762282036,
+        "switch_recovery_steps": 26.699430171914237
+      },
+      "NO_FEEDBACK": {
+        "tracking_mse": 0.1393438081106524,
+        "tracking_mae": 0.14604186002043207,
+        "action_energy": 0.33913445136568043,
+        "switch_recovery_steps": 26.687441246539183
+      },
+      "GENERIC_RNN_1H": {
+        "tracking_mse": 0.1602035547982723,
+        "tracking_mae": 0.16096093796568312,
+        "action_energy": 0.2294652004075033,
+        "switch_recovery_steps": 31.58789517738716
+      },
+      "ORACLE_RELATIVE_ERROR": {
+        "tracking_mse": 0.135141038145548,
+        "tracking_mae": 0.1349777917243955,
+        "action_energy": 0.09771877141770346,
+        "switch_recovery_steps": 30.803438284720887
+      }
+    },
+    "hazard=0.0041666667;missing=0.50": {
+      "SENSORY_SITE_FEEDBACK": {
+        "tracking_mse": 0.15296314665010868,
+        "tracking_mae": 0.16724227098757183,
+        "action_energy": 0.1654477040947313,
+        "switch_recovery_steps": 28.546569900195188
+      },
+      "OUTPUT_SITE_PERSISTENCE": {
+        "tracking_mse": 0.1528663579433669,
+        "tracking_mae": 0.15738036544235,
+        "action_energy": 0.2756131367195849,
+        "switch_recovery_steps": 27.674568187677238
+      },
+      "NO_FEEDBACK": {
+        "tracking_mse": 0.15328034250410383,
+        "tracking_mae": 0.16007524266251494,
+        "action_energy": 0.2867335953960719,
+        "switch_recovery_steps": 27.63672660479505
+      },
+      "GENERIC_RNN_1H": {
+        "tracking_mse": 0.1818837234673083,
+        "tracking_mae": 0.1781273049155061,
+        "action_energy": 0.20737355827350257,
+        "switch_recovery_steps": 34.14416132655692
+      },
+      "ORACLE_RELATIVE_ERROR": {
+        "tracking_mse": 0.13489896906116883,
+        "tracking_mae": 0.13485032897733618,
+        "action_energy": 0.09765947509413309,
+        "switch_recovery_steps": 30.94921325452068
+      }
+    },
+    "hazard=0.0041666667;missing=0.75": {
+      "SENSORY_SITE_FEEDBACK": {
+        "tracking_mse": 0.21217830673731441,
+        "tracking_mae": 0.23410333650826942,
+        "action_energy": 0.10727231828468575,
+        "switch_recovery_steps": 41.009685496239626
+      },
+      "OUTPUT_SITE_PERSISTENCE": {
+        "tracking_mse": 0.19017405113640962,
+        "tracking_mae": 0.19066205684430315,
+        "action_energy": 0.19475662830836882,
+        "switch_recovery_steps": 30.793287691483272
+      },
+      "NO_FEEDBACK": {
+        "tracking_mse": 0.1923444349579313,
+        "tracking_mae": 0.19887200350558487,
+        "action_energy": 0.20908041130678612,
+        "switch_recovery_steps": 30.696310771107044
+      },
+      "GENERIC_RNN_1H": {
+        "tracking_mse": 0.23116031528002168,
+        "tracking_mae": 0.21497763013030635,
+        "action_energy": 0.17454594385026212,
+        "switch_recovery_steps": 39.37368941367777
+      },
+      "ORACLE_RELATIVE_ERROR": {
+        "tracking_mse": 0.13425965109354365,
+        "tracking_mae": 0.13429530634357434,
+        "action_energy": 0.09727973680901414,
+        "switch_recovery_steps": 30.930459467450152
+      }
+    },
+    "hazard=0.0083333333;missing=0.25": {
+      "SENSORY_SITE_FEEDBACK": {
+        "tracking_mse": 0.23900376216965924,
+        "tracking_mae": 0.22395683687727796,
+        "action_energy": 0.28621358697182586,
+        "switch_recovery_steps": 28.702307370719318
+      },
+      "OUTPUT_SITE_PERSISTENCE": {
+        "tracking_mse": 0.24515822076159566,
+        "tracking_mae": 0.22120811852528277,
+        "action_energy": 0.40842734621946875,
+        "switch_recovery_steps": 28.95505768847105
+      },
+      "NO_FEEDBACK": {
+        "tracking_mse": 0.2452863559490197,
+        "tracking_mae": 0.22234898980082107,
+        "action_energy": 0.41675454375581467,
+        "switch_recovery_steps": 28.941527685310348
+      },
+      "GENERIC_RNN_1H": {
+        "tracking_mse": 0.2713572539046254,
+        "tracking_mae": 0.2440499095373525,
+        "action_energy": 0.2716652261760828,
+        "switch_recovery_steps": 33.14368654772552
+      },
+      "ORACLE_RELATIVE_ERROR": {
+        "tracking_mse": 0.22988452199979292,
+        "tracking_mae": 0.2149415800713541,
+        "action_energy": 0.15441598237634935,
+        "switch_recovery_steps": 32.405452384314835
+      }
+    },
+    "hazard=0.0083333333;missing=0.50": {
+      "SENSORY_SITE_FEEDBACK": {
+        "tracking_mse": 0.2581377221447383,
+        "tracking_mae": 0.24366756737526885,
+        "action_energy": 0.22857004661864266,
+        "switch_recovery_steps": 30.339418849318513
+      },
+      "OUTPUT_SITE_PERSISTENCE": {
+        "tracking_mse": 0.26216768590074935,
+        "tracking_mae": 0.23432599633429163,
+        "action_energy": 0.34962406714475947,
+        "switch_recovery_steps": 29.67123060737391
+      },
+      "NO_FEEDBACK": {
+        "tracking_mse": 0.26229939802033186,
+        "tracking_mae": 0.2365908275764923,
+        "action_energy": 0.3598139081905174,
+        "switch_recovery_steps": 29.63335716753255
+      },
+      "GENERIC_RNN_1H": {
+        "tracking_mse": 0.30200012553973465,
+        "tracking_mae": 0.2659513106154918,
+        "action_energy": 0.2442205236029622,
+        "switch_recovery_steps": 35.55371634050266
+      },
+      "ORACLE_RELATIVE_ERROR": {
+        "tracking_mse": 0.2282872560231226,
+        "tracking_mae": 0.21347766029020931,
+        "action_energy": 0.15336794589893543,
+        "switch_recovery_steps": 32.37428166527587
+      }
+    },
+    "hazard=0.0083333333;missing=0.75": {
+      "SENSORY_SITE_FEEDBACK": {
+        "tracking_mse": 0.3404593157438285,
+        "tracking_mae": 0.33100080562235235,
+        "action_energy": 0.15014544374753314,
+        "switch_recovery_steps": 41.97174235598409
+      },
+      "OUTPUT_SITE_PERSISTENCE": {
+        "tracking_mse": 0.3197996944793431,
+        "tracking_mae": 0.2776714274855294,
+        "action_energy": 0.25801852208132914,
+        "switch_recovery_steps": 32.677732166951316
+      },
+      "NO_FEEDBACK": {
+        "tracking_mse": 0.3198979093599519,
+        "tracking_mae": 0.28397803042435044,
+        "action_energy": 0.2713155573783297,
+        "switch_recovery_steps": 32.546991870738694
+      },
+      "GENERIC_RNN_1H": {
+        "tracking_mse": 0.3779446438800278,
+        "tracking_mae": 0.31821979772757913,
+        "action_energy": 0.20429636418248265,
+        "switch_recovery_steps": 40.33015021314936
+      },
+      "ORACLE_RELATIVE_ERROR": {
+        "tracking_mse": 0.22805314868355708,
+        "tracking_mae": 0.2133748812734666,
+        "action_energy": 0.15331609536769975,
+        "switch_recovery_steps": 32.3827545128943
+      }
+    },
+    "hazard=0.025;missing=0.25": {
+      "SENSORY_SITE_FEEDBACK": {
+        "tracking_mse": 0.5310258367821916,
+        "tracking_mae": 0.4410133544479322,
+        "action_energy": 0.48158200351281266,
+        "switch_recovery_steps": 36.61494808254876
+      },
+      "OUTPUT_SITE_PERSISTENCE": {
+        "tracking_mse": 0.5533427224825118,
+        "tracking_mae": 0.4464017084742409,
+        "action_energy": 0.6057988447701064,
+        "switch_recovery_steps": 37.04740556505155
+      },
+      "NO_FEEDBACK": {
+        "tracking_mse": 0.553310155727786,
+        "tracking_mae": 0.44704783191309616,
+        "action_energy": 0.611442191655442,
+        "switch_recovery_steps": 37.046967895792825
+      },
+      "GENERIC_RNN_1H": {
+        "tracking_mse": 0.5626376553927912,
+        "tracking_mae": 0.465163373129144,
+        "action_energy": 0.3756631171072513,
+        "switch_recovery_steps": 39.17749178799946
+      },
+      "ORACLE_RELATIVE_ERROR": {
+        "tracking_mse": 0.4750701203756762,
+        "tracking_mae": 0.42462956798726736,
+        "action_energy": 0.3061419521307016,
+        "switch_recovery_steps": 38.14653601483829
+      }
+    },
+    "hazard=0.025;missing=0.50": {
+      "SENSORY_SITE_FEEDBACK": {
+        "tracking_mse": 0.5546113610425891,
+        "tracking_mae": 0.46556410144239635,
+        "action_energy": 0.3934870090388358,
+        "switch_recovery_steps": 37.96797008356754
+      },
+      "OUTPUT_SITE_PERSISTENCE": {
+        "tracking_mse": 0.5832488904150068,
+        "tracking_mae": 0.46429826006260555,
+        "action_energy": 0.5392507518035927,
+        "switch_recovery_steps": 37.51404517729659
+      },
+      "NO_FEEDBACK": {
+        "tracking_mse": 0.5827313451698046,
+        "tracking_mae": 0.4653029815979153,
+        "action_energy": 0.546326092567142,
+        "switch_recovery_steps": 37.50997558714411
+      },
+      "GENERIC_RNN_1H": {
+        "tracking_mse": 0.6153949588012892,
+        "tracking_mae": 0.49993290220845665,
+        "action_energy": 0.3337347915648934,
+        "switch_recovery_steps": 41.07309498114928
+      },
+      "ORACLE_RELATIVE_ERROR": {
+        "tracking_mse": 0.4735457128726921,
+        "tracking_mae": 0.42330720874133476,
+        "action_energy": 0.3050813172148992,
+        "switch_recovery_steps": 38.08644231234676
+      }
+    },
+    "hazard=0.025;missing=0.75": {
+      "SENSORY_SITE_FEEDBACK": {
+        "tracking_mse": 0.6466604774518601,
+        "tracking_mae": 0.5682949840270339,
+        "action_energy": 0.24735864527747253,
+        "switch_recovery_steps": 46.39412910400401
+      },
+      "OUTPUT_SITE_PERSISTENCE": {
+        "tracking_mse": 0.6700372627731213,
+        "tracking_mae": 0.519108103405415,
+        "action_energy": 0.40832873625731736,
+        "switch_recovery_steps": 39.98743738548769
+      },
+      "NO_FEEDBACK": {
+        "tracking_mse": 0.6679562123090363,
+        "tracking_mae": 0.5214747973927842,
+        "action_energy": 0.41835160480695777,
+        "switch_recovery_steps": 39.974968511876284
+      },
+      "GENERIC_RNN_1H": {
+        "tracking_mse": 0.7277192006285986,
+        "tracking_mae": 0.5706583877017692,
+        "action_energy": 0.2670684259664995,
+        "switch_recovery_steps": 44.658360974993265
+      },
+      "ORACLE_RELATIVE_ERROR": {
+        "tracking_mse": 0.47138346997144254,
+        "tracking_mae": 0.4213217309356878,
+        "action_energy": 0.30371440916565007,
+        "switch_recovery_steps": 38.25923853151695
+      }
+    }
+  },
+  "training_summary": {
+    "SENSORY_SITE_FEEDBACK": {
+      "parameter_count": 3,
+      "updates": 100,
+      "sequence_steps_per_fit": 384000,
+      "mean_training_seconds": 1.7170131146249996,
+      "mean_initial_loss": 0.2728877509944141,
+      "mean_final_10_update_loss": 0.26242357534356414
+    },
+    "OUTPUT_SITE_PERSISTENCE": {
+      "parameter_count": 3,
+      "updates": 100,
+      "sequence_steps_per_fit": 384000,
+      "mean_training_seconds": 1.7437681380625023,
+      "mean_initial_loss": 0.30307387420907617,
+      "mean_final_10_update_loss": 0.2628190516959876
+    },
+    "NO_FEEDBACK": {
+      "parameter_count": 3,
+      "updates": 100,
+      "sequence_steps_per_fit": 384000,
+      "mean_training_seconds": 1.6413126458437466,
+      "mean_initial_loss": 0.2784855901263654,
+      "mean_final_10_update_loss": 0.2707846931181848
+    },
+    "GENERIC_RNN_1H": {
+      "parameter_count": 3,
+      "updates": 100,
+      "sequence_steps_per_fit": 384000,
+      "mean_training_seconds": 1.4879264466249986,
+      "mean_initial_loss": 0.5275843217968941,
+      "mean_final_10_update_loss": 0.30398116866126657
+    }
+  },
+  "grid": {
+    "training_seeds": 32,
+    "episodes_per_seed_condition_arm": 256,
+    "condition_count": 9,
+    "arms": [
+      "SENSORY_SITE_FEEDBACK",
+      "OUTPUT_SITE_PERSISTENCE",
+      "NO_FEEDBACK",
+      "GENERIC_RNN_1H",
+      "ORACLE_RELATIVE_ERROR"
+    ],
+    "episode_rows": 368640,
+    "training_rows": 128
+  },
+  "interpretation_rule": "A sensory-site advantage requires positive primary contrast and positive contrasts against both direct placement and no-feedback controls; even then inference is limited to this artificial task."
+}

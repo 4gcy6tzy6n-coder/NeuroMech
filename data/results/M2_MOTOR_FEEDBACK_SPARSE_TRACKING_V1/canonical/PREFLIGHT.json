@@ -1,0 +1,70 @@
+{
+  "experiment_id": "M2_MOTOR_FEEDBACK_SPARSE_TRACKING_V1",
+  "outcomes_computed": false,
+  "python": "3.9.6",
+  "numpy": "2.0.2",
+  "torch": "2.8.0",
+  "contract_sha256": "48f58eff300f4219739aebf889e0df0a64113a236d3899d1743ca05aca21bbf0",
+  "runner_sha256": "d700641e68ed9ab1d5e827506a16c452ff7c7d96bc2cabc9da7f7c36650993d4",
+  "checks": [
+    {
+      "arm": "SENSORY_SITE_FEEDBACK",
+      "parameters": 3,
+      "finite_loss": true,
+      "finite_grad": true
+    },
+    {
+      "arm": "OUTPUT_SITE_PERSISTENCE",
+      "parameters": 3,
+      "finite_loss": true,
+      "finite_grad": true
+    },
+    {
+      "arm": "NO_FEEDBACK",
+      "parameters": 3,
+      "finite_loss": true,
+      "finite_grad": true
+    },
+    {
+      "arm": "GENERIC_RNN_1H",
+      "parameters": 3,
+      "finite_loss": true,
+      "finite_grad": true
+    }
+  ],
+  "training": {
+    "seeds": [
+      410000,
+      410031
+    ],
+    "episodes": 256,
+    "steps": 240,
+    "updates": 100,
+    "batch": 16,
+    "learning_rate": 0.01
+  },
+  "evaluation": {
+    "episodes_per_seed_condition": 256,
+    "hazards": [
+      0.004166666666666667,
+      0.008333333333333333,
+      0.025
+    ],
+    "missing_rates": [
+      0.25,
+      0.5,
+      0.75
+    ],
+    "arms": [
+      "SENSORY_SITE_FEEDBACK",
+      "OUTPUT_SITE_PERSISTENCE",
+      "NO_FEEDBACK",
+      "GENERIC_RNN_1H",
+      "ORACLE_RELATIVE_ERROR"
+    ]
+  },
+  "primary_bootstrap": {
+    "n": 10000,
+    "seed": 20261018
+  }
+}
