@@ -1,2 +1,3 @@
 __pycache__/
 *.py[cod]
+data/raw/cerebellar_interval_timing_dryad_v4/*.mat

@@ -1,0 +1,27 @@
+{
+  "analysis": "full eligible-trial source-filtered descriptive reproduction",
+  "contract": "summery/M5_CEREBELLAR_INTERVAL_RETUNING_V1/REPRODUCTION_CONTRACT.md",
+  "input": "data/raw/cerebellar_interval_timing_dryad_v4/learning_1s_to_2s_GrC_CF.mat",
+  "input_sha256": "822e47a83f84e647e4f9571832f920663009e73bd2814d4118331d99792f4147",
+  "source_code_reference": "wagnerlabnih/garcia-garcia-neuron-2024:learning_1s_to_2s_GrC_CF.m",
+  "source_code_commit": "124c83e1af83e9680e05f9827448579d02345fa3",
+  "python_version": "3.9.6",
+  "numpy_version": "2.0.2",
+  "h5py_version": "3.14.0",
+  "analysis_script_sha256": "bd6d04bc78edb04b2f8d026bbab62812c371f5d6776a64f7ba4d86e1d8a9fc5e",
+  "groups": [
+    "1-s expert",
+    "2-s novice / 1-s expert",
+    "2-s expert"
+  ],
+  "trial_sampling": "all rewarded & goodmvdir trials past source delay threshold; no first/random-50 subsampling",
+  "inference": "descriptive only; cells are nested and are not treated as independent biological replicates",
+  "n_sessions_in_source_groups": [
+    5,
+    5,
+    6
+  ],
+  "session_summary_file": "session_summary.csv",
+  "group_profiles_file": "group_time_profiles.csv",
+  "cell_metrics_file": "cell_metrics_descriptive.csv"
+}

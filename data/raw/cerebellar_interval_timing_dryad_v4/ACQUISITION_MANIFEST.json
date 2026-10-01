@@ -1,0 +1,35 @@
+{
+  "dataset_doi": "10.5061/dryad.bk3j9kdm6",
+  "dataset_version": "v4",
+  "dryad_resource_id": "298774",
+  "retrieved_at_utc": "2026-10-01T03:51:40Z",
+  "retrieval_route": "Public individual-file links on the Dryad dataset page, opened in the user's Codex browser session",
+  "license": "CC0 1.0",
+  "files": [
+    {
+      "original_filename": "learning_1s_to_2s_GrC_CF.mat",
+      "dryad_file_id": "3224109",
+      "bytes": 807474431,
+      "dryad_sha256": "822e47a83f84e647e4f9571832f920663009e73bd2814d4118331d99792f4147",
+      "local_sha256": "822e47a83f84e647e4f9571832f920663009e73bd2814d4118331d99792f4147",
+      "verification": "MATCH"
+    },
+    {
+      "original_filename": "learning_1s_to_2s_licking.mat",
+      "dryad_file_id": "3224111",
+      "bytes": 953404013,
+      "dryad_sha256": "3284aa98e7ad36de87e91ec8bff8ec9fabc02d2f87564249311eef462e251c2e",
+      "local_sha256": "3284aa98e7ad36de87e91ec8bff8ec9fabc02d2f87564249311eef462e251c2e",
+      "verification": "MATCH"
+    },
+    {
+      "original_filename": "README.md",
+      "dryad_file_id": "3224123",
+      "bytes": 2648,
+      "dryad_sha256": "4c4bbad02c20bbc0b72510933cf0408ce3a6ba59c615d92323e4fd9e3914b654",
+      "local_sha256": "4c4bbad02c20bbc0b72510933cf0408ce3a6ba59c615d92323e4fd9e3914b654",
+      "verification": "MATCH"
+    }
+  ],
+  "scope_note": "Only the two files directly containing the 1 s to 2 s granule-cell/climbing-fiber and licking recordings plus the original README were acquired. No other files in the 16.64 GB dataset were downloaded."
+}
