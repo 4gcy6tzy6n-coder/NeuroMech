@@ -121,9 +121,17 @@ def source_weights(grc: np.ndarray, cf: np.ndarray, axis: np.ndarray, mode: str,
     baseline_ix = np.flatnonzero((t_twin >= BASELINE_WINDOW[0]) & (t_twin <= BASELINE_WINDOW[1]))
     cf_twin = cf_for_fit[:, twin, :]
     selected = np.flatnonzero(cf_twin[:, reward_ix, :].mean(axis=(0, 1)) - cf_twin[:, baseline_ix, :].mean(axis=(0, 1)) > 0)
-    if selected.size == 0:
-        raise ValueError("no CF candidates in training fold")
     grc_twin = grc[:, twin, :].astype(np.float64, copy=True)
+    if selected.size == 0:
+        if mode == "instant":
+            empty_offsets = [0]
+        else:
+            empty_lim = matlab_round(np.asarray(ELIGIBILITY_WINDOW) / dt)
+            empty_offsets = [int(v) for v in np.arange(int(empty_lim[0]), int(empty_lim[1]) + 1)]
+        return np.zeros(grc.shape[-1], dtype=np.float64), {
+            "n_cf_candidates": 0, "offsets_frames": empty_offsets,
+            "p95_min": None, "p95_max": None,
+            "fit_status": "NO_CF_CANDIDATE_ZERO_SIGNAL"}
     if mode == "time_shuffled":
         for ti in range(grc_twin.shape[0]):
             for ci in range(grc_twin.shape[2]):
@@ -157,7 +165,7 @@ def source_weights(grc: np.ndarray, cf: np.ndarray, axis: np.ndarray, mode: str,
         cell_weights.append((mean_cell - mean_cell.mean()) / denom)
     weights = -np.mean(np.stack(cell_weights), axis=0)
     return weights, {"n_cf_candidates": int(len(selected)), "offsets_frames": [int(v) for v in offsets],
-                     "p95_min": float(scale.min()), "p95_max": float(scale.max())}
+                     "p95_min": float(scale.min()), "p95_max": float(scale.max()), "fit_status": "FIT_OK"}
 
 
 def ridge_fit_predict(x_train: np.ndarray, y_train: np.ndarray, x_test: np.ndarray, alpha: float = RIDGE_ALPHA) -> np.ndarray:
@@ -218,8 +226,9 @@ def _group_by(rows: list[dict[str, object]], fields: tuple[str, ...]) -> dict[tu
 
 
 def write_csv(path: Path, rows: list[dict[str, object]]) -> None:
+    fields = list(dict.fromkeys(key for row in rows for key in row))
     with path.open("w", newline="", encoding="utf-8") as f:
-        writer = csv.DictWriter(f, fieldnames=list(rows[0]), lineterminator="\n")
+        writer = csv.DictWriter(f, fieldnames=fields, lineterminator="\n")
         writer.writeheader()
         writer.writerows(rows)
 
@@ -282,7 +291,8 @@ def run(out: Path) -> None:
                             predictions.append(_prediction_row(group, si, fold, int(trials[ix]), arm, float(yt), float(yp), float(y_train.mean())))
                     raw_pred, n_pc = raw_pca_ridge(x_train, y_train, x_test)
                     fits.append({"group": group, "session_index": si, "fold": fold, "arm": "RAW_GRC_PCA16_RIDGE",
-                                 "n_train": len(train_ix), "n_test": len(test_ix), "n_components": n_pc})
+                                 "n_train": len(train_ix), "n_test": len(test_ix), "n_components": n_pc,
+                                 "fit_status": "FIT_OK"})
                     mean_pred = np.full(len(test_ix), float(y_train.mean()))
                     for ix, yt, yp in zip(test_ix, y_test, raw_pred):
                         predictions.append(_prediction_row(group, si, fold, int(trials[ix]), "RAW_GRC_PCA16_RIDGE", float(yt), float(yp), float(y_train.mean())))

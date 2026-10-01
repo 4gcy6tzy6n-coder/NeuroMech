@@ -191,14 +191,23 @@
   "python": "3.12.13",
   "numpy": "2.4.4",
   "h5py": "3.16.0",
-  "contract_sha256": "87aa8c1d89ba6f6fbe1858b216fdb8d082c5c3d75fc7b58b36f9ab5aab608f5a",
-  "runner_sha256": "af1e3170093512a84c2aa344619d717d933644f7b135f79de2ac6e6325a9b319",
+  "contract_sha256": "f95c1948ff10ea95958afe5fa6c655d17680dcb3133efe7a5f9e4cd679cbc54f",
+  "runner_sha256": "fe2571f84583a6e3819517de4acc7633075ee4f26aadd31082e3af7e611d6713",
   "output_dir": "data/results/M5_REAL_TRIAL_INTERVAL_DECODING_V1/canonical",
   "preflight_amendment": {
     "reason": "The first attempted invocation stopped before analysis because source_weights referenced an uninitialized RNG in the time-shuffle control.",
     "repair": "Initialize one deterministic per-fit RNG and use it for the event-yoked and time-shuffled training-fold permutations.",
     "analysis_executed_on_failed_attempt": false,
     "failed_attempt_output": "No outcome outputs; empty output directory moved to /tmp/M5_REAL_TRIAL_INTERVAL_DECODING_V1_failed_attempt.",
-    "runner_hash_updated_before_valid_run": true
+    "runner_hash_updated_before_valid_run": true,
+    "protocol_amendment": {
+      "trigger": "A training fold had zero CF cells passing the frozen reward-response-over-baseline criterion.",
+      "rule": "Use a zero projection/training-mean prediction and retain the fold; mark NO_CF_CANDIDATE_ZERO_SIGNAL.",
+      "partial_predictions_in_memory": true,
+      "prediction_values_inspected": false,
+      "canonical_files_written_before_stop": false,
+      "confirmatory_status": "NOT_CONFIRMATORY; exploratory after partial execution amendment"
+    },
+    "additional_implementation_fix": "Fold-fit CSV now writes the union of heterogeneous model-arm metadata columns."
   }
 }
