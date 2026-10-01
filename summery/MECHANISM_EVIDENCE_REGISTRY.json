@@ -228,7 +228,12 @@
         "model/M2_SELF_CONTINGENT_FEEDBACK_TRANSFER_V1/run_experiment.py",
         "model/M2_SELF_CONTINGENT_FEEDBACK_TRANSFER_V1/verify_results.py",
         "data/results/M2_SELF_CONTINGENT_FEEDBACK_TRANSFER_V1/canonical/manifest.json",
-        "data/results/M2_SELF_CONTINGENT_FEEDBACK_TRANSFER_V1/canonical/REPRODUCIBILITY.json"
+        "data/results/M2_SELF_CONTINGENT_FEEDBACK_TRANSFER_V1/canonical/REPRODUCIBILITY.json",
+        "summery/M2_ACTUATION_UNCERTAINTY_STATE_FEEDBACK_V1/CONTRACT.md",
+        "summery/M2_ACTUATION_UNCERTAINTY_STATE_FEEDBACK_V1/RESULTS.md",
+        "model/M2_ACTUATION_UNCERTAINTY_STATE_FEEDBACK_V1/run_experiment.py",
+        "data/results/M2_ACTUATION_UNCERTAINTY_STATE_FEEDBACK_V1/canonical/summary.json",
+        "data/results/M2_ACTUATION_UNCERTAINTY_STATE_FEEDBACK_V1/canonical/RERUN_VERIFICATION.json"
       ],
       "structural_evidence": {
         "status": "VERIFIED",
@@ -256,7 +261,8 @@
         "Unique causal RIM-to-AIY synaptic carrier",
         "No independent held-out task-family validation for the artificial transfer hypothesis",
         "The synthetic mode-dependent sensory-reliability relation was not established in the biological source",
-        "The artificial closed-loop gate is an abstract controller, not a reconstruction of the worm circuit"
+        "The artificial closed-loop gate is an abstract controller, not a reconstruction of the worm circuit",
+        "A strong action-conditioned AcRKN policy and task-aware particle-filter comparison for the latest realized-state input result has not yet been executed; see summery/M2_REALIZED_STATE_VS_ACTION_BELIEF_V1/CONTRACT.md"
       ],
       "mechanism_definition": "RIM-dependent state feedback modulates AIY activity and thermotactic motor-state representation at cell-class granularity, as bounded by the frozen biological evidence.",
       "allowed_claim": [
@@ -320,7 +326,8 @@
         }
       ],
       "artificial_evidence": [
-        "In M2_SELF_CONTINGENT_FEEDBACK_TRANSFER_V1, recipient-specific self-contingent sensory feedback beat a population-distribution-matched cross-agent yoke by +0.009431 movement MSE in SLOW_TRANSIENT only (95% seed-block interval [+0.007434,+0.011676], n=32); the advantage did not generalize across conditions and lost to output-site, generic RNN, and GRU-8 primary-condition controls. Synthetic exploratory evidence only."
+        "In M2_SELF_CONTINGENT_FEEDBACK_TRANSFER_V1, recipient-specific self-contingent sensory feedback beat a population-distribution-matched cross-agent yoke by +0.009431 movement MSE in SLOW_TRANSIENT only (95% seed-block interval [+0.007434,+0.011676], n=32); the advantage did not generalize across conditions and lost to output-site, generic RNN, and GRU-8 primary-condition controls. Synthetic exploratory evidence only.",
+        "In the outcome-informed synthetic tracking experiment M2_ACTUATION_UNCERTAINTY_STATE_FEEDBACK_V1, a 321-parameter GRU receiving realized movement sign beat an equal-parameter GRU receiving previous-command sign across four reversal doses; the prespecified .40-minus-0 difference-in-differences was +0.11051 MSE (95% seed-block bootstrap interval [+0.05341,+0.16633], 32 blocks). The advantage existed at zero reversal, peaked at p=.25, and declined at p=.40; therefore the result supports a bounded signal-input effect but not a monotonic uncertainty dose law or biological-to-AI transfer. The action arm was not an action-conditioned belief estimator."
       ]
     },
     {
