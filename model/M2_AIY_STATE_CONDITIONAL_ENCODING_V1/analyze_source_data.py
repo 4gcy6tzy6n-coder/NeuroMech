@@ -41,27 +41,34 @@ def num(v):
         return np.nan
 
 
-def parse_grouped_sheet(path: Path, sheet_name: str, starts: list[int], state_col: int,
-                        aiy_col: int, ava_col: int, step: int, group: str) -> list[dict]:
+def parse_grouped_sheet(path: Path, sheet_name: str, layouts: list[tuple[int, int, int, int]],
+                        group: str) -> list[dict]:
     ws = load_workbook(path, read_only=True, data_only=True)[sheet_name]
     # Sources contain a title row and a header row; numerical samples start on row 3.
     all_rows = list(ws.iter_rows(min_row=3, values_only=True))
     animals = []
-    for n, start in enumerate(starts, 1):
-        vals = [[num(row[start + col]) for col in (0, state_col, aiy_col, ava_col)] for row in all_rows]
+    for n, (start, state_col, aiy_col, ava_col) in enumerate(layouts, 1):
+        vals = [[num(row[start]), num(row[start + state_col]),
+                 num(row[start + aiy_col]), num(row[start + ava_col])] for row in all_rows]
         a = np.asarray(vals, dtype=float)
         valid = np.isfinite(a[:, 0]) & np.isfinite(a[:, 1])
         a = a[valid]
+        if len(a) == 0 or np.unique(a[:, 1]).size < 2:
+            continue
         animals.append({"group": group, "animal_id": f"{group}_{n}", "time": a[:, 0],
-                        "state": a[:, 1], "aiy": a[:, 2], "ava": a[:, 3], "source_step": step})
+                        "state": a[:, 1], "aiy": a[:, 2], "ava": a[:, 3]})
     return animals
 
 
 def load_animals():
     wt_path = RAW / "elife-68848-fig2-data1-v3.xlsx"
     rim_path = RAW / "elife-68848-fig5-data1-v3.xlsx"
-    wt = parse_grouped_sheet(wt_path, "Fig 2HI_const temp", [0, 9, 18, 27, 36, 46], 1, 2, 3, 9, "WT")
-    rim = parse_grouped_sheet(rim_path, "Fig 5C,S1B", [0, 8, 16, 24, 32], 1, 2, 3, 8, "RIM_ABLATED")
+    wt_layouts = [(0, 1, 2, 3), (9, 1, 2, 3), (18, 1, 2, 3),
+                  (27, 1, 2, 3), (36, 2, 3, 4), (46, 1, 2, 3)]
+    rim_layouts = [(0, 1, 2, 3), (8, 1, 2, 3), (16, 1, 2, 3),
+                   (24, 1, 2, 3), (32, 1, 2, 3)]
+    wt = parse_grouped_sheet(wt_path, "Fig 2HI_const temp", wt_layouts, "WT")
+    rim = parse_grouped_sheet(rim_path, "Fig 5C,S1B", rim_layouts, "RIM_ABLATED")
     return wt + rim, [wt_path, rim_path]
 
 
