@@ -1,0 +1,22 @@
+group,arm,n_sessions,mean_session_mae_s,median_session_mae_s,mean_session_improvement_vs_training_mean_s,sessions_improved_vs_training_mean,inference_scope
+1-s expert,BIO_CF_LTD,5,0.06051802817971508,0.06356943613032796,-0.00854262124718078,0,descriptive sessions; animal IDs unavailable
+1-s expert,BIO_NO_TRACE,5,0.062463202994487696,0.06345460776767121,-0.010487796061953394,0,descriptive sessions; animal IDs unavailable
+1-s expert,CELL_SHUFFLED,5,0.06921064963264237,0.06933238416997112,-0.01723524270010806,0,descriptive sessions; animal IDs unavailable
+1-s expert,CF_EVENT_YOKED,5,0.059763868894111546,0.06305608802681692,-0.007788461961577247,0,descriptive sessions; animal IDs unavailable
+1-s expert,GRC_TIME_SHUFFLED,5,0.0617709047424028,0.06153722818781882,-0.00979549780986849,1,descriptive sessions; animal IDs unavailable
+1-s expert,RAW_GRC_PCA16_RIDGE,5,0.047445768463733065,0.04482495064943326,0.004529638468801242,4,descriptive sessions; animal IDs unavailable
+1-s expert,TRAINING_MEAN,5,0.05197540693253431,0.046540404040404056,0.0,0,descriptive sessions; animal IDs unavailable
+2-s expert,BIO_CF_LTD,6,0.06258202028025987,0.060295805674732576,-0.008934413315164065,0,descriptive sessions; animal IDs unavailable
+2-s expert,BIO_NO_TRACE,6,0.06120709295649574,0.06100099445305461,-0.007559485991399931,0,descriptive sessions; animal IDs unavailable
+2-s expert,CELL_SHUFFLED,6,0.06788716628495975,0.0693186064912965,-0.014239559319863954,0,descriptive sessions; animal IDs unavailable
+2-s expert,CF_EVENT_YOKED,6,0.06126107388375632,0.0565894010896575,-0.007613466918660516,1,descriptive sessions; animal IDs unavailable
+2-s expert,GRC_TIME_SHUFFLED,6,0.064100544327782,0.0625710489374145,-0.01045293736268621,0,descriptive sessions; animal IDs unavailable
+2-s expert,RAW_GRC_PCA16_RIDGE,6,0.050332379972478684,0.04950415319819209,0.0033152269926171167,4,descriptive sessions; animal IDs unavailable
+2-s expert,TRAINING_MEAN,6,0.053647606965095795,0.0525119135118319,0.0,0,descriptive sessions; animal IDs unavailable
+2-s novice / 1-s expert,BIO_CF_LTD,5,0.054443663320936884,0.048136891566255176,-0.011759411213078545,1,descriptive sessions; animal IDs unavailable
+2-s novice / 1-s expert,BIO_NO_TRACE,5,0.051976741604836764,0.04956877533240454,-0.009292489496978428,0,descriptive sessions; animal IDs unavailable
+2-s novice / 1-s expert,CELL_SHUFFLED,5,0.05876614074730585,0.05244969056461499,-0.016081888639447504,0,descriptive sessions; animal IDs unavailable
+2-s novice / 1-s expert,CF_EVENT_YOKED,5,0.052788704899973296,0.045732649856902306,-0.010104452792114948,0,descriptive sessions; animal IDs unavailable
+2-s novice / 1-s expert,GRC_TIME_SHUFFLED,5,0.05724027220082317,0.04710101044850189,-0.01455602009296483,0,descriptive sessions; animal IDs unavailable
+2-s novice / 1-s expert,RAW_GRC_PCA16_RIDGE,5,0.04271563353269679,0.037553185048312204,-3.1381424838453076e-05,3,descriptive sessions; animal IDs unavailable
+2-s novice / 1-s expert,TRAINING_MEAN,5,0.04268425210785833,0.0378376906318084,0.0,0,descriptive sessions; animal IDs unavailable

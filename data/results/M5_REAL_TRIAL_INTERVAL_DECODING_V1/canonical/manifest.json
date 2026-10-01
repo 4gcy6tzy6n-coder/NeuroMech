@@ -1,0 +1,46 @@
+{
+  "experiment": "M5_REAL_TRIAL_INTERVAL_DECODING_V1",
+  "classification": "retrospective exploratory source-data reanalysis",
+  "started_unix": 1790837043.60111,
+  "finished_unix": 1790837064.356651,
+  "duration_seconds": 20.7555410861969,
+  "raw_sha256": "822e47a83f84e647e4f9571832f920663009e73bd2814d4118331d99792f4147",
+  "acquisition_manifest_sha256": "016eae437ff68659af0add29b5187a0193c0cabd031f2dbea0a17180fb9b8158",
+  "contract_sha256": "f95c1948ff10ea95958afe5fa6c655d17680dcb3133efe7a5f9e4cd679cbc54f",
+  "runner_sha256": "fe2571f84583a6e3819517de4acc7633075ee4f26aadd31082e3af7e611d6713",
+  "python": "3.12.13",
+  "numpy": "2.4.4",
+  "h5py": "3.16.0",
+  "folds": 5,
+  "seed": 20261021,
+  "input_window_s": [
+    0.0,
+    0.8
+  ],
+  "outputs": {
+    "fold_fit_manifest.csv": {
+      "bytes": 45390,
+      "sha256": "8fa8a08dbb92e06b2341b7a2bac420ebb74568d181aa7cfff085dbd351419d4d"
+    },
+    "group_summary.csv": {
+      "bytes": 3071,
+      "sha256": "daf3eec245f3bed6ac1316286ae84b60961764cc1c4dbc6f0f6a4df746358893"
+    },
+    "heldout_predictions.csv": {
+      "bytes": 729575,
+      "sha256": "1b19793bb4217dd845a42f8b2f4c4687c1418e13859eeea2659657da1826a194"
+    },
+    "session_inventory.csv": {
+      "bytes": 1587,
+      "sha256": "dc68499668ebb59189126a259a51862c1bf71470137d1e89abd44c827b35aae3"
+    },
+    "session_summary.csv": {
+      "bytes": 15124,
+      "sha256": "847d5ee114ff85dcbe92b251e9a81ef0d14efc25d414e88f0e1191d58a48337d"
+    },
+    "summary.json": {
+      "bytes": 8747,
+      "sha256": "98b25bbd4e4c62b8105c61c83e2f5220381a42ce99b8b28a76847dce533a4d5c"
+    }
+  }
+}

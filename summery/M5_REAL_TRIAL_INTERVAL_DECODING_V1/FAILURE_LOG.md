@@ -11,3 +11,9 @@ The runner now initializes a deterministic per-fit random generator and uses it 
 The second invocation processed eligible trials and reached model fitting, then stopped because one training fold had no CF cell above the frozen response criterion. Predictions for earlier sessions existed only in process memory; the runner exited before writing canonical files, and no prediction values or outcome summaries were inspected. The empty output directory was retained without result files.
 
 The protocol now assigns a zero projection to a fold with no selected CF candidate, equivalent to an intercept-only/training-mean decoder, and explicitly labels that fit in the fold manifest. This avoids dropping sessions or folds based on observed activity. Because the protocol amendment follows partial execution, all resulting estimates are exploratory and not confirmatory. A separate CSV writer issue was also corrected: the fit manifest has heterogeneous metadata across model arms, so the writer now emits the union of columns rather than failing on arm-specific fields.
+
+## Complete run and independent reproduction
+
+After the documented amendment, all 16 sessions completed. The canonical verifier passed with 7,028 held-out prediction rows, 1,004 unique trials, 480 fit records, and six hashed output files. A fresh full run reproduced the held-out prediction CSV and fit manifest byte-for-byte. Four folds in 1-s expert session 3 had no CF candidates; all were retained under the zero-signal rule. The results and their interpretation are recorded in `RESULTS.md`.
+
+A subsequent launch initially refused to run because the prior failed process had left an empty `canonical/` directory. That empty directory was moved to `/tmp/M5_REAL_TRIAL_INTERVAL_DECODING_V1_failed_attempt_2`; it contained no result files and did not affect the valid run.

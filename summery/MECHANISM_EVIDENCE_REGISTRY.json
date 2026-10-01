@@ -489,12 +489,18 @@
           "citation": "Silva et al., Nature Neuroscience (2024)",
           "doi": "10.1038/s41593-024-01594-7",
           "role": "CF/complex-spike sufficiency and timed inhibition necessity in delay eyeblink conditioning"
+        },
+        {
+          "citation": "Garcia-Garcia et al., Neuron (2024)",
+          "doi": "10.1016/j.neuron.2024.05.019",
+          "role": "Adjacent GrC/CF reward-interval timing source dataset; LTD weight profile is modeled in source analysis"
         }
       ],
       "source_artifacts": [
         "BIOLOGICAL_COMPUTATION_EXTRACTION.md",
         "experiments/m5_cerebellar_eligibility/DELAYED_TEACHING_SIGNAL_CONTRACT.md",
-        "experiments/m5_cerebellar_eligibility/RESULTS.md"
+        "experiments/m5_cerebellar_eligibility/RESULTS.md",
+        "summery/M5_REAL_TRIAL_INTERVAL_DECODING_V1/RESULTS.md"
       ],
       "structural_evidence": {
         "status": "PARTIAL",
@@ -514,7 +520,7 @@
       },
       "identity_granularity": "CELL_TYPE / CIRCUIT SIGNAL (climbing fiber and Purkinje complex-spike events); no single-synapse learning-rule claim",
       "evidence_status": "PARTIAL",
-      "result_scope": "A timed CF/complex-spike event causally instructs acquisition of an appropriately timed associative response in the tested delay eyeblink conditioning task. Eligibility trace and three-factor synaptic rule are computational abstractions, not directly measured algorithms. A fixed-hyperparameter follow-up retained a positive trace-versus-no-trace contrast across IID Gaussian, AR(1) Gaussian, and sparse-sign input streams (+0.2284 equal-generator accuracy; hierarchical task-seed 95% interval [+0.2213,+0.2357]; 30/30 positive task-seed averages in each generator). This keeps the same classification objective; exact replay remained superior in all 12 generator-delay cells. A post-result M7 sweep crossed six AR(1) correlations, four delays, and classification/regression objectives. Within each objective, the trace benefit generally decreased with rho at short delays but reversed at long delays; exact replay still beat the trace in all 48 cells. An initial pooled accuracy-minus-MSE interaction was invalid and is excluded.",
+      "result_scope": "A timed CF/complex-spike event causally instructs acquisition of an appropriately timed associative response in the tested delay eyeblink conditioning task. Eligibility trace and three-factor synaptic rule are computational abstractions, not directly measured algorithms. A fixed-hyperparameter follow-up retained a positive trace-versus-no-trace contrast across IID Gaussian, AR(1) Gaussian, and sparse-sign input streams (+0.2284 equal-generator accuracy; hierarchical task-seed 95% interval [+0.2213,+0.2357]; 30/30 positive task-seed averages in each generator). This keeps the same classification objective; exact replay remained superior in all 12 generator-delay cells. A post-result M7 sweep crossed six AR(1) correlations, four delays, and classification/regression objectives. Within each objective, the trace benefit generally decreased with rho at short delays but reversed at long delays; exact replay still beat the trace in all 48 cells. An initial pooled accuracy-minus-MSE interaction was invalid and is excluded. An adjacent Dryad reward-interval source-data analysis fit source-style CF-timed LTD projections within session and tested pre-reward GrC decoding of held-out reward delay. The CF-LTD projection did not beat the training-fold mean in 15/16 sessions and was worse on average in all three source groups; a raw-GrC PCA16 decoder showed only a small descriptive advantage in two expert groups. This is not the same task as the core delay-eyeblink intervention evidence and does not refute its causal result.",
       "known_missing_evidence": [
         "Direct measurement and isolation of a particular synaptic eligibility-trace state/rule",
         "Generalization to other cerebellum-dependent tasks and species",
@@ -527,13 +533,15 @@
         "The cited interventions support a causal CF/complex-spike instructive role in acquisition of mouse delay eyeblink conditioning.",
         "A norm-matched local eligibility trace improved delayed-label accuracy over a no-trace misassignment control in the stated synthetic task.",
         "With fixed hyperparameters, the synthetic trace effect remained positive versus no-trace across three tested input-stream distributions under the same task objective; exact replay remained superior.",
-        "On the fixed synthetic task family, trace benefit relative to current-input updates depends jointly on input autocorrelation, delay, and objective; objective-specific M7 interactions were positive when averaged over delay but reversed at long delays."
+        "On the fixed synthetic task family, trace benefit relative to current-input updates depends jointly on input autocorrelation, delay, and objective; objective-specific M7 interactions were positive when averaged over delay but reversed at long delays.",
+        "In an adjacent public reward-interval dataset, the tested source-style CF-LTD projection did not add held-out reward-delay predictive value beyond a within-session mean timer; generic raw-GrC decoding was small and group-dependent. This is an exploratory source-cohort result, not evidence against the distinct delay-eyeblink intervention findings."
       ],
       "forbidden_claim": [
         "The cited studies directly prove a specific eligibility-trace equation or universal cerebellar learning rule.",
         "The synthetic benchmark validates the biological mechanism or establishes general AI benefit.",
         "The synthetic eligibility model outperforms exact replay or batch logistic regression.",
-        "The M7 phase diagram is a general task-family law, biological validation, or evidence of a new eligibility algorithm."
+        "The M7 phase diagram is a general task-family law, biological validation, or evidence of a new eligibility algorithm.",
+        "The reward-interval decoder result refutes CF/complex-spike causal teaching in delay eyeblink conditioning or proves that biological eligibility is absent."
       ],
       "artificial_abstraction": "A local decaying feature eligibility state receives delayed label error via a three-factor update; implementation is an abstract online classifier, not a cerebellum model.",
       "counterfactual_arms": [
@@ -558,15 +566,22 @@
           "definition": "Fit the same fixed features from the full labeled training set."
         }
       ],
-      "implementation_status": "POST_RESULT_M5_CROSS_INPUT_AND_M7_CORRELATION_DELAY_SWEEP; TRACE_EFFECT_DELAY_AND_STATISTICS_DEPENDENT; EXACT_REPLAY_SUPERIOR",
-      "functional_observable": "Held-out four-class accuracy and cross-entropy after delayed-label online learning on a synthetic fixed-feature task.",
+      "implementation_status": "POST_RESULT_M5_CROSS_INPUT_AND_M7_CORRELATION_DELAY_SWEEP; TRACE_EFFECT_DELAY_AND_STATISTICS_DEPENDENT; EXACT_REPLAY_SUPERIOR; ADJACENT_REWARD_INTERVAL_SOURCE_DECODER_CF_LTD_NOT_ABOVE_SESSION_MEAN; RAW_GRC_PCA_SMALL_GROUP_DEPENDENT",
+      "functional_observable": "Held-out four-class accuracy and cross-entropy after delayed-label online learning on a synthetic fixed-feature task. Adjacent source-data probe: single-trial granule-cell activity in a fixed pre-reward interval and measured reward delay, summarized within 16 sessions without animal-level inference.",
       "structural_observable": "Not modeled; no cell-level structural graph imported.",
       "neuron_id_mapping": "Not applicable to abstract algorithm; biological identity remains at the climbing-fiber/Purkinje-cell-type signal level.",
       "provenance_class": "PRIMARY_INTERVENTION_EVIDENCE_PLUS_SYNTHETIC_EXPLORATORY_MODEL",
       "independent_of_connectivity": "YES for the biological intervention result; the artificial test contains no connectome.",
-      "aggregation_granularity": "Biological evidence: animal/task in delay eyeblink conditioning; artificial evidence: 30 independent task seeds.",
+      "aggregation_granularity": "Biological evidence: animal/task in delay eyeblink conditioning; artificial evidence: 30 independent task seeds. Adjacent reward-interval data: 16 sessions are descriptive only because public animal IDs are unavailable.",
       "single_neuron_claim_allowed": false,
-      "source_datasets": []
+      "source_datasets": [
+        {
+          "name": "GrC/CF activity during 1-s to 2-s reward-interval learning",
+          "identifier": "Dryad DOI 10.5061/dryad.bk3j9kdm6, v4",
+          "local_path": "data/raw/cerebellar_interval_timing_dryad_v4/",
+          "provenance_status": "Acquisition manifest records all three source-file SHA-256 values; trial-level decoder is exploratory and session-level only."
+        }
+      ]
     }
   ]
 }

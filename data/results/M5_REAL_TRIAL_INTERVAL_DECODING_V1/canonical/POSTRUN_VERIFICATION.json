@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "heldout_prediction_rows": 7028,
+  "unique_heldout_trial_keys": 1004,
+  "session_count": 16,
+  "session_arm_summaries_recomputed": 112,
+  "group_arm_summaries_checked": 21,
+  "fold_fit_records": 480,
+  "manifest_outputs_hash_checked": 6,
+  "scope": "data and summary integrity; does not independently rerun source model fitting"
+}
