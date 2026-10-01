@@ -1,0 +1,60 @@
+{
+  "experiment_id": "M5_DELAYED_REWARD_MEMORY_FRONTIER_V1",
+  "status": "FROZEN_PRE_RUN",
+  "classification": "post-result exploratory transfer using disjoint task seeds",
+  "task_seeds": [
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59
+  ],
+  "delays": [
+    1,
+    4,
+    16,
+    64
+  ],
+  "arms": [
+    "ELIGIBILITY_TRACE_32",
+    "EXACT_FIFO_32",
+    "EXACT_FIFO_128",
+    "EXACT_FIFO_512",
+    "EXACT_FIFO_2048",
+    "NO_TRACE_CURRENT_32",
+    "EXACT_REPLAY"
+  ],
+  "frozen_hashes_sha256": {
+    "summery/M5_DELAYED_REWARD_MEMORY_FRONTIER_V1/CONTRACT.md": "1b4974e5c71589c5e9f9f1cf74d4e9780a28a57135bdfbf9f4fe45b114f5fbda",
+    "model/M5_DELAYED_REWARD_MEMORY_FRONTIER_V1/run_experiment.py": "6d5d04f4131861ba21d6e92176099fe84992d8aa098f3749da050a7571898646",
+    "model/M5_DELAYED_REWARD_MEMORY_FRONTIER_V1/verify_results.py": "db220458976ba3b1c6f27fa500fea1ed06fb604010352ead2fdbf1734df29360"
+  },
+  "python": "3.12.13",
+  "numpy": "2.4.4",
+  "outcome_files_inspected_before_freeze": false
+}
