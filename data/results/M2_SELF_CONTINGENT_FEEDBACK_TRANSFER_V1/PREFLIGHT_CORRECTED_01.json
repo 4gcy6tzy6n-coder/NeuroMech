@@ -1,0 +1,67 @@
+{
+  "experiment": "M2_SELF_CONTINGENT_FEEDBACK_TRANSFER_V1",
+  "classification": "exploratory artificial transfer; contract frozen before run, prior project outcomes known",
+  "contract_sha256": "908af52f49f2e09e7fa42d50a190fcb441a370856c2644caaae8c2a5269d7ff1",
+  "runner_sha256": "1889fee7281a225fac5f11a124286b635267ae6ea5e53acc65b005d237ce7e9e",
+  "verifier_sha256": "352fca9ae7966449f72b4ae86caec9ddd45c386ffaa02a442dc12f37b9f8946e",
+  "environment": {
+    "python": "3.12",
+    "numpy": "2.4",
+    "torch": "2.11",
+    "device": "CPU",
+    "torch_threads": 1
+  },
+  "training_seed_blocks": [
+    810000,
+    810031
+  ],
+  "test_seed_rule": "9000000 + block*100000 + condition_index*1000",
+  "test_episodes_per_block_condition": 128,
+  "training_updates": 100,
+  "batch_size": 32,
+  "sequence_length": 96,
+  "arms": [
+    "SELF_SENSORY",
+    "CROSS_AGENT_YOKED_SENSORY",
+    "SELF_OUTPUT",
+    "NO_FEEDBACK",
+    "GENERIC_RNN_1D",
+    "GRU_8"
+  ],
+  "parameter_counts": {
+    "SELF_SENSORY": 4,
+    "CROSS_AGENT_YOKED_SENSORY": 4,
+    "SELF_OUTPUT": 4,
+    "NO_FEEDBACK": 3,
+    "GENERIC_RNN_1D": 6,
+    "GRU_8": 297
+  },
+  "conditions": {
+    "SLOW_TRANSIENT": {
+      "hazard": 0.01,
+      "pulse_rate": 0.08,
+      "pulse_steps": 2
+    },
+    "FAST_TRANSIENT": {
+      "hazard": 0.05,
+      "pulse_rate": 0.08,
+      "pulse_steps": 2
+    },
+    "SLOW_CLEAN": {
+      "hazard": 0.01,
+      "pulse_rate": 0.0,
+      "pulse_steps": 0
+    },
+    "FAST_CLEAN": {
+      "hazard": 0.05,
+      "pulse_rate": 0.0,
+      "pulse_steps": 0
+    }
+  },
+  "primary": "CROSS_AGENT_YOKED_SENSORY minus SELF_SENSORY movement_mse in SLOW_TRANSIENT; positive favors self contingency",
+  "followup_outcomes_inspected": false,
+  "amendment": "EXECUTION_INCIDENT_01: dispatch CROSS_AGENT_YOKED_SENSORY through the four-parameter sensory equation; first invocation failed before evaluation or outcomes.",
+  "supersedes_preflight_sha256": "a80ce60a3b5729e5eab0d008944132c6596df2a56da13d0a504fae183ac084a1",
+  "initial_attempt_failed_before_outcome_metrics": true,
+  "initial_attempt_outcomes_inspected": false
+}

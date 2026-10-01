@@ -113,7 +113,7 @@ class ScalarController(nn.Module):
 
     def step(self, y: torch.Tensor, own_motor: torch.Tensor, feedback: torch.Tensor,
              h: torch.Tensor) -> tuple[torch.Tensor, torch.Tensor]:
-        if self.arm == "SELF_SENSORY":
+        if self.arm in ("SELF_SENSORY", "CROSS_AGENT_YOKED_SENSORY"):
             h = torch.tanh(self.w_y * y + self.w_h * h + self.w_f * feedback)
             u = torch.tanh(self.w_u * h)
         elif self.arm == "SELF_OUTPUT":
