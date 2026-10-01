@@ -1,0 +1,184 @@
+{
+  "classification": "post-result exploratory, descriptive source-data reanalysis",
+  "primary_metric": "held-out per-trial Pearson correlation squared, averaged within split then session",
+  "inference": "descriptive only; no session-as-animal assumption, p-values, or animal-level intervals",
+  "groups": [
+    {
+      "group": "1-s expert",
+      "method": "CELL_SHUFFLED",
+      "n_sessions": 5,
+      "mean_session_r2": 0.12825101984669243,
+      "median_session_r2": 0.11189703286055815,
+      "min_session_r2": 0.08734243347076391,
+      "max_session_r2": 0.21982110278330674
+    },
+    {
+      "group": "1-s expert",
+      "method": "CF_LTD",
+      "n_sessions": 5,
+      "mean_session_r2": 0.49122289483291154,
+      "median_session_r2": 0.42049480547488727,
+      "min_session_r2": 0.16270605090722348,
+      "max_session_r2": 0.824212367088756
+    },
+    {
+      "group": "1-s expert",
+      "method": "CF_TIME_SHUFFLED",
+      "n_sessions": 5,
+      "mean_session_r2": 0.1950067253704792,
+      "median_session_r2": 0.12335852925842353,
+      "min_session_r2": 0.08780278473768748,
+      "max_session_r2": 0.5022662944115799
+    },
+    {
+      "group": "1-s expert",
+      "method": "RIDGE_REFERENCE",
+      "n_sessions": 5,
+      "mean_session_r2": 0.52787405751428,
+      "median_session_r2": 0.39028346937681757,
+      "min_session_r2": 0.3010838592904345,
+      "max_session_r2": 0.8019767151022545
+    },
+    {
+      "group": "1-s expert",
+      "method": "UNIFORM",
+      "n_sessions": 5,
+      "mean_session_r2": 0.27311510495185864,
+      "median_session_r2": 0.2659761984179464,
+      "min_session_r2": 0.1552628226320835,
+      "max_session_r2": 0.43941367540938747
+    },
+    {
+      "group": "2-s expert",
+      "method": "CELL_SHUFFLED",
+      "n_sessions": 6,
+      "mean_session_r2": 0.12203176757136025,
+      "median_session_r2": 0.10019270847732353,
+      "min_session_r2": 0.054262429503402265,
+      "max_session_r2": 0.2539957081802276
+    },
+    {
+      "group": "2-s expert",
+      "method": "CF_LTD",
+      "n_sessions": 6,
+      "mean_session_r2": 0.49058604203239486,
+      "median_session_r2": 0.475699909070984,
+      "min_session_r2": 0.27810218788459173,
+      "max_session_r2": 0.7588298701367181
+    },
+    {
+      "group": "2-s expert",
+      "method": "CF_TIME_SHUFFLED",
+      "n_sessions": 6,
+      "mean_session_r2": 0.15061679743563322,
+      "median_session_r2": 0.15306645884894088,
+      "min_session_r2": 0.0587388148897832,
+      "max_session_r2": 0.21690923531846146
+    },
+    {
+      "group": "2-s expert",
+      "method": "RIDGE_REFERENCE",
+      "n_sessions": 6,
+      "mean_session_r2": 0.6396308346660252,
+      "median_session_r2": 0.6892778529813102,
+      "min_session_r2": 0.3458249598162978,
+      "max_session_r2": 0.7622759564411254
+    },
+    {
+      "group": "2-s expert",
+      "method": "UNIFORM",
+      "n_sessions": 6,
+      "mean_session_r2": 0.16634937329389077,
+      "median_session_r2": 0.1732362213477306,
+      "min_session_r2": 0.1038140032243821,
+      "max_session_r2": 0.2048242442725936
+    },
+    {
+      "group": "2-s novice / 1-s expert",
+      "method": "CELL_SHUFFLED",
+      "n_sessions": 5,
+      "mean_session_r2": 0.12549145601305572,
+      "median_session_r2": 0.09711243053112457,
+      "min_session_r2": 0.05667481578265595,
+      "max_session_r2": 0.2475776934100003
+    },
+    {
+      "group": "2-s novice / 1-s expert",
+      "method": "CF_LTD",
+      "n_sessions": 5,
+      "mean_session_r2": 0.4346614182444304,
+      "median_session_r2": 0.40297256083349875,
+      "min_session_r2": 0.18594998475906158,
+      "max_session_r2": 0.671668778402952
+    },
+    {
+      "group": "2-s novice / 1-s expert",
+      "method": "CF_TIME_SHUFFLED",
+      "n_sessions": 5,
+      "mean_session_r2": 0.1631385170910479,
+      "median_session_r2": 0.1609908538725096,
+      "min_session_r2": 0.07345845522514721,
+      "max_session_r2": 0.22810744067624444
+    },
+    {
+      "group": "2-s novice / 1-s expert",
+      "method": "RIDGE_REFERENCE",
+      "n_sessions": 5,
+      "mean_session_r2": 0.5131823957600508,
+      "median_session_r2": 0.4893429738454403,
+      "min_session_r2": 0.2706135752674844,
+      "max_session_r2": 0.7160881685798948
+    },
+    {
+      "group": "2-s novice / 1-s expert",
+      "method": "UNIFORM",
+      "n_sessions": 5,
+      "mean_session_r2": 0.2660837966665507,
+      "median_session_r2": 0.29621899955066255,
+      "min_session_r2": 0.10241555668519967,
+      "max_session_r2": 0.4034599765755546
+    }
+  ],
+  "split_status_counts": {
+    "NO_TRAINING_CF_CANDIDATES": 2,
+    "OK": 390
+  },
+  "skipped_sessions": [
+    {
+      "group": "1-s expert",
+      "session_index": 3,
+      "split": 2,
+      "seed": 20263002,
+      "status": "NO_TRAINING_CF_CANDIDATES",
+      "n_train": 27,
+      "n_test": 27,
+      "n_selected_cf": 0
+    },
+    {
+      "group": "1-s expert",
+      "session_index": 3,
+      "split": 3,
+      "seed": 20263003,
+      "status": "NO_TRAINING_CF_CANDIDATES",
+      "n_train": 27,
+      "n_test": 27,
+      "n_selected_cf": 0
+    }
+  ],
+  "preflight_group_sessions": [
+    {
+      "group": "1-s expert",
+      "n_sessions": 5
+    },
+    {
+      "group": "2-s novice / 1-s expert",
+      "n_sessions": 5
+    },
+    {
+      "group": "2-s expert",
+      "n_sessions": 6
+    }
+  ],
+  "trial_rows": 12355,
+  "split_rows": 392
+}

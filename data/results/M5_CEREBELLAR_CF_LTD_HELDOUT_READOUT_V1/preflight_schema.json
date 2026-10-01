@@ -1,0 +1,154 @@
+{
+  "experiment_id": "M5_CEREBELLAR_CF_LTD_HELDOUT_READOUT_V1",
+  "raw_path_relative": "data/raw/cerebellar_interval_timing_dryad_v4/learning_1s_to_2s_GrC_CF.mat",
+  "raw_bytes": 807474431,
+  "raw_sha256": "822e47a83f84e647e4f9571832f920663009e73bd2814d4118331d99792f4147",
+  "groups": [
+    {
+      "label": "1-s expert",
+      "session_count": 5,
+      "sessions": [
+        {
+          "session_index": 1,
+          "timepoints": 301,
+          "grc_cells": 54,
+          "cf_cells": 9,
+          "trials": 138,
+          "dtimCb_seconds": 0.03336489780611162
+        },
+        {
+          "session_index": 2,
+          "timepoints": 301,
+          "grc_cells": 85,
+          "cf_cells": 21,
+          "trials": 154,
+          "dtimCb_seconds": 0.03336380398774797
+        },
+        {
+          "session_index": 3,
+          "timepoints": 301,
+          "grc_cells": 27,
+          "cf_cells": 7,
+          "trials": 94,
+          "dtimCb_seconds": 0.03336552284517656
+        },
+        {
+          "session_index": 4,
+          "timepoints": 301,
+          "grc_cells": 24,
+          "cf_cells": 11,
+          "trials": 130,
+          "dtimCb_seconds": 0.033361147571721976
+        },
+        {
+          "session_index": 5,
+          "timepoints": 301,
+          "grc_cells": 67,
+          "cf_cells": 13,
+          "trials": 139,
+          "dtimCb_seconds": 0.03336192887055314
+        }
+      ]
+    },
+    {
+      "label": "2-s novice / 1-s expert",
+      "session_count": 5,
+      "sessions": [
+        {
+          "session_index": 1,
+          "timepoints": 301,
+          "grc_cells": 35,
+          "cf_cells": 6,
+          "trials": 147,
+          "dtimCb_seconds": 0.0333639602475142
+        },
+        {
+          "session_index": 2,
+          "timepoints": 301,
+          "grc_cells": 87,
+          "cf_cells": 36,
+          "trials": 136,
+          "dtimCb_seconds": 0.03336192887055314
+        },
+        {
+          "session_index": 3,
+          "timepoints": 301,
+          "grc_cells": 34,
+          "cf_cells": 6,
+          "trials": 127,
+          "dtimCb_seconds": 0.033365522845176555
+        },
+        {
+          "session_index": 4,
+          "timepoints": 301,
+          "grc_cells": 44,
+          "cf_cells": 8,
+          "trials": 89,
+          "dtimCb_seconds": 0.033363647727981734
+        },
+        {
+          "session_index": 5,
+          "timepoints": 153,
+          "grc_cells": 63,
+          "cf_cells": 15,
+          "trials": 145,
+          "dtimCb_seconds": 0.0657119660254785
+        }
+      ]
+    },
+    {
+      "label": "2-s expert",
+      "session_count": 6,
+      "sessions": [
+        {
+          "session_index": 1,
+          "timepoints": 301,
+          "grc_cells": 72,
+          "cf_cells": 21,
+          "trials": 154,
+          "dtimCb_seconds": 0.033362397649851855
+        },
+        {
+          "session_index": 2,
+          "timepoints": 301,
+          "grc_cells": 119,
+          "cf_cells": 21,
+          "trials": 155,
+          "dtimCb_seconds": 0.0333634914682155
+        },
+        {
+          "session_index": 3,
+          "timepoints": 301,
+          "grc_cells": 27,
+          "cf_cells": 17,
+          "trials": 159,
+          "dtimCb_seconds": 0.03336536658541033
+        },
+        {
+          "session_index": 4,
+          "timepoints": 301,
+          "grc_cells": 108,
+          "cf_cells": 26,
+          "trials": 66,
+          "dtimCb_seconds": 0.033361616351020675
+        },
+        {
+          "session_index": 5,
+          "timepoints": 301,
+          "grc_cells": 94,
+          "cf_cells": 21,
+          "trials": 84,
+          "dtimCb_seconds": 0.03336271016938432
+        },
+        {
+          "session_index": 6,
+          "timepoints": 301,
+          "grc_cells": 103,
+          "cf_cells": 37,
+          "trials": 156,
+          "dtimCb_seconds": 0.03336396024751421
+        }
+      ]
+    }
+  ]
+}

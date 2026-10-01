@@ -1,0 +1,48 @@
+{
+  "experiment_id": "M5_CEREBELLAR_CF_LTD_HELDOUT_READOUT_V1",
+  "classification": "post-result exploratory, descriptive source-data reanalysis",
+  "started_unix": 1790829690.664742,
+  "finished_unix": 1790829697.308963,
+  "duration_seconds": 6.644221067428589,
+  "python": "3.9.6 (default, Jan  9 2026, 11:03:41) \n[Clang 17.0.0 (clang-1700.6.4.2)]",
+  "platform": "macOS-26.2-arm64-arm-64bit",
+  "numpy": "2.0.2",
+  "h5py": "3.14.0",
+  "runner_sha256": "fe91c7b610d406bfe5938f7f1fe46bed2c16c5c495e7233603d9f7d5b4f96a2a",
+  "contract_sha256": "9d985af10486fa796b25b4d0380f333c6f0972430ac2692387be6363bba51254",
+  "author_source_repository": "https://github.com/wagnerlabnih/garcia-garcia-neuron-2024",
+  "author_source_commit": "124c83e1af83e9680e05f9827448579d02345fa3",
+  "acquisition_manifest_sha256": "016eae437ff68659af0add29b5187a0193c0cabd031f2dbea0a17180fb9b8158",
+  "raw_sha256": "822e47a83f84e647e4f9571832f920663009e73bd2814d4118331d99792f4147",
+  "raw_sha256_matches_dryad": true,
+  "randomization": {
+    "n_splits_per_session": 5,
+    "seed_formula": "20261001 + group_index*100000 + session_index*1000 + split_index"
+  },
+  "outputs": {
+    "heldout_trial_results.csv": {
+      "bytes": 1153805,
+      "sha256": "dd6dfc8b42f49b3affdb4c492499af213a7e0c678e3d6acc29105e04b7a32e6b"
+    },
+    "ltd_weights.csv": {
+      "bytes": 509135,
+      "sha256": "5f0b7c996b1223086406ce24610a993f6a21cb775c9d52dfa8e533d274824412"
+    },
+    "preflight_schema.json": {
+      "bytes": 3883,
+      "sha256": "af1ade71d75be2919039f30076fa525888bf714ea5f7384119ab1f69e0d665de"
+    },
+    "session_split_results.csv": {
+      "bytes": 35725,
+      "sha256": "a01d12c94132e882d71bdb8e011f44ba0ad98376db564a095109f6e285d0c6a2"
+    },
+    "session_summary.csv": {
+      "bytes": 4136,
+      "sha256": "1c30747a109363bf2d9945450432108d218100eea48ec8ba5ceca3c5899a96c2"
+    },
+    "summary.json": {
+      "bytes": 5376,
+      "sha256": "608cb96942542cf5c04b343977c034798c9d4faf031b88585990249b95add35e"
+    }
+  }
+}
