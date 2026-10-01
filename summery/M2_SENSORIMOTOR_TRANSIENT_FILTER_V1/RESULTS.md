@@ -64,4 +64,4 @@ This run **does not support** the tested claim that sensory-site motor feedback 
 - A separate full run reproduced `episode_metrics.csv`, `seed_summary.csv`, and `summary.json` byte-for-byte. Fit parameters, training losses, and protocol metadata matched; wall-clock timing differed as expected.
 - Environment: Python 3.12.13, NumPy 2.4.4, PyTorch 2.11.0, CPU, one Torch thread.
 
-See [the frozen contract](CONTRACT.md), [failure log](FAILURE_LOG.md), [runner and verifier](../../model/M2_SENSORIMOTOR_TRANSIENT_FILTER_V1/), the [canonical outputs](../../data/results/M2_SENSORIMOTOR_TRANSIENT_FILTER_V1/canonical/), and the [validation manifest](../../data/results/M2_SENSORIMOTOR_TRANSIENT_FILTER_V1/VALIDATION_MANIFEST.json).
+See [the frozen contract](CONTRACT.md), [failure log](FAILURE_LOG.md), [post-run trade-off audit](POSTRUN_TRADEOFF_AUDIT.md), [runner and verifier](../../model/M2_SENSORIMOTOR_TRANSIENT_FILTER_V1/), the [canonical outputs](../../data/results/M2_SENSORIMOTOR_TRANSIENT_FILTER_V1/canonical/), and the [validation manifest](../../data/results/M2_SENSORIMOTOR_TRANSIENT_FILTER_V1/VALIDATION_MANIFEST.json).

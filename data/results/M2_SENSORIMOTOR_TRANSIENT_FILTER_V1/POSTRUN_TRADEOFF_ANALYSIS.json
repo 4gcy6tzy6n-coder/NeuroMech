@@ -1,0 +1,345 @@
+{
+  "experiment": "M2_SENSORIMOTOR_TRANSIENT_FILTER_V1",
+  "classification": "post-result exploratory secondary analysis; no multiplicity correction; does not alter frozen primary result",
+  "contrast": "OUTPUT_SITE_1D minus SENSORY_SITE_1D, paired within seed block and condition",
+  "conditions": [
+    "CLEAN_STABLE",
+    "TRANSIENT_PULSE",
+    "LONG_PULSE",
+    "SUSTAINED_SWITCH",
+    "COMBINED_STRESS"
+  ],
+  "metrics": [
+    "movement_mae",
+    "movement_mse",
+    "command_energy",
+    "mean_switch_latency_steps",
+    "pulse_window_mae"
+  ],
+  "bootstrap_replicates": 50000,
+  "bootstrap_unit": "paired training/task seed block",
+  "input": {
+    "path": "data/results/M2_SENSORIMOTOR_TRANSIENT_FILTER_V1/canonical/seed_summary.csv",
+    "sha256": "a89f3d046257200128f7e2552ea15318f1280c1c4d7c38e93cd8b89f719ef035",
+    "bytes": 104191
+  },
+  "output": {
+    "path": "data/results/M2_SENSORIMOTOR_TRANSIENT_FILTER_V1/POSTRUN_TRADEOFF_CONTRASTS.csv",
+    "sha256": "bbf14760d691c90e00812ccba562e1a8449f5eef626f02b75e5a373704cc98ce",
+    "bytes": 3934
+  },
+  "analysis_script": {
+    "path": "model/M2_SENSORIMOTOR_TRANSIENT_FILTER_V1/analyze_tradeoffs.py",
+    "sha256": "70a5f0c0dad43bf7981b7ab987206c1db9d12cc52ddf36b56c3e4a4ba1778aa1"
+  },
+  "verification_script": {
+    "path": "model/M2_SENSORIMOTOR_TRANSIENT_FILTER_V1/verify_tradeoffs.py",
+    "sha256": "4c9916f288185e584b20f163c30c0c81031d0264702c7fcc344baf996f7010a0"
+  },
+  "contrasts": {
+    "CLEAN_STABLE": {
+      "movement_mae": {
+        "condition": "CLEAN_STABLE",
+        "metric": "movement_mae",
+        "contrast": "OUTPUT_SITE_1D minus SENSORY_SITE_1D",
+        "mean_difference": -0.09668913455410291,
+        "median_difference": -0.09799484505000094,
+        "ci95_low": -0.11102819082753293,
+        "ci95_high": -0.0821566235080052,
+        "n_seed_blocks": 20,
+        "positive_seed_blocks": 0,
+        "negative_seed_blocks": 20
+      },
+      "movement_mse": {
+        "condition": "CLEAN_STABLE",
+        "metric": "movement_mse",
+        "contrast": "OUTPUT_SITE_1D minus SENSORY_SITE_1D",
+        "mean_difference": -0.027325944578330714,
+        "median_difference": -0.027113672435332054,
+        "ci95_low": -0.03525907109870598,
+        "ci95_high": -0.01966738696615661,
+        "n_seed_blocks": 20,
+        "positive_seed_blocks": 1,
+        "negative_seed_blocks": 19
+      },
+      "command_energy": {
+        "condition": "CLEAN_STABLE",
+        "metric": "command_energy",
+        "contrast": "OUTPUT_SITE_1D minus SENSORY_SITE_1D",
+        "mean_difference": 0.1747023461487339,
+        "median_difference": 0.17614442149143966,
+        "ci95_low": 0.15095459080534013,
+        "ci95_high": 0.19830210444515728,
+        "n_seed_blocks": 20,
+        "positive_seed_blocks": 20,
+        "negative_seed_blocks": 0
+      },
+      "mean_switch_latency_steps": {
+        "condition": "CLEAN_STABLE",
+        "metric": "mean_switch_latency_steps",
+        "contrast": "OUTPUT_SITE_1D minus SENSORY_SITE_1D",
+        "mean_difference": 0.5407046543967038,
+        "median_difference": 0.4861111111111116,
+        "ci95_low": 0.41620182372847553,
+        "ci95_high": 0.6690180767680766,
+        "n_seed_blocks": 20,
+        "positive_seed_blocks": 19,
+        "negative_seed_blocks": 1
+      },
+      "pulse_window_mae": null
+    },
+    "TRANSIENT_PULSE": {
+      "movement_mae": {
+        "condition": "TRANSIENT_PULSE",
+        "metric": "movement_mae",
+        "contrast": "OUTPUT_SITE_1D minus SENSORY_SITE_1D",
+        "mean_difference": -0.0791413290958983,
+        "median_difference": -0.08384517344965539,
+        "ci95_low": -0.0918847947833203,
+        "ci95_high": -0.06603868562796722,
+        "n_seed_blocks": 20,
+        "positive_seed_blocks": 0,
+        "negative_seed_blocks": 20
+      },
+      "movement_mse": {
+        "condition": "TRANSIENT_PULSE",
+        "metric": "movement_mse",
+        "contrast": "OUTPUT_SITE_1D minus SENSORY_SITE_1D",
+        "mean_difference": -0.04009871829582603,
+        "median_difference": -0.04105929774534296,
+        "ci95_low": -0.04849599421090838,
+        "ci95_high": -0.031671568066527996,
+        "n_seed_blocks": 20,
+        "positive_seed_blocks": 0,
+        "negative_seed_blocks": 20
+      },
+      "command_energy": {
+        "condition": "TRANSIENT_PULSE",
+        "metric": "command_energy",
+        "contrast": "OUTPUT_SITE_1D minus SENSORY_SITE_1D",
+        "mean_difference": 0.11609951331158115,
+        "median_difference": 0.11440197039534891,
+        "ci95_low": 0.09377989496108811,
+        "ci95_high": 0.13813837956165584,
+        "n_seed_blocks": 20,
+        "positive_seed_blocks": 20,
+        "negative_seed_blocks": 0
+      },
+      "mean_switch_latency_steps": {
+        "condition": "TRANSIENT_PULSE",
+        "metric": "mean_switch_latency_steps",
+        "contrast": "OUTPUT_SITE_1D minus SENSORY_SITE_1D",
+        "mean_difference": 0.5059206956062164,
+        "median_difference": 0.5263403263403266,
+        "ci95_low": 0.3523385567180299,
+        "ci95_high": 0.6580568699311492,
+        "n_seed_blocks": 20,
+        "positive_seed_blocks": 19,
+        "negative_seed_blocks": 1
+      },
+      "pulse_window_mae": {
+        "condition": "TRANSIENT_PULSE",
+        "metric": "pulse_window_mae",
+        "contrast": "OUTPUT_SITE_1D minus SENSORY_SITE_1D",
+        "mean_difference": -0.09207600957032515,
+        "median_difference": -0.08889967374940605,
+        "ci95_low": -0.10809447274019739,
+        "ci95_high": -0.07643405352747792,
+        "n_seed_blocks": 20,
+        "positive_seed_blocks": 0,
+        "negative_seed_blocks": 20
+      }
+    },
+    "LONG_PULSE": {
+      "movement_mae": {
+        "condition": "LONG_PULSE",
+        "metric": "movement_mae",
+        "contrast": "OUTPUT_SITE_1D minus SENSORY_SITE_1D",
+        "mean_difference": -0.07943761515437775,
+        "median_difference": -0.08064423988509853,
+        "ci95_low": -0.09057101366451892,
+        "ci95_high": -0.06769243952725064,
+        "n_seed_blocks": 20,
+        "positive_seed_blocks": 0,
+        "negative_seed_blocks": 20
+      },
+      "movement_mse": {
+        "condition": "LONG_PULSE",
+        "metric": "movement_mse",
+        "contrast": "OUTPUT_SITE_1D minus SENSORY_SITE_1D",
+        "mean_difference": -0.03914522222379013,
+        "median_difference": -0.04172855685701024,
+        "ci95_low": -0.045642241451518614,
+        "ci95_high": -0.0323297097644461,
+        "n_seed_blocks": 20,
+        "positive_seed_blocks": 0,
+        "negative_seed_blocks": 20
+      },
+      "command_energy": {
+        "condition": "LONG_PULSE",
+        "metric": "command_energy",
+        "contrast": "OUTPUT_SITE_1D minus SENSORY_SITE_1D",
+        "mean_difference": 0.12081221961885488,
+        "median_difference": 0.12078177071005378,
+        "ci95_low": 0.0993023926081692,
+        "ci95_high": 0.1418819864808913,
+        "n_seed_blocks": 20,
+        "positive_seed_blocks": 20,
+        "negative_seed_blocks": 0
+      },
+      "mean_switch_latency_steps": {
+        "condition": "LONG_PULSE",
+        "metric": "mean_switch_latency_steps",
+        "contrast": "OUTPUT_SITE_1D minus SENSORY_SITE_1D",
+        "mean_difference": 0.5465847743776179,
+        "median_difference": 0.5771100427350428,
+        "ci95_low": 0.4113845254577163,
+        "ci95_high": 0.6793257856256993,
+        "n_seed_blocks": 20,
+        "positive_seed_blocks": 19,
+        "negative_seed_blocks": 1
+      },
+      "pulse_window_mae": {
+        "condition": "LONG_PULSE",
+        "metric": "pulse_window_mae",
+        "contrast": "OUTPUT_SITE_1D minus SENSORY_SITE_1D",
+        "mean_difference": -0.09632771423896687,
+        "median_difference": -0.09538445859600975,
+        "ci95_low": -0.11239576499762767,
+        "ci95_high": -0.08019689860777725,
+        "n_seed_blocks": 20,
+        "positive_seed_blocks": 0,
+        "negative_seed_blocks": 20
+      }
+    },
+    "SUSTAINED_SWITCH": {
+      "movement_mae": {
+        "condition": "SUSTAINED_SWITCH",
+        "metric": "movement_mae",
+        "contrast": "OUTPUT_SITE_1D minus SENSORY_SITE_1D",
+        "mean_difference": -0.042965716315674744,
+        "median_difference": -0.046328668020133135,
+        "ci95_low": -0.054278825481527106,
+        "ci95_high": -0.03177406091316835,
+        "n_seed_blocks": 20,
+        "positive_seed_blocks": 1,
+        "negative_seed_blocks": 19
+      },
+      "movement_mse": {
+        "condition": "SUSTAINED_SWITCH",
+        "metric": "movement_mse",
+        "contrast": "OUTPUT_SITE_1D minus SENSORY_SITE_1D",
+        "mean_difference": 0.016612462461007105,
+        "median_difference": 0.018240707485621677,
+        "ci95_low": 0.007717292658924455,
+        "ci95_high": 0.025275320225287255,
+        "n_seed_blocks": 20,
+        "positive_seed_blocks": 15,
+        "negative_seed_blocks": 5
+      },
+      "command_energy": {
+        "condition": "SUSTAINED_SWITCH",
+        "metric": "command_energy",
+        "contrast": "OUTPUT_SITE_1D minus SENSORY_SITE_1D",
+        "mean_difference": 0.10589192926465807,
+        "median_difference": 0.10711538511713814,
+        "ci95_low": 0.08423711980551776,
+        "ci95_high": 0.12744766591025278,
+        "n_seed_blocks": 20,
+        "positive_seed_blocks": 20,
+        "negative_seed_blocks": 0
+      },
+      "mean_switch_latency_steps": {
+        "condition": "SUSTAINED_SWITCH",
+        "metric": "mean_switch_latency_steps",
+        "contrast": "OUTPUT_SITE_1D minus SENSORY_SITE_1D",
+        "mean_difference": 0.3611619963824205,
+        "median_difference": 0.36774236841201136,
+        "ci95_low": 0.27761834979394506,
+        "ci95_high": 0.4411717355358073,
+        "n_seed_blocks": 20,
+        "positive_seed_blocks": 19,
+        "negative_seed_blocks": 1
+      },
+      "pulse_window_mae": {
+        "condition": "SUSTAINED_SWITCH",
+        "metric": "pulse_window_mae",
+        "contrast": "OUTPUT_SITE_1D minus SENSORY_SITE_1D",
+        "mean_difference": -0.06961111164028932,
+        "median_difference": -0.06814957890249346,
+        "ci95_low": -0.08188658670945372,
+        "ci95_high": -0.05800528829330267,
+        "n_seed_blocks": 20,
+        "positive_seed_blocks": 0,
+        "negative_seed_blocks": 20
+      }
+    },
+    "COMBINED_STRESS": {
+      "movement_mae": {
+        "condition": "COMBINED_STRESS",
+        "metric": "movement_mae",
+        "contrast": "OUTPUT_SITE_1D minus SENSORY_SITE_1D",
+        "mean_difference": -0.030623223868436866,
+        "median_difference": -0.032727865689499425,
+        "ci95_low": -0.037426959684530255,
+        "ci95_high": -0.023655720608330245,
+        "n_seed_blocks": 20,
+        "positive_seed_blocks": 0,
+        "negative_seed_blocks": 20
+      },
+      "movement_mse": {
+        "condition": "COMBINED_STRESS",
+        "metric": "movement_mse",
+        "contrast": "OUTPUT_SITE_1D minus SENSORY_SITE_1D",
+        "mean_difference": 0.004894339587862384,
+        "median_difference": 0.0036996388579895734,
+        "ci95_low": 0.0012592669795377092,
+        "ci95_high": 0.008808751130038126,
+        "n_seed_blocks": 20,
+        "positive_seed_blocks": 15,
+        "negative_seed_blocks": 5
+      },
+      "command_energy": {
+        "condition": "COMBINED_STRESS",
+        "metric": "command_energy",
+        "contrast": "OUTPUT_SITE_1D minus SENSORY_SITE_1D",
+        "mean_difference": 0.0610308403006881,
+        "median_difference": 0.06395612521153354,
+        "ci95_low": 0.04087585202458923,
+        "ci95_high": 0.08140700194016552,
+        "n_seed_blocks": 20,
+        "positive_seed_blocks": 18,
+        "negative_seed_blocks": 2
+      },
+      "mean_switch_latency_steps": {
+        "condition": "COMBINED_STRESS",
+        "metric": "mean_switch_latency_steps",
+        "contrast": "OUTPUT_SITE_1D minus SENSORY_SITE_1D",
+        "mean_difference": 0.2949944704541898,
+        "median_difference": 0.29556981646825387,
+        "ci95_low": 0.216795707757908,
+        "ci95_high": 0.3744658482342005,
+        "n_seed_blocks": 20,
+        "positive_seed_blocks": 19,
+        "negative_seed_blocks": 1
+      },
+      "pulse_window_mae": {
+        "condition": "COMBINED_STRESS",
+        "metric": "pulse_window_mae",
+        "contrast": "OUTPUT_SITE_1D minus SENSORY_SITE_1D",
+        "mean_difference": -0.06070443779783781,
+        "median_difference": -0.06314657378360206,
+        "ci95_low": -0.07177638939149718,
+        "ci95_high": -0.04964855155633991,
+        "n_seed_blocks": 20,
+        "positive_seed_blocks": 0,
+        "negative_seed_blocks": 20
+      }
+    }
+  },
+  "limitations": [
+    "Conditions and metrics beyond the original transient-pulse primary are exploratory.",
+    "Intervals are descriptive across multiple contrasts; no multiplicity adjustment was applied.",
+    "The synthetic task does not validate or refute the biological RIM-AIY finding."
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "input_seed_summary_rows": 700,
+  "paired_contrasts_recomputed": 24,
+  "published_contrast_rows": 24,
+  "checks": "means, medians, seed-block bootstrap intervals, sign counts, and source/output hashes",
+  "scope": "post-result exploratory secondary analysis only; no multiplicity adjustment"
+}

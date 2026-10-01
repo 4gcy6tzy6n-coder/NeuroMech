@@ -45,5 +45,37 @@
   "verifier": {
     "path": "model/M2_SENSORIMOTOR_TRANSIENT_FILTER_V1/verify_results.py",
     "sha256": "0e530ee5590ed8a34c63860a22178516d1a69d16b32753effb203560a8ec3e7c"
+  },
+  "postrun_secondary_analysis": {
+    "analysis_script": {
+      "path": "model/M2_SENSORIMOTOR_TRANSIENT_FILTER_V1/analyze_tradeoffs.py",
+      "bytes": 5002,
+      "sha256": "70a5f0c0dad43bf7981b7ab987206c1db9d12cc52ddf36b56c3e4a4ba1778aa1"
+    },
+    "verification_script": {
+      "path": "model/M2_SENSORIMOTOR_TRANSIENT_FILTER_V1/verify_tradeoffs.py",
+      "bytes": 3791,
+      "sha256": "4c9916f288185e584b20f163c30c0c81031d0264702c7fcc344baf996f7010a0"
+    },
+    "postrun_contrasts": {
+      "path": "data/results/M2_SENSORIMOTOR_TRANSIENT_FILTER_V1/POSTRUN_TRADEOFF_CONTRASTS.csv",
+      "bytes": 3934,
+      "sha256": "bbf14760d691c90e00812ccba562e1a8449f5eef626f02b75e5a373704cc98ce"
+    },
+    "postrun_analysis_manifest": {
+      "path": "data/results/M2_SENSORIMOTOR_TRANSIENT_FILTER_V1/POSTRUN_TRADEOFF_ANALYSIS.json",
+      "bytes": 12865,
+      "sha256": "e14743c7c91e10a80f55b48d54737b7fcb368698d67d143185867b9e6b69d907"
+    },
+    "postrun_verification": {
+      "path": "data/results/M2_SENSORIMOTOR_TRANSIENT_FILTER_V1/POSTRUN_TRADEOFF_VERIFICATION.json",
+      "bytes": 318,
+      "sha256": "54c332af063a5591d5622d1bdb4585269f2974be98b7a5dd7aa0f710e56745cd"
+    },
+    "postrun_audit": {
+      "path": "summery/M2_SENSORIMOTOR_TRANSIENT_FILTER_V1/POSTRUN_TRADEOFF_AUDIT.md",
+      "bytes": 3808,
+      "sha256": "34d6c42a64c96c243f842508dd10b9a862cbed42a9cddf3f4a3f28327e72c3a0"
+    }
   }
 }

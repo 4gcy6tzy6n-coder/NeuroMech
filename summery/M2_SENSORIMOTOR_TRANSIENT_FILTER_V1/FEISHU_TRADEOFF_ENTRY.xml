@@ -1,0 +1,5 @@
+<hr/>
+<h1>M2_SENSORIMOTOR_TRANSIENT_FILTER_POSTRUN_TRADEOFF_AUDIT</h1>
+<p>这是对 <code>M2_SENSORIMOTOR_TRANSIENT_FILTER_V1</code> canonical seed-summary 的事后配对分析，不是新实验，也不改变原预注册 primary。跨五个任务条件比较两种等参数反馈位置，每个条件 20 个 paired seed block；使用 50,000 次 seed-block bootstrap。由于分析了多个次要指标和条件，区间仅作探索性描述，没有多重比较校正。</p>
+<p>主要模式：输出端反馈在五个条件下的 movement MAE 都较低；感觉状态端在五个条件下都使用较低 command energy，并有较短的 target-switch latency。movement MSE 在前三个较低切换条件偏向输出端，在 sustained-switch 与 combined-stress 两个高切换条件偏向感觉状态端。该结果提示准确率、控制代价和切换速度可能存在任务依赖权衡，但当前实验没有冻结能耗约束或 Pareto 估计，也没有证明生物 RIM–AIY 机制具有这种权衡。</p>
+<p>建议的下一项人工实验：新 seed 上预先冻结命令能耗代价，比较感觉状态端、输出端和强 action-conditioned recurrent baseline，在 held-out 条件下报告误差、能耗和切换延迟，避免将这次事后观察包装成确认性结论。</p>
