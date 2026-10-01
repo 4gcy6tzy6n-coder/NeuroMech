@@ -111,9 +111,10 @@ def source_weights(grc: np.ndarray, cf: np.ndarray, axis: np.ndarray, mode: str,
                    seed: int) -> tuple[np.ndarray, dict[str, object]]:
     """Author-rule CF selection and GrC LTD weight fit using training-fold data only."""
     dt = float(np.median(np.diff(axis)))
+    rng = np.random.default_rng(seed)
     cf_for_fit = cf
     if mode == "event_yoked":
-        cf_for_fit = cf[np.random.default_rng(seed).permutation(len(cf))]
+        cf_for_fit = cf[rng.permutation(len(cf))]
     twin = np.flatnonzero((axis >= SOURCE_TWIN[0]) & (axis <= SOURCE_TWIN[1]))
     t_twin = axis[twin]
     reward_ix = np.flatnonzero((t_twin >= REWARD_WINDOW[0]) & (t_twin <= REWARD_WINDOW[1]))

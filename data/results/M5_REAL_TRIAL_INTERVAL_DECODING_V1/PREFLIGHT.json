@@ -192,6 +192,13 @@
   "numpy": "2.4.4",
   "h5py": "3.16.0",
   "contract_sha256": "87aa8c1d89ba6f6fbe1858b216fdb8d082c5c3d75fc7b58b36f9ab5aab608f5a",
-  "runner_sha256": "be236d353ae5b148fb55e3a3144dddde3f801624c232bea823a8ea2abf35ed87",
-  "output_dir": "data/results/M5_REAL_TRIAL_INTERVAL_DECODING_V1/canonical"
+  "runner_sha256": "af1e3170093512a84c2aa344619d717d933644f7b135f79de2ac6e6325a9b319",
+  "output_dir": "data/results/M5_REAL_TRIAL_INTERVAL_DECODING_V1/canonical",
+  "preflight_amendment": {
+    "reason": "The first attempted invocation stopped before analysis because source_weights referenced an uninitialized RNG in the time-shuffle control.",
+    "repair": "Initialize one deterministic per-fit RNG and use it for the event-yoked and time-shuffled training-fold permutations.",
+    "analysis_executed_on_failed_attempt": false,
+    "failed_attempt_output": "No outcome outputs; empty output directory moved to /tmp/M5_REAL_TRIAL_INTERVAL_DECODING_V1_failed_attempt.",
+    "runner_hash_updated_before_valid_run": true
+  }
 }
