@@ -1,0 +1,197 @@
+{
+  "experiment": "M5_REAL_TRIAL_INTERVAL_DECODING_V1",
+  "raw_sha256": "822e47a83f84e647e4f9571832f920663009e73bd2814d4118331d99792f4147",
+  "raw_bytes": 807474431,
+  "acquisition_manifest_sha256": "016eae437ff68659af0add29b5187a0193c0cabd031f2dbea0a17180fb9b8158",
+  "groups": [
+    {
+      "label": "1-s expert",
+      "session_count": 5,
+      "sessions": [
+        {
+          "session_index": 1,
+          "eligible_trials": 98,
+          "grc_cells": 54,
+          "cf_cells": 9,
+          "minimum_delay_s": 1.02,
+          "maximum_delay_s": 1.5350000000000001,
+          "time_bins": 301,
+          "time_step_s": 0.033364897806111626
+        },
+        {
+          "session_index": 2,
+          "eligible_trials": 82,
+          "grc_cells": 85,
+          "cf_cells": 21,
+          "minimum_delay_s": 1.02,
+          "maximum_delay_s": 1.6500000000000001,
+          "time_bins": 301,
+          "time_step_s": 0.033363803987747964
+        },
+        {
+          "session_index": 3,
+          "eligible_trials": 54,
+          "grc_cells": 27,
+          "cf_cells": 7,
+          "minimum_delay_s": 1.02,
+          "maximum_delay_s": 1.43,
+          "time_bins": 301,
+          "time_step_s": 0.033365522845176576
+        },
+        {
+          "session_index": 4,
+          "eligible_trials": 56,
+          "grc_cells": 24,
+          "cf_cells": 11,
+          "minimum_delay_s": 1.01,
+          "maximum_delay_s": 1.935,
+          "time_bins": 301,
+          "time_step_s": 0.03336114757172204
+        },
+        {
+          "session_index": 5,
+          "eligible_trials": 54,
+          "grc_cells": 67,
+          "cf_cells": 13,
+          "minimum_delay_s": 1.01,
+          "maximum_delay_s": 1.5150000000000001,
+          "time_bins": 301,
+          "time_step_s": 0.033361928870553115
+        }
+      ]
+    },
+    {
+      "label": "2-s novice / 1-s expert",
+      "session_count": 5,
+      "sessions": [
+        {
+          "session_index": 1,
+          "eligible_trials": 62,
+          "grc_cells": 35,
+          "cf_cells": 6,
+          "minimum_delay_s": 2.015,
+          "maximum_delay_s": 2.46,
+          "time_bins": 301,
+          "time_step_s": 0.0333639602475142
+        },
+        {
+          "session_index": 2,
+          "eligible_trials": 73,
+          "grc_cells": 87,
+          "cf_cells": 36,
+          "minimum_delay_s": 2.015,
+          "maximum_delay_s": 3.02,
+          "time_bins": 301,
+          "time_step_s": 0.033361928870553115
+        },
+        {
+          "session_index": 3,
+          "eligible_trials": 69,
+          "grc_cells": 34,
+          "cf_cells": 6,
+          "minimum_delay_s": 2.0100000000000002,
+          "maximum_delay_s": 2.465,
+          "time_bins": 301,
+          "time_step_s": 0.033365522845176576
+        },
+        {
+          "session_index": 4,
+          "eligible_trials": 34,
+          "grc_cells": 44,
+          "cf_cells": 8,
+          "minimum_delay_s": 2.02,
+          "maximum_delay_s": 2.345,
+          "time_bins": 301,
+          "time_step_s": 0.03336364772798173
+        },
+        {
+          "session_index": 5,
+          "eligible_trials": 64,
+          "grc_cells": 63,
+          "cf_cells": 15,
+          "minimum_delay_s": 2.0100000000000002,
+          "maximum_delay_s": 2.255,
+          "time_bins": 153,
+          "time_step_s": 0.06571196602547857
+        }
+      ]
+    },
+    {
+      "label": "2-s expert",
+      "session_count": 6,
+      "sessions": [
+        {
+          "session_index": 1,
+          "eligible_trials": 71,
+          "grc_cells": 72,
+          "cf_cells": 21,
+          "minimum_delay_s": 2.0100000000000002,
+          "maximum_delay_s": 2.235,
+          "time_bins": 301,
+          "time_step_s": 0.033362397649851855
+        },
+        {
+          "session_index": 2,
+          "eligible_trials": 67,
+          "grc_cells": 119,
+          "cf_cells": 21,
+          "minimum_delay_s": 2.015,
+          "maximum_delay_s": 2.19,
+          "time_bins": 301,
+          "time_step_s": 0.03336349146821549
+        },
+        {
+          "session_index": 3,
+          "eligible_trials": 78,
+          "grc_cells": 27,
+          "cf_cells": 17,
+          "minimum_delay_s": 2.015,
+          "maximum_delay_s": 3.095,
+          "time_bins": 301,
+          "time_step_s": 0.03336536658541034
+        },
+        {
+          "session_index": 4,
+          "eligible_trials": 32,
+          "grc_cells": 108,
+          "cf_cells": 26,
+          "minimum_delay_s": 2.015,
+          "maximum_delay_s": 2.665,
+          "time_bins": 301,
+          "time_step_s": 0.03336161635102064
+        },
+        {
+          "session_index": 5,
+          "eligible_trials": 31,
+          "grc_cells": 94,
+          "cf_cells": 21,
+          "minimum_delay_s": 2.0100000000000002,
+          "maximum_delay_s": 2.555,
+          "time_bins": 301,
+          "time_step_s": 0.0333627101693843
+        },
+        {
+          "session_index": 6,
+          "eligible_trials": 79,
+          "grc_cells": 103,
+          "cf_cells": 37,
+          "minimum_delay_s": 2.0100000000000002,
+          "maximum_delay_s": 2.355,
+          "time_bins": 301,
+          "time_step_s": 0.0333639602475142
+        }
+      ]
+    }
+  ],
+  "input_window_s": [
+    0.0,
+    0.8
+  ],
+  "all_eligible_trials_end_after_input_window": true,
+  "python": "3.12.13",
+  "numpy": "2.4.4",
+  "h5py": "3.16.0",
+  "contract_sha256": "87aa8c1d89ba6f6fbe1858b216fdb8d082c5c3d75fc7b58b36f9ab5aab608f5a",
+  "runner_sha256": "be236d353ae5b148fb55e3a3144dddde3f801624c232bea823a8ea2abf35ed87",
+  "output_dir": "data/results/M5_REAL_TRIAL_INTERVAL_DECODING_V1/canonical"
+}
