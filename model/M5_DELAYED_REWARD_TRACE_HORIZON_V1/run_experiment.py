@@ -13,7 +13,7 @@ import numpy as np
 
 ROOT = Path(__file__).resolve().parents[2]
 NAME = "M5_DELAYED_REWARD_TRACE_HORIZON_V1"
-DEFAULT_OUT = ROOT / "data/results" / NAME
+DEFAULT_OUT = ROOT / "data/results" / NAME / "canonical"
 MASTER_SEED = 20260930
 SEEDS = tuple(range(61, 91))
 DELAYS = (1, 4, 16, 64)

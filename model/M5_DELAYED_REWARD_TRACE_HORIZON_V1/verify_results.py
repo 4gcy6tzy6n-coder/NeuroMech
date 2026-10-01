@@ -13,7 +13,7 @@ import numpy as np
 
 ROOT = Path(__file__).resolve().parents[2]
 NAME = "M5_DELAYED_REWARD_TRACE_HORIZON_V1"
-OUT = ROOT / "data/results" / NAME
+OUT = ROOT / "data/results" / NAME / "canonical"
 MASTER_SEED = 20260930
 SEEDS = tuple(range(61, 91))
 DELAYS = (1, 4, 16, 64)
@@ -41,7 +41,7 @@ def paired_ci(values: np.ndarray, rng: np.random.Generator, familywise: bool) ->
 
 
 def main() -> None:
-    preflight = json.loads((OUT / "PREFLIGHT.json").read_text())
+    preflight = json.loads((ROOT / "data/results" / NAME / "PREFLIGHT.json").read_text())
     manifest = json.loads((OUT / "manifest.json").read_text())
     assert manifest["experiment"] == NAME
     assert manifest["contract_sha256"] == preflight["contract_sha256"]

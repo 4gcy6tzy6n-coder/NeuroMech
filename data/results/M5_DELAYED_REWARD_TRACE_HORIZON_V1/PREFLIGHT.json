@@ -1,8 +1,8 @@
 {
   "experiment": "M5_DELAYED_REWARD_TRACE_HORIZON_V1",
   "classification": "outcome-informed exploratory follow-up",
-  "contract_sha256": "3e61714f6f2ad770f3c2e1e8255ded3de63beb332a806ef2f1375591b254fac9",
-  "runner_sha256": "9b82a362c852cec77582c6023e9f44a502e64b6800cb9249ceb68afcb9c49500",
+  "contract_sha256": "14dc0b758a9182f5d3972c263b3c703a3993d0ad11bc2755a7c78ee1d06f0848",
+  "runner_sha256": "4dd09b1c874f5f483159cb2d60d2d157c01434deac69e6edf848843f26d965b6",
   "python": "3.9.6",
   "numpy": "2.0.2",
   "seed_range": [
@@ -33,5 +33,6 @@
   "train_decisions": 6000,
   "heldout_contexts": 2000,
   "no_biological_outcomes_or_task_metrics_computed_before_freeze": false,
-  "note": "An implementation smoke check was run on seed 60, excluded from the 61-90 analysis. Prior M5 outcomes informed this design."
+  "note": "An implementation smoke check was run on seed 60, excluded from the 61-90 analysis. Prior M5 outcomes informed this design.",
+  "output_dir": "data/results/M5_DELAYED_REWARD_TRACE_HORIZON_V1/canonical/"
 }

@@ -22,4 +22,4 @@ No gamma is selected after seeing the test-seed results. A positive cell contras
 
 ## Reproducibility
 
-The run records the frozen contract and code hashes, environment, seed range, task settings, output hashes, and all seed-level paired outcomes. The verifier recomputes all cell estimates and intervals from raw seed rows and checks row completeness and the output manifest. The runner refuses to overwrite a nonempty result directory.
+The preflight record is stored at `data/results/M5_DELAYED_REWARD_TRACE_HORIZON_V1/PREFLIGHT.json`; canonical run outputs are written to its `canonical/` subdirectory. The run records the frozen contract and code hashes, environment, seed range, task settings, output hashes, and all seed-level paired outcomes. The verifier recomputes all cell estimates and intervals from raw seed rows and checks row completeness and the output manifest. The runner refuses to overwrite a nonempty result directory.
