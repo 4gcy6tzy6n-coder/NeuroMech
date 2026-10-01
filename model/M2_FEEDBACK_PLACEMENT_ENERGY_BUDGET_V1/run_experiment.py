@@ -101,15 +101,14 @@ def fit_one(model: nn.Module, train_seed: int, energy_penalty: float) -> tuple[f
 
 
 def eval_one(model: nn.Module, arm: str, episodes: dict[tuple[int, str, int], tuple[np.ndarray, ...]], n: int,
-             train_seed: int) -> list[dict[str, object]]:
+             train_seed: int, block: int) -> list[dict[str, object]]:
     output = []
-    for block in BLOCKS:
-        for ci, condition in enumerate(CONDITIONS):
-            for episode in range(n):
-                z, y, noise, pulse = episodes[(block, condition, episode)]
-                metrics = base.episode_metrics(model, arm, z, y, noise, pulse)
-                output.append({"seed_block": block, "training_seed": train_seed, "condition": condition,
-                               "episode": episode, **metrics})
+    for condition in CONDITIONS:
+        for episode in range(n):
+            z, y, noise, pulse = episodes[(block, condition, episode)]
+            metrics = base.episode_metrics(model, arm, z, y, noise, pulse)
+            output.append({"seed_block": block, "training_seed": train_seed, "condition": condition,
+                           "episode": episode, **metrics})
     return output
 
 
@@ -160,7 +159,7 @@ def run(out: Path) -> None:
         for arm in ARMS:
             for lam in LAMBDAS:
                 model = candidates[(arm, lam)]
-                rows = eval_one(model, arm, validation_episodes, N_VALIDATION, train_seed)
+                rows = eval_one(model, arm, validation_episodes, N_VALIDATION, train_seed, block)
                 for row in rows:
                     row["arm"] = arm
                     row["energy_penalty"] = lam
@@ -190,7 +189,7 @@ def run(out: Path) -> None:
                                    "validation_mean_energy_equal_condition": selected["command_energy"],
                                    "energy_budget": ENERGY_BUDGET})
             model = candidates[(arm, chosen_lam)]
-            chosen_test_rows = eval_one(model, arm, test_episodes, N_TEST, train_seed)
+            chosen_test_rows = eval_one(model, arm, test_episodes, N_TEST, train_seed, block)
             for row in chosen_test_rows:
                 row["arm"] = arm
                 row["selected_energy_penalty"] = chosen_lam
