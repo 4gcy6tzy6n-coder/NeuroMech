@@ -1,0 +1,48 @@
+{
+  "experiment_id": "M2_ACTION_CONDITIONED_RKN_2D_PURSUIT_V1",
+  "classification": "post-result exploratory action-conditioned state-space comparison",
+  "python": "3.9.6",
+  "numpy": "2.0.2",
+  "torch": "2.8.0",
+  "seed_range_used": [
+    76100,
+    76123
+  ],
+  "frozen_seed_range": [
+    76100,
+    76123
+  ],
+  "pilot_or_canonical": "canonical",
+  "n_train": 512,
+  "n_test": 256,
+  "steps": 32,
+  "drop_rate": 0.2,
+  "updates": 200,
+  "batch_size": 16,
+  "sequence_tokens_per_fit": 102400,
+  "arms": [
+    "MODE_GAIN",
+    "BILINEAR_RNN_8P",
+    "ACRKN_L1",
+    "MODE_GAIN_ACTION_YOKE",
+    "KALMAN_ORACLE"
+  ],
+  "conditions": [
+    "ALIGNED",
+    "REVERSED"
+  ],
+  "episode_rows": 61440,
+  "input_sha256": {
+    "contract": "800cd84429669d90aca5a32c3578565f32b5b0778a39295f27261f6700d529f7",
+    "runner": "663f31e0638238f0870796bdd2f8f445b16285c196469711e10243994a1ba2a8",
+    "base_runner": "c72fc7dbc3a788990b11371c7afe1250b168c56bb125d83281bd8fc268b68b18",
+    "upstream_acrkn_cell": "2d22aaeb6299d13b4b8a65beecedee8125dfa4765136c6de5f6827ca116a2123",
+    "vendored_acrkn_cell": "ef2983547c0ccd1390c078a778a4d436e02039bdf358d248b3138ab4da7f0310"
+  },
+  "output_sha256": {
+    "episode_metrics.csv": "6ce9df864f25b916dbaaa35b1dcb36509a69189550d6f77963947e9b95ceae7f",
+    "training_metrics.csv": "8d308aae95de88641fc806499a96c330a8670bcfedfd7cdcb2f3a160a7f10a30",
+    "yoke_audit.csv": "8df9fee52775f34921daf4bd6348c66af7bdb20dfbe370f9dbfe2045cc4fbf17",
+    "summary.json": "47e9b6b7a31d02f21ab81a68706744026ffc8bb202cfbabeb12ecb1c1ddf2c67"
+  }
+}
