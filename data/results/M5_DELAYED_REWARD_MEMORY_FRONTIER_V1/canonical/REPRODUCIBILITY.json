@@ -1,0 +1,39 @@
+{
+  "status": "PASS",
+  "rerun_location": "/private/tmp/M5_DELAYED_REWARD_MEMORY_FRONTIER_V1_REPRODUCIBILITY",
+  "primary_mean_identical": true,
+  "primary_ci_identical": true,
+  "byte_identical_files": [
+    {
+      "file": "task_metrics.csv",
+      "canonical_sha256": "a90830fb9325d2f719aff2ddd812e508121d953b463c926b9dfeca37237f7e86",
+      "rerun_sha256": "a90830fb9325d2f719aff2ddd812e508121d953b463c926b9dfeca37237f7e86",
+      "byte_identical": true
+    },
+    {
+      "file": "update_coverage.csv",
+      "canonical_sha256": "cfd03a59de59ee1fbb47e178d4220310e41e701b05eb04e32605f02e2fc93724",
+      "rerun_sha256": "cfd03a59de59ee1fbb47e178d4220310e41e701b05eb04e32605f02e2fc93724",
+      "byte_identical": true
+    },
+    {
+      "file": "training_reward_trajectory.csv",
+      "canonical_sha256": "7ebcc650681b5200987307b20ca559eb7747a4d3580a7167a0ea099f763d8869",
+      "rerun_sha256": "7ebcc650681b5200987307b20ca559eb7747a4d3580a7167a0ea099f763d8869",
+      "byte_identical": true
+    },
+    {
+      "file": "primary_contrasts.csv",
+      "canonical_sha256": "ae2ba13896e838368fc0d20bf915d589618967adbf3b4bfe0e72411884c51dc0",
+      "rerun_sha256": "ae2ba13896e838368fc0d20bf915d589618967adbf3b4bfe0e72411884c51dc0",
+      "byte_identical": true
+    },
+    {
+      "file": "per_seed_primary.csv",
+      "canonical_sha256": "a25fd999bcdb577a7f6e3f069c6686e4002bb14e4deb2d5a26c1bcab8093c894",
+      "rerun_sha256": "a25fd999bcdb577a7f6e3f069c6686e4002bb14e4deb2d5a26c1bcab8093c894",
+      "byte_identical": true
+    }
+  ],
+  "note": "Elapsed runtime in summary can differ; task-level outcomes, coverage, per-seed contrasts, and primary contrasts match byte-for-byte."
+}

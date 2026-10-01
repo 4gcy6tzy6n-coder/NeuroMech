@@ -1,0 +1,155 @@
+{
+  "experiment_id": "M5_DELAYED_REWARD_MEMORY_FRONTIER_V1",
+  "classification": "post-result exploratory, distinct-objective memory-frontier transfer",
+  "primary_estimand": "task-seed mean of four-delay held-out expected reward: eligibility trace minus one-vector exact FIFO",
+  "primary_mean_difference": -0.0024837831098194142,
+  "primary_paired_seed_bootstrap_95ci": [
+    -0.003243375924285097,
+    -0.0017168593210002716
+  ],
+  "positive_task_seeds": 1,
+  "task_seeds": 30,
+  "delay_frontier": [
+    {
+      "delay": 1,
+      "mean_expected_reward": {
+        "ELIGIBILITY_TRACE_32": 0.513260378340655,
+        "EXACT_FIFO_32": 0.5485825862163236,
+        "EXACT_FIFO_128": 0.5485825862163236,
+        "EXACT_FIFO_512": 0.5485825862163236,
+        "EXACT_FIFO_2048": 0.5485825862163236,
+        "NO_TRACE_CURRENT_32": 0.5008278927894148,
+        "EXACT_REPLAY": 0.5485825862163236
+      },
+      "mean_update_coverage": {
+        "ELIGIBILITY_TRACE_32": 1.0,
+        "EXACT_FIFO_32": 1.0,
+        "EXACT_FIFO_128": 1.0,
+        "EXACT_FIFO_512": 1.0,
+        "EXACT_FIFO_2048": 1.0,
+        "NO_TRACE_CURRENT_32": 0.9998333333333337,
+        "EXACT_REPLAY": 1.0
+      }
+    },
+    {
+      "delay": 4,
+      "mean_expected_reward": {
+        "ELIGIBILITY_TRACE_32": 0.5123995644142327,
+        "EXACT_FIFO_32": 0.5002885107980277,
+        "EXACT_FIFO_128": 0.548584079377411,
+        "EXACT_FIFO_512": 0.548584079377411,
+        "EXACT_FIFO_2048": 0.548584079377411,
+        "NO_TRACE_CURRENT_32": 0.500361166698065,
+        "EXACT_REPLAY": 0.548584079377411
+      },
+      "mean_update_coverage": {
+        "ELIGIBILITY_TRACE_32": 1.0,
+        "EXACT_FIFO_32": 0.00016666666666666663,
+        "EXACT_FIFO_128": 1.0,
+        "EXACT_FIFO_512": 1.0,
+        "EXACT_FIFO_2048": 1.0,
+        "NO_TRACE_CURRENT_32": 0.9993333333333331,
+        "EXACT_REPLAY": 1.0
+      }
+    },
+    {
+      "delay": 16,
+      "mean_expected_reward": {
+        "ELIGIBILITY_TRACE_32": 0.5099827562213448,
+        "EXACT_FIFO_32": 0.5002885107980277,
+        "EXACT_FIFO_128": 0.5003112622268003,
+        "EXACT_FIFO_512": 0.5485840127722591,
+        "EXACT_FIFO_2048": 0.5485840127722591,
+        "NO_TRACE_CURRENT_32": 0.5005461908287229,
+        "EXACT_REPLAY": 0.5485840127722591
+      },
+      "mean_update_coverage": {
+        "ELIGIBILITY_TRACE_32": 1.0,
+        "EXACT_FIFO_32": 0.00016666666666666663,
+        "EXACT_FIFO_128": 0.0006666666666666665,
+        "EXACT_FIFO_512": 1.0,
+        "EXACT_FIFO_2048": 1.0,
+        "NO_TRACE_CURRENT_32": 0.9973333333333334,
+        "EXACT_REPLAY": 1.0
+      }
+    },
+    {
+      "delay": 64,
+      "mean_expected_reward": {
+        "ELIGIBILITY_TRACE_32": 0.5038702871948972,
+        "EXACT_FIFO_32": 0.5002885107980277,
+        "EXACT_FIFO_128": 0.5003112622268003,
+        "EXACT_FIFO_512": 0.5004072235063955,
+        "EXACT_FIFO_2048": 0.5485854479337423,
+        "NO_TRACE_CURRENT_32": 0.4998582256191372,
+        "EXACT_REPLAY": 0.5485854479337423
+      },
+      "mean_update_coverage": {
+        "ELIGIBILITY_TRACE_32": 1.0,
+        "EXACT_FIFO_32": 0.00016666666666666663,
+        "EXACT_FIFO_128": 0.0006666666666666665,
+        "EXACT_FIFO_512": 0.002666666666666666,
+        "EXACT_FIFO_2048": 1.0,
+        "NO_TRACE_CURRENT_32": 0.9893333333333335,
+        "EXACT_REPLAY": 1.0
+      }
+    }
+  ],
+  "contrasts": [
+    {
+      "contrast": "ELIGIBILITY_TRACE_32_MINUS_EXACT_FIFO_32",
+      "mean_task_seed_delay_average": -0.0024837831098194142,
+      "paired_seed_bootstrap_95ci_low": -0.003243375924285097,
+      "paired_seed_bootstrap_95ci_high": -0.0017168593210002716,
+      "positive_task_seeds": 1,
+      "task_seeds": 30
+    },
+    {
+      "contrast": "ELIGIBILITY_TRACE_32_MINUS_EXACT_FIFO_128",
+      "mean_task_seed_delay_average": -0.014569050969051386,
+      "paired_seed_bootstrap_95ci_low": -0.015944330377161166,
+      "paired_seed_bootstrap_95ci_high": -0.01318305183227174,
+      "positive_task_seeds": 0,
+      "task_seeds": 30
+    },
+    {
+      "contrast": "ELIGIBILITY_TRACE_32_MINUS_EXACT_FIFO_512",
+      "mean_task_seed_delay_average": -0.026661228925314952,
+      "paired_seed_bootstrap_95ci_low": -0.029174036003178472,
+      "paired_seed_bootstrap_95ci_high": -0.02408951739160531,
+      "positive_task_seeds": 0,
+      "task_seeds": 30
+    },
+    {
+      "contrast": "ELIGIBILITY_TRACE_32_MINUS_EXACT_FIFO_2048",
+      "mean_task_seed_delay_average": -0.03870578503215162,
+      "paired_seed_bootstrap_95ci_low": -0.04246679778111685,
+      "paired_seed_bootstrap_95ci_high": -0.034867044356367775,
+      "positive_task_seeds": 0,
+      "task_seeds": 30
+    },
+    {
+      "contrast": "ELIGIBILITY_TRACE_32_MINUS_NO_TRACE_CURRENT_32",
+      "mean_task_seed_delay_average": 0.009479877558947502,
+      "paired_seed_bootstrap_95ci_low": 0.00790544721740748,
+      "paired_seed_bootstrap_95ci_high": 0.011086950090805344,
+      "positive_task_seeds": 30,
+      "task_seeds": 30
+    },
+    {
+      "contrast": "ELIGIBILITY_TRACE_32_MINUS_EXACT_REPLAY",
+      "mean_task_seed_delay_average": -0.03870578503215162,
+      "paired_seed_bootstrap_95ci_low": -0.04246679778111685,
+      "paired_seed_bootstrap_95ci_high": -0.034867044356367775,
+      "positive_task_seeds": 0,
+      "task_seeds": 30
+    }
+  ],
+  "rows": {
+    "task_metrics": 840,
+    "update_coverage": 840,
+    "training_reward_trajectory": 10080
+  },
+  "elapsed_seconds": 36.097442334052175,
+  "scope": "one synthetic delayed-reward contextual-bandit family; active-state counts are algorithmic values, not RAM or energy measurements; no biological validation or arbitrary-task generalization"
+}

@@ -56,5 +56,6 @@
   },
   "python": "3.12.13",
   "numpy": "2.4.4",
-  "outcome_files_inspected_before_freeze": false
+  "prior_bandit_task_outcomes_known_before_freeze": true,
+  "new_frontier_outcomes_available_before_freeze": false
 }

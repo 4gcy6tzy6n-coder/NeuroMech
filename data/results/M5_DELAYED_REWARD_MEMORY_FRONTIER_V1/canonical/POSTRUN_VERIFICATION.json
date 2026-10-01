@@ -1,0 +1,72 @@
+{
+  "experiment_id": "M5_DELAYED_REWARD_MEMORY_FRONTIER_V1",
+  "status": "PASS",
+  "canonical_run_count": 1,
+  "row_counts": {
+    "task_metrics": 840,
+    "update_coverage": 840,
+    "training_reward_trajectory": 10080
+  },
+  "primary_recomputation": {
+    "mean_trace_minus_fifo32": -0.0024837831098194142,
+    "paired_task_seed_bootstrap_95ci": [
+      -0.003243375924285097,
+      -0.0017168593210002716
+    ],
+    "positive_task_seed_count": 1,
+    "n_task_seeds": 30
+  },
+  "invariants": {
+    "active_state_accounting": "PASS",
+    "fifo_update_coverage": "PASS",
+    "trace_and_exact_replay_apply_all_updates": "PASS",
+    "capacity_sufficient_fifo_exactly_matches_exact_replay_by_seed_and_delay": "PASS",
+    "summary_recomputed_from_raw_metrics": "PASS"
+  },
+  "frozen_hash_checks": {
+    "contract_matches_preflight": true,
+    "runner_matches_preflight": true,
+    "initial_verifier_matches_preflight": false,
+    "initial_verifier_sha256": "db220458976ba3b1c6f27fa500fea1ed06fb604010352ead2fdbf1734df29360",
+    "corrected_postrun_verifier_sha256": "374f5ca4d855ac8c3c346adb79e379959868248baee60f5a6df91fdacb5b1806",
+    "reason": "Initial verifier expected 6000 no-trace updates despite the frozen zero-current-score flush rule. Corrected expected updates to 6000\u2212D; runner, contract, outcomes and primary calculation unchanged."
+  },
+  "output_hashes": [
+    {
+      "file": "task_metrics.csv",
+      "expected_sha256": "a90830fb9325d2f719aff2ddd812e508121d953b463c926b9dfeca37237f7e86",
+      "actual_sha256": "a90830fb9325d2f719aff2ddd812e508121d953b463c926b9dfeca37237f7e86",
+      "match": true
+    },
+    {
+      "file": "update_coverage.csv",
+      "expected_sha256": "cfd03a59de59ee1fbb47e178d4220310e41e701b05eb04e32605f02e2fc93724",
+      "actual_sha256": "cfd03a59de59ee1fbb47e178d4220310e41e701b05eb04e32605f02e2fc93724",
+      "match": true
+    },
+    {
+      "file": "training_reward_trajectory.csv",
+      "expected_sha256": "7ebcc650681b5200987307b20ca559eb7747a4d3580a7167a0ea099f763d8869",
+      "actual_sha256": "7ebcc650681b5200987307b20ca559eb7747a4d3580a7167a0ea099f763d8869",
+      "match": true
+    },
+    {
+      "file": "primary_contrasts.csv",
+      "expected_sha256": "ae2ba13896e838368fc0d20bf915d589618967adbf3b4bfe0e72411884c51dc0",
+      "actual_sha256": "ae2ba13896e838368fc0d20bf915d589618967adbf3b4bfe0e72411884c51dc0",
+      "match": true
+    },
+    {
+      "file": "per_seed_primary.csv",
+      "expected_sha256": "a25fd999bcdb577a7f6e3f069c6686e4002bb14e4deb2d5a26c1bcab8093c894",
+      "actual_sha256": "a25fd999bcdb577a7f6e3f069c6686e4002bb14e4deb2d5a26c1bcab8093c894",
+      "match": true
+    },
+    {
+      "file": "summary.json",
+      "expected_sha256": "ca69b3a20bf40719bcde8ce7c9cbf685c7ddbb621b3532f1e755217256b237ed",
+      "actual_sha256": "ca69b3a20bf40719bcde8ce7c9cbf685c7ddbb621b3532f1e755217256b237ed",
+      "match": true
+    }
+  ]
+}

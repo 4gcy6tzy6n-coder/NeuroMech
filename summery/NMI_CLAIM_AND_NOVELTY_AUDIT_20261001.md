@@ -42,6 +42,8 @@ Shaj et al. introduced Action-Conditional Recurrent Kalman Networks at CoRL 2020
 
 **M5 follow-up:** a 64-value eligibility trace exceeded a one-vector exact FIFO by `+0.14779` accuracy in a post-result delayed-label comparison, but that FIFO skipped almost all updates at delays 4–64. Direct exact cue retention won at delay 1, and adequate-capacity replay outperformed the trace. This is a bounded memory/accuracy result on one synthetic task family. It does not resolve the novelty concern: eligibility traces and online temporal credit assignment have substantial prior art, and no shared M2/M5 artificial advantage is established.
 
+The later delayed-reward bandit frontier used 30 disjoint task seeds. Trace exceeded current-score assignment by `+0.00948` expected reward, but its equal-state trace-minus-one-vector-FIFO contrast was `−0.00248` across delays, and exact FIFO/replay with enough state outperformed it. This adds a second synthetic task objective but remains a post-result comparison; it does not establish architecture or task generalization, an advantage over strong exact-memory methods, or biological transfer. It therefore does not materially change the publication-level novelty assessment.
+
 ## Publication status
 
 The work is active, but “NMI-ready” is not currently supported. A future paper needs a narrow central contribution, direct links from biological observations to the computational variables, strong matched controls, independent task generalization, complete provenance, and a manuscript-level novelty assessment. Further dataset acquisition is not the current bottleneck for the M2/M5 artificial studies; scientific alignment and comparative strength are.

@@ -70,6 +70,10 @@ Full publications, artifacts, evidence-layer statuses, allowed/forbidden claims,
 
 M7 swept six AR(1) input correlations, four delays, and separate classification/regression objectives with fixed M5-v3 hyperparameters. The trace-versus-current-input effect was delay-dependent: intrinsic correlation reduced trace benefit at short delays, while that relation reversed at delay 64 for classification and at delays 16/64 for regression. The objective-specific equal-delay rho-0 minus rho-0.9 interactions were positive (classification `+0.2225` accuracy, 95% CI `[+0.2075,+0.2373]`; regression `+0.00238` MSE, `[+0.00216,+0.00260]`), but those scales are not pooled. Exact replay beat the trace in all 48 cells. The first pooled statistic mixed unlike accuracy/MSE units and is explicitly invalidated. See [`summery/M7_TEMPORAL_CORRELATION_BOUNDARY/RESULTS.md`](summery/M7_TEMPORAL_CORRELATION_BOUNDARY/RESULTS.md).
 
+### M5 delayed-reward memory frontier — 2026-10-01
+
+On 30 new contextual-bandit task seeds, the fixed 32-value eligibility trace exceeded current-score assignment by `+0.009480` expected reward (95% paired interval `[+0.007905,+0.011087]`; 30/30 seed averages positive), but lost to equal-state one-vector exact FIFO averaged over delays (`−0.002484`, interval `[−0.003243,−0.001717]`; 1/30 positive). At delays 4–64 the one-vector FIFO applied only 1/6,000 rewards. A FIFO storing at least D score vectors exactly reproduced full replay and outperformed the trace. This is a bounded-memory tradeoff in one synthetic task, not evidence of a cerebellar rule or general AI benefit. See [`summery/M5_DELAYED_REWARD_MEMORY_FRONTIER_V1/RESULTS.md`](summery/M5_DELAYED_REWARD_MEMORY_FRONTIER_V1/RESULTS.md) and the [canonical outputs](data/results/M5_DELAYED_REWARD_MEMORY_FRONTIER_V1/canonical/).
+
 ## M4 — CA3 partial-cue recall candidate
 
 - **Bounded biological observation:** some rodent spatial-memory paradigms show retrieval of a learned representation with only a subset of cues, with causal and population-level evidence implicating CA3.

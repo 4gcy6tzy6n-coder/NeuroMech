@@ -1,0 +1,75 @@
+{
+  "experiment_id": "M5_DELAYED_REWARD_MEMORY_FRONTIER_V1",
+  "contract": "summery/M5_DELAYED_REWARD_MEMORY_FRONTIER_V1/CONTRACT.md",
+  "runner": "model/M5_DELAYED_REWARD_MEMORY_FRONTIER_V1/run_experiment.py",
+  "master_seed": 20260930,
+  "task_seeds": [
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59
+  ],
+  "delays": [
+    1,
+    4,
+    16,
+    64
+  ],
+  "arms": [
+    "ELIGIBILITY_TRACE_32",
+    "EXACT_FIFO_32",
+    "EXACT_FIFO_128",
+    "EXACT_FIFO_512",
+    "EXACT_FIFO_2048",
+    "NO_TRACE_CURRENT_32",
+    "EXACT_REPLAY"
+  ],
+  "fixed_parameters": {
+    "learning_rate": 0.01,
+    "eligibility_decay": 0.98,
+    "reward_baseline": 0.5,
+    "training_decisions": 6000,
+    "heldout_contexts": 2000,
+    "bootstrap_replicates": 20000
+  },
+  "task_seed_independent_unit": true,
+  "row_counts": {
+    "task_metrics": 840,
+    "update_coverage": 840,
+    "training_reward_trajectory": 10080
+  },
+  "outputs_sha256": {
+    "task_metrics.csv": "a90830fb9325d2f719aff2ddd812e508121d953b463c926b9dfeca37237f7e86",
+    "update_coverage.csv": "cfd03a59de59ee1fbb47e178d4220310e41e701b05eb04e32605f02e2fc93724",
+    "training_reward_trajectory.csv": "7ebcc650681b5200987307b20ca559eb7747a4d3580a7167a0ea099f763d8869",
+    "primary_contrasts.csv": "ae2ba13896e838368fc0d20bf915d589618967adbf3b4bfe0e72411884c51dc0",
+    "per_seed_primary.csv": "a25fd999bcdb577a7f6e3f069c6686e4002bb14e4deb2d5a26c1bcab8093c894",
+    "summary.json": "ca69b3a20bf40719bcde8ce7c9cbf685c7ddbb621b3532f1e755217256b237ed"
+  }
+}

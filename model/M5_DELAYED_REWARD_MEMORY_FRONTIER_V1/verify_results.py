@@ -76,6 +76,9 @@ def main() -> None:
         assert 0 <= n <= N_TRAIN and int(r["updates_possible"]) == N_TRAIN
         if key[2] in CAPACITY:
             expected = N_TRAIN if CAPACITY[key[2]] >= key[1] else CAPACITY[key[2]]
+        elif key[2] == "NO_TRACE_CURRENT_32":
+            # Current-score updates are unavailable during the D-step flush.
+            expected = N_TRAIN - key[1]
         else:
             expected = N_TRAIN
         assert n == expected, (key, n, expected)
