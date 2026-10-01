@@ -1,0 +1,103 @@
+{
+  "experiment": "M2_CONTINUOUS_TRACKING_MOTOR_STATE_TRANSFER_V1",
+  "contract_sha256": "2e33c7a4564ad32c355534ac19442ad05682e020487d72dabd2da9189719ebf5",
+  "runner_sha256": "cab06a8fd2e9e0584b65f18971c1f44842898efe27ee27820d4e4711c404961c",
+  "verifier_sha256": "216ae08538781bcef85d7cfb53655bd0cb385d361bc927aadfb01442831b9d40",
+  "python": "3.12.13",
+  "numpy": "2.4.4",
+  "torch": "2.11.0",
+  "device": "CPU",
+  "torch_threads": 1,
+  "training_seeds": [
+    850000,
+    850001,
+    850002,
+    850003,
+    850004,
+    850005,
+    850006,
+    850007,
+    850008,
+    850009,
+    850010,
+    850011,
+    850012,
+    850013,
+    850014,
+    850015,
+    850016,
+    850017,
+    850018,
+    850019,
+    850020,
+    850021,
+    850022,
+    850023,
+    850024,
+    850025,
+    850026,
+    850027,
+    850028,
+    850029,
+    850030,
+    850031
+  ],
+  "arms": [
+    "GRU_SELF_MOTOR",
+    "GRU_ZERO_MOTOR",
+    "GRU_ACTION_COPY",
+    "GRU_YOKED_MOTOR"
+  ],
+  "parameters_per_arm": 378,
+  "updates": 100,
+  "batch_size": 32,
+  "sequence_length": 64,
+  "profiles": {
+    "TRAIN_LIKE": {
+      "alpha": 0.91,
+      "missing_fraction": 0.5,
+      "mean_missing_burst": 4.0
+    },
+    "LONG_MISSING_BURSTS": {
+      "alpha": 0.91,
+      "missing_fraction": 0.5,
+      "mean_missing_burst": 8.0
+    },
+    "LOW_MISSING": {
+      "alpha": 0.91,
+      "missing_fraction": 0.25,
+      "mean_missing_burst": 4.0
+    },
+    "FAST_TARGET": {
+      "alpha": 0.76,
+      "missing_fraction": 0.5,
+      "mean_missing_burst": 4.0
+    }
+  },
+  "test_seed_rule": "20000000 + block*100000 + profile_index*1000",
+  "bootstrap_resamples": 20000,
+  "bootstrap_seed": 8765501,
+  "duration_seconds": 116.94065809249878,
+  "outputs": {
+    "fit_manifest.csv": {
+      "bytes": 991140,
+      "sha256": "dab69ee214fdce2d8046fe6244b228ddab3ff2196f10f4c5cb6ca3621c40fd19"
+    },
+    "episode_metrics.csv": {
+      "bytes": 7777387,
+      "sha256": "c0fddc315af663f90aacba4fac46065eca471b4257adad96f9956e51e425ac5b"
+    },
+    "seed_summary.csv": {
+      "bytes": 55695,
+      "sha256": "90f36cd0973383aae7b6908d0327e86e8f2b14686112b605b13aea205a410ee3"
+    },
+    "yoke_distribution_check.json": {
+      "bytes": 24013,
+      "sha256": "e017e06cb88672563106a1b9d5717335ef7c561ceb9f8a2db2a418521eec2fa2"
+    },
+    "summary.json": {
+      "bytes": 4689,
+      "sha256": "d71247a7a2990ece1ad182f9d32f1279461e055f948caa17d720ed09129dc6e7"
+    }
+  }
+}

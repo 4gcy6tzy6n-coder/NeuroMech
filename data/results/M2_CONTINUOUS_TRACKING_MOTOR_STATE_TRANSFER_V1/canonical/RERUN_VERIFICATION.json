@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "checks": {
+    "episode_metrics.csv": true,
+    "seed_summary.csv": true,
+    "summary.json": true,
+    "yoke_distribution_check.json": true,
+    "fit_manifest_except_training_seconds": true
+  },
+  "rerun_dir": "/tmp/neuromech_m2_continuous_tracking_rerun",
+  "note": "Wall-clock fit time excluded; learned parameters and scientific outputs compared."
+}

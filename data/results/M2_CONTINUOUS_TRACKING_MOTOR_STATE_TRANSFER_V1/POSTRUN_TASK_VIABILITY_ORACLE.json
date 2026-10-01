@@ -1,0 +1,38 @@
+{
+  "analysis": "POSTRUN_TASK_VIABILITY_DIAGNOSTIC",
+  "status": "COMPLETE",
+  "method": "two post-run task diagnostics on the frozen test streams: a privileged controller sees exact target-relative position and current target velocity; a fixed proportional controller uses only the available noisy observation",
+  "limitation": "the privileged controller bypasses sensor loss; the proportional baseline was not a frozen arm. Neither diagnostic enters the primary inference, and no model training was altered",
+  "profiles": {
+    "TRAIN_LIKE": {
+      "mean_tracking_mse": 0.014072085693144906,
+      "training_seed_blocks": 32,
+      "purpose": "privileged task-viability upper bound only; not a fair controller comparison",
+      "fixed_reactive_baseline_mse": 0.6939324168774244,
+      "reactive_baseline_definition": "command=clip(noisy relative-position observation,-1,+1); command=0 on missing observations; no fitting or tuning"
+    },
+    "LONG_MISSING_BURSTS": {
+      "mean_tracking_mse": 0.013944718825766013,
+      "training_seed_blocks": 32,
+      "purpose": "privileged task-viability upper bound only; not a fair controller comparison",
+      "fixed_reactive_baseline_mse": 1.4236536101160402,
+      "reactive_baseline_definition": "command=clip(noisy relative-position observation,-1,+1); command=0 on missing observations; no fitting or tuning"
+    },
+    "LOW_MISSING": {
+      "mean_tracking_mse": 0.014044010564326734,
+      "training_seed_blocks": 32,
+      "purpose": "privileged task-viability upper bound only; not a fair controller comparison",
+      "fixed_reactive_baseline_mse": 0.30984691193948033,
+      "reactive_baseline_definition": "command=clip(noisy relative-position observation,-1,+1); command=0 on missing observations; no fitting or tuning"
+    },
+    "FAST_TARGET": {
+      "mean_tracking_mse": 0.014479849724176751,
+      "training_seed_blocks": 32,
+      "purpose": "privileged task-viability upper bound only; not a fair controller comparison",
+      "fixed_reactive_baseline_mse": 0.2384375049881271,
+      "reactive_baseline_definition": "command=clip(noisy relative-position observation,-1,+1); command=0 on missing observations; no fitting or tuning"
+    }
+  },
+  "runner_sha256": "cab06a8fd2e9e0584b65f18971c1f44842898efe27ee27820d4e4711c404961c",
+  "diagnostic_code_sha256": "f993b772bef685a1c761911d1968e1491b27999a1e17d54dfb1f080c5593386a"
+}

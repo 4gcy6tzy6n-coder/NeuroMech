@@ -1,0 +1,900 @@
+{
+  "checks": [
+    {
+      "seed_block": 0,
+      "profile": "TRAIN_LIKE",
+      "no_fixed_points": true,
+      "exact_per_time_per_coordinate_match": true,
+      "max_sorted_difference": 0.0
+    },
+    {
+      "seed_block": 0,
+      "profile": "LONG_MISSING_BURSTS",
+      "no_fixed_points": true,
+      "exact_per_time_per_coordinate_match": true,
+      "max_sorted_difference": 0.0
+    },
+    {
+      "seed_block": 0,
+      "profile": "LOW_MISSING",
+      "no_fixed_points": true,
+      "exact_per_time_per_coordinate_match": true,
+      "max_sorted_difference": 0.0
+    },
+    {
+      "seed_block": 0,
+      "profile": "FAST_TARGET",
+      "no_fixed_points": true,
+      "exact_per_time_per_coordinate_match": true,
+      "max_sorted_difference": 0.0
+    },
+    {
+      "seed_block": 1,
+      "profile": "TRAIN_LIKE",
+      "no_fixed_points": true,
+      "exact_per_time_per_coordinate_match": true,
+      "max_sorted_difference": 0.0
+    },
+    {
+      "seed_block": 1,
+      "profile": "LONG_MISSING_BURSTS",
+      "no_fixed_points": true,
+      "exact_per_time_per_coordinate_match": true,
+      "max_sorted_difference": 0.0
+    },
+    {
+      "seed_block": 1,
+      "profile": "LOW_MISSING",
+      "no_fixed_points": true,
+      "exact_per_time_per_coordinate_match": true,
+      "max_sorted_difference": 0.0
+    },
+    {
+      "seed_block": 1,
+      "profile": "FAST_TARGET",
+      "no_fixed_points": true,
+      "exact_per_time_per_coordinate_match": true,
+      "max_sorted_difference": 0.0
+    },
+    {
+      "seed_block": 2,
+      "profile": "TRAIN_LIKE",
+      "no_fixed_points": true,
+      "exact_per_time_per_coordinate_match": true,
+      "max_sorted_difference": 0.0
+    },
+    {
+      "seed_block": 2,
+      "profile": "LONG_MISSING_BURSTS",
+      "no_fixed_points": true,
+      "exact_per_time_per_coordinate_match": true,
+      "max_sorted_difference": 0.0
+    },
+    {
+      "seed_block": 2,
+      "profile": "LOW_MISSING",
+      "no_fixed_points": true,
+      "exact_per_time_per_coordinate_match": true,
+      "max_sorted_difference": 0.0
+    },
+    {
+      "seed_block": 2,
+      "profile": "FAST_TARGET",
+      "no_fixed_points": true,
+      "exact_per_time_per_coordinate_match": true,
+      "max_sorted_difference": 0.0
+    },
+    {
+      "seed_block": 3,
+      "profile": "TRAIN_LIKE",
+      "no_fixed_points": true,
+      "exact_per_time_per_coordinate_match": true,
+      "max_sorted_difference": 0.0
+    },
+    {
+      "seed_block": 3,
+      "profile": "LONG_MISSING_BURSTS",
+      "no_fixed_points": true,
+      "exact_per_time_per_coordinate_match": true,
+      "max_sorted_difference": 0.0
+    },
+    {
+      "seed_block": 3,
+      "profile": "LOW_MISSING",
+      "no_fixed_points": true,
+      "exact_per_time_per_coordinate_match": true,
+      "max_sorted_difference": 0.0
+    },
+    {
+      "seed_block": 3,
+      "profile": "FAST_TARGET",
+      "no_fixed_points": true,
+      "exact_per_time_per_coordinate_match": true,
+      "max_sorted_difference": 0.0
+    },
+    {
+      "seed_block": 4,
+      "profile": "TRAIN_LIKE",
+      "no_fixed_points": true,
+      "exact_per_time_per_coordinate_match": true,
+      "max_sorted_difference": 0.0
+    },
+    {
+      "seed_block": 4,
+      "profile": "LONG_MISSING_BURSTS",
+      "no_fixed_points": true,
+      "exact_per_time_per_coordinate_match": true,
+      "max_sorted_difference": 0.0
+    },
+    {
+      "seed_block": 4,
+      "profile": "LOW_MISSING",
+      "no_fixed_points": true,
+      "exact_per_time_per_coordinate_match": true,
+      "max_sorted_difference": 0.0
+    },
+    {
+      "seed_block": 4,
+      "profile": "FAST_TARGET",
+      "no_fixed_points": true,
+      "exact_per_time_per_coordinate_match": true,
+      "max_sorted_difference": 0.0
+    },
+    {
+      "seed_block": 5,
+      "profile": "TRAIN_LIKE",
+      "no_fixed_points": true,
+      "exact_per_time_per_coordinate_match": true,
+      "max_sorted_difference": 0.0
+    },
+    {
+      "seed_block": 5,
+      "profile": "LONG_MISSING_BURSTS",
+      "no_fixed_points": true,
+      "exact_per_time_per_coordinate_match": true,
+      "max_sorted_difference": 0.0
+    },
+    {
+      "seed_block": 5,
+      "profile": "LOW_MISSING",
+      "no_fixed_points": true,
+      "exact_per_time_per_coordinate_match": true,
+      "max_sorted_difference": 0.0
+    },
+    {
+      "seed_block": 5,
+      "profile": "FAST_TARGET",
+      "no_fixed_points": true,
+      "exact_per_time_per_coordinate_match": true,
+      "max_sorted_difference": 0.0
+    },
+    {
+      "seed_block": 6,
+      "profile": "TRAIN_LIKE",
+      "no_fixed_points": true,
+      "exact_per_time_per_coordinate_match": true,
+      "max_sorted_difference": 0.0
+    },
+    {
+      "seed_block": 6,
+      "profile": "LONG_MISSING_BURSTS",
+      "no_fixed_points": true,
+      "exact_per_time_per_coordinate_match": true,
+      "max_sorted_difference": 0.0
+    },
+    {
+      "seed_block": 6,
+      "profile": "LOW_MISSING",
+      "no_fixed_points": true,
+      "exact_per_time_per_coordinate_match": true,
+      "max_sorted_difference": 0.0
+    },
+    {
+      "seed_block": 6,
+      "profile": "FAST_TARGET",
+      "no_fixed_points": true,
+      "exact_per_time_per_coordinate_match": true,
+      "max_sorted_difference": 0.0
+    },
+    {
+      "seed_block": 7,
+      "profile": "TRAIN_LIKE",
+      "no_fixed_points": true,
+      "exact_per_time_per_coordinate_match": true,
+      "max_sorted_difference": 0.0
+    },
+    {
+      "seed_block": 7,
+      "profile": "LONG_MISSING_BURSTS",
+      "no_fixed_points": true,
+      "exact_per_time_per_coordinate_match": true,
+      "max_sorted_difference": 0.0
+    },
+    {
+      "seed_block": 7,
+      "profile": "LOW_MISSING",
+      "no_fixed_points": true,
+      "exact_per_time_per_coordinate_match": true,
+      "max_sorted_difference": 0.0
+    },
+    {
+      "seed_block": 7,
+      "profile": "FAST_TARGET",
+      "no_fixed_points": true,
+      "exact_per_time_per_coordinate_match": true,
+      "max_sorted_difference": 0.0
+    },
+    {
+      "seed_block": 8,
+      "profile": "TRAIN_LIKE",
+      "no_fixed_points": true,
+      "exact_per_time_per_coordinate_match": true,
+      "max_sorted_difference": 0.0
+    },
+    {
+      "seed_block": 8,
+      "profile": "LONG_MISSING_BURSTS",
+      "no_fixed_points": true,
+      "exact_per_time_per_coordinate_match": true,
+      "max_sorted_difference": 0.0
+    },
+    {
+      "seed_block": 8,
+      "profile": "LOW_MISSING",
+      "no_fixed_points": true,
+      "exact_per_time_per_coordinate_match": true,
+      "max_sorted_difference": 0.0
+    },
+    {
+      "seed_block": 8,
+      "profile": "FAST_TARGET",
+      "no_fixed_points": true,
+      "exact_per_time_per_coordinate_match": true,
+      "max_sorted_difference": 0.0
+    },
+    {
+      "seed_block": 9,
+      "profile": "TRAIN_LIKE",
+      "no_fixed_points": true,
+      "exact_per_time_per_coordinate_match": true,
+      "max_sorted_difference": 0.0
+    },
+    {
+      "seed_block": 9,
+      "profile": "LONG_MISSING_BURSTS",
+      "no_fixed_points": true,
+      "exact_per_time_per_coordinate_match": true,
+      "max_sorted_difference": 0.0
+    },
+    {
+      "seed_block": 9,
+      "profile": "LOW_MISSING",
+      "no_fixed_points": true,
+      "exact_per_time_per_coordinate_match": true,
+      "max_sorted_difference": 0.0
+    },
+    {
+      "seed_block": 9,
+      "profile": "FAST_TARGET",
+      "no_fixed_points": true,
+      "exact_per_time_per_coordinate_match": true,
+      "max_sorted_difference": 0.0
+    },
+    {
+      "seed_block": 10,
+      "profile": "TRAIN_LIKE",
+      "no_fixed_points": true,
+      "exact_per_time_per_coordinate_match": true,
+      "max_sorted_difference": 0.0
+    },
+    {
+      "seed_block": 10,
+      "profile": "LONG_MISSING_BURSTS",
+      "no_fixed_points": true,
+      "exact_per_time_per_coordinate_match": true,
+      "max_sorted_difference": 0.0
+    },
+    {
+      "seed_block": 10,
+      "profile": "LOW_MISSING",
+      "no_fixed_points": true,
+      "exact_per_time_per_coordinate_match": true,
+      "max_sorted_difference": 0.0
+    },
+    {
+      "seed_block": 10,
+      "profile": "FAST_TARGET",
+      "no_fixed_points": true,
+      "exact_per_time_per_coordinate_match": true,
+      "max_sorted_difference": 0.0
+    },
+    {
+      "seed_block": 11,
+      "profile": "TRAIN_LIKE",
+      "no_fixed_points": true,
+      "exact_per_time_per_coordinate_match": true,
+      "max_sorted_difference": 0.0
+    },
+    {
+      "seed_block": 11,
+      "profile": "LONG_MISSING_BURSTS",
+      "no_fixed_points": true,
+      "exact_per_time_per_coordinate_match": true,
+      "max_sorted_difference": 0.0
+    },
+    {
+      "seed_block": 11,
+      "profile": "LOW_MISSING",
+      "no_fixed_points": true,
+      "exact_per_time_per_coordinate_match": true,
+      "max_sorted_difference": 0.0
+    },
+    {
+      "seed_block": 11,
+      "profile": "FAST_TARGET",
+      "no_fixed_points": true,
+      "exact_per_time_per_coordinate_match": true,
+      "max_sorted_difference": 0.0
+    },
+    {
+      "seed_block": 12,
+      "profile": "TRAIN_LIKE",
+      "no_fixed_points": true,
+      "exact_per_time_per_coordinate_match": true,
+      "max_sorted_difference": 0.0
+    },
+    {
+      "seed_block": 12,
+      "profile": "LONG_MISSING_BURSTS",
+      "no_fixed_points": true,
+      "exact_per_time_per_coordinate_match": true,
+      "max_sorted_difference": 0.0
+    },
+    {
+      "seed_block": 12,
+      "profile": "LOW_MISSING",
+      "no_fixed_points": true,
+      "exact_per_time_per_coordinate_match": true,
+      "max_sorted_difference": 0.0
+    },
+    {
+      "seed_block": 12,
+      "profile": "FAST_TARGET",
+      "no_fixed_points": true,
+      "exact_per_time_per_coordinate_match": true,
+      "max_sorted_difference": 0.0
+    },
+    {
+      "seed_block": 13,
+      "profile": "TRAIN_LIKE",
+      "no_fixed_points": true,
+      "exact_per_time_per_coordinate_match": true,
+      "max_sorted_difference": 0.0
+    },
+    {
+      "seed_block": 13,
+      "profile": "LONG_MISSING_BURSTS",
+      "no_fixed_points": true,
+      "exact_per_time_per_coordinate_match": true,
+      "max_sorted_difference": 0.0
+    },
+    {
+      "seed_block": 13,
+      "profile": "LOW_MISSING",
+      "no_fixed_points": true,
+      "exact_per_time_per_coordinate_match": true,
+      "max_sorted_difference": 0.0
+    },
+    {
+      "seed_block": 13,
+      "profile": "FAST_TARGET",
+      "no_fixed_points": true,
+      "exact_per_time_per_coordinate_match": true,
+      "max_sorted_difference": 0.0
+    },
+    {
+      "seed_block": 14,
+      "profile": "TRAIN_LIKE",
+      "no_fixed_points": true,
+      "exact_per_time_per_coordinate_match": true,
+      "max_sorted_difference": 0.0
+    },
+    {
+      "seed_block": 14,
+      "profile": "LONG_MISSING_BURSTS",
+      "no_fixed_points": true,
+      "exact_per_time_per_coordinate_match": true,
+      "max_sorted_difference": 0.0
+    },
+    {
+      "seed_block": 14,
+      "profile": "LOW_MISSING",
+      "no_fixed_points": true,
+      "exact_per_time_per_coordinate_match": true,
+      "max_sorted_difference": 0.0
+    },
+    {
+      "seed_block": 14,
+      "profile": "FAST_TARGET",
+      "no_fixed_points": true,
+      "exact_per_time_per_coordinate_match": true,
+      "max_sorted_difference": 0.0
+    },
+    {
+      "seed_block": 15,
+      "profile": "TRAIN_LIKE",
+      "no_fixed_points": true,
+      "exact_per_time_per_coordinate_match": true,
+      "max_sorted_difference": 0.0
+    },
+    {
+      "seed_block": 15,
+      "profile": "LONG_MISSING_BURSTS",
+      "no_fixed_points": true,
+      "exact_per_time_per_coordinate_match": true,
+      "max_sorted_difference": 0.0
+    },
+    {
+      "seed_block": 15,
+      "profile": "LOW_MISSING",
+      "no_fixed_points": true,
+      "exact_per_time_per_coordinate_match": true,
+      "max_sorted_difference": 0.0
+    },
+    {
+      "seed_block": 15,
+      "profile": "FAST_TARGET",
+      "no_fixed_points": true,
+      "exact_per_time_per_coordinate_match": true,
+      "max_sorted_difference": 0.0
+    },
+    {
+      "seed_block": 16,
+      "profile": "TRAIN_LIKE",
+      "no_fixed_points": true,
+      "exact_per_time_per_coordinate_match": true,
+      "max_sorted_difference": 0.0
+    },
+    {
+      "seed_block": 16,
+      "profile": "LONG_MISSING_BURSTS",
+      "no_fixed_points": true,
+      "exact_per_time_per_coordinate_match": true,
+      "max_sorted_difference": 0.0
+    },
+    {
+      "seed_block": 16,
+      "profile": "LOW_MISSING",
+      "no_fixed_points": true,
+      "exact_per_time_per_coordinate_match": true,
+      "max_sorted_difference": 0.0
+    },
+    {
+      "seed_block": 16,
+      "profile": "FAST_TARGET",
+      "no_fixed_points": true,
+      "exact_per_time_per_coordinate_match": true,
+      "max_sorted_difference": 0.0
+    },
+    {
+      "seed_block": 17,
+      "profile": "TRAIN_LIKE",
+      "no_fixed_points": true,
+      "exact_per_time_per_coordinate_match": true,
+      "max_sorted_difference": 0.0
+    },
+    {
+      "seed_block": 17,
+      "profile": "LONG_MISSING_BURSTS",
+      "no_fixed_points": true,
+      "exact_per_time_per_coordinate_match": true,
+      "max_sorted_difference": 0.0
+    },
+    {
+      "seed_block": 17,
+      "profile": "LOW_MISSING",
+      "no_fixed_points": true,
+      "exact_per_time_per_coordinate_match": true,
+      "max_sorted_difference": 0.0
+    },
+    {
+      "seed_block": 17,
+      "profile": "FAST_TARGET",
+      "no_fixed_points": true,
+      "exact_per_time_per_coordinate_match": true,
+      "max_sorted_difference": 0.0
+    },
+    {
+      "seed_block": 18,
+      "profile": "TRAIN_LIKE",
+      "no_fixed_points": true,
+      "exact_per_time_per_coordinate_match": true,
+      "max_sorted_difference": 0.0
+    },
+    {
+      "seed_block": 18,
+      "profile": "LONG_MISSING_BURSTS",
+      "no_fixed_points": true,
+      "exact_per_time_per_coordinate_match": true,
+      "max_sorted_difference": 0.0
+    },
+    {
+      "seed_block": 18,
+      "profile": "LOW_MISSING",
+      "no_fixed_points": true,
+      "exact_per_time_per_coordinate_match": true,
+      "max_sorted_difference": 0.0
+    },
+    {
+      "seed_block": 18,
+      "profile": "FAST_TARGET",
+      "no_fixed_points": true,
+      "exact_per_time_per_coordinate_match": true,
+      "max_sorted_difference": 0.0
+    },
+    {
+      "seed_block": 19,
+      "profile": "TRAIN_LIKE",
+      "no_fixed_points": true,
+      "exact_per_time_per_coordinate_match": true,
+      "max_sorted_difference": 0.0
+    },
+    {
+      "seed_block": 19,
+      "profile": "LONG_MISSING_BURSTS",
+      "no_fixed_points": true,
+      "exact_per_time_per_coordinate_match": true,
+      "max_sorted_difference": 0.0
+    },
+    {
+      "seed_block": 19,
+      "profile": "LOW_MISSING",
+      "no_fixed_points": true,
+      "exact_per_time_per_coordinate_match": true,
+      "max_sorted_difference": 0.0
+    },
+    {
+      "seed_block": 19,
+      "profile": "FAST_TARGET",
+      "no_fixed_points": true,
+      "exact_per_time_per_coordinate_match": true,
+      "max_sorted_difference": 0.0
+    },
+    {
+      "seed_block": 20,
+      "profile": "TRAIN_LIKE",
+      "no_fixed_points": true,
+      "exact_per_time_per_coordinate_match": true,
+      "max_sorted_difference": 0.0
+    },
+    {
+      "seed_block": 20,
+      "profile": "LONG_MISSING_BURSTS",
+      "no_fixed_points": true,
+      "exact_per_time_per_coordinate_match": true,
+      "max_sorted_difference": 0.0
+    },
+    {
+      "seed_block": 20,
+      "profile": "LOW_MISSING",
+      "no_fixed_points": true,
+      "exact_per_time_per_coordinate_match": true,
+      "max_sorted_difference": 0.0
+    },
+    {
+      "seed_block": 20,
+      "profile": "FAST_TARGET",
+      "no_fixed_points": true,
+      "exact_per_time_per_coordinate_match": true,
+      "max_sorted_difference": 0.0
+    },
+    {
+      "seed_block": 21,
+      "profile": "TRAIN_LIKE",
+      "no_fixed_points": true,
+      "exact_per_time_per_coordinate_match": true,
+      "max_sorted_difference": 0.0
+    },
+    {
+      "seed_block": 21,
+      "profile": "LONG_MISSING_BURSTS",
+      "no_fixed_points": true,
+      "exact_per_time_per_coordinate_match": true,
+      "max_sorted_difference": 0.0
+    },
+    {
+      "seed_block": 21,
+      "profile": "LOW_MISSING",
+      "no_fixed_points": true,
+      "exact_per_time_per_coordinate_match": true,
+      "max_sorted_difference": 0.0
+    },
+    {
+      "seed_block": 21,
+      "profile": "FAST_TARGET",
+      "no_fixed_points": true,
+      "exact_per_time_per_coordinate_match": true,
+      "max_sorted_difference": 0.0
+    },
+    {
+      "seed_block": 22,
+      "profile": "TRAIN_LIKE",
+      "no_fixed_points": true,
+      "exact_per_time_per_coordinate_match": true,
+      "max_sorted_difference": 0.0
+    },
+    {
+      "seed_block": 22,
+      "profile": "LONG_MISSING_BURSTS",
+      "no_fixed_points": true,
+      "exact_per_time_per_coordinate_match": true,
+      "max_sorted_difference": 0.0
+    },
+    {
+      "seed_block": 22,
+      "profile": "LOW_MISSING",
+      "no_fixed_points": true,
+      "exact_per_time_per_coordinate_match": true,
+      "max_sorted_difference": 0.0
+    },
+    {
+      "seed_block": 22,
+      "profile": "FAST_TARGET",
+      "no_fixed_points": true,
+      "exact_per_time_per_coordinate_match": true,
+      "max_sorted_difference": 0.0
+    },
+    {
+      "seed_block": 23,
+      "profile": "TRAIN_LIKE",
+      "no_fixed_points": true,
+      "exact_per_time_per_coordinate_match": true,
+      "max_sorted_difference": 0.0
+    },
+    {
+      "seed_block": 23,
+      "profile": "LONG_MISSING_BURSTS",
+      "no_fixed_points": true,
+      "exact_per_time_per_coordinate_match": true,
+      "max_sorted_difference": 0.0
+    },
+    {
+      "seed_block": 23,
+      "profile": "LOW_MISSING",
+      "no_fixed_points": true,
+      "exact_per_time_per_coordinate_match": true,
+      "max_sorted_difference": 0.0
+    },
+    {
+      "seed_block": 23,
+      "profile": "FAST_TARGET",
+      "no_fixed_points": true,
+      "exact_per_time_per_coordinate_match": true,
+      "max_sorted_difference": 0.0
+    },
+    {
+      "seed_block": 24,
+      "profile": "TRAIN_LIKE",
+      "no_fixed_points": true,
+      "exact_per_time_per_coordinate_match": true,
+      "max_sorted_difference": 0.0
+    },
+    {
+      "seed_block": 24,
+      "profile": "LONG_MISSING_BURSTS",
+      "no_fixed_points": true,
+      "exact_per_time_per_coordinate_match": true,
+      "max_sorted_difference": 0.0
+    },
+    {
+      "seed_block": 24,
+      "profile": "LOW_MISSING",
+      "no_fixed_points": true,
+      "exact_per_time_per_coordinate_match": true,
+      "max_sorted_difference": 0.0
+    },
+    {
+      "seed_block": 24,
+      "profile": "FAST_TARGET",
+      "no_fixed_points": true,
+      "exact_per_time_per_coordinate_match": true,
+      "max_sorted_difference": 0.0
+    },
+    {
+      "seed_block": 25,
+      "profile": "TRAIN_LIKE",
+      "no_fixed_points": true,
+      "exact_per_time_per_coordinate_match": true,
+      "max_sorted_difference": 0.0
+    },
+    {
+      "seed_block": 25,
+      "profile": "LONG_MISSING_BURSTS",
+      "no_fixed_points": true,
+      "exact_per_time_per_coordinate_match": true,
+      "max_sorted_difference": 0.0
+    },
+    {
+      "seed_block": 25,
+      "profile": "LOW_MISSING",
+      "no_fixed_points": true,
+      "exact_per_time_per_coordinate_match": true,
+      "max_sorted_difference": 0.0
+    },
+    {
+      "seed_block": 25,
+      "profile": "FAST_TARGET",
+      "no_fixed_points": true,
+      "exact_per_time_per_coordinate_match": true,
+      "max_sorted_difference": 0.0
+    },
+    {
+      "seed_block": 26,
+      "profile": "TRAIN_LIKE",
+      "no_fixed_points": true,
+      "exact_per_time_per_coordinate_match": true,
+      "max_sorted_difference": 0.0
+    },
+    {
+      "seed_block": 26,
+      "profile": "LONG_MISSING_BURSTS",
+      "no_fixed_points": true,
+      "exact_per_time_per_coordinate_match": true,
+      "max_sorted_difference": 0.0
+    },
+    {
+      "seed_block": 26,
+      "profile": "LOW_MISSING",
+      "no_fixed_points": true,
+      "exact_per_time_per_coordinate_match": true,
+      "max_sorted_difference": 0.0
+    },
+    {
+      "seed_block": 26,
+      "profile": "FAST_TARGET",
+      "no_fixed_points": true,
+      "exact_per_time_per_coordinate_match": true,
+      "max_sorted_difference": 0.0
+    },
+    {
+      "seed_block": 27,
+      "profile": "TRAIN_LIKE",
+      "no_fixed_points": true,
+      "exact_per_time_per_coordinate_match": true,
+      "max_sorted_difference": 0.0
+    },
+    {
+      "seed_block": 27,
+      "profile": "LONG_MISSING_BURSTS",
+      "no_fixed_points": true,
+      "exact_per_time_per_coordinate_match": true,
+      "max_sorted_difference": 0.0
+    },
+    {
+      "seed_block": 27,
+      "profile": "LOW_MISSING",
+      "no_fixed_points": true,
+      "exact_per_time_per_coordinate_match": true,
+      "max_sorted_difference": 0.0
+    },
+    {
+      "seed_block": 27,
+      "profile": "FAST_TARGET",
+      "no_fixed_points": true,
+      "exact_per_time_per_coordinate_match": true,
+      "max_sorted_difference": 0.0
+    },
+    {
+      "seed_block": 28,
+      "profile": "TRAIN_LIKE",
+      "no_fixed_points": true,
+      "exact_per_time_per_coordinate_match": true,
+      "max_sorted_difference": 0.0
+    },
+    {
+      "seed_block": 28,
+      "profile": "LONG_MISSING_BURSTS",
+      "no_fixed_points": true,
+      "exact_per_time_per_coordinate_match": true,
+      "max_sorted_difference": 0.0
+    },
+    {
+      "seed_block": 28,
+      "profile": "LOW_MISSING",
+      "no_fixed_points": true,
+      "exact_per_time_per_coordinate_match": true,
+      "max_sorted_difference": 0.0
+    },
+    {
+      "seed_block": 28,
+      "profile": "FAST_TARGET",
+      "no_fixed_points": true,
+      "exact_per_time_per_coordinate_match": true,
+      "max_sorted_difference": 0.0
+    },
+    {
+      "seed_block": 29,
+      "profile": "TRAIN_LIKE",
+      "no_fixed_points": true,
+      "exact_per_time_per_coordinate_match": true,
+      "max_sorted_difference": 0.0
+    },
+    {
+      "seed_block": 29,
+      "profile": "LONG_MISSING_BURSTS",
+      "no_fixed_points": true,
+      "exact_per_time_per_coordinate_match": true,
+      "max_sorted_difference": 0.0
+    },
+    {
+      "seed_block": 29,
+      "profile": "LOW_MISSING",
+      "no_fixed_points": true,
+      "exact_per_time_per_coordinate_match": true,
+      "max_sorted_difference": 0.0
+    },
+    {
+      "seed_block": 29,
+      "profile": "FAST_TARGET",
+      "no_fixed_points": true,
+      "exact_per_time_per_coordinate_match": true,
+      "max_sorted_difference": 0.0
+    },
+    {
+      "seed_block": 30,
+      "profile": "TRAIN_LIKE",
+      "no_fixed_points": true,
+      "exact_per_time_per_coordinate_match": true,
+      "max_sorted_difference": 0.0
+    },
+    {
+      "seed_block": 30,
+      "profile": "LONG_MISSING_BURSTS",
+      "no_fixed_points": true,
+      "exact_per_time_per_coordinate_match": true,
+      "max_sorted_difference": 0.0
+    },
+    {
+      "seed_block": 30,
+      "profile": "LOW_MISSING",
+      "no_fixed_points": true,
+      "exact_per_time_per_coordinate_match": true,
+      "max_sorted_difference": 0.0
+    },
+    {
+      "seed_block": 30,
+      "profile": "FAST_TARGET",
+      "no_fixed_points": true,
+      "exact_per_time_per_coordinate_match": true,
+      "max_sorted_difference": 0.0
+    },
+    {
+      "seed_block": 31,
+      "profile": "TRAIN_LIKE",
+      "no_fixed_points": true,
+      "exact_per_time_per_coordinate_match": true,
+      "max_sorted_difference": 0.0
+    },
+    {
+      "seed_block": 31,
+      "profile": "LONG_MISSING_BURSTS",
+      "no_fixed_points": true,
+      "exact_per_time_per_coordinate_match": true,
+      "max_sorted_difference": 0.0
+    },
+    {
+      "seed_block": 31,
+      "profile": "LOW_MISSING",
+      "no_fixed_points": true,
+      "exact_per_time_per_coordinate_match": true,
+      "max_sorted_difference": 0.0
+    },
+    {
+      "seed_block": 31,
+      "profile": "FAST_TARGET",
+      "no_fixed_points": true,
+      "exact_per_time_per_coordinate_match": true,
+      "max_sorted_difference": 0.0
+    }
+  ]
+}
