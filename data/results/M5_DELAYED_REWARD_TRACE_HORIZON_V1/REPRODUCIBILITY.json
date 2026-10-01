@@ -1,0 +1,40 @@
+{
+  "status": "BYTE_IDENTICAL_FRESH_RERUN",
+  "rerun_command": "python3 -W error model/M5_DELAYED_REWARD_TRACE_HORIZON_V1/run_experiment.py --output-dir data/results/M5_DELAYED_REWARD_TRACE_HORIZON_V1/verification-rerun",
+  "canonical_files": {
+    "seed_metrics.csv": {
+      "sha256": "0299c7222127145670a7a62e0d707ee130334c7a200959594d5f87cd9dc333c9",
+      "bytes": 32919,
+      "matches_fresh_rerun": true
+    },
+    "paired_contrasts.csv": {
+      "sha256": "ea7b66c445812e033c04652d23ce372a2bd6ddab455360bbd524273789a427d6",
+      "bytes": 4298,
+      "matches_fresh_rerun": true
+    },
+    "summary.json": {
+      "sha256": "4d5e34209e658691c710abb0d2987146f2cae23ed40e56a53bbf7d7ffb811a97",
+      "bytes": 673,
+      "matches_fresh_rerun": true
+    },
+    "manifest.json": {
+      "sha256": "f0a2ddca6105a49a8339cf1e4e474541b8efbde9ca45de93ceb87c1fd32fd36e",
+      "bytes": 1327,
+      "matches_fresh_rerun": true
+    }
+  },
+  "plot_script": {
+    "sha256": "59e0ffe0d169405a55b8fa72ec364cc686405c881502cc89c73dbf81bc6614dc",
+    "bytes": 3743
+  },
+  "figures": {
+    "trace_horizon_figure.svg": {
+      "sha256": "b6e6fe4ee3d4eb39ea8276a867aaee892688aeb153c913d1eb0349dd68b92389",
+      "bytes": 81565
+    },
+    "trace_horizon_figure.png": {
+      "sha256": "e13f745b4bffd8a35f22ade0dd07775079d7d74e97bfbe9a98aafb18f40aabec",
+      "bytes": 315501
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "status": "COMPLETE_EXPLORATORY",
+  "independent_unit": "task seed",
+  "seed_range": [
+    61,
+    90
+  ],
+  "n_seeds": 30,
+  "delays": [
+    1,
+    4,
+    16,
+    64
+  ],
+  "gammas": [
+    0.5,
+    0.75,
+    0.9,
+    0.98
+  ],
+  "arm_mean_across_delay_cells": {
+    "TRACE_GAMMA_0.50": 0.5066034419722766,
+    "TRACE_GAMMA_0.75": 0.5103573409015645,
+    "TRACE_GAMMA_0.90": 0.5115719781595582,
+    "TRACE_GAMMA_0.98": 0.509162918939547,
+    "EXACT_REPLAY": 0.5548521764067853,
+    "NO_TRACE_CURRENT_32": 0.4993176038549999
+  },
+  "contrast_cells": 32,
+  "interpretation": "Stationary synthetic delayed-reward contextual bandit; no biological or broad AI inference."
+}

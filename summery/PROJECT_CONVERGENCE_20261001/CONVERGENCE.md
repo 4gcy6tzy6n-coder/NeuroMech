@@ -196,3 +196,9 @@ M2 should remain in the synthesis as a biologically supported computation with u
 ## 2026-10-01 M2 synthetic predictive-cue transfer V1–V2
 
 A noisy synthetic future-state cue improved both the six-parameter forecast-fusion filter and the generic recurrent control relative to their no-cue ablations. With an aligned cue, the matched generic recurrent model scored AUC `0.8643` versus `0.7941` for the structured filter (structured-minus-generic `−0.0702`, seed-bootstrap 95% interval `[−0.0724,−0.0681]`). Under uninformative/reversed mappings, the structured filter was less brittle, yet both cue-using models performed worse than their no-cue ablations. This establishes neither a structure-specific advantage nor biological-to-AI transfer: the cue directly reports noisy future-target information, and the test is outcome-informed. The result strengthens the project's negative/conditional M2 boundary; no shared positive artificial principle is established.
+
+---
+
+## 2026-10-01 M5 trace-horizon sweep
+
+`M5_DELAYED_REWARD_TRACE_HORIZON_V1` tested four fixed decay factors on 30 fresh seed blocks across reward delays 1, 4, 16, and 64. The trace-versus-current-score contrast depended on delay; longer decay was more useful in some long-delay cells. Exact replay nevertheless remained markedly better in every cell (mean held-out expected reward `0.55485`, compared with `0.50660–0.51157` for traces). This narrows M5's result to a delay-sensitive compact-state trade-off in one stationary bandit, rather than superiority in delayed credit assignment. It does not establish a biological-to-AI transfer effect or a shared M2/M5 principle. Full analysis and artifacts are linked in the [root README](../../README.md).

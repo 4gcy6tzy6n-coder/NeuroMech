@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "seed_metric_rows": 720,
+  "unique_seed_delay_arm_keys": 720,
+  "contrast_rows_recomputed": 32,
+  "output_files_hash_checked": 3,
+  "task_seeds": 30,
+  "primary_familywise_cells": 16,
+  "scope": "artifact/summary verification; does not independently rerun model training"
+}

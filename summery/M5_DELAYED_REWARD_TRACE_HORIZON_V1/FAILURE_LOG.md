@@ -1,0 +1,9 @@
+# Failure and limitation log — M5 delayed-reward trace-horizon sweep V1
+
+- **Claim not supported:** no trace setting approached exact replay in this stationary, one-action/one-reward bandit. The best trace's pooled mean expected reward was about `0.512`, versus `0.555` for exact replay.
+- **Mechanism mismatch:** the trace pools several recent policy scores, although this task's reward is caused by one specific earlier action. The strong replay result is expected under that task definition and limits any interpretation as a failure of biological cerebellar eligibility.
+- **Baseline limitation:** `NO_TRACE_CURRENT_32` applies a delayed reward to the score at the delivery time and is intentionally a weak comparator. Improvements over it do not establish benefit over a competent learned recurrent model or exact credit assignment.
+- **Resource boundary:** state counts include active score/eligibility values only. They are not measured memory, compute, runtime, or energy. Exact replay stores additional delay-dependent score history.
+- **Design status:** this is post-result exploratory work on an already studied task family. The decay settings were fixed before this run, but the family, hypotheses, and prior outcomes were already known.
+- **Implementation incident:** an initial one-seed smoke check on seed 60 exposed host NumPy/Accelerate warnings from small matrix multiplication. The runner was changed to explicit NumPy contractions, rerun with warnings treated as errors, and seed 60 was excluded from the 30-seed analysis. No canonical outcomes were generated from the warning-producing check.
+- **Verification scope:** the result verifier independently recalculates the summaries and checks artifact integrity. A separate full runner execution reproduced all canonical CSV/JSON result files byte-for-byte. Neither check is a proof of biological validity or external generalization.
