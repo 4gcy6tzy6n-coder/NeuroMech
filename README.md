@@ -170,7 +170,13 @@ This post-result extension evaluated 32 fresh training-seed blocks at 60, 120, a
 
 ![M2 optimizer-budget frontier](data/results/M2_BURSTY_COMPUTE_FRONTIER_V1/figures/M2_BURSTY_COMPUTE_FRONTIER_V1.svg)
 
-### Latest M2 experiment: action-conditioned signed-state estimation
+### Latest M2 experiment: actuation-uncertainty state-feedback dose test V1
+
+This outcome-informed exploratory experiment tested whether a GRU benefits more from realized movement-state feedback as actuator reversals become more frequent. Across 32 paired training-seed blocks, the preregistered difference-in-differences (`ACTION_STATE − SELF_STATE` MSE at reversal probability .40 minus the contrast at 0) was `+0.11051` (95% seed-block bootstrap interval `[+0.05341, +0.16633]`). Realized-state input beat action-sign input at all four reversal probabilities, but the advantage peaked at `.25` (`+0.27120`) and fell at `.40` (`+0.17288`); it was already positive with no reversals. At `.40`, it also beat zero-state and recipient-yoked controls. This supports a bounded synthetic result about information from realized state under the tested disturbances; it does not show a monotonic dose response, validate the worm circuit, or establish general AI benefit. A six-seed preflight was inspected before the disjoint full run, so the result is exploratory. See the [contract, results, and failure log](summery/M2_ACTUATION_UNCERTAINTY_STATE_FEEDBACK_V1/), [runner, verifier, and figure source](model/M2_ACTUATION_UNCERTAINTY_STATE_FEEDBACK_V1/), and [canonical outputs and figures](data/results/M2_ACTUATION_UNCERTAINTY_STATE_FEEDBACK_V1/).
+
+![M2 realized-state feedback under actuator uncertainty](data/results/M2_ACTUATION_UNCERTAINTY_STATE_FEEDBACK_V1/figures/M2_ACTUATION_UNCERTAINTY_STATE_FEEDBACK_V1.svg)
+
+### Previous M2 experiment: action-conditioned signed-state estimation
 
 This supervised inference study isolated signed-position estimation from end-to-end control learning. In the aligned action-to-state condition, the four-unit sensory-site LTC had MSE `1.9748`; output-site feedback was better at `1.8196` (output minus sensory `−0.15519`, 95% seed-block interval `[−0.15668, −0.15367]`), and `GRU_4` reached `0.6354`. Small sensory-site gains over no-feedback and yoked controls were only `0.00249` and `0.00229` MSE, respectively, and did not offset its losses to output-site and generic recurrence. Because a generic GRU learned the aligned task, the result is adverse to this sensory-site LTC implementation rather than an unlearnable-task artifact. Held-out coupling reversal caused marked degradation. The frozen sensory-site criterion was not met; this is exploratory artificial evidence, not biological validation.
 

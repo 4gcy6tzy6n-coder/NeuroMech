@@ -1,0 +1,73 @@
+{
+  "classification": "developmental task-adequacy preflight; inspected before full-run; not part of confirmatory statistics",
+  "seeds": [
+    930000,
+    930005
+  ],
+  "n_per_arm_per_level": 128,
+  "learned_model_parameters": 321,
+  "updates": 160,
+  "mean_mse_by_reverse_probability": {
+    "0.0": {
+      "SELF_STATE": 0.9163581128005044,
+      "ACTION_STATE": 0.9217420276935703,
+      "ZERO_STATE": 0.9365937998892395,
+      "YOKED_STATE": 0.974642979562539,
+      "REACTIVE": 0.91416693684697
+    },
+    "0.1": {
+      "SELF_STATE": 1.3455284030581856,
+      "ACTION_STATE": 1.4289306985230052,
+      "ZERO_STATE": 1.426166910032208,
+      "YOKED_STATE": 1.4419984253844744,
+      "REACTIVE": 1.712936059501535
+    },
+    "0.25": {
+      "SELF_STATE": 2.8552226450307843,
+      "ACTION_STATE": 3.099644293584042,
+      "ZERO_STATE": 3.0382560467448667,
+      "YOKED_STATE": 3.0531214074741393,
+      "REACTIVE": 3.483965772217713
+    },
+    "0.4": {
+      "SELF_STATE": 6.7204907618589225,
+      "ACTION_STATE": 6.9766160732497875,
+      "ZERO_STATE": 6.9848669954419735,
+      "YOKED_STATE": 7.004936356936109,
+      "REACTIVE": 7.272692335097228
+    }
+  },
+  "dose_advantage": {
+    "0.0": {
+      "mean": 0.005383914893065944,
+      "ci95_low": -0.04935148687834412,
+      "ci95_high": 0.05465606143700134,
+      "n_seed_blocks": 6
+    },
+    "0.1": {
+      "mean": 0.08340229546482014,
+      "ci95_low": -0.007568449061440867,
+      "ci95_high": 0.16402607784591725,
+      "n_seed_blocks": 6
+    },
+    "0.25": {
+      "mean": 0.24442164855325718,
+      "ci95_low": 0.16635712798909155,
+      "ci95_high": 0.3545456055140574,
+      "n_seed_blocks": 6
+    },
+    "0.4": {
+      "mean": 0.2561253113908653,
+      "ci95_low": 0.16557262133741787,
+      "ci95_high": 0.35523829507177834,
+      "n_seed_blocks": 6
+    }
+  },
+  "primary_interaction": {
+    "mean": 0.25074139649779936,
+    "ci95_low": 0.15969026524953295,
+    "ci95_high": 0.31869510081079705,
+    "n_seed_blocks": 6
+  },
+  "interpretation": "The task is learnable: SELF_STATE is near the fixed reactive reference at p=0 and has lower mean MSE than ACTION_STATE, ZERO_STATE, YOKED_STATE, and REACTIVE at p>=0.10. Full run uses disjoint seeds."
+}

@@ -1,0 +1,81 @@
+{
+  "experiment": "M2_ACTUATION_UNCERTAINTY_STATE_FEEDBACK_V1",
+  "contract_sha256": "3af4839ee05bda7aab987a8423760cbcc35c8bf027441101b1820d1b256511da",
+  "runner_sha256": "81bc8bb17753c0e7198db3dc857ccac0215f6b7163d801cde066dbb04573b6dc",
+  "verifier_sha256": "2dc82a73bf16a538fabfd736e5af7feede65ebfa2519d7215c953ca6dd05e076",
+  "python": "3.12.13",
+  "numpy": "2.4.4",
+  "torch": "2.11.0",
+  "device": "CPU",
+  "training_seeds": [
+    940000,
+    940001,
+    940002,
+    940003,
+    940004,
+    940005,
+    940006,
+    940007,
+    940008,
+    940009,
+    940010,
+    940011,
+    940012,
+    940013,
+    940014,
+    940015,
+    940016,
+    940017,
+    940018,
+    940019,
+    940020,
+    940021,
+    940022,
+    940023,
+    940024,
+    940025,
+    940026,
+    940027,
+    940028,
+    940029,
+    940030,
+    940031
+  ],
+  "test_levels": [
+    0.0,
+    0.1,
+    0.25,
+    0.4
+  ],
+  "arms": [
+    "SELF_STATE",
+    "ACTION_STATE",
+    "ZERO_STATE",
+    "YOKED_STATE",
+    "REACTIVE"
+  ],
+  "updates": 160,
+  "duration_seconds": 182.67169308662415,
+  "outputs": {
+    "fit_manifest.csv": {
+      "bytes": 841012,
+      "sha256": "087f983e82866608a5e355e238eeab2d8432d7eb568c5021c6a73095aa849479"
+    },
+    "episode_metrics.csv": {
+      "bytes": 6889552,
+      "sha256": "19bae40ca22bc5c29fa1553fe33d4132610a16b35548e8eefe84757a6da9eaca"
+    },
+    "seed_summary.csv": {
+      "bytes": 48365,
+      "sha256": "6034eb1274bd0b579fa9b359a23960d61dae30a8f6ec7d9f75a1eb68c91a3868"
+    },
+    "yoke_checks.json": {
+      "bytes": 17659,
+      "sha256": "4e6fee27b536146b7a909fad9d38c65f8a211de9ba8255d9fb5db5dd7cbf0029"
+    },
+    "summary.json": {
+      "bytes": 10843,
+      "sha256": "a0dfe4bacf84b6971b1356c5ac9e435f51550e4c1ea84799f9dccfe82c558308"
+    }
+  }
+}

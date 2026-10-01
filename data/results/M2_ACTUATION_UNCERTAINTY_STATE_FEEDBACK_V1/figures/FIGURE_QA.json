@@ -1,0 +1,25 @@
+{
+  "status": "PASS",
+  "files": [
+    {
+      "path": "M2_ACTUATION_UNCERTAINTY_STATE_FEEDBACK_V1.pdf",
+      "bytes": 28579,
+      "sha256": "5e50148a373a2c81a2045f9469c7cdd03048592ec5aab1f0e69f5c7ef1adbe91"
+    },
+    {
+      "path": "M2_ACTUATION_UNCERTAINTY_STATE_FEEDBACK_V1.svg",
+      "bytes": 38341,
+      "sha256": "512524610485daef1ed5957015c3b130d44adda7df0f9ac25a91d53037e887e7"
+    },
+    {
+      "path": "M2_ACTUATION_UNCERTAINTY_STATE_FEEDBACK_V1.tiff",
+      "bytes": 33922250,
+      "sha256": "8175844776226aa1d5511bec137b9d8535b01dd8c8eafe5c844f65919fe2b957"
+    }
+  ],
+  "checks": [
+    "SVG and PDF contain editable text; PDF text extraction succeeded",
+    "TIFF raster export exists at 600 dpi",
+    "panel layout visually inspected; labels and intervals legible"
+  ]
+}

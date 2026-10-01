@@ -1,0 +1,30 @@
+{
+  "status": "PASS",
+  "comparison": {
+    "episode_metrics.csv": {
+      "canonical_sha256": "19bae40ca22bc5c29fa1553fe33d4132610a16b35548e8eefe84757a6da9eaca",
+      "rerun_sha256": "19bae40ca22bc5c29fa1553fe33d4132610a16b35548e8eefe84757a6da9eaca",
+      "byte_identical": true
+    },
+    "seed_summary.csv": {
+      "canonical_sha256": "6034eb1274bd0b579fa9b359a23960d61dae30a8f6ec7d9f75a1eb68c91a3868",
+      "rerun_sha256": "6034eb1274bd0b579fa9b359a23960d61dae30a8f6ec7d9f75a1eb68c91a3868",
+      "byte_identical": true
+    },
+    "yoke_checks.json": {
+      "canonical_sha256": "4e6fee27b536146b7a909fad9d38c65f8a211de9ba8255d9fb5db5dd7cbf0029",
+      "rerun_sha256": "4e6fee27b536146b7a909fad9d38c65f8a211de9ba8255d9fb5db5dd7cbf0029",
+      "byte_identical": true
+    },
+    "summary.json": {
+      "canonical_sha256": "a0dfe4bacf84b6971b1356c5ac9e435f51550e4c1ea84799f9dccfe82c558308",
+      "rerun_sha256": "a0dfe4bacf84b6971b1356c5ac9e435f51550e4c1ea84799f9dccfe82c558308",
+      "byte_identical": true
+    },
+    "fit_manifest.json_content_byte_identical_after_ignoring_runtime": {
+      "equal": true,
+      "rows": 128
+    }
+  },
+  "excluded_nondeterministic_field": "training_seconds only; run duration differs by definition"
+}
