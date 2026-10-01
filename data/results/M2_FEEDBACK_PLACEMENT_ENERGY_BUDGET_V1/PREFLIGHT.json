@@ -1,0 +1,92 @@
+{
+  "experiment": "M2_FEEDBACK_PLACEMENT_ENERGY_BUDGET_V1",
+  "classification": "post-result exploratory AI-side follow-up; within-study contract frozen before execution",
+  "contract_sha256": "c4e77ca3dcfcaff38482680909b700469c4a85dc2a83a2de5f0a26b71d1a1ccc",
+  "runner_sha256": "983c153045b33854b6fc59c0e7ba57bdfb1a4687ecc392e66498b6b9bc059036",
+  "base_model_runner_sha256": "2768e4766125d1e1302b1a772b98c28246416a1e69cbc2f1bfb9c09484f7b13b",
+  "verifier_sha256": "82b15efc166b463e09a99a96b62c5b7ee56730dc6e1110c7d29804eb692230e3",
+  "environment": {
+    "python": "3.12.13",
+    "numpy": "2.4.4",
+    "torch": "2.11.0",
+    "device": "CPU",
+    "torch_threads": 1
+  },
+  "training_seed_blocks": [
+    501000,
+    501001,
+    501002,
+    501003,
+    501004,
+    501005,
+    501006,
+    501007,
+    501008,
+    501009,
+    501010,
+    501011,
+    501012,
+    501013,
+    501014,
+    501015
+  ],
+  "training_candidates": {
+    "arms": [
+      "SENSORY_SITE_1D",
+      "OUTPUT_SITE_1D",
+      "NO_FEEDBACK_1D",
+      "GENERIC_RNN_1D",
+      "GRU_8"
+    ],
+    "parameter_counts": {
+      "SENSORY_SITE_1D": 4,
+      "OUTPUT_SITE_1D": 4,
+      "NO_FEEDBACK_1D": 3,
+      "GENERIC_RNN_1D": 6,
+      "GRU_8": 297
+    },
+    "energy_penalties": [
+      0.0,
+      0.1,
+      0.3,
+      0.6
+    ]
+  },
+  "budget": {
+    "mean_command_energy": 0.5,
+    "selection": "validation only; mean across three conditions"
+  },
+  "validation_seed_rule": "5000000 + block*100000 + condition_index*1000 + episode",
+  "test_seed_rule": "6000000 + block*100000 + condition_index*1000 + episode",
+  "validation_episodes_per_candidate_condition": 32,
+  "test_episodes_per_selected_arm_condition": 64,
+  "updates": 100,
+  "batch_size": 32,
+  "sequence_length": 96,
+  "conditions": {
+    "TRANSIENT_PULSE": {
+      "hazard": 0.01,
+      "pulse_rate": 0.06,
+      "pulse_durations": [
+        2
+      ]
+    },
+    "SUSTAINED_SWITCH": {
+      "hazard": 0.05,
+      "pulse_rate": 0.02,
+      "pulse_durations": [
+        2
+      ]
+    },
+    "COMBINED_STRESS": {
+      "hazard": 0.05,
+      "pulse_rate": 0.06,
+      "pulse_durations": [
+        4
+      ]
+    }
+  },
+  "primary": "Held-out TRANSIENT_PULSE movement_mae; SENSORY_SITE_1D minus OUTPUT_SITE_1D among both validation-budget-feasible policies",
+  "output_dir": "data/results/M2_FEEDBACK_PLACEMENT_ENERGY_BUDGET_V1/canonical",
+  "followup_outcomes_inspected": false
+}
