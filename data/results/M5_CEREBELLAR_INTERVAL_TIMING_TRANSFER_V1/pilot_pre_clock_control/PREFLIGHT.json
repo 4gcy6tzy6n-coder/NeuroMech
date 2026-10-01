@@ -1,0 +1,23 @@
+{
+  "experiment_id": "M5_CEREBELLAR_INTERVAL_TIMING_TRANSFER_V1",
+  "classification": "POST_RESULT_EXPLORATORY",
+  "outcomes_computed": false,
+  "contract_sha256": "5613149adce39a0a67ff790c87b424d2ef6fa95f5f9c0bb143e125d846a8c08d",
+  "runner_sha256": "f122220c96534ac8b2c82d565da57d144401610e52c6a5aef940104346efc6fc",
+  "input_mat_sha256": "822e47a83f84e647e4f9571832f920663009e73bd2814d4118331d99792f4147",
+  "profile_shape": [
+    81,
+    64
+  ],
+  "selected_cells": 64,
+  "finite_profiles": true,
+  "independent_synthetic_label_check": "PASS",
+  "arms": [
+    "BIO_PROFILE_ELIGIBILITY",
+    "BIO_PROFILE_NO_TRACE",
+    "GENERIC_RBF_ELIGIBILITY",
+    "SHUFFLED_PROFILE_ELIGIBILITY",
+    "GRU_BPTT",
+    "EMPIRICAL_TIMER"
+  ]
+}

@@ -1,0 +1,310 @@
+{
+  "experiment_id": "M5_CEREBELLAR_INTERVAL_TIMING_TRANSFER_V1",
+  "classification": "POST_RESULT_EXPLORATORY_ARTIFICIAL_EXPERIMENT",
+  "primary_outcome": "per-episode absolute reward-time error, summarized by task seed",
+  "summaries": [
+    {
+      "mapping": "ALIGNED",
+      "arm": "BIO_PROFILE_ELIGIBILITY",
+      "mean_absolute_error_seconds": 0.8359039297384417,
+      "seed_bootstrap_95ci": [
+        0.826494820989215,
+        0.8451414284507804
+      ],
+      "seeds": 12,
+      "episode_count_per_seed": 500
+    },
+    {
+      "mapping": "ALIGNED",
+      "arm": "BIO_PROFILE_NO_TRACE",
+      "mean_absolute_error_seconds": 0.8368139297384416,
+      "seed_bootstrap_95ci": [
+        0.8265696819767856,
+        0.8467848907600087
+      ],
+      "seeds": 12,
+      "episode_count_per_seed": 500
+    },
+    {
+      "mapping": "ALIGNED",
+      "arm": "EMPIRICAL_TIMER",
+      "mean_absolute_error_seconds": 0.07526962479804049,
+      "seed_bootstrap_95ci": [
+        0.07450955380819016,
+        0.07604521118641108
+      ],
+      "seeds": 12,
+      "episode_count_per_seed": 500
+    },
+    {
+      "mapping": "ALIGNED",
+      "arm": "GENERIC_RBF_ELIGIBILITY",
+      "mean_absolute_error_seconds": 0.140428636781975,
+      "seed_bootstrap_95ci": [
+        0.13843700620413193,
+        0.14290910794633313
+      ],
+      "seeds": 12,
+      "episode_count_per_seed": 500
+    },
+    {
+      "mapping": "ALIGNED",
+      "arm": "GRU_CLOCK_BPTT",
+      "mean_absolute_error_seconds": 0.11782262928327353,
+      "seed_bootstrap_95ci": [
+        0.07982835943873157,
+        0.19005035325606892
+      ],
+      "seeds": 12,
+      "episode_count_per_seed": 500
+    },
+    {
+      "mapping": "ALIGNED",
+      "arm": "GRU_PROFILE_BPTT",
+      "mean_absolute_error_seconds": 0.09631787198210505,
+      "seed_bootstrap_95ci": [
+        0.09168708979178838,
+        0.10083915974272815
+      ],
+      "seeds": 12,
+      "episode_count_per_seed": 500
+    },
+    {
+      "mapping": "ALIGNED",
+      "arm": "SHUFFLED_PROFILE_ELIGIBILITY",
+      "mean_absolute_error_seconds": 0.5115273686482341,
+      "seed_bootstrap_95ci": [
+        0.5082724798767498,
+        0.5150485320356392
+      ],
+      "seeds": 12,
+      "episode_count_per_seed": 500
+    },
+    {
+      "mapping": "REVERSED",
+      "arm": "BIO_PROFILE_ELIGIBILITY",
+      "mean_absolute_error_seconds": 0.8414339297384417,
+      "seed_bootstrap_95ci": [
+        0.833858706392685,
+        0.8486767956633678
+      ],
+      "seeds": 12,
+      "episode_count_per_seed": 500
+    },
+    {
+      "mapping": "REVERSED",
+      "arm": "BIO_PROFILE_NO_TRACE",
+      "mean_absolute_error_seconds": 0.8408239297384418,
+      "seed_bootstrap_95ci": [
+        0.8338296490611122,
+        0.8475502913811349
+      ],
+      "seeds": 12,
+      "episode_count_per_seed": 500
+    },
+    {
+      "mapping": "REVERSED",
+      "arm": "EMPIRICAL_TIMER",
+      "mean_absolute_error_seconds": 0.07521451681080324,
+      "seed_bootstrap_95ci": [
+        0.07443997406866218,
+        0.07600199412966052
+      ],
+      "seeds": 12,
+      "episode_count_per_seed": 500
+    },
+    {
+      "mapping": "REVERSED",
+      "arm": "GENERIC_RBF_ELIGIBILITY",
+      "mean_absolute_error_seconds": 0.1406713358841477,
+      "seed_bootstrap_95ci": [
+        0.13854444335885152,
+        0.14310172536176613
+      ],
+      "seeds": 12,
+      "episode_count_per_seed": 500
+    },
+    {
+      "mapping": "REVERSED",
+      "arm": "GRU_CLOCK_BPTT",
+      "mean_absolute_error_seconds": 0.1339610584403669,
+      "seed_bootstrap_95ci": [
+        0.08965751638849805,
+        0.21472530944701423
+      ],
+      "seeds": 12,
+      "episode_count_per_seed": 500
+    },
+    {
+      "mapping": "REVERSED",
+      "arm": "GRU_PROFILE_BPTT",
+      "mean_absolute_error_seconds": 0.09442702600541475,
+      "seed_bootstrap_95ci": [
+        0.09073807574248013,
+        0.09836136722758376
+      ],
+      "seeds": 12,
+      "episode_count_per_seed": 500
+    },
+    {
+      "mapping": "REVERSED",
+      "arm": "SHUFFLED_PROFILE_ELIGIBILITY",
+      "mean_absolute_error_seconds": 0.5097697577032853,
+      "seed_bootstrap_95ci": [
+        0.5063450172276133,
+        0.5129509720987645
+      ],
+      "seeds": 12,
+      "episode_count_per_seed": 500
+    }
+  ],
+  "paired_contrasts": [
+    {
+      "mapping": "ALIGNED",
+      "contrast": "BIO_PROFILE_ELIGIBILITY_MINUS_BIO_PROFILE_NO_TRACE",
+      "mean_error_difference_seconds": -0.0009100000000000219,
+      "seed_bootstrap_95ci": [
+        -0.0027600000000000216,
+        0.0008649999999999584
+      ],
+      "positive_seeds": 3,
+      "seeds": 12
+    },
+    {
+      "mapping": "ALIGNED",
+      "contrast": "BIO_PROFILE_ELIGIBILITY_MINUS_GENERIC_RBF_ELIGIBILITY",
+      "mean_error_difference_seconds": 0.6954752929564667,
+      "seed_bootstrap_95ci": [
+        0.6844777457733773,
+        0.7061773214225928
+      ],
+      "positive_seeds": 12,
+      "seeds": 12
+    },
+    {
+      "mapping": "ALIGNED",
+      "contrast": "BIO_PROFILE_ELIGIBILITY_MINUS_SHUFFLED_PROFILE_ELIGIBILITY",
+      "mean_error_difference_seconds": 0.32437656109020746,
+      "seed_bootstrap_95ci": [
+        0.31306471146942366,
+        0.33529994964891097
+      ],
+      "positive_seeds": 12,
+      "seeds": 12
+    },
+    {
+      "mapping": "ALIGNED",
+      "contrast": "BIO_PROFILE_ELIGIBILITY_MINUS_GRU_PROFILE_BPTT",
+      "mean_error_difference_seconds": 0.7395860577563366,
+      "seed_bootstrap_95ci": [
+        0.7299920882437342,
+        0.7486976344252269
+      ],
+      "positive_seeds": 12,
+      "seeds": 12
+    },
+    {
+      "mapping": "ALIGNED",
+      "contrast": "BIO_PROFILE_ELIGIBILITY_MINUS_GRU_CLOCK_BPTT",
+      "mean_error_difference_seconds": 0.718081300455168,
+      "seed_bootstrap_95ci": [
+        0.6392887801437132,
+        0.7623856647179748
+      ],
+      "positive_seeds": 12,
+      "seeds": 12
+    },
+    {
+      "mapping": "ALIGNED",
+      "contrast": "BIO_PROFILE_ELIGIBILITY_MINUS_EMPIRICAL_TIMER",
+      "mean_error_difference_seconds": 0.7606343049404011,
+      "seed_bootstrap_95ci": [
+        0.7514338469618101,
+        0.7696840900051014
+      ],
+      "positive_seeds": 12,
+      "seeds": 12
+    },
+    {
+      "mapping": "REVERSED",
+      "contrast": "BIO_PROFILE_ELIGIBILITY_MINUS_BIO_PROFILE_NO_TRACE",
+      "mean_error_difference_seconds": 0.0006099999999999902,
+      "seed_bootstrap_95ci": [
+        -0.001185000000000001,
+        0.002389999999999939
+      ],
+      "positive_seeds": 7,
+      "seeds": 12
+    },
+    {
+      "mapping": "REVERSED",
+      "contrast": "BIO_PROFILE_ELIGIBILITY_MINUS_GENERIC_RBF_ELIGIBILITY",
+      "mean_error_difference_seconds": 0.700762593854294,
+      "seed_bootstrap_95ci": [
+        0.6935997383173683,
+        0.7077819645312429
+      ],
+      "positive_seeds": 12,
+      "seeds": 12
+    },
+    {
+      "mapping": "REVERSED",
+      "contrast": "BIO_PROFILE_ELIGIBILITY_MINUS_SHUFFLED_PROFILE_ELIGIBILITY",
+      "mean_error_difference_seconds": 0.33166417203515625,
+      "seed_bootstrap_95ci": [
+        0.322017935379207,
+        0.34112245116950385
+      ],
+      "positive_seeds": 12,
+      "seeds": 12
+    },
+    {
+      "mapping": "REVERSED",
+      "contrast": "BIO_PROFILE_ELIGIBILITY_MINUS_GRU_PROFILE_BPTT",
+      "mean_error_difference_seconds": 0.7470069037330269,
+      "seed_bootstrap_95ci": [
+        0.7385514293682489,
+        0.7551249973809803
+      ],
+      "positive_seeds": 12,
+      "seeds": 12
+    },
+    {
+      "mapping": "REVERSED",
+      "contrast": "BIO_PROFILE_ELIGIBILITY_MINUS_GRU_CLOCK_BPTT",
+      "mean_error_difference_seconds": 0.7074728712980747,
+      "seed_bootstrap_95ci": [
+        0.6216838699218564,
+        0.7562628354196078
+      ],
+      "positive_seeds": 12,
+      "seeds": 12
+    },
+    {
+      "mapping": "REVERSED",
+      "contrast": "BIO_PROFILE_ELIGIBILITY_MINUS_EMPIRICAL_TIMER",
+      "mean_error_difference_seconds": 0.7662194129276384,
+      "seed_bootstrap_95ci": [
+        0.7584036275772682,
+        0.7736638756354127
+      ],
+      "positive_seeds": 12,
+      "seeds": 12
+    }
+  ],
+  "seed_range": [
+    6100,
+    6111
+  ],
+  "train_episodes_per_seed_mapping": 1800,
+  "test_episodes_per_seed_mapping": 500,
+  "selected_biological_cells": 64,
+  "extracted_source_cells": 732,
+  "elapsed_seconds": 97.167843667,
+  "bootstrap": {
+    "resamples": 20000,
+    "seed": 20261014,
+    "unit": "task seed"
+  },
+  "interpretation": "Synthetic transfer only; source-derived traces are condition-averaged signals, not synaptic weights or independent animal replicates."
+}

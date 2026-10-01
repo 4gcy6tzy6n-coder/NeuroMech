@@ -1,0 +1,132 @@
+{
+  "experiment_id": "M5_CEREBELLAR_INTERVAL_TIMING_TRANSFER_V1",
+  "source_results_sha256": "7546b161499bae0c161023d71d6442f60e2b9bba8fa7a2e9b2aec7a4e9eca0cb",
+  "analysis_script_sha256": "29a03f944cf7e627cf0d46dbaa236520155a5448d67c4eb5734ab801ac5ef79c",
+  "bootstrap_resamples": 20000,
+  "bootstrap_seed": 20261015,
+  "unit": "paired task seed",
+  "output_sha256": "fbe758e5ccea0e23d8df54eba5e0a9e1c5e68526e6f984d10b8d223ffe00ff11",
+  "contrasts": [
+    {
+      "mapping": "ALIGNED",
+      "contrast": "GRU_PROFILE_BPTT_MINUS_GRU_CLOCK_BPTT",
+      "mean_error_difference_seconds": -0.021504757301168468,
+      "seed_bootstrap_95ci": [
+        -0.0970322400243121,
+        0.019567259187962885
+      ],
+      "positive_seeds": 9,
+      "seeds": 12,
+      "resampling_unit": "task seed"
+    },
+    {
+      "mapping": "ALIGNED",
+      "contrast": "BIO_PROFILE_ELIGIBILITY_MINUS_BIO_PROFILE_NO_TRACE",
+      "mean_error_difference_seconds": -0.0009100000000000219,
+      "seed_bootstrap_95ci": [
+        -0.002770000000000023,
+        0.0008851249999999852
+      ],
+      "positive_seeds": 3,
+      "seeds": 12,
+      "resampling_unit": "task seed"
+    },
+    {
+      "mapping": "ALIGNED",
+      "contrast": "BIO_PROFILE_ELIGIBILITY_MINUS_GENERIC_RBF_ELIGIBILITY",
+      "mean_error_difference_seconds": 0.6954752929564667,
+      "seed_bootstrap_95ci": [
+        0.6843534745294266,
+        0.7061452522332207
+      ],
+      "positive_seeds": 12,
+      "seeds": 12,
+      "resampling_unit": "task seed"
+    },
+    {
+      "mapping": "ALIGNED",
+      "contrast": "BIO_PROFILE_ELIGIBILITY_MINUS_GRU_PROFILE_BPTT",
+      "mean_error_difference_seconds": 0.7395860577563366,
+      "seed_bootstrap_95ci": [
+        0.7299784583744763,
+        0.7486324325839715
+      ],
+      "positive_seeds": 12,
+      "seeds": 12,
+      "resampling_unit": "task seed"
+    },
+    {
+      "mapping": "ALIGNED",
+      "contrast": "BIO_PROFILE_ELIGIBILITY_MINUS_EMPIRICAL_TIMER",
+      "mean_error_difference_seconds": 0.7606343049404011,
+      "seed_bootstrap_95ci": [
+        0.7514448569580506,
+        0.7696391288600786
+      ],
+      "positive_seeds": 12,
+      "seeds": 12,
+      "resampling_unit": "task seed"
+    },
+    {
+      "mapping": "REVERSED",
+      "contrast": "GRU_PROFILE_BPTT_MINUS_GRU_CLOCK_BPTT",
+      "mean_error_difference_seconds": -0.03953403243495215,
+      "seed_bootstrap_95ci": [
+        -0.12011051794529197,
+        0.005956452532421287
+      ],
+      "positive_seeds": 5,
+      "seeds": 12,
+      "resampling_unit": "task seed"
+    },
+    {
+      "mapping": "REVERSED",
+      "contrast": "BIO_PROFILE_ELIGIBILITY_MINUS_BIO_PROFILE_NO_TRACE",
+      "mean_error_difference_seconds": 0.0006099999999999902,
+      "seed_bootstrap_95ci": [
+        -0.0011650000000000642,
+        0.0024400000000000164
+      ],
+      "positive_seeds": 7,
+      "seeds": 12,
+      "resampling_unit": "task seed"
+    },
+    {
+      "mapping": "REVERSED",
+      "contrast": "BIO_PROFILE_ELIGIBILITY_MINUS_GENERIC_RBF_ELIGIBILITY",
+      "mean_error_difference_seconds": 0.700762593854294,
+      "seed_bootstrap_95ci": [
+        0.693722434711264,
+        0.7078089289968009
+      ],
+      "positive_seeds": 12,
+      "seeds": 12,
+      "resampling_unit": "task seed"
+    },
+    {
+      "mapping": "REVERSED",
+      "contrast": "BIO_PROFILE_ELIGIBILITY_MINUS_GRU_PROFILE_BPTT",
+      "mean_error_difference_seconds": 0.7470069037330269,
+      "seed_bootstrap_95ci": [
+        0.7386115423492884,
+        0.7552244351942347
+      ],
+      "positive_seeds": 12,
+      "seeds": 12,
+      "resampling_unit": "task seed"
+    },
+    {
+      "mapping": "REVERSED",
+      "contrast": "BIO_PROFILE_ELIGIBILITY_MINUS_EMPIRICAL_TIMER",
+      "mean_error_difference_seconds": 0.7662194129276384,
+      "seed_bootstrap_95ci": [
+        0.7585105175268081,
+        0.7736434243294552
+      ],
+      "positive_seeds": 12,
+      "seeds": 12,
+      "resampling_unit": "task seed"
+    }
+  ],
+  "status": "exploratory supplementary analysis; no new task data or model fit"
+}
