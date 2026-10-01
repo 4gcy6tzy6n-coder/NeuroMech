@@ -20,7 +20,7 @@ The first AI-side interval-timing test has now been run using 64 selected cell-l
 
 ## Current research focus
 
-This workstream is converging on **M2 and M5 mechanism-grounded studies plus one shared artificial benchmark**. The RR19/M1 line is managed separately and remains here as project context, not as active work in this thread. The paper-level question is whether experimentally supported neural computations yield specific, reproducible benefits in artificial systems against strong controls matched for task conditions and, where feasible, capacity. This remains a research hypothesis, not an established result.
+The project-level convergence target is **two principal mechanism cases plus one shared artificial benchmark**: M1's higher-order visual-motion correction remains a separately managed evidence line; M2 feedback-site specificity is the active mechanism-transfer focus in this workstream; and the benchmark must compare each mechanism with strong, capacity-aware controls while keeping task-native outcomes separate. M5 remains a completed exploratory case that informs the evidence base, not an additional principal claim. Fish1.5 can provide supporting same-specimen structure–function evidence, but it is not automatically a fourth artificial mechanism study. This portfolio framing is a research hypothesis and prioritization, not a result or authorization to reopen a sealed experiment.
 
 | Line | Biological question | Current artificial evidence |
 |---|---|---|
