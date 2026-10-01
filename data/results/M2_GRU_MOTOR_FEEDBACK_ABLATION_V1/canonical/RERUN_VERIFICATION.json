@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "checks": {
+    "test_episode_metrics.csv": true,
+    "test_seed_summary.csv": true,
+    "summary.json": true,
+    "yoke_distribution_check.json": true,
+    "fit_manifest_except_training_seconds": true
+  },
+  "canonical_dir": "data/results/M2_GRU_MOTOR_FEEDBACK_ABLATION_V1/canonical",
+  "rerun_dir": "/tmp/neuromech_m2_gru_feedback_rerun",
+  "note": "training_seconds is expected to vary; fit parameters, endpoints, and all other scientific artifacts are compared."
+}

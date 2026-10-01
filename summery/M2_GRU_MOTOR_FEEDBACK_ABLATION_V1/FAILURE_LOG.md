@@ -1,0 +1,6 @@
+# M2 GRU motor-feedback ablation V1 — execution log
+
+- **Attempt 1:** stopped in training seed block 1 before writing scientific outputs. The donor motor-feedback sequence returned by the shared task helper was float64, while the GRU parameters and training observations were float32; PyTorch rejected the mixed dtypes in the GRU input matrix multiplication.
+- **Correction:** cast only the derived yoke signal arrays to float32 at the model-input boundary, preserving their values at float32 precision. The task generator, seed schedule, model arms, optimizer, endpoints, and primary contrast were unchanged. The failed attempt produced no outcome table and no result values were inspected.
+- **Corrected run:** all 32 seed blocks completed. The independent verifier passed on 96 fits, 49,152 episode rows, 384 seed summaries, and 128 yoke distribution checks. The corrected canonical run is retained under `data/results/M2_GRU_MOTOR_FEEDBACK_ABLATION_V1/canonical/`.
+- The primary contrast was negative in the frozen sign convention (`GRU_SELF_MOTOR − GRU_ZERO_MOTOR = −0.006239`, 95% seed-block interval `[−0.007273,−0.005197]`), indicating a benefit of own motor input for this GRU in SLOW_TRANSIENT. This is a condition-specific result, not a universal feedback benefit; the clean-condition means are approximately tied and do not show the same direction consistently.

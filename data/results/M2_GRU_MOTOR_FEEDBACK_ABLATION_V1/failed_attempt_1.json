@@ -1,0 +1,9 @@
+{
+  "attempt": 1,
+  "status": "ABORTED_BEFORE_OUTCOME_WRITE",
+  "failure": "PyTorch dtype mismatch: donor motor feedback was float64 while GRU input weights were float32",
+  "failure_location": "training seed block 0, GRU_YOKED_MOTOR arm",
+  "correction": "cast derived donor feedback arrays to float32 at model-input boundary",
+  "scientific_outcomes_written": false,
+  "outcome_values_inspected": false
+}

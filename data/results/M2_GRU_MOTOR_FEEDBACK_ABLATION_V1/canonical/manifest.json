@@ -1,0 +1,98 @@
+{
+  "experiment": "M2_GRU_MOTOR_FEEDBACK_ABLATION_V1",
+  "contract_sha256": "ac9de1c0d40565250b36f584f29f141c6f94e3edf3b6586940dd5a437ed68eef",
+  "runner_sha256": "0bc7dc94e04f5e4bd67d2a42202070cc229a0e216c6ff7691b4ad0901c082e42",
+  "task_source_sha256": "1f0904f0e5ec587d09bb19557c5073576c624a913b37ef802bf168985fec25fe",
+  "python": "3.12.13",
+  "numpy": "2.4.4",
+  "torch": "2.11.0",
+  "device": "CPU",
+  "torch_threads": 1,
+  "training_seeds": [
+    840000,
+    840001,
+    840002,
+    840003,
+    840004,
+    840005,
+    840006,
+    840007,
+    840008,
+    840009,
+    840010,
+    840011,
+    840012,
+    840013,
+    840014,
+    840015,
+    840016,
+    840017,
+    840018,
+    840019,
+    840020,
+    840021,
+    840022,
+    840023,
+    840024,
+    840025,
+    840026,
+    840027,
+    840028,
+    840029,
+    840030,
+    840031
+  ],
+  "arms": [
+    "GRU_SELF_MOTOR",
+    "GRU_ZERO_MOTOR",
+    "GRU_YOKED_MOTOR"
+  ],
+  "parameter_count_each": 297,
+  "updates": 100,
+  "batch_size": 32,
+  "sequence_length": 96,
+  "conditions": {
+    "SLOW_TRANSIENT": {
+      "hazard": 0.01,
+      "pulse_rate": 0.08
+    },
+    "FAST_TRANSIENT": {
+      "hazard": 0.05,
+      "pulse_rate": 0.08
+    },
+    "SLOW_CLEAN": {
+      "hazard": 0.01,
+      "pulse_rate": 0.0
+    },
+    "FAST_CLEAN": {
+      "hazard": 0.05,
+      "pulse_rate": 0.0
+    }
+  },
+  "test_seed_rule": "10000000 + block*100000 + condition_index*1000",
+  "bootstrap_resamples": 20000,
+  "bootstrap_seed": 8765440,
+  "duration_seconds": 108.9328989982605,
+  "outputs": {
+    "fit_manifest.csv": {
+      "bytes": 581920,
+      "sha256": "b95074691975bce69848b5eaf38c376128ff0a23fec676fd8c503ba09b7fc86a"
+    },
+    "test_episode_metrics.csv": {
+      "bytes": 6633565,
+      "sha256": "cfb27031c212a70de1f0cff509ca6aba54a6c5c76ae249c5b12ff5b3b3ed5dae"
+    },
+    "test_seed_summary.csv": {
+      "bytes": 49421,
+      "sha256": "d739ecc8b23d41247ce9f9e61fe35f513ef878c9dd1251b056ac2d23ae9b95f8"
+    },
+    "yoke_distribution_check.json": {
+      "bytes": 23661,
+      "sha256": "f1e354083659cd89c4510550d5557739abfe2fe2be53f6689c51598c3b65b2a5"
+    },
+    "summary.json": {
+      "bytes": 3571,
+      "sha256": "4e68f744e0625baa165343a4b678ba1b8aa81127ac0a213cf3a8f5a359463fc7"
+    }
+  }
+}
