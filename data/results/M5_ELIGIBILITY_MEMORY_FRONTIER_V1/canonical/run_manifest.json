@@ -1,0 +1,52 @@
+{
+  "experiment_id": "M5_ELIGIBILITY_MEMORY_FRONTIER_V1",
+  "master_seed": 20261002,
+  "generators": [
+    "IID_GAUSSIAN",
+    "AR1_GAUSSIAN",
+    "SPARSE_SIGN"
+  ],
+  "task_seeds": [
+    100,
+    129
+  ],
+  "n_task_seeds_per_generator": 30,
+  "delays": [
+    1,
+    4,
+    16,
+    64
+  ],
+  "arms": [
+    "ELIGIBILITY_TRACE_64",
+    "EXACT_FIFO_64",
+    "EXACT_FIFO_256",
+    "EXACT_FIFO_1024",
+    "EXACT_FIFO_4096",
+    "CURRENT_FEATURE_64",
+    "EXACT_REPLAY_UNBOUNDED"
+  ],
+  "active_state_unit": "one stored 64-value feature vector",
+  "readout_parameters_per_arm": 256,
+  "training_parameters": {
+    "learning_rate": 0.01,
+    "eligibility_decay": 0.98,
+    "n_train": 3000,
+    "n_test": 1000
+  },
+  "row_counts": {
+    "task_metrics": 2520,
+    "coverage": 2520,
+    "runtime": 360
+  },
+  "contract_sha256": "070e44a5fbca6d4fd29b1bc35f66a87c4d789260aef10b65716c6555bc08ed94",
+  "runner_sha256": "be2529125a557ca230372a066e4983d91d3cb8a9116c6fd5e6acd7576f73c773",
+  "outputs_sha256": {
+    "summary.json": "d8ae26df11b3e3c43fc23c86581384a2ee4a647159247f78eb7d6b4c0c303b82",
+    "task_metrics.csv": "fc6954e11ef114525b7890d41f3c0be4978b6ee259670404cdbe0dc0cdc64366",
+    "update_coverage.csv": "b5acbb4896c31d2e94ffd42ce5570593667c5298bd5c02b29b49e2d844963c37",
+    "per_seed_primary_contrasts.csv": "5b20295b197d4270aa6ca31e94c4fea0869a25a30fcc5c7f6f6193476270a8bb",
+    "paired_contrasts.csv": "283cacc975221efec8b96c1e249bed56250dd7ee33c44e948628b6e8a73ba68d",
+    "runtime_metrics.csv": "331f91a060b412b9a0445051b9b106689697d8a2b4bb1c30cf9613c71b17e506"
+  }
+}
