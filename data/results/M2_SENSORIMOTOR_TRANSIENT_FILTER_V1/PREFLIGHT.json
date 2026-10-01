@@ -1,0 +1,99 @@
+{
+  "experiment": "M2_SENSORIMOTOR_TRANSIENT_FILTER_V1",
+  "classification": "post-result exploratory artificial mechanism-transfer test; within-study protocol frozen before execution",
+  "contract_sha256": "95b1170524c88fca47cdb0bba6db257fb23bfc6e31344ecf7326a6246d53f520",
+  "runner_sha256": "2768e4766125d1e1302b1a772b98c28246416a1e69cbc2f1bfb9c09484f7b13b",
+  "verifier_sha256": "0e530ee5590ed8a34c63860a22178516d1a69d16b32753effb203560a8ec3e7c",
+  "environment": {
+    "python": "3.12.13",
+    "numpy": "2.4.4",
+    "torch": "2.11.0",
+    "device": "CPU",
+    "torch_threads": 1
+  },
+  "training_seed_blocks": [
+    101000,
+    101001,
+    101002,
+    101003,
+    101004,
+    101005,
+    101006,
+    101007,
+    101008,
+    101009,
+    101010,
+    101011,
+    101012,
+    101013,
+    101014,
+    101015,
+    101016,
+    101017,
+    101018,
+    101019
+  ],
+  "test_seed_rule": "3000000 + block*100000 + condition_index*1000 + episode",
+  "train_updates": 100,
+  "batch_size": 32,
+  "sequence_length": 96,
+  "test_episodes_per_seed_arm_condition": 64,
+  "conditions": {
+    "CLEAN_STABLE": {
+      "hazard": 0.01,
+      "pulse_rate": 0.0,
+      "pulse_durations": []
+    },
+    "TRANSIENT_PULSE": {
+      "hazard": 0.01,
+      "pulse_rate": 0.06,
+      "pulse_durations": [
+        2
+      ]
+    },
+    "LONG_PULSE": {
+      "hazard": 0.01,
+      "pulse_rate": 0.03,
+      "pulse_durations": [
+        4
+      ]
+    },
+    "SUSTAINED_SWITCH": {
+      "hazard": 0.05,
+      "pulse_rate": 0.02,
+      "pulse_durations": [
+        2
+      ]
+    },
+    "COMBINED_STRESS": {
+      "hazard": 0.05,
+      "pulse_rate": 0.06,
+      "pulse_durations": [
+        4
+      ]
+    }
+  },
+  "output_dir": "data/results/M2_SENSORIMOTOR_TRANSIENT_FILTER_V1/canonical",
+  "analysis_outcomes_inspected": false,
+  "model_arms": {
+    "learned": [
+      "SENSORY_SITE_1D",
+      "OUTPUT_SITE_1D",
+      "NO_FEEDBACK_1D",
+      "GENERIC_RNN_1D",
+      "GRU_8"
+    ],
+    "evaluation_only": [
+      "DIRECT_SENSOR",
+      "TARGET_ORACLE"
+    ],
+    "parameter_counts": {
+      "SENSORY_SITE_1D": 4,
+      "OUTPUT_SITE_1D": 4,
+      "NO_FEEDBACK_1D": 3,
+      "GENERIC_RNN_1D": 6,
+      "GRU_8": 297
+    }
+  },
+  "primary_endpoint": "TRANSIENT_PULSE pulse_window_mae; seed-block paired contrast OUTPUT_SITE_1D minus SENSORY_SITE_1D"
+}
