@@ -1,0 +1,75 @@
+{
+  "experiment_id": "M2_PREMOTOR_SIGNAL_AI_TRANSFER_V1",
+  "outcomes_computed": false,
+  "contract_sha256": "52d32472704d8f8b3f3015a0d1f97a0cbcbbf6cfb8f77084bc34e3c868aa479f",
+  "runner_sha256": "5565dfddf2a536ad404e0198478ce1f2e3d0c1e04ce97415e3ba3dfb7c8f88e1",
+  "python": "3.9.6",
+  "numpy": "2.0.2",
+  "torch": "2.8.0",
+  "seeds": [
+    62000,
+    62019
+  ],
+  "sizes": [
+    32,
+    128,
+    512
+  ],
+  "test_episodes": 128,
+  "conditions": {
+    "ALIGNED": 0.72,
+    "UNINFORMATIVE": 0.5,
+    "REVERSED": 0.28
+  },
+  "arms": [
+    "PREMOTOR_FILTER",
+    "NO_CUE_FILTER",
+    "GRU_CUE",
+    "GRU_NO_CUE",
+    "CUE_ONLY",
+    "PREMOTOR_FILTER_YOKED_CUE",
+    "GRU_CUE_YOKED_CUE"
+  ],
+  "checks": [
+    {
+      "arm": "PREMOTOR_FILTER",
+      "parameter_count": 6,
+      "finite_loss": true,
+      "finite_gradients": true,
+      "output_shape": [
+        8,
+        76
+      ]
+    },
+    {
+      "arm": "NO_CUE_FILTER",
+      "parameter_count": 6,
+      "finite_loss": true,
+      "finite_gradients": true,
+      "output_shape": [
+        8,
+        76
+      ]
+    },
+    {
+      "arm": "GRU_CUE",
+      "parameter_count": 45,
+      "finite_loss": true,
+      "finite_gradients": true,
+      "output_shape": [
+        8,
+        76
+      ]
+    },
+    {
+      "arm": "GRU_NO_CUE",
+      "parameter_count": 45,
+      "finite_loss": true,
+      "finite_gradients": true,
+      "output_shape": [
+        8,
+        76
+      ]
+    }
+  ]
+}
