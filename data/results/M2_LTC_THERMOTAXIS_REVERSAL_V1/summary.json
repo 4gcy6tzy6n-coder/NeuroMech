@@ -1,0 +1,1967 @@
+{
+  "experiment_id": "M2_LTC_THERMOTAXIS_REVERSAL_V1",
+  "status": "POST_RESULT_EXPLORATORY_ARTIFICIAL_EXPERIMENT",
+  "primary_condition": {
+    "evaluation_reversal_hazard": 0.05
+  },
+  "primary_contrasts": [
+    {
+      "reversal_hazard": 0.05,
+      "contrast": "LTC_OUTPUT_SITE_POSITION_MSE_MINUS_LTC_SENSORY_SITE_POSITION_MSE",
+      "mean_paired_seed_effect": 0.006534174770806089,
+      "bootstrap_95ci": [
+        -0.08836164002233317,
+        0.09761567404248507
+      ],
+      "positive_seed_blocks": 15,
+      "seed_blocks": 32
+    },
+    {
+      "reversal_hazard": 0.05,
+      "contrast": "LTC_NO_FEEDBACK_POSITION_MSE_MINUS_LTC_SENSORY_SITE_POSITION_MSE",
+      "mean_paired_seed_effect": 0.004366099553394065,
+      "bootstrap_95ci": [
+        -0.026981957688514413,
+        0.03393633852417248
+      ],
+      "positive_seed_blocks": 17,
+      "seed_blocks": 32
+    },
+    {
+      "reversal_hazard": 0.05,
+      "contrast": "LTC_DENSE_FEEDBACK_POSITION_MSE_MINUS_LTC_SENSORY_SITE_POSITION_MSE",
+      "mean_paired_seed_effect": 3.231942658032949e-05,
+      "bootstrap_95ci": [
+        -0.03480368564666527,
+        0.0326385780802503
+      ],
+      "positive_seed_blocks": 16,
+      "seed_blocks": 32
+    },
+    {
+      "reversal_hazard": 0.05,
+      "contrast": "LTC_SENSORY_YOKED_POSITION_MSE_MINUS_LTC_SENSORY_SITE_POSITION_MSE",
+      "mean_paired_seed_effect": -0.0337095927183384,
+      "bootstrap_95ci": [
+        -0.08012695346482701,
+        0.006152511760868836
+      ],
+      "positive_seed_blocks": 16,
+      "seed_blocks": 32
+    },
+    {
+      "reversal_hazard": 0.05,
+      "contrast": "GRU_4_POSITION_MSE_MINUS_LTC_SENSORY_SITE_POSITION_MSE",
+      "mean_paired_seed_effect": 0.5282345338024896,
+      "bootstrap_95ci": [
+        0.03378010269998804,
+        1.0476576626705518
+      ],
+      "positive_seed_blocks": 21,
+      "seed_blocks": 32
+    },
+    {
+      "reversal_hazard": 0.05,
+      "contrast": "GRU_8_POSITION_MSE_MINUS_LTC_SENSORY_SITE_POSITION_MSE",
+      "mean_paired_seed_effect": 1.0710282828489852,
+      "bootstrap_95ci": [
+        0.3261764100615775,
+        1.969381181444411
+      ],
+      "positive_seed_blocks": 17,
+      "seed_blocks": 32
+    },
+    {
+      "reversal_hazard": 0.05,
+      "contrast": "GRADIENT_SIGN_ORACLE_POSITION_MSE_MINUS_LTC_SENSORY_SITE_POSITION_MSE",
+      "mean_paired_seed_effect": -103.49660885716055,
+      "bootstrap_95ci": [
+        -107.51076570266481,
+        -99.75627716425177
+      ],
+      "positive_seed_blocks": 0,
+      "seed_blocks": 32
+    }
+  ],
+  "all_position_mse_contrasts": [
+    {
+      "reversal_hazard": 0.0125,
+      "contrast": "LTC_OUTPUT_SITE_POSITION_MSE_MINUS_LTC_SENSORY_SITE_POSITION_MSE",
+      "mean_paired_seed_effect": -0.04066434709329769,
+      "bootstrap_95ci": [
+        -0.14463465426718755,
+        0.047849134553453604
+      ],
+      "positive_seed_blocks": 16,
+      "seed_blocks": 32
+    },
+    {
+      "reversal_hazard": 0.0125,
+      "contrast": "LTC_NO_FEEDBACK_POSITION_MSE_MINUS_LTC_SENSORY_SITE_POSITION_MSE",
+      "mean_paired_seed_effect": -0.027195773869323148,
+      "bootstrap_95ci": [
+        -0.05740138812866604,
+        0.0007036851670449035
+      ],
+      "positive_seed_blocks": 10,
+      "seed_blocks": 32
+    },
+    {
+      "reversal_hazard": 0.0125,
+      "contrast": "LTC_DENSE_FEEDBACK_POSITION_MSE_MINUS_LTC_SENSORY_SITE_POSITION_MSE",
+      "mean_paired_seed_effect": -0.005179897810080547,
+      "bootstrap_95ci": [
+        -0.046430054699089854,
+        0.034106576868035074
+      ],
+      "positive_seed_blocks": 13,
+      "seed_blocks": 32
+    },
+    {
+      "reversal_hazard": 0.0125,
+      "contrast": "LTC_SENSORY_YOKED_POSITION_MSE_MINUS_LTC_SENSORY_SITE_POSITION_MSE",
+      "mean_paired_seed_effect": -0.039596320002601715,
+      "bootstrap_95ci": [
+        -0.09242803068422631,
+        0.000912870128567507
+      ],
+      "positive_seed_blocks": 10,
+      "seed_blocks": 32
+    },
+    {
+      "reversal_hazard": 0.0125,
+      "contrast": "GRU_4_POSITION_MSE_MINUS_LTC_SENSORY_SITE_POSITION_MSE",
+      "mean_paired_seed_effect": 1.0117452372167008,
+      "bootstrap_95ci": [
+        0.25369629838320124,
+        1.8479870852773448
+      ],
+      "positive_seed_blocks": 18,
+      "seed_blocks": 32
+    },
+    {
+      "reversal_hazard": 0.0125,
+      "contrast": "GRU_8_POSITION_MSE_MINUS_LTC_SENSORY_SITE_POSITION_MSE",
+      "mean_paired_seed_effect": 1.5333897450497034,
+      "bootstrap_95ci": [
+        0.6369946183481886,
+        2.572895572685982
+      ],
+      "positive_seed_blocks": 19,
+      "seed_blocks": 32
+    },
+    {
+      "reversal_hazard": 0.0125,
+      "contrast": "GRADIENT_SIGN_ORACLE_POSITION_MSE_MINUS_LTC_SENSORY_SITE_POSITION_MSE",
+      "mean_paired_seed_effect": -101.43476227270855,
+      "bootstrap_95ci": [
+        -104.58796066935594,
+        -98.37887337345323
+      ],
+      "positive_seed_blocks": 0,
+      "seed_blocks": 32
+    },
+    {
+      "reversal_hazard": 0.025,
+      "contrast": "LTC_OUTPUT_SITE_POSITION_MSE_MINUS_LTC_SENSORY_SITE_POSITION_MSE",
+      "mean_paired_seed_effect": 0.024114694815153825,
+      "bootstrap_95ci": [
+        -0.06734783065052738,
+        0.1145025495201529
+      ],
+      "positive_seed_blocks": 14,
+      "seed_blocks": 32
+    },
+    {
+      "reversal_hazard": 0.025,
+      "contrast": "LTC_NO_FEEDBACK_POSITION_MSE_MINUS_LTC_SENSORY_SITE_POSITION_MSE",
+      "mean_paired_seed_effect": 0.013364265000632258,
+      "bootstrap_95ci": [
+        -0.01774284416400178,
+        0.04280740216649119
+      ],
+      "positive_seed_blocks": 17,
+      "seed_blocks": 32
+    },
+    {
+      "reversal_hazard": 0.025,
+      "contrast": "LTC_DENSE_FEEDBACK_POSITION_MSE_MINUS_LTC_SENSORY_SITE_POSITION_MSE",
+      "mean_paired_seed_effect": -0.010327860383512188,
+      "bootstrap_95ci": [
+        -0.040478068991160396,
+        0.018970047012576426
+      ],
+      "positive_seed_blocks": 16,
+      "seed_blocks": 32
+    },
+    {
+      "reversal_hazard": 0.025,
+      "contrast": "LTC_SENSORY_YOKED_POSITION_MSE_MINUS_LTC_SENSORY_SITE_POSITION_MSE",
+      "mean_paired_seed_effect": -0.024313881763191603,
+      "bootstrap_95ci": [
+        -0.06366466365188898,
+        0.011377007309101786
+      ],
+      "positive_seed_blocks": 13,
+      "seed_blocks": 32
+    },
+    {
+      "reversal_hazard": 0.025,
+      "contrast": "GRU_4_POSITION_MSE_MINUS_LTC_SENSORY_SITE_POSITION_MSE",
+      "mean_paired_seed_effect": 0.40150057565290354,
+      "bootstrap_95ci": [
+        -0.13280889309196767,
+        0.9548562363495016
+      ],
+      "positive_seed_blocks": 16,
+      "seed_blocks": 32
+    },
+    {
+      "reversal_hazard": 0.025,
+      "contrast": "GRU_8_POSITION_MSE_MINUS_LTC_SENSORY_SITE_POSITION_MSE",
+      "mean_paired_seed_effect": 1.217836049725861,
+      "bootstrap_95ci": [
+        0.23275781414651533,
+        2.43354538795328
+      ],
+      "positive_seed_blocks": 19,
+      "seed_blocks": 32
+    },
+    {
+      "reversal_hazard": 0.025,
+      "contrast": "GRADIENT_SIGN_ORACLE_POSITION_MSE_MINUS_LTC_SENSORY_SITE_POSITION_MSE",
+      "mean_paired_seed_effect": -103.22380722753098,
+      "bootstrap_95ci": [
+        -106.49838404990771,
+        -99.89590433608693
+      ],
+      "positive_seed_blocks": 0,
+      "seed_blocks": 32
+    },
+    {
+      "reversal_hazard": 0.05,
+      "contrast": "LTC_OUTPUT_SITE_POSITION_MSE_MINUS_LTC_SENSORY_SITE_POSITION_MSE",
+      "mean_paired_seed_effect": 0.006534174770806089,
+      "bootstrap_95ci": [
+        -0.08836164002233317,
+        0.09761567404248507
+      ],
+      "positive_seed_blocks": 15,
+      "seed_blocks": 32
+    },
+    {
+      "reversal_hazard": 0.05,
+      "contrast": "LTC_NO_FEEDBACK_POSITION_MSE_MINUS_LTC_SENSORY_SITE_POSITION_MSE",
+      "mean_paired_seed_effect": 0.004366099553394065,
+      "bootstrap_95ci": [
+        -0.026981957688514413,
+        0.03393633852417248
+      ],
+      "positive_seed_blocks": 17,
+      "seed_blocks": 32
+    },
+    {
+      "reversal_hazard": 0.05,
+      "contrast": "LTC_DENSE_FEEDBACK_POSITION_MSE_MINUS_LTC_SENSORY_SITE_POSITION_MSE",
+      "mean_paired_seed_effect": 3.231942658032949e-05,
+      "bootstrap_95ci": [
+        -0.03480368564666527,
+        0.0326385780802503
+      ],
+      "positive_seed_blocks": 16,
+      "seed_blocks": 32
+    },
+    {
+      "reversal_hazard": 0.05,
+      "contrast": "LTC_SENSORY_YOKED_POSITION_MSE_MINUS_LTC_SENSORY_SITE_POSITION_MSE",
+      "mean_paired_seed_effect": -0.0337095927183384,
+      "bootstrap_95ci": [
+        -0.08012695346482701,
+        0.006152511760868836
+      ],
+      "positive_seed_blocks": 16,
+      "seed_blocks": 32
+    },
+    {
+      "reversal_hazard": 0.05,
+      "contrast": "GRU_4_POSITION_MSE_MINUS_LTC_SENSORY_SITE_POSITION_MSE",
+      "mean_paired_seed_effect": 0.5282345338024896,
+      "bootstrap_95ci": [
+        0.03378010269998804,
+        1.0476576626705518
+      ],
+      "positive_seed_blocks": 21,
+      "seed_blocks": 32
+    },
+    {
+      "reversal_hazard": 0.05,
+      "contrast": "GRU_8_POSITION_MSE_MINUS_LTC_SENSORY_SITE_POSITION_MSE",
+      "mean_paired_seed_effect": 1.0710282828489852,
+      "bootstrap_95ci": [
+        0.3261764100615775,
+        1.969381181444411
+      ],
+      "positive_seed_blocks": 17,
+      "seed_blocks": 32
+    },
+    {
+      "reversal_hazard": 0.05,
+      "contrast": "GRADIENT_SIGN_ORACLE_POSITION_MSE_MINUS_LTC_SENSORY_SITE_POSITION_MSE",
+      "mean_paired_seed_effect": -103.49660885716055,
+      "bootstrap_95ci": [
+        -107.51076570266481,
+        -99.75627716425177
+      ],
+      "positive_seed_blocks": 0,
+      "seed_blocks": 32
+    }
+  ],
+  "arm_metric_summaries": [
+    {
+      "reversal_hazard": 0.0125,
+      "arm": "LTC_SENSORY_SITE",
+      "metric": "position_mse",
+      "mean_seed_block": 129.6797891720065,
+      "bootstrap_95ci": [
+        125.77106799836278,
+        133.67211301190318
+      ],
+      "seed_blocks": 32
+    },
+    {
+      "reversal_hazard": 0.0125,
+      "arm": "LTC_SENSORY_SITE",
+      "metric": "position_mae",
+      "mean_seed_block": 9.546133425037624,
+      "bootstrap_95ci": [
+        9.365566015406056,
+        9.72725021242586
+      ],
+      "seed_blocks": 32
+    },
+    {
+      "reversal_hazard": 0.0125,
+      "arm": "LTC_SENSORY_SITE",
+      "metric": "temperature_error_mse",
+      "mean_seed_block": 0.1943974995424469,
+      "bootstrap_95ci": [
+        0.18926905140566533,
+        0.19973110925424178
+      ],
+      "seed_blocks": 32
+    },
+    {
+      "reversal_hazard": 0.0125,
+      "arm": "LTC_SENSORY_SITE",
+      "metric": "action_energy",
+      "mean_seed_block": 0.002488793307890508,
+      "bootstrap_95ci": [
+        0.0015627200188770402,
+        0.0035400880469050318
+      ],
+      "seed_blocks": 32
+    },
+    {
+      "reversal_hazard": 0.0125,
+      "arm": "LTC_SENSORY_SITE",
+      "metric": "preferred_band_occupancy",
+      "mean_seed_block": 0.11392784118652344,
+      "bootstrap_95ci": [
+        0.1054762840270996,
+        0.1225128173828125
+      ],
+      "seed_blocks": 32
+    },
+    {
+      "reversal_hazard": 0.0125,
+      "arm": "LTC_SENSORY_SITE",
+      "metric": "post_reversal_band_recovery_steps",
+      "mean_seed_block": 29.741726227653835,
+      "bootstrap_95ci": [
+        29.259812602253568,
+        30.22393643134132
+      ],
+      "seed_blocks": 32
+    },
+    {
+      "reversal_hazard": 0.0125,
+      "arm": "LTC_OUTPUT_SITE",
+      "metric": "position_mse",
+      "mean_seed_block": 129.6391248249132,
+      "bootstrap_95ci": [
+        125.76971503904522,
+        133.57617021685851
+      ],
+      "seed_blocks": 32
+    },
+    {
+      "reversal_hazard": 0.0125,
+      "arm": "LTC_OUTPUT_SITE",
+      "metric": "position_mae",
+      "mean_seed_block": 9.544271615824982,
+      "bootstrap_95ci": [
+        9.365203265422405,
+        9.723987718006947
+      ],
+      "seed_blocks": 32
+    },
+    {
+      "reversal_hazard": 0.0125,
+      "arm": "LTC_OUTPUT_SITE",
+      "metric": "temperature_error_mse",
+      "mean_seed_block": 0.1943457457450677,
+      "bootstrap_95ci": [
+        0.18924365480146435,
+        0.19963370030538954
+      ],
+      "seed_blocks": 32
+    },
+    {
+      "reversal_hazard": 0.0125,
+      "arm": "LTC_OUTPUT_SITE",
+      "metric": "action_energy",
+      "mean_seed_block": 0.0025250023591526227,
+      "bootstrap_95ci": [
+        0.0014933217451636154,
+        0.003715769833649193
+      ],
+      "seed_blocks": 32
+    },
+    {
+      "reversal_hazard": 0.0125,
+      "arm": "LTC_OUTPUT_SITE",
+      "metric": "preferred_band_occupancy",
+      "mean_seed_block": 0.11379241943359375,
+      "bootstrap_95ci": [
+        0.10527992248535156,
+        0.12244224548339844
+      ],
+      "seed_blocks": 32
+    },
+    {
+      "reversal_hazard": 0.0125,
+      "arm": "LTC_OUTPUT_SITE",
+      "metric": "post_reversal_band_recovery_steps",
+      "mean_seed_block": 29.72185846011472,
+      "bootstrap_95ci": [
+        29.23906786429817,
+        30.206517037017196
+      ],
+      "seed_blocks": 32
+    },
+    {
+      "reversal_hazard": 0.0125,
+      "arm": "LTC_NO_FEEDBACK",
+      "metric": "position_mse",
+      "mean_seed_block": 129.65259339813718,
+      "bootstrap_95ci": [
+        125.74755864473293,
+        133.6457741735033
+      ],
+      "seed_blocks": 32
+    },
+    {
+      "reversal_hazard": 0.0125,
+      "arm": "LTC_NO_FEEDBACK",
+      "metric": "position_mae",
+      "mean_seed_block": 9.54525712130544,
+      "bootstrap_95ci": [
+        9.364620578514655,
+        9.726057825476847
+      ],
+      "seed_blocks": 32
+    },
+    {
+      "reversal_hazard": 0.0125,
+      "arm": "LTC_NO_FEEDBACK",
+      "metric": "temperature_error_mse",
+      "mean_seed_block": 0.19435761773911508,
+      "bootstrap_95ci": [
+        0.18922700280493246,
+        0.1996911720291905
+      ],
+      "seed_blocks": 32
+    },
+    {
+      "reversal_hazard": 0.0125,
+      "arm": "LTC_NO_FEEDBACK",
+      "metric": "action_energy",
+      "mean_seed_block": 0.0024653939263007546,
+      "bootstrap_95ci": [
+        0.001525596437568721,
+        0.0035267435768695145
+      ],
+      "seed_blocks": 32
+    },
+    {
+      "reversal_hazard": 0.0125,
+      "arm": "LTC_NO_FEEDBACK",
+      "metric": "preferred_band_occupancy",
+      "mean_seed_block": 0.11396980285644531,
+      "bootstrap_95ci": [
+        0.10552000999450684,
+        0.1225682258605957
+      ],
+      "seed_blocks": 32
+    },
+    {
+      "reversal_hazard": 0.0125,
+      "arm": "LTC_NO_FEEDBACK",
+      "metric": "post_reversal_band_recovery_steps",
+      "mean_seed_block": 29.757103447442983,
+      "bootstrap_95ci": [
+        29.274996522820203,
+        30.234593016400144
+      ],
+      "seed_blocks": 32
+    },
+    {
+      "reversal_hazard": 0.0125,
+      "arm": "LTC_DENSE_FEEDBACK",
+      "metric": "position_mse",
+      "mean_seed_block": 129.67460927419643,
+      "bootstrap_95ci": [
+        125.77372466565798,
+        133.65807978712618
+      ],
+      "seed_blocks": 32
+    },
+    {
+      "reversal_hazard": 0.0125,
+      "arm": "LTC_DENSE_FEEDBACK",
+      "metric": "position_mae",
+      "mean_seed_block": 9.546189646976927,
+      "bootstrap_95ci": [
+        9.365313158774097,
+        9.727124301008507
+      ],
+      "seed_blocks": 32
+    },
+    {
+      "reversal_hazard": 0.0125,
+      "arm": "LTC_DENSE_FEEDBACK",
+      "metric": "temperature_error_mse",
+      "mean_seed_block": 0.19438971654108173,
+      "bootstrap_95ci": [
+        0.18925260581062275,
+        0.19972568929447335
+      ],
+      "seed_blocks": 32
+    },
+    {
+      "reversal_hazard": 0.0125,
+      "arm": "LTC_DENSE_FEEDBACK",
+      "metric": "action_energy",
+      "mean_seed_block": 0.0024857649835861462,
+      "bootstrap_95ci": [
+        0.0015505599812552424,
+        0.003543299917668618
+      ],
+      "seed_blocks": 32
+    },
+    {
+      "reversal_hazard": 0.0125,
+      "arm": "LTC_DENSE_FEEDBACK",
+      "metric": "preferred_band_occupancy",
+      "mean_seed_block": 0.11391639709472656,
+      "bootstrap_95ci": [
+        0.10540175437927246,
+        0.12254910469055175
+      ],
+      "seed_blocks": 32
+    },
+    {
+      "reversal_hazard": 0.0125,
+      "arm": "LTC_DENSE_FEEDBACK",
+      "metric": "post_reversal_band_recovery_steps",
+      "mean_seed_block": 29.75354210241463,
+      "bootstrap_95ci": [
+        29.276695706368432,
+        30.224539416973684
+      ],
+      "seed_blocks": 32
+    },
+    {
+      "reversal_hazard": 0.0125,
+      "arm": "LTC_SENSORY_YOKED",
+      "metric": "position_mse",
+      "mean_seed_block": 129.6401928520039,
+      "bootstrap_95ci": [
+        125.74449630219041,
+        133.6259968793571
+      ],
+      "seed_blocks": 32
+    },
+    {
+      "reversal_hazard": 0.0125,
+      "arm": "LTC_SENSORY_YOKED",
+      "metric": "position_mae",
+      "mean_seed_block": 9.545036378347504,
+      "bootstrap_95ci": [
+        9.36469168505173,
+        9.725509911049448
+      ],
+      "seed_blocks": 32
+    },
+    {
+      "reversal_hazard": 0.0125,
+      "arm": "LTC_SENSORY_YOKED",
+      "metric": "temperature_error_mse",
+      "mean_seed_block": 0.19435210081746845,
+      "bootstrap_95ci": [
+        0.18922901876045445,
+        0.1996764978144597
+      ],
+      "seed_blocks": 32
+    },
+    {
+      "reversal_hazard": 0.0125,
+      "arm": "LTC_SENSORY_YOKED",
+      "metric": "action_energy",
+      "mean_seed_block": 0.002441053854804476,
+      "bootstrap_95ci": [
+        0.001525632367902248,
+        0.003488385253560799
+      ],
+      "seed_blocks": 32
+    },
+    {
+      "reversal_hazard": 0.0125,
+      "arm": "LTC_SENSORY_YOKED",
+      "metric": "preferred_band_occupancy",
+      "mean_seed_block": 0.11389732360839844,
+      "bootstrap_95ci": [
+        0.10546302795410156,
+        0.12250523567199706
+      ],
+      "seed_blocks": 32
+    },
+    {
+      "reversal_hazard": 0.0125,
+      "arm": "LTC_SENSORY_YOKED",
+      "metric": "post_reversal_band_recovery_steps",
+      "mean_seed_block": 29.73507753955441,
+      "bootstrap_95ci": [
+        29.252103994543116,
+        30.217788966526022
+      ],
+      "seed_blocks": 32
+    },
+    {
+      "reversal_hazard": 0.0125,
+      "arm": "GRU_4",
+      "metric": "position_mse",
+      "mean_seed_block": 130.6915344092232,
+      "bootstrap_95ci": [
+        126.88126847199545,
+        134.57171166147472
+      ],
+      "seed_blocks": 32
+    },
+    {
+      "reversal_hazard": 0.0125,
+      "arm": "GRU_4",
+      "metric": "position_mae",
+      "mean_seed_block": 9.570389389211414,
+      "bootstrap_95ci": [
+        9.39539837162572,
+        9.747396483617853
+      ],
+      "seed_blocks": 32
+    },
+    {
+      "reversal_hazard": 0.0125,
+      "arm": "GRU_4",
+      "metric": "temperature_error_mse",
+      "mean_seed_block": 0.19563014710138305,
+      "bootstrap_95ci": [
+        0.19070064998817315,
+        0.20084072222226723
+      ],
+      "seed_blocks": 32
+    },
+    {
+      "reversal_hazard": 0.0125,
+      "arm": "GRU_4",
+      "metric": "action_energy",
+      "mean_seed_block": 0.008380608508250731,
+      "bootstrap_95ci": [
+        0.006339366323871776,
+        0.010522224958331793
+      ],
+      "seed_blocks": 32
+    },
+    {
+      "reversal_hazard": 0.0125,
+      "arm": "GRU_4",
+      "metric": "preferred_band_occupancy",
+      "mean_seed_block": 0.11472702026367188,
+      "bootstrap_95ci": [
+        0.10617823600769043,
+        0.12345719337463376
+      ],
+      "seed_blocks": 32
+    },
+    {
+      "reversal_hazard": 0.0125,
+      "arm": "GRU_4",
+      "metric": "post_reversal_band_recovery_steps",
+      "mean_seed_block": 29.707385350200152,
+      "bootstrap_95ci": [
+        29.27134485698756,
+        30.14736353881749
+      ],
+      "seed_blocks": 32
+    },
+    {
+      "reversal_hazard": 0.0125,
+      "arm": "GRU_8",
+      "metric": "position_mse",
+      "mean_seed_block": 131.2131789170562,
+      "bootstrap_95ci": [
+        127.16712650004695,
+        135.2937754555068
+      ],
+      "seed_blocks": 32
+    },
+    {
+      "reversal_hazard": 0.0125,
+      "arm": "GRU_8",
+      "metric": "position_mae",
+      "mean_seed_block": 9.579091079333011,
+      "bootstrap_95ci": [
+        9.396965107046707,
+        9.763195746126438
+      ],
+      "seed_blocks": 32
+    },
+    {
+      "reversal_hazard": 0.0125,
+      "arm": "GRU_8",
+      "metric": "temperature_error_mse",
+      "mean_seed_block": 0.19626275514929148,
+      "bootstrap_95ci": [
+        0.1911144531569562,
+        0.201627261558815
+      ],
+      "seed_blocks": 32
+    },
+    {
+      "reversal_hazard": 0.0125,
+      "arm": "GRU_8",
+      "metric": "action_energy",
+      "mean_seed_block": 0.009882392260070816,
+      "bootstrap_95ci": [
+        0.006849731161613892,
+        0.013281655365783603
+      ],
+      "seed_blocks": 32
+    },
+    {
+      "reversal_hazard": 0.0125,
+      "arm": "GRU_8",
+      "metric": "preferred_band_occupancy",
+      "mean_seed_block": 0.11610031127929688,
+      "bootstrap_95ci": [
+        0.10724430084228516,
+        0.12513747215270996
+      ],
+      "seed_blocks": 32
+    },
+    {
+      "reversal_hazard": 0.0125,
+      "arm": "GRU_8",
+      "metric": "post_reversal_band_recovery_steps",
+      "mean_seed_block": 29.606281087911555,
+      "bootstrap_95ci": [
+        29.15072310987716,
+        30.06276650607703
+      ],
+      "seed_blocks": 32
+    },
+    {
+      "reversal_hazard": 0.0125,
+      "arm": "GRADIENT_SIGN_ORACLE",
+      "metric": "position_mse",
+      "mean_seed_block": 28.245026899297955,
+      "bootstrap_95ci": [
+        27.330358159615933,
+        29.170991999492617
+      ],
+      "seed_blocks": 32
+    },
+    {
+      "reversal_hazard": 0.0125,
+      "arm": "GRADIENT_SIGN_ORACLE",
+      "metric": "position_mae",
+      "mean_seed_block": 3.57692085931194,
+      "bootstrap_95ci": [
+        3.5199925394288583,
+        3.634338447294067
+      ],
+      "seed_blocks": 32
+    },
+    {
+      "reversal_hazard": 0.0125,
+      "arm": "GRADIENT_SIGN_ORACLE",
+      "metric": "temperature_error_mse",
+      "mean_seed_block": 0.06822163629749411,
+      "bootstrap_95ci": [
+        0.06694084565505136,
+        0.06955048627223732
+      ],
+      "seed_blocks": 32
+    },
+    {
+      "reversal_hazard": 0.0125,
+      "arm": "GRADIENT_SIGN_ORACLE",
+      "metric": "action_energy",
+      "mean_seed_block": 0.9847202301025391,
+      "bootstrap_95ci": [
+        0.9837989807128906,
+        0.9856491088867188
+      ],
+      "seed_blocks": 32
+    },
+    {
+      "reversal_hazard": 0.0125,
+      "arm": "GRADIENT_SIGN_ORACLE",
+      "metric": "preferred_band_occupancy",
+      "mean_seed_block": 0.46411895751953125,
+      "bootstrap_95ci": [
+        0.4587249279022217,
+        0.46946916580200193
+      ],
+      "seed_blocks": 32
+    },
+    {
+      "reversal_hazard": 0.0125,
+      "arm": "GRADIENT_SIGN_ORACLE",
+      "metric": "post_reversal_band_recovery_steps",
+      "mean_seed_block": 13.292838009404365,
+      "bootstrap_95ci": [
+        12.862455504841497,
+        13.74138912943732
+      ],
+      "seed_blocks": 32
+    },
+    {
+      "reversal_hazard": 0.025,
+      "arm": "LTC_SENSORY_SITE",
+      "metric": "position_mse",
+      "mean_seed_block": 131.94798053477518,
+      "bootstrap_95ci": [
+        127.55815602276803,
+        136.32666479085987
+      ],
+      "seed_blocks": 32
+    },
+    {
+      "reversal_hazard": 0.025,
+      "arm": "LTC_SENSORY_SITE",
+      "metric": "position_mae",
+      "mean_seed_block": 9.646205538648246,
+      "bootstrap_95ci": [
+        9.466447990233405,
+        9.817394273129638
+      ],
+      "seed_blocks": 32
+    },
+    {
+      "reversal_hazard": 0.025,
+      "arm": "LTC_SENSORY_SITE",
+      "metric": "temperature_error_mse",
+      "mean_seed_block": 0.20090776782944886,
+      "bootstrap_95ci": [
+        0.1948491234185326,
+        0.207231490063441
+      ],
+      "seed_blocks": 32
+    },
+    {
+      "reversal_hazard": 0.025,
+      "arm": "LTC_SENSORY_SITE",
+      "metric": "action_energy",
+      "mean_seed_block": 0.002488427666537854,
+      "bootstrap_95ci": [
+        0.0015621549778254955,
+        0.0035393012595686794
+      ],
+      "seed_blocks": 32
+    },
+    {
+      "reversal_hazard": 0.025,
+      "arm": "LTC_SENSORY_SITE",
+      "metric": "preferred_band_occupancy",
+      "mean_seed_block": 0.11329269409179688,
+      "bootstrap_95ci": [
+        0.10572242736816406,
+        0.12156872749328612
+      ],
+      "seed_blocks": 32
+    },
+    {
+      "reversal_hazard": 0.025,
+      "arm": "LTC_SENSORY_SITE",
+      "metric": "post_reversal_band_recovery_steps",
+      "mean_seed_block": 29.956200190934098,
+      "bootstrap_95ci": [
+        29.583487658298925,
+        30.305757702512594
+      ],
+      "seed_blocks": 32
+    },
+    {
+      "reversal_hazard": 0.025,
+      "arm": "LTC_OUTPUT_SITE",
+      "metric": "position_mse",
+      "mean_seed_block": 131.97209522959034,
+      "bootstrap_95ci": [
+        127.56194931787185,
+        136.38214771387197
+      ],
+      "seed_blocks": 32
+    },
+    {
+      "reversal_hazard": 0.025,
+      "arm": "LTC_OUTPUT_SITE",
+      "metric": "position_mae",
+      "mean_seed_block": 9.64721105147055,
+      "bootstrap_95ci": [
+        9.467359296588437,
+        9.818656359765805
+      ],
+      "seed_blocks": 32
+    },
+    {
+      "reversal_hazard": 0.025,
+      "arm": "LTC_OUTPUT_SITE",
+      "metric": "temperature_error_mse",
+      "mean_seed_block": 0.2009258814482564,
+      "bootstrap_95ci": [
+        0.19481306102696863,
+        0.20728472580518653
+      ],
+      "seed_blocks": 32
+    },
+    {
+      "reversal_hazard": 0.025,
+      "arm": "LTC_OUTPUT_SITE",
+      "metric": "action_energy",
+      "mean_seed_block": 0.0025251062727802975,
+      "bootstrap_95ci": [
+        0.0014940863383002684,
+        0.0037158994468152
+      ],
+      "seed_blocks": 32
+    },
+    {
+      "reversal_hazard": 0.025,
+      "arm": "LTC_OUTPUT_SITE",
+      "metric": "preferred_band_occupancy",
+      "mean_seed_block": 0.11271858215332031,
+      "bootstrap_95ci": [
+        0.10525321960449219,
+        0.12085170745849608
+      ],
+      "seed_blocks": 32
+    },
+    {
+      "reversal_hazard": 0.025,
+      "arm": "LTC_OUTPUT_SITE",
+      "metric": "post_reversal_band_recovery_steps",
+      "mean_seed_block": 29.966271976524983,
+      "bootstrap_95ci": [
+        29.59249220156455,
+        30.318248010155337
+      ],
+      "seed_blocks": 32
+    },
+    {
+      "reversal_hazard": 0.025,
+      "arm": "LTC_NO_FEEDBACK",
+      "metric": "position_mse",
+      "mean_seed_block": 131.96134479977582,
+      "bootstrap_95ci": [
+        127.56943462023396,
+        136.33383160167006
+      ],
+      "seed_blocks": 32
+    },
+    {
+      "reversal_hazard": 0.025,
+      "arm": "LTC_NO_FEEDBACK",
+      "metric": "position_mae",
+      "mean_seed_block": 9.646508337000341,
+      "bootstrap_95ci": [
+        9.466772465071063,
+        9.81751182991993
+      ],
+      "seed_blocks": 32
+    },
+    {
+      "reversal_hazard": 0.025,
+      "arm": "LTC_NO_FEEDBACK",
+      "metric": "temperature_error_mse",
+      "mean_seed_block": 0.20093420255216188,
+      "bootstrap_95ci": [
+        0.19487043893909686,
+        0.20725302322952074
+      ],
+      "seed_blocks": 32
+    },
+    {
+      "reversal_hazard": 0.025,
+      "arm": "LTC_NO_FEEDBACK",
+      "metric": "action_energy",
+      "mean_seed_block": 0.002466663996613855,
+      "bootstrap_95ci": [
+        0.0015262852092003606,
+        0.0035280842500795104
+      ],
+      "seed_blocks": 32
+    },
+    {
+      "reversal_hazard": 0.025,
+      "arm": "LTC_NO_FEEDBACK",
+      "metric": "preferred_band_occupancy",
+      "mean_seed_block": 0.11312294006347656,
+      "bootstrap_95ci": [
+        0.1054305076599121,
+        0.12146000862121581
+      ],
+      "seed_blocks": 32
+    },
+    {
+      "reversal_hazard": 0.025,
+      "arm": "LTC_NO_FEEDBACK",
+      "metric": "post_reversal_band_recovery_steps",
+      "mean_seed_block": 29.96806189038614,
+      "bootstrap_95ci": [
+        29.590234638071422,
+        30.324007864575712
+      ],
+      "seed_blocks": 32
+    },
+    {
+      "reversal_hazard": 0.025,
+      "arm": "LTC_DENSE_FEEDBACK",
+      "metric": "position_mse",
+      "mean_seed_block": 131.93765267439167,
+      "bootstrap_95ci": [
+        127.55217979490378,
+        136.30666457963056
+      ],
+      "seed_blocks": 32
+    },
+    {
+      "reversal_hazard": 0.025,
+      "arm": "LTC_DENSE_FEEDBACK",
+      "metric": "position_mae",
+      "mean_seed_block": 9.646101127495967,
+      "bootstrap_95ci": [
+        9.466815078192099,
+        9.816900374680722
+      ],
+      "seed_blocks": 32
+    },
+    {
+      "reversal_hazard": 0.025,
+      "arm": "LTC_DENSE_FEEDBACK",
+      "metric": "temperature_error_mse",
+      "mean_seed_block": 0.20090974699678554,
+      "bootstrap_95ci": [
+        0.19484725911318038,
+        0.2072229224955322
+      ],
+      "seed_blocks": 32
+    },
+    {
+      "reversal_hazard": 0.025,
+      "arm": "LTC_DENSE_FEEDBACK",
+      "metric": "action_energy",
+      "mean_seed_block": 0.00248570617121089,
+      "bootstrap_95ci": [
+        0.001550477143303733,
+        0.003544785825439467
+      ],
+      "seed_blocks": 32
+    },
+    {
+      "reversal_hazard": 0.025,
+      "arm": "LTC_DENSE_FEEDBACK",
+      "metric": "preferred_band_occupancy",
+      "mean_seed_block": 0.11316490173339844,
+      "bootstrap_95ci": [
+        0.10552959442138672,
+        0.121488618850708
+      ],
+      "seed_blocks": 32
+    },
+    {
+      "reversal_hazard": 0.025,
+      "arm": "LTC_DENSE_FEEDBACK",
+      "metric": "post_reversal_band_recovery_steps",
+      "mean_seed_block": 29.949847501236334,
+      "bootstrap_95ci": [
+        29.570732035771826,
+        30.310085388924882
+      ],
+      "seed_blocks": 32
+    },
+    {
+      "reversal_hazard": 0.025,
+      "arm": "LTC_SENSORY_YOKED",
+      "metric": "position_mse",
+      "mean_seed_block": 131.923666653012,
+      "bootstrap_95ci": [
+        127.53478773033332,
+        136.29653422957702
+      ],
+      "seed_blocks": 32
+    },
+    {
+      "reversal_hazard": 0.025,
+      "arm": "LTC_SENSORY_YOKED",
+      "metric": "position_mae",
+      "mean_seed_block": 9.645871760022601,
+      "bootstrap_95ci": [
+        9.466180845006761,
+        9.81707746252539
+      ],
+      "seed_blocks": 32
+    },
+    {
+      "reversal_hazard": 0.025,
+      "arm": "LTC_SENSORY_YOKED",
+      "metric": "temperature_error_mse",
+      "mean_seed_block": 0.20088687747193035,
+      "bootstrap_95ci": [
+        0.1948207440506394,
+        0.20721308986292114
+      ],
+      "seed_blocks": 32
+    },
+    {
+      "reversal_hazard": 0.025,
+      "arm": "LTC_SENSORY_YOKED",
+      "metric": "action_energy",
+      "mean_seed_block": 0.0024420645011397624,
+      "bootstrap_95ci": [
+        0.0015263456852717349,
+        0.0034897720662052257
+      ],
+      "seed_blocks": 32
+    },
+    {
+      "reversal_hazard": 0.025,
+      "arm": "LTC_SENSORY_YOKED",
+      "metric": "preferred_band_occupancy",
+      "mean_seed_block": 0.11323928833007812,
+      "bootstrap_95ci": [
+        0.1055755615234375,
+        0.12162971496582031
+      ],
+      "seed_blocks": 32
+    },
+    {
+      "reversal_hazard": 0.025,
+      "arm": "LTC_SENSORY_YOKED",
+      "metric": "post_reversal_band_recovery_steps",
+      "mean_seed_block": 29.960872701155697,
+      "bootstrap_95ci": [
+        29.58650677040378,
+        30.313268254937093
+      ],
+      "seed_blocks": 32
+    },
+    {
+      "reversal_hazard": 0.025,
+      "arm": "GRU_4",
+      "metric": "position_mse",
+      "mean_seed_block": 132.3494811104281,
+      "bootstrap_95ci": [
+        127.85370780851295,
+        136.76150390151415
+      ],
+      "seed_blocks": 32
+    },
+    {
+      "reversal_hazard": 0.025,
+      "arm": "GRU_4",
+      "metric": "position_mae",
+      "mean_seed_block": 9.65221850044145,
+      "bootstrap_95ci": [
+        9.469811475366987,
+        9.825938101095607
+      ],
+      "seed_blocks": 32
+    },
+    {
+      "reversal_hazard": 0.025,
+      "arm": "GRU_4",
+      "metric": "temperature_error_mse",
+      "mean_seed_block": 0.20130559461176745,
+      "bootstrap_95ci": [
+        0.19512379692218929,
+        0.2076628415798268
+      ],
+      "seed_blocks": 32
+    },
+    {
+      "reversal_hazard": 0.025,
+      "arm": "GRU_4",
+      "metric": "action_energy",
+      "mean_seed_block": 0.00839319628028079,
+      "bootstrap_95ci": [
+        0.006328881891053406,
+        0.010551989212084043
+      ],
+      "seed_blocks": 32
+    },
+    {
+      "reversal_hazard": 0.025,
+      "arm": "GRU_4",
+      "metric": "preferred_band_occupancy",
+      "mean_seed_block": 0.11507415771484375,
+      "bootstrap_95ci": [
+        0.1083106517791748,
+        0.12242889404296875
+      ],
+      "seed_blocks": 32
+    },
+    {
+      "reversal_hazard": 0.025,
+      "arm": "GRU_4",
+      "metric": "post_reversal_band_recovery_steps",
+      "mean_seed_block": 29.85052233758797,
+      "bootstrap_95ci": [
+        29.504383650531846,
+        30.17858561208605
+      ],
+      "seed_blocks": 32
+    },
+    {
+      "reversal_hazard": 0.025,
+      "arm": "GRU_8",
+      "metric": "position_mse",
+      "mean_seed_block": 133.16581658450104,
+      "bootstrap_95ci": [
+        128.6159669743326,
+        137.67407476785655
+      ],
+      "seed_blocks": 32
+    },
+    {
+      "reversal_hazard": 0.025,
+      "arm": "GRU_8",
+      "metric": "position_mae",
+      "mean_seed_block": 9.67857228691173,
+      "bootstrap_95ci": [
+        9.497312474445243,
+        9.853936968998005
+      ],
+      "seed_blocks": 32
+    },
+    {
+      "reversal_hazard": 0.025,
+      "arm": "GRU_8",
+      "metric": "temperature_error_mse",
+      "mean_seed_block": 0.20227201467059786,
+      "bootstrap_95ci": [
+        0.19611105425082087,
+        0.2085729252847841
+      ],
+      "seed_blocks": 32
+    },
+    {
+      "reversal_hazard": 0.025,
+      "arm": "GRU_8",
+      "metric": "action_energy",
+      "mean_seed_block": 0.009975636425131995,
+      "bootstrap_95ci": [
+        0.006851804208914558,
+        0.013479216384862802
+      ],
+      "seed_blocks": 32
+    },
+    {
+      "reversal_hazard": 0.025,
+      "arm": "GRU_8",
+      "metric": "preferred_band_occupancy",
+      "mean_seed_block": 0.11352348327636719,
+      "bootstrap_95ci": [
+        0.10734162330627442,
+        0.12006802558898921
+      ],
+      "seed_blocks": 32
+    },
+    {
+      "reversal_hazard": 0.025,
+      "arm": "GRU_8",
+      "metric": "post_reversal_band_recovery_steps",
+      "mean_seed_block": 29.90963042117221,
+      "bootstrap_95ci": [
+        29.60795290121822,
+        30.210515592219455
+      ],
+      "seed_blocks": 32
+    },
+    {
+      "reversal_hazard": 0.025,
+      "arm": "GRADIENT_SIGN_ORACLE",
+      "metric": "position_mse",
+      "mean_seed_block": 28.7241733072442,
+      "bootstrap_95ci": [
+        27.6153798238116,
+        29.86128615050111
+      ],
+      "seed_blocks": 32
+    },
+    {
+      "reversal_hazard": 0.025,
+      "arm": "GRADIENT_SIGN_ORACLE",
+      "metric": "position_mae",
+      "mean_seed_block": 3.6121802419802407,
+      "bootstrap_95ci": [
+        3.5440380743653805,
+        3.680107057175337
+      ],
+      "seed_blocks": 32
+    },
+    {
+      "reversal_hazard": 0.025,
+      "arm": "GRADIENT_SIGN_ORACLE",
+      "metric": "temperature_error_mse",
+      "mean_seed_block": 0.06984682917709506,
+      "bootstrap_95ci": [
+        0.06830960972428102,
+        0.07143380871789304
+      ],
+      "seed_blocks": 32
+    },
+    {
+      "reversal_hazard": 0.025,
+      "arm": "GRADIENT_SIGN_ORACLE",
+      "metric": "action_energy",
+      "mean_seed_block": 0.9843482971191406,
+      "bootstrap_95ci": [
+        0.9834098815917969,
+        0.9852543354034424
+      ],
+      "seed_blocks": 32
+    },
+    {
+      "reversal_hazard": 0.025,
+      "arm": "GRADIENT_SIGN_ORACLE",
+      "metric": "preferred_band_occupancy",
+      "mean_seed_block": 0.4596691131591797,
+      "bootstrap_95ci": [
+        0.4531230926513672,
+        0.46592144966125487
+      ],
+      "seed_blocks": 32
+    },
+    {
+      "reversal_hazard": 0.025,
+      "arm": "GRADIENT_SIGN_ORACLE",
+      "metric": "post_reversal_band_recovery_steps",
+      "mean_seed_block": 13.348962123458351,
+      "bootstrap_95ci": [
+        12.948384360614247,
+        13.752366876647834
+      ],
+      "seed_blocks": 32
+    },
+    {
+      "reversal_hazard": 0.05,
+      "arm": "LTC_SENSORY_SITE",
+      "metric": "position_mse",
+      "mean_seed_block": 132.3163051081288,
+      "bootstrap_95ci": [
+        127.56288699668976,
+        137.48965878930917
+      ],
+      "seed_blocks": 32
+    },
+    {
+      "reversal_hazard": 0.05,
+      "arm": "LTC_SENSORY_SITE",
+      "metric": "position_mae",
+      "mean_seed_block": 9.72648559478057,
+      "bootstrap_95ci": [
+        9.517237199975238,
+        9.950248754079144
+      ],
+      "seed_blocks": 32
+    },
+    {
+      "reversal_hazard": 0.05,
+      "arm": "LTC_SENSORY_SITE",
+      "metric": "temperature_error_mse",
+      "mean_seed_block": 0.19664526595852294,
+      "bootstrap_95ci": [
+        0.190038689518326,
+        0.2037179262982022
+      ],
+      "seed_blocks": 32
+    },
+    {
+      "reversal_hazard": 0.05,
+      "arm": "LTC_SENSORY_SITE",
+      "metric": "action_energy",
+      "mean_seed_block": 0.0024910084156169465,
+      "bootstrap_95ci": [
+        0.0015629722192594577,
+        0.0035433822145741448
+      ],
+      "seed_blocks": 32
+    },
+    {
+      "reversal_hazard": 0.05,
+      "arm": "LTC_SENSORY_SITE",
+      "metric": "preferred_band_occupancy",
+      "mean_seed_block": 0.10985183715820312,
+      "bootstrap_95ci": [
+        0.10169196128845215,
+        0.11819081306457518
+      ],
+      "seed_blocks": 32
+    },
+    {
+      "reversal_hazard": 0.05,
+      "arm": "LTC_SENSORY_SITE",
+      "metric": "post_reversal_band_recovery_steps",
+      "mean_seed_block": 30.171025532036303,
+      "bootstrap_95ci": [
+        29.845604843097675,
+        30.490915093041668
+      ],
+      "seed_blocks": 32
+    },
+    {
+      "reversal_hazard": 0.05,
+      "arm": "LTC_OUTPUT_SITE",
+      "metric": "position_mse",
+      "mean_seed_block": 132.32283928289962,
+      "bootstrap_95ci": [
+        127.55314139446514,
+        137.49243154280512
+      ],
+      "seed_blocks": 32
+    },
+    {
+      "reversal_hazard": 0.05,
+      "arm": "LTC_OUTPUT_SITE",
+      "metric": "position_mae",
+      "mean_seed_block": 9.725328643800822,
+      "bootstrap_95ci": [
+        9.515774555374538,
+        9.949195140182065
+      ],
+      "seed_blocks": 32
+    },
+    {
+      "reversal_hazard": 0.05,
+      "arm": "LTC_OUTPUT_SITE",
+      "metric": "temperature_error_mse",
+      "mean_seed_block": 0.19665437313960865,
+      "bootstrap_95ci": [
+        0.19001775328445092,
+        0.20373090583229894
+      ],
+      "seed_blocks": 32
+    },
+    {
+      "reversal_hazard": 0.05,
+      "arm": "LTC_OUTPUT_SITE",
+      "metric": "action_energy",
+      "mean_seed_block": 0.0025265619366030764,
+      "bootstrap_95ci": [
+        0.0014945477204018757,
+        0.0037181832433403595
+      ],
+      "seed_blocks": 32
+    },
+    {
+      "reversal_hazard": 0.05,
+      "arm": "LTC_OUTPUT_SITE",
+      "metric": "preferred_band_occupancy",
+      "mean_seed_block": 0.11033439636230469,
+      "bootstrap_95ci": [
+        0.10177040100097656,
+        0.11925129890441893
+      ],
+      "seed_blocks": 32
+    },
+    {
+      "reversal_hazard": 0.05,
+      "arm": "LTC_OUTPUT_SITE",
+      "metric": "post_reversal_band_recovery_steps",
+      "mean_seed_block": 30.165950509608603,
+      "bootstrap_95ci": [
+        29.83199643016268,
+        30.49534723032714
+      ],
+      "seed_blocks": 32
+    },
+    {
+      "reversal_hazard": 0.05,
+      "arm": "LTC_NO_FEEDBACK",
+      "metric": "position_mse",
+      "mean_seed_block": 132.3206712076822,
+      "bootstrap_95ci": [
+        127.56495256038183,
+        137.49731951713733
+      ],
+      "seed_blocks": 32
+    },
+    {
+      "reversal_hazard": 0.05,
+      "arm": "LTC_NO_FEEDBACK",
+      "metric": "position_mae",
+      "mean_seed_block": 9.726713741963067,
+      "bootstrap_95ci": [
+        9.517144456577057,
+        9.950695003433133
+      ],
+      "seed_blocks": 32
+    },
+    {
+      "reversal_hazard": 0.05,
+      "arm": "LTC_NO_FEEDBACK",
+      "metric": "temperature_error_mse",
+      "mean_seed_block": 0.19664319841740507,
+      "bootstrap_95ci": [
+        0.1900233732382958,
+        0.20372010013691125
+      ],
+      "seed_blocks": 32
+    },
+    {
+      "reversal_hazard": 0.05,
+      "arm": "LTC_NO_FEEDBACK",
+      "metric": "action_energy",
+      "mean_seed_block": 0.0024687530292589466,
+      "bootstrap_95ci": [
+        0.0015281330676033885,
+        0.0035305758735628243
+      ],
+      "seed_blocks": 32
+    },
+    {
+      "reversal_hazard": 0.05,
+      "arm": "LTC_NO_FEEDBACK",
+      "metric": "preferred_band_occupancy",
+      "mean_seed_block": 0.10977745056152344,
+      "bootstrap_95ci": [
+        0.10155482292175293,
+        0.11820034980773925
+      ],
+      "seed_blocks": 32
+    },
+    {
+      "reversal_hazard": 0.05,
+      "arm": "LTC_NO_FEEDBACK",
+      "metric": "post_reversal_band_recovery_steps",
+      "mean_seed_block": 30.165464945283873,
+      "bootstrap_95ci": [
+        29.836820173423707,
+        30.487268836278577
+      ],
+      "seed_blocks": 32
+    },
+    {
+      "reversal_hazard": 0.05,
+      "arm": "LTC_DENSE_FEEDBACK",
+      "metric": "position_mse",
+      "mean_seed_block": 132.3163374275554,
+      "bootstrap_95ci": [
+        127.56432488588558,
+        137.48511468591107
+      ],
+      "seed_blocks": 32
+    },
+    {
+      "reversal_hazard": 0.05,
+      "arm": "LTC_DENSE_FEEDBACK",
+      "metric": "position_mae",
+      "mean_seed_block": 9.726588329036531,
+      "bootstrap_95ci": [
+        9.5177400455731,
+        9.950600473910526
+      ],
+      "seed_blocks": 32
+    },
+    {
+      "reversal_hazard": 0.05,
+      "arm": "LTC_DENSE_FEEDBACK",
+      "metric": "temperature_error_mse",
+      "mean_seed_block": 0.1966438180484147,
+      "bootstrap_95ci": [
+        0.19004051408202258,
+        0.20370705064887035
+      ],
+      "seed_blocks": 32
+    },
+    {
+      "reversal_hazard": 0.05,
+      "arm": "LTC_DENSE_FEEDBACK",
+      "metric": "action_energy",
+      "mean_seed_block": 0.0024875543762569764,
+      "bootstrap_95ci": [
+        0.0015508411613391483,
+        0.003548167654985435
+      ],
+      "seed_blocks": 32
+    },
+    {
+      "reversal_hazard": 0.05,
+      "arm": "LTC_DENSE_FEEDBACK",
+      "metric": "preferred_band_occupancy",
+      "mean_seed_block": 0.10984230041503906,
+      "bootstrap_95ci": [
+        0.10161771774291992,
+        0.11820621490478514
+      ],
+      "seed_blocks": 32
+    },
+    {
+      "reversal_hazard": 0.05,
+      "arm": "LTC_DENSE_FEEDBACK",
+      "metric": "post_reversal_band_recovery_steps",
+      "mean_seed_block": 30.157524152164,
+      "bootstrap_95ci": [
+        29.831530076045862,
+        30.47600418530034
+      ],
+      "seed_blocks": 32
+    },
+    {
+      "reversal_hazard": 0.05,
+      "arm": "LTC_SENSORY_YOKED",
+      "metric": "position_mse",
+      "mean_seed_block": 132.2825955154105,
+      "bootstrap_95ci": [
+        127.51898268209334,
+        137.46279784257646
+      ],
+      "seed_blocks": 32
+    },
+    {
+      "reversal_hazard": 0.05,
+      "arm": "LTC_SENSORY_YOKED",
+      "metric": "position_mae",
+      "mean_seed_block": 9.725164563124054,
+      "bootstrap_95ci": [
+        9.515805138271798,
+        9.949136176320508
+      ],
+      "seed_blocks": 32
+    },
+    {
+      "reversal_hazard": 0.05,
+      "arm": "LTC_SENSORY_YOKED",
+      "metric": "temperature_error_mse",
+      "mean_seed_block": 0.19660699658561498,
+      "bootstrap_95ci": [
+        0.18998701000892879,
+        0.20367803947840457
+      ],
+      "seed_blocks": 32
+    },
+    {
+      "reversal_hazard": 0.05,
+      "arm": "LTC_SENSORY_YOKED",
+      "metric": "action_energy",
+      "mean_seed_block": 0.0024434489253983283,
+      "bootstrap_95ci": [
+        0.0015269671657417827,
+        0.0034908546770551006
+      ],
+      "seed_blocks": 32
+    },
+    {
+      "reversal_hazard": 0.05,
+      "arm": "LTC_SENSORY_YOKED",
+      "metric": "preferred_band_occupancy",
+      "mean_seed_block": 0.10982894897460938,
+      "bootstrap_95ci": [
+        0.10159287452697754,
+        0.11824421882629393
+      ],
+      "seed_blocks": 32
+    },
+    {
+      "reversal_hazard": 0.05,
+      "arm": "LTC_SENSORY_YOKED",
+      "metric": "post_reversal_band_recovery_steps",
+      "mean_seed_block": 30.160877171780726,
+      "bootstrap_95ci": [
+        29.832177905220934,
+        30.48311085884747
+      ],
+      "seed_blocks": 32
+    },
+    {
+      "reversal_hazard": 0.05,
+      "arm": "GRU_4",
+      "metric": "position_mse",
+      "mean_seed_block": 132.8445396419313,
+      "bootstrap_95ci": [
+        128.02615606855082,
+        138.05829767743612
+      ],
+      "seed_blocks": 32
+    },
+    {
+      "reversal_hazard": 0.05,
+      "arm": "GRU_4",
+      "metric": "position_mae",
+      "mean_seed_block": 9.737730710363394,
+      "bootstrap_95ci": [
+        9.529554927287062,
+        9.958666190976691
+      ],
+      "seed_blocks": 32
+    },
+    {
+      "reversal_hazard": 0.05,
+      "arm": "GRU_4",
+      "metric": "temperature_error_mse",
+      "mean_seed_block": 0.19743126856974413,
+      "bootstrap_95ci": [
+        0.19074457214328505,
+        0.20463156055545823
+      ],
+      "seed_blocks": 32
+    },
+    {
+      "reversal_hazard": 0.05,
+      "arm": "GRU_4",
+      "metric": "action_energy",
+      "mean_seed_block": 0.00834530320386051,
+      "bootstrap_95ci": [
+        0.006276065585124879,
+        0.010518325236870128
+      ],
+      "seed_blocks": 32
+    },
+    {
+      "reversal_hazard": 0.05,
+      "arm": "GRU_4",
+      "metric": "preferred_band_occupancy",
+      "mean_seed_block": 0.10837554931640625,
+      "bootstrap_95ci": [
+        0.09961695671081543,
+        0.11762433052062987
+      ],
+      "seed_blocks": 32
+    },
+    {
+      "reversal_hazard": 0.05,
+      "arm": "GRU_4",
+      "metric": "post_reversal_band_recovery_steps",
+      "mean_seed_block": 30.186952485510744,
+      "bootstrap_95ci": [
+        29.847113503397576,
+        30.5091395680128
+      ],
+      "seed_blocks": 32
+    },
+    {
+      "reversal_hazard": 0.05,
+      "arm": "GRU_8",
+      "metric": "position_mse",
+      "mean_seed_block": 133.3873333909778,
+      "bootstrap_95ci": [
+        128.54064259458596,
+        138.6620189679542
+      ],
+      "seed_blocks": 32
+    },
+    {
+      "reversal_hazard": 0.05,
+      "arm": "GRU_8",
+      "metric": "position_mae",
+      "mean_seed_block": 9.750011263215129,
+      "bootstrap_95ci": [
+        9.538955197455289,
+        9.97238932134387
+      ],
+      "seed_blocks": 32
+    },
+    {
+      "reversal_hazard": 0.05,
+      "arm": "GRU_8",
+      "metric": "temperature_error_mse",
+      "mean_seed_block": 0.19798908042366747,
+      "bootstrap_95ci": [
+        0.19133524657040651,
+        0.2051874362471949
+      ],
+      "seed_blocks": 32
+    },
+    {
+      "reversal_hazard": 0.05,
+      "arm": "GRU_8",
+      "metric": "action_energy",
+      "mean_seed_block": 0.009957785239084416,
+      "bootstrap_95ci": [
+        0.006883132194659236,
+        0.013390637617722589
+      ],
+      "seed_blocks": 32
+    },
+    {
+      "reversal_hazard": 0.05,
+      "arm": "GRU_8",
+      "metric": "preferred_band_occupancy",
+      "mean_seed_block": 0.10837173461914062,
+      "bootstrap_95ci": [
+        0.09959015846252442,
+        0.11782841682434081
+      ],
+      "seed_blocks": 32
+    },
+    {
+      "reversal_hazard": 0.05,
+      "arm": "GRU_8",
+      "metric": "post_reversal_band_recovery_steps",
+      "mean_seed_block": 30.18590280054709,
+      "bootstrap_95ci": [
+        29.830755029157256,
+        30.52616987374157
+      ],
+      "seed_blocks": 32
+    },
+    {
+      "reversal_hazard": 0.05,
+      "arm": "GRADIENT_SIGN_ORACLE",
+      "metric": "position_mse",
+      "mean_seed_block": 28.819696250968263,
+      "bootstrap_95ci": [
+        27.695328476911165,
+        30.0410986809944
+      ],
+      "seed_blocks": 32
+    },
+    {
+      "reversal_hazard": 0.05,
+      "arm": "GRADIENT_SIGN_ORACLE",
+      "metric": "position_mae",
+      "mean_seed_block": 3.627673155788216,
+      "bootstrap_95ci": [
+        3.554186732976814,
+        3.7075566145416814
+      ],
+      "seed_blocks": 32
+    },
+    {
+      "reversal_hazard": 0.05,
+      "arm": "GRADIENT_SIGN_ORACLE",
+      "metric": "temperature_error_mse",
+      "mean_seed_block": 0.06884785683905648,
+      "bootstrap_95ci": [
+        0.06730437166692127,
+        0.07053262144523842
+      ],
+      "seed_blocks": 32
+    },
+    {
+      "reversal_hazard": 0.05,
+      "arm": "GRADIENT_SIGN_ORACLE",
+      "metric": "action_energy",
+      "mean_seed_block": 0.9844207763671875,
+      "bootstrap_95ci": [
+        0.9836082458496094,
+        0.9852142810821534
+      ],
+      "seed_blocks": 32
+    },
+    {
+      "reversal_hazard": 0.05,
+      "arm": "GRADIENT_SIGN_ORACLE",
+      "metric": "preferred_band_occupancy",
+      "mean_seed_block": 0.45857810974121094,
+      "bootstrap_95ci": [
+        0.4507427215576172,
+        0.4663525581359863
+      ],
+      "seed_blocks": 32
+    },
+    {
+      "reversal_hazard": 0.05,
+      "arm": "GRADIENT_SIGN_ORACLE",
+      "metric": "post_reversal_band_recovery_steps",
+      "mean_seed_block": 13.191755376960778,
+      "bootstrap_95ci": [
+        12.867897167484369,
+        13.5447735713808
+      ],
+      "seed_blocks": 32
+    }
+  ],
+  "resource_accounting": {
+    "LTC_SENSORY_SITE": {
+      "parameter_counts": [
+        114
+      ],
+      "mean_training_seconds": 5.863650505156253,
+      "mean_final_10_update_loss": 0.32115590625908225
+    },
+    "LTC_OUTPUT_SITE": {
+      "parameter_counts": [
+        114
+      ],
+      "mean_training_seconds": 4.949268820312483,
+      "mean_final_10_update_loss": 0.3212869270704687
+    },
+    "LTC_NO_FEEDBACK": {
+      "parameter_counts": [
+        114
+      ],
+      "mean_training_seconds": 4.843305539156246,
+      "mean_final_10_update_loss": 0.3211201080004685
+    },
+    "LTC_DENSE_FEEDBACK": {
+      "parameter_counts": [
+        114
+      ],
+      "mean_training_seconds": 5.920723037687489,
+      "mean_final_10_update_loss": 0.32115802718326447
+    },
+    "LTC_SENSORY_YOKED": {
+      "parameter_counts": [
+        114
+      ],
+      "mean_training_seconds": 5.976954188937499,
+      "mean_final_10_update_loss": 0.3211322924122214
+    },
+    "GRU_4": {
+      "parameter_counts": [
+        113
+      ],
+      "mean_training_seconds": 1.7237953645937631,
+      "mean_final_10_update_loss": 0.32101453096838667
+    },
+    "GRU_8": {
+      "parameter_counts": [
+        321
+      ],
+      "mean_training_seconds": 1.730174035062503,
+      "mean_final_10_update_loss": 0.32125073042698205
+    }
+  },
+  "row_counts": {
+    "episode_results": 98304,
+    "training_results": 224
+  },
+  "independent_seed_blocks": 32,
+  "episodes_per_seed_arm_condition": 128,
+  "analysis": {
+    "bootstrap_resamples": 20000,
+    "seed": 20261003,
+    "resampling_unit": "paired training-seed block"
+  }
+}

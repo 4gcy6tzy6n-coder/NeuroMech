@@ -1,0 +1,22 @@
+{
+  "experiment_id": "M2_LTC_THERMOTAXIS_REVERSAL_V1",
+  "passed": true,
+  "checks": {
+    "episode_grid_complete": true,
+    "fits_complete": true,
+    "no_duplicate_episode_rows": true,
+    "outcomes_finite_and_nonnegative": true,
+    "saved_parameter_states_match_counts": true,
+    "primary_point_estimates_recomputed": true,
+    "figure_exports_present": true
+  },
+  "row_counts": {
+    "episode_results": 98304,
+    "training_results": 224
+  },
+  "sha256": {
+    "episode_results.csv": "6e6be89de6f4c4b456cb8d019c0ba1a93b9b3cecafae2fd3305d0b25d07f1b62",
+    "training_results.csv": "83cde457774478d37c35fd00398d0587901a3abdad84a9c941fefa0cab0a3b81",
+    "summary.json": "76574ed3d0d8a7f946317b81fc74d920eff5143d931c2137aa42a437703e6d96"
+  }
+}

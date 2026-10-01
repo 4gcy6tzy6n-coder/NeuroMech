@@ -1,0 +1,96 @@
+{
+  "experiment_id": "M2_LTC_THERMOTAXIS_REVERSAL_V1",
+  "outcomes_computed": false,
+  "contract_sha256": "ade7a842da21a2a8d166e53c524df7a7b34e30f722c670c446ba56d5385d5827",
+  "runner_sha256": "1b5d9ab2d85f5282365390bce970243d037222761318c3735f425496209972b5",
+  "python": "3.9.6",
+  "numpy": "2.0.2",
+  "torch": "2.8.0",
+  "training": {
+    "seed_first": 920000,
+    "seed_last": 920031,
+    "episodes": 96,
+    "steps": 128,
+    "updates": 120,
+    "batch": 8,
+    "learning_rate": 0.005,
+    "reversal_hazard": 0.025,
+    "observation_transition_q": 0.25
+  },
+  "evaluation": {
+    "episodes_per_seed_condition": 128,
+    "reversal_hazards": [
+      0.0125,
+      0.025,
+      0.05
+    ],
+    "arms": [
+      "LTC_SENSORY_SITE",
+      "LTC_OUTPUT_SITE",
+      "LTC_NO_FEEDBACK",
+      "LTC_DENSE_FEEDBACK",
+      "LTC_SENSORY_YOKED",
+      "GRU_4",
+      "GRU_8",
+      "GRADIENT_SIGN_ORACLE"
+    ]
+  },
+  "checks": [
+    {
+      "arm": "LTC_SENSORY_SITE",
+      "parameter_count": 114,
+      "finite_loss": true,
+      "gradient_checks_pass": true,
+      "dormant_parameters": []
+    },
+    {
+      "arm": "LTC_OUTPUT_SITE",
+      "parameter_count": 114,
+      "finite_loss": true,
+      "gradient_checks_pass": true,
+      "dormant_parameters": []
+    },
+    {
+      "arm": "LTC_NO_FEEDBACK",
+      "parameter_count": 114,
+      "finite_loss": true,
+      "gradient_checks_pass": true,
+      "dormant_parameters": [
+        "beta"
+      ]
+    },
+    {
+      "arm": "LTC_DENSE_FEEDBACK",
+      "parameter_count": 114,
+      "finite_loss": true,
+      "gradient_checks_pass": true,
+      "dormant_parameters": []
+    },
+    {
+      "arm": "LTC_SENSORY_YOKED",
+      "parameter_count": 114,
+      "finite_loss": true,
+      "gradient_checks_pass": true,
+      "dormant_parameters": []
+    },
+    {
+      "arm": "GRU_4",
+      "parameter_count": 113,
+      "finite_loss": true,
+      "gradient_checks_pass": true,
+      "dormant_parameters": []
+    },
+    {
+      "arm": "GRU_8",
+      "parameter_count": 321,
+      "finite_loss": true,
+      "gradient_checks_pass": true,
+      "dormant_parameters": []
+    },
+    {
+      "arm": "GRADIENT_SIGN_ORACLE",
+      "parameter_count": 0,
+      "finite_outputs": true
+    }
+  ]
+}
