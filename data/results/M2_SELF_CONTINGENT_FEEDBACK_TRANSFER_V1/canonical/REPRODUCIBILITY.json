@@ -1,0 +1,43 @@
+{
+  "experiment": "M2_SELF_CONTINGENT_FEEDBACK_TRANSFER_V1",
+  "status": "PASS",
+  "independent_full_rerun": true,
+  "canonical_directory": "data/results/M2_SELF_CONTINGENT_FEEDBACK_TRANSFER_V1/canonical/",
+  "rerun_directory": "/tmp/M2_SELF_CONTINGENT_FEEDBACK_TRANSFER_V1_rerun",
+  "byte_identical_outputs": {
+    "test_episode_metrics.csv": {
+      "canonical_sha256": "08dae1bb619d30f3f022c71c95d111a9a9221154b4ffce05d5e30377027e601c",
+      "rerun_sha256": "08dae1bb619d30f3f022c71c95d111a9a9221154b4ffce05d5e30377027e601c",
+      "identical": true
+    },
+    "test_seed_summary.csv": {
+      "canonical_sha256": "62e334d302c437bffca9972bca5d37fdb112b7a989ffa7cddc4019130f160b6f",
+      "rerun_sha256": "62e334d302c437bffca9972bca5d37fdb112b7a989ffa7cddc4019130f160b6f",
+      "identical": true
+    },
+    "feedback_distribution_check.json": {
+      "canonical_sha256": "26a07412b38a634bd5bcb79cf042955703101c36c05f45dacb9ef19db0707892",
+      "rerun_sha256": "26a07412b38a634bd5bcb79cf042955703101c36c05f45dacb9ef19db0707892",
+      "identical": true
+    },
+    "summary.json": {
+      "canonical_sha256": "936f45d592a4fcb05937921205e1a0a096446449a685723a620b1eb970c37c76",
+      "rerun_sha256": "936f45d592a4fcb05937921205e1a0a096446449a685723a620b1eb970c37c76",
+      "identical": true
+    }
+  },
+  "fit_manifest": {
+    "canonical_sha256": "afdbe0905699fedb0a08fb63ec9da33e856c95d0ab8588119f05f6f621cd1008",
+    "rerun_sha256": "4ea24cc5a6fb4d2ff6fe37839821eb7ead5b84d47c44da15cb228dcec6fdbaff",
+    "non_timing_fields_identical": true,
+    "excluded_nondeterministic_field": "training_seconds"
+  },
+  "verifier": "model/M2_SELF_CONTINGENT_FEEDBACK_TRANSFER_V1/verify_results.py",
+  "verifier_status": "PASS",
+  "fit_records": 192,
+  "test_episode_rows": 98304,
+  "test_seed_summary_rows": 768,
+  "yoke_distribution_checks": 128,
+  "primary_seed_blocks_recomputed": 32,
+  "notes": "Full independent rerun reproduced all scientific outputs byte-for-byte; fit_manifest differs only in measured training_seconds."
+}

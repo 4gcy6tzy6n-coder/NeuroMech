@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "fit_records": 192,
+  "test_episode_rows": 98304,
+  "test_seed_summary_rows": 768,
+  "population_distribution_checks": 128,
+  "primary_seed_blocks_recomputed": 32,
+  "hashed_outputs_checked": 5,
+  "scope": "artifact hashes, row coverage, parameters, exact yoke mapping/distribution, seed aggregation, primary bootstrap"
+}

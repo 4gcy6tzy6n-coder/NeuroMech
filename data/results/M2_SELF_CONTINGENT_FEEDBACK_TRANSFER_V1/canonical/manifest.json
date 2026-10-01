@@ -1,0 +1,109 @@
+{
+  "experiment": "M2_SELF_CONTINGENT_FEEDBACK_TRANSFER_V1",
+  "contract_sha256": "908af52f49f2e09e7fa42d50a190fcb441a370856c2644caaae8c2a5269d7ff1",
+  "runner_sha256": "1889fee7281a225fac5f11a124286b635267ae6ea5e53acc65b005d237ce7e9e",
+  "verifier_sha256": "352fca9ae7966449f72b4ae86caec9ddd45c386ffaa02a442dc12f37b9f8946e",
+  "python": "3.12.13",
+  "numpy": "2.4.4",
+  "torch": "2.11.0",
+  "device": "CPU",
+  "torch_threads": 1,
+  "training_seeds": [
+    810000,
+    810001,
+    810002,
+    810003,
+    810004,
+    810005,
+    810006,
+    810007,
+    810008,
+    810009,
+    810010,
+    810011,
+    810012,
+    810013,
+    810014,
+    810015,
+    810016,
+    810017,
+    810018,
+    810019,
+    810020,
+    810021,
+    810022,
+    810023,
+    810024,
+    810025,
+    810026,
+    810027,
+    810028,
+    810029,
+    810030,
+    810031
+  ],
+  "test_batch_size": 128,
+  "test_seed_rule": "9000000 + block*100000 + condition_index*1000",
+  "conditions": {
+    "SLOW_TRANSIENT": {
+      "hazard": 0.01,
+      "pulse_rate": 0.08
+    },
+    "FAST_TRANSIENT": {
+      "hazard": 0.05,
+      "pulse_rate": 0.08
+    },
+    "SLOW_CLEAN": {
+      "hazard": 0.01,
+      "pulse_rate": 0.0
+    },
+    "FAST_CLEAN": {
+      "hazard": 0.05,
+      "pulse_rate": 0.0
+    }
+  },
+  "arms": [
+    "SELF_SENSORY",
+    "CROSS_AGENT_YOKED_SENSORY",
+    "SELF_OUTPUT",
+    "NO_FEEDBACK",
+    "GENERIC_RNN_1D",
+    "GRU_8"
+  ],
+  "parameter_counts": {
+    "SELF_SENSORY": 4,
+    "CROSS_AGENT_YOKED_SENSORY": 4,
+    "SELF_OUTPUT": 4,
+    "NO_FEEDBACK": 3,
+    "GENERIC_RNN_1D": 6,
+    "GRU_8": 297
+  },
+  "updates": 100,
+  "batch_size": 32,
+  "sequence_length": 96,
+  "bootstrap_resamples": 20000,
+  "primary_bootstrap_seed": 8765432,
+  "duration_seconds": 123.29548692703247,
+  "outputs": {
+    "feedback_distribution_check.json": {
+      "bytes": 1911277,
+      "sha256": "26a07412b38a634bd5bcb79cf042955703101c36c05f45dacb9ef19db0707892"
+    },
+    "fit_manifest.csv": {
+      "bytes": 220922,
+      "sha256": "afdbe0905699fedb0a08fb63ec9da33e856c95d0ab8588119f05f6f621cd1008"
+    },
+    "summary.json": {
+      "bytes": 32875,
+      "sha256": "936f45d592a4fcb05937921205e1a0a096446449a685723a620b1eb970c37c76"
+    },
+    "test_episode_metrics.csv": {
+      "bytes": 13081854,
+      "sha256": "08dae1bb619d30f3f022c71c95d111a9a9221154b4ffce05d5e30377027e601c"
+    },
+    "test_seed_summary.csv": {
+      "bytes": 97645,
+      "sha256": "62e334d302c437bffca9972bca5d37fdb112b7a989ffa7cddc4019130f160b6f"
+    }
+  }
+}
