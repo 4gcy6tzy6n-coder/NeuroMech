@@ -1,0 +1,76 @@
+{
+  "experiment_id": "M2_RECIPIENT_SPECIFIC_FEEDBACK_YOKE_V1",
+  "outcomes_computed": false,
+  "python": "3.9.6",
+  "numpy": "2.0.2",
+  "torch": "2.8.0",
+  "contract_sha256": "d0ca6f3a2e856a782c3ab1e338f2496131da4919faf09ce1e6d5d1d3a1f86397",
+  "runner_sha256": "f3f9294dd2c38ffb641fb28bf765fa9fc143fdf3436d8ced6730e7f71e993aa5",
+  "base_runner_sha256": "d700641e68ed9ab1d5e827506a16c452ff7c7d96bc2cabc9da7f7c36650993d4",
+  "arm_checks": [
+    {
+      "arm": "SENSORY_SELF",
+      "parameters": 3,
+      "finite_loss": true,
+      "finite_gradients": true
+    },
+    {
+      "arm": "OUTPUT_SITE_PERSISTENCE",
+      "parameters": 3,
+      "finite_loss": true,
+      "finite_gradients": true
+    },
+    {
+      "arm": "NO_FEEDBACK",
+      "parameters": 3,
+      "finite_loss": true,
+      "finite_gradients": true
+    },
+    {
+      "arm": "GENERIC_RNN_1H",
+      "parameters": 3,
+      "finite_loss": true,
+      "finite_gradients": true
+    }
+  ],
+  "donor_permutation_test": {
+    "bijective_derangement": true,
+    "marginal_preserved_all_steps": true
+  },
+  "training": {
+    "seeds": [
+      420000,
+      420031
+    ],
+    "episodes": 256,
+    "steps": 240,
+    "updates": 100,
+    "batch_size": 16,
+    "learning_rate": 0.01
+  },
+  "evaluation": {
+    "episodes_per_seed_condition": 256,
+    "hazards": [
+      0.004166666666666667,
+      0.008333333333333333,
+      0.025
+    ],
+    "missing_rates": [
+      0.25,
+      0.5,
+      0.75
+    ],
+    "arms": [
+      "SENSORY_SELF",
+      "SENSORY_CROSS_AGENT_YOKE",
+      "OUTPUT_SITE_PERSISTENCE",
+      "NO_FEEDBACK",
+      "GENERIC_RNN_1H",
+      "ORACLE_RELATIVE_ERROR"
+    ]
+  },
+  "primary_bootstrap": {
+    "resamples": 10000,
+    "seed": 20261029
+  }
+}

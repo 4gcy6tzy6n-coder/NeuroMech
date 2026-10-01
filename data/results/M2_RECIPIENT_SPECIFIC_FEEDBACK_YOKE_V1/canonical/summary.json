@@ -1,0 +1,150 @@
+{
+  "experiment_id": "M2_RECIPIENT_SPECIFIC_FEEDBACK_YOKE_V1",
+  "classification": "POST_RESULT_EXPLORATORY_ARTIFICIAL_MECHANISM_TRANSFER",
+  "seed_blocks": 32,
+  "episodes_per_seed_condition": 256,
+  "primary_contrast": "MSE(SENSORY_CROSS_AGENT_YOKE) - MSE(SENSORY_SELF); positive favors recipient-specific feedback",
+  "primary_condition": {
+    "hazard": 0.008333333333333333,
+    "missing_rate": 0.5
+  },
+  "primary": {
+    "mean": 0.04142620760967475,
+    "ci95": [
+      0.03900546246271119,
+      0.043830227429094745
+    ],
+    "positive_seed_blocks": 32,
+    "n_seed_blocks": 32,
+    "n_episodes_per_seed": 256
+  },
+  "direct_control_contrasts_vs_sensory_self": {
+    "OUTPUT_SITE_PERSISTENCE": {
+      "mean": 0.004156929356213368,
+      "ci95": [
+        0.0034039492795159276,
+        0.004944593461090107
+      ],
+      "positive_seed_blocks": 32,
+      "n_seed_blocks": 32,
+      "n_episodes_per_seed": 256
+    },
+    "NO_FEEDBACK": {
+      "mean": 0.004167255126731106,
+      "ci95": [
+        0.0034175745634229316,
+        0.004975286011017487
+      ],
+      "positive_seed_blocks": 32,
+      "n_seed_blocks": 32,
+      "n_episodes_per_seed": 256
+    },
+    "GENERIC_RNN_1H": {
+      "mean": 0.044411175863615426,
+      "ci95": [
+        0.042903217007392414,
+        0.04589851294414302
+      ],
+      "positive_seed_blocks": 32,
+      "n_seed_blocks": 32,
+      "n_episodes_per_seed": 256
+    },
+    "ORACLE_RELATIVE_ERROR": {
+      "mean": -0.030481987639859653,
+      "ci95": [
+        -0.031944867902404896,
+        -0.029054939696470685
+      ],
+      "positive_seed_blocks": 0,
+      "n_seed_blocks": 32,
+      "n_episodes_per_seed": 256
+    }
+  },
+  "condition_mean_tracking_mse": {
+    "h=0.0041666667|missing=0.25": {
+      "SENSORY_SELF": 0.13535157844739842,
+      "SENSORY_CROSS_AGENT_YOKE": 0.15132054954597152,
+      "OUTPUT_SITE_PERSISTENCE": 0.1380430211509065,
+      "NO_FEEDBACK": 0.13820060417356217,
+      "GENERIC_RNN_1H": 0.1583288714439277,
+      "ORACLE_RELATIVE_ERROR": 0.1335165584553124
+    },
+    "h=0.0041666667|missing=0.50": {
+      "SENSORY_SELF": 0.15135986380096256,
+      "SENSORY_CROSS_AGENT_YOKE": 0.17534342227941124,
+      "OUTPUT_SITE_PERSISTENCE": 0.15141804335917186,
+      "NO_FEEDBACK": 0.1516008436115044,
+      "GENERIC_RNN_1H": 0.18022205155580195,
+      "ORACLE_RELATIVE_ERROR": 0.13422898191333843
+    },
+    "h=0.0041666667|missing=0.75": {
+      "SENSORY_SELF": 0.21512289623638026,
+      "SENSORY_CROSS_AGENT_YOKE": 0.24668261216470455,
+      "OUTPUT_SITE_PERSISTENCE": 0.19365197134357004,
+      "NO_FEEDBACK": 0.19431946469603645,
+      "GENERIC_RNN_1H": 0.2347314862188341,
+      "ORACLE_RELATIVE_ERROR": 0.1362780353119888
+    },
+    "h=0.0083333333|missing=0.25": {
+      "SENSORY_SELF": 0.23869070938121695,
+      "SENSORY_CROSS_AGENT_YOKE": 0.26766541342158234,
+      "OUTPUT_SITE_PERSISTENCE": 0.2446499175932786,
+      "NO_FEEDBACK": 0.24463105066524804,
+      "GENERIC_RNN_1H": 0.2712659926201013,
+      "ORACLE_RELATIVE_ERROR": 0.22974501957128268
+    },
+    "h=0.0083333333|missing=0.50": {
+      "SENSORY_SELF": 0.2606941362657835,
+      "SENSORY_CROSS_AGENT_YOKE": 0.3021203438754583,
+      "OUTPUT_SITE_PERSISTENCE": 0.2648510656219969,
+      "NO_FEEDBACK": 0.26486139139251463,
+      "GENERIC_RNN_1H": 0.30510531212939895,
+      "ORACLE_RELATIVE_ERROR": 0.23021214862592387
+    },
+    "h=0.0083333333|missing=0.75": {
+      "SENSORY_SELF": 0.3404038487874459,
+      "SENSORY_CROSS_AGENT_YOKE": 0.3890516417143317,
+      "OUTPUT_SITE_PERSISTENCE": 0.32030762152248826,
+      "NO_FEEDBACK": 0.320260779297314,
+      "GENERIC_RNN_1H": 0.3789535847465686,
+      "ORACLE_RELATIVE_ERROR": 0.2281834935192819
+    },
+    "h=0.025|missing=0.25": {
+      "SENSORY_SELF": 0.5258051589908064,
+      "SENSORY_CROSS_AGENT_YOKE": 0.5997080090533018,
+      "OUTPUT_SITE_PERSISTENCE": 0.5473542777094735,
+      "NO_FEEDBACK": 0.5472773915939797,
+      "GENERIC_RNN_1H": 0.5561534049204511,
+      "ORACLE_RELATIVE_ERROR": 0.4697776344087288
+    },
+    "h=0.025|missing=0.50": {
+      "SENSORY_SELF": 0.5557676920161612,
+      "SENSORY_CROSS_AGENT_YOKE": 0.6509055699521014,
+      "OUTPUT_SITE_PERSISTENCE": 0.5838300652030739,
+      "NO_FEEDBACK": 0.583618784135524,
+      "GENERIC_RNN_1H": 0.6140983191580744,
+      "ORACLE_RELATIVE_ERROR": 0.4728229628558438
+    },
+    "h=0.025|missing=0.75": {
+      "SENSORY_SELF": 0.6458571844125345,
+      "SENSORY_CROSS_AGENT_YOKE": 0.7531258876224456,
+      "OUTPUT_SITE_PERSISTENCE": 0.6681596462319703,
+      "NO_FEEDBACK": 0.6666399510277188,
+      "GENERIC_RNN_1H": 0.728314400348836,
+      "ORACLE_RELATIVE_ERROR": 0.469640636787517
+    }
+  },
+  "yoke_checks": {
+    "n_seed_condition_blocks": 288,
+    "marginals_match_at_each_time_step": true,
+    "all_donor_assignments_are_derangements": true,
+    "time_steps_checked": 69120
+  },
+  "resources": {
+    "parameters_per_learned_model": 3,
+    "updates": 100,
+    "batch_size": 16,
+    "sequence_steps_per_fit": 384000
+  },
+  "claim_boundary": "Artificial action-coupled tracking result only; no biological validation or general AI benefit."
+}

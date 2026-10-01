@@ -1,0 +1,33 @@
+{
+  "experiment_id": "M2_RECIPIENT_SPECIFIC_FEEDBACK_YOKE_V1",
+  "method": "fresh full rerun in a separate empty output directory; both runs passed the independent verifier",
+  "byte_identical_artifacts": {
+    "PREFLIGHT.json": {
+      "canonical_sha256": "cb99663213b1bfb98cf5d18034748b199a17ffa8bf584bcb6bdec419c3919944",
+      "independent_rerun_sha256": "cb99663213b1bfb98cf5d18034748b199a17ffa8bf584bcb6bdec419c3919944",
+      "byte_identical": true
+    },
+    "episode_results.csv": {
+      "canonical_sha256": "7c8d88752e859dbd7cfd05e170c8aed9e6969d8ffd88e5800cc3ff27c6662e79",
+      "independent_rerun_sha256": "7c8d88752e859dbd7cfd05e170c8aed9e6969d8ffd88e5800cc3ff27c6662e79",
+      "byte_identical": true
+    },
+    "yoke_signal_audit.csv": {
+      "canonical_sha256": "3593f9f819d7733494e92f160ef5ea9d9a93aa14565c9f9e53cfcf3c90c185a2",
+      "independent_rerun_sha256": "3593f9f819d7733494e92f160ef5ea9d9a93aa14565c9f9e53cfcf3c90c185a2",
+      "byte_identical": true
+    },
+    "summary.json": {
+      "canonical_sha256": "8515507370ac4a2aa32fede8d3d1d0200fb2430e7342221e4b8f7aeaf78a733e",
+      "independent_rerun_sha256": "8515507370ac4a2aa32fede8d3d1d0200fb2430e7342221e4b8f7aeaf78a733e",
+      "byte_identical": true
+    }
+  },
+  "training_records": {
+    "row_count": 128,
+    "all_non_runtime_fields_byte_equal": true,
+    "runtime_field": "training_seconds",
+    "runtime_field_expected_to_vary": true
+  },
+  "all_deterministic_outputs_reproduced": true
+}

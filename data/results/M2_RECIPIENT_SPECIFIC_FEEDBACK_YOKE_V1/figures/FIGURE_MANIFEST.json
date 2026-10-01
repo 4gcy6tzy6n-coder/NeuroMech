@@ -1,0 +1,70 @@
+{
+  "experiment": "M2_RECIPIENT_SPECIFIC_FEEDBACK_YOKE_V1",
+  "classification": "post-result exploratory artificial transfer study",
+  "source_files": {
+    "plot_source": {
+      "path": "model/M2_RECIPIENT_SPECIFIC_FEEDBACK_YOKE_V1/plot_results.py",
+      "sha256": "ae855107a46e0dc9a3f91d3c524d5d643ab6ec7a310a1708c183861d5d54c2a2",
+      "bytes": 6868
+    },
+    "episode_results": {
+      "path": "data/results/M2_RECIPIENT_SPECIFIC_FEEDBACK_YOKE_V1/canonical/episode_results.csv",
+      "sha256": "7c8d88752e859dbd7cfd05e170c8aed9e6969d8ffd88e5800cc3ff27c6662e79",
+      "bytes": 50902304
+    },
+    "summary": {
+      "path": "data/results/M2_RECIPIENT_SPECIFIC_FEEDBACK_YOKE_V1/canonical/summary.json",
+      "sha256": "8515507370ac4a2aa32fede8d3d1d0200fb2430e7342221e4b8f7aeaf78a733e",
+      "bytes": 5110
+    }
+  },
+  "figure_files": {
+    "pdf": {
+      "path": "data/results/M2_RECIPIENT_SPECIFIC_FEEDBACK_YOKE_V1/figures/M2_RECIPIENT_SPECIFIC_FEEDBACK_YOKE_V1.pdf",
+      "sha256": "bfa5cdcb0d5920d1c86d11e5c56f45f838b4697ab5751cd259cacc1fb5d8f381",
+      "bytes": 48504
+    },
+    "svg": {
+      "path": "data/results/M2_RECIPIENT_SPECIFIC_FEEDBACK_YOKE_V1/figures/M2_RECIPIENT_SPECIFIC_FEEDBACK_YOKE_V1.svg",
+      "sha256": "c67ad8e0eee2009d0c5d59306640a670c2ab00964125813b823a618b0675d48c",
+      "bytes": 27886
+    },
+    "png": {
+      "path": "data/results/M2_RECIPIENT_SPECIFIC_FEEDBACK_YOKE_V1/figures/M2_RECIPIENT_SPECIFIC_FEEDBACK_YOKE_V1.png",
+      "sha256": "1089b25acfa28634e7ae1e400444b69e87f7da7f57d3d5e2684d1fdd51f157fc",
+      "bytes": 341505
+    },
+    "tiff": {
+      "path": "data/results/M2_RECIPIENT_SPECIFIC_FEEDBACK_YOKE_V1/figures/M2_RECIPIENT_SPECIFIC_FEEDBACK_YOKE_V1.tiff",
+      "sha256": "2980c71c6e6cda42549f129afbfac66fda8bc16d400b5e538d357c8d57267f52",
+      "bytes": 34459982
+    },
+    "layout": {
+      "path": "data/results/M2_RECIPIENT_SPECIFIC_FEEDBACK_YOKE_V1/figures/M2_RECIPIENT_SPECIFIC_FEEDBACK_YOKE_V1.layout.json",
+      "sha256": "37fc8c7c6bc1b62673bdecb2f118a9d0e843a6cebc81f00e39801591992bbe4b",
+      "bytes": 1099
+    },
+    "alignment": {
+      "path": "data/results/M2_RECIPIENT_SPECIFIC_FEEDBACK_YOKE_V1/figures/M2_RECIPIENT_SPECIFIC_FEEDBACK_YOKE_V1.alignment.json",
+      "sha256": "4cb4303ff3f7dc60a890fdb19ac9825ee97a92d5c3e7845bc91706f6ce8ebd81",
+      "bytes": 1664
+    }
+  },
+  "figure_spec": {
+    "width_mm": 180,
+    "height_mm": 86,
+    "raster_dpi": 600,
+    "vector_formats": [
+      "PDF",
+      "SVG"
+    ],
+    "editable_text": true
+  },
+  "qa": {
+    "static_preflight": "PASS: 21 pass, 0 warn, 0 fail",
+    "panel_alignment": "PASS: strict; 0 fail, 0 warn",
+    "pdf_text": "PASS: minimum 5.2 pt; 40 text runs; none below 5 pt",
+    "collision_audit": "PASS: strict; 0 findings",
+    "visual_inspection": "PASS: primary reference line no longer intersects annotations; axes and descriptive heatmap legible"
+  }
+}
