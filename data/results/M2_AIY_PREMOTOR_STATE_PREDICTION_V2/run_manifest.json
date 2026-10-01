@@ -1,0 +1,11 @@
+{
+  "experiment_id": "M2_AIY_PREMOTOR_STATE_PREDICTION_V2",
+  "runner_sha256": "e4324d889f56fa27c481a14c7d000673d250a0a73f48896e5e758c300b51ecec",
+  "contract_sha256": "088c7025e997c1c8da4cb1cd904dd8e3b11cbab0ee90814342a2e8b8e97a0a9e",
+  "outputs": {
+    "animal_horizon_results.csv": "77aaffcb40b6eaeadb10457c14da4f0e6ce78ec53ce02cf3f39304a801b66aa9",
+    "summary.json": "b895cd37fa82316376faef743ba367d94190cf161c2a46975f6d11bda8865e1c",
+    "POSTRUN_VERIFICATION.json": "217b1909535f086a65d0ad3a7b588d827e70c8c7c1d901ecd8337a108282c3a1"
+  },
+  "verifier_sha256": "1bba907e834b6b190a3c8398b2ce6d1fd77e78340282afc5ebbe28932cb51a59"
+}
