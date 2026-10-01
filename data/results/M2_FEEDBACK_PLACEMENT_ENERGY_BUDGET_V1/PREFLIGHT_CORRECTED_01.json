@@ -88,7 +88,10 @@
   },
   "primary": "Held-out TRANSIENT_PULSE movement_mae; SENSORY_SITE_1D minus OUTPUT_SITE_1D among both validation-budget-feasible policies",
   "output_dir": "data/results/M2_FEEDBACK_PLACEMENT_ENERGY_BUDGET_V1/canonical",
-  "followup_outcomes_inspected": false,
+  "followup_outcomes_inspected": true,
   "amendment": "EXECUTION_INCIDENT_01: eval_one restricted to the active training seed block after frozen verifier rejected duplicated rows; no design or analysis rule changed.",
-  "supersedes_preflight_sha256": "912b17b05f52b3d0d7600a7ef53bd3602c1e40265f5fe190e2c41f489144417a"
+  "supersedes_preflight_sha256": "912b17b05f52b3d0d7600a7ef53bd3602c1e40265f5fe190e2c41f489144417a",
+  "initial_invalid_run_summary_seen_before_correction": true,
+  "initial_invalid_run_summary_used_for_analysis": false,
+  "corrected_run_outcomes_inspected_before_corrected_execution": false
 }

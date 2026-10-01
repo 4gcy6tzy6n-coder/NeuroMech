@@ -1,0 +1,45 @@
+{
+  "note": "These are the invalid duplicated-block first execution; decompress to recover exact source CSV bytes.",
+  "files": [
+    {
+      "raw_file": "fit_manifest.csv",
+      "raw_bytes": 37302,
+      "raw_sha256": "fbced3e92edb12f4bdde2180586c9edf0c2a575a4f6a80b676fb49bc416422ed",
+      "compressed_file": "fit_manifest.csv.gz",
+      "compressed_bytes": 13133,
+      "compressed_sha256": "49f15ec9a2a8bf74acc76691da1bbb89be290d0185ce4f12b3152a0d71a039c7"
+    },
+    {
+      "raw_file": "selection_manifest.csv",
+      "raw_bytes": 7446,
+      "raw_sha256": "33fbd67f8ca9cfcb48b0002587507f7a7ccd083725022f587b5aa3eebd5b3137",
+      "compressed_file": "selection_manifest.csv.gz",
+      "compressed_bytes": 2151,
+      "compressed_sha256": "8a379e5666b9d7099d01f0cde489a77c01cf406182227490b8057d0c154e328a"
+    },
+    {
+      "raw_file": "test_episodes.csv",
+      "raw_bytes": 41571126,
+      "raw_sha256": "518ac6a2a2607b928d5dffa27670a6af034c7414df467e6e258ff5bd15112159",
+      "compressed_file": "test_episodes.csv.gz",
+      "compressed_bytes": 11166840,
+      "compressed_sha256": "46cca22a4ee48ded94c33797a42cfa099a617c9a2ca291c179ba6aef5a4fdc2c"
+    },
+    {
+      "raw_file": "test_seed_summary.csv",
+      "raw_bytes": 44857,
+      "raw_sha256": "82617b92b33e57c3328c5aa9e753e35bcdda270fce26ef4c3db8b1b45583f3db",
+      "compressed_file": "test_seed_summary.csv.gz",
+      "compressed_bytes": 15077,
+      "compressed_sha256": "83342b3ed5b20b88885b932226821cf410a1df979aa7ebe13cb6de418dc80a47"
+    },
+    {
+      "raw_file": "validation_episodes.csv",
+      "raw_bytes": 72392503,
+      "raw_sha256": "846fe84c46f76c3c8edcc606351f856b3d06f22a3299821b0f367abf4172794a",
+      "compressed_file": "validation_episodes.csv.gz",
+      "compressed_bytes": 22112906,
+      "compressed_sha256": "f8a216c5c670f3192333b6a722272fb36fa969dd5c38a244802b4ceb8b5125d0"
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "status": "PASS",
+  "canonical_output_dir": "data/results/M2_FEEDBACK_PLACEMENT_ENERGY_BUDGET_V1/canonical",
+  "independent_rerun_output_dir": "/tmp/M2_FEEDBACK_PLACEMENT_ENERGY_BUDGET_V1_rerun",
+  "byte_identical_artifacts": [
+    "validation_episodes.csv",
+    "selection_manifest.csv",
+    "test_episodes.csv",
+    "test_seed_summary.csv",
+    "summary.json"
+  ],
+  "fit_manifest_non_timing_fields_identical": true,
+  "fit_rows": 320,
+  "checks": {
+    "validation_episodes.csv": {
+      "byte_identical": true,
+      "canonical_sha256": "28c253cd308f48765ac72e0d56f20bf0f06e27e17b10b8d75269b1a361f65c0e",
+      "rerun_sha256": "28c253cd308f48765ac72e0d56f20bf0f06e27e17b10b8d75269b1a361f65c0e"
+    },
+    "selection_manifest.csv": {
+      "byte_identical": true,
+      "canonical_sha256": "1a4c8365cd8f08bb59038b0e52a59f5226a3d1741e71ed331557dedc687cf23e",
+      "rerun_sha256": "1a4c8365cd8f08bb59038b0e52a59f5226a3d1741e71ed331557dedc687cf23e"
+    },
+    "test_episodes.csv": {
+      "byte_identical": true,
+      "canonical_sha256": "3d588a59376f2798e060ff79218f231fc4eb1c812a0b055bb45b591bd9a75012",
+      "rerun_sha256": "3d588a59376f2798e060ff79218f231fc4eb1c812a0b055bb45b591bd9a75012"
+    },
+    "test_seed_summary.csv": {
+      "byte_identical": true,
+      "canonical_sha256": "094ae2d479066f4e6c4124f8076ebfeff7db995a4b9fe0bb16f42c6ed664d16b",
+      "rerun_sha256": "094ae2d479066f4e6c4124f8076ebfeff7db995a4b9fe0bb16f42c6ed664d16b"
+    },
+    "summary.json": {
+      "byte_identical": true,
+      "canonical_sha256": "0162275d4b16bc4ea57756d3c76211e2ac1d6a96cef4108c009d6b8e6e03a522",
+      "rerun_sha256": "0162275d4b16bc4ea57756d3c76211e2ac1d6a96cef4108c009d6b8e6e03a522"
+    },
+    "fit_manifest.csv": {
+      "all_non_timing_fields_identical": true,
+      "rows": 320
+    }
+  },
+  "timing_note": "training_seconds intentionally differs; run-level duration also differs."
+}

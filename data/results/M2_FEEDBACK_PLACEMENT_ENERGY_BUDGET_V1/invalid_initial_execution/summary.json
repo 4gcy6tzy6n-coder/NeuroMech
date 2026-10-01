@@ -1,0 +1,780 @@
+{
+  "experiment": "M2_FEEDBACK_PLACEMENT_ENERGY_BUDGET_V1",
+  "classification": "post-result exploratory artificial follow-up; validation-selected policies; fresh seed blocks",
+  "training_seed_blocks": 16,
+  "training_candidates": 320,
+  "validation_episode_rows": 491520,
+  "selected_test_episode_rows": 245760,
+  "test_seed_summary_rows": 240,
+  "energy_budget": 0.5,
+  "primary_condition": "TRANSIENT_PULSE",
+  "primary_metric": "movement_mae",
+  "primary_contrast": "SENSORY_SITE_1D minus OUTPUT_SITE_1D among blocks with validation-feasible policies; negative favors sensory-site",
+  "primary_paired_seed_block_values": [
+    {
+      "seed_block": 0,
+      "sensory_minus_output_mae": 0.015644736918664137
+    },
+    {
+      "seed_block": 1,
+      "sensory_minus_output_mae": 0.011977483367638597
+    },
+    {
+      "seed_block": 2,
+      "sensory_minus_output_mae": 0.012391270490477169
+    },
+    {
+      "seed_block": 3,
+      "sensory_minus_output_mae": 0.014896945165285558
+    },
+    {
+      "seed_block": 4,
+      "sensory_minus_output_mae": 0.014264485354023748
+    },
+    {
+      "seed_block": 5,
+      "sensory_minus_output_mae": 0.011892149959885578
+    },
+    {
+      "seed_block": 6,
+      "sensory_minus_output_mae": 0.011840132714307727
+    },
+    {
+      "seed_block": 7,
+      "sensory_minus_output_mae": 0.014395245388626854
+    },
+    {
+      "seed_block": 8,
+      "sensory_minus_output_mae": 0.009291075653801273
+    },
+    {
+      "seed_block": 9,
+      "sensory_minus_output_mae": 0.012316456811817034
+    },
+    {
+      "seed_block": 10,
+      "sensory_minus_output_mae": 0.014690085322433655
+    },
+    {
+      "seed_block": 11,
+      "sensory_minus_output_mae": 0.012317989322577771
+    },
+    {
+      "seed_block": 12,
+      "sensory_minus_output_mae": 0.01307635245693406
+    },
+    {
+      "seed_block": 13,
+      "sensory_minus_output_mae": 0.013545462562417454
+    },
+    {
+      "seed_block": 14,
+      "sensory_minus_output_mae": 0.013366303334915841
+    },
+    {
+      "seed_block": 15,
+      "sensory_minus_output_mae": 0.013893978808050378
+    }
+  ],
+  "primary_contrast_summary": {
+    "mean": 0.013112509601991052,
+    "median": 0.01322132789592495,
+    "ci95_low": 0.012341513984285209,
+    "ci95_high": 0.01383339065068881,
+    "n_seed_blocks": 16
+  },
+  "primary_validation_feasible_blocks": 16,
+  "primary_budget_status": "BOTH_TEST_MEAN_CIS_WITHIN_BUDGET",
+  "heldout_primary_energy_by_arm": {
+    "SENSORY_SITE_1D": {
+      "mean": 0.43992593405754105,
+      "median": 0.4398586536142097,
+      "ci95_low": 0.43833260470272445,
+      "ci95_high": 0.4414771865684771,
+      "n_seed_blocks": 16
+    },
+    "OUTPUT_SITE_1D": {
+      "mean": 0.45336730438115336,
+      "median": 0.4533259287359295,
+      "ci95_low": 0.4504771457696718,
+      "ci95_high": 0.4561730013361245,
+      "n_seed_blocks": 16
+    }
+  },
+  "validation_feasibility_counts": {
+    "SENSORY_SITE_1D": 16,
+    "OUTPUT_SITE_1D": 16,
+    "NO_FEEDBACK_1D": 16,
+    "GENERIC_RNN_1D": 16,
+    "GRU_8": 16
+  },
+  "metric_summary": {
+    "TRANSIENT_PULSE": {
+      "SENSORY_SITE_1D": {
+        "movement_mse": {
+          "mean": 0.31328445928848786,
+          "median": 0.3139623430836959,
+          "ci95_low": 0.306037564092283,
+          "ci95_high": 0.32041013126762197,
+          "n_seed_blocks": 16
+        },
+        "movement_mae": {
+          "mean": 0.4837063950476912,
+          "median": 0.4833556742855709,
+          "ci95_low": 0.4787823691462162,
+          "ci95_high": 0.4886861467287518,
+          "n_seed_blocks": 16
+        },
+        "state_accuracy": {
+          "mean": 0.9374427795410156,
+          "median": 0.9352874755859375,
+          "ci95_low": 0.9343719164530436,
+          "ci95_high": 0.9408658504486085,
+          "n_seed_blocks": 16
+        },
+        "command_energy": {
+          "mean": 0.43992593405754105,
+          "median": 0.4398586536142097,
+          "ci95_low": 0.4383504399289936,
+          "ci95_high": 0.4414925221560989,
+          "n_seed_blocks": 16
+        },
+        "pulse_window_mae": {
+          "mean": 0.6590121193828902,
+          "median": 0.6568311684141236,
+          "ci95_low": 0.6523914802556956,
+          "ci95_high": 0.6658247315676713,
+          "n_seed_blocks": 16
+        },
+        "mean_switch_latency_steps": {
+          "mean": 3.92526420494265,
+          "median": 3.905146329365079,
+          "ci95_low": 3.7923216290200994,
+          "ci95_high": 4.055534630625294,
+          "n_seed_blocks": 16
+        }
+      },
+      "OUTPUT_SITE_1D": {
+        "movement_mse": {
+          "mean": 0.31011334285420195,
+          "median": 0.3099189695849853,
+          "ci95_low": 0.3022484351426215,
+          "ci95_high": 0.3177117441250208,
+          "n_seed_blocks": 16
+        },
+        "movement_mae": {
+          "mean": 0.47059388544570013,
+          "median": 0.4706218628118653,
+          "ci95_low": 0.4650934557293106,
+          "ci95_high": 0.47619685364433295,
+          "n_seed_blocks": 16
+        },
+        "state_accuracy": {
+          "mean": 0.9372227986653646,
+          "median": 0.9347788492838542,
+          "ci95_low": 0.9340953191121419,
+          "ci95_high": 0.9406986236572266,
+          "n_seed_blocks": 16
+        },
+        "command_energy": {
+          "mean": 0.45336730438115336,
+          "median": 0.4533259287359295,
+          "ci95_low": 0.4505932326742124,
+          "ci95_high": 0.456135723748179,
+          "n_seed_blocks": 16
+        },
+        "pulse_window_mae": {
+          "mean": 0.641992451527838,
+          "median": 0.642829532360138,
+          "ci95_low": 0.6349946686090827,
+          "ci95_high": 0.6489826840098623,
+          "n_seed_blocks": 16
+        },
+        "mean_switch_latency_steps": {
+          "mean": 4.153757619926525,
+          "median": 4.119667658730158,
+          "ci95_low": 4.019825963555896,
+          "ci95_high": 4.284690489266237,
+          "n_seed_blocks": 16
+        }
+      },
+      "NO_FEEDBACK_1D": {
+        "movement_mse": {
+          "mean": 0.35377992497991867,
+          "median": 0.3539589150186089,
+          "ci95_low": 0.347327376340747,
+          "ci95_high": 0.3605030868840802,
+          "n_seed_blocks": 16
+        },
+        "movement_mae": {
+          "mean": 0.5175798119057318,
+          "median": 0.5174522681004652,
+          "ci95_low": 0.5130037372642842,
+          "ci95_high": 0.5223206207387201,
+          "n_seed_blocks": 16
+        },
+        "state_accuracy": {
+          "mean": 0.9305508931477864,
+          "median": 0.9287465413411458,
+          "ci95_low": 0.9274845123291016,
+          "ci95_high": 0.9338823954264323,
+          "n_seed_blocks": 16
+        },
+        "command_energy": {
+          "mean": 0.4292555611959854,
+          "median": 0.4286175279266531,
+          "ci95_low": 0.4277952174225521,
+          "ci95_high": 0.43073295704162146,
+          "n_seed_blocks": 16
+        },
+        "pulse_window_mae": {
+          "mean": 0.7335208051951888,
+          "median": 0.7314928724117552,
+          "ci95_low": 0.7278213357108682,
+          "ci95_high": 0.7392736686761308,
+          "n_seed_blocks": 16
+        },
+        "mean_switch_latency_steps": {
+          "mean": 3.4161262590669135,
+          "median": 3.42771358005733,
+          "ci95_low": 3.2839542262768355,
+          "ci95_high": 3.5450649282247504,
+          "n_seed_blocks": 16
+        }
+      },
+      "GENERIC_RNN_1D": {
+        "movement_mse": {
+          "mean": 0.33967034339110924,
+          "median": 0.3404693291981323,
+          "ci95_low": 0.3325676346887734,
+          "ci95_high": 0.34659193876218025,
+          "n_seed_blocks": 16
+        },
+        "movement_mae": {
+          "mean": 0.5018123500075115,
+          "median": 0.5015057406616835,
+          "ci95_low": 0.4971356096653086,
+          "ci95_high": 0.5066646083794795,
+          "n_seed_blocks": 16
+        },
+        "state_accuracy": {
+          "mean": 0.9345518747965494,
+          "median": 0.9324239095052084,
+          "ci95_low": 0.9314683119455973,
+          "ci95_high": 0.9379139423370362,
+          "n_seed_blocks": 16
+        },
+        "command_energy": {
+          "mean": 0.4286793123931298,
+          "median": 0.428669477059412,
+          "ci95_low": 0.42717572899463624,
+          "ci95_high": 0.43015555192131516,
+          "n_seed_blocks": 16
+        },
+        "pulse_window_mae": {
+          "mean": 0.6736039261389434,
+          "median": 0.6712545032776724,
+          "ci95_low": 0.6671610946665926,
+          "ci95_high": 0.6800229304921708,
+          "n_seed_blocks": 16
+        },
+        "mean_switch_latency_steps": {
+          "mean": 3.840690373463598,
+          "median": 3.842695932539682,
+          "ci95_low": 3.7019723567788874,
+          "ci95_high": 3.971871566585023,
+          "n_seed_blocks": 16
+        }
+      },
+      "GRU_8": {
+        "movement_mse": {
+          "mean": 0.41014098136816657,
+          "median": 0.40993303244578994,
+          "ci95_low": 0.4042361909301657,
+          "ci95_high": 0.4160477513805223,
+          "n_seed_blocks": 16
+        },
+        "movement_mae": {
+          "mean": 0.5918252784625339,
+          "median": 0.592254456338882,
+          "ci95_low": 0.5876581573727288,
+          "ci95_high": 0.5959997213605991,
+          "n_seed_blocks": 16
+        },
+        "state_accuracy": {
+          "mean": 0.9262097676595052,
+          "median": 0.9239044189453125,
+          "ci95_low": 0.9233003934224446,
+          "ci95_high": 0.9293829600016276,
+          "n_seed_blocks": 16
+        },
+        "command_energy": {
+          "mean": 0.3201794355303664,
+          "median": 0.3200760523218631,
+          "ci95_low": 0.3190164919531383,
+          "ci95_high": 0.3214371992493043,
+          "n_seed_blocks": 16
+        },
+        "pulse_window_mae": {
+          "mean": 0.8022461716146831,
+          "median": 0.8010600830586496,
+          "ci95_low": 0.7980028798996356,
+          "ci95_high": 0.8066747976109478,
+          "n_seed_blocks": 16
+        },
+        "mean_switch_latency_steps": {
+          "mean": 3.168774737773705,
+          "median": 3.1642259650072155,
+          "ci95_low": 3.0492011544400266,
+          "ci95_high": 3.28951055237608,
+          "n_seed_blocks": 16
+        }
+      }
+    },
+    "SUSTAINED_SWITCH": {
+      "SENSORY_SITE_1D": {
+        "movement_mse": {
+          "mean": 0.46857822993806886,
+          "median": 0.4698551591928792,
+          "ci95_low": 0.4613309217821772,
+          "ci95_high": 0.4752829015327627,
+          "n_seed_blocks": 16
+        },
+        "movement_mae": {
+          "mean": 0.5623485407317066,
+          "median": 0.5621374615649761,
+          "ci95_low": 0.5576750445809169,
+          "ci95_high": 0.5667621326665819,
+          "n_seed_blocks": 16
+        },
+        "state_accuracy": {
+          "mean": 0.8553250630696615,
+          "median": 0.8549448649088542,
+          "ci95_low": 0.8520005067189533,
+          "ci95_high": 0.8588632742563884,
+          "n_seed_blocks": 16
+        },
+        "command_energy": {
+          "mean": 0.4475998878078774,
+          "median": 0.4472575019167957,
+          "ci95_low": 0.44675442979423097,
+          "ci95_high": 0.44854541617848753,
+          "n_seed_blocks": 16
+        },
+        "pulse_window_mae": {
+          "mean": 0.6458440085405222,
+          "median": 0.6456652417195055,
+          "ci95_low": 0.6368009267583894,
+          "ci95_high": 0.6548412010906326,
+          "n_seed_blocks": 16
+        },
+        "mean_switch_latency_steps": {
+          "mean": 3.0504800688388087,
+          "median": 3.046803001750337,
+          "ci95_low": 3.01699176788161,
+          "ci95_high": 3.0855011969173933,
+          "n_seed_blocks": 16
+        }
+      },
+      "OUTPUT_SITE_1D": {
+        "movement_mse": {
+          "mean": 0.4799470428874051,
+          "median": 0.4822933701134473,
+          "ci95_low": 0.47240477725841745,
+          "ci95_high": 0.4868646394140182,
+          "n_seed_blocks": 16
+        },
+        "movement_mae": {
+          "mean": 0.5581022493323462,
+          "median": 0.5585295901102607,
+          "ci95_low": 0.5529872028196213,
+          "ci95_high": 0.5629604311411444,
+          "n_seed_blocks": 16
+        },
+        "state_accuracy": {
+          "mean": 0.848290761311849,
+          "median": 0.8480275472005209,
+          "ci95_low": 0.8448670546213786,
+          "ci95_high": 0.8519580841064454,
+          "n_seed_blocks": 16
+        },
+        "command_energy": {
+          "mean": 0.45843419513445083,
+          "median": 0.4581837726852268,
+          "ci95_low": 0.4567209547552044,
+          "ci95_high": 0.46027300801134463,
+          "n_seed_blocks": 16
+        },
+        "pulse_window_mae": {
+          "mean": 0.6347934428663315,
+          "median": 0.6383361867432644,
+          "ci95_low": 0.6249010382375735,
+          "ci95_high": 0.6442602358843599,
+          "n_seed_blocks": 16
+        },
+        "mean_switch_latency_steps": {
+          "mean": 3.216905711575254,
+          "median": 3.2082867406057276,
+          "ci95_low": 3.1832198877300395,
+          "ci95_high": 3.2531845172416713,
+          "n_seed_blocks": 16
+        }
+      },
+      "NO_FEEDBACK_1D": {
+        "movement_mse": {
+          "mean": 0.4644059754813076,
+          "median": 0.4643136182598855,
+          "ci95_low": 0.45788163161351786,
+          "ci95_high": 0.47049176590495745,
+          "n_seed_blocks": 16
+        },
+        "movement_mae": {
+          "mean": 0.5670190871008886,
+          "median": 0.5668671474709379,
+          "ci95_low": 0.5626969154910831,
+          "ci95_high": 0.5711036391819442,
+          "n_seed_blocks": 16
+        },
+        "state_accuracy": {
+          "mean": 0.8648293813069661,
+          "median": 0.8655293782552084,
+          "ci95_low": 0.8616033871968587,
+          "ci95_high": 0.8682277043660482,
+          "n_seed_blocks": 16
+        },
+        "command_energy": {
+          "mean": 0.44549564946505915,
+          "median": 0.44556215878679695,
+          "ci95_low": 0.44477660680097875,
+          "ci95_high": 0.4462572526022704,
+          "n_seed_blocks": 16
+        },
+        "pulse_window_mae": {
+          "mean": 0.7042659561791842,
+          "median": 0.7035021587346736,
+          "ci95_low": 0.6967635872556481,
+          "ci95_high": 0.7115509863194028,
+          "n_seed_blocks": 16
+        },
+        "mean_switch_latency_steps": {
+          "mean": 2.7742850809564907,
+          "median": 2.7592647318587837,
+          "ci95_low": 2.7378580201096088,
+          "ci95_high": 2.812783008397896,
+          "n_seed_blocks": 16
+        }
+      },
+      "GENERIC_RNN_1D": {
+        "movement_mse": {
+          "mean": 0.48725936730240627,
+          "median": 0.4884111407894418,
+          "ci95_low": 0.48039509474555514,
+          "ci95_high": 0.49366950055125064,
+          "n_seed_blocks": 16
+        },
+        "movement_mae": {
+          "mean": 0.5762763760255408,
+          "median": 0.5760210663132961,
+          "ci95_low": 0.5717879383307231,
+          "ci95_high": 0.5805592210373869,
+          "n_seed_blocks": 16
+        },
+        "state_accuracy": {
+          "mean": 0.8564771016438801,
+          "median": 0.8562978108723958,
+          "ci95_low": 0.853179915746053,
+          "ci95_high": 0.8599472840627035,
+          "n_seed_blocks": 16
+        },
+        "command_energy": {
+          "mean": 0.43662833271500656,
+          "median": 0.4362904055746366,
+          "ci95_low": 0.43583398668636875,
+          "ci95_high": 0.43751677797035027,
+          "n_seed_blocks": 16
+        },
+        "pulse_window_mae": {
+          "mean": 0.6596706722762308,
+          "median": 0.6594243041040418,
+          "ci95_low": 0.6508900647146275,
+          "ci95_high": 0.668294488143366,
+          "n_seed_blocks": 16
+        },
+        "mean_switch_latency_steps": {
+          "mean": 3.003709751211505,
+          "median": 2.999245126291257,
+          "ci95_low": 2.969193588338303,
+          "ci95_high": 3.0387765089268823,
+          "n_seed_blocks": 16
+        }
+      },
+      "GRU_8": {
+        "movement_mse": {
+          "mean": 0.4832300562011218,
+          "median": 0.4832448043170476,
+          "ci95_low": 0.4780016990514655,
+          "ci95_high": 0.48824313288294663,
+          "n_seed_blocks": 16
+        },
+        "movement_mae": {
+          "mean": 0.6225988266758946,
+          "median": 0.6222966020039895,
+          "ci95_low": 0.6193714023012277,
+          "ci95_high": 0.6258095269348188,
+          "n_seed_blocks": 16
+        },
+        "state_accuracy": {
+          "mean": 0.8703333536783855,
+          "median": 0.870697021484375,
+          "ci95_low": 0.8672192255655924,
+          "ci95_high": 0.8735676288604737,
+          "n_seed_blocks": 16
+        },
+        "command_energy": {
+          "mean": 0.3323692138178733,
+          "median": 0.33255064098681586,
+          "ci95_low": 0.3316602555798134,
+          "ci95_high": 0.3330845730035874,
+          "n_seed_blocks": 16
+        },
+        "pulse_window_mae": {
+          "mean": 0.7756679071925416,
+          "median": 0.7773592748691204,
+          "ci95_low": 0.7701352268877979,
+          "ci95_high": 0.7808335114180652,
+          "n_seed_blocks": 16
+        },
+        "mean_switch_latency_steps": {
+          "mean": 2.608922121138633,
+          "median": 2.6098019114132396,
+          "ci95_low": 2.569415461395361,
+          "ci95_high": 2.650747426931813,
+          "n_seed_blocks": 16
+        }
+      }
+    },
+    "COMBINED_STRESS": {
+      "SENSORY_SITE_1D": {
+        "movement_mse": {
+          "mean": 0.6890904699216107,
+          "median": 0.6881255148600132,
+          "ci95_low": 0.6833921031511508,
+          "ci95_high": 0.694581258501162,
+          "n_seed_blocks": 16
+        },
+        "movement_mae": {
+          "mean": 0.7153880393108027,
+          "median": 0.7153782716889139,
+          "ci95_low": 0.7119539309884961,
+          "ci95_high": 0.7185503830248293,
+          "n_seed_blocks": 16
+        },
+        "state_accuracy": {
+          "mean": 0.7339057922363281,
+          "median": 0.7336781819661458,
+          "ci95_low": 0.7310135046641032,
+          "ci95_high": 0.7369378725687662,
+          "n_seed_blocks": 16
+        },
+        "command_energy": {
+          "mean": 0.41008834780721304,
+          "median": 0.4101474564033991,
+          "ci95_low": 0.4091714216101706,
+          "ci95_high": 0.41104592435109877,
+          "n_seed_blocks": 16
+        },
+        "pulse_window_mae": {
+          "mean": 0.9492104196879971,
+          "median": 0.9483355989403627,
+          "ci95_low": 0.9386461033436688,
+          "ci95_high": 0.9604661124337968,
+          "n_seed_blocks": 16
+        },
+        "mean_switch_latency_steps": {
+          "mean": 3.4934729215312728,
+          "median": 3.4996043778270343,
+          "ci95_low": 3.399025112252717,
+          "ci95_high": 3.5926975667149668,
+          "n_seed_blocks": 16
+        }
+      },
+      "OUTPUT_SITE_1D": {
+        "movement_mse": {
+          "mean": 0.6875543355146309,
+          "median": 0.6868070604756701,
+          "ci95_low": 0.6816400912133576,
+          "ci95_high": 0.6933008949432024,
+          "n_seed_blocks": 16
+        },
+        "movement_mae": {
+          "mean": 0.7123876306466244,
+          "median": 0.7118801053020415,
+          "ci95_low": 0.7087506736533828,
+          "ci95_high": 0.7158133273115369,
+          "n_seed_blocks": 16
+        },
+        "state_accuracy": {
+          "mean": 0.7355531056722006,
+          "median": 0.7342783610026042,
+          "ci95_low": 0.7323932488759358,
+          "ci95_high": 0.7389074961344401,
+          "n_seed_blocks": 16
+        },
+        "command_energy": {
+          "mean": 0.3927998408601501,
+          "median": 0.39328060463528924,
+          "ci95_low": 0.39120880743135256,
+          "ci95_high": 0.39439453327371415,
+          "n_seed_blocks": 16
+        },
+        "pulse_window_mae": {
+          "mean": 0.9212946700278883,
+          "median": 0.9206288170611576,
+          "ci95_low": 0.9100640728432695,
+          "ci95_high": 0.9331352405228264,
+          "n_seed_blocks": 16
+        },
+        "mean_switch_latency_steps": {
+          "mean": 3.652546854034272,
+          "median": 3.68545791652888,
+          "ci95_low": 3.55076256463685,
+          "ci95_high": 3.759320160899131,
+          "n_seed_blocks": 16
+        }
+      },
+      "NO_FEEDBACK_1D": {
+        "movement_mse": {
+          "mean": 0.6924430803410888,
+          "median": 0.6920819839948353,
+          "ci95_low": 0.6870408782124954,
+          "ci95_high": 0.697453771545522,
+          "n_seed_blocks": 16
+        },
+        "movement_mae": {
+          "mean": 0.7208328954247462,
+          "median": 0.7206870747894212,
+          "ci95_low": 0.717414081363132,
+          "ci95_high": 0.7239830377313514,
+          "n_seed_blocks": 16
+        },
+        "state_accuracy": {
+          "mean": 0.7315260569254558,
+          "median": 0.7305196126302083,
+          "ci95_low": 0.7289484977722168,
+          "ci95_high": 0.7342993577321371,
+          "n_seed_blocks": 16
+        },
+        "command_energy": {
+          "mean": 0.41812923378282674,
+          "median": 0.4181541377097473,
+          "ci95_low": 0.4173839273331236,
+          "ci95_high": 0.41895515953105067,
+          "n_seed_blocks": 16
+        },
+        "pulse_window_mae": {
+          "mean": 0.9861199459452511,
+          "median": 0.9858110283903415,
+          "ci95_low": 0.9778038474889634,
+          "ci95_high": 0.9945328142411941,
+          "n_seed_blocks": 16
+        },
+        "mean_switch_latency_steps": {
+          "mean": 3.2081684982271934,
+          "median": 3.174553137769865,
+          "ci95_low": 3.125296687794421,
+          "ci95_high": 3.2936949790834826,
+          "n_seed_blocks": 16
+        }
+      },
+      "GENERIC_RNN_1D": {
+        "movement_mse": {
+          "mean": 0.7012669691996729,
+          "median": 0.7001390926393576,
+          "ci95_low": 0.6957938719816451,
+          "ci95_high": 0.7065806013202416,
+          "n_seed_blocks": 16
+        },
+        "movement_mae": {
+          "mean": 0.7247384954873652,
+          "median": 0.7246851679323201,
+          "ci95_low": 0.721387987323291,
+          "ci95_high": 0.7278335247918308,
+          "n_seed_blocks": 16
+        },
+        "state_accuracy": {
+          "mean": 0.7336813608805339,
+          "median": 0.7336680094401041,
+          "ci95_low": 0.7308222134908041,
+          "ci95_high": 0.7366422176361084,
+          "n_seed_blocks": 16
+        },
+        "command_energy": {
+          "mean": 0.4013313601166516,
+          "median": 0.4013752249883773,
+          "ci95_low": 0.4004626624845558,
+          "ci95_high": 0.40225339776949454,
+          "n_seed_blocks": 16
+        },
+        "pulse_window_mae": {
+          "mean": 0.953971153970508,
+          "median": 0.9528505916664509,
+          "ci95_low": 0.9438116940151031,
+          "ci95_high": 0.9644016757001619,
+          "n_seed_blocks": 16
+        },
+        "mean_switch_latency_steps": {
+          "mean": 3.4485774133904723,
+          "median": 3.4446715190733745,
+          "ci95_low": 3.3572767251930418,
+          "ci95_high": 3.5465998748769834,
+          "n_seed_blocks": 16
+        }
+      },
+      "GRU_8": {
+        "movement_mse": {
+          "mean": 0.6934842622734294,
+          "median": 0.6933250573142122,
+          "ci95_low": 0.6885898976262173,
+          "ci95_high": 0.6980663830576208,
+          "n_seed_blocks": 16
+        },
+        "movement_mae": {
+          "mean": 0.7554586337704269,
+          "median": 0.7557318667701379,
+          "ci95_low": 0.7525068214510474,
+          "ci95_high": 0.7582079578992843,
+          "n_seed_blocks": 16
+        },
+        "state_accuracy": {
+          "mean": 0.7361545562744141,
+          "median": 0.7346649169921875,
+          "ci95_low": 0.7335636774698894,
+          "ci95_high": 0.7389101187388103,
+          "n_seed_blocks": 16
+        },
+        "command_energy": {
+          "mean": 0.319774512356885,
+          "median": 0.3197530893279912,
+          "ci95_low": 0.3190837636344299,
+          "ci95_high": 0.32057014919262866,
+          "n_seed_blocks": 16
+        },
+        "pulse_window_mae": {
+          "mean": 1.0092265761269392,
+          "median": 1.0087779217102733,
+          "ci95_low": 1.0026220889495883,
+          "ci95_high": 1.015983453344655,
+          "n_seed_blocks": 16
+        },
+        "mean_switch_latency_steps": {
+          "mean": 3.0646633532718237,
+          "median": 3.0325094203756313,
+          "ci95_low": 2.98538392819171,
+          "ci95_high": 3.152460393634334,
+          "n_seed_blocks": 16
+        }
+      }
+    }
+  },
+  "scope": "synthetic task only; no biological validation or general AI claim; energy budget selected after prior task outcomes"
+}

@@ -1,0 +1,72 @@
+{
+  "experiment": "M2_FEEDBACK_PLACEMENT_ENERGY_BUDGET_V1",
+  "contract_sha256": "c4e77ca3dcfcaff38482680909b700469c4a85dc2a83a2de5f0a26b71d1a1ccc",
+  "runner_sha256": "983c153045b33854b6fc59c0e7ba57bdfb1a4687ecc392e66498b6b9bc059036",
+  "base_model_runner_sha256": "2768e4766125d1e1302b1a772b98c28246416a1e69cbc2f1bfb9c09484f7b13b",
+  "verifier_sha256": "82b15efc166b463e09a99a96b62c5b7ee56730dc6e1110c7d29804eb692230e3",
+  "python": "3.12.13",
+  "numpy": "2.4.4",
+  "torch": "2.11.0",
+  "training_seeds": [
+    501000,
+    501001,
+    501002,
+    501003,
+    501004,
+    501005,
+    501006,
+    501007,
+    501008,
+    501009,
+    501010,
+    501011,
+    501012,
+    501013,
+    501014,
+    501015
+  ],
+  "penalties": [
+    0.0,
+    0.1,
+    0.3,
+    0.6
+  ],
+  "conditions": [
+    "TRANSIENT_PULSE",
+    "SUSTAINED_SWITCH",
+    "COMBINED_STRESS"
+  ],
+  "episodes_validation_per_condition_candidate": 32,
+  "episodes_test_per_condition_selected": 64,
+  "updates": 100,
+  "batch_size": 32,
+  "sequence_length": 96,
+  "energy_budget": 0.5,
+  "duration_seconds": 1213.5268197059631,
+  "outputs": {
+    "fit_manifest.csv": {
+      "bytes": 37302,
+      "sha256": "fbced3e92edb12f4bdde2180586c9edf0c2a575a4f6a80b676fb49bc416422ed"
+    },
+    "selection_manifest.csv": {
+      "bytes": 7446,
+      "sha256": "33fbd67f8ca9cfcb48b0002587507f7a7ccd083725022f587b5aa3eebd5b3137"
+    },
+    "summary.json": {
+      "bytes": 24760,
+      "sha256": "9e429b0a99a14dc35619269ce1343517e15a6ead57b67dd3cfbf5bbf96a7a828"
+    },
+    "test_episodes.csv": {
+      "bytes": 41571126,
+      "sha256": "518ac6a2a2607b928d5dffa27670a6af034c7414df467e6e258ff5bd15112159"
+    },
+    "test_seed_summary.csv": {
+      "bytes": 44857,
+      "sha256": "82617b92b33e57c3328c5aa9e753e35bcdda270fce26ef4c3db8b1b45583f3db"
+    },
+    "validation_episodes.csv": {
+      "bytes": 72392503,
+      "sha256": "846fe84c46f76c3c8edcc606351f856b3d06f22a3299821b0f367abf4172794a"
+    }
+  }
+}
