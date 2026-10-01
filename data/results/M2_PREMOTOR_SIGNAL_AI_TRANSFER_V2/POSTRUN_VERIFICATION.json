@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "episode_rows": 230400,
+  "fit_rows": 360,
+  "primary_contrasts_recomputed": 7,
+  "finite_auc_episode_rows": 226440,
+  "output_manifest_files_verified": 5
+}

@@ -1,0 +1,13 @@
+{
+  "experiment_id": "M2_PREMOTOR_SIGNAL_AI_TRANSFER_V2",
+  "contract_sha256": "b0279cb776e593209c2bb9007f6e2adfeb90d03cd998405951d7ffec3a664cb5",
+  "runner_sha256": "396f4ff0a0287e45bdd97587122ce54ca74c6469e2e79162ceb548fe6025b8c9",
+  "sha256": {
+    "PREFLIGHT.json": "cfc4a8cf689b86570fca2895421bebc685d9cd2d36df31c8d73512adac8258ed",
+    "episode_metrics.csv": "9bc1fb159d454c4c4c4148429cbaacde96686af2e6ee5f51e337d99549428c4f",
+    "training_metrics.csv": "621c6f8d305adc1b5647bf01837736261727e97f6441279b3e2cb5e1200db24f",
+    "summary.json": "5628ca6a58a308694443e01bd7c7b0cd58a858dddefc454a7934fe5c8eaae061",
+    "POSTRUN_VERIFICATION.json": "2c54b13b2f13d69dd338ac9211e69b902a9e8294e7b8bfe1fd57d181c9044671"
+  },
+  "verifier_sha256": "5bfe7af2dac5ed89782928c0e6576bae2d146fe4e442c5f834f7e1f371f8659b"
+}
