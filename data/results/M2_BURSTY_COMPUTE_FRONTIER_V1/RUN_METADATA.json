@@ -1,0 +1,66 @@
+{
+  "experiment_id": "M2_BURSTY_COMPUTE_FRONTIER_V1",
+  "contract_sha256": "8f33f04bdd0c94cb4e859e49fc68fda3b759ddb78e764c35cd3344c929c7667a",
+  "runner_sha256": "689e52a8cf12d537136936cefa424124df7aaa99b501c35a92cc913328058225",
+  "total_runtime_seconds": 614.29698275,
+  "seeds": [
+    840500,
+    840501,
+    840502,
+    840503,
+    840504,
+    840505,
+    840506,
+    840507,
+    840508,
+    840509,
+    840510,
+    840511,
+    840512,
+    840513,
+    840514,
+    840515,
+    840516,
+    840517,
+    840518,
+    840519,
+    840520,
+    840521,
+    840522,
+    840523,
+    840524,
+    840525,
+    840526,
+    840527,
+    840528,
+    840529,
+    840530,
+    840531
+  ],
+  "arms": [
+    "SENSORY_SITE",
+    "OUTPUT_SITE",
+    "NO_FEEDBACK",
+    "GENERIC_RNN",
+    "GRU_8"
+  ],
+  "checkpoints": [
+    60,
+    120,
+    240
+  ],
+  "q_values": [
+    0.5,
+    0.25,
+    0.125
+  ],
+  "parameter_counts": {
+    "SENSORY_SITE": 4,
+    "OUTPUT_SITE": 4,
+    "NO_FEEDBACK": 4,
+    "GENERIC_RNN": 4,
+    "GRU_8": 321
+  },
+  "episode_rows": 184320,
+  "checkpoint_rows": 480
+}

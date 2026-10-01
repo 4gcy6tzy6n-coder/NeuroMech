@@ -1,0 +1,24 @@
+{
+  "experiment_id": "M2_BURSTY_COMPUTE_FRONTIER_V1",
+  "passed": true,
+  "checks": {
+    "episode_grid_complete": true,
+    "checkpoint_grid_complete": true,
+    "no_duplicate_rows": true,
+    "metrics_finite_nonnegative": true,
+    "parameter_state_counts_consistent": true,
+    "seed_clustered_contrasts_recomputed": true,
+    "primary_condition_prespecified_in_contract": true
+  },
+  "row_counts": {
+    "episode_results": 184320,
+    "checkpoint_results": 480
+  },
+  "input_sha256": {
+    "episode_results.csv": "5508e5bcf990a2006019d60a05dacfea91b1441b70ba8f45ac3318edb0bad934",
+    "checkpoint_results.csv": "137a1e1f15ca6ede7380c18edfb6c25cd2c68f845702dbff9eb22057cb899b0c",
+    "CONTRACT.md": "8f33f04bdd0c94cb4e859e49fc68fda3b759ddb78e764c35cd3344c929c7667a",
+    "run_experiment.py": "689e52a8cf12d537136936cefa424124df7aaa99b501c35a92cc913328058225"
+  },
+  "verifier_sha256": "ff6c5699ac7da3fb6dfbd6389a6d9336273556d28370d2ad55f91806d1f12d22"
+}
