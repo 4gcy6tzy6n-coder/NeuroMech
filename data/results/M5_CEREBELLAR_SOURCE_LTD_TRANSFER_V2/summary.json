@@ -1,0 +1,308 @@
+{
+  "experiment_id": "M5_CEREBELLAR_SOURCE_LTD_TRANSFER_V2",
+  "classification": "post-result exploratory artificial transfer",
+  "task_seeds": [
+    6100,
+    6101,
+    6102,
+    6103,
+    6104,
+    6105,
+    6106,
+    6107,
+    6108,
+    6109,
+    6110,
+    6111
+  ],
+  "training_episodes_per_mapping": 1800,
+  "test_episodes_per_mapping": 500,
+  "episodes_per_mapping_total": 2300,
+  "primary_mapping": "ALIGNED",
+  "primary_outcome": "task-seed mean absolute reward-time error in seconds",
+  "source_window_seconds": [
+    -0.15,
+    -0.025
+  ],
+  "source_frame_offsets": [
+    -5,
+    -1
+  ],
+  "summary_rows": [
+    {
+      "mapping": "ALIGNED",
+      "arm": "BIO_CF_LTD",
+      "n_task_seeds": 12,
+      "mean_seed_mae_s": 0.12523810512102143,
+      "bootstrap95_low_s": 0.12355055842927547,
+      "bootstrap95_high_s": 0.1271780711164422,
+      "min_seed_mae_s": 0.12120299201468569,
+      "max_seed_mae_s": 0.1333713572005053
+    },
+    {
+      "mapping": "ALIGNED",
+      "arm": "BIO_NO_TRACE",
+      "n_task_seeds": 12,
+      "mean_seed_mae_s": 0.10969529673902521,
+      "bootstrap95_low_s": 0.10642823312548785,
+      "bootstrap95_high_s": 0.11276922067068444,
+      "min_seed_mae_s": 0.0987752113355346,
+      "max_seed_mae_s": 0.11703730261927818
+    },
+    {
+      "mapping": "ALIGNED",
+      "arm": "BIO_CF_TIME_SHUFFLED",
+      "n_task_seeds": 12,
+      "mean_seed_mae_s": 0.1252418780722815,
+      "bootstrap95_low_s": 0.12356175916943728,
+      "bootstrap95_high_s": 0.1271770069537383,
+      "min_seed_mae_s": 0.12130049112448085,
+      "max_seed_mae_s": 0.1333713572005053
+    },
+    {
+      "mapping": "ALIGNED",
+      "arm": "BIO_CELL_SHUFFLED",
+      "n_task_seeds": 12,
+      "mean_seed_mae_s": 0.8761612732506737,
+      "bootstrap95_low_s": 0.6725873308629743,
+      "bootstrap95_high_s": 1.0672489535430811,
+      "min_seed_mae_s": 0.16774750090160762,
+      "max_seed_mae_s": 1.33090518474123
+    },
+    {
+      "mapping": "ALIGNED",
+      "arm": "GENERIC_RBF_CF_LTD",
+      "n_task_seeds": 12,
+      "mean_seed_mae_s": 0.1029645224367564,
+      "bootstrap95_low_s": 0.10116850920235973,
+      "bootstrap95_high_s": 0.1050525403758855,
+      "min_seed_mae_s": 0.09808685482539505,
+      "max_seed_mae_s": 0.11180725106617129
+    },
+    {
+      "mapping": "ALIGNED",
+      "arm": "SHUFFLED_BIO_CF_LTD",
+      "n_task_seeds": 12,
+      "mean_seed_mae_s": 0.15883400983502674,
+      "bootstrap95_low_s": 0.15358182352712577,
+      "bootstrap95_high_s": 0.16377997593797208,
+      "min_seed_mae_s": 0.14039260297950182,
+      "max_seed_mae_s": 0.17464171639932344
+    },
+    {
+      "mapping": "ALIGNED",
+      "arm": "UNIFORM_POOL",
+      "n_task_seeds": 12,
+      "mean_seed_mae_s": 0.7213890682670453,
+      "bootstrap95_low_s": 0.7121948537427891,
+      "bootstrap95_high_s": 0.7308718593595183,
+      "min_seed_mae_s": 0.6943075032168952,
+      "max_seed_mae_s": 0.7478251847412303
+    },
+    {
+      "mapping": "ALIGNED",
+      "arm": "EMPIRICAL_TIMER",
+      "n_task_seeds": 12,
+      "mean_seed_mae_s": 0.07526962479804049,
+      "bootstrap95_low_s": 0.07450955380819016,
+      "bootstrap95_high_s": 0.0760452111864111,
+      "min_seed_mae_s": 0.0736307995862572,
+      "max_seed_mae_s": 0.07746076092585603
+    },
+    {
+      "mapping": "REVERSED",
+      "arm": "BIO_CF_LTD",
+      "n_task_seeds": 12,
+      "mean_seed_mae_s": 0.12537088092985701,
+      "bootstrap95_low_s": 0.12373581254696575,
+      "bootstrap95_high_s": 0.12725075957521684,
+      "min_seed_mae_s": 0.12191654297568309,
+      "max_seed_mae_s": 0.13287464193707257
+    },
+    {
+      "mapping": "REVERSED",
+      "arm": "BIO_NO_TRACE",
+      "n_task_seeds": 12,
+      "mean_seed_mae_s": 0.10868484095683088,
+      "bootstrap95_low_s": 0.1059828285897667,
+      "bootstrap95_high_s": 0.1111928948946578,
+      "min_seed_mae_s": 0.0999561031541655,
+      "max_seed_mae_s": 0.11450595732492727
+    },
+    {
+      "mapping": "REVERSED",
+      "arm": "BIO_CF_TIME_SHUFFLED",
+      "n_task_seeds": 12,
+      "mean_seed_mae_s": 0.12536016989912732,
+      "bootstrap95_low_s": 0.12374666768121066,
+      "bootstrap95_high_s": 0.12721966204892088,
+      "min_seed_mae_s": 0.12197654297568308,
+      "max_seed_mae_s": 0.13287464193707257
+    },
+    {
+      "mapping": "REVERSED",
+      "arm": "BIO_CELL_SHUFFLED",
+      "n_task_seeds": 12,
+      "mean_seed_mae_s": 0.8743320816523883,
+      "bootstrap95_low_s": 0.6845610324970286,
+      "bootstrap95_high_s": 1.0621740073434114,
+      "min_seed_mae_s": 0.3032225014074186,
+      "max_seed_mae_s": 1.3547508527014542
+    },
+    {
+      "mapping": "REVERSED",
+      "arm": "GENERIC_RBF_CF_LTD",
+      "n_task_seeds": 12,
+      "mean_seed_mae_s": 0.10366188093307481,
+      "bootstrap95_low_s": 0.10197986098449911,
+      "bootstrap95_high_s": 0.10553993843022487,
+      "min_seed_mae_s": 0.10070705967205376,
+      "max_seed_mae_s": 0.11000142435452874
+    },
+    {
+      "mapping": "REVERSED",
+      "arm": "SHUFFLED_BIO_CF_LTD",
+      "n_task_seeds": 12,
+      "mean_seed_mae_s": 0.158063040188534,
+      "bootstrap95_low_s": 0.15309932340906182,
+      "bootstrap95_high_s": 0.1628445014907255,
+      "min_seed_mae_s": 0.14386630175500006,
+      "max_seed_mae_s": 0.17046820933968332
+    },
+    {
+      "mapping": "REVERSED",
+      "arm": "UNIFORM_POOL",
+      "n_task_seeds": 12,
+      "mean_seed_mae_s": 0.7151790428873617,
+      "bootstrap95_low_s": 0.7082348618208522,
+      "bootstrap95_high_s": 0.7224643807161625,
+      "min_seed_mae_s": 0.6938251847412302,
+      "max_seed_mae_s": 0.7411075032168951
+    },
+    {
+      "mapping": "REVERSED",
+      "arm": "EMPIRICAL_TIMER",
+      "n_task_seeds": 12,
+      "mean_seed_mae_s": 0.07521451681080324,
+      "bootstrap95_low_s": 0.07443719968357697,
+      "bootstrap95_high_s": 0.07599303438741063,
+      "min_seed_mae_s": 0.07323897625228638,
+      "max_seed_mae_s": 0.07736262211322328
+    }
+  ],
+  "paired_contrasts": [
+    {
+      "mapping": "ALIGNED",
+      "contrast": "BIO_NO_TRACE minus BIO_CF_LTD",
+      "mean_mae_improvement_s": -0.015542808381996218,
+      "bootstrap95_low_s": -0.019037167254224403,
+      "bootstrap95_high_s": -0.011933728485107799,
+      "task_seeds_favoring_BIO_CF_LTD": 0
+    },
+    {
+      "mapping": "ALIGNED",
+      "contrast": "BIO_CF_TIME_SHUFFLED minus BIO_CF_LTD",
+      "mean_mae_improvement_s": 3.7729512600651973e-06,
+      "bootstrap95_low_s": -1.8055923668594775e-05,
+      "bootstrap95_high_s": 2.812492581626483e-05,
+      "task_seeds_favoring_BIO_CF_LTD": 2
+    },
+    {
+      "mapping": "ALIGNED",
+      "contrast": "BIO_CELL_SHUFFLED minus BIO_CF_LTD",
+      "mean_mae_improvement_s": 0.7509231681296521,
+      "bootstrap95_low_s": 0.5452316041064506,
+      "bootstrap95_high_s": 0.94274733817432,
+      "task_seeds_favoring_BIO_CF_LTD": 12
+    },
+    {
+      "mapping": "ALIGNED",
+      "contrast": "GENERIC_RBF_CF_LTD minus BIO_CF_LTD",
+      "mean_mae_improvement_s": -0.022273582684265044,
+      "bootstrap95_low_s": -0.022916431609309697,
+      "bootstrap95_high_s": -0.021585443554311128,
+      "task_seeds_favoring_BIO_CF_LTD": 0
+    },
+    {
+      "mapping": "ALIGNED",
+      "contrast": "SHUFFLED_BIO_CF_LTD minus BIO_CF_LTD",
+      "mean_mae_improvement_s": 0.033595904714005316,
+      "bootstrap95_low_s": 0.0289143379111927,
+      "bootstrap95_high_s": 0.037900358211356525,
+      "task_seeds_favoring_BIO_CF_LTD": 12
+    },
+    {
+      "mapping": "ALIGNED",
+      "contrast": "UNIFORM_POOL minus BIO_CF_LTD",
+      "mean_mae_improvement_s": 0.5961509631460239,
+      "bootstrap95_low_s": 0.5880347724319758,
+      "bootstrap95_high_s": 0.6043246670549807,
+      "task_seeds_favoring_BIO_CF_LTD": 12
+    },
+    {
+      "mapping": "ALIGNED",
+      "contrast": "EMPIRICAL_TIMER minus BIO_CF_LTD",
+      "mean_mae_improvement_s": -0.04996848032298092,
+      "bootstrap95_low_s": -0.052189018685223014,
+      "bootstrap95_high_s": -0.04787045811355844,
+      "task_seeds_favoring_BIO_CF_LTD": 0
+    },
+    {
+      "mapping": "REVERSED",
+      "contrast": "BIO_NO_TRACE minus BIO_CF_LTD",
+      "mean_mae_improvement_s": -0.016686039973026135,
+      "bootstrap95_low_s": -0.020293369081700645,
+      "bootstrap95_high_s": -0.013791834707463582,
+      "task_seeds_favoring_BIO_CF_LTD": 0
+    },
+    {
+      "mapping": "REVERSED",
+      "contrast": "BIO_CF_TIME_SHUFFLED minus BIO_CF_LTD",
+      "mean_mae_improvement_s": -1.0711030729722062e-05,
+      "bootstrap95_low_s": -7.00000000000064e-05,
+      "bootstrap95_high_s": 2.9999999999999933e-05,
+      "task_seeds_favoring_BIO_CF_LTD": 5
+    },
+    {
+      "mapping": "REVERSED",
+      "contrast": "BIO_CELL_SHUFFLED minus BIO_CF_LTD",
+      "mean_mae_improvement_s": 0.7489612007225311,
+      "bootstrap95_low_s": 0.5568953903283799,
+      "bootstrap95_high_s": 0.9376375083307714,
+      "task_seeds_favoring_BIO_CF_LTD": 12
+    },
+    {
+      "mapping": "REVERSED",
+      "contrast": "GENERIC_RBF_CF_LTD minus BIO_CF_LTD",
+      "mean_mae_improvement_s": -0.021708999996782222,
+      "bootstrap95_low_s": -0.022752047486140594,
+      "bootstrap95_high_s": -0.02069563047010695,
+      "task_seeds_favoring_BIO_CF_LTD": 0
+    },
+    {
+      "mapping": "REVERSED",
+      "contrast": "SHUFFLED_BIO_CF_LTD minus BIO_CF_LTD",
+      "mean_mae_improvement_s": 0.032692159258676974,
+      "bootstrap95_low_s": 0.027899573088964978,
+      "bootstrap95_high_s": 0.037086742252910955,
+      "task_seeds_favoring_BIO_CF_LTD": 12
+    },
+    {
+      "mapping": "REVERSED",
+      "contrast": "UNIFORM_POOL minus BIO_CF_LTD",
+      "mean_mae_improvement_s": 0.5898081619575049,
+      "bootstrap95_low_s": 0.5819822068673868,
+      "bootstrap95_high_s": 0.5978508761487599,
+      "task_seeds_favoring_BIO_CF_LTD": 12
+    },
+    {
+      "mapping": "REVERSED",
+      "contrast": "EMPIRICAL_TIMER minus BIO_CF_LTD",
+      "mean_mae_improvement_s": -0.05015636411905378,
+      "bootstrap95_low_s": -0.05229916426705714,
+      "bootstrap95_high_s": -0.04813393488533794,
+      "task_seeds_favoring_BIO_CF_LTD": 0
+    }
+  ],
+  "interpretation": "Any result is limited to this synthetic task and extracted mean temporal profiles; no biological causality or general AI claim follows."
+}

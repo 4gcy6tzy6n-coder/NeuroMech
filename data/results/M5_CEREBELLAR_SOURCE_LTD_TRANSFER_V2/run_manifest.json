@@ -1,0 +1,51 @@
+{
+  "experiment_id": "M5_CEREBELLAR_SOURCE_LTD_TRANSFER_V2",
+  "classification": "post-result exploratory artificial transfer",
+  "started_unix": 1790830745.573638,
+  "finished_unix": 1790830765.4396338,
+  "duration_seconds": 19.86599588394165,
+  "python": "3.9.6 (default, Jan  9 2026, 11:03:41) \n[Clang 17.0.0 (clang-1700.6.4.2)]",
+  "platform": "macOS-26.2-arm64-arm-64bit",
+  "numpy": "2.0.2",
+  "h5py": "3.14.0",
+  "raw_sha256": "822e47a83f84e647e4f9571832f920663009e73bd2814d4118331d99792f4147",
+  "raw_sha256_matches_dryad": true,
+  "acquisition_manifest_sha256": "016eae437ff68659af0add29b5187a0193c0cabd031f2dbea0a17180fb9b8158",
+  "contract_sha256": "b0304f1aea422da91e0a19abec06a29367e50016a1344e14fa9e6ce20891ad2e",
+  "runner_sha256": "acf455bd523975fd8d3d59f2ff6434afe86fa0f79343bde5af8557353370b308",
+  "seed_count": 12,
+  "outputs": {
+    "arm_summary.csv": {
+      "bytes": 2117,
+      "sha256": "a3198a6c4390bfef7eb1ca71ff94db228345197f727fe64d9997c98d0c6e6f9e"
+    },
+    "episode_results.csv": {
+      "bytes": 8016731,
+      "sha256": "43b7a645c4fa1df862ca81ab495a99fc21d804b789c76a303e32cbf4d6fa0dd3"
+    },
+    "fit_manifest.csv": {
+      "bytes": 4314,
+      "sha256": "dc34f45e0239253e720d9d2d28a801bbda1ef6c9fc5d68fa02d019f33a71341f"
+    },
+    "paired_contrasts.csv": {
+      "bytes": 1617,
+      "sha256": "723279d4ccfe5f9ac5a7ae73f009d5d07b75ee9d4c4c084a3c64a97b32927028"
+    },
+    "selected_cell_provenance.csv": {
+      "bytes": 1455,
+      "sha256": "1848d4516e66a277a899cbdf6378cc01c8edf2fd2b340a6ceb2dce265ba88782"
+    },
+    "summary.json": {
+      "bytes": 10168,
+      "sha256": "c2f3087db1fe2ec8e31d762d41fb559a2f0d682980bd1acfb9aa2858ff29d24a"
+    },
+    "task_seed_results.csv": {
+      "bytes": 14102,
+      "sha256": "7eec47a45b894c8e28db2fc6a725a05df749cdae5ec13834b93a53b20d751c3f"
+    },
+    "temporal_bases.csv": {
+      "bytes": 232003,
+      "sha256": "08321493f159be223d7e4fa4829f85c34d0282c30cab5faa73241c3ab73f5a6c"
+    }
+  }
+}
