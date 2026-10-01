@@ -1,0 +1,263 @@
+{
+  "experiment": "M5_CF_LTD_LICK_DECODING_V1",
+  "classification": "retrospective exploratory within-session source-data analysis",
+  "sessions": 16,
+  "eligible_trials": 1393,
+  "heldout_trial_time_predictions": 494712,
+  "primary_metric": "mean trial-averaged held-out Brier score",
+  "primary_contrast": "Brier(TIME_LICK_HISTORY) - Brier(CF_LTD), positive favors incremental CF-LTD association",
+  "mean_session_brier_gain": {
+    "CF_CELL_SHUFFLED": -0.0008825270914064598,
+    "CF_EVENT_YOKED": -0.0005243752588345807,
+    "CF_LTD": -0.0028366959955841682,
+    "CF_NO_TRACE": -0.0034696517664659894,
+    "CF_TIME_SHUFFLED": -6.893970620182321e-05,
+    "RAW_GRC_PC1": -0.004102458327563577,
+    "RAW_GRC_PC16": -0.0040772156700276604,
+    "TIME_LICK_HISTORY": 0.0
+  },
+  "inference_scope": "session-descriptive; animal IDs unavailable; no session-level p-values or CIs",
+  "interpretation": "predictive association only; not causal, measured synaptic weights, prospective closed-loop forecast, or AI benefit",
+  "group_summary": [
+    {
+      "group": "1-s expert",
+      "arm": "CF_CELL_SHUFFLED",
+      "n_sessions": 5,
+      "mean_session_brier": 0.13234202982886023,
+      "mean_session_brier_gain_vs_time_history": -0.0008825270914064598,
+      "mean_session_average_precision": 0.8198061268065702,
+      "sessions_with_positive_brier_gain": 1,
+      "inference_scope": "descriptive sessions; animal ID unavailable"
+    },
+    {
+      "group": "1-s expert",
+      "arm": "CF_EVENT_YOKED",
+      "n_sessions": 5,
+      "mean_session_brier": 0.13198387799628836,
+      "mean_session_brier_gain_vs_time_history": -0.0005243752588345807,
+      "mean_session_average_precision": 0.8222375648939984,
+      "sessions_with_positive_brier_gain": 0,
+      "inference_scope": "descriptive sessions; animal ID unavailable"
+    },
+    {
+      "group": "1-s expert",
+      "arm": "CF_LTD",
+      "n_sessions": 5,
+      "mean_session_brier": 0.13429619873303794,
+      "mean_session_brier_gain_vs_time_history": -0.0028366959955841682,
+      "mean_session_average_precision": 0.8132092410267177,
+      "sessions_with_positive_brier_gain": 1,
+      "inference_scope": "descriptive sessions; animal ID unavailable"
+    },
+    {
+      "group": "1-s expert",
+      "arm": "CF_NO_TRACE",
+      "n_sessions": 5,
+      "mean_session_brier": 0.13492915450391976,
+      "mean_session_brier_gain_vs_time_history": -0.0034696517664659894,
+      "mean_session_average_precision": 0.810801049212901,
+      "sessions_with_positive_brier_gain": 1,
+      "inference_scope": "descriptive sessions; animal ID unavailable"
+    },
+    {
+      "group": "1-s expert",
+      "arm": "CF_TIME_SHUFFLED",
+      "n_sessions": 5,
+      "mean_session_brier": 0.1315284424436556,
+      "mean_session_brier_gain_vs_time_history": -6.893970620182321e-05,
+      "mean_session_average_precision": 0.8175141936915404,
+      "sessions_with_positive_brier_gain": 2,
+      "inference_scope": "descriptive sessions; animal ID unavailable"
+    },
+    {
+      "group": "1-s expert",
+      "arm": "RAW_GRC_PC1",
+      "n_sessions": 5,
+      "mean_session_brier": 0.13556196106501733,
+      "mean_session_brier_gain_vs_time_history": -0.004102458327563577,
+      "mean_session_average_precision": 0.8082781736482214,
+      "sessions_with_positive_brier_gain": 2,
+      "inference_scope": "descriptive sessions; animal ID unavailable"
+    },
+    {
+      "group": "1-s expert",
+      "arm": "RAW_GRC_PC16",
+      "n_sessions": 5,
+      "mean_session_brier": 0.13553671840748144,
+      "mean_session_brier_gain_vs_time_history": -0.0040772156700276604,
+      "mean_session_average_precision": 0.8338727441657205,
+      "sessions_with_positive_brier_gain": 2,
+      "inference_scope": "descriptive sessions; animal ID unavailable"
+    },
+    {
+      "group": "1-s expert",
+      "arm": "TIME_LICK_HISTORY",
+      "n_sessions": 5,
+      "mean_session_brier": 0.13145950273745377,
+      "mean_session_brier_gain_vs_time_history": 0.0,
+      "mean_session_average_precision": 0.8183302517625363,
+      "sessions_with_positive_brier_gain": 0,
+      "inference_scope": "descriptive sessions; animal ID unavailable"
+    },
+    {
+      "group": "2-s expert",
+      "arm": "CF_CELL_SHUFFLED",
+      "n_sessions": 6,
+      "mean_session_brier": 0.08744851852465356,
+      "mean_session_brier_gain_vs_time_history": 0.0003339335108792976,
+      "mean_session_average_precision": 0.8709481480101506,
+      "sessions_with_positive_brier_gain": 5,
+      "inference_scope": "descriptive sessions; animal ID unavailable"
+    },
+    {
+      "group": "2-s expert",
+      "arm": "CF_EVENT_YOKED",
+      "n_sessions": 6,
+      "mean_session_brier": 0.08679563272150241,
+      "mean_session_brier_gain_vs_time_history": 0.0009868193140304428,
+      "mean_session_average_precision": 0.871011540047979,
+      "sessions_with_positive_brier_gain": 4,
+      "inference_scope": "descriptive sessions; animal ID unavailable"
+    },
+    {
+      "group": "2-s expert",
+      "arm": "CF_LTD",
+      "n_sessions": 6,
+      "mean_session_brier": 0.08681154668319603,
+      "mean_session_brier_gain_vs_time_history": 0.0009709053523368228,
+      "mean_session_average_precision": 0.8706120918025398,
+      "sessions_with_positive_brier_gain": 3,
+      "inference_scope": "descriptive sessions; animal ID unavailable"
+    },
+    {
+      "group": "2-s expert",
+      "arm": "CF_NO_TRACE",
+      "n_sessions": 6,
+      "mean_session_brier": 0.08720506713256482,
+      "mean_session_brier_gain_vs_time_history": 0.0005773849029680212,
+      "mean_session_average_precision": 0.8691568570031668,
+      "sessions_with_positive_brier_gain": 2,
+      "inference_scope": "descriptive sessions; animal ID unavailable"
+    },
+    {
+      "group": "2-s expert",
+      "arm": "CF_TIME_SHUFFLED",
+      "n_sessions": 6,
+      "mean_session_brier": 0.08757607066862955,
+      "mean_session_brier_gain_vs_time_history": 0.00020638136690330952,
+      "mean_session_average_precision": 0.8704858588489861,
+      "sessions_with_positive_brier_gain": 3,
+      "inference_scope": "descriptive sessions; animal ID unavailable"
+    },
+    {
+      "group": "2-s expert",
+      "arm": "RAW_GRC_PC1",
+      "n_sessions": 6,
+      "mean_session_brier": 0.08605811236005484,
+      "mean_session_brier_gain_vs_time_history": 0.0017243396754780226,
+      "mean_session_average_precision": 0.874765899227765,
+      "sessions_with_positive_brier_gain": 6,
+      "inference_scope": "descriptive sessions; animal ID unavailable"
+    },
+    {
+      "group": "2-s expert",
+      "arm": "RAW_GRC_PC16",
+      "n_sessions": 6,
+      "mean_session_brier": 0.08398640536012035,
+      "mean_session_brier_gain_vs_time_history": 0.003796046675412508,
+      "mean_session_average_precision": 0.8813999696755893,
+      "sessions_with_positive_brier_gain": 6,
+      "inference_scope": "descriptive sessions; animal ID unavailable"
+    },
+    {
+      "group": "2-s expert",
+      "arm": "TIME_LICK_HISTORY",
+      "n_sessions": 6,
+      "mean_session_brier": 0.08778245203553285,
+      "mean_session_brier_gain_vs_time_history": 0.0,
+      "mean_session_average_precision": 0.8693354726728755,
+      "sessions_with_positive_brier_gain": 0,
+      "inference_scope": "descriptive sessions; animal ID unavailable"
+    },
+    {
+      "group": "2-s novice / 1-s expert",
+      "arm": "CF_CELL_SHUFFLED",
+      "n_sessions": 5,
+      "mean_session_brier": 0.1311098162621882,
+      "mean_session_brier_gain_vs_time_history": -0.0002093267139014636,
+      "mean_session_average_precision": 0.8254454932965529,
+      "sessions_with_positive_brier_gain": 1,
+      "inference_scope": "descriptive sessions; animal ID unavailable"
+    },
+    {
+      "group": "2-s novice / 1-s expert",
+      "arm": "CF_EVENT_YOKED",
+      "n_sessions": 5,
+      "mean_session_brier": 0.13062783631198827,
+      "mean_session_brier_gain_vs_time_history": 0.00027265323629848336,
+      "mean_session_average_precision": 0.8245621300380496,
+      "sessions_with_positive_brier_gain": 3,
+      "inference_scope": "descriptive sessions; animal ID unavailable"
+    },
+    {
+      "group": "2-s novice / 1-s expert",
+      "arm": "CF_LTD",
+      "n_sessions": 5,
+      "mean_session_brier": 0.1314825167637485,
+      "mean_session_brier_gain_vs_time_history": -0.0005820272154617972,
+      "mean_session_average_precision": 0.8221053537171791,
+      "sessions_with_positive_brier_gain": 2,
+      "inference_scope": "descriptive sessions; animal ID unavailable"
+    },
+    {
+      "group": "2-s novice / 1-s expert",
+      "arm": "CF_NO_TRACE",
+      "n_sessions": 5,
+      "mean_session_brier": 0.13098224870469996,
+      "mean_session_brier_gain_vs_time_history": -8.175915641323306e-05,
+      "mean_session_average_precision": 0.8246748793967914,
+      "sessions_with_positive_brier_gain": 3,
+      "inference_scope": "descriptive sessions; animal ID unavailable"
+    },
+    {
+      "group": "2-s novice / 1-s expert",
+      "arm": "CF_TIME_SHUFFLED",
+      "n_sessions": 5,
+      "mean_session_brier": 0.1303936412956764,
+      "mean_session_brier_gain_vs_time_history": 0.0005068482526103139,
+      "mean_session_average_precision": 0.8257209730597317,
+      "sessions_with_positive_brier_gain": 3,
+      "inference_scope": "descriptive sessions; animal ID unavailable"
+    },
+    {
+      "group": "2-s novice / 1-s expert",
+      "arm": "RAW_GRC_PC1",
+      "n_sessions": 5,
+      "mean_session_brier": 0.13073527938940224,
+      "mean_session_brier_gain_vs_time_history": 0.00016521015888451286,
+      "mean_session_average_precision": 0.824863077245948,
+      "sessions_with_positive_brier_gain": 4,
+      "inference_scope": "descriptive sessions; animal ID unavailable"
+    },
+    {
+      "group": "2-s novice / 1-s expert",
+      "arm": "RAW_GRC_PC16",
+      "n_sessions": 5,
+      "mean_session_brier": 0.1343251635083742,
+      "mean_session_brier_gain_vs_time_history": -0.003424673960087457,
+      "mean_session_average_precision": 0.8191644920461656,
+      "sessions_with_positive_brier_gain": 3,
+      "inference_scope": "descriptive sessions; animal ID unavailable"
+    },
+    {
+      "group": "2-s novice / 1-s expert",
+      "arm": "TIME_LICK_HISTORY",
+      "n_sessions": 5,
+      "mean_session_brier": 0.13090048954828676,
+      "mean_session_brier_gain_vs_time_history": 0.0,
+      "mean_session_average_precision": 0.8250675418745184,
+      "sessions_with_positive_brier_gain": 0,
+      "inference_scope": "descriptive sessions; animal ID unavailable"
+    }
+  ]
+}

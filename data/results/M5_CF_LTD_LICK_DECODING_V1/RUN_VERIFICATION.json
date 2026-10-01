@@ -1,0 +1,64 @@
+{
+  "experiment": "M5_CF_LTD_LICK_DECODING_V1",
+  "verified_at_utc": "2026-10-01T09:26:34.874666+00:00",
+  "independent_verifier": {
+    "path": "model/M5_CF_LTD_LICK_DECODING_V1/verify_results.py",
+    "sha256": "d80e7b9c1722901e71a731cb8d88e0c3b94904ea86bded727dad9cf0a821c159",
+    "status": "PASS"
+  },
+  "canonical_manifest_sha256": "f1b1953954f9c0c5a4e1dfd71263b73b0464385f63e9aaf32823374448f975b9",
+  "independent_full_rerun": "/tmp/neuromech_m5_cf_ltd_lick_rerun/canonical",
+  "rerun_status": "PASS",
+  "scientific_outputs": {
+    "heldout_predictions.csv": {
+      "bytes": 38175136,
+      "canonical_sha256": "6c262fb3860004f37d339481dcb9f39bc540c8dabf8b724dcd8a6b6b80ffca24",
+      "rerun_sha256": "6c262fb3860004f37d339481dcb9f39bc540c8dabf8b724dcd8a6b6b80ffca24",
+      "byte_identical": true
+    },
+    "trial_scores.csv": {
+      "bytes": 1010718,
+      "canonical_sha256": "edcf6b86639a0ef9de117568f5870e7c208735c3bff497de5f3e4b348ba5b7ca",
+      "rerun_sha256": "edcf6b86639a0ef9de117568f5870e7c208735c3bff497de5f3e4b348ba5b7ca",
+      "byte_identical": true
+    },
+    "fold_fit_manifest.csv": {
+      "bytes": 72834,
+      "canonical_sha256": "1f1ac22e720521daebbac27bae2e14fa58dbb6efa998a538844503a3d9ce963f",
+      "rerun_sha256": "1f1ac22e720521daebbac27bae2e14fa58dbb6efa998a538844503a3d9ce963f",
+      "byte_identical": true
+    },
+    "session_inventory.csv": {
+      "bytes": 1260,
+      "canonical_sha256": "a94c696e0a8c912ebfb41068c3bb33b476c99aa4f1972d1eb7b9d78aaef87fd1",
+      "rerun_sha256": "a94c696e0a8c912ebfb41068c3bb33b476c99aa4f1972d1eb7b9d78aaef87fd1",
+      "byte_identical": true
+    },
+    "session_summary.csv": {
+      "bytes": 19347,
+      "canonical_sha256": "d7a3e24e7ad7be87f67bf227fe7f3c9bf37bb7759a80be126a1bf4c96ee79d60",
+      "rerun_sha256": "d7a3e24e7ad7be87f67bf227fe7f3c9bf37bb7759a80be126a1bf4c96ee79d60",
+      "byte_identical": true
+    },
+    "group_summary.csv": {
+      "bytes": 3426,
+      "canonical_sha256": "b36ee8e98b5d3162ffa209ccd4c997fe715b1a08d0ff7bcb3f465b6597cfba10",
+      "rerun_sha256": "b36ee8e98b5d3162ffa209ccd4c997fe715b1a08d0ff7bcb3f465b6597cfba10",
+      "byte_identical": true
+    },
+    "summary.json": {
+      "bytes": 10522,
+      "canonical_sha256": "f08bc2a909564d166ccb81107cae58cd393a12a078afe5ebb70e5322d1e5c599",
+      "rerun_sha256": "f08bc2a909564d166ccb81107cae58cd393a12a078afe5ebb70e5322d1e5c599",
+      "byte_identical": true
+    }
+  },
+  "scope": {
+    "sessions": 16,
+    "eligible_trials": 1393,
+    "unique_trial_time_samples": 61839,
+    "model_arm_predictions": 494712,
+    "fold_fit_records": 640
+  },
+  "note": "Rerun output was compared before any metric or model-selection changes; timing metadata/manifests are excluded from byte-identity comparison."
+}

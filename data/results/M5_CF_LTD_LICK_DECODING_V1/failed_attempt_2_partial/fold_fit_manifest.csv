@@ -1,0 +1,2 @@
+group,session_index,fold,arm,n_train_trials,n_test_trials,n_train_samples,n_test_samples,n_features,fit_status,training_event_fraction
+1-s expert,1,0,TIME_LICK_HISTORY,8,3,184,69,10,FIT_OK,0.42934782608695654

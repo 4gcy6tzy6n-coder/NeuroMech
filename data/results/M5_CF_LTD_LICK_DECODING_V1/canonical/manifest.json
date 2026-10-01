@@ -1,0 +1,73 @@
+{
+  "experiment": "M5_CF_LTD_LICK_DECODING_V1",
+  "classification": "retrospective exploratory within-session source-data analysis",
+  "started_unix": 1790846267.221676,
+  "finished_unix": 1790846291.117155,
+  "duration_seconds": 23.89547896385193,
+  "pinned_hashes": {
+    "raw": "822e47a83f84e647e4f9571832f920663009e73bd2814d4118331d99792f4147",
+    "manifest": "016eae437ff68659af0add29b5187a0193c0cabd031f2dbea0a17180fb9b8158",
+    "contract": "9c9102f4908719f61dfeabea5b51ccb605f24aebedc73677d41731c454f4b943",
+    "runner": "f3b2a7169d21f7f335ab7e1ea4b4c38c5bf4dd679f2cb195880943b0e017cdb5",
+    "source_helper": "fe2571f84583a6e3819517de4acc7633075ee4f26aadd31082e3af7e611d6713"
+  },
+  "author_source": {
+    "repository_commit": "124c83e1af83e9680e05f9827448579d02345fa3",
+    "grc_cf_script_sha256": "a4a916f16052d2a0aa2f0bce969a2efd70646c1af244755a003452ce5b849628",
+    "lick_script_sha256": "3bd4f5c2a19613f55de517825d9edf5ccd6f2dba83cd6e1961bafeab1f3eb337"
+  },
+  "python": "3.12.13",
+  "numpy": "2.4.4",
+  "scipy": "1.17.1",
+  "h5py": "3.16.0",
+  "sklearn": "1.8.0",
+  "folds": 5,
+  "seed": 20261001,
+  "arms": [
+    "TIME_LICK_HISTORY",
+    "CF_LTD",
+    "CF_NO_TRACE",
+    "CF_EVENT_YOKED",
+    "CF_TIME_SHUFFLED",
+    "CF_CELL_SHUFFLED",
+    "RAW_GRC_PC1",
+    "RAW_GRC_PC16"
+  ],
+  "label_window_s": [
+    0.05,
+    0.2
+  ],
+  "censor_gap_s": 0.05,
+  "logistic_C": 1.0,
+  "max_iter": 1000,
+  "output_files": {
+    "fold_fit_manifest.csv": {
+      "bytes": 72834,
+      "sha256": "1f1ac22e720521daebbac27bae2e14fa58dbb6efa998a538844503a3d9ce963f"
+    },
+    "group_summary.csv": {
+      "bytes": 3426,
+      "sha256": "b36ee8e98b5d3162ffa209ccd4c997fe715b1a08d0ff7bcb3f465b6597cfba10"
+    },
+    "heldout_predictions.csv": {
+      "bytes": 38175136,
+      "sha256": "6c262fb3860004f37d339481dcb9f39bc540c8dabf8b724dcd8a6b6b80ffca24"
+    },
+    "session_inventory.csv": {
+      "bytes": 1260,
+      "sha256": "a94c696e0a8c912ebfb41068c3bb33b476c99aa4f1972d1eb7b9d78aaef87fd1"
+    },
+    "session_summary.csv": {
+      "bytes": 19347,
+      "sha256": "d7a3e24e7ad7be87f67bf227fe7f3c9bf37bb7759a80be126a1bf4c96ee79d60"
+    },
+    "summary.json": {
+      "bytes": 10522,
+      "sha256": "f08bc2a909564d166ccb81107cae58cd393a12a078afe5ebb70e5322d1e5c599"
+    },
+    "trial_scores.csv": {
+      "bytes": 1010718,
+      "sha256": "edcf6b86639a0ef9de117568f5870e7c208735c3bff497de5f3e4b348ba5b7ca"
+    }
+  }
+}

@@ -1,0 +1,25 @@
+group,arm,n_sessions,mean_session_brier,mean_session_brier_gain_vs_time_history,mean_session_average_precision,sessions_with_positive_brier_gain,inference_scope
+1-s expert,CF_CELL_SHUFFLED,5,0.13234202982886023,-0.0008825270914064598,0.8198061268065702,1,descriptive sessions; animal ID unavailable
+1-s expert,CF_EVENT_YOKED,5,0.13198387799628836,-0.0005243752588345807,0.8222375648939984,0,descriptive sessions; animal ID unavailable
+1-s expert,CF_LTD,5,0.13429619873303794,-0.0028366959955841682,0.8132092410267177,1,descriptive sessions; animal ID unavailable
+1-s expert,CF_NO_TRACE,5,0.13492915450391976,-0.0034696517664659894,0.810801049212901,1,descriptive sessions; animal ID unavailable
+1-s expert,CF_TIME_SHUFFLED,5,0.1315284424436556,-6.893970620182321e-05,0.8175141936915404,2,descriptive sessions; animal ID unavailable
+1-s expert,RAW_GRC_PC1,5,0.13556196106501733,-0.004102458327563577,0.8082781736482214,2,descriptive sessions; animal ID unavailable
+1-s expert,RAW_GRC_PC16,5,0.13553671840748144,-0.0040772156700276604,0.8338727441657205,2,descriptive sessions; animal ID unavailable
+1-s expert,TIME_LICK_HISTORY,5,0.13145950273745377,0.0,0.8183302517625363,0,descriptive sessions; animal ID unavailable
+2-s expert,CF_CELL_SHUFFLED,6,0.08744851852465356,0.0003339335108792976,0.8709481480101506,5,descriptive sessions; animal ID unavailable
+2-s expert,CF_EVENT_YOKED,6,0.08679563272150241,0.0009868193140304428,0.871011540047979,4,descriptive sessions; animal ID unavailable
+2-s expert,CF_LTD,6,0.08681154668319603,0.0009709053523368228,0.8706120918025398,3,descriptive sessions; animal ID unavailable
+2-s expert,CF_NO_TRACE,6,0.08720506713256482,0.0005773849029680212,0.8691568570031668,2,descriptive sessions; animal ID unavailable
+2-s expert,CF_TIME_SHUFFLED,6,0.08757607066862955,0.00020638136690330952,0.8704858588489861,3,descriptive sessions; animal ID unavailable
+2-s expert,RAW_GRC_PC1,6,0.08605811236005484,0.0017243396754780226,0.874765899227765,6,descriptive sessions; animal ID unavailable
+2-s expert,RAW_GRC_PC16,6,0.08398640536012035,0.003796046675412508,0.8813999696755893,6,descriptive sessions; animal ID unavailable
+2-s expert,TIME_LICK_HISTORY,6,0.08778245203553285,0.0,0.8693354726728755,0,descriptive sessions; animal ID unavailable
+2-s novice / 1-s expert,CF_CELL_SHUFFLED,5,0.1311098162621882,-0.0002093267139014636,0.8254454932965529,1,descriptive sessions; animal ID unavailable
+2-s novice / 1-s expert,CF_EVENT_YOKED,5,0.13062783631198827,0.00027265323629848336,0.8245621300380496,3,descriptive sessions; animal ID unavailable
+2-s novice / 1-s expert,CF_LTD,5,0.1314825167637485,-0.0005820272154617972,0.8221053537171791,2,descriptive sessions; animal ID unavailable
+2-s novice / 1-s expert,CF_NO_TRACE,5,0.13098224870469996,-8.175915641323306e-05,0.8246748793967914,3,descriptive sessions; animal ID unavailable
+2-s novice / 1-s expert,CF_TIME_SHUFFLED,5,0.1303936412956764,0.0005068482526103139,0.8257209730597317,3,descriptive sessions; animal ID unavailable
+2-s novice / 1-s expert,RAW_GRC_PC1,5,0.13073527938940224,0.00016521015888451286,0.824863077245948,4,descriptive sessions; animal ID unavailable
+2-s novice / 1-s expert,RAW_GRC_PC16,5,0.1343251635083742,-0.003424673960087457,0.8191644920461656,3,descriptive sessions; animal ID unavailable
+2-s novice / 1-s expert,TIME_LICK_HISTORY,5,0.13090048954828676,0.0,0.8250675418745184,0,descriptive sessions; animal ID unavailable
