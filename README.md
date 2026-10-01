@@ -6,6 +6,10 @@ Biological findings, computational abstractions, and artificial-system results a
 
 The current evidence and novelty assessment is recorded in the [NMI claim and novelty audit](summery/NMI_CLAIM_AND_NOVELTY_AUDIT_20261001.md). It identifies the next useful work as mechanism-aligned computation and stronger comparisons, rather than another broad candidate or dataset search.
 
+## Manuscript in progress
+
+An internal, evidence-bounded manuscript draft is underway in [`manuscript/`](manuscript/). It separates biological source evidence from artificial-task outcomes and does not claim that the current portfolio establishes a general transfer law or a project-wide AI advantage. The M2 action-conditioned discriminator remains pending; the independently owned M1/RR19 line is not integrated here. See the [article draft](manuscript/ARTICLE_DRAFT.md), [claim–evidence ledger](manuscript/CLAIM_EVIDENCE_LEDGER.md), and [figure storyboard](manuscript/FIGURE_STORYBOARD.md).
+
 ## Converged NMI experiment program
 
 The project is narrowing to **two biological-computation cases tested against one shared artificial benchmark**, rather than adding more independent candidate mechanisms. The central hypothesis is that a computation grounded in a real nervous system can provide a useful inductive bias under the conditions that make its defining information relevant; the effect must survive mechanism-targeted and capacity-matched controls. This is a hypothesis to test, not an established result.
