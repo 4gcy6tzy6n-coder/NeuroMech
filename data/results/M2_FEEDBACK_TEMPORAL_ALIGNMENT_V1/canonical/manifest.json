@@ -1,0 +1,113 @@
+{
+  "experiment": "M2_FEEDBACK_TEMPORAL_ALIGNMENT_V1",
+  "contract_sha256": "5df3b5a21b6ee1833c8ff0ad45f5ac7ec668d98f1306045f02215c1f5fa05bbd",
+  "runner_sha256": "1f0904f0e5ec587d09bb19557c5073576c624a913b37ef802bf168985fec25fe",
+  "verifier_sha256": "25a8c1df25265413b0b805dae7f20e2a1c32a65361d2588cacc818aa0d708c18",
+  "python": "3.12.13",
+  "numpy": "2.4.4",
+  "torch": "2.11.0",
+  "device": "CPU",
+  "torch_threads": 1,
+  "training_seeds": [
+    820000,
+    820001,
+    820002,
+    820003,
+    820004,
+    820005,
+    820006,
+    820007,
+    820008,
+    820009,
+    820010,
+    820011,
+    820012,
+    820013,
+    820014,
+    820015,
+    820016,
+    820017,
+    820018,
+    820019,
+    820020,
+    820021,
+    820022,
+    820023,
+    820024,
+    820025,
+    820026,
+    820027,
+    820028,
+    820029,
+    820030,
+    820031
+  ],
+  "test_batch_size": 128,
+  "test_seed_rule": "9000000 + block*100000 + condition_index*1000",
+  "conditions": {
+    "SLOW_TRANSIENT": {
+      "hazard": 0.01,
+      "pulse_rate": 0.08
+    },
+    "FAST_TRANSIENT": {
+      "hazard": 0.05,
+      "pulse_rate": 0.08
+    },
+    "SLOW_CLEAN": {
+      "hazard": 0.01,
+      "pulse_rate": 0.0
+    },
+    "FAST_CLEAN": {
+      "hazard": 0.05,
+      "pulse_rate": 0.0
+    }
+  },
+  "arms": [
+    "SELF_SENSORY",
+    "LAG1_SENSORY",
+    "LAG4_SENSORY",
+    "CROSS_AGENT_YOKED_SENSORY",
+    "SELF_OUTPUT",
+    "NO_FEEDBACK",
+    "GENERIC_RNN_1D",
+    "GRU_8"
+  ],
+  "parameter_counts": {
+    "SELF_SENSORY": 4,
+    "LAG1_SENSORY": 4,
+    "LAG4_SENSORY": 4,
+    "CROSS_AGENT_YOKED_SENSORY": 4,
+    "SELF_OUTPUT": 4,
+    "NO_FEEDBACK": 3,
+    "GENERIC_RNN_1D": 6,
+    "GRU_8": 297
+  },
+  "updates": 100,
+  "batch_size": 32,
+  "sequence_length": 96,
+  "bootstrap_resamples": 20000,
+  "primary_bootstrap_seed": 8765432,
+  "duration_seconds": 175.6010708808899,
+  "outputs": {
+    "feedback_distribution_check.json": {
+      "bytes": 1911277,
+      "sha256": "9d3b8b1107758153f79d388abea85eb06fc88d2b056f4a894561551c617e89a7"
+    },
+    "fit_manifest.csv": {
+      "bytes": 230993,
+      "sha256": "e18eb41557bce6b014134be6f4c0c6c4beceb568ab0b7795259ff0bd691d4542"
+    },
+    "summary.json": {
+      "bytes": 42468,
+      "sha256": "2f3d38eaf8dc11428dd6dbfdce9124d93c62d32a31123cd762790c8350bf8432"
+    },
+    "test_episode_metrics.csv": {
+      "bytes": 17398659,
+      "sha256": "6aa91153c058c7baafe36841e03d40ff110d922f445b836f8051424d85521d73"
+    },
+    "test_seed_summary.csv": {
+      "bytes": 130026,
+      "sha256": "b29c84031be0eb536d0e2c1bff55dcabdfc0daecc946a56ccdefd01276d22676"
+    }
+  }
+}
