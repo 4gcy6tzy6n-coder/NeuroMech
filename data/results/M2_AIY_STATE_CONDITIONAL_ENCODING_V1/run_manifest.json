@@ -1,0 +1,9 @@
+{
+  "experiment_id": "M2_AIY_STATE_CONDITIONAL_ENCODING_V1",
+  "runner_sha256": "09c76c19a370ca2f8b5987ceeb46d6138b75161c0c3e0baa40b2f16d0d38360e",
+  "contract_sha256": "3e0a95af4060927ca133b12e5c34708e534b9cbd30140092ff394fdc14261ff1",
+  "outputs": {
+    "animal_results.csv": "1fddb1ccc8ad9f56fa88f8ee7e8291cf8b0c87dbae24aa589e63eb36fa8304d0",
+    "summary.json": "b64c203efc52f951414ca01457b1af7d77b2f041255a74c1341dd6cfeaee3757"
+  }
+}

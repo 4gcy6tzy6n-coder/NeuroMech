@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "source_animal_count": {
+    "WT": 5,
+    "RIM_ABLATED": 5
+  },
+  "row_count": 10,
+  "independently_recomputed_model_scores": true,
+  "exact_permutation_allocations": 252,
+  "all_hashes_verified": true
+}

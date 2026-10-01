@@ -1,0 +1,15 @@
+{
+  "experiment_id": "M2_AIY_STATE_CONDITIONAL_ENCODING_V1",
+  "source_files": [
+    {
+      "path": "data/raw/celegans/ji_etal_2021_elife_68848_v3/elife-68848-fig2-data1-v3.xlsx",
+      "bytes": 1660451,
+      "sha256": "b03b378412e2d7e00b12dbe3e5a2fb2d1b58f42fcd8ea37c88bdbfd64f80d649"
+    },
+    {
+      "path": "data/raw/celegans/ji_etal_2021_elife_68848_v3/elife-68848-fig5-data1-v3.xlsx",
+      "bytes": 793593,
+      "sha256": "65b967dfcd3a709c4e0065ec0945be428c8816fefb939cbbfa4e163a5510119b"
+    }
+  ]
+}
