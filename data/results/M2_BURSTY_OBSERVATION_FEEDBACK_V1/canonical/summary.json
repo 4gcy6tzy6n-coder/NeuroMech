@@ -1,0 +1,181 @@
+{
+  "experiment_id": "M2_BURSTY_OBSERVATION_FEEDBACK_V1",
+  "episode_rows": 46080,
+  "training_seed_count": 24,
+  "conditions": {
+    "0.5": {
+      "SENSORY_SITE": {
+        "mean_tracking_mse": 0.5423464586189463,
+        "sd_episode_tracking_mse": 0.19722818078867818,
+        "mean_action_energy": 0.2821414597638068,
+        "mean_post_gap_recovery_steps": 9.674895026288711,
+        "post_gap_episode_rows": 3072
+      },
+      "OUTPUT_SITE": {
+        "mean_tracking_mse": 0.6000370590736566,
+        "sd_episode_tracking_mse": 0.26023223716279403,
+        "mean_action_energy": 0.5335710144572658,
+        "mean_post_gap_recovery_steps": 6.601059299957595,
+        "post_gap_episode_rows": 3072
+      },
+      "NO_FEEDBACK": {
+        "mean_tracking_mse": 0.6001716987575492,
+        "sd_episode_tracking_mse": 0.2623536099329734,
+        "mean_action_energy": 0.5832186441742427,
+        "mean_post_gap_recovery_steps": 6.644088865152033,
+        "post_gap_episode_rows": 3072
+      },
+      "GENERIC_RNN": {
+        "mean_tracking_mse": 0.6275817830489056,
+        "sd_episode_tracking_mse": 0.22369646978018695,
+        "mean_action_energy": 0.18916026026272448,
+        "mean_post_gap_recovery_steps": 10.43070966553328,
+        "post_gap_episode_rows": 3072
+      },
+      "GRU_8": {
+        "mean_tracking_mse": 0.5519056371637513,
+        "sd_episode_tracking_mse": 0.20964103088783925,
+        "mean_action_energy": 0.37683528855995974,
+        "mean_post_gap_recovery_steps": 9.32838590788816,
+        "post_gap_episode_rows": 3072
+      },
+      "realized_mean_missing_fraction": 0.4999471028645834
+    },
+    "0.25": {
+      "SENSORY_SITE": {
+        "mean_tracking_mse": 0.5988088195505649,
+        "sd_episode_tracking_mse": 0.23165464436475267,
+        "mean_action_energy": 0.29167507037345786,
+        "mean_post_gap_recovery_steps": 9.82642859186606,
+        "post_gap_episode_rows": 3072
+      },
+      "OUTPUT_SITE": {
+        "mean_tracking_mse": 0.6555907425548261,
+        "sd_episode_tracking_mse": 0.2961069429154214,
+        "mean_action_energy": 0.5319976957883531,
+        "mean_post_gap_recovery_steps": 7.099678905433566,
+        "post_gap_episode_rows": 3072
+      },
+      "NO_FEEDBACK": {
+        "mean_tracking_mse": 0.6566063606151147,
+        "sd_episode_tracking_mse": 0.2990883897318967,
+        "mean_action_energy": 0.5809934648423223,
+        "mean_post_gap_recovery_steps": 7.135908788471004,
+        "post_gap_episode_rows": 3072
+      },
+      "GENERIC_RNN": {
+        "mean_tracking_mse": 0.6733816089981701,
+        "sd_episode_tracking_mse": 0.2495517650831189,
+        "mean_action_energy": 0.18680702043517763,
+        "mean_post_gap_recovery_steps": 11.060581346858347,
+        "post_gap_episode_rows": 3072
+      },
+      "GRU_8": {
+        "mean_tracking_mse": 0.6019026027267197,
+        "sd_episode_tracking_mse": 0.2388257876187717,
+        "mean_action_energy": 0.3709399792436064,
+        "mean_post_gap_recovery_steps": 9.814375555318307,
+        "post_gap_episode_rows": 3072
+      },
+      "realized_mean_missing_fraction": 0.5006978352864583
+    },
+    "0.125": {
+      "SENSORY_SITE": {
+        "mean_tracking_mse": 0.662761356383271,
+        "sd_episode_tracking_mse": 0.28125593792214887,
+        "mean_action_energy": 0.2896750936294363,
+        "mean_post_gap_recovery_steps": 9.976834781153197,
+        "post_gap_episode_rows": 3072
+      },
+      "OUTPUT_SITE": {
+        "mean_tracking_mse": 0.7220859680267798,
+        "sd_episode_tracking_mse": 0.34272885219182553,
+        "mean_action_energy": 0.5187969941810783,
+        "mean_post_gap_recovery_steps": 7.6608435859972515,
+        "post_gap_episode_rows": 3072
+      },
+      "NO_FEEDBACK": {
+        "mean_tracking_mse": 0.7249886152706798,
+        "sd_episode_tracking_mse": 0.34316655409578134,
+        "mean_action_energy": 0.5669984248767529,
+        "mean_post_gap_recovery_steps": 7.678865454871457,
+        "post_gap_episode_rows": 3072
+      },
+      "GENERIC_RNN": {
+        "mean_tracking_mse": 0.7290121342569668,
+        "sd_episode_tracking_mse": 0.29468799163592563,
+        "mean_action_energy": 0.18346457446629452,
+        "mean_post_gap_recovery_steps": 11.456477285368457,
+        "post_gap_episode_rows": 3072
+      },
+      "GRU_8": {
+        "mean_tracking_mse": 0.6703236487519462,
+        "sd_episode_tracking_mse": 0.28544561596993034,
+        "mean_action_energy": 0.3630962352714657,
+        "mean_post_gap_recovery_steps": 10.310824488112948,
+        "post_gap_episode_rows": 3072
+      },
+      "realized_mean_missing_fraction": 0.4998087565104166
+    }
+  },
+  "primary": {
+    "OUTPUT_SITE_minus_SENSORY_SITE": {
+      "mean_difference": 0.05932461164350874,
+      "ci95_crossed_seed_episode": [
+        0.052008935791400285,
+        0.06672700692712775
+      ],
+      "positive_seed_means": 24,
+      "seed_count": 24
+    },
+    "GENERIC_RNN_minus_SENSORY_SITE": {
+      "mean_difference": 0.06625077787369567,
+      "ci95_crossed_seed_episode": [
+        0.059996116972888563,
+        0.07282908652447682
+      ],
+      "positive_seed_means": 24,
+      "seed_count": 24
+    },
+    "GRU_8_minus_SENSORY_SITE": {
+      "mean_difference": 0.0075622923686751164,
+      "ci95_crossed_seed_episode": [
+        -0.002579728894594761,
+        0.01817736100644348
+      ],
+      "positive_seed_means": 13,
+      "seed_count": 24
+    },
+    "NO_FEEDBACK_minus_SENSORY_SITE": {
+      "mean_difference": 0.06222725888740873,
+      "ci95_crossed_seed_episode": [
+        0.053985279781151495,
+        0.07069979789193895
+      ],
+      "positive_seed_means": 24,
+      "seed_count": 24
+    }
+  },
+  "fit_counts": {
+    "SENSORY_SITE": 24,
+    "OUTPUT_SITE": 24,
+    "NO_FEEDBACK": 24,
+    "GENERIC_RNN": 24,
+    "GRU_8": 24
+  },
+  "parameter_counts": {
+    "SENSORY_SITE": 4,
+    "OUTPUT_SITE": 4,
+    "NO_FEEDBACK": 4,
+    "GENERIC_RNN": 4,
+    "GRU_8": 321
+  },
+  "training_seconds_by_arm_mean": {
+    "SENSORY_SITE": 0.841933930583333,
+    "OUTPUT_SITE": 0.8412658715416658,
+    "NO_FEEDBACK": 0.8139282135416677,
+    "GENERIC_RNN": 0.6615988575833355,
+    "GRU_8": 1.0755912324999992
+  },
+  "classification": "post-result exploratory artificial mechanism-transfer study"
+}

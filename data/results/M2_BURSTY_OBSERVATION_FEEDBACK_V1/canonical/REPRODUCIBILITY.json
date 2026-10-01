@@ -1,0 +1,17 @@
+{
+  "status": "BYTE_IDENTICAL_EPISODE_REPRODUCED",
+  "method": "Complete runner rerun in a fresh temporary directory after its own preflight; canonical files were not modified.",
+  "episode_results.csv": {
+    "canonical_sha256": "a360507f35704324d6965b316419202847e1e232298b2608ec4ae0b825205501",
+    "rerun_byte_identical": true
+  },
+  "training_results.csv": {
+    "non_runtime_fields_identical": true,
+    "excluded_field": "training_seconds"
+  },
+  "summary.json": {
+    "not_compared": "contains runtime-dependent fit timing fields"
+  },
+  "contract_sha256": "f7e2650372acb13f66076eedab2421fe67b02d3d00d1575c4cc45f93fbd30747",
+  "runner_sha256": "750e88ca968b25b5b333a727e0dc1dd5bb0bf7d45b799a8fbb38ae22e4612394"
+}

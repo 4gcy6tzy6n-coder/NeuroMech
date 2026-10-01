@@ -1,0 +1,36 @@
+{
+  "panel_a_uncertainty": "95% percentile bootstrap CI over 24 training-seed mean MSEs; episodes nested within seed",
+  "panel_b_uncertainty": "Frozen 95% crossed bootstrap resampling training seeds and paired held-out episode IDs",
+  "independent_training_seeds": 24,
+  "heldout_episodes_per_seed_condition": 128,
+  "long_burst_primary_contrasts": [
+    {
+      "arm": "OUTPUT_SITE",
+      "mean_difference": 0.05932461164350874,
+      "ci95": [
+        0.052008935791400285,
+        0.06672700692712775
+      ]
+    },
+    {
+      "arm": "GENERIC_RNN",
+      "mean_difference": 0.06625077787369567,
+      "ci95": [
+        0.059996116972888563,
+        0.07282908652447682
+      ]
+    },
+    {
+      "arm": "GRU_8",
+      "mean_difference": 0.0075622923686751164,
+      "ci95": [
+        -0.002579728894594761,
+        0.01817736100644348
+      ]
+    }
+  ],
+  "plot_source_sha256": "8b0aa3fd7b8dde46437286fc71b371aca2563025d97612acc70ad6ac647e83b8",
+  "matplotlib_version": "3.9.4",
+  "numpy_version": "2.0.2",
+  "source_data": "data/results/M2_BURSTY_OBSERVATION_FEEDBACK_V1/canonical/episode_results.csv"
+}

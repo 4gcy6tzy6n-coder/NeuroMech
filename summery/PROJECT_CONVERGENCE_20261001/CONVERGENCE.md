@@ -149,6 +149,10 @@ The first execution exposed a parameter-accounting error (the observation-only G
 
 The detailed record, plot contract, model, data, and audit artifacts are linked from the [repository README](../../README.md) under the latest cross-mechanism experiment section.
 
+## 2026-10-01 M2 bursty-observation feedback placement V1
+
+The new `M2_BURSTY_OBSERVATION_FEEDBACK_V1` study held expected missingness at 50% while varying mean Markov dropout-run length (2, 4, 8 steps), and compared sensory-site feedback with output-site placement, no feedback, an equal-parameter generic scalar RNN, and an 8-unit GRU. At the frozen 8-step condition, `MSE(OUTPUT_SITE) − MSE(SENSORY_SITE)` was `+0.05932` (paired crossed 95% interval `[+0.05201,+0.06673]`; 24/24 training seeds positive). The generic-RNN contrast was `+0.06625` (`[+0.06000,+0.07283]`), while the GRU contrast was `+0.00756` (`[−0.00258,+0.01818]`) and unresolved. The frozen joint criterion is therefore not met: this supports a placement effect over tested small controls in this synthetic task, but does not establish superiority over stronger recurrence. Sensory-site feedback also had lower action energy but slower post-gap recovery than output persistence. The rerun reproduced episode outcomes byte-for-byte, and independent structural/statistical verification passed. This was outcome-informed, artificial-only work and does not establish biological causality or general AI benefit. See [`results`](../M2_BURSTY_OBSERVATION_FEEDBACK_V1/RESULTS.md), [`failure lessons`](../M2_BURSTY_OBSERVATION_FEEDBACK_V1/FAILURE_LOG.md), and [canonical outputs](../../data/results/M2_BURSTY_OBSERVATION_FEEDBACK_V1/canonical/).
+
 ---
 
 ## 2026-10-01 M2_RECIPIENT_SPECIFIC_FEEDBACK_YOKE_V1 — recipient-specific motor-feedback yoke

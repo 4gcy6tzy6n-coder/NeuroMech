@@ -1,0 +1,52 @@
+{
+  "status": "PASS",
+  "scope": "schema, complete grid, parameter/update accounting, source pinning, primary estimate and bootstrap independently recomputed",
+  "episode_rows": 46080,
+  "fit_rows": 120,
+  "parameter_counts": {
+    "SENSORY_SITE": 4,
+    "OUTPUT_SITE": 4,
+    "NO_FEEDBACK": 4,
+    "GENERIC_RNN": 4,
+    "GRU_8": 321
+  },
+  "primary_recomputed": {
+    "OUTPUT_SITE": {
+      "mean": 0.05932461164350874,
+      "ci95": [
+        0.052008935791400285,
+        0.06672700692712775
+      ],
+      "positive_seed_means": 24
+    },
+    "GENERIC_RNN": {
+      "mean": 0.06625077787369567,
+      "ci95": [
+        0.059996116972888563,
+        0.07282908652447682
+      ],
+      "positive_seed_means": 24
+    },
+    "GRU_8": {
+      "mean": 0.0075622923686751164,
+      "ci95": [
+        -0.002579728894594761,
+        0.01817736100644348
+      ],
+      "positive_seed_means": 13
+    },
+    "NO_FEEDBACK": {
+      "mean": 0.06222725888740873,
+      "ci95": [
+        0.053985279781151495,
+        0.07069979789193895
+      ],
+      "positive_seed_means": 24
+    }
+  },
+  "sha256": {
+    "episode_results.csv": "a360507f35704324d6965b316419202847e1e232298b2608ec4ae0b825205501",
+    "training_results.csv": "f0fe54aafcdc77504a051daaca0ad3ada47c9503da027f7818581d6830063e39",
+    "summary.json": "64f1dc9953e814ba970ef0aeb66e1c7e79ca9a4f037c60f14471bb2f2d31e074"
+  }
+}

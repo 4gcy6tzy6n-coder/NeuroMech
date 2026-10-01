@@ -1,0 +1,66 @@
+{
+  "experiment_id": "M2_BURSTY_OBSERVATION_FEEDBACK_V1",
+  "outcomes_computed": false,
+  "contract_sha256": "f7e2650372acb13f66076eedab2421fe67b02d3d00d1575c4cc45f93fbd30747",
+  "runner_sha256": "750e88ca968b25b5b333a727e0dc1dd5bb0bf7d45b799a8fbb38ae22e4612394",
+  "python": "3.9.6",
+  "numpy": "2.0.2",
+  "torch": "2.8.0",
+  "training": {
+    "seed_first": 830100,
+    "seed_last": 830123,
+    "episodes": 160,
+    "steps": 160,
+    "updates": 60,
+    "batch": 16,
+    "learning_rate": 0.01,
+    "visibility_q": 0.25
+  },
+  "evaluation": {
+    "episodes_per_seed_condition": 128,
+    "visibility_q": [
+      0.5,
+      0.25,
+      0.125
+    ],
+    "arms": [
+      "SENSORY_SITE",
+      "OUTPUT_SITE",
+      "NO_FEEDBACK",
+      "GENERIC_RNN",
+      "GRU_8"
+    ]
+  },
+  "checks": [
+    {
+      "arm": "SENSORY_SITE",
+      "parameters": 4,
+      "finite_loss": true,
+      "finite_gradients": true
+    },
+    {
+      "arm": "OUTPUT_SITE",
+      "parameters": 4,
+      "finite_loss": true,
+      "finite_gradients": true
+    },
+    {
+      "arm": "NO_FEEDBACK",
+      "parameters": 4,
+      "finite_loss": true,
+      "finite_gradients": true
+    },
+    {
+      "arm": "GENERIC_RNN",
+      "parameters": 4,
+      "finite_loss": true,
+      "finite_gradients": true
+    },
+    {
+      "arm": "GRU_8",
+      "parameters": 321,
+      "finite_loss": true,
+      "finite_gradients": true
+    }
+  ]
+}

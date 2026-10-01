@@ -1,0 +1,53 @@
+{
+  "experiment_id": "M2_BURSTY_OBSERVATION_FEEDBACK_V1",
+  "contract_sha256": "f7e2650372acb13f66076eedab2421fe67b02d3d00d1575c4cc45f93fbd30747",
+  "runner_sha256": "750e88ca968b25b5b333a727e0dc1dd5bb0bf7d45b799a8fbb38ae22e4612394",
+  "total_runtime_seconds": 120.769136375,
+  "seeds": [
+    830100,
+    830101,
+    830102,
+    830103,
+    830104,
+    830105,
+    830106,
+    830107,
+    830108,
+    830109,
+    830110,
+    830111,
+    830112,
+    830113,
+    830114,
+    830115,
+    830116,
+    830117,
+    830118,
+    830119,
+    830120,
+    830121,
+    830122,
+    830123
+  ],
+  "arms": [
+    "SENSORY_SITE",
+    "OUTPUT_SITE",
+    "NO_FEEDBACK",
+    "GENERIC_RNN",
+    "GRU_8"
+  ],
+  "q_values": [
+    0.5,
+    0.25,
+    0.125
+  ],
+  "parameters": {
+    "SENSORY_SITE": 4,
+    "OUTPUT_SITE": 4,
+    "NO_FEEDBACK": 4,
+    "GENERIC_RNN": 4,
+    "GRU_8": 321
+  },
+  "episode_rows": 46080,
+  "fit_rows": 120
+}
