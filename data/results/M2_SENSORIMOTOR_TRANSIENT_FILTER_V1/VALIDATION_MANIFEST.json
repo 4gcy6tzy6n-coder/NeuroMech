@@ -1,0 +1,49 @@
+{
+  "experiment": "M2_SENSORIMOTOR_TRANSIENT_FILTER_V1",
+  "files": {
+    "episode_metrics.csv": {
+      "bytes": 6549163,
+      "sha256": "2721689a55aef25c3c32cbda11f6e50987067c9cfa9f108da01d3a36cfdff5ec"
+    },
+    "fit_manifest.csv": {
+      "bytes": 7478,
+      "sha256": "d6970d85f475ee0a82fa72c013eeffe19a801670dbab4a57f43fa3eecac4b40c"
+    },
+    "manifest.json": {
+      "bytes": 1983,
+      "sha256": "2a55f4eddbd6dfcbcfb41ba960c4ce05a5517fa0cc6d8203fa33e7430c18cfb5"
+    },
+    "POSTRUN_VERIFICATION.json": {
+      "bytes": 315,
+      "sha256": "c5dd29d42e27be321cfca0c59d52821f1d7ff82ac605ae1a18b421f74bbf8432"
+    },
+    "RERUN_COMPARISON.json": {
+      "bytes": 1237,
+      "sha256": "bbc071c5a328ff5aecf05f4900a6daf8cf0b64aa3785f5d7a62bf439ff09c1af"
+    },
+    "seed_summary.csv": {
+      "bytes": 104191,
+      "sha256": "a89f3d046257200128f7e2552ea15318f1280c1c4d7c38e93cd8b89f719ef035"
+    },
+    "summary.json": {
+      "bytes": 50307,
+      "sha256": "a96bcc90bea9f76b97d36dc6ee25fa76406a8b7e762ee7335e7178eb6764486f"
+    }
+  },
+  "preflight": {
+    "path": "data/results/M2_SENSORIMOTOR_TRANSIENT_FILTER_V1/PREFLIGHT.json",
+    "sha256": "d017e72b32e36088da2c3e81c3b2b320cfea2f59891799f381e850bf4cacbd9c"
+  },
+  "contract": {
+    "path": "summery/M2_SENSORIMOTOR_TRANSIENT_FILTER_V1/CONTRACT.md",
+    "sha256": "95b1170524c88fca47cdb0bba6db257fb23bfc6e31344ecf7326a6246d53f520"
+  },
+  "runner": {
+    "path": "model/M2_SENSORIMOTOR_TRANSIENT_FILTER_V1/run_experiment.py",
+    "sha256": "2768e4766125d1e1302b1a772b98c28246416a1e69cbc2f1bfb9c09484f7b13b"
+  },
+  "verifier": {
+    "path": "model/M2_SENSORIMOTOR_TRANSIENT_FILTER_V1/verify_results.py",
+    "sha256": "0e530ee5590ed8a34c63860a22178516d1a69d16b32753effb203560a8ec3e7c"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "status": "PASS",
+  "rerun_path": "/private/tmp/M2_SENSORIMOTOR_TRANSIENT_FILTER_V1_verification_rerun",
+  "checks": {
+    "episode_metrics.csv": {
+      "byte_identical": true,
+      "canonical_sha256": "2721689a55aef25c3c32cbda11f6e50987067c9cfa9f108da01d3a36cfdff5ec",
+      "rerun_sha256": "2721689a55aef25c3c32cbda11f6e50987067c9cfa9f108da01d3a36cfdff5ec"
+    },
+    "seed_summary.csv": {
+      "byte_identical": true,
+      "canonical_sha256": "a89f3d046257200128f7e2552ea15318f1280c1c4d7c38e93cd8b89f719ef035",
+      "rerun_sha256": "a89f3d046257200128f7e2552ea15318f1280c1c4d7c38e93cd8b89f719ef035"
+    },
+    "summary.json": {
+      "byte_identical": true,
+      "canonical_sha256": "a96bcc90bea9f76b97d36dc6ee25fa76406a8b7e762ee7335e7178eb6764486f",
+      "rerun_sha256": "a96bcc90bea9f76b97d36dc6ee25fa76406a8b7e762ee7335e7178eb6764486f"
+    },
+    "fit_manifest.json": {
+      "rows": 100,
+      "training_metadata_identical_excluding_wallclock": true,
+      "wallclock_seconds_byte_identical": false
+    }
+  },
+  "notes": "Episode-level predictions/metrics, seed aggregation, and summary reproduced byte-for-byte. Fit parameters/losses match; wall-clock timing is machine-load dependent and is not expected to match."
+}

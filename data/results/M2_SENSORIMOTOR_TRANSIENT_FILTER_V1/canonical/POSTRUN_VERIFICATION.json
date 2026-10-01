@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "episode_rows": 44800,
+  "fit_records": 100,
+  "seed_summary_rows": 700,
+  "primary_seed_block_contrasts_recomputed": 20,
+  "hashed_outputs_checked": 4,
+  "scope": "coverage, fit metadata, output hashes, aggregation and primary bootstrap; not an independent model-training implementation"
+}

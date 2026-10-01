@@ -1,0 +1,89 @@
+{
+  "experiment": "M2_SENSORIMOTOR_TRANSIENT_FILTER_V1",
+  "contract_sha256": "95b1170524c88fca47cdb0bba6db257fb23bfc6e31344ecf7326a6246d53f520",
+  "runner_sha256": "2768e4766125d1e1302b1a772b98c28246416a1e69cbc2f1bfb9c09484f7b13b",
+  "python": "3.12.13",
+  "numpy": "2.4.4",
+  "torch": "2.11.0",
+  "training_seeds": [
+    101000,
+    101001,
+    101002,
+    101003,
+    101004,
+    101005,
+    101006,
+    101007,
+    101008,
+    101009,
+    101010,
+    101011,
+    101012,
+    101013,
+    101014,
+    101015,
+    101016,
+    101017,
+    101018,
+    101019
+  ],
+  "test_seed_rule": "3000000 + block*100000 + condition_index*1000 + episode",
+  "conditions": {
+    "CLEAN_STABLE": {
+      "hazard": 0.01,
+      "pulse_rate": 0.0,
+      "pulse_durations": []
+    },
+    "TRANSIENT_PULSE": {
+      "hazard": 0.01,
+      "pulse_rate": 0.06,
+      "pulse_durations": [
+        2
+      ]
+    },
+    "LONG_PULSE": {
+      "hazard": 0.01,
+      "pulse_rate": 0.03,
+      "pulse_durations": [
+        4
+      ]
+    },
+    "SUSTAINED_SWITCH": {
+      "hazard": 0.05,
+      "pulse_rate": 0.02,
+      "pulse_durations": [
+        2
+      ]
+    },
+    "COMBINED_STRESS": {
+      "hazard": 0.05,
+      "pulse_rate": 0.06,
+      "pulse_durations": [
+        4
+      ]
+    }
+  },
+  "updates": 100,
+  "batch_size": 32,
+  "sequence_length": 96,
+  "episodes_per_seed_arm_condition": 64,
+  "duration_seconds": 121.42039799690247,
+  "outputs": {
+    "episode_metrics.csv": {
+      "bytes": 6549163,
+      "sha256": "2721689a55aef25c3c32cbda11f6e50987067c9cfa9f108da01d3a36cfdff5ec"
+    },
+    "fit_manifest.csv": {
+      "bytes": 7478,
+      "sha256": "d6970d85f475ee0a82fa72c013eeffe19a801670dbab4a57f43fa3eecac4b40c"
+    },
+    "seed_summary.csv": {
+      "bytes": 104191,
+      "sha256": "a89f3d046257200128f7e2552ea15318f1280c1c4d7c38e93cd8b89f719ef035"
+    },
+    "summary.json": {
+      "bytes": 50307,
+      "sha256": "a96bcc90bea9f76b97d36dc6ee25fa76406a8b7e762ee7335e7178eb6764486f"
+    }
+  }
+}
