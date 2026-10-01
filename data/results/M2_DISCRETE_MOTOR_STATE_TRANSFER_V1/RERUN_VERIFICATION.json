@@ -1,0 +1,34 @@
+{
+  "status": "PASS",
+  "comparison": [
+    {
+      "file": "episode_metrics.csv",
+      "byte_identical": true,
+      "sha256_first": "d393bf85197de8a80c94c2cc9f8feef3eebcbd25fac032ddea5ab8bfc7c9c5f6",
+      "sha256_rerun": "d393bf85197de8a80c94c2cc9f8feef3eebcbd25fac032ddea5ab8bfc7c9c5f6"
+    },
+    {
+      "file": "seed_summary.csv",
+      "byte_identical": true,
+      "sha256_first": "fd7b7649a498bb15fca063bae48c5b516ba79c98a136a71e47a20f14393e8e41",
+      "sha256_rerun": "fd7b7649a498bb15fca063bae48c5b516ba79c98a136a71e47a20f14393e8e41"
+    },
+    {
+      "file": "yoke_checks.json",
+      "byte_identical": true,
+      "sha256_first": "e48a2de6707cbd456bbcbd34a833acf68d93caaefe7a13d1bf1bbf65dc98a9e5",
+      "sha256_rerun": "e48a2de6707cbd456bbcbd34a833acf68d93caaefe7a13d1bf1bbf65dc98a9e5"
+    },
+    {
+      "file": "summary.json",
+      "byte_identical": true,
+      "sha256_first": "2cc0094240121b59e139a2229420489ecafc6e88349ff36213759dfd29330739",
+      "sha256_rerun": "2cc0094240121b59e139a2229420489ecafc6e88349ff36213759dfd29330739"
+    },
+    {
+      "file": "fit_manifest.csv (excluding training_seconds)",
+      "byte_identical": true
+    }
+  ],
+  "note": "Scientific outputs and learned fit records reproduced; hardware-dependent training_seconds intentionally excluded."
+}

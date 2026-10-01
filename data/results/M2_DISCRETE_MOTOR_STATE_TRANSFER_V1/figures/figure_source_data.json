@@ -1,0 +1,43 @@
+{
+  "metric": "tracking_mse",
+  "profile": "LONG_BURST",
+  "contrast": "SELF_STATE minus comparator; negative favors SELF_STATE",
+  "unit": "training seed block",
+  "interval": "percentile 95% bootstrap over seed blocks",
+  "bootstrap_draws": 20000,
+  "bootstrap_seed": 8765501,
+  "contrasts": [
+    {
+      "label": "Previous command sign",
+      "arm": "ACTION_STATE",
+      "estimate": -0.014290492296626704,
+      "low": -0.024620909227748743,
+      "high": -0.004419768037985938,
+      "n": 32
+    },
+    {
+      "label": "Zero input",
+      "arm": "ZERO_STATE",
+      "estimate": 0.0004366056231348142,
+      "low": -0.011606074227018886,
+      "high": 0.013199984312389206,
+      "n": 32
+    },
+    {
+      "label": "Recipient-yoked state",
+      "arm": "YOKED_STATE",
+      "estimate": -0.009849541152104443,
+      "low": -0.023763409598055653,
+      "high": 0.00407624114820257,
+      "n": 32
+    },
+    {
+      "label": "Fixed reactive policy",
+      "arm": "REACTIVE",
+      "estimate": -0.04224236789805395,
+      "low": -0.07145707819179288,
+      "high": -0.00974777843013124,
+      "n": 32
+    }
+  ]
+}

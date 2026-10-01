@@ -248,6 +248,12 @@ A separate paired audit found lower mean absolute movement error for output-site
 
 This is a post-result exploratory synthetic test because the budget was motivated by prior outcomes. A first execution duplicated all evaluation blocks and was invalidated by the frozen structural verifier; the corrected execution kept the same design and passed verification. An independent full rerun reproduced validation, selection, test, seed summaries, and summary JSON byte-for-byte. This result establishes neither biological energy efficiency nor transfer to real AI systems; it narrows only this controller/task/budget comparison. See the [incident and failure record](../M2_FEEDBACK_PLACEMENT_ENERGY_BUDGET_V1/EXECUTION_INCIDENT_01.md), [canonical outputs and rerun record](../../data/results/M2_FEEDBACK_PLACEMENT_ENERGY_BUDGET_V1/canonical/), and [root README](../../README.md).
 
+---
+
+## 2026-10-01 M2 discrete motor-state transfer V1
+
+[`M2_DISCRETE_MOTOR_STATE_TRANSFER_V1`](../M2_DISCRETE_MOTOR_STATE_TRANSFER_V1/RESULTS.md) narrowed the feedback variable from continuous 2D actuator velocity to the sign of realized 1D movement and disclosed a six-seed feasibility preflight. In the long-observation-burst primary profile, `SELF_STATE − ACTION_STATE` was `−0.01429` tracking MSE (95% seed-block bootstrap interval `[−0.02462,−0.00442]`, 32 new blocks). The contrast against zero input was unresolved (`+0.00044`, `[-0.01161,+0.01320]`), as was the contrast against recipient-yoked state (`−0.00985`, `[-0.02376,+0.00408]`). The learned state-feedback model beat the fixed reactive reference in the primary profile but lost to it on the fast-target profile. This supports a bounded categorical-input result relative to intended action, not a self-contingency-specific effect or biological-to-AI transfer. The full results and limitations are linked in the [root README](../../README.md).
+
 
 ### 2026-10-01 M2 recipient-contingency yoke test
 

@@ -1,0 +1,97 @@
+{
+  "experiment": "M2_DISCRETE_MOTOR_STATE_TRANSFER_V1",
+  "contract_sha256": "d1767d89b51ec2a163b1bc55e7170262ec8289e87e7754cfd3637f58bc92e24b",
+  "runner_sha256": "ac2256ec7b8fea93393a4e57ad9d27d8bd331184671d962c424ddf9aa049da86",
+  "verifier_sha256": "97c82c5a0df01f285a9fe12a35cbde86add6670d23ef7ade463ed5916d8a791f",
+  "python": "3.12.13",
+  "numpy": "2.4.4",
+  "torch": "2.11.0",
+  "device": "CPU",
+  "training_seeds": [
+    910000,
+    910001,
+    910002,
+    910003,
+    910004,
+    910005,
+    910006,
+    910007,
+    910008,
+    910009,
+    910010,
+    910011,
+    910012,
+    910013,
+    910014,
+    910015,
+    910016,
+    910017,
+    910018,
+    910019,
+    910020,
+    910021,
+    910022,
+    910023,
+    910024,
+    910025,
+    910026,
+    910027,
+    910028,
+    910029,
+    910030,
+    910031
+  ],
+  "arms": [
+    "SELF_STATE",
+    "ZERO_STATE",
+    "ACTION_STATE",
+    "YOKED_STATE",
+    "REACTIVE"
+  ],
+  "profiles": {
+    "TRAIN_LIKE": {
+      "alpha": 0.91,
+      "missing_fraction": 0.5,
+      "mean_burst": 4.0
+    },
+    "LONG_BURST": {
+      "alpha": 0.91,
+      "missing_fraction": 0.5,
+      "mean_burst": 8.0
+    },
+    "LOW_MISSING": {
+      "alpha": 0.91,
+      "missing_fraction": 0.25,
+      "mean_burst": 4.0
+    },
+    "FAST_TARGET": {
+      "alpha": 0.76,
+      "missing_fraction": 0.5,
+      "mean_burst": 4.0
+    }
+  },
+  "updates": 160,
+  "duration_seconds": 172.92382383346558,
+  "outputs": {
+    "fit_manifest.csv": {
+      "bytes": 842408,
+      "sha256": "d182ecceab7b102fd1608d68ca05b67375b3538ee5730e9769f3cac25ff2b9c5"
+    },
+    "episode_metrics.csv": {
+      "bytes": 7567963,
+      "sha256": "d393bf85197de8a80c94c2cc9f8feef3eebcbd25fac032ddea5ab8bfc7c9c5f6"
+    },
+    "seed_summary.csv": {
+      "bytes": 53853,
+      "sha256": "fd7b7649a498bb15fca063bae48c5b516ba79c98a136a71e47a20f14393e8e41"
+    },
+    "yoke_checks.json": {
+      "bytes": 17307,
+      "sha256": "e48a2de6707cbd456bbcbd34a833acf68d93caaefe7a13d1bf1bbf65dc98a9e5"
+    },
+    "summary.json": {
+      "bytes": 6414,
+      "sha256": "2cc0094240121b59e139a2229420489ecafc6e88349ff36213759dfd29330739"
+    }
+  }
+}

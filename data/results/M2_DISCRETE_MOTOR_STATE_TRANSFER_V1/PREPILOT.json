@@ -1,0 +1,13 @@
+{
+  "classification": "developmental feasibility preflight; inspected before full-run freeze; not confirmatory",
+  "seeds": [5000, 5001, 5002, 5003, 5004, 5005],
+  "primary_like_profile": "LONG_BURST; n=256 per seed",
+  "mean_tracking_mse_by_seed": {
+    "SELF_STATE": [0.8727322, 1.0111895, 1.0190713, 0.8927334, 1.1328282, 1.1009424],
+    "ZERO_STATE": [0.9007879, 1.0051126, 0.9920286, 0.9346798, 1.1690450, 1.0849621],
+    "ACTION_STATE": [0.8946050, 1.0254120, 1.0181167, 0.9544476, 1.1508720, 1.1482282],
+    "YOKED_STATE": [0.9329540, 1.0117909, 0.9853100, 0.9592354, 1.1820724, 1.0998375],
+    "REACTIVE": [0.8822, 1.1558, 1.0665, 1.1051, 1.3127, 1.1113]
+  },
+  "interpretation": "All six trained SELF_STATE fits beat the fixed reactive policy, supporting task viability; SELF_STATE rankings against learned state controls were mixed, motivating an exploratory full run with disjoint seeds."
+}
