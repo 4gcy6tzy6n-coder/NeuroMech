@@ -1,0 +1,24 @@
+{
+  "experiment_id": "M5_ELIGIBILITY_TRUNCATED_BPTT_V1",
+  "passed": true,
+  "checks": {
+    "complete_seed_arm_grid": true,
+    "parameter_counts_and_rows_valid": true,
+    "paired_effects_and_bootstraps_recomputed": true,
+    "full_bptt_viability_recomputed": true,
+    "input_hashes_valid": true,
+    "figures_present": true
+  },
+  "n_rows": 160,
+  "primary_trace_minus_tbptt4": {
+    "mean": -0.26587500000000003,
+    "ci95": [
+      -0.3295015625,
+      -0.20031093750000015
+    ]
+  },
+  "full_bptt_viability_ci95": [
+    0.99925,
+    0.9998750000000001
+  ]
+}

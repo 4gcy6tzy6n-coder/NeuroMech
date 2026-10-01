@@ -1,0 +1,73 @@
+{
+  "experiment_id": "M5_ELIGIBILITY_TRUNCATED_BPTT_V1",
+  "classification": "POST_RESULT_EXPLORATORY_ARTIFICIAL_EXPERIMENT",
+  "primary_contrast": "ELIGIBILITY_TRACE_MINUS_TBPTT_4",
+  "arm_mean_accuracy": {
+    "ELIGIBILITY_TRACE": 0.6974375,
+    "NO_TRACE": 0.5561875,
+    "TBPTT_1": 0.5561875,
+    "TBPTT_4": 0.9633125,
+    "BPTT_FULL": 0.999625
+  },
+  "contrasts": [
+    {
+      "contrast": "ELIGIBILITY_TRACE_MINUS_NO_TRACE",
+      "mean_accuracy_difference": 0.14125,
+      "bootstrap_95ci": [
+        0.07187500000000001,
+        0.21287656249999987
+      ],
+      "positive_seeds": 20,
+      "task_seeds": 32
+    },
+    {
+      "contrast": "ELIGIBILITY_TRACE_MINUS_TBPTT_1",
+      "mean_accuracy_difference": 0.14125,
+      "bootstrap_95ci": [
+        0.07187500000000001,
+        0.21287656249999987
+      ],
+      "positive_seeds": 20,
+      "task_seeds": 32
+    },
+    {
+      "contrast": "ELIGIBILITY_TRACE_MINUS_TBPTT_4",
+      "mean_accuracy_difference": -0.26587500000000003,
+      "bootstrap_95ci": [
+        -0.3295015625,
+        -0.20031093750000015
+      ],
+      "positive_seeds": 1,
+      "task_seeds": 32
+    },
+    {
+      "contrast": "ELIGIBILITY_TRACE_MINUS_BPTT_FULL",
+      "mean_accuracy_difference": -0.3021875,
+      "bootstrap_95ci": [
+        -0.365190625,
+        -0.23743593750000014
+      ],
+      "positive_seeds": 0,
+      "task_seeds": 32
+    }
+  ],
+  "full_bptt_viability": {
+    "mean": 0.999625,
+    "bootstrap_95ci": [
+      0.99925,
+      0.9998750000000001
+    ],
+    "chance": 0.5,
+    "viable": true
+  },
+  "task_seeds": 32,
+  "training_episodes_per_seed_arm": 3000,
+  "test_episodes_per_seed_arm": 500,
+  "rows": 160,
+  "elapsed_seconds": 64.561925625,
+  "bootstrap": {
+    "resamples": 20000,
+    "seed": 20261013,
+    "unit": "task seed"
+  }
+}

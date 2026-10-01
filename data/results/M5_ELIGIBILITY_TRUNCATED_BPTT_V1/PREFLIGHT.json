@@ -1,0 +1,57 @@
+{
+  "experiment_id": "M5_ELIGIBILITY_TRUNCATED_BPTT_V1",
+  "classification": "POST_RESULT_EXPLORATORY",
+  "outcomes_computed": false,
+  "contract_sha256": "5e65e5d286aafefb1acff97c2df8b2c8c8404b1f3f696f67944c988b0b688248",
+  "runner_sha256": "8e1afc4db7efd5eee958dba2421a36bd8e522b3f359a12fbe4294c3e3f309543",
+  "python": "3.9.6",
+  "numpy": "2.0.2",
+  "finite_difference_max_error": 1.3056179306637251e-10,
+  "xor_truth_table": "PASS",
+  "checks": [
+    {
+      "arm": "ELIGIBILITY_TRACE",
+      "finite_gradients": true,
+      "finite_loss": true
+    },
+    {
+      "arm": "NO_TRACE",
+      "finite_gradients": true,
+      "finite_loss": true
+    },
+    {
+      "arm": "TBPTT_1",
+      "finite_gradients": true,
+      "finite_loss": true
+    },
+    {
+      "arm": "TBPTT_4",
+      "finite_gradients": true,
+      "finite_loss": true
+    },
+    {
+      "arm": "BPTT_FULL",
+      "finite_gradients": true,
+      "finite_loss": true
+    }
+  ],
+  "config": {
+    "seeds": [
+      2000,
+      2031
+    ],
+    "delay": 4,
+    "train": 3000,
+    "test": 500,
+    "arms": [
+      "ELIGIBILITY_TRACE",
+      "NO_TRACE",
+      "TBPTT_1",
+      "TBPTT_4",
+      "BPTT_FULL"
+    ],
+    "parameters_per_arm": 746,
+    "learning_rate": 0.03,
+    "trace_decay": 0.98
+  }
+}
