@@ -1,0 +1,71 @@
+{
+  "experiment_id": "M2_ACTION_CONDITIONED_STATE_ESTIMATION_V1",
+  "outcomes_computed": false,
+  "contract_sha256": "e7024b972bb2d16e827b26f7d0a8c958ee0ff1b20dde0f1891ff0bb333a0e2af",
+  "runner_sha256": "9f9369d51889fdee48e7e0d5a49eca9394c50bfe932dc5b3aaf66b2eefdf8df6",
+  "python": "3.9.6",
+  "numpy": "2.0.2",
+  "torch": "2.8.0",
+  "training": {
+    "seed_first": 930000,
+    "seed_last": 930031,
+    "episodes": 256,
+    "steps": 128,
+    "updates": 160,
+    "batch": 32,
+    "lr": 0.003
+  },
+  "checks": [
+    {
+      "arm": "LTC_SENSORY_SITE",
+      "trainable_parameters": 42,
+      "finite_loss": true,
+      "finite_gradients": true,
+      "dormant_parameters": []
+    },
+    {
+      "arm": "LTC_OUTPUT_SITE",
+      "trainable_parameters": 42,
+      "finite_loss": true,
+      "finite_gradients": true,
+      "dormant_parameters": []
+    },
+    {
+      "arm": "LTC_NO_FEEDBACK",
+      "trainable_parameters": 42,
+      "finite_loss": true,
+      "finite_gradients": true,
+      "dormant_parameters": [
+        "beta"
+      ]
+    },
+    {
+      "arm": "LTC_DENSE_FEEDBACK",
+      "trainable_parameters": 42,
+      "finite_loss": true,
+      "finite_gradients": true,
+      "dormant_parameters": []
+    },
+    {
+      "arm": "LTC_SENSORY_YOKED",
+      "trainable_parameters": 42,
+      "finite_loss": true,
+      "finite_gradients": true,
+      "dormant_parameters": []
+    },
+    {
+      "arm": "GRU_2",
+      "trainable_parameters": 45,
+      "finite_loss": true,
+      "finite_gradients": true,
+      "dormant_parameters": []
+    },
+    {
+      "arm": "GRU_4",
+      "trainable_parameters": 113,
+      "finite_loss": true,
+      "finite_gradients": true,
+      "dormant_parameters": []
+    }
+  ]
+}

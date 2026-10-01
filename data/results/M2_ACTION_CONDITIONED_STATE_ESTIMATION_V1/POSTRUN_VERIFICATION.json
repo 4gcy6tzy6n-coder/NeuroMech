@@ -1,0 +1,21 @@
+{
+  "experiment_id": "M2_ACTION_CONDITIONED_STATE_ESTIMATION_V1",
+  "passed": true,
+  "checks": {
+    "seed_arm_condition_grid_complete": true,
+    "no_duplicate_episodes": true,
+    "finite_metrics": true,
+    "training_records_and_parameter_counts_valid": true,
+    "primary_point_estimates_recomputed": true,
+    "figures_present": true
+  },
+  "row_counts": {
+    "episode_results": 196608,
+    "training_results": 224
+  },
+  "input_sha256": {
+    "episode_results.csv": "0d9738f31b4477bf4b911fa8e87b91915cbb267db2e2cbd72385420730a79728",
+    "training_results.csv": "0e8095dcca2cba82a92d7065ca28adc86b575cd4e08c1d43a680273d546e6822",
+    "summary.json": "d137ab6f373cd58a898427ff24cb94e12a1e4a4f1fba14747fd1a83e796725f1"
+  }
+}
